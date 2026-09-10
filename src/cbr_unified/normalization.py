@@ -95,11 +95,15 @@ def parse_period(value: Any) -> tuple[str, str, str] | None:
         return None
     s = s0.casefold().replace("–", "-").replace("—", "-")
 
-    m = re.fullmatch(r"(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{4})", s)
+    # Some official CBR date headers carry a trailing asterisk that points to a
+    # methodological footnote (for example 01.01.2019*). The marker is source
+    # presentation, not part of the period; raw OOXML retains it verbatim.
+    m = re.fullmatch(r"(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{4})(\*+)?", s)
     if m:
-        d, mo, y = map(int, m.groups())
+        d, mo, y = map(int, m.groups()[:3])
         try:
-            return date(y, mo, d).isoformat(), "monthly_or_point", "date_string"
+            representation = "date_string_footnoted" if m.group(4) else "date_string"
+            return date(y, mo, d).isoformat(), "monthly_or_point", representation
         except ValueError:
             return None
 

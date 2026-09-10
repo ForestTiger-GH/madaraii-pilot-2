@@ -13,6 +13,9 @@ class ValidationError(RuntimeError):
     pass
 
 
+ALLOWED_TRANSLATION_STATUSES = {"cbr_official", "project_translation", "transliteration_only"}
+
+
 def _unique(rows: Sequence[Mapping[str, object]], key: str, label: str) -> set[str]:
     values = [str(r.get(key, "")) for r in rows]
     missing = [i for i, v in enumerate(values) if not v]
@@ -30,6 +33,32 @@ def _decimal(value: object) -> Decimal:
         return Decimal(str(value))
     except (InvalidOperation, ValueError) as exc:
         raise ValidationError(f"Observation value_exact is not decimal: {value!r}") from exc
+
+
+def _validate_bilingual_rows(
+    rows: Sequence[Mapping[str, object]],
+    *,
+    label: str,
+    source_label_field: str,
+) -> Counter[str]:
+    required = (source_label_field, "name_ru", "name_en", "translation_status")
+    missing: list[dict[str, object]] = []
+    invalid_status: list[dict[str, object]] = []
+    statuses: Counter[str] = Counter()
+    for index, row in enumerate(rows):
+        absent = [field for field in required if not str(row.get(field, "")).strip()]
+        if absent:
+            missing.append({"row": index, "fields": absent})
+            continue
+        status = str(row.get("translation_status", "")).strip()
+        statuses[status] += 1
+        if status not in ALLOWED_TRANSLATION_STATUSES:
+            invalid_status.append({"row": index, "status": status})
+    if missing:
+        raise ValidationError(f"{label}: incomplete bilingual/source surface in {len(missing)} rows; sample={missing[:8]}")
+    if invalid_status:
+        raise ValidationError(f"{label}: invalid translation_status in {len(invalid_status)} rows; sample={invalid_status[:8]}")
+    return statuses
 
 
 def validate_bundle(
@@ -56,12 +85,30 @@ def validate_bundle(
     if failed:
         raise ValidationError(f"Failed source revisions present: {failed}")
 
+    source_name_gaps = [
+        s.source_id for s in SOURCES
+        if not str(s.name_ru).strip() or not str(s.name_en).strip()
+    ]
+    if source_name_gaps:
+        raise ValidationError(f"Registry sources missing bilingual dataset names: {source_name_gaps}")
+
     revision_ids = _unique(manifest, "source_revision_id", "manifest")
     raw_ids = _unique(raw_cells, "raw_cell_id", "raw_cells")
     concept_ids = _unique(concepts, "source_concept_id", "source_concepts")
     _unique(dimension_members, "dimension_member_id", "dimension_members") if dimension_members else set()
     obs_ids = _unique(observations, "observation_id", "observations")
     disposition_ids = _unique(dispositions, "raw_cell_id", "raw_cell_dispositions")
+
+    concept_translation_statuses = _validate_bilingual_rows(
+        concepts,
+        label="source_concepts",
+        source_label_field="label_ru_source",
+    )
+    member_translation_statuses = _validate_bilingual_rows(
+        dimension_members,
+        label="dimension_members",
+        source_label_field="source_value_ru",
+    )
 
     if raw_ids != disposition_ids:
         raise ValidationError(
@@ -215,6 +262,11 @@ def validate_bundle(
         "disposition_count": len(dispositions),
         "unmapped_numeric_count": len(unresolved_numeric),
         "unmapped_numeric_sample": unresolved_numeric[:50],
+        "dataset_bilingual_count": len(SOURCES),
+        "concept_bilingual_count": len(concepts),
+        "dimension_member_bilingual_count": len(dimension_members),
+        "concept_translation_statuses": dict(sorted(concept_translation_statuses.items())),
+        "dimension_member_translation_statuses": dict(sorted(member_translation_statuses.items())),
         "raw_disposition_coverage": 1.0 if raw_cells else 1.0,
         "observation_raw_lineage_coverage": 1.0 if observations else 1.0,
         "observation_sources": dict(sorted(obs_source_counts.items())),
@@ -233,5 +285,10 @@ def validate_bundle(
             "every_source_has_observations": all(obs_source_counts[s] > 0 for s in manifest_set),
             "zero_unmapped_numeric": len(unresolved_numeric) == 0,
             "no_conflicting_semantic_duplicates": True,
+            "bilingual_user_surface_complete": (
+                not source_name_gaps
+                and len(concepts) == sum(concept_translation_statuses.values())
+                and len(dimension_members) == sum(member_translation_statuses.values())
+            ),
         },
     }

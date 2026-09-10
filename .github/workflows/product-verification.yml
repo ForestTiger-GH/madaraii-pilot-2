@@ -34,10 +34,14 @@ jobs:
         run: python -m pip install -e '.[test]'
       - name: Live build and offline deterministic replay
         run: python tools/verify_full_build.py _verification
-      - name: Upload verification report
+      - name: Independent OOXML preservation verification
+        run: python tools/independent_verify_preservation.py _verification/live
+      - name: Upload verification reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cbr-unified-verification
-          path: _verification/full-build-report.json
+          path: |
+            _verification/full-build-report.json
+            _verification/independent-preservation-report.json
           if-no-files-found: warn

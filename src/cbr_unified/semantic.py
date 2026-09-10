@@ -125,7 +125,7 @@ def _discover_exchange_periods(ws) -> list[PeriodBinding]:
             if mo:
                 month_or_quarter.append((c, "monthly", mo, "exchange_composite"))
                 continue
-            m = re.fullmatch(r"(?:([iv]+)|([1-4]))\s*(?:кв(?:артал)?|q)", token)
+            m = re.fullmatch(r"(?:([iv]+)|([1-4]))\s*(?:кв(?:арт(?:ал)?)?|q)", token)
             if m:
                 roman, digit = m.groups()
                 q = int(digit) if digit else {"i":1,"ii":2,"iii":3,"iv":4}.get(roman)

@@ -119,7 +119,7 @@ def parse_period(value: Any) -> tuple[str, str, str] | None:
         if mo:
             return date(int(y), mo, 1).isoformat(), "monthly", "month_year_text"
 
-    m = re.fullmatch(r"(?:([ivx]+)|([1-4]))\s*(?:кв(?:артал)?\.?|q)\s*(\d{4})", s)
+    m = re.fullmatch(r"(?:([ivx]+)|([1-4]))\s*(?:кв(?:арт(?:ал)?)?\.?|q)\s*(\d{4})", s)
     if m:
         roman, digit, y = m.groups()
         q = int(digit) if digit else {"i":1, "ii":2, "iii":3, "iv":4}.get(roman)
@@ -161,12 +161,20 @@ def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
         dims["currency_category"] = "foreign_currency"
     elif "в руб" in s or s.startswith("руб"):
         dims["currency_category"] = "rubles"
-    elif s in {"итого", "всего"}:
+    elif s in {"итого", "всего"} or " итого" in s:
         dims["currency_category"] = "total"
 
     if "просроч" in s:
         dims["overdue"] = "true"
-    if "с правами требования" in s or "включая права требования" in s:
+
+    # CBR mortgage sheets use abbreviated wording: "по приобр. правам" means
+    # acquired claims only, while "с учетом приобр. прав" means the measure
+    # including acquired claims. These are distinct statistical populations.
+    if "с учетом приобр" in s and "прав" in s:
+        dims["acquired_claims"] = "included"
+    elif "по приобр" in s and "прав" in s:
+        dims["acquired_claims"] = "acquired_only"
+    elif "с правами требования" in s or "включая права требования" in s:
         dims["acquired_claims"] = "included"
     elif "права требования" in s:
         dims["acquired_claims"] = "acquired_only"

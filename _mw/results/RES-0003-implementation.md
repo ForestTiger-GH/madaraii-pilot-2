@@ -4,7 +4,7 @@
 **Commission:** `WORK-CBR-001`  
 **Plan:** `PLAN-CBR-001` at `_mw/work/PLAN-0001.md`  
 **Target:** `TW-CBR-1` / `TH-CBR-1` / `PRODUCT-ARCH-CBR-001`  
-**Product-code candidate:** `dd5d4e591de0e0d23f0b0bffb138bd0d892f58ae`  
+**Product-code candidate:** `25e3c23982c8a39b6d7d5a63f1fcba91341d78c7`  
 **Status:** implementation candidate established; independent verification and Product admission remain separate.
 
 ## Actual realized change
@@ -15,11 +15,12 @@ The repository now contains a reusable Python product for the registry-defined B
 - `acquisition.py` implements live HTTP acquisition, exact local rebinding, source hashes and revision manifests.
 - `raw.py` implements a lossless OOXML raw-cell ledger independent of openpyxl value coercion. It retains source revision, sheet, coordinate, OOXML type, style, lexical value, resolved text and formula.
 - `normalization.py`, `semantic.py` and `processing.py` implement conservative period, unit, dimension and source-concept interpretation. Presentation compatibility for the current exchange-rate workbook is source-scoped and operates on a temporary semantic view; raw evidence remains the untouched workbook.
+- Mortgage sheets representing acquired claims only and measures including acquired claims are explicitly separated in observation dimensions, including current abbreviated CBR sheet titles.
 - `validation.py` requires complete source coverage, raw-cell disposition coverage, exact observation lineage, valid semantic identities, zero unexplained numeric cells in a complete build, and zero conflicting semantic duplicate groups.
 - `persistence.py` materializes CSV and SQLite representations from the same in-memory owner set.
-- `build.py` coordinates live and local/replay builds.
+- `build.py` coordinates staged live/local builds, deterministic build identity, canonical output promotion and retained failure evidence.
 - `query.py` provides pandas-based bilingual lookup, filtering, dimension expansion, exact lineage and fail-closed pivots.
-- `cli.py` exposes build, validate, source listing, indicator lookup, observation query, pivot and lineage operations.
+- `cli.py` exposes build, validate, source listing, indicator lookup, observation query, pivot, lineage and deterministic build identity.
 - `README.md`, `docs/` and `examples/` provide cold-use guidance.
 - `tests/` and `tools/verify_full_build.py` / `tools/independent_verify_preservation.py` provide producer and independent-verification surfaces.
 
@@ -30,6 +31,7 @@ The repository now contains a reusable Python product for the registry-defined B
 3. **Persistence:** deterministic CSV plus SQLite bundle implemented.
 4. **Use surface:** pandas API, bilingual names, filters, pivots, CLI and examples implemented.
 5. **Assurance:** fail-closed source-variant handling, numeric residue gate, conflict checks, deterministic offline replay and independent OOXML comparison implemented.
+6. **Build-state integrity:** successful builds are promoted from staging only after complete validation; failed builds retain diagnostics without replacing a prior canonical build.
 
 ## Material implementation choices exercised
 
@@ -37,13 +39,16 @@ The repository now contains a reusable Python product for the registry-defined B
 - Source numeric values are stored as exact strings in the authoritative observation representation and converted to numeric types only at the query convenience boundary.
 - Source-local semantic identity remains source-scoped. Structural similarity and normalized labels never merge concepts automatically.
 - Exchange-rate calendar repair is restricted to proven current presentations (`N кварт.` and the annual year formula chain) in the semantic view. Any other layout remains fail-closed.
+- Acquired-claims populations remain distinct dimensions even when CBR uses abbreviated sheet titles.
 - Unknown numeric residue in a complete source universe is an implementation error, not silently classified metadata.
+- Build identity is deterministic over exact source revisions and product transformation version; canonical manifests expose the identity used by replay and verification.
 
-## Producer evidence available before independent verification
+## Producer evidence and discovered defects
 
-- Unit and contract tests passed in GitHub Actions on the implementation lineage immediately preceding final verification.
-- An earlier full-build attempt correctly stopped on an unrecognized exchange-rate quarterly presentation instead of silently dropping 2,354 numeric candidates. The exact source presentation was investigated and bounded compatibility logic plus regression tests were added.
-- The current verification workflow separately executes live acquisition, complete build, offline replay, CSV/SQLite reconciliation, query/CLI smoke checks, and independent raw OOXML preservation checks.
+- Unit and contract tests passed on the implementation lineage.
+- A full-build attempt correctly stopped on an unrecognized exchange-rate quarterly presentation instead of silently dropping 2,354 numeric candidates. Exact source presentation was investigated and bounded compatibility logic plus regression tests were added.
+- A subsequent full-build reached global duplicate validation and exposed 38,209 apparent conflicting groups. The first group proved that ordinary mortgage debt, acquired claims, and debt including acquired claims were missing a sheet-derived dimension. Validation was retained unchanged; source semantics and regression tests were repaired instead.
+- Verification tooling separately executes live acquisition, complete build, offline replay, canonical build-identity checks, CSV/SQLite reconciliation, query/CLI smoke checks, zero numeric-residue checks and independent raw OOXML preservation checks.
 
 Producer evidence is evidence of implementation discipline; it is not an independent conformance verdict.
 
@@ -59,8 +64,9 @@ Verification must bind the exact current product-code candidate and the 41-sourc
 - every raw source cell is dispositioned and every observation resolves to one raw cell;
 - zero unexplained numeric source cells remain in a complete build;
 - no conflicting semantic duplicates are admitted;
-- live and offline replay produce identical deterministic semantic/raw tables from the same source revisions;
+- live and offline replay produce identical deterministic semantic/raw tables from the same source revisions and resolve to the same build identity;
 - independent OOXML extraction matches the product raw ledger field-for-field and every observation `value_exact` matches source lexical/resolved content;
+- CSV and SQLite projections reconcile;
 - bilingual query, filters, lineage and CLI surfaces execute on the produced database;
 - no evidence supports a deployment or business-outcome claim.
 

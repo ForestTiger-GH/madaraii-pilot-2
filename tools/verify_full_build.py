@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
 import shutil
+import sqlite3
+import subprocess
 import sys
 from pathlib import Path
 
@@ -17,6 +20,15 @@ DETERMINISTIC_TABLES = (
     "raw_cell_dispositions.csv",
 )
 
+SQLITE_TABLES = (
+    "source_revisions",
+    "raw_cells",
+    "source_concepts",
+    "dimension_members",
+    "observations",
+    "raw_cell_dispositions",
+)
+
 
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -28,6 +40,23 @@ def sha256(path: Path) -> str:
 
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def csv_count(path: Path) -> int:
+    if path.stat().st_size == 0:
+        return 0
+    with path.open("r", encoding="utf-8-sig", newline="") as fh:
+        reader = csv.reader(fh)
+        next(reader, None)
+        return sum(1 for _ in reader)
+
+
+def sqlite_counts(path: Path) -> dict[str, int]:
+    con = sqlite3.connect(path)
+    try:
+        return {table: int(con.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]) for table in SQLITE_TABLES}
+    finally:
+        con.close()
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -66,7 +95,7 @@ def main(argv: list[str] | None = None) -> int:
     if revision_mismatches:
         raise AssertionError(f"Replay revision mismatch: {sorted(set(revision_mismatches))}")
 
-    table_hashes: dict[str, dict[str, str]] = {}
+    table_hashes: dict[str, dict[str, object]] = {}
     for filename in DETERMINISTIC_TABLES:
         live_path = live / "data" / filename
         replay_path = replay / "data" / filename
@@ -75,6 +104,11 @@ def main(argv: list[str] | None = None) -> int:
         table_hashes[filename] = {"live": lhs, "replay": rhs, "identical": lhs == rhs}
         if lhs != rhs:
             raise AssertionError(f"Deterministic table differs on replay: {filename}")
+
+    sql_counts = sqlite_counts(live_result.sqlite_path)
+    csv_counts = {table: csv_count(live / "data" / f"{table}.csv") for table in SQLITE_TABLES}
+    if sql_counts != csv_counts:
+        raise AssertionError(f"CSV/SQLite count mismatch: csv={csv_counts} sqlite={sql_counts}")
 
     db = UnifiedDatabase(live_result.sqlite_path)
     embedded_validation = db.validation()
@@ -96,6 +130,36 @@ def main(argv: list[str] | None = None) -> int:
         if required not in lineage:
             raise AssertionError(f"Lineage smoke test missing {required}")
 
+    cli_validation = subprocess.run(
+        [sys.executable, "-m", "cbr_unified.cli", "validate", "--db", str(live_result.sqlite_path)],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    if '"status": "passed"' not in cli_validation.stdout:
+        raise AssertionError("CLI validate smoke test did not report passed")
+    cli_query = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "cbr_unified.cli",
+            "query",
+            "--db",
+            str(live_result.sqlite_path),
+            "--source",
+            "mortgage_debt",
+            "--dim",
+            "currency_category=rubles",
+            "--limit",
+            "3",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    if not cli_query.stdout.strip() or cli_query.stdout.strip() == "<empty>":
+        raise AssertionError("CLI query smoke test returned no rows")
+
     report = {
         "status": "passed",
         "registry_source_count": len(SOURCES),
@@ -113,11 +177,14 @@ def main(argv: list[str] | None = None) -> int:
         },
         "source_revisions_identical": True,
         "deterministic_table_hashes": table_hashes,
+        "csv_sqlite_counts": {"csv": csv_counts, "sqlite": sql_counts, "identical": True},
         "query_smoke": {
             "mortgage_rows": len(sample),
             "english_indicator_hits": len(indicator_hits),
             "sample_observation_id": str(sample.iloc[0]["observation_id"]),
             "sample_raw_cell_id": str(sample.iloc[0]["raw_cell_id"]),
+            "cli_validate": "passed",
+            "cli_query": "passed",
         },
     }
     report_path = root / "full-build-report.json"

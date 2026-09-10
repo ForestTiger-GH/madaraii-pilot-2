@@ -8,9 +8,9 @@ from typing import Mapping, Sequence
 
 from .acquisition import bind_local_sources, download_sources, save_manifest, validate_manifest
 from .persistence import persist_bundle
+from .processing import parse_source_checked
 from .raw import extract_raw_cells
 from .registry import SOURCES, SourceSpec, get_source
-from .semantic import parse_source
 from .validation import validate_bundle
 
 
@@ -103,7 +103,7 @@ def build_database(
             source_revision_id=revision,
             file_sha256=sha,
         )
-        observations, source_concepts, source_members, dispositions, diag = parse_source(
+        observations, source_concepts, source_members, dispositions, diag = parse_source_checked(
             path,
             spec=spec,
             source_revision_id=revision,

@@ -103,6 +103,7 @@ def main(argv: list[str] | None = None) -> int:
         result = build_database(args.output, input_dir=args.input_dir)
         print(json.dumps({
             "status": "passed",
+            "build_id": result.build_id,
             "output_dir": str(result.output_dir),
             "sqlite": str(result.sqlite_path),
             "source_count": result.source_count,

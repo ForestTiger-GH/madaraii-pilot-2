@@ -198,6 +198,17 @@ def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
             dims["statement_side"] = "assets"
         elif "пассив" in s:
             dims["statement_side"] = "liabilities"
+
+        # This workbook publishes the same statement geometry in four explicit
+        # currency presentations. "валюта" and "в ин. валюте $" are both foreign-
+        # currency denomination; the latter additionally changes the measurement
+        # currency to USD. Denomination and measurement currency remain separate.
+        if s.endswith("- всего"):
+            dims["currency_category"] = "total"
+        elif s.endswith("- рубли"):
+            dims["currency_category"] = "rubles"
+        elif s.endswith("- валюта") or "в ин. валюте" in s:
+            dims["currency_category"] = "foreign_currency"
         if "доллар" in s or "$" in s:
             dims["measurement_currency"] = "USD"
 

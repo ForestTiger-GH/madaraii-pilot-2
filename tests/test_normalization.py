@@ -16,6 +16,7 @@ def test_conservative_normalization_preserves_punctuation_identity():
 def test_period_and_unit_parsing():
     assert parse_period("Май 2026") == ("2026-05-01", "monthly", "month_year_text")
     assert parse_period("01.08.2026") == ("2026-08-01", "monthly_or_point", "date_string")
+    assert parse_period("01.01.2019*") == ("2019-01-01", "monthly_or_point", "date_string_footnoted")
     assert infer_unit("Задолженность, млн руб.") == ("RUB", 1_000_000)
     assert infer_unit("Доля, %") == ("percent", 1)
 

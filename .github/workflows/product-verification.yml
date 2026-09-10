@@ -36,12 +36,16 @@ jobs:
         run: python tools/verify_full_build.py _verification
       - name: Independent OOXML preservation verification
         run: python tools/independent_verify_preservation.py _verification/live
-      - name: Upload verification reports
+      - name: Upload verification and failure evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cbr-unified-verification
+          include-hidden-files: true
           path: |
             _verification/full-build-report.json
             _verification/independent-preservation-report.json
+            _verification/.live.staging-*/failure.json
+            _verification/.live.staging-*/source_manifest.acquisition.json
+            _verification/.live.staging-*/failure-evidence/*.csv
           if-no-files-found: warn

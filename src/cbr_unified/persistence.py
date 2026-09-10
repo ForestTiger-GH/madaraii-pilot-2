@@ -13,7 +13,7 @@ CSV_TABLES = (
     "source_concepts",
     "dimension_members",
     "observations",
-    "raw_cell_dispositions",
+    "cell_dispositions",
 )
 
 
@@ -73,6 +73,9 @@ def export_csv_bundle(
         "source_concepts": concepts,
         "dimension_members": dimension_members,
         "observations": observations,
+        "cell_dispositions": dispositions,
+        # Generated compatibility alias used by early pilot tooling. It contains
+        # exactly the same rows as the canonical Target-HOW name above.
         "raw_cell_dispositions": dispositions,
     }
     paths: dict[str, str] = {}
@@ -163,6 +166,7 @@ def write_sqlite(
             );
             CREATE TABLE observations (
                 observation_id TEXT PRIMARY KEY,
+                build_id TEXT NOT NULL,
                 source_id TEXT NOT NULL,
                 source_revision_id TEXT NOT NULL REFERENCES source_revisions(source_revision_id),
                 file_sha256 TEXT NOT NULL,
@@ -195,6 +199,7 @@ def write_sqlite(
                 json_value TEXT NOT NULL
             );
 
+            CREATE INDEX idx_observations_build ON observations(build_id);
             CREATE INDEX idx_observations_source_period ON observations(source_id, period);
             CREATE INDEX idx_observations_concept_period ON observations(source_concept_id, period);
             CREATE INDEX idx_observations_frequency ON observations(frequency);
@@ -238,9 +243,9 @@ def write_sqlite(
             )) for r in dimension_members],
         )
         con.executemany(
-            "INSERT INTO observations VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO observations VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             [tuple(r.get(k, "") for k in (
-                "observation_id","source_id","source_revision_id","file_sha256","source_concept_id","period","frequency",
+                "observation_id","build_id","source_id","source_revision_id","file_sha256","source_concept_id","period","frequency",
                 "period_representation","period_role","value_exact","value_kind","unit","scale","dimensions_json",
                 "sheet_exact","cell_coordinate","raw_cell_id","source_row","source_row_label"
             )) for r in observations],

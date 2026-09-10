@@ -1,6 +1,12 @@
 # Data model
 
-The product separates preservation from interpretation. The same source value therefore appears in two linked forms with different responsibilities.
+The product separates preservation from interpretation. The same source value therefore appears in linked raw and semantic forms with different responsibilities.
+
+## Build identity
+
+A successful build has one deterministic `build_id` derived from the processing-contract version, reviewed source-specification fingerprint and exact sorted source revisions. Acquisition timestamps and output paths do not change this identity.
+
+`build_manifest.json` is the canonical build evidence manifest. `build.json` is a generated compatibility alias. Every semantic observation carries the same `build_id`.
 
 ## `source_revisions`
 
@@ -8,16 +14,7 @@ One row per bound workbook revision.
 
 Primary key: `source_revision_id = <source_id>@sha256:<sha256>`.
 
-Material fields:
-
-- `source_id` — stable project source identity from the reviewed registry;
-- `requested_url`, `resolved_url` — acquisition lineage;
-- `registry_filename` — filename declared by the reviewed source registry;
-- `local_path` — bound build input;
-- `sha256` — exact workbook content identity;
-- HTTP metadata and acquisition timestamp where available.
-
-A later workbook with the same URL but different bytes is a different source revision.
+Material fields include stable `source_id`, requested/resolved URL, registry filename, final local source path, SHA-256, size, HTTP metadata and acquisition timestamp. A later workbook with the same URL but different bytes is a different source revision.
 
 ## `raw_cells`
 
@@ -35,103 +32,70 @@ Material fields:
 
 This table does not claim that a cell is a statistical observation.
 
-## `raw_cell_dispositions`
+## `cell_dispositions`
 
-One and only one disposition for every `raw_cells` row.
+One and only one disposition for every `raw_cells` row. The SQLite physical table remains `raw_cell_dispositions`; `cell_dispositions.csv` is the canonical Target-HOW export and `raw_cell_dispositions.csv` is a generated compatibility alias with identical rows.
 
-Typical roles:
-
-- `observation_value` — cell is used as an analytical numeric observation;
-- `period_key` — cell establishes an observation period;
-- `source_metadata_numeric` — numeric content belongs to a metadata surface;
-- `hierarchy_or_header_code` — numeric content contributes to source hierarchy/header semantics;
-- `non_observation_numeric` — numeric cell lacks an admitted period binding and remains preserved;
-- `source_cell` — preserved source content with no more specific role.
-
-Complete disposition coverage is a validation invariant.
+Typical roles include `observation_value`, `period_key`, `source_metadata_numeric`, `hierarchy_or_header_code` and `source_cell`. `unmapped_numeric` denotes unresolved numeric source content and blocks a complete build.
 
 ## `source_concepts`
 
-Source-local statistical concept identities.
+Source-local statistical concept identities. Primary key: `source_concept_id`.
 
-Primary key: `source_concept_id`.
+The product intentionally avoids one universal indicator key. Equivalent-looking labels from different source populations, classifications or methodological contexts retain separate source concepts unless an explicit cross-source equivalence is established later.
 
-The product intentionally avoids one global universal indicator key. Equivalent-looking labels from different source populations, classifications or methodological contexts retain separate source concepts unless an explicit cross-source equivalence is established later.
-
-Material fields:
-
-- `source_local_key` — source-scoped concept identity basis;
-- `label_ru_source` — original Russian source label/context;
-- `label_ru_normalized` — conservative search representation;
-- `name_ru` — readable Russian project name;
-- `name_en` — English project surface;
-- `translation_status` — translation provenance;
-- `row_axis` — indicator, region, activity, hierarchy or mixed source geometry;
-- `source_context` — workbook/sheet context needed to interpret the concept.
+Material fields include `source_local_key`, exact Russian source label/context, conservative normalized label, RU/EN display names, `translation_status`, row axis and source context.
 
 ## `dimension_members`
 
-Reusable labels for dimensions that benefit from explicit identities, currently especially region and activity members.
-
-A dimension member carries source text plus Russian/English project display fields and classification when material.
+Reusable labels for dimensions that benefit from explicit identities, especially region and activity members. A member retains source text, classification and RU/EN project display surfaces.
 
 ## `observations`
 
-Analytical fact table.
+Analytical fact table. Every row points to exactly one raw source cell and one source concept and carries the build identity.
 
-Every row points back to exactly one raw source cell and one source concept.
+Material fields:
 
-Material identity fields:
-
-- `source_revision_id`;
-- `source_concept_id`;
-- `period`;
-- `frequency`;
-- `period_role`;
-- `unit` and `scale`;
+- `build_id`;
+- `source_revision_id`, `source_concept_id`;
+- `period`, `frequency`, `period_role`;
+- `unit`, `scale`;
 - `dimensions_json`;
-- exact source locator.
-
-Value fields:
-
-- `value_exact` — source numeric lexical representation, stored as text to avoid binary-float loss;
-- `value_kind` — numeric, numeric text or cached formula value.
+- exact source sheet/cell and `raw_cell_id`;
+- `value_exact`, stored as text to preserve source numeric lexical representation;
+- `value_kind`.
 
 `period` is an ISO anchor (`YYYY-MM-DD`). `frequency` states how that anchor is interpreted. `period_role` separates stock, flow, published change and source-defined cases.
 
 ### Dimensions
 
-`dimensions_json` is a sorted JSON object. This preserves extensibility while keeping one observation table.
+`dimensions_json` is a sorted JSON object. This keeps one observation table while allowing source-specific statistical qualifiers.
 
-Dimensions may include:
+Current dimensions may include:
 
 - `currency_category`;
 - `region`, `region_type`;
 - `activity`, `activity_code`, `classification`;
-- `overdue`;
+- `overdue`, `acquired_claims`;
 - `maturity_bucket`, `maturity_basis`;
-- `adjustment`;
-- `valuation`;
-- `frequency_sheet`;
-- `statement_side`;
-- `measurement_currency`;
-- `acquired_claims`;
+- `adjustment`, `valuation`, `frequency_sheet`;
+- `statement_side`, `measurement_currency`;
 - `sme_scope`, `entrepreneur_scope`, `escrow_coverage`.
 
-The exact dimension universe can grow when a reviewed source contract requires another statistically material distinction.
+Denomination and measurement currency are separate. For example, `obs_table_20s` may carry `currency_category=foreign_currency` and independently `measurement_currency=USD`.
 
 ## Statistical identity rule
 
 Two rows are candidates for the same semantic observation only when all material identity axes agree. Text similarity and workbook geometry are insufficient.
 
-The validation layer therefore checks duplicate candidates over:
+Validation checks duplicate candidates over:
 
 `source_id + source_concept_id + period + frequency + period_role + unit + scale + dimensions_json`.
 
-Different values under the same complete key are a hard conflict and fail the build. Same-valued repetitions are retained and reported rather than silently dropped.
+Different values under the same complete key are a hard conflict. Same-valued repetitions remain stored and are reported.
 
 ## SQLite and CSV parity
 
-The CSV tables are direct human-readable projections of the stored rows. SQLite is the indexed query representation. Neither is a separate semantic truth owner.
+CSV tables are human-readable projections of the stored rows. SQLite is the indexed query representation. Verification reconciles row counts and deterministic content; neither surface is a separate semantic truth owner.
 
-The source workbooks and their hashes remain the ultimate evidence for raw values; `raw_cells` is the reproducible preservation representation; `observations` is the admitted analytical interpretation.
+The source workbooks and hashes remain the ultimate raw evidence. `raw_cells` is the reproducible preservation representation; `observations` is the analytical interpretation.

@@ -17,6 +17,7 @@ DETERMINISTIC_TABLES = (
     "source_concepts.csv",
     "dimension_members.csv",
     "observations.csv",
+    "cell_dispositions.csv",
     "raw_cell_dispositions.csv",
 )
 
@@ -71,10 +72,23 @@ def main(argv: list[str] | None = None) -> int:
     live_result = build_database(live)
     replay_result = build_database(replay, input_dir=live / "sources")
 
+    if live_result.build_id != replay_result.build_id:
+        raise AssertionError(f"Deterministic build_id differs: {live_result.build_id} != {replay_result.build_id}")
+    live_build_manifest = load_json(live / "build_manifest.json")
+    replay_build_manifest = load_json(replay / "build_manifest.json")
+    if live_build_manifest.get("build_id") != live_result.build_id or replay_build_manifest.get("build_id") != replay_result.build_id:
+        raise AssertionError("Canonical build manifest does not bind the returned build_id")
+    if (live / "source_manifest.acquisition.json").exists() or (replay / "source_manifest.acquisition.json").exists():
+        raise AssertionError("Successful promoted output retained a failure-only acquisition manifest")
+
     live_validation = load_json(live / "data" / "validation.json")
     replay_validation = load_json(replay / "data" / "validation.json")
     if live_validation.get("status") != "passed" or replay_validation.get("status") != "passed":
         raise AssertionError("Live or replay validation did not pass")
+    if live_validation.get("build_id") != replay_validation.get("build_id"):
+        raise AssertionError("Validation build identities differ")
+    if live_validation.get("unmapped_numeric_count") != 0 or replay_validation.get("unmapped_numeric_count") != 0:
+        raise AssertionError("Complete build contains unmapped numeric source cells")
     if live_result.source_count != len(SOURCES) or replay_result.source_count != len(SOURCES):
         raise AssertionError(f"Expected {len(SOURCES)} sources in both builds")
     if live_result.raw_cell_count != replay_result.raw_cell_count:
@@ -104,9 +118,19 @@ def main(argv: list[str] | None = None) -> int:
         table_hashes[filename] = {"live": lhs, "replay": rhs, "identical": lhs == rhs}
         if lhs != rhs:
             raise AssertionError(f"Deterministic table differs on replay: {filename}")
+    if sha256(live / "data" / "cell_dispositions.csv") != sha256(live / "data" / "raw_cell_dispositions.csv"):
+        raise AssertionError("Canonical cell_dispositions and compatibility alias differ")
 
     sql_counts = sqlite_counts(live_result.sqlite_path)
-    csv_counts = {table: csv_count(live / "data" / f"{table}.csv") for table in SQLITE_TABLES}
+    csv_paths = {
+        "source_revisions": live / "data" / "source_revisions.csv",
+        "raw_cells": live / "data" / "raw_cells.csv",
+        "source_concepts": live / "data" / "source_concepts.csv",
+        "dimension_members": live / "data" / "dimension_members.csv",
+        "observations": live / "data" / "observations.csv",
+        "raw_cell_dispositions": live / "data" / "cell_dispositions.csv",
+    }
+    csv_counts = {table: csv_count(path) for table, path in csv_paths.items()}
     if sql_counts != csv_counts:
         raise AssertionError(f"CSV/SQLite count mismatch: csv={csv_counts} sqlite={sql_counts}")
 
@@ -120,13 +144,15 @@ def main(argv: list[str] | None = None) -> int:
     sample = db.observations(source_ids="mortgage_debt", language="en")
     if sample.empty:
         raise AssertionError("Query smoke test returned no mortgage_debt observations")
-    if "indicator" not in sample or "value_exact" not in sample:
-        raise AssertionError("Query surface lacks required convenience columns")
+    if "indicator" not in sample or "value_exact" not in sample or "build_id" not in sample:
+        raise AssertionError("Query surface lacks required convenience/identity columns")
+    if set(sample["build_id"]) != {live_result.build_id}:
+        raise AssertionError("Query returned an unexpected build identity")
     indicator_hits = db.indicators("mortgage", language="en", source_ids="mortgage_debt")
     if indicator_hits.empty:
         raise AssertionError("English indicator lookup returned no expected mortgage result")
     lineage = db.lineage(str(sample.iloc[0]["observation_id"]))
-    for required in ("requested_url", "sha256", "sheet_exact", "cell_coordinate", "value_lexical", "disposition_role"):
+    for required in ("build_id", "requested_url", "sha256", "sheet_exact", "cell_coordinate", "value_lexical", "disposition_role"):
         if required not in lineage:
             raise AssertionError(f"Lineage smoke test missing {required}")
 
@@ -162,6 +188,7 @@ def main(argv: list[str] | None = None) -> int:
 
     report = {
         "status": "passed",
+        "build_id": live_result.build_id,
         "registry_source_count": len(SOURCES),
         "live": {
             "raw_cell_count": live_result.raw_cell_count,
@@ -169,9 +196,11 @@ def main(argv: list[str] | None = None) -> int:
             "source_concept_count": live_validation.get("source_concept_count"),
             "dimension_member_count": live_validation.get("dimension_member_count"),
             "formula_raw_cell_count": live_validation.get("formula_raw_cell_count"),
+            "unmapped_numeric_count": live_validation.get("unmapped_numeric_count"),
             "identical_semantic_duplicate_groups": len(live_validation.get("identical_semantic_duplicate_groups", [])),
         },
         "replay": {
+            "build_id": replay_result.build_id,
             "raw_cell_count": replay_result.raw_cell_count,
             "observation_count": replay_result.observation_count,
         },

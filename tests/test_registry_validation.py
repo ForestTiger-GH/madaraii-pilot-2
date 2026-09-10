@@ -23,8 +23,10 @@ def _minimal_bundle(conflicting=False):
         "source_concept_id": "sc_x",
         "source_id": "x",
         "source_local_key": "x",
+        "label_ru_source": "X",
         "name_ru": "X",
         "name_en": "X",
+        "translation_status": "project_translation",
     }]
     for i, value in enumerate(("1", "2" if conflicting else "1"), start=1):
         rid = f"rc_{i}"

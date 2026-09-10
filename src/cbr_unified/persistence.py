@@ -4,7 +4,7 @@ import csv
 import json
 import sqlite3
 from pathlib import Path
-from typing import Iterable, Mapping, Sequence
+from typing import Mapping, Sequence
 
 
 CSV_TABLES = (
@@ -238,7 +238,7 @@ def write_sqlite(
             )) for r in dimension_members],
         )
         con.executemany(
-            "INSERT INTO observations VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO observations VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             [tuple(r.get(k, "") for k in (
                 "observation_id","source_id","source_revision_id","file_sha256","source_concept_id","period","frequency",
                 "period_representation","period_role","value_exact","value_kind","unit","scale","dimensions_json",

@@ -79,8 +79,14 @@ def validate_bundle(
     observation_raw_ids: set[str] = set()
     source_periods: dict[str, set[str]] = defaultdict(set)
     source_frequencies: dict[str, set[str]] = defaultdict(set)
+    build_ids: set[str] = set()
 
     for obs in observations:
+        build_id = str(obs.get("build_id", ""))
+        if build_id:
+            build_ids.add(build_id)
+        elif require_complete:
+            raise ValidationError(f"Observation lacks build_id: {obs.get('observation_id')}")
         sid = str(obs.get("source_id", ""))
         rev = str(obs.get("source_revision_id", ""))
         raw_id = str(obs.get("raw_cell_id", ""))
@@ -128,6 +134,8 @@ def validate_bundle(
         semantic_keys[key].append(obs)
 
     if require_complete:
+        if len(build_ids) != 1:
+            raise ValidationError(f"Complete build must contain exactly one build_id; found={sorted(build_ids)}")
         no_obs = sorted(s for s in expected if obs_source_counts[s] == 0)
         if no_obs:
             raise ValidationError(f"Sources with zero semantic observations: {no_obs}")
@@ -196,6 +204,7 @@ def validate_bundle(
 
     return {
         "status": "passed",
+        "build_ids": sorted(build_ids),
         "source_count": len(manifest),
         "raw_cell_count": len(raw_cells),
         "numeric_raw_cell_count": numeric_raw,
@@ -217,6 +226,7 @@ def validate_bundle(
         "identical_semantic_duplicate_groups": duplicate_groups,
         "conflicting_semantic_duplicate_groups": [],
         "invariants": {
+            "single_build_identity": len(build_ids) == 1 if observations else not require_complete,
             "complete_registry_universe": manifest_set == expected,
             "every_raw_cell_dispositioned": raw_ids == disposition_ids,
             "every_observation_has_raw_lineage": len(observation_raw_ids) == len(obs_ids),

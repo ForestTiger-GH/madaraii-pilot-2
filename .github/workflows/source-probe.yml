@@ -24,7 +24,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
 
       - name: Install research dependencies
         run: python -m pip install --disable-pip-version-check requests openpyxl
@@ -46,5 +45,3 @@ jobs:
           fi
 
           exit "$probe_status"
-
-# This comment intentionally creates a second push after the workflow exists on main.

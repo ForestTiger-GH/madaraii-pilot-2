@@ -1,0 +1,4802 @@
+{
+  "source": {
+    "source_id": "mortgage_ihc",
+    "url": "https://www.cbr.ru/vfs/statistics/banksector/mortgage/02_41_Mortgage_ihc.xlsx",
+    "registry_label": "Ипотека: жильё в строящихся домах",
+    "family_hint": "mortgage_and_household_loans"
+  },
+  "sheet_names": [
+    "в рублях",
+    "в инвалюте",
+    "итого"
+  ],
+  "defined_names": [],
+  "sheets": [
+    {
+      "title": "в рублях",
+      "title_normalized": "в рублях",
+      "title_presentation_signature": "врублях",
+      "state": "visible",
+      "declared_max_row": 17,
+      "declared_max_column": 32,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 17,
+        "min_column": 1,
+        "max_column": 32
+      },
+      "nonempty_cells": 513,
+      "cell_type_counts": {
+        "text": 48,
+        "numeric": 465
+      },
+      "merged_ranges": [
+        "A1:U1"
+      ],
+      "number_formats_top": [
+        [
+          "#,##0",
+          186
+        ],
+        [
+          "0.0;\\-0.0;0.0",
+          186
+        ],
+        [
+          "0.00;\\-0.00;0.00",
+          93
+        ],
+        [
+          "@",
+          38
+        ],
+        [
+          "General",
+          10
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Ипотечные жилищные кредиты в рублях, предоставленные физическим лицам-резидентам на приобретение и создание объектов индивидуального жилищного строительства",
+          "normalized": "ипотечные жилищные кредиты в рублях, предоставленные физическим лицам-резидентам на приобретение и создание объектов индивидуального жилищного строительства",
+          "presentation_signature": "ипотечныежилищныекредитыврубляхпредоставленныефизическимлицамрезидентамнаприобретениеисозданиеобъектовиндивидуальногожилищногостроительства"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Отчетная дата",
+          "normalized": "отчетная дата",
+          "presentation_signature": "отчетнаядата"
+        },
+        {
+          "coordinate": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "01.02.2024",
+          "normalized": "01.02.2024",
+          "presentation_signature": "01022024"
+        },
+        {
+          "coordinate": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "01.03.2024",
+          "normalized": "01.03.2024",
+          "presentation_signature": "01032024"
+        },
+        {
+          "coordinate": "D2",
+          "row": 2,
+          "column": 4,
+          "value": "01.04.2024",
+          "normalized": "01.04.2024",
+          "presentation_signature": "01042024"
+        },
+        {
+          "coordinate": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "01.05.2024",
+          "normalized": "01.05.2024",
+          "presentation_signature": "01052024"
+        },
+        {
+          "coordinate": "F2",
+          "row": 2,
+          "column": 6,
+          "value": "01.06.2024",
+          "normalized": "01.06.2024",
+          "presentation_signature": "01062024"
+        },
+        {
+          "coordinate": "G2",
+          "row": 2,
+          "column": 7,
+          "value": "01.07.2024",
+          "normalized": "01.07.2024",
+          "presentation_signature": "01072024"
+        },
+        {
+          "coordinate": "H2",
+          "row": 2,
+          "column": 8,
+          "value": "01.08.2024",
+          "normalized": "01.08.2024",
+          "presentation_signature": "01082024"
+        },
+        {
+          "coordinate": "I2",
+          "row": 2,
+          "column": 9,
+          "value": "01.09.2024",
+          "normalized": "01.09.2024",
+          "presentation_signature": "01092024"
+        },
+        {
+          "coordinate": "J2",
+          "row": 2,
+          "column": 10,
+          "value": "01.10.2024",
+          "normalized": "01.10.2024",
+          "presentation_signature": "01102024"
+        },
+        {
+          "coordinate": "K2",
+          "row": 2,
+          "column": 11,
+          "value": "01.11.2024",
+          "normalized": "01.11.2024",
+          "presentation_signature": "01112024"
+        },
+        {
+          "coordinate": "L2",
+          "row": 2,
+          "column": 12,
+          "value": "01.12.2024",
+          "normalized": "01.12.2024",
+          "presentation_signature": "01122024"
+        },
+        {
+          "coordinate": "M2",
+          "row": 2,
+          "column": 13,
+          "value": "01.01.2025",
+          "normalized": "01.01.2025",
+          "presentation_signature": "01012025"
+        },
+        {
+          "coordinate": "N2",
+          "row": 2,
+          "column": 14,
+          "value": "01.02.2025",
+          "normalized": "01.02.2025",
+          "presentation_signature": "01022025"
+        },
+        {
+          "coordinate": "O2",
+          "row": 2,
+          "column": 15,
+          "value": "01.03.2025",
+          "normalized": "01.03.2025",
+          "presentation_signature": "01032025"
+        },
+        {
+          "coordinate": "P2",
+          "row": 2,
+          "column": 16,
+          "value": "01.04.2025",
+          "normalized": "01.04.2025",
+          "presentation_signature": "01042025"
+        },
+        {
+          "coordinate": "Q2",
+          "row": 2,
+          "column": 17,
+          "value": "01.05.2025",
+          "normalized": "01.05.2025",
+          "presentation_signature": "01052025"
+        },
+        {
+          "coordinate": "R2",
+          "row": 2,
+          "column": 18,
+          "value": "01.06.2025",
+          "normalized": "01.06.2025",
+          "presentation_signature": "01062025"
+        },
+        {
+          "coordinate": "S2",
+          "row": 2,
+          "column": 19,
+          "value": "01.07.2025",
+          "normalized": "01.07.2025",
+          "presentation_signature": "01072025"
+        },
+        {
+          "coordinate": "T2",
+          "row": 2,
+          "column": 20,
+          "value": "01.08.2025",
+          "normalized": "01.08.2025",
+          "presentation_signature": "01082025"
+        },
+        {
+          "coordinate": "U2",
+          "row": 2,
+          "column": 21,
+          "value": "01.09.2025",
+          "normalized": "01.09.2025",
+          "presentation_signature": "01092025"
+        },
+        {
+          "coordinate": "V2",
+          "row": 2,
+          "column": 22,
+          "value": "01.10.2025",
+          "normalized": "01.10.2025",
+          "presentation_signature": "01102025"
+        },
+        {
+          "coordinate": "W2",
+          "row": 2,
+          "column": 23,
+          "value": "01.11.2025",
+          "normalized": "01.11.2025",
+          "presentation_signature": "01112025"
+        },
+        {
+          "coordinate": "X2",
+          "row": 2,
+          "column": 24,
+          "value": "01.12.2025",
+          "normalized": "01.12.2025",
+          "presentation_signature": "01122025"
+        },
+        {
+          "coordinate": "Y2",
+          "row": 2,
+          "column": 25,
+          "value": "01.01.2026",
+          "normalized": "01.01.2026",
+          "presentation_signature": "01012026"
+        },
+        {
+          "coordinate": "Z2",
+          "row": 2,
+          "column": 26,
+          "value": "01.02.2026",
+          "normalized": "01.02.2026",
+          "presentation_signature": "01022026"
+        },
+        {
+          "coordinate": "AA2",
+          "row": 2,
+          "column": 27,
+          "value": "01.03.2026",
+          "normalized": "01.03.2026",
+          "presentation_signature": "01032026"
+        },
+        {
+          "coordinate": "AB2",
+          "row": 2,
+          "column": 28,
+          "value": "01.04.2026",
+          "normalized": "01.04.2026",
+          "presentation_signature": "01042026"
+        },
+        {
+          "coordinate": "AC2",
+          "row": 2,
+          "column": 29,
+          "value": "01.05.2026",
+          "normalized": "01.05.2026",
+          "presentation_signature": "01052026"
+        },
+        {
+          "coordinate": "AD2",
+          "row": 2,
+          "column": 30,
+          "value": "01.06.2026",
+          "normalized": "01.06.2026",
+          "presentation_signature": "01062026"
+        },
+        {
+          "coordinate": "AE2",
+          "row": 2,
+          "column": 31,
+          "value": "01.07.2026",
+          "normalized": "01.07.2026",
+          "presentation_signature": "01072026"
+        },
+        {
+          "coordinate": "AF2",
+          "row": 2,
+          "column": 32,
+          "value": "01.08.2026",
+          "normalized": "01.08.2026",
+          "presentation_signature": "01082026"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Количество кредитов, предоставленных на приобретение и создание объектов ИЖС за месяц, единиц, в том числе",
+          "normalized": "количество кредитов, предоставленных на приобретение и создание объектов ижс за месяц, единиц, в том числе",
+          "presentation_signature": "количествокредитовпредоставленныхнаприобретениеисозданиеобъектовижсзамесяцединицвтомчисле"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "  на создание объектов ИЖС\n  за месяц, единиц",
+          "normalized": "на создание объектов ижс за месяц, единиц",
+          "presentation_signature": "насозданиеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "  на приобретение объектов\n  ИЖС за месяц, единиц",
+          "normalized": "на приобретение объектов ижс за месяц, единиц",
+          "presentation_signature": "наприобретениеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Объем кредитов, предоставленных на приобретение и создание объектов ИЖС за месяц, млн руб.",
+          "normalized": "объем кредитов, предоставленных на приобретение и создание объектов ижс за месяц, млн руб.",
+          "presentation_signature": "объемкредитовпредоставленныхнаприобретениеисозданиеобъектовижсзамесяцмлнруб"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "  на создание объектов ИЖС\n  за месяц, млн руб.",
+          "normalized": "на создание объектов ижс за месяц, млн руб.",
+          "presentation_signature": "насозданиеобъектовижсзамесяцмлнруб"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "  на приобретение объектов\n  ИЖС за месяц, единиц",
+          "normalized": "на приобретение объектов ижс за месяц, единиц",
+          "presentation_signature": "наприобретениеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "Доля кредитов, предоставленных на приобретение и создание объектов ИЖС, в общем объеме ипотечных жилищных кредитов, %",
+          "normalized": "доля кредитов, предоставленных на приобретение и создание объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнаприобретениеисозданиеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "  доля кредитов,\n  предоставленных на\n  создание объектов ИЖС, в\n  общем объеме ипотечных\n  жилищных кредитов, %",
+          "normalized": "доля кредитов, предоставленных на создание объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнасозданиеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "  доля кредитов,\n  предоставленных на\n  приобретение объектов\n  ИЖС, в общем объеме\n  ипотечных жилищных\n  кредитов, %",
+          "normalized": "доля кредитов, предоставленных на приобретение объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнаприобретениеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "Средневзвешенный срок кредитования по кредитам, выданным на приобретение и создание объектов ИЖС в течение месяца, месяцев",
+          "normalized": "средневзвешенный срок кредитования по кредитам, выданным на приобретение и создание объектов ижс в течение месяца, месяцев",
+          "presentation_signature": "средневзвешенныйсроккредитованияпокредитамвыданнымнаприобретениеисозданиеобъектовижсвтечениемесяцамесяцев"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "  средневзвешенный срок\n  кредитования по кредитам,\n  выданным на создание\n  объектов ИЖС в течение\n  месяца, месяцев",
+          "normalized": "средневзвешенный срок кредитования по кредитам, выданным на создание объектов ижс в течение месяца, месяцев",
+          "presentation_signature": "средневзвешенныйсроккредитованияпокредитамвыданнымнасозданиеобъектовижсвтечениемесяцамесяцев"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "  средневзвешенный срок\n  кредитования по кредитам,\n  выданным на\n  приобретение объектов\n  ИЖС в течение месяца,\n  месяцев",
+          "normalized": "средневзвешенный срок кредитования по кредитам, выданным на приобретение объектов ижс в течение месяца, месяцев",
+          "presentation_signature": "средневзвешенныйсроккредитованияпокредитамвыданнымнаприобретениеобъектовижсвтечениемесяцамесяцев"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "Средневзвешенная ставка по кредитам, выданным на приобретение и создание объектов ИЖС в течение месяца, %",
+          "normalized": "средневзвешенная ставка по кредитам, выданным на приобретение и создание объектов ижс в течение месяца, %",
+          "presentation_signature": "средневзвешеннаяставкапокредитамвыданнымнаприобретениеисозданиеобъектовижсвтечениемесяца%"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "  средневзвешенная ставка\n  по кредитам, выданным на\n  создание объектов ИЖС в\n  течение месяца, %",
+          "normalized": "средневзвешенная ставка по кредитам, выданным на создание объектов ижс в течение месяца, %",
+          "presentation_signature": "средневзвешеннаяставкапокредитамвыданнымнасозданиеобъектовижсвтечениемесяца%"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "  средневзвешенная ставка\n  по кредитам, выданным на\n  приобретение объектов\n  ИЖС в течение месяца, %",
+          "normalized": "средневзвешенная ставка по кредитам, выданным на приобретение объектов ижс в течение месяца, %",
+          "presentation_signature": "средневзвешеннаяставкапокредитамвыданнымнаприобретениеобъектовижсвтечениемесяца%"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B3",
+          "value": {
+            "kind": "int",
+            "value": "22416"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C3",
+          "value": {
+            "kind": "int",
+            "value": "28475"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D3",
+          "value": {
+            "kind": "int",
+            "value": "32809"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E3",
+          "value": {
+            "kind": "int",
+            "value": "36863"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F3",
+          "value": {
+            "kind": "int",
+            "value": "45802"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G3",
+          "value": {
+            "kind": "int",
+            "value": "59465"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H3",
+          "value": {
+            "kind": "int",
+            "value": "43341"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I3",
+          "value": {
+            "kind": "int",
+            "value": "31580"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J3",
+          "value": {
+            "kind": "int",
+            "value": "27406"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K3",
+          "value": {
+            "kind": "int",
+            "value": "24011"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L3",
+          "value": {
+            "kind": "int",
+            "value": "17661"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M3",
+          "value": {
+            "kind": "int",
+            "value": "14882"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N3",
+          "value": {
+            "kind": "int",
+            "value": "6040"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O3",
+          "value": {
+            "kind": "int",
+            "value": "7407"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P3",
+          "value": {
+            "kind": "int",
+            "value": "8181"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q3",
+          "value": {
+            "kind": "int",
+            "value": "10480"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R3",
+          "value": {
+            "kind": "int",
+            "value": "10490"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S3",
+          "value": {
+            "kind": "int",
+            "value": "12406"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T3",
+          "value": {
+            "kind": "int",
+            "value": "14029"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U3",
+          "value": {
+            "kind": "int",
+            "value": "13934"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V3",
+          "value": {
+            "kind": "int",
+            "value": "12773"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W3",
+          "value": {
+            "kind": "int",
+            "value": "14076"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X3",
+          "value": {
+            "kind": "int",
+            "value": "11200"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y3",
+          "value": {
+            "kind": "int",
+            "value": "19152"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z3",
+          "value": {
+            "kind": "int",
+            "value": "9051"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA3",
+          "value": {
+            "kind": "int",
+            "value": "8059"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB3",
+          "value": {
+            "kind": "int",
+            "value": "9691"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC3",
+          "value": {
+            "kind": "int",
+            "value": "12016"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD3",
+          "value": {
+            "kind": "int",
+            "value": "12013"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE3",
+          "value": {
+            "kind": "int",
+            "value": "17079"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF3",
+          "value": {
+            "kind": "int",
+            "value": "13917"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B4",
+          "value": {
+            "kind": "int",
+            "value": "13735"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C4",
+          "value": {
+            "kind": "int",
+            "value": "17850"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D4",
+          "value": {
+            "kind": "int",
+            "value": "21902"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E4",
+          "value": {
+            "kind": "int",
+            "value": "27218"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F4",
+          "value": {
+            "kind": "int",
+            "value": "35258"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G4",
+          "value": {
+            "kind": "int",
+            "value": "47123"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H4",
+          "value": {
+            "kind": "int",
+            "value": "31536"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I4",
+          "value": {
+            "kind": "int",
+            "value": "19818"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J4",
+          "value": {
+            "kind": "int",
+            "value": "17099"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K4",
+          "value": {
+            "kind": "int",
+            "value": "14224"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L4",
+          "value": {
+            "kind": "int",
+            "value": "11481"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M4",
+          "value": {
+            "kind": "int",
+            "value": "9188"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N4",
+          "value": {
+            "kind": "int",
+            "value": "3970"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O4",
+          "value": {
+            "kind": "int",
+            "value": "3846"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P4",
+          "value": {
+            "kind": "int",
+            "value": "3689"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q4",
+          "value": {
+            "kind": "int",
+            "value": "4642"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R4",
+          "value": {
+            "kind": "int",
+            "value": "5174"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S4",
+          "value": {
+            "kind": "int",
+            "value": "5893"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T4",
+          "value": {
+            "kind": "int",
+            "value": "5995"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U4",
+          "value": {
+            "kind": "int",
+            "value": "5757"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V4",
+          "value": {
+            "kind": "int",
+            "value": "4981"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W4",
+          "value": {
+            "kind": "int",
+            "value": "5033"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X4",
+          "value": {
+            "kind": "int",
+            "value": "3628"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y4",
+          "value": {
+            "kind": "int",
+            "value": "5715"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z4",
+          "value": {
+            "kind": "int",
+            "value": "3608"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA4",
+          "value": {
+            "kind": "int",
+            "value": "3046"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB4",
+          "value": {
+            "kind": "int",
+            "value": "3235"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC4",
+          "value": {
+            "kind": "int",
+            "value": "4266"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD4",
+          "value": {
+            "kind": "int",
+            "value": "4431"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE4",
+          "value": {
+            "kind": "int",
+            "value": "6437"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF4",
+          "value": {
+            "kind": "int",
+            "value": "5102"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B5",
+          "value": {
+            "kind": "int",
+            "value": "8681"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C5",
+          "value": {
+            "kind": "int",
+            "value": "10625"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D5",
+          "value": {
+            "kind": "int",
+            "value": "10907"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E5",
+          "value": {
+            "kind": "int",
+            "value": "9645"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F5",
+          "value": {
+            "kind": "int",
+            "value": "10544"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G5",
+          "value": {
+            "kind": "int",
+            "value": "12342"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H5",
+          "value": {
+            "kind": "int",
+            "value": "11805"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I5",
+          "value": {
+            "kind": "int",
+            "value": "11762"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J5",
+          "value": {
+            "kind": "int",
+            "value": "10307"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K5",
+          "value": {
+            "kind": "int",
+            "value": "9787"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L5",
+          "value": {
+            "kind": "int",
+            "value": "6180"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M5",
+          "value": {
+            "kind": "int",
+            "value": "5694"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N5",
+          "value": {
+            "kind": "int",
+            "value": "2070"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O5",
+          "value": {
+            "kind": "int",
+            "value": "3561"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P5",
+          "value": {
+            "kind": "int",
+            "value": "4492"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q5",
+          "value": {
+            "kind": "int",
+            "value": "5838"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R5",
+          "value": {
+            "kind": "int",
+            "value": "5316"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S5",
+          "value": {
+            "kind": "int",
+            "value": "6513"
+          },
+          "number_format": "#,##0"
+        }
+      ],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 32,
+          "text": 32
+        },
+        {
+          "row": 3,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 4,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 5,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 6,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 7,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 8,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 9,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 10,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 11,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 12,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 13,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 14,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 15,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 16,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 17,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 17,
+          "text": 17
+        },
+        {
+          "column": 2,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 3,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 4,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 5,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 6,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 7,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 8,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 9,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 10,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 11,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 12,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 13,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 14,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 15,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 16,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 17,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 18,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 19,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 20,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 21,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 22,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 23,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 24,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 25,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 26,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 27,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 28,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 29,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 30,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 31,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        },
+        {
+          "column": 32,
+          "nonempty": 16,
+          "text": 1,
+          "numeric": 15
+        }
+      ],
+      "freeze_panes": "AD3",
+      "auto_filter_ref": null
+    },
+    {
+      "title": "в инвалюте",
+      "title_normalized": "в инвалюте",
+      "title_presentation_signature": "винвалюте",
+      "state": "visible",
+      "declared_max_row": 17,
+      "declared_max_column": 32,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 17,
+        "min_column": 1,
+        "max_column": 32
+      },
+      "nonempty_cells": 513,
+      "cell_type_counts": {
+        "text": 141,
+        "numeric": 372
+      },
+      "merged_ranges": [
+        "A1:U1"
+      ],
+      "number_formats_top": [
+        [
+          "General",
+          134
+        ],
+        [
+          "@",
+          131
+        ],
+        [
+          "0.0;\\-0.0;0.0",
+          93
+        ],
+        [
+          "#,##0",
+          62
+        ],
+        [
+          "#,##0.00",
+          62
+        ],
+        [
+          "0.00;\\-0.00;0.00",
+          31
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Ипотечные жилищные кредиты в иностранной валюте, предоставленные физическим лицам-резидентам на приобретение и создание объектов индивидуального жилищного строительства",
+          "normalized": "ипотечные жилищные кредиты в иностранной валюте, предоставленные физическим лицам-резидентам на приобретение и создание объектов индивидуального жилищного строительства",
+          "presentation_signature": "ипотечныежилищныекредитывиностраннойвалютепредоставленныефизическимлицамрезидентамнаприобретениеисозданиеобъектовиндивидуальногожилищногостроительства"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Отчетная дата",
+          "normalized": "отчетная дата",
+          "presentation_signature": "отчетнаядата"
+        },
+        {
+          "coordinate": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "01.02.2024",
+          "normalized": "01.02.2024",
+          "presentation_signature": "01022024"
+        },
+        {
+          "coordinate": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "01.03.2024",
+          "normalized": "01.03.2024",
+          "presentation_signature": "01032024"
+        },
+        {
+          "coordinate": "D2",
+          "row": 2,
+          "column": 4,
+          "value": "01.04.2024",
+          "normalized": "01.04.2024",
+          "presentation_signature": "01042024"
+        },
+        {
+          "coordinate": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "01.05.2024",
+          "normalized": "01.05.2024",
+          "presentation_signature": "01052024"
+        },
+        {
+          "coordinate": "F2",
+          "row": 2,
+          "column": 6,
+          "value": "01.06.2024",
+          "normalized": "01.06.2024",
+          "presentation_signature": "01062024"
+        },
+        {
+          "coordinate": "G2",
+          "row": 2,
+          "column": 7,
+          "value": "01.07.2024",
+          "normalized": "01.07.2024",
+          "presentation_signature": "01072024"
+        },
+        {
+          "coordinate": "H2",
+          "row": 2,
+          "column": 8,
+          "value": "01.08.2024",
+          "normalized": "01.08.2024",
+          "presentation_signature": "01082024"
+        },
+        {
+          "coordinate": "I2",
+          "row": 2,
+          "column": 9,
+          "value": "01.09.2024",
+          "normalized": "01.09.2024",
+          "presentation_signature": "01092024"
+        },
+        {
+          "coordinate": "J2",
+          "row": 2,
+          "column": 10,
+          "value": "01.10.2024",
+          "normalized": "01.10.2024",
+          "presentation_signature": "01102024"
+        },
+        {
+          "coordinate": "K2",
+          "row": 2,
+          "column": 11,
+          "value": "01.11.2024",
+          "normalized": "01.11.2024",
+          "presentation_signature": "01112024"
+        },
+        {
+          "coordinate": "L2",
+          "row": 2,
+          "column": 12,
+          "value": "01.12.2024",
+          "normalized": "01.12.2024",
+          "presentation_signature": "01122024"
+        },
+        {
+          "coordinate": "M2",
+          "row": 2,
+          "column": 13,
+          "value": "01.01.2025",
+          "normalized": "01.01.2025",
+          "presentation_signature": "01012025"
+        },
+        {
+          "coordinate": "N2",
+          "row": 2,
+          "column": 14,
+          "value": "01.02.2025",
+          "normalized": "01.02.2025",
+          "presentation_signature": "01022025"
+        },
+        {
+          "coordinate": "O2",
+          "row": 2,
+          "column": 15,
+          "value": "01.03.2025",
+          "normalized": "01.03.2025",
+          "presentation_signature": "01032025"
+        },
+        {
+          "coordinate": "P2",
+          "row": 2,
+          "column": 16,
+          "value": "01.04.2025",
+          "normalized": "01.04.2025",
+          "presentation_signature": "01042025"
+        },
+        {
+          "coordinate": "Q2",
+          "row": 2,
+          "column": 17,
+          "value": "01.05.2025",
+          "normalized": "01.05.2025",
+          "presentation_signature": "01052025"
+        },
+        {
+          "coordinate": "R2",
+          "row": 2,
+          "column": 18,
+          "value": "01.06.2025",
+          "normalized": "01.06.2025",
+          "presentation_signature": "01062025"
+        },
+        {
+          "coordinate": "S2",
+          "row": 2,
+          "column": 19,
+          "value": "01.07.2025",
+          "normalized": "01.07.2025",
+          "presentation_signature": "01072025"
+        },
+        {
+          "coordinate": "T2",
+          "row": 2,
+          "column": 20,
+          "value": "01.08.2025",
+          "normalized": "01.08.2025",
+          "presentation_signature": "01082025"
+        },
+        {
+          "coordinate": "U2",
+          "row": 2,
+          "column": 21,
+          "value": "01.09.2025",
+          "normalized": "01.09.2025",
+          "presentation_signature": "01092025"
+        },
+        {
+          "coordinate": "V2",
+          "row": 2,
+          "column": 22,
+          "value": "01.10.2025",
+          "normalized": "01.10.2025",
+          "presentation_signature": "01102025"
+        },
+        {
+          "coordinate": "W2",
+          "row": 2,
+          "column": 23,
+          "value": "01.11.2025",
+          "normalized": "01.11.2025",
+          "presentation_signature": "01112025"
+        },
+        {
+          "coordinate": "X2",
+          "row": 2,
+          "column": 24,
+          "value": "01.12.2025",
+          "normalized": "01.12.2025",
+          "presentation_signature": "01122025"
+        },
+        {
+          "coordinate": "Y2",
+          "row": 2,
+          "column": 25,
+          "value": "01.01.2026",
+          "normalized": "01.01.2026",
+          "presentation_signature": "01012026"
+        },
+        {
+          "coordinate": "Z2",
+          "row": 2,
+          "column": 26,
+          "value": "01.02.2026",
+          "normalized": "01.02.2026",
+          "presentation_signature": "01022026"
+        },
+        {
+          "coordinate": "AA2",
+          "row": 2,
+          "column": 27,
+          "value": "01.03.2026",
+          "normalized": "01.03.2026",
+          "presentation_signature": "01032026"
+        },
+        {
+          "coordinate": "AB2",
+          "row": 2,
+          "column": 28,
+          "value": "01.04.2026",
+          "normalized": "01.04.2026",
+          "presentation_signature": "01042026"
+        },
+        {
+          "coordinate": "AC2",
+          "row": 2,
+          "column": 29,
+          "value": "01.05.2026",
+          "normalized": "01.05.2026",
+          "presentation_signature": "01052026"
+        },
+        {
+          "coordinate": "AD2",
+          "row": 2,
+          "column": 30,
+          "value": "01.06.2026",
+          "normalized": "01.06.2026",
+          "presentation_signature": "01062026"
+        },
+        {
+          "coordinate": "AE2",
+          "row": 2,
+          "column": 31,
+          "value": "01.07.2026",
+          "normalized": "01.07.2026",
+          "presentation_signature": "01072026"
+        },
+        {
+          "coordinate": "AF2",
+          "row": 2,
+          "column": 32,
+          "value": "01.08.2026",
+          "normalized": "01.08.2026",
+          "presentation_signature": "01082026"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Количество кредитов, предоставленных на приобретение и создание объектов ИЖС за месяц, единиц, в том числе",
+          "normalized": "количество кредитов, предоставленных на приобретение и создание объектов ижс за месяц, единиц, в том числе",
+          "presentation_signature": "количествокредитовпредоставленныхнаприобретениеисозданиеобъектовижсзамесяцединицвтомчисле"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "  на создание объектов ИЖС\n  за месяц, единиц",
+          "normalized": "на создание объектов ижс за месяц, единиц",
+          "presentation_signature": "насозданиеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "  на приобретение объектов\n  ИЖС за месяц, единиц",
+          "normalized": "на приобретение объектов ижс за месяц, единиц",
+          "presentation_signature": "наприобретениеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Объем кредитов, предоставленных на приобретение и создание объектов ИЖС за месяц, млн руб.",
+          "normalized": "объем кредитов, предоставленных на приобретение и создание объектов ижс за месяц, млн руб.",
+          "presentation_signature": "объемкредитовпредоставленныхнаприобретениеисозданиеобъектовижсзамесяцмлнруб"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "  на создание объектов ИЖС\n  за месяц, млн руб.",
+          "normalized": "на создание объектов ижс за месяц, млн руб.",
+          "presentation_signature": "насозданиеобъектовижсзамесяцмлнруб"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "  на приобретение объектов\n  ИЖС за месяц, единиц",
+          "normalized": "на приобретение объектов ижс за месяц, единиц",
+          "presentation_signature": "наприобретениеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "Доля кредитов, предоставленных на приобретение и создание объектов ИЖС, в общем объеме ипотечных жилищных кредитов, %",
+          "normalized": "доля кредитов, предоставленных на приобретение и создание объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнаприобретениеисозданиеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "B9",
+          "row": 9,
+          "column": 2,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "C9",
+          "row": 9,
+          "column": 3,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "D9",
+          "row": 9,
+          "column": 4,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "E9",
+          "row": 9,
+          "column": 5,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "F9",
+          "row": 9,
+          "column": 6,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "G9",
+          "row": 9,
+          "column": 7,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "H9",
+          "row": 9,
+          "column": 8,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "I9",
+          "row": 9,
+          "column": 9,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "J9",
+          "row": 9,
+          "column": 10,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "K9",
+          "row": 9,
+          "column": 11,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "L9",
+          "row": 9,
+          "column": 12,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "M9",
+          "row": 9,
+          "column": 13,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "N9",
+          "row": 9,
+          "column": 14,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "O9",
+          "row": 9,
+          "column": 15,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "P9",
+          "row": 9,
+          "column": 16,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Q9",
+          "row": 9,
+          "column": 17,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "R9",
+          "row": 9,
+          "column": 18,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "S9",
+          "row": 9,
+          "column": 19,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "T9",
+          "row": 9,
+          "column": 20,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "U9",
+          "row": 9,
+          "column": 21,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "V9",
+          "row": 9,
+          "column": 22,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "W9",
+          "row": 9,
+          "column": 23,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "X9",
+          "row": 9,
+          "column": 24,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Y9",
+          "row": 9,
+          "column": 25,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Z9",
+          "row": 9,
+          "column": 26,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AA9",
+          "row": 9,
+          "column": 27,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AB9",
+          "row": 9,
+          "column": 28,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AC9",
+          "row": 9,
+          "column": 29,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AD9",
+          "row": 9,
+          "column": 30,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AE9",
+          "row": 9,
+          "column": 31,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AF9",
+          "row": 9,
+          "column": 32,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "  доля кредитов,\n  предоставленных на\n  создание объектов ИЖС, в\n  общем объеме ипотечных\n  жилищных кредитов, %",
+          "normalized": "доля кредитов, предоставленных на создание объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнасозданиеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "B10",
+          "row": 10,
+          "column": 2,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "C10",
+          "row": 10,
+          "column": 3,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "D10",
+          "row": 10,
+          "column": 4,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "E10",
+          "row": 10,
+          "column": 5,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "F10",
+          "row": 10,
+          "column": 6,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "G10",
+          "row": 10,
+          "column": 7,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "H10",
+          "row": 10,
+          "column": 8,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "I10",
+          "row": 10,
+          "column": 9,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "J10",
+          "row": 10,
+          "column": 10,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "K10",
+          "row": 10,
+          "column": 11,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "L10",
+          "row": 10,
+          "column": 12,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "M10",
+          "row": 10,
+          "column": 13,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "N10",
+          "row": 10,
+          "column": 14,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "O10",
+          "row": 10,
+          "column": 15,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "P10",
+          "row": 10,
+          "column": 16,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Q10",
+          "row": 10,
+          "column": 17,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "R10",
+          "row": 10,
+          "column": 18,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "S10",
+          "row": 10,
+          "column": 19,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "T10",
+          "row": 10,
+          "column": 20,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "U10",
+          "row": 10,
+          "column": 21,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "V10",
+          "row": 10,
+          "column": 22,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "W10",
+          "row": 10,
+          "column": 23,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "X10",
+          "row": 10,
+          "column": 24,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Y10",
+          "row": 10,
+          "column": 25,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Z10",
+          "row": 10,
+          "column": 26,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AA10",
+          "row": 10,
+          "column": 27,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AB10",
+          "row": 10,
+          "column": 28,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AC10",
+          "row": 10,
+          "column": 29,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AD10",
+          "row": 10,
+          "column": 30,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AE10",
+          "row": 10,
+          "column": 31,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AF10",
+          "row": 10,
+          "column": 32,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "  доля кредитов,\n  предоставленных на\n  приобретение объектов\n  ИЖС, в общем объеме\n  ипотечных жилищных\n  кредитов, %",
+          "normalized": "доля кредитов, предоставленных на приобретение объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнаприобретениеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "B11",
+          "row": 11,
+          "column": 2,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "C11",
+          "row": 11,
+          "column": 3,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "D11",
+          "row": 11,
+          "column": 4,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "E11",
+          "row": 11,
+          "column": 5,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "F11",
+          "row": 11,
+          "column": 6,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "G11",
+          "row": 11,
+          "column": 7,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "H11",
+          "row": 11,
+          "column": 8,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "I11",
+          "row": 11,
+          "column": 9,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "J11",
+          "row": 11,
+          "column": 10,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "K11",
+          "row": 11,
+          "column": 11,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "L11",
+          "row": 11,
+          "column": 12,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "M11",
+          "row": 11,
+          "column": 13,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "N11",
+          "row": 11,
+          "column": 14,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "O11",
+          "row": 11,
+          "column": 15,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "P11",
+          "row": 11,
+          "column": 16,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Q11",
+          "row": 11,
+          "column": 17,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "R11",
+          "row": 11,
+          "column": 18,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "S11",
+          "row": 11,
+          "column": 19,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "T11",
+          "row": 11,
+          "column": 20,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "U11",
+          "row": 11,
+          "column": 21,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "V11",
+          "row": 11,
+          "column": 22,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "W11",
+          "row": 11,
+          "column": 23,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "X11",
+          "row": 11,
+          "column": 24,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Y11",
+          "row": 11,
+          "column": 25,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Z11",
+          "row": 11,
+          "column": 26,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AA11",
+          "row": 11,
+          "column": 27,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AB11",
+          "row": 11,
+          "column": 28,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AC11",
+          "row": 11,
+          "column": 29,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AD11",
+          "row": 11,
+          "column": 30,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AE11",
+          "row": 11,
+          "column": 31,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AF11",
+          "row": 11,
+          "column": 32,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "Средневзвешенный срок кредитования по кредитам, выданным на приобретение и создание объектов ИЖС в течение месяца, месяцев",
+          "normalized": "средневзвешенный срок кредитования по кредитам, выданным на приобретение и создание объектов ижс в течение месяца, месяцев",
+          "presentation_signature": "средневзвешенныйсроккредитованияпокредитамвыданнымнаприобретениеисозданиеобъектовижсвтечениемесяцамесяцев"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "  средневзвешенный срок\n  кредитования по кредитам,\n  выданным на создание\n  объектов ИЖС в течение\n  месяца, месяцев",
+          "normalized": "средневзвешенный срок кредитования по кредитам, выданным на создание объектов ижс в течение месяца, месяцев",
+          "presentation_signature": "средневзвешенныйсроккредитованияпокредитамвыданнымнасозданиеобъектовижсвтечениемесяцамесяцев"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "  средневзвешенный срок\n  кредитования по кредитам,\n  выданным на\n  приобретение объектов\n  ИЖС в течение месяца,\n  месяцев",
+          "normalized": "средневзвешенный срок кредитования по кредитам, выданным на приобретение объектов ижс в течение месяца, месяцев",
+          "presentation_signature": "средневзвешенныйсроккредитованияпокредитамвыданнымнаприобретениеобъектовижсвтечениемесяцамесяцев"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "Средневзвешенная ставка по кредитам, выданным на приобретение и создание объектов ИЖС в течение месяца, %",
+          "normalized": "средневзвешенная ставка по кредитам, выданным на приобретение и создание объектов ижс в течение месяца, %",
+          "presentation_signature": "средневзвешеннаяставкапокредитамвыданнымнаприобретениеисозданиеобъектовижсвтечениемесяца%"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "  средневзвешенная ставка\n  по кредитам, выданным на\n  создание объектов ИЖС в\n  течение месяца, %",
+          "normalized": "средневзвешенная ставка по кредитам, выданным на создание объектов ижс в течение месяца, %",
+          "presentation_signature": "средневзвешеннаяставкапокредитамвыданнымнасозданиеобъектовижсвтечениемесяца%"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "  средневзвешенная ставка\n  по кредитам, выданным на\n  приобретение объектов\n  ИЖС в течение месяца, %",
+          "normalized": "средневзвешенная ставка по кредитам, выданным на приобретение объектов ижс в течение месяца, %",
+          "presentation_signature": "средневзвешеннаяставкапокредитамвыданнымнаприобретениеобъектовижсвтечениемесяца%"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF3",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "C4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "D4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "E4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "F4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "G4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "H4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "I4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "J4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "K4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "L4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "M4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "N4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "O4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "P4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "Q4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "R4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "S4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "T4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "U4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "V4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "W4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "X4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "Y4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "Z4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "AA4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "AB4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "AC4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "AD4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "AE4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "AF4",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "B5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "C5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "D5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "E5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "F5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "G5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "H5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "I5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "J5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "K5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "L5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "M5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "N5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "O5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "P5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "Q5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "R5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        },
+        {
+          "coordinate": "S5",
+          "value": {
+            "kind": "int",
+            "value": "0"
+          },
+          "number_format": "General"
+        }
+      ],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 32,
+          "text": 32
+        },
+        {
+          "row": 3,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 4,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 5,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 6,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 7,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 8,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 9,
+          "nonempty": 32,
+          "text": 32
+        },
+        {
+          "row": 10,
+          "nonempty": 32,
+          "text": 32
+        },
+        {
+          "row": 11,
+          "nonempty": 32,
+          "text": 32
+        },
+        {
+          "row": 12,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 13,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 14,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 15,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 16,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 17,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 17,
+          "text": 17
+        },
+        {
+          "column": 2,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 3,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 4,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 5,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 6,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 7,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 8,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 9,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 10,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 11,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 12,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 13,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 14,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 15,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 16,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 17,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 18,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 19,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 20,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 21,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 22,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 23,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 24,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 25,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 26,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 27,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 28,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 29,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 30,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 31,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        },
+        {
+          "column": 32,
+          "nonempty": 16,
+          "text": 4,
+          "numeric": 12
+        }
+      ],
+      "freeze_panes": "AD3",
+      "auto_filter_ref": null
+    },
+    {
+      "title": "итого",
+      "title_normalized": "итого",
+      "title_presentation_signature": "итого",
+      "state": "visible",
+      "declared_max_row": 11,
+      "declared_max_column": 32,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 11,
+        "min_column": 1,
+        "max_column": 32
+      },
+      "nonempty_cells": 321,
+      "cell_type_counts": {
+        "text": 42,
+        "numeric": 279
+      },
+      "merged_ranges": [
+        "A1:U1"
+      ],
+      "number_formats_top": [
+        [
+          "#,##0",
+          186
+        ],
+        [
+          "0.0;\\-0.0;0.0",
+          93
+        ],
+        [
+          "@",
+          36
+        ],
+        [
+          "General",
+          6
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Ипотечные жилищные кредиты, предоставленные физическим лицам-резидентам на приобретение и создание объектов индивидуального жилищного строительства",
+          "normalized": "ипотечные жилищные кредиты, предоставленные физическим лицам-резидентам на приобретение и создание объектов индивидуального жилищного строительства",
+          "presentation_signature": "ипотечныежилищныекредитыпредоставленныефизическимлицамрезидентамнаприобретениеисозданиеобъектовиндивидуальногожилищногостроительства"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Отчетная дата",
+          "normalized": "отчетная дата",
+          "presentation_signature": "отчетнаядата"
+        },
+        {
+          "coordinate": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "01.02.2024",
+          "normalized": "01.02.2024",
+          "presentation_signature": "01022024"
+        },
+        {
+          "coordinate": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "01.03.2024",
+          "normalized": "01.03.2024",
+          "presentation_signature": "01032024"
+        },
+        {
+          "coordinate": "D2",
+          "row": 2,
+          "column": 4,
+          "value": "01.04.2024",
+          "normalized": "01.04.2024",
+          "presentation_signature": "01042024"
+        },
+        {
+          "coordinate": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "01.05.2024",
+          "normalized": "01.05.2024",
+          "presentation_signature": "01052024"
+        },
+        {
+          "coordinate": "F2",
+          "row": 2,
+          "column": 6,
+          "value": "01.06.2024",
+          "normalized": "01.06.2024",
+          "presentation_signature": "01062024"
+        },
+        {
+          "coordinate": "G2",
+          "row": 2,
+          "column": 7,
+          "value": "01.07.2024",
+          "normalized": "01.07.2024",
+          "presentation_signature": "01072024"
+        },
+        {
+          "coordinate": "H2",
+          "row": 2,
+          "column": 8,
+          "value": "01.08.2024",
+          "normalized": "01.08.2024",
+          "presentation_signature": "01082024"
+        },
+        {
+          "coordinate": "I2",
+          "row": 2,
+          "column": 9,
+          "value": "01.09.2024",
+          "normalized": "01.09.2024",
+          "presentation_signature": "01092024"
+        },
+        {
+          "coordinate": "J2",
+          "row": 2,
+          "column": 10,
+          "value": "01.10.2024",
+          "normalized": "01.10.2024",
+          "presentation_signature": "01102024"
+        },
+        {
+          "coordinate": "K2",
+          "row": 2,
+          "column": 11,
+          "value": "01.11.2024",
+          "normalized": "01.11.2024",
+          "presentation_signature": "01112024"
+        },
+        {
+          "coordinate": "L2",
+          "row": 2,
+          "column": 12,
+          "value": "01.12.2024",
+          "normalized": "01.12.2024",
+          "presentation_signature": "01122024"
+        },
+        {
+          "coordinate": "M2",
+          "row": 2,
+          "column": 13,
+          "value": "01.01.2025",
+          "normalized": "01.01.2025",
+          "presentation_signature": "01012025"
+        },
+        {
+          "coordinate": "N2",
+          "row": 2,
+          "column": 14,
+          "value": "01.02.2025",
+          "normalized": "01.02.2025",
+          "presentation_signature": "01022025"
+        },
+        {
+          "coordinate": "O2",
+          "row": 2,
+          "column": 15,
+          "value": "01.03.2025",
+          "normalized": "01.03.2025",
+          "presentation_signature": "01032025"
+        },
+        {
+          "coordinate": "P2",
+          "row": 2,
+          "column": 16,
+          "value": "01.04.2025",
+          "normalized": "01.04.2025",
+          "presentation_signature": "01042025"
+        },
+        {
+          "coordinate": "Q2",
+          "row": 2,
+          "column": 17,
+          "value": "01.05.2025",
+          "normalized": "01.05.2025",
+          "presentation_signature": "01052025"
+        },
+        {
+          "coordinate": "R2",
+          "row": 2,
+          "column": 18,
+          "value": "01.06.2025",
+          "normalized": "01.06.2025",
+          "presentation_signature": "01062025"
+        },
+        {
+          "coordinate": "S2",
+          "row": 2,
+          "column": 19,
+          "value": "01.07.2025",
+          "normalized": "01.07.2025",
+          "presentation_signature": "01072025"
+        },
+        {
+          "coordinate": "T2",
+          "row": 2,
+          "column": 20,
+          "value": "01.08.2025",
+          "normalized": "01.08.2025",
+          "presentation_signature": "01082025"
+        },
+        {
+          "coordinate": "U2",
+          "row": 2,
+          "column": 21,
+          "value": "01.09.2025",
+          "normalized": "01.09.2025",
+          "presentation_signature": "01092025"
+        },
+        {
+          "coordinate": "V2",
+          "row": 2,
+          "column": 22,
+          "value": "01.10.2025",
+          "normalized": "01.10.2025",
+          "presentation_signature": "01102025"
+        },
+        {
+          "coordinate": "W2",
+          "row": 2,
+          "column": 23,
+          "value": "01.11.2025",
+          "normalized": "01.11.2025",
+          "presentation_signature": "01112025"
+        },
+        {
+          "coordinate": "X2",
+          "row": 2,
+          "column": 24,
+          "value": "01.12.2025",
+          "normalized": "01.12.2025",
+          "presentation_signature": "01122025"
+        },
+        {
+          "coordinate": "Y2",
+          "row": 2,
+          "column": 25,
+          "value": "01.01.2026",
+          "normalized": "01.01.2026",
+          "presentation_signature": "01012026"
+        },
+        {
+          "coordinate": "Z2",
+          "row": 2,
+          "column": 26,
+          "value": "01.02.2026",
+          "normalized": "01.02.2026",
+          "presentation_signature": "01022026"
+        },
+        {
+          "coordinate": "AA2",
+          "row": 2,
+          "column": 27,
+          "value": "01.03.2026",
+          "normalized": "01.03.2026",
+          "presentation_signature": "01032026"
+        },
+        {
+          "coordinate": "AB2",
+          "row": 2,
+          "column": 28,
+          "value": "01.04.2026",
+          "normalized": "01.04.2026",
+          "presentation_signature": "01042026"
+        },
+        {
+          "coordinate": "AC2",
+          "row": 2,
+          "column": 29,
+          "value": "01.05.2026",
+          "normalized": "01.05.2026",
+          "presentation_signature": "01052026"
+        },
+        {
+          "coordinate": "AD2",
+          "row": 2,
+          "column": 30,
+          "value": "01.06.2026",
+          "normalized": "01.06.2026",
+          "presentation_signature": "01062026"
+        },
+        {
+          "coordinate": "AE2",
+          "row": 2,
+          "column": 31,
+          "value": "01.07.2026",
+          "normalized": "01.07.2026",
+          "presentation_signature": "01072026"
+        },
+        {
+          "coordinate": "AF2",
+          "row": 2,
+          "column": 32,
+          "value": "01.08.2026",
+          "normalized": "01.08.2026",
+          "presentation_signature": "01082026"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Количество кредитов, предоставленных на приобретение и создание объектов ИЖС за месяц, единиц, в том числе",
+          "normalized": "количество кредитов, предоставленных на приобретение и создание объектов ижс за месяц, единиц, в том числе",
+          "presentation_signature": "количествокредитовпредоставленныхнаприобретениеисозданиеобъектовижсзамесяцединицвтомчисле"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "  на создание объектов ИЖС\n  за месяц, единиц",
+          "normalized": "на создание объектов ижс за месяц, единиц",
+          "presentation_signature": "насозданиеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "  на приобретение объектов\n  ИЖС за месяц, единиц",
+          "normalized": "на приобретение объектов ижс за месяц, единиц",
+          "presentation_signature": "наприобретениеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Объем кредитов, предоставленных на приобретение и создание объектов ИЖС за месяц, млн руб.",
+          "normalized": "объем кредитов, предоставленных на приобретение и создание объектов ижс за месяц, млн руб.",
+          "presentation_signature": "объемкредитовпредоставленныхнаприобретениеисозданиеобъектовижсзамесяцмлнруб"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "  на создание объектов ИЖС\n  за месяц, млн руб.",
+          "normalized": "на создание объектов ижс за месяц, млн руб.",
+          "presentation_signature": "насозданиеобъектовижсзамесяцмлнруб"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "  на приобретение объектов\n  ИЖС за месяц, единиц",
+          "normalized": "на приобретение объектов ижс за месяц, единиц",
+          "presentation_signature": "наприобретениеобъектовижсзамесяцединиц"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "Доля кредитов, предоставленных на приобретение и создание объектов ИЖС, в общем объеме ипотечных жилищных кредитов, %",
+          "normalized": "доля кредитов, предоставленных на приобретение и создание объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнаприобретениеисозданиеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "  доля кредитов,\n  предоставленных на\n  создание объектов ИЖС, в\n  общем объеме ипотечных\n  жилищных кредитов, %",
+          "normalized": "доля кредитов, предоставленных на создание объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнасозданиеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "  доля кредитов,\n  предоставленных на\n  приобретение объектов\n  ИЖС, в общем объеме\n  ипотечных жилищных\n  кредитов, %",
+          "normalized": "доля кредитов, предоставленных на приобретение объектов ижс, в общем объеме ипотечных жилищных кредитов, %",
+          "presentation_signature": "долякредитовпредоставленныхнаприобретениеобъектовижсвобщемобъемеипотечныхжилищныхкредитов%"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B3",
+          "value": {
+            "kind": "int",
+            "value": "22416"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C3",
+          "value": {
+            "kind": "int",
+            "value": "28475"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D3",
+          "value": {
+            "kind": "int",
+            "value": "32809"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E3",
+          "value": {
+            "kind": "int",
+            "value": "36863"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F3",
+          "value": {
+            "kind": "int",
+            "value": "45802"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G3",
+          "value": {
+            "kind": "int",
+            "value": "59465"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H3",
+          "value": {
+            "kind": "int",
+            "value": "43341"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I3",
+          "value": {
+            "kind": "int",
+            "value": "31580"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J3",
+          "value": {
+            "kind": "int",
+            "value": "27406"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K3",
+          "value": {
+            "kind": "int",
+            "value": "24011"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L3",
+          "value": {
+            "kind": "int",
+            "value": "17661"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M3",
+          "value": {
+            "kind": "int",
+            "value": "14882"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N3",
+          "value": {
+            "kind": "int",
+            "value": "6040"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O3",
+          "value": {
+            "kind": "int",
+            "value": "7407"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P3",
+          "value": {
+            "kind": "int",
+            "value": "8181"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q3",
+          "value": {
+            "kind": "int",
+            "value": "10480"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R3",
+          "value": {
+            "kind": "int",
+            "value": "10490"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S3",
+          "value": {
+            "kind": "int",
+            "value": "12406"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T3",
+          "value": {
+            "kind": "int",
+            "value": "14029"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U3",
+          "value": {
+            "kind": "int",
+            "value": "13934"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V3",
+          "value": {
+            "kind": "int",
+            "value": "12773"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W3",
+          "value": {
+            "kind": "int",
+            "value": "14076"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X3",
+          "value": {
+            "kind": "int",
+            "value": "11200"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y3",
+          "value": {
+            "kind": "int",
+            "value": "19152"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z3",
+          "value": {
+            "kind": "int",
+            "value": "9051"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA3",
+          "value": {
+            "kind": "int",
+            "value": "8059"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB3",
+          "value": {
+            "kind": "int",
+            "value": "9691"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC3",
+          "value": {
+            "kind": "int",
+            "value": "12016"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD3",
+          "value": {
+            "kind": "int",
+            "value": "12013"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE3",
+          "value": {
+            "kind": "int",
+            "value": "17079"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF3",
+          "value": {
+            "kind": "int",
+            "value": "13917"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B4",
+          "value": {
+            "kind": "int",
+            "value": "13735"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C4",
+          "value": {
+            "kind": "int",
+            "value": "17850"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D4",
+          "value": {
+            "kind": "int",
+            "value": "21902"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E4",
+          "value": {
+            "kind": "int",
+            "value": "27218"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F4",
+          "value": {
+            "kind": "int",
+            "value": "35258"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G4",
+          "value": {
+            "kind": "int",
+            "value": "47123"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H4",
+          "value": {
+            "kind": "int",
+            "value": "31536"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I4",
+          "value": {
+            "kind": "int",
+            "value": "19818"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J4",
+          "value": {
+            "kind": "int",
+            "value": "17099"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K4",
+          "value": {
+            "kind": "int",
+            "value": "14224"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L4",
+          "value": {
+            "kind": "int",
+            "value": "11481"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M4",
+          "value": {
+            "kind": "int",
+            "value": "9188"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N4",
+          "value": {
+            "kind": "int",
+            "value": "3970"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O4",
+          "value": {
+            "kind": "int",
+            "value": "3846"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P4",
+          "value": {
+            "kind": "int",
+            "value": "3689"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q4",
+          "value": {
+            "kind": "int",
+            "value": "4642"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R4",
+          "value": {
+            "kind": "int",
+            "value": "5174"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S4",
+          "value": {
+            "kind": "int",
+            "value": "5893"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T4",
+          "value": {
+            "kind": "int",
+            "value": "5995"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U4",
+          "value": {
+            "kind": "int",
+            "value": "5757"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V4",
+          "value": {
+            "kind": "int",
+            "value": "4981"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W4",
+          "value": {
+            "kind": "int",
+            "value": "5033"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X4",
+          "value": {
+            "kind": "int",
+            "value": "3628"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y4",
+          "value": {
+            "kind": "int",
+            "value": "5715"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z4",
+          "value": {
+            "kind": "int",
+            "value": "3608"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA4",
+          "value": {
+            "kind": "int",
+            "value": "3046"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB4",
+          "value": {
+            "kind": "int",
+            "value": "3235"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC4",
+          "value": {
+            "kind": "int",
+            "value": "4266"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD4",
+          "value": {
+            "kind": "int",
+            "value": "4431"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE4",
+          "value": {
+            "kind": "int",
+            "value": "6437"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF4",
+          "value": {
+            "kind": "int",
+            "value": "5102"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B5",
+          "value": {
+            "kind": "int",
+            "value": "8681"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C5",
+          "value": {
+            "kind": "int",
+            "value": "10625"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D5",
+          "value": {
+            "kind": "int",
+            "value": "10907"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E5",
+          "value": {
+            "kind": "int",
+            "value": "9645"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F5",
+          "value": {
+            "kind": "int",
+            "value": "10544"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G5",
+          "value": {
+            "kind": "int",
+            "value": "12342"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H5",
+          "value": {
+            "kind": "int",
+            "value": "11805"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I5",
+          "value": {
+            "kind": "int",
+            "value": "11762"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J5",
+          "value": {
+            "kind": "int",
+            "value": "10307"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K5",
+          "value": {
+            "kind": "int",
+            "value": "9787"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L5",
+          "value": {
+            "kind": "int",
+            "value": "6180"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M5",
+          "value": {
+            "kind": "int",
+            "value": "5694"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N5",
+          "value": {
+            "kind": "int",
+            "value": "2070"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O5",
+          "value": {
+            "kind": "int",
+            "value": "3561"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P5",
+          "value": {
+            "kind": "int",
+            "value": "4492"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q5",
+          "value": {
+            "kind": "int",
+            "value": "5838"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R5",
+          "value": {
+            "kind": "int",
+            "value": "5316"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S5",
+          "value": {
+            "kind": "int",
+            "value": "6513"
+          },
+          "number_format": "#,##0"
+        }
+      ],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 32,
+          "text": 32
+        },
+        {
+          "row": 3,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 4,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 5,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 6,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 7,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 8,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 9,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 10,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        },
+        {
+          "row": 11,
+          "nonempty": 32,
+          "text": 1,
+          "numeric": 31
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 11,
+          "text": 11
+        },
+        {
+          "column": 2,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 3,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 4,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 5,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 6,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 7,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 8,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 9,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 10,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 11,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 12,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 13,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 14,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 15,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 16,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 17,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 18,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 19,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 20,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 21,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 22,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 23,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 24,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 25,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 26,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 27,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 28,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 29,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 30,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 31,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "column": 32,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        }
+      ],
+      "freeze_panes": "AD3",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/banksector/mortgage/02_41_Mortgage_ihc.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/banksector/mortgage/02_41_Mortgage_ihc.xlsx",
+    "http_status": 200,
+    "bytes": 18682,
+    "sha256": "1d83a3d3b2e79e7959164244e422cf41271a5ac6d301eefb83d8948d6fd0d78a",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 07:53:34 GMT"
+  }
+}

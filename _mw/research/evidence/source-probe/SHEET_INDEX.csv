@@ -1,0 +1,163 @@
+﻿source_id,family_hint,sheet,sheet_normalized,sheet_signature,state,nonempty_cells,text_cells,numeric_cells,formula_cells,date_cells,min_row,max_row,min_column,max_column,merged_ranges
+mortgage_debt_ind,mortgage_and_household_loans,в рублях,в рублях,врублях,visible,8924,97,8736,0,91,2,99,1,92,1
+mortgage_debt_ind,mortgage_and_household_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,8924,97,8736,0,91,2,99,1,92,1
+mortgage_debt_ind,mortgage_and_household_loans,в инвалюте,в инвалюте,винвалюте,visible,8924,97,8736,0,91,2,99,1,92,1
+mortgage_debt_ind,mortgage_and_household_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,8924,97,8736,0,91,2,99,1,92,1
+mortgage_debt_ind,mortgage_and_household_loans,итого,итого,итого,visible,8924,97,8736,0,91,2,99,1,92,1
+mortgage_debt_ind,mortgage_and_household_loans,в т.ч. просроч.,в т.ч. просроч.,втчпросроч,visible,8924,97,8736,0,91,2,99,1,92,1
+mortgage_debt,mortgage_and_household_loans,в рублях,в рублях,врублях,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_debt,mortgage_and_household_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_debt,mortgage_and_household_loans,по приобр. правам в рублях,по приобр. правам в рублях,поприобрправамврублях,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_debt,mortgage_and_household_loans,с учетом приобр. прав в рублях,с учетом приобр. прав в рублях,сучетомприобрправврублях,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_debt,mortgage_and_household_loans,в инвалюте,в инвалюте,винвалюте,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_debt,mortgage_and_household_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_debt,mortgage_and_household_loans,по приобр. правам в инвалюте,по приобр. правам в инвалюте,поприобрправамвинвалюте,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_debt,mortgage_and_household_loans,с учетом приобр. прав в инвал,с учетом приобр. прав в инвал,сучетомприобрправвинвал,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_debt,mortgage_and_household_loans,итого,итого,итого,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_debt,mortgage_and_household_loans,в т.ч. просроч.,в т.ч. просроч.,втчпросроч,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_debt,mortgage_and_household_loans,по приобр. правам итого,по приобр. правам итого,поприобрправамитого,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_debt,mortgage_and_household_loans,с учетом приобр. прав итого,с учетом приобр. прав итого,сучетомприобрправитого,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_scpa_debt,mortgage_and_household_loans,в рублях,в рублях,врублях,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_scpa_debt,mortgage_and_household_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_scpa_debt,mortgage_and_household_loans,по приобр. правам в рублях,по приобр. правам в рублях,поприобрправамврублях,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_scpa_debt,mortgage_and_household_loans,с учетом приобр. прав в рублях,с учетом приобр. прав в рублях,сучетомприобрправврублях,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_scpa_debt,mortgage_and_household_loans,в инвалюте,в инвалюте,винвалюте,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_scpa_debt,mortgage_and_household_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_scpa_debt,mortgage_and_household_loans,по приобр. правам в инвалюте,по приобр. правам в инвалюте,поприобрправамвинвалюте,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_scpa_debt,mortgage_and_household_loans,с учетом приобр. прав в инвал,с учетом приобр. прав в инвал,сучетомприобрправвинвал,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_scpa_debt,mortgage_and_household_loans,итого,итого,итого,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_scpa_debt,mortgage_and_household_loans,в т.ч. просроч.,в т.ч. просроч.,втчпросроч,visible,8924,97,8736,0,91,1,98,1,92,1
+mortgage_scpa_debt,mortgage_and_household_loans,по приобр. правам итого,по приобр. правам итого,поприобрправамитого,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_scpa_debt,mortgage_and_household_loans,с учетом приобр. прав итого,с учетом приобр. прав итого,сучетомприобрправитого,visible,6305,97,6144,0,64,1,98,1,65,1
+mortgage_ihc,mortgage_and_household_loans,в рублях,в рублях,врублях,visible,513,48,465,0,0,1,17,1,32,1
+mortgage_ihc,mortgage_and_household_loans,в инвалюте,в инвалюте,винвалюте,visible,513,141,372,0,0,1,17,1,32,1
+mortgage_ihc,mortgage_and_household_loans,итого,итого,итого,visible,321,42,279,0,0,1,11,1,32,1
+mortgage_full,mortgage_and_household_loans,в рублях,в рублях,врублях,visible,946,114,832,0,0,1,10,1,105,1
+mortgage_full,mortgage_and_household_loans,в инвалюте,в инвалюте,винвалюте,visible,829,233,596,0,0,1,10,1,92,1
+mortgage_full,mortgage_and_household_loans,итого,итого,итого,visible,645,99,546,0,0,1,8,1,92,1
+mortgage_scpa_full,mortgage_and_household_loans,в рублях,в рублях,врублях,visible,947,195,752,0,0,1,11,1,105,2
+mortgage_scpa_full,mortgage_and_household_loans,в инвалюте,в инвалюте,винвалюте,visible,830,334,496,0,0,1,11,1,92,2
+mortgage_scpa_full,mortgage_and_household_loans,итого,итого,итого,visible,646,154,492,0,0,1,9,1,92,2
+corp_new_loans_a,corporate_and_sme_loans,итого,итого,итого,visible,2485,119,2366,0,0,1,28,1,92,0
+corp_new_loans_a,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,2485,119,2366,0,0,1,28,1,92,0
+corp_new_loans_a,corporate_and_sme_loans,в инвалюте,в инвалюте,винвалюте,visible,2485,119,2366,0,0,1,28,1,92,0
+corp_new_loans_c,corporate_and_sme_loans,итого,итого,итого,visible,8529,186,8343,0,0,1,83,1,104,0
+corp_new_loans_c,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,8529,186,8343,0,0,1,83,1,104,0
+corp_new_loans_c,corporate_and_sme_loans,в валюте,в валюте,ввалюте,visible,8529,186,8343,0,0,1,83,1,104,0
+corp_debt_a,corporate_and_sme_loans,итого,итого,итого,visible,2485,28,2366,0,91,1,28,1,92,0
+corp_debt_a,corporate_and_sme_loans,в т.ч. просроч.,в т.ч. просроч.,втчпросроч,visible,2485,28,2366,0,91,1,28,1,92,0
+corp_debt_a,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,2485,28,2366,0,91,1,28,1,92,0
+corp_debt_a,corporate_and_sme_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,2485,28,2366,0,91,1,28,1,92,0
+corp_debt_a,corporate_and_sme_loans,в инвалюте,в инвалюте,винвалюте,visible,2485,28,2366,0,91,1,28,1,92,0
+corp_debt_a,corporate_and_sme_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,2485,28,2366,0,91,1,28,1,92,0
+corp_debt_c,corporate_and_sme_loans,итого,итого,итого,visible,8529,83,8343,0,103,1,83,1,104,0
+corp_debt_c,corporate_and_sme_loans,в т.ч. просроч. итого,в т.ч. просроч. итого,втчпросрочитого,visible,8529,83,8343,0,103,1,83,1,104,0
+corp_debt_c,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,8529,83,8343,0,103,1,83,1,104,0
+corp_debt_c,corporate_and_sme_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,8529,83,8343,0,103,1,83,1,104,0
+corp_debt_c,corporate_and_sme_loans,в инвалюте,в инвалюте,винвалюте,visible,8529,83,8343,0,103,1,83,1,104,0
+corp_debt_c,corporate_and_sme_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,8529,83,8343,0,103,1,83,1,104,0
+sme_debt,corporate_and_sme_loans,итого,итого,итого,visible,276,3,182,0,91,1,4,1,92,0
+sme_debt,corporate_and_sme_loans,в т.ч. просроч. итого,в т.ч. просроч. итого,втчпросрочитого,visible,276,3,182,0,91,1,4,1,92,0
+sme_debt,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,276,3,182,0,91,1,4,1,92,0
+sme_debt,corporate_and_sme_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,276,3,182,0,91,1,4,1,92,0
+sme_debt,corporate_and_sme_loans,в инвалюте,в инвалюте,винвалюте,visible,276,3,182,0,91,1,4,1,92,0
+sme_debt,corporate_and_sme_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,276,3,182,0,91,1,4,1,92,0
+sme_debt_activity,corporate_and_sme_loans,итого,итого,итого,visible,8529,83,8343,0,103,1,83,1,104,0
+sme_debt_activity,corporate_and_sme_loans,в т.ч. просроч. итого,в т.ч. просроч. итого,втчпросрочитого,visible,8529,83,8343,0,103,1,83,1,104,0
+sme_debt_activity,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,8529,83,8343,0,103,1,83,1,104,0
+sme_debt_activity,corporate_and_sme_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,8529,83,8343,0,103,1,83,1,104,0
+sme_debt_activity,corporate_and_sme_loans,в инвалюте,в инвалюте,винвалюте,visible,8529,83,8343,0,103,1,83,1,104,0
+sme_debt_activity,corporate_and_sme_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,8529,83,8343,0,103,1,83,1,104,0
+sme_debt_subj_f,corporate_and_sme_loans,МСП итого,мсп итого,мспитого,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_f,corporate_and_sme_loans,МСП в т.ч. просроч. итого,мсп в т.ч. просроч. итого,мспвтчпросрочитого,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_f,corporate_and_sme_loans,МСП в рублях,мсп в рублях,мспврублях,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_f,corporate_and_sme_loans,МСП в т.ч. проср. в рублях,мсп в т.ч. проср. в рублях,мспвтчпросрврублях,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_f,corporate_and_sme_loans,МСП в инвалюте,мсп в инвалюте,мспвинвалюте,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_f,corporate_and_sme_loans,МСП в т.ч. просроч. в инвалюте,мсп в т.ч. просроч. в инвалюте,мспвтчпросрочвинвалюте,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_i,corporate_and_sme_loans,ИП итого,ип итого,ипитого,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_i,corporate_and_sme_loans,ИП в т.ч. просроч. итого,ип в т.ч. просроч. итого,ипвтчпросрочитого,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_i,corporate_and_sme_loans,ИП в рублях,ип в рублях,ипврублях,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_i,corporate_and_sme_loans,ИП в т.ч просроч. в рублях,ип в т.ч просроч. в рублях,ипвтчпросрочврублях,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_i,corporate_and_sme_loans,ИП в инвалюте,ип в инвалюте,ипвинвалюте,visible,8924,97,8736,0,91,1,98,1,92,0
+sme_debt_subj_i,corporate_and_sme_loans,ИП в т.ч. просроч. в инвалюте,ип в т.ч. просроч. в инвалюте,ипвтчпросрочвинвалюте,visible,8924,97,8736,0,91,1,98,1,92,0
+corp_debt_subj,corporate_and_sme_loans,итого,итого,итого,visible,8924,97,8736,0,91,1,98,1,92,0
+corp_debt_subj,corporate_and_sme_loans,в т.ч. просроч. итого,в т.ч. просроч. итого,втчпросрочитого,visible,8924,97,8736,0,91,1,98,1,92,0
+corp_debt_subj,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,8924,97,8736,0,91,1,98,1,92,0
+corp_debt_subj,corporate_and_sme_loans,в т.ч. просроч. в рублях,в т.ч. просроч. в рублях,втчпросрочврублях,visible,8924,97,8736,0,91,1,98,1,92,0
+corp_debt_subj,corporate_and_sme_loans,в инвалюте,в инвалюте,винвалюте,visible,8924,97,8736,0,91,1,98,1,92,0
+corp_debt_subj,corporate_and_sme_loans,в т.ч. просроч. в инвалюте,в т.ч. просроч. в инвалюте,втчпросрочвинвалюте,visible,8924,97,8736,0,91,1,98,1,92,0
+debt_structure_benchmark_rate,corporate_and_sme_loans,Данные,данные,данные,visible,1381,241,1049,0,91,1,17,1,92,0
+sme_borrowers_info,corporate_and_sme_loans,Данные,данные,данные,visible,4430,608,3822,0,0,2,73,1,93,33
+sme_by_activity,corporate_and_sme_loans,итого,итого,итого,visible,8529,186,8343,0,0,1,83,1,104,0
+sme_by_activity,corporate_and_sme_loans,в рублях,в рублях,врублях,visible,8529,186,8343,0,0,1,83,1,104,0
+sme_by_activity,corporate_and_sme_loans,в валюте,в валюте,ввалюте,visible,8529,186,8343,0,0,1,83,1,104,0
+debt_securities,debt_securities,Квартал (номинальная стоимость),квартал (номинальная стоимость),кварталноминальнаястоимость,visible,5638,136,5448,0,54,2,142,1,56,7
+debt_securities,debt_securities,Месяц (номинальная стоимость),месяц (номинальная стоимость),месяцноминальнаястоимость,visible,16523,136,16224,0,163,2,142,1,165,7
+debt_securities,debt_securities,Квартал (рыночная стоимость),квартал (рыночная стоимость),кварталрыночнаястоимость,visible,5639,137,5448,0,54,2,143,1,56,8
+debt_securities,debt_securities,Месяц (рыночная стоимость),месяц (рыночная стоимость),месяцрыночнаястоимость,visible,16524,137,16224,0,163,2,143,1,165,8
+funds_all,borrowings,в рублях,в рублях,врублях,visible,1409,364,1045,0,0,1,10,1,176,1
+funds_all,borrowings,в инвалюте,в инвалюте,винвалюте,visible,1409,364,1045,0,0,1,10,1,176,1
+funds_all,borrowings,итого,итого,итого,visible,1409,364,1045,0,0,1,10,1,176,1
+funds_clients,borrowings,в рублях,в рублях,врублях,visible,17428,480,16948,0,0,1,104,1,177,100
+funds_clients,borrowings,в инвалюте,в инвалюте,винвалюте,visible,17428,480,16948,0,0,1,104,1,177,100
+funds_clients,borrowings,итого,итого,итого,visible,17428,480,16948,0,0,1,104,1,177,100
+funds_org,borrowings,в рублях,в рублях,врублях,visible,17428,480,16948,0,0,1,104,1,177,100
+funds_org,borrowings,в инвалюте,в инвалюте,винвалюте,visible,17428,480,16948,0,0,1,104,1,177,100
+funds_org,borrowings,итого,итого,итого,visible,17428,480,16948,0,0,1,104,1,177,100
+dep_corp,borrowings,в рублях,в рублях,врублях,visible,17428,480,16948,0,0,1,104,1,177,100
+dep_corp,borrowings,в инвалюте,в инвалюте,винвалюте,visible,17428,480,16948,0,0,1,104,1,177,100
+dep_corp,borrowings,итого,итого,итого,visible,17428,480,16948,0,0,1,104,1,176,1
+dep_ind,borrowings,в рублях,в рублях,врублях,visible,17428,480,16948,0,0,1,104,1,177,100
+dep_ind,borrowings,в инвалюте,в инвалюте,винвалюте,visible,17428,480,16948,0,0,1,104,1,177,100
+dep_ind,borrowings,итого,итого,итого,visible,17428,480,16948,0,0,1,104,1,177,100
+dep_ind_no_escrow,borrowings,в рублях,в рублях,врублях,visible,8526,184,8342,0,0,1,99,1,87,1
+dep_ind_no_escrow,borrowings,в инвалюте,в инвалюте,винвалюте,visible,8526,184,8342,0,0,1,99,1,87,1
+dep_ind_no_escrow,borrowings,итого,итого,итого,visible,8526,184,8342,0,0,1,99,1,87,1
+dep_entrepreneur,borrowings,в рублях,в рублях,врублях,visible,16240,432,15808,0,0,1,104,1,165,100
+dep_entrepreneur,borrowings,в инвалюте,в инвалюте,винвалюте,visible,16240,432,15808,0,0,1,104,1,165,100
+dep_entrepreneur,borrowings,итого,итого,итого,visible,16240,432,15808,0,0,1,104,1,165,100
+escrow_accounts,borrowings,в рублях,в рублях,врублях,visible,8526,197,8329,0,0,1,99,1,87,1
+budget_all,borrowings,в рублях,в рублях,врублях,visible,1056,181,875,0,0,1,7,1,176,1
+budget_all,borrowings,в инвалюте,в инвалюте,винвалюте,visible,1056,181,875,0,0,1,7,1,176,1
+budget_all,borrowings,итого,итого,итого,visible,1056,181,875,0,0,1,7,1,176,1
+households_bm,households,Методологический комментарий,методологический комментарий,методологическийкомментарий,visible,12,12,0,0,0,1,22,1,1,0
+households_bm,households,Балансы,балансы,балансы,visible,9319,104,9111,0,104,2,109,1,105,0
+households_bm,households,Балансы (с.к.),балансы (с.к.),балансыск,visible,9202,197,8901,0,104,2,106,1,105,0
+households_bm,households,Метаданные,метаданные,метаданные,visible,97,97,0,0,0,1,32,1,8,8
+households_om,households,Методологический комментарий,методологический комментарий,методологическийкомментарий,visible,12,12,0,0,0,1,22,1,1,0
+households_om,households,Операции,операции,операции,visible,9233,210,9023,0,0,2,112,1,104,0
+households_om,households,Операции (с.к.),операции (с.к.),операцииск,visible,9129,343,8786,0,0,2,109,1,104,0
+households_om,households,Метаданные,метаданные,метаданные,visible,90,90,0,0,0,1,37,1,8,9
+monetary_agg,monetary_financial_statistics,Денежные агрегаты,денежные агрегаты,денежныеагрегаты,visible,5883,21,5458,0,404,1,22,1,405,0
+monetary_agg,monetary_financial_statistics,Денежные агрегаты_Сектора,денежные агрегаты_сектора,денежныеагрегатысектора,visible,1010,25,940,0,45,1,27,1,48,0
+monetary_agg,monetary_financial_statistics,Годовые темпы прироста,годовые темпы прироста,годовыетемпыприроста,visible,5440,22,5122,0,296,1,23,1,297,0
+monetary_agg,monetary_financial_statistics,Темпы прироста к началу год,темпы прироста к началу год,темпыприростакначалугод,visible,5659,22,5329,0,308,1,23,1,309,0
+monetary_agg,monetary_financial_statistics,Темпы прироста за месяц,темпы прироста за месяц,темпыприростазамесяц,visible,5577,22,5247,0,308,1,23,1,309,0
+survey_cb,monetary_financial_statistics,Агрегированная форма обзора,агрегированная форма обзора,агрегированнаяформаобзора,visible,6490,22,6160,0,308,1,23,1,309,0
+balance_odc,monetary_financial_statistics,Баланс КО,баланс ко,баланско,visible,16529,203,16186,0,140,1,122,1,141,0
+balance_odc,monetary_financial_statistics,Кредиты,кредиты,кредиты,visible,14804,104,14560,0,140,1,105,1,141,0
+balance_odc,monetary_financial_statistics,Депозиты в М2Х,депозиты в м2х,депозитывм2х,visible,18923,134,18649,0,140,1,135,1,141,0
+balance_odc,monetary_financial_statistics,Прочие депозиты,прочие депозиты,прочиедепозиты,visible,28125,199,27786,0,140,1,200,1,141,0
+survey_odc,monetary_financial_statistics,Агрегированная форма обзора,агрегированная форма обзора,агрегированнаяформаобзора,visible,29666,98,29260,0,308,1,99,1,309,0
+survey_dc_new,monetary_financial_statistics,Агрегированная форма обзора,агрегированная форма обзора,агрегированнаяформаобзора,visible,16690,58,16324,0,308,1,59,1,309,0
+annex_survey_dc,monetary_financial_statistics,Приложение к обзору,приложение к обзору,приложениекобзору,visible,1693,13,1540,0,140,1,14,1,141,0
+annex_survey_dc,monetary_financial_statistics,Приложение к обзору (с.к),приложение к обзору (с.к),приложениекобзоруск,visible,1693,13,1260,280,140,1,14,1,141,0
+annex_survey_dc,monetary_financial_statistics,Метаданные,метаданные,метаданные,visible,49,49,0,0,0,1,28,1,4,8
+debt_new,external_debt,2003-2026,2003-2026,20032026,visible,2696,54,2548,0,94,1,46,1,95,0
+debt_maturity,external_debt,2014-2022,2014-2022,20142022,visible,1867,67,1767,0,33,1,72,1,34,0
+debt_maturity,external_debt,2021-2026,2021-2026,20212026,visible,931,51,858,0,22,1,56,1,23,0
+debt_cur-mat_new,external_debt,2012-2022,2012-2022,20122022,visible,1411,46,1326,0,39,1,50,1,40,0
+debt_cur-mat_new,external_debt,2012-2026,2012-2026,20122026,visible,1607,39,1512,0,56,1,44,1,57,0
+obs_table_20s,other,Активы - всего,активы - всего,активывсего,visible,17154,390,16637,0,127,2,139,2,130,5
+obs_table_20s,other,Активы - рубли,активы - рубли,активырубли,visible,17154,985,16042,0,127,2,139,2,130,5
+obs_table_20s,other,Активы - валюта,активы - валюта,активывалюта,visible,17154,985,16042,0,127,2,139,2,130,5
+obs_table_20s,other,Активы - в ин. валюте $,активы - в ин. валюте $,активывинвалюте$,visible,17154,985,16042,0,127,2,139,2,130,5
+obs_table_20s,other,Пассивы - всего,пассивы - всего,пассивывсего,visible,9543,144,9272,0,127,2,84,2,130,11
+obs_table_20s,other,Пассивы - рубли,пассивы - рубли,пассивырубли,visible,9543,2363,7053,0,127,2,84,2,130,10
+obs_table_20s,other,Пассивы - валюта,пассивы - валюта,пассивывалюта,visible,9543,2363,7053,0,127,2,84,2,130,10
+obs_table_20s,other,Пассивы - в ин. валюте $,пассивы - в ин. валюте $,пассивывинвалюте$,visible,9543,2363,7053,0,127,2,84,2,130,10
+obs_table_20s,other,Корпоративные кредиты по срокам,корпоративные кредиты по срокам,корпоративныекредитыпосрокам,visible,1283,140,1016,0,127,2,16,2,129,0
+obs_table_20s,other,Кредиты физ.лицам по срокам,кредиты физ.лицам по срокам,кредитыфизлицампосрокам,visible,1411,141,1143,0,127,2,17,2,129,0
+exchange_rate,exchange_rates,Ежемесячные,ежемесячные,ежемесячные,visible,9645,2544,7101,0,0,1,51,1,261,5
+exchange_rate,exchange_rates,Ежеквартальные,ежеквартальные,ежеквартальные,visible,3229,875,2354,0,0,1,53,1,87,5
+exchange_rate,exchange_rates,Доли,доли,доли,visible,914,50,847,17,0,1,50,1,19,3

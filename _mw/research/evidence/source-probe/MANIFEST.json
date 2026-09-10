@@ -1,0 +1,1189 @@
+[
+  {
+    "source": {
+      "source_id": "mortgage_debt_ind",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_05_Debt_ind.xlsx",
+      "registry_label": "Кредиты физлиц: задолженность",
+      "family_hint": "mortgage_and_household_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_05_Debt_ind.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 07:53:30 GMT",
+    "content_length_header": "326094",
+    "bytes": 326094,
+    "sha256": "3e38ea0e4265ce542f2bf1351878b6bad477476ce27980a32f1c3b4a6dcf9282",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте",
+      "итого",
+      "в т.ч. просроч."
+    ],
+    "nonempty_cells": 53544,
+    "text_cells": 582,
+    "numeric_cells": 52416,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "mortgage_debt",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_14_Debt_mortgage.xlsx",
+      "registry_label": "Ипотека: задолженность",
+      "family_hint": "mortgage_and_household_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_14_Debt_mortgage.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 07:53:34 GMT",
+    "content_length_header": "509467",
+    "bytes": 509467,
+    "sha256": "547b94c1411682156e9fe7f1a29f25c8feef467df2ac3738443158c06b0fcd50",
+    "zip_magic": true,
+    "sheets": 12,
+    "sheet_names": [
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "по приобр. правам в рублях",
+      "с учетом приобр. прав в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте",
+      "по приобр. правам в инвалюте",
+      "с учетом приобр. прав в инвал",
+      "итого",
+      "в т.ч. просроч.",
+      "по приобр. правам итого",
+      "с учетом приобр. прав итого"
+    ],
+    "nonempty_cells": 91374,
+    "text_cells": 1164,
+    "numeric_cells": 89280,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "mortgage_scpa_debt",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_18_Debt_scpa_mortgage.xlsx",
+      "registry_label": "Ипотека: задолженность по ДДУ",
+      "family_hint": "mortgage_and_household_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_18_Debt_scpa_mortgage.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 07:53:34 GMT",
+    "content_length_header": "445708",
+    "bytes": 445708,
+    "sha256": "f5d3b9bb07e0ead83d18d9a02043479aa3013516469bf3c67eb256e4974ec511",
+    "zip_magic": true,
+    "sheets": 12,
+    "sheet_names": [
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "по приобр. правам в рублях",
+      "с учетом приобр. прав в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте",
+      "по приобр. правам в инвалюте",
+      "с учетом приобр. прав в инвал",
+      "итого",
+      "в т.ч. просроч.",
+      "по приобр. правам итого",
+      "с учетом приобр. прав итого"
+    ],
+    "nonempty_cells": 91374,
+    "text_cells": 1164,
+    "numeric_cells": 89280,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "mortgage_ihc",
+      "url": "https://www.cbr.ru/vfs/statistics/banksector/mortgage/02_41_Mortgage_ihc.xlsx",
+      "registry_label": "Ипотека: жильё в строящихся домах",
+      "family_hint": "mortgage_and_household_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/banksector/mortgage/02_41_Mortgage_ihc.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 07:53:34 GMT",
+    "content_length_header": "18682",
+    "bytes": 18682,
+    "sha256": "1d83a3d3b2e79e7959164244e422cf41271a5ac6d301eefb83d8948d6fd0d78a",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 1347,
+    "text_cells": 231,
+    "numeric_cells": 1116,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "mortgage_full",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_02_Mortgage.xlsx",
+      "registry_label": "Ипотека: полный ряд",
+      "family_hint": "mortgage_and_household_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_02_Mortgage.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 07:53:30 GMT",
+    "content_length_header": "27478",
+    "bytes": 27478,
+    "sha256": "f8d531c0c94a2253efd00025ddfed99c9b72d2842ea62ceb39ff04dc4de6c9ba",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 2420,
+    "text_cells": 446,
+    "numeric_cells": 1974,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "mortgage_scpa_full",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_03_Scpa_mortgage.xlsx",
+      "registry_label": "Ипотека: ДДУ полный ряд",
+      "family_hint": "mortgage_and_household_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Mortgage/02_03_Scpa_mortgage.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 07:53:30 GMT",
+    "content_length_header": "25962",
+    "bytes": 25962,
+    "sha256": "f274c391e7d51de4cbc6cc539037402f2dacd3b2e28d981a5c0cbf07b84544a4",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 2423,
+    "text_cells": 683,
+    "numeric_cells": 1740,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "corp_new_loans_a",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_01_A_New_loans_corp_by_activity.xlsx",
+      "registry_label": "Корпорации: новые кредиты A",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_01_A_New_loans_corp_by_activity.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:34 GMT",
+    "content_length_header": "61559",
+    "bytes": 61559,
+    "sha256": "a769a335c320d619f8b13277a45ea48781a061fb58004ff8bf39902470ac28c8",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "итого",
+      "в рублях",
+      "в инвалюте"
+    ],
+    "nonempty_cells": 7455,
+    "text_cells": 357,
+    "numeric_cells": 7098,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "corp_new_loans_c",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_01_C_New_loans_corp_by_activity.xlsx",
+      "registry_label": "Корпорации: новые кредиты C",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_01_C_New_loans_corp_by_activity.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:34 GMT",
+    "content_length_header": "158448",
+    "bytes": 158448,
+    "sha256": "a3343114277e3d2e1609531c2f02e7eda5d8e2c54c5fcf3a0818c5240559ad30",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "итого",
+      "в рублях",
+      "в валюте"
+    ],
+    "nonempty_cells": 25587,
+    "text_cells": 558,
+    "numeric_cells": 25029,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "corp_debt_a",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_02_A_Debt_corp_by_activity.xlsx",
+      "registry_label": "Корпорации: долг A",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_02_A_Debt_corp_by_activity.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:34 GMT",
+    "content_length_header": "113132",
+    "bytes": 113132,
+    "sha256": "9c27c3854f4343059b741d9b22ec473514c674410ac48655df9006e9a3c6e16b",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "итого",
+      "в т.ч. просроч.",
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте"
+    ],
+    "nonempty_cells": 14910,
+    "text_cells": 168,
+    "numeric_cells": 14196,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "corp_debt_c",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_02_C_Debt_corp_by_activity.xlsx",
+      "registry_label": "Корпорации: долг C",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_02_C_Debt_corp_by_activity.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:34 GMT",
+    "content_length_header": "308259",
+    "bytes": 308259,
+    "sha256": "7c11e555cf3a12db71f924b30b39e641fa7b07c18699e084be47ca0eee600275",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "итого",
+      "в т.ч. просроч. итого",
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте"
+    ],
+    "nonempty_cells": 51174,
+    "text_cells": 498,
+    "numeric_cells": 50058,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "sme_debt",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_11_Debt_sme.xlsx",
+      "registry_label": "МСП: долг",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_11_Debt_sme.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:36 GMT",
+    "content_length_header": "24306",
+    "bytes": 24306,
+    "sha256": "e570e5d5b822a3cf7793ee689a0e70da21fd390fe32eade712ecedcbf36e6eaf",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "итого",
+      "в т.ч. просроч. итого",
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте"
+    ],
+    "nonempty_cells": 1656,
+    "text_cells": 18,
+    "numeric_cells": 1092,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "sme_debt_activity",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_11_F_Debt_sme_by_activity.xlsx",
+      "registry_label": "МСП: долг по видам деятельности",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_11_F_Debt_sme_by_activity.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:36 GMT",
+    "content_length_header": "276226",
+    "bytes": 276226,
+    "sha256": "4f321647865cdc71f75b22ab188b0675679a5db0976c573d3244054e87fbbced",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "итого",
+      "в т.ч. просроч. итого",
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте"
+    ],
+    "nonempty_cells": 51174,
+    "text_cells": 498,
+    "numeric_cells": 50058,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "sme_debt_subj_f",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_13_F_Debt_sme_subj.xlsx",
+      "registry_label": "МСП: долг по субъектам F",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_13_F_Debt_sme_subj.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:38 GMT",
+    "content_length_header": "301990",
+    "bytes": 301990,
+    "sha256": "175f2d619a589bbc8526a3d9cdd02894a49246acc0390713706dbaf8422adf35",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "МСП итого",
+      "МСП в т.ч. просроч. итого",
+      "МСП в рублях",
+      "МСП в т.ч. проср. в рублях",
+      "МСП в инвалюте",
+      "МСП в т.ч. просроч. в инвалюте"
+    ],
+    "nonempty_cells": 53544,
+    "text_cells": 582,
+    "numeric_cells": 52416,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "sme_debt_subj_i",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_13_I_Debt_sme_subj.xlsx",
+      "registry_label": "МСП: долг по субъектам I",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_13_I_Debt_sme_subj.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:38 GMT",
+    "content_length_header": "263622",
+    "bytes": 263622,
+    "sha256": "759689c850d1b073466f58ad642e0787432e94991806f9fa647ac903ae5963f2",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "ИП итого",
+      "ИП в т.ч. просроч. итого",
+      "ИП в рублях",
+      "ИП в т.ч просроч. в рублях",
+      "ИП в инвалюте",
+      "ИП в т.ч. просроч. в инвалюте"
+    ],
+    "nonempty_cells": 53544,
+    "text_cells": 582,
+    "numeric_cells": 52416,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "corp_debt_subj",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_05_D_Debt_subj.xlsx",
+      "registry_label": "Корпорации: долг по субъектам",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_05_D_Debt_subj.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:36 GMT",
+    "content_length_header": "335840",
+    "bytes": 335840,
+    "sha256": "a5ca9fa79e2d3c93d522fa99cc9468ca2fdca6d30dced0872cfcee46b2ea011c",
+    "zip_magic": true,
+    "sheets": 6,
+    "sheet_names": [
+      "итого",
+      "в т.ч. просроч. итого",
+      "в рублях",
+      "в т.ч. просроч. в рублях",
+      "в инвалюте",
+      "в т.ч. просроч. в инвалюте"
+    ],
+    "nonempty_cells": 53544,
+    "text_cells": 582,
+    "numeric_cells": 52416,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "debt_structure_benchmark_rate",
+      "url": "https://cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/02_03_Debt_structure_by_benchmark_interest_rate_type.xlsx",
+      "registry_label": "Структура долга по типу бенчмарк-ставки",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/02_03_Debt_structure_by_benchmark_interest_rate_type.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:40 GMT",
+    "content_length_header": "26188",
+    "bytes": 26188,
+    "sha256": "8eb860fd3bb806b06fc4e4f0ce0c126d2748708777234e33738c2f677e658f85",
+    "zip_magic": true,
+    "sheets": 1,
+    "sheet_names": [
+      "Данные"
+    ],
+    "nonempty_cells": 1381,
+    "text_cells": 241,
+    "numeric_cells": 1049,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "sme_borrowers_info",
+      "url": "https://www.cbr.ru/vfs/statistics/banksector/loans_to_corporations/02_02_SME_Borrowers_info.xlsx",
+      "registry_label": "МСП: сведения о заёмщиках",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/banksector/loans_to_corporations/02_02_SME_Borrowers_info.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:40 GMT",
+    "content_length_header": "37783",
+    "bytes": 37783,
+    "sha256": "c6f4295fdf60846e7233584aa35435a7f5895bdf506668d60aa88a66c0129e5a",
+    "zip_magic": true,
+    "sheets": 1,
+    "sheet_names": [
+      "Данные"
+    ],
+    "nonempty_cells": 4430,
+    "text_cells": 608,
+    "numeric_cells": 3822,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "sme_by_activity",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_10_F_New_loans_sme_by_activity.xlsx",
+      "registry_label": "МСП: выдачи по видам деятельности",
+      "family_hint": "corporate_and_sme_loans"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_10_F_New_loans_sme_by_activity.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:36 GMT",
+    "content_length_header": "139910",
+    "bytes": 139910,
+    "sha256": "6289837b39de0e2382899360f5fe768103a7004207d44bcbb9f44d2385255de4",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "итого",
+      "в рублях",
+      "в валюте"
+    ],
+    "nonempty_cells": 25587,
+    "text_cells": 558,
+    "numeric_cells": 25029,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "debt_securities",
+      "url": "https://www.cbr.ru/vfs/statistics/debt_securities/66-debt_securities.xlsx",
+      "registry_label": "Долговые ценные бумаги",
+      "family_hint": "debt_securities"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/debt_securities/66-debt_securities.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 21 Aug 2026 13:37:18 GMT",
+    "content_length_header": "359854",
+    "bytes": 359854,
+    "sha256": "8ace41a053996f8cd9a0af7bd2d3daa3545a4761488b8c938b226e9238065d4a",
+    "zip_magic": true,
+    "sheets": 4,
+    "sheet_names": [
+      "Квартал (номинальная стоимость)",
+      "Месяц (номинальная стоимость)",
+      "Квартал (рыночная стоимость)",
+      "Месяц (рыночная стоимость)"
+    ],
+    "nonempty_cells": 44324,
+    "text_cells": 546,
+    "numeric_cells": 43344,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "funds_all",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_01_Funds_all.xlsx",
+      "registry_label": "Средства совокупные",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_01_Funds_all.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:06 GMT",
+    "content_length_header": "42418",
+    "bytes": 42418,
+    "sha256": "072c834455da6c2f1cabf313e3e50d5f50ea50a70015f0fa070b7a972dd8b224",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 4227,
+    "text_cells": 1092,
+    "numeric_cells": 3135,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "funds_clients",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_02_Funds_clients.xlsx",
+      "registry_label": "Средства клиентов",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_02_Funds_clients.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:06 GMT",
+    "content_length_header": "381407",
+    "bytes": 381407,
+    "sha256": "6d4d865c19304ff966bbd303baebc41d248255b617a6a9cb9eb2c409f4f4ec94",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 52284,
+    "text_cells": 1440,
+    "numeric_cells": 50844,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "funds_org",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_04_Funds_org.xlsx",
+      "registry_label": "Средства организаций",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_04_Funds_org.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:06 GMT",
+    "content_length_header": "352311",
+    "bytes": 352311,
+    "sha256": "768875b9ffd9412827046ce09fc9638644005c35297d0432e3d0ad1f985e378f",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 52284,
+    "text_cells": 1440,
+    "numeric_cells": 50844,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "dep_corp",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_05_Dep_corp.xlsx",
+      "registry_label": "Депозиты корпораций",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_05_Dep_corp.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:06 GMT",
+    "content_length_header": "344053",
+    "bytes": 344053,
+    "sha256": "893e6e643900d135ed3c56e9252335a4b6f09c6204f6298a58f8b5a9fb6cd0cd",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 52284,
+    "text_cells": 1440,
+    "numeric_cells": 50844,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "dep_ind",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_06_Dep_ind.xlsx",
+      "registry_label": "Депозиты физлиц",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_06_Dep_ind.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:06 GMT",
+    "content_length_header": "373513",
+    "bytes": 373513,
+    "sha256": "0764e15ec6ba99edbf4579827024bf947e055807c97a501746c52a157a074417",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 52284,
+    "text_cells": 1440,
+    "numeric_cells": 50844,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "dep_ind_no_escrow",
+      "url": "https://www.cbr.ru/vfs/statistics/banksector/borrowings/02_27_Dep_ind_excluding_escrow.xlsx",
+      "registry_label": "Депозиты физлиц без escrow",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/banksector/borrowings/02_27_Dep_ind_excluding_escrow.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:08 GMT",
+    "content_length_header": "184936",
+    "bytes": 184936,
+    "sha256": "8d1236f90adaf814b91e549b0ac60cf3b8ac749d53dc2a5fdf9f8257f935b075",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 25578,
+    "text_cells": 552,
+    "numeric_cells": 25026,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "dep_entrepreneur",
+      "url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_07_Dep_enterpreneur.xlsx",
+      "registry_label": "Депозиты ИП",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Borrowings/02_07_Dep_enterpreneur.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:06 GMT",
+    "content_length_header": "296408",
+    "bytes": 296408,
+    "sha256": "81d78d1bedca33e234caaf35a157a7822b7acec63edc8c303426cd18a325048d",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 48720,
+    "text_cells": 1296,
+    "numeric_cells": 47424,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "escrow_accounts",
+      "url": "https://www.cbr.ru/vfs/statistics/banksector/borrowings/02_28_Escrow_accounts.xlsx",
+      "registry_label": "Счета эскроу",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/banksector/borrowings/02_28_Escrow_accounts.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:08 GMT",
+    "content_length_header": "64807",
+    "bytes": 64807,
+    "sha256": "3a9c2f72c4c5ae46b165d873bea84f48d10f21a6ef83ccb132b3fcef9e144047",
+    "zip_magic": true,
+    "sheets": 1,
+    "sheet_names": [
+      "в рублях"
+    ],
+    "nonempty_cells": 8526,
+    "text_cells": 197,
+    "numeric_cells": 8329,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "budget_all",
+      "url": "https://www.cbr.ru/vfs/statistics/banksector/borrowings/02_29_Budget_all.xlsx",
+      "registry_label": "Средства бюджетов",
+      "family_hint": "borrowings"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/banksector/borrowings/02_29_Budget_all.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 28 Aug 2026 06:51:08 GMT",
+    "content_length_header": "30189",
+    "bytes": 30189,
+    "sha256": "c7770992629be478730727d808e57465a11e061b3944adaf29d0ebe55c61732a",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "в рублях",
+      "в инвалюте",
+      "итого"
+    ],
+    "nonempty_cells": 3168,
+    "text_cells": 543,
+    "numeric_cells": 2625,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "households_bm",
+      "url": "https://cbr.ru/vfs/statistics/households/households_bm.xlsx",
+      "registry_label": "Домохозяйства BM",
+      "family_hint": "households"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://cbr.ru/vfs/statistics/households/households_bm.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 04 Sep 2026 12:15:20 GMT",
+    "content_length_header": "281856",
+    "bytes": 281856,
+    "sha256": "c16cd9e498911a86d2333625ab1a5dbb4f85adc1c30095a6f97fdd453d0e9afb",
+    "zip_magic": true,
+    "sheets": 4,
+    "sheet_names": [
+      "Методологический комментарий",
+      "Балансы",
+      "Балансы (с.к.)",
+      "Метаданные"
+    ],
+    "nonempty_cells": 18630,
+    "text_cells": 410,
+    "numeric_cells": 18012,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "households_om",
+      "url": "https://cbr.ru/vfs/statistics/households/households_om.xlsx",
+      "registry_label": "Домохозяйства OM",
+      "family_hint": "households"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://cbr.ru/vfs/statistics/households/households_om.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Fri, 04 Sep 2026 12:15:19 GMT",
+    "content_length_header": "143849",
+    "bytes": 143849,
+    "sha256": "b996deedfb93acc77aed82d27293e935ffe8828e23bd147fd918b1f861108ea0",
+    "zip_magic": true,
+    "sheets": 4,
+    "sheet_names": [
+      "Методологический комментарий",
+      "Операции",
+      "Операции (с.к.)",
+      "Метаданные"
+    ],
+    "nonempty_cells": 18464,
+    "text_cells": 655,
+    "numeric_cells": 17809,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "monetary_agg",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/monetary_agg.xlsx",
+      "registry_label": "Денежные агрегаты",
+      "family_hint": "monetary_financial_statistics"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/monetary_agg.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:47:14 GMT",
+    "content_length_header": "170404",
+    "bytes": 170404,
+    "sha256": "34a55298cd47447c8589df5e1a4e4f77affa25501e8b73cd7e374cfdcdb26e9f",
+    "zip_magic": true,
+    "sheets": 5,
+    "sheet_names": [
+      "Денежные агрегаты",
+      "Денежные агрегаты_Сектора",
+      "Годовые темпы прироста",
+      "Темпы прироста к началу год",
+      "Темпы прироста за месяц"
+    ],
+    "nonempty_cells": 23569,
+    "text_cells": 112,
+    "numeric_cells": 22096,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "survey_cb",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_cb.xlsx",
+      "registry_label": "Обзор центрального банка",
+      "family_hint": "monetary_financial_statistics"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_cb.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:46:10 GMT",
+    "content_length_header": "55276",
+    "bytes": 55276,
+    "sha256": "75990980e06a4b811bc052cc3ef98b6e5d4eba4fdc02d2f50c2627aa49ca2ed7",
+    "zip_magic": true,
+    "sheets": 1,
+    "sheet_names": [
+      "Агрегированная форма обзора"
+    ],
+    "nonempty_cells": 6490,
+    "text_cells": 22,
+    "numeric_cells": 6160,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "balance_odc",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/balance_odc.xlsx",
+      "registry_label": "Баланс кредитных организаций",
+      "family_hint": "monetary_financial_statistics"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/balance_odc.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:50:45 GMT",
+    "content_length_header": "525330",
+    "bytes": 525330,
+    "sha256": "d2232ceec00afac59c38c1d6565fcb899b369243e6596450906a7c1fea4992a8",
+    "zip_magic": true,
+    "sheets": 4,
+    "sheet_names": [
+      "Баланс КО",
+      "Кредиты",
+      "Депозиты в М2Х",
+      "Прочие депозиты"
+    ],
+    "nonempty_cells": 78381,
+    "text_cells": 640,
+    "numeric_cells": 77181,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "survey_odc",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_odc.xlsx",
+      "registry_label": "Обзор кредитных организаций",
+      "family_hint": "monetary_financial_statistics"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_odc.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:52:51 GMT",
+    "content_length_header": "207885",
+    "bytes": 207885,
+    "sha256": "ad1aac239b33ae63faf5eb1eecd1c2daf4e8134b193f9dfd39ea665c0c4982bc",
+    "zip_magic": true,
+    "sheets": 1,
+    "sheet_names": [
+      "Агрегированная форма обзора"
+    ],
+    "nonempty_cells": 29666,
+    "text_cells": 98,
+    "numeric_cells": 29260,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "survey_dc_new",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_dc_new.xlsx",
+      "registry_label": "Обзор банковской системы",
+      "family_hint": "monetary_financial_statistics"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_dc_new.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:52:49 GMT",
+    "content_length_header": "133095",
+    "bytes": 133095,
+    "sha256": "51e68174706ca4687aaa10029cd6ef18422dbe95ea2b6a99d8a680120f77792a",
+    "zip_magic": true,
+    "sheets": 1,
+    "sheet_names": [
+      "Агрегированная форма обзора"
+    ],
+    "nonempty_cells": 16690,
+    "text_cells": 58,
+    "numeric_cells": 16324,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "annex_survey_dc",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/annex_survey_dc.xlsx",
+      "registry_label": "Приложение к Обзору банковской системы",
+      "family_hint": "monetary_financial_statistics"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/annex_survey_dc.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:53:33 GMT",
+    "content_length_header": "48442",
+    "bytes": 48442,
+    "sha256": "b405010b48ca7fc4d5e6984bf4545e7446ccac08375324ee02bb082a089c0a72",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "Приложение к обзору",
+      "Приложение к обзору (с.к)",
+      "Метаданные"
+    ],
+    "nonempty_cells": 3435,
+    "text_cells": 75,
+    "numeric_cells": 2800,
+    "formula_cells": 280
+  },
+  {
+    "source": {
+      "source_id": "debt_new",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_new.xlsx",
+      "registry_label": "Внешний долг Российской Федерации",
+      "family_hint": "external_debt"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_new.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 30 Jun 2026 12:03:44 GMT",
+    "content_length_header": "62711",
+    "bytes": 62711,
+    "sha256": "d011dd483e143a009bc7524004de0821f341de67e41c09f91e86dff148d80407",
+    "zip_magic": true,
+    "sheets": 1,
+    "sheet_names": [
+      "2003-2026"
+    ],
+    "nonempty_cells": 2696,
+    "text_cells": 54,
+    "numeric_cells": 2548,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "debt_maturity",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_maturity.xlsx",
+      "registry_label": "Внешний долг Российской Федерации по срокам погашения и финансовым инструментам",
+      "family_hint": "external_debt"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_maturity.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 30 Jun 2026 12:03:43 GMT",
+    "content_length_header": "63615",
+    "bytes": 63615,
+    "sha256": "4fbb5d5fe40ebd3d265b1a067100ad8014162a0688a2d3c11f8bff4cbb1d9e2b",
+    "zip_magic": true,
+    "sheets": 2,
+    "sheet_names": [
+      "2014-2022",
+      "2021-2026"
+    ],
+    "nonempty_cells": 2798,
+    "text_cells": 118,
+    "numeric_cells": 2625,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "debt_cur-mat_new",
+      "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_cur-mat_new.xlsx",
+      "registry_label": "Внешний долг Российской Федерации в национальной и иностранной валютах",
+      "family_hint": "external_debt"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_cur-mat_new.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 30 Jun 2026 12:03:41 GMT",
+    "content_length_header": "60981",
+    "bytes": 60981,
+    "sha256": "4b0df922c05698bae719067541d08cdc3b1b5566bbd46976c2a9f280fd36674d",
+    "zip_magic": true,
+    "sheets": 2,
+    "sheet_names": [
+      "2012-2022",
+      "2012-2026"
+    ],
+    "nonempty_cells": 3018,
+    "text_cells": 85,
+    "numeric_cells": 2838,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "obs_table_20s",
+      "url": "https://www.cbr.ru/Content/Document/File/115862/obs_tabl20%D1%81.xlsx",
+      "registry_label": "Таблица obs_tabl20с",
+      "family_hint": "other"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://www.cbr.ru/Content/Document/File/115862/obs_tabl20%D1%81.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"00026979\"",
+    "last_modified": "Fri, 04 Sep 2026 13:25:51 GMT",
+    "content_length_header": "1241906",
+    "bytes": 1241906,
+    "sha256": "a368de40e3f15be12acb7af72697df702f3e826dd57d85e16d70b21190c46fa8",
+    "zip_magic": true,
+    "sheets": 10,
+    "sheet_names": [
+      "Активы - всего",
+      "Активы - рубли",
+      "Активы - валюта",
+      "Активы - в ин. валюте $",
+      "Пассивы - всего",
+      "Пассивы - рубли",
+      "Пассивы - валюта",
+      "Пассивы - в ин. валюте $",
+      "Корпоративные кредиты по срокам",
+      "Кредиты физ.лицам по срокам"
+    ],
+    "nonempty_cells": 109482,
+    "text_cells": 10859,
+    "numeric_cells": 97353,
+    "formula_cells": 0
+  },
+  {
+    "source": {
+      "source_id": "exchange_rate",
+      "url": "https://cbr.ru/vfs/statistics/credit_statistics/ex_rate_ind/exchange_rate.xlsx",
+      "registry_label": "Курс валют",
+      "family_hint": "exchange_rates"
+    },
+    "status": "inspected",
+    "http_status": 200,
+    "final_url": "https://cbr.ru/vfs/statistics/credit_statistics/ex_rate_ind/exchange_rate.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 01 Sep 2026 11:17:28 GMT",
+    "content_length_header": "98102",
+    "bytes": 98102,
+    "sha256": "ad3ef46dc27e494cc265f646152895c6dfee1ee1d9b30640ffac0b874ead6ee0",
+    "zip_magic": true,
+    "sheets": 3,
+    "sheet_names": [
+      "Ежемесячные",
+      "Ежеквартальные",
+      "Доли"
+    ],
+    "nonempty_cells": 13788,
+    "text_cells": 3469,
+    "numeric_cells": 10302,
+    "formula_cells": 17
+  }
+]

@@ -1,0 +1,7085 @@
+{
+  "source": {
+    "source_id": "corp_new_loans_a",
+    "url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_01_A_New_loans_corp_by_activity.xlsx",
+    "registry_label": "Корпорации: новые кредиты A",
+    "family_hint": "corporate_and_sme_loans"
+  },
+  "sheet_names": [
+    "итого",
+    "в рублях",
+    "в инвалюте"
+  ],
+  "defined_names": [],
+  "sheets": [
+    {
+      "title": "итого",
+      "title_normalized": "итого",
+      "title_presentation_signature": "итого",
+      "state": "visible",
+      "declared_max_row": 28,
+      "declared_max_column": 92,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 28,
+        "min_column": 1,
+        "max_column": 92
+      },
+      "nonempty_cells": 2485,
+      "cell_type_counts": {
+        "text": 119,
+        "numeric": 2366
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0;\\-#,##0;0",
+          2366
+        ],
+        [
+          "@",
+          119
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Объем кредитов, предоставленных юридическим лицам - резидентам и индивидуальным предпринимателям, по видам экономической деятельности и отдельным направлениям использования средств, млн руб.",
+          "normalized": "объем кредитов, предоставленных юридическим лицам - резидентам и индивидуальным предпринимателям, по видам экономической деятельности и отдельным направлениям использования средств, млн руб.",
+          "presentation_signature": "объемкредитовпредоставленныхюридическимлицамрезидентамииндивидуальнымпредпринимателямповидамэкономическойдеятельностииотдельнымнаправлениямиспользованиясредствмлнруб"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Виды экономической деятельности и отдельные направления использования средств ",
+          "normalized": "виды экономической деятельности и отдельные направления использования средств",
+          "presentation_signature": "видыэкономическойдеятельностииотдельныенаправленияиспользованиясредств"
+        },
+        {
+          "coordinate": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "Январь 2019",
+          "normalized": "январь 2019",
+          "presentation_signature": "январь2019"
+        },
+        {
+          "coordinate": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "Февраль 2019",
+          "normalized": "февраль 2019",
+          "presentation_signature": "февраль2019"
+        },
+        {
+          "coordinate": "D2",
+          "row": 2,
+          "column": 4,
+          "value": "Март 2019",
+          "normalized": "март 2019",
+          "presentation_signature": "март2019"
+        },
+        {
+          "coordinate": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "Апрель 2019",
+          "normalized": "апрель 2019",
+          "presentation_signature": "апрель2019"
+        },
+        {
+          "coordinate": "F2",
+          "row": 2,
+          "column": 6,
+          "value": "Май 2019",
+          "normalized": "май 2019",
+          "presentation_signature": "май2019"
+        },
+        {
+          "coordinate": "G2",
+          "row": 2,
+          "column": 7,
+          "value": "Июнь 2019",
+          "normalized": "июнь 2019",
+          "presentation_signature": "июнь2019"
+        },
+        {
+          "coordinate": "H2",
+          "row": 2,
+          "column": 8,
+          "value": "Июль 2019",
+          "normalized": "июль 2019",
+          "presentation_signature": "июль2019"
+        },
+        {
+          "coordinate": "I2",
+          "row": 2,
+          "column": 9,
+          "value": "Август 2019",
+          "normalized": "август 2019",
+          "presentation_signature": "август2019"
+        },
+        {
+          "coordinate": "J2",
+          "row": 2,
+          "column": 10,
+          "value": "Сентябрь 2019",
+          "normalized": "сентябрь 2019",
+          "presentation_signature": "сентябрь2019"
+        },
+        {
+          "coordinate": "K2",
+          "row": 2,
+          "column": 11,
+          "value": "Октябрь 2019",
+          "normalized": "октябрь 2019",
+          "presentation_signature": "октябрь2019"
+        },
+        {
+          "coordinate": "L2",
+          "row": 2,
+          "column": 12,
+          "value": "Ноябрь 2019",
+          "normalized": "ноябрь 2019",
+          "presentation_signature": "ноябрь2019"
+        },
+        {
+          "coordinate": "M2",
+          "row": 2,
+          "column": 13,
+          "value": "Декабрь 2019",
+          "normalized": "декабрь 2019",
+          "presentation_signature": "декабрь2019"
+        },
+        {
+          "coordinate": "N2",
+          "row": 2,
+          "column": 14,
+          "value": "Январь 2020",
+          "normalized": "январь 2020",
+          "presentation_signature": "январь2020"
+        },
+        {
+          "coordinate": "O2",
+          "row": 2,
+          "column": 15,
+          "value": "Февраль 2020",
+          "normalized": "февраль 2020",
+          "presentation_signature": "февраль2020"
+        },
+        {
+          "coordinate": "P2",
+          "row": 2,
+          "column": 16,
+          "value": "Март 2020",
+          "normalized": "март 2020",
+          "presentation_signature": "март2020"
+        },
+        {
+          "coordinate": "Q2",
+          "row": 2,
+          "column": 17,
+          "value": "Апрель 2020",
+          "normalized": "апрель 2020",
+          "presentation_signature": "апрель2020"
+        },
+        {
+          "coordinate": "R2",
+          "row": 2,
+          "column": 18,
+          "value": "Май 2020",
+          "normalized": "май 2020",
+          "presentation_signature": "май2020"
+        },
+        {
+          "coordinate": "S2",
+          "row": 2,
+          "column": 19,
+          "value": "Июнь 2020",
+          "normalized": "июнь 2020",
+          "presentation_signature": "июнь2020"
+        },
+        {
+          "coordinate": "T2",
+          "row": 2,
+          "column": 20,
+          "value": "Июль 2020",
+          "normalized": "июль 2020",
+          "presentation_signature": "июль2020"
+        },
+        {
+          "coordinate": "U2",
+          "row": 2,
+          "column": 21,
+          "value": "Август 2020",
+          "normalized": "август 2020",
+          "presentation_signature": "август2020"
+        },
+        {
+          "coordinate": "V2",
+          "row": 2,
+          "column": 22,
+          "value": "Сентябрь 2020",
+          "normalized": "сентябрь 2020",
+          "presentation_signature": "сентябрь2020"
+        },
+        {
+          "coordinate": "W2",
+          "row": 2,
+          "column": 23,
+          "value": "Октябрь 2020",
+          "normalized": "октябрь 2020",
+          "presentation_signature": "октябрь2020"
+        },
+        {
+          "coordinate": "X2",
+          "row": 2,
+          "column": 24,
+          "value": "Ноябрь 2020",
+          "normalized": "ноябрь 2020",
+          "presentation_signature": "ноябрь2020"
+        },
+        {
+          "coordinate": "Y2",
+          "row": 2,
+          "column": 25,
+          "value": "Декабрь 2020",
+          "normalized": "декабрь 2020",
+          "presentation_signature": "декабрь2020"
+        },
+        {
+          "coordinate": "Z2",
+          "row": 2,
+          "column": 26,
+          "value": "Январь 2021",
+          "normalized": "январь 2021",
+          "presentation_signature": "январь2021"
+        },
+        {
+          "coordinate": "AA2",
+          "row": 2,
+          "column": 27,
+          "value": "Февраль 2021",
+          "normalized": "февраль 2021",
+          "presentation_signature": "февраль2021"
+        },
+        {
+          "coordinate": "AB2",
+          "row": 2,
+          "column": 28,
+          "value": "Март 2021",
+          "normalized": "март 2021",
+          "presentation_signature": "март2021"
+        },
+        {
+          "coordinate": "AC2",
+          "row": 2,
+          "column": 29,
+          "value": "Апрель 2021",
+          "normalized": "апрель 2021",
+          "presentation_signature": "апрель2021"
+        },
+        {
+          "coordinate": "AD2",
+          "row": 2,
+          "column": 30,
+          "value": "Май 2021",
+          "normalized": "май 2021",
+          "presentation_signature": "май2021"
+        },
+        {
+          "coordinate": "AE2",
+          "row": 2,
+          "column": 31,
+          "value": "Июнь 2021",
+          "normalized": "июнь 2021",
+          "presentation_signature": "июнь2021"
+        },
+        {
+          "coordinate": "AF2",
+          "row": 2,
+          "column": 32,
+          "value": "Июль 2021",
+          "normalized": "июль 2021",
+          "presentation_signature": "июль2021"
+        },
+        {
+          "coordinate": "AG2",
+          "row": 2,
+          "column": 33,
+          "value": "Август 2021",
+          "normalized": "август 2021",
+          "presentation_signature": "август2021"
+        },
+        {
+          "coordinate": "AH2",
+          "row": 2,
+          "column": 34,
+          "value": "Сентябрь 2021",
+          "normalized": "сентябрь 2021",
+          "presentation_signature": "сентябрь2021"
+        },
+        {
+          "coordinate": "AI2",
+          "row": 2,
+          "column": 35,
+          "value": "Октябрь 2021",
+          "normalized": "октябрь 2021",
+          "presentation_signature": "октябрь2021"
+        },
+        {
+          "coordinate": "AJ2",
+          "row": 2,
+          "column": 36,
+          "value": "Ноябрь 2021",
+          "normalized": "ноябрь 2021",
+          "presentation_signature": "ноябрь2021"
+        },
+        {
+          "coordinate": "AK2",
+          "row": 2,
+          "column": 37,
+          "value": "Декабрь 2021",
+          "normalized": "декабрь 2021",
+          "presentation_signature": "декабрь2021"
+        },
+        {
+          "coordinate": "AL2",
+          "row": 2,
+          "column": 38,
+          "value": "Январь 2022",
+          "normalized": "январь 2022",
+          "presentation_signature": "январь2022"
+        },
+        {
+          "coordinate": "AM2",
+          "row": 2,
+          "column": 39,
+          "value": "Февраль 2022",
+          "normalized": "февраль 2022",
+          "presentation_signature": "февраль2022"
+        },
+        {
+          "coordinate": "AN2",
+          "row": 2,
+          "column": 40,
+          "value": "Март 2022",
+          "normalized": "март 2022",
+          "presentation_signature": "март2022"
+        },
+        {
+          "coordinate": "AO2",
+          "row": 2,
+          "column": 41,
+          "value": "Апрель 2022",
+          "normalized": "апрель 2022",
+          "presentation_signature": "апрель2022"
+        },
+        {
+          "coordinate": "AP2",
+          "row": 2,
+          "column": 42,
+          "value": "Май 2022",
+          "normalized": "май 2022",
+          "presentation_signature": "май2022"
+        },
+        {
+          "coordinate": "AQ2",
+          "row": 2,
+          "column": 43,
+          "value": "Июнь 2022",
+          "normalized": "июнь 2022",
+          "presentation_signature": "июнь2022"
+        },
+        {
+          "coordinate": "AR2",
+          "row": 2,
+          "column": 44,
+          "value": "Июль 2022",
+          "normalized": "июль 2022",
+          "presentation_signature": "июль2022"
+        },
+        {
+          "coordinate": "AS2",
+          "row": 2,
+          "column": 45,
+          "value": "Август 2022",
+          "normalized": "август 2022",
+          "presentation_signature": "август2022"
+        },
+        {
+          "coordinate": "AT2",
+          "row": 2,
+          "column": 46,
+          "value": "Сентябрь 2022",
+          "normalized": "сентябрь 2022",
+          "presentation_signature": "сентябрь2022"
+        },
+        {
+          "coordinate": "AU2",
+          "row": 2,
+          "column": 47,
+          "value": "Октябрь 2022",
+          "normalized": "октябрь 2022",
+          "presentation_signature": "октябрь2022"
+        },
+        {
+          "coordinate": "AV2",
+          "row": 2,
+          "column": 48,
+          "value": "Ноябрь 2022",
+          "normalized": "ноябрь 2022",
+          "presentation_signature": "ноябрь2022"
+        },
+        {
+          "coordinate": "AW2",
+          "row": 2,
+          "column": 49,
+          "value": "Декабрь 2022",
+          "normalized": "декабрь 2022",
+          "presentation_signature": "декабрь2022"
+        },
+        {
+          "coordinate": "AX2",
+          "row": 2,
+          "column": 50,
+          "value": "Январь 2023",
+          "normalized": "январь 2023",
+          "presentation_signature": "январь2023"
+        },
+        {
+          "coordinate": "AY2",
+          "row": 2,
+          "column": 51,
+          "value": "Февраль 2023",
+          "normalized": "февраль 2023",
+          "presentation_signature": "февраль2023"
+        },
+        {
+          "coordinate": "AZ2",
+          "row": 2,
+          "column": 52,
+          "value": "Март 2023",
+          "normalized": "март 2023",
+          "presentation_signature": "март2023"
+        },
+        {
+          "coordinate": "BA2",
+          "row": 2,
+          "column": 53,
+          "value": "Апрель 2023",
+          "normalized": "апрель 2023",
+          "presentation_signature": "апрель2023"
+        },
+        {
+          "coordinate": "BB2",
+          "row": 2,
+          "column": 54,
+          "value": "Май 2023",
+          "normalized": "май 2023",
+          "presentation_signature": "май2023"
+        },
+        {
+          "coordinate": "BC2",
+          "row": 2,
+          "column": 55,
+          "value": "Июнь 2023",
+          "normalized": "июнь 2023",
+          "presentation_signature": "июнь2023"
+        },
+        {
+          "coordinate": "BD2",
+          "row": 2,
+          "column": 56,
+          "value": "Июль 2023",
+          "normalized": "июль 2023",
+          "presentation_signature": "июль2023"
+        },
+        {
+          "coordinate": "BE2",
+          "row": 2,
+          "column": 57,
+          "value": "Август 2023",
+          "normalized": "август 2023",
+          "presentation_signature": "август2023"
+        },
+        {
+          "coordinate": "BF2",
+          "row": 2,
+          "column": 58,
+          "value": "Сентябрь 2023",
+          "normalized": "сентябрь 2023",
+          "presentation_signature": "сентябрь2023"
+        },
+        {
+          "coordinate": "BG2",
+          "row": 2,
+          "column": 59,
+          "value": "Октябрь 2023",
+          "normalized": "октябрь 2023",
+          "presentation_signature": "октябрь2023"
+        },
+        {
+          "coordinate": "BH2",
+          "row": 2,
+          "column": 60,
+          "value": "Ноябрь 2023",
+          "normalized": "ноябрь 2023",
+          "presentation_signature": "ноябрь2023"
+        },
+        {
+          "coordinate": "BI2",
+          "row": 2,
+          "column": 61,
+          "value": "Декабрь 2023",
+          "normalized": "декабрь 2023",
+          "presentation_signature": "декабрь2023"
+        },
+        {
+          "coordinate": "BJ2",
+          "row": 2,
+          "column": 62,
+          "value": "Январь 2024",
+          "normalized": "январь 2024",
+          "presentation_signature": "январь2024"
+        },
+        {
+          "coordinate": "BK2",
+          "row": 2,
+          "column": 63,
+          "value": "Февраль 2024",
+          "normalized": "февраль 2024",
+          "presentation_signature": "февраль2024"
+        },
+        {
+          "coordinate": "BL2",
+          "row": 2,
+          "column": 64,
+          "value": "Март 2024",
+          "normalized": "март 2024",
+          "presentation_signature": "март2024"
+        },
+        {
+          "coordinate": "BM2",
+          "row": 2,
+          "column": 65,
+          "value": "Апрель 2024",
+          "normalized": "апрель 2024",
+          "presentation_signature": "апрель2024"
+        },
+        {
+          "coordinate": "BN2",
+          "row": 2,
+          "column": 66,
+          "value": "Май 2024",
+          "normalized": "май 2024",
+          "presentation_signature": "май2024"
+        },
+        {
+          "coordinate": "BO2",
+          "row": 2,
+          "column": 67,
+          "value": "Июнь 2024",
+          "normalized": "июнь 2024",
+          "presentation_signature": "июнь2024"
+        },
+        {
+          "coordinate": "BP2",
+          "row": 2,
+          "column": 68,
+          "value": "Июль 2024",
+          "normalized": "июль 2024",
+          "presentation_signature": "июль2024"
+        },
+        {
+          "coordinate": "BQ2",
+          "row": 2,
+          "column": 69,
+          "value": "Август 2024",
+          "normalized": "август 2024",
+          "presentation_signature": "август2024"
+        },
+        {
+          "coordinate": "BR2",
+          "row": 2,
+          "column": 70,
+          "value": "Сентябрь 2024",
+          "normalized": "сентябрь 2024",
+          "presentation_signature": "сентябрь2024"
+        },
+        {
+          "coordinate": "BS2",
+          "row": 2,
+          "column": 71,
+          "value": "Октябрь 2024",
+          "normalized": "октябрь 2024",
+          "presentation_signature": "октябрь2024"
+        },
+        {
+          "coordinate": "BT2",
+          "row": 2,
+          "column": 72,
+          "value": "Ноябрь 2024",
+          "normalized": "ноябрь 2024",
+          "presentation_signature": "ноябрь2024"
+        },
+        {
+          "coordinate": "BU2",
+          "row": 2,
+          "column": 73,
+          "value": "Декабрь 2024",
+          "normalized": "декабрь 2024",
+          "presentation_signature": "декабрь2024"
+        },
+        {
+          "coordinate": "BV2",
+          "row": 2,
+          "column": 74,
+          "value": "Январь 2025",
+          "normalized": "январь 2025",
+          "presentation_signature": "январь2025"
+        },
+        {
+          "coordinate": "BW2",
+          "row": 2,
+          "column": 75,
+          "value": "Февраль 2025",
+          "normalized": "февраль 2025",
+          "presentation_signature": "февраль2025"
+        },
+        {
+          "coordinate": "BX2",
+          "row": 2,
+          "column": 76,
+          "value": "Март 2025",
+          "normalized": "март 2025",
+          "presentation_signature": "март2025"
+        },
+        {
+          "coordinate": "BY2",
+          "row": 2,
+          "column": 77,
+          "value": "Апрель 2025",
+          "normalized": "апрель 2025",
+          "presentation_signature": "апрель2025"
+        },
+        {
+          "coordinate": "BZ2",
+          "row": 2,
+          "column": 78,
+          "value": "Май 2025",
+          "normalized": "май 2025",
+          "presentation_signature": "май2025"
+        },
+        {
+          "coordinate": "CA2",
+          "row": 2,
+          "column": 79,
+          "value": "Июнь 2025",
+          "normalized": "июнь 2025",
+          "presentation_signature": "июнь2025"
+        },
+        {
+          "coordinate": "CB2",
+          "row": 2,
+          "column": 80,
+          "value": "Июль 2025",
+          "normalized": "июль 2025",
+          "presentation_signature": "июль2025"
+        },
+        {
+          "coordinate": "CC2",
+          "row": 2,
+          "column": 81,
+          "value": "Август 2025",
+          "normalized": "август 2025",
+          "presentation_signature": "август2025"
+        },
+        {
+          "coordinate": "CD2",
+          "row": 2,
+          "column": 82,
+          "value": "Сентябрь 2025",
+          "normalized": "сентябрь 2025",
+          "presentation_signature": "сентябрь2025"
+        },
+        {
+          "coordinate": "CE2",
+          "row": 2,
+          "column": 83,
+          "value": "Октябрь 2025",
+          "normalized": "октябрь 2025",
+          "presentation_signature": "октябрь2025"
+        },
+        {
+          "coordinate": "CF2",
+          "row": 2,
+          "column": 84,
+          "value": "Ноябрь 2025",
+          "normalized": "ноябрь 2025",
+          "presentation_signature": "ноябрь2025"
+        },
+        {
+          "coordinate": "CG2",
+          "row": 2,
+          "column": 85,
+          "value": "Декабрь 2025",
+          "normalized": "декабрь 2025",
+          "presentation_signature": "декабрь2025"
+        },
+        {
+          "coordinate": "CH2",
+          "row": 2,
+          "column": 86,
+          "value": "Январь 2026",
+          "normalized": "январь 2026",
+          "presentation_signature": "январь2026"
+        },
+        {
+          "coordinate": "CI2",
+          "row": 2,
+          "column": 87,
+          "value": "Февраль 2026",
+          "normalized": "февраль 2026",
+          "presentation_signature": "февраль2026"
+        },
+        {
+          "coordinate": "CJ2",
+          "row": 2,
+          "column": 88,
+          "value": "Март 2026",
+          "normalized": "март 2026",
+          "presentation_signature": "март2026"
+        },
+        {
+          "coordinate": "CK2",
+          "row": 2,
+          "column": 89,
+          "value": "Апрель 2026",
+          "normalized": "апрель 2026",
+          "presentation_signature": "апрель2026"
+        },
+        {
+          "coordinate": "CL2",
+          "row": 2,
+          "column": 90,
+          "value": "Май 2026",
+          "normalized": "май 2026",
+          "presentation_signature": "май2026"
+        },
+        {
+          "coordinate": "CM2",
+          "row": 2,
+          "column": 91,
+          "value": "Июнь 2026",
+          "normalized": "июнь 2026",
+          "presentation_signature": "июнь2026"
+        },
+        {
+          "coordinate": "CN2",
+          "row": 2,
+          "column": 92,
+          "value": "Июль 2026",
+          "normalized": "июль 2026",
+          "presentation_signature": "июль2026"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "ВСЕГО",
+          "normalized": "всего",
+          "presentation_signature": "всего"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "добыча полезных ископаемых, из них:",
+          "normalized": "добыча полезных ископаемых, из них:",
+          "presentation_signature": "добычаполезныхископаемыхизних"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "        добыча топливно-энергетических полезных ископаемых",
+          "normalized": "добыча топливно-энергетических полезных ископаемых",
+          "presentation_signature": "добычатопливноэнергетическихполезныхископаемых"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "обрабатывающие производства, из них:",
+          "normalized": "обрабатывающие производства, из них:",
+          "presentation_signature": "обрабатывающиепроизводстваизних"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "        производство пищевых продуктов, включая напитки, и табака",
+          "normalized": "производство пищевых продуктов, включая напитки, и табака",
+          "presentation_signature": "производствопищевыхпродуктоввключаянапиткиитабака"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "        обработка древесины и производство изделий из дерева",
+          "normalized": "обработка древесины и производство изделий из дерева",
+          "presentation_signature": "обработкадревесиныипроизводствоизделийиздерева"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "        целлюлозно-бумажное производство, издательская и полиграфическая деятельность",
+          "normalized": "целлюлозно-бумажное производство, издательская и полиграфическая деятельность",
+          "presentation_signature": "целлюлознобумажноепроизводствоиздательскаяиполиграфическаядеятельность"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "        производство кокса, нефтепродуктов и ядерных материалов",
+          "normalized": "производство кокса, нефтепродуктов и ядерных материалов",
+          "presentation_signature": "производствококсанефтепродуктовиядерныхматериалов"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "        химическое производство",
+          "normalized": "химическое производство",
+          "presentation_signature": "химическоепроизводство"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "        производство прочих неметаллических минеральных продуктов",
+          "normalized": "производство прочих неметаллических минеральных продуктов",
+          "presentation_signature": "производствопрочихнеметаллическихминеральныхпродуктов"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "        металлургическое производство и производство готовых металлических изделий",
+          "normalized": "металлургическое производство и производство готовых металлических изделий",
+          "presentation_signature": "металлургическоепроизводствоипроизводствоготовыхметаллическихизделий"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "        производство машин и оборудования, из них:",
+          "normalized": "производство машин и оборудования, из них:",
+          "presentation_signature": "производствомашиниоборудованияизних"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "                производство машин и оборудования для сельского и лесного хозяйства",
+          "normalized": "производство машин и оборудования для сельского и лесного хозяйства",
+          "presentation_signature": "производствомашиниоборудованиядлясельскогоилесногохозяйства"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "        производство транспортных средств и оборудования, из них:",
+          "normalized": "производство транспортных средств и оборудования, из них:",
+          "presentation_signature": "производствотранспортныхсредствиоборудованияизних"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "                производство автомобилей",
+          "normalized": "производство автомобилей",
+          "presentation_signature": "производствоавтомобилей"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "производство и распределение электроэнергии, газа и воды",
+          "normalized": "производство и распределение электроэнергии, газа и воды",
+          "presentation_signature": "производствоираспределениеэлектроэнергиигазаиводы"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "сельское хозяйство, охота и лесное хозяйство, из них:",
+          "normalized": "сельское хозяйство, охота и лесное хозяйство, из них:",
+          "presentation_signature": "сельскоехозяйствоохотаилесноехозяйствоизних"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "        сельское хозяйство, охота и предоставление услуг в этих областях",
+          "normalized": "сельское хозяйство, охота и предоставление услуг в этих областях",
+          "presentation_signature": "сельскоехозяйствоохотаипредоставлениеуслугвэтихобластях"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "строительство, из них:",
+          "normalized": "строительство, из них:",
+          "presentation_signature": "строительствоизних"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "        строительство зданий и сооружений",
+          "normalized": "строительство зданий и сооружений",
+          "presentation_signature": "строительствозданийисооружений"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "транспорт и связь, из них:",
+          "normalized": "транспорт и связь, из них:",
+          "presentation_signature": "транспортисвязьизних"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "        деятельность воздушного транспорта, подчиняющегося и не подчиняющегося расписанию",
+          "normalized": "деятельность воздушного транспорта, подчиняющегося и не подчиняющегося расписанию",
+          "presentation_signature": "деятельностьвоздушноготранспортаподчиняющегосяинеподчиняющегосярасписанию"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "оптовая и розничная торговля, ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования",
+          "normalized": "оптовая и розничная торговля, ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования",
+          "presentation_signature": "оптоваяирозничнаяторговляремонтавтотранспортныхсредствмотоцикловбытовыхизделийипредметовличногопользования"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "операции с недвижимым имуществом, аренда и предоставление услуг",
+          "normalized": "операции с недвижимым имуществом, аренда и предоставление услуг",
+          "presentation_signature": "операцииснедвижимымимуществомарендаипредоставлениеуслуг"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "прочие виды деятельности",
+          "normalized": "прочие виды деятельности",
+          "presentation_signature": "прочиевидыдеятельности"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "на завершение расчетов",
+          "normalized": "на завершение расчетов",
+          "presentation_signature": "назавершениерасчетов"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B3",
+          "value": {
+            "kind": "int",
+            "value": "3202534"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "C3",
+          "value": {
+            "kind": "int",
+            "value": "3504045"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "D3",
+          "value": {
+            "kind": "int",
+            "value": "4174296"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "E3",
+          "value": {
+            "kind": "int",
+            "value": "4637280"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "F3",
+          "value": {
+            "kind": "int",
+            "value": "3345201"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "G3",
+          "value": {
+            "kind": "int",
+            "value": "4124086"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "H3",
+          "value": {
+            "kind": "int",
+            "value": "5143083"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "I3",
+          "value": {
+            "kind": "int",
+            "value": "5062245"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "J3",
+          "value": {
+            "kind": "int",
+            "value": "5264321"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "K3",
+          "value": {
+            "kind": "int",
+            "value": "5693608"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "L3",
+          "value": {
+            "kind": "int",
+            "value": "5575864"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "M3",
+          "value": {
+            "kind": "int",
+            "value": "7582892"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "N3",
+          "value": {
+            "kind": "int",
+            "value": "4617849"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "O3",
+          "value": {
+            "kind": "int",
+            "value": "5544875"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "P3",
+          "value": {
+            "kind": "int",
+            "value": "6771486"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Q3",
+          "value": {
+            "kind": "int",
+            "value": "4850420"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "R3",
+          "value": {
+            "kind": "int",
+            "value": "4291768"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "S3",
+          "value": {
+            "kind": "int",
+            "value": "6156469"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "T3",
+          "value": {
+            "kind": "int",
+            "value": "7509367"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "U3",
+          "value": {
+            "kind": "int",
+            "value": "6367056"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "V3",
+          "value": {
+            "kind": "int",
+            "value": "6903226"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "W3",
+          "value": {
+            "kind": "int",
+            "value": "6848848"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "X3",
+          "value": {
+            "kind": "int",
+            "value": "6521789"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Y3",
+          "value": {
+            "kind": "int",
+            "value": "8429188"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Z3",
+          "value": {
+            "kind": "int",
+            "value": "4515167"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AA3",
+          "value": {
+            "kind": "int",
+            "value": "5449873"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AB3",
+          "value": {
+            "kind": "int",
+            "value": "6974057"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AC3",
+          "value": {
+            "kind": "int",
+            "value": "7684793"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AD3",
+          "value": {
+            "kind": "int",
+            "value": "6119425"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AE3",
+          "value": {
+            "kind": "int",
+            "value": "7358359"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AF3",
+          "value": {
+            "kind": "int",
+            "value": "8269601"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AG3",
+          "value": {
+            "kind": "int",
+            "value": "8152490"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AH3",
+          "value": {
+            "kind": "int",
+            "value": "7565237"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AI3",
+          "value": {
+            "kind": "int",
+            "value": "7414571"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AJ3",
+          "value": {
+            "kind": "int",
+            "value": "6982998"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AK3",
+          "value": {
+            "kind": "int",
+            "value": "9160939"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AL3",
+          "value": {
+            "kind": "int",
+            "value": "5399672"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AM3",
+          "value": {
+            "kind": "int",
+            "value": "6370846"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AN3",
+          "value": {
+            "kind": "int",
+            "value": "5318699"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AO3",
+          "value": {
+            "kind": "int",
+            "value": "4768289"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AP3",
+          "value": {
+            "kind": "int",
+            "value": "3932303"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AQ3",
+          "value": {
+            "kind": "int",
+            "value": "5209410"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AR3",
+          "value": {
+            "kind": "int",
+            "value": "4874474"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AS3",
+          "value": {
+            "kind": "int",
+            "value": "5843503"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AT3",
+          "value": {
+            "kind": "int",
+            "value": "5802989"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AU3",
+          "value": {
+            "kind": "int",
+            "value": "5617528"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AV3",
+          "value": {
+            "kind": "int",
+            "value": "4794354"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AW3",
+          "value": {
+            "kind": "int",
+            "value": "7954843"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AX3",
+          "value": {
+            "kind": "int",
+            "value": "4058145"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AY3",
+          "value": {
+            "kind": "int",
+            "value": "5429306"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AZ3",
+          "value": {
+            "kind": "int",
+            "value": "5618630"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BA3",
+          "value": {
+            "kind": "int",
+            "value": "5150388"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BB3",
+          "value": {
+            "kind": "int",
+            "value": "5420690"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BC3",
+          "value": {
+            "kind": "int",
+            "value": "5963631"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BD3",
+          "value": {
+            "kind": "int",
+            "value": "7023145"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BE3",
+          "value": {
+            "kind": "int",
+            "value": "7067386"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BF3",
+          "value": {
+            "kind": "int",
+            "value": "6556567"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BG3",
+          "value": {
+            "kind": "int",
+            "value": "7302982"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BH3",
+          "value": {
+            "kind": "int",
+            "value": "6224989"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BI3",
+          "value": {
+            "kind": "int",
+            "value": "8577321"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BJ3",
+          "value": {
+            "kind": "int",
+            "value": "4596928"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BK3",
+          "value": {
+            "kind": "int",
+            "value": "6027719"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BL3",
+          "value": {
+            "kind": "int",
+            "value": "8051676"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BM3",
+          "value": {
+            "kind": "int",
+            "value": "7461371"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BN3",
+          "value": {
+            "kind": "int",
+            "value": "7456865"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BO3",
+          "value": {
+            "kind": "int",
+            "value": "7028601"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BP3",
+          "value": {
+            "kind": "int",
+            "value": "7803340"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BQ3",
+          "value": {
+            "kind": "int",
+            "value": "7581651"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BR3",
+          "value": {
+            "kind": "int",
+            "value": "7942667"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BS3",
+          "value": {
+            "kind": "int",
+            "value": "8805629"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BT3",
+          "value": {
+            "kind": "int",
+            "value": "6103109"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BU3",
+          "value": {
+            "kind": "int",
+            "value": "8861635"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BV3",
+          "value": {
+            "kind": "int",
+            "value": "4206060"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BW3",
+          "value": {
+            "kind": "int",
+            "value": "5414295"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BX3",
+          "value": {
+            "kind": "int",
+            "value": "7021816"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BY3",
+          "value": {
+            "kind": "int",
+            "value": "6770923"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BZ3",
+          "value": {
+            "kind": "int",
+            "value": "5451048"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CA3",
+          "value": {
+            "kind": "int",
+            "value": "6933972"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CB3",
+          "value": {
+            "kind": "int",
+            "value": "7572988"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CC3",
+          "value": {
+            "kind": "int",
+            "value": "7947951"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        }
+      ],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 92,
+          "text": 92
+        },
+        {
+          "row": 3,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 4,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 5,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 6,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 7,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 8,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 9,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 10,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 11,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 12,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 13,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 14,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 15,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 16,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 17,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 18,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 19,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 20,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 21,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 22,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 23,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 24,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 25,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 26,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 27,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 28,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 28,
+          "text": 28
+        },
+        {
+          "column": 2,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 3,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 4,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 5,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 6,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 7,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 8,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 9,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 10,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 11,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 12,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 13,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 14,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 15,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 16,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 17,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 18,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 19,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 20,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 21,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 22,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 23,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 24,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 25,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 26,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 27,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 28,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 29,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 30,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 31,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 32,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 33,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 34,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 35,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 36,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 37,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 38,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 39,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 40,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 41,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 42,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 43,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 44,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 45,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 46,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 47,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 48,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 49,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 50,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 51,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 52,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 53,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 54,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 55,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 56,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 57,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 58,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 59,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 60,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 61,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 62,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 63,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 64,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 65,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 66,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 67,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 68,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 69,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 70,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 71,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 72,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 73,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 74,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 75,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 76,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 77,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 78,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 79,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 80,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 81,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 82,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 83,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 84,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 85,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 86,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 87,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 88,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 89,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 90,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 91,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 92,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        }
+      ],
+      "freeze_panes": "CL1",
+      "auto_filter_ref": null
+    },
+    {
+      "title": "в рублях",
+      "title_normalized": "в рублях",
+      "title_presentation_signature": "врублях",
+      "state": "visible",
+      "declared_max_row": 28,
+      "declared_max_column": 92,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 28,
+        "min_column": 1,
+        "max_column": 92
+      },
+      "nonempty_cells": 2485,
+      "cell_type_counts": {
+        "text": 119,
+        "numeric": 2366
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0;\\-#,##0;0",
+          2366
+        ],
+        [
+          "@",
+          119
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Объем кредитов, предоставленных юридическим лицам - резидентам и индивидуальным предпринимателям в рублях по видам экономической деятельности и отдельным направлениям использования средств, млн руб.",
+          "normalized": "объем кредитов, предоставленных юридическим лицам - резидентам и индивидуальным предпринимателям в рублях по видам экономической деятельности и отдельным направлениям использования средств, млн руб.",
+          "presentation_signature": "объемкредитовпредоставленныхюридическимлицамрезидентамииндивидуальнымпредпринимателямврубляхповидамэкономическойдеятельностииотдельнымнаправлениямиспользованиясредствмлнруб"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Виды экономической деятельности и отдельные направления использования средств ",
+          "normalized": "виды экономической деятельности и отдельные направления использования средств",
+          "presentation_signature": "видыэкономическойдеятельностииотдельныенаправленияиспользованиясредств"
+        },
+        {
+          "coordinate": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "Январь 2019",
+          "normalized": "январь 2019",
+          "presentation_signature": "январь2019"
+        },
+        {
+          "coordinate": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "Февраль 2019",
+          "normalized": "февраль 2019",
+          "presentation_signature": "февраль2019"
+        },
+        {
+          "coordinate": "D2",
+          "row": 2,
+          "column": 4,
+          "value": "Март 2019",
+          "normalized": "март 2019",
+          "presentation_signature": "март2019"
+        },
+        {
+          "coordinate": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "Апрель 2019",
+          "normalized": "апрель 2019",
+          "presentation_signature": "апрель2019"
+        },
+        {
+          "coordinate": "F2",
+          "row": 2,
+          "column": 6,
+          "value": "Май 2019",
+          "normalized": "май 2019",
+          "presentation_signature": "май2019"
+        },
+        {
+          "coordinate": "G2",
+          "row": 2,
+          "column": 7,
+          "value": "Июнь 2019",
+          "normalized": "июнь 2019",
+          "presentation_signature": "июнь2019"
+        },
+        {
+          "coordinate": "H2",
+          "row": 2,
+          "column": 8,
+          "value": "Июль 2019",
+          "normalized": "июль 2019",
+          "presentation_signature": "июль2019"
+        },
+        {
+          "coordinate": "I2",
+          "row": 2,
+          "column": 9,
+          "value": "Август 2019",
+          "normalized": "август 2019",
+          "presentation_signature": "август2019"
+        },
+        {
+          "coordinate": "J2",
+          "row": 2,
+          "column": 10,
+          "value": "Сентябрь 2019",
+          "normalized": "сентябрь 2019",
+          "presentation_signature": "сентябрь2019"
+        },
+        {
+          "coordinate": "K2",
+          "row": 2,
+          "column": 11,
+          "value": "Октябрь 2019",
+          "normalized": "октябрь 2019",
+          "presentation_signature": "октябрь2019"
+        },
+        {
+          "coordinate": "L2",
+          "row": 2,
+          "column": 12,
+          "value": "Ноябрь 2019",
+          "normalized": "ноябрь 2019",
+          "presentation_signature": "ноябрь2019"
+        },
+        {
+          "coordinate": "M2",
+          "row": 2,
+          "column": 13,
+          "value": "Декабрь 2019",
+          "normalized": "декабрь 2019",
+          "presentation_signature": "декабрь2019"
+        },
+        {
+          "coordinate": "N2",
+          "row": 2,
+          "column": 14,
+          "value": "Январь 2020",
+          "normalized": "январь 2020",
+          "presentation_signature": "январь2020"
+        },
+        {
+          "coordinate": "O2",
+          "row": 2,
+          "column": 15,
+          "value": "Февраль 2020",
+          "normalized": "февраль 2020",
+          "presentation_signature": "февраль2020"
+        },
+        {
+          "coordinate": "P2",
+          "row": 2,
+          "column": 16,
+          "value": "Март 2020",
+          "normalized": "март 2020",
+          "presentation_signature": "март2020"
+        },
+        {
+          "coordinate": "Q2",
+          "row": 2,
+          "column": 17,
+          "value": "Апрель 2020",
+          "normalized": "апрель 2020",
+          "presentation_signature": "апрель2020"
+        },
+        {
+          "coordinate": "R2",
+          "row": 2,
+          "column": 18,
+          "value": "Май 2020",
+          "normalized": "май 2020",
+          "presentation_signature": "май2020"
+        },
+        {
+          "coordinate": "S2",
+          "row": 2,
+          "column": 19,
+          "value": "Июнь 2020",
+          "normalized": "июнь 2020",
+          "presentation_signature": "июнь2020"
+        },
+        {
+          "coordinate": "T2",
+          "row": 2,
+          "column": 20,
+          "value": "Июль 2020",
+          "normalized": "июль 2020",
+          "presentation_signature": "июль2020"
+        },
+        {
+          "coordinate": "U2",
+          "row": 2,
+          "column": 21,
+          "value": "Август 2020",
+          "normalized": "август 2020",
+          "presentation_signature": "август2020"
+        },
+        {
+          "coordinate": "V2",
+          "row": 2,
+          "column": 22,
+          "value": "Сентябрь 2020",
+          "normalized": "сентябрь 2020",
+          "presentation_signature": "сентябрь2020"
+        },
+        {
+          "coordinate": "W2",
+          "row": 2,
+          "column": 23,
+          "value": "Октябрь 2020",
+          "normalized": "октябрь 2020",
+          "presentation_signature": "октябрь2020"
+        },
+        {
+          "coordinate": "X2",
+          "row": 2,
+          "column": 24,
+          "value": "Ноябрь 2020",
+          "normalized": "ноябрь 2020",
+          "presentation_signature": "ноябрь2020"
+        },
+        {
+          "coordinate": "Y2",
+          "row": 2,
+          "column": 25,
+          "value": "Декабрь 2020",
+          "normalized": "декабрь 2020",
+          "presentation_signature": "декабрь2020"
+        },
+        {
+          "coordinate": "Z2",
+          "row": 2,
+          "column": 26,
+          "value": "Январь 2021",
+          "normalized": "январь 2021",
+          "presentation_signature": "январь2021"
+        },
+        {
+          "coordinate": "AA2",
+          "row": 2,
+          "column": 27,
+          "value": "Февраль 2021",
+          "normalized": "февраль 2021",
+          "presentation_signature": "февраль2021"
+        },
+        {
+          "coordinate": "AB2",
+          "row": 2,
+          "column": 28,
+          "value": "Март 2021",
+          "normalized": "март 2021",
+          "presentation_signature": "март2021"
+        },
+        {
+          "coordinate": "AC2",
+          "row": 2,
+          "column": 29,
+          "value": "Апрель 2021",
+          "normalized": "апрель 2021",
+          "presentation_signature": "апрель2021"
+        },
+        {
+          "coordinate": "AD2",
+          "row": 2,
+          "column": 30,
+          "value": "Май 2021",
+          "normalized": "май 2021",
+          "presentation_signature": "май2021"
+        },
+        {
+          "coordinate": "AE2",
+          "row": 2,
+          "column": 31,
+          "value": "Июнь 2021",
+          "normalized": "июнь 2021",
+          "presentation_signature": "июнь2021"
+        },
+        {
+          "coordinate": "AF2",
+          "row": 2,
+          "column": 32,
+          "value": "Июль 2021",
+          "normalized": "июль 2021",
+          "presentation_signature": "июль2021"
+        },
+        {
+          "coordinate": "AG2",
+          "row": 2,
+          "column": 33,
+          "value": "Август 2021",
+          "normalized": "август 2021",
+          "presentation_signature": "август2021"
+        },
+        {
+          "coordinate": "AH2",
+          "row": 2,
+          "column": 34,
+          "value": "Сентябрь 2021",
+          "normalized": "сентябрь 2021",
+          "presentation_signature": "сентябрь2021"
+        },
+        {
+          "coordinate": "AI2",
+          "row": 2,
+          "column": 35,
+          "value": "Октябрь 2021",
+          "normalized": "октябрь 2021",
+          "presentation_signature": "октябрь2021"
+        },
+        {
+          "coordinate": "AJ2",
+          "row": 2,
+          "column": 36,
+          "value": "Ноябрь 2021",
+          "normalized": "ноябрь 2021",
+          "presentation_signature": "ноябрь2021"
+        },
+        {
+          "coordinate": "AK2",
+          "row": 2,
+          "column": 37,
+          "value": "Декабрь 2021",
+          "normalized": "декабрь 2021",
+          "presentation_signature": "декабрь2021"
+        },
+        {
+          "coordinate": "AL2",
+          "row": 2,
+          "column": 38,
+          "value": "Январь 2022",
+          "normalized": "январь 2022",
+          "presentation_signature": "январь2022"
+        },
+        {
+          "coordinate": "AM2",
+          "row": 2,
+          "column": 39,
+          "value": "Февраль 2022",
+          "normalized": "февраль 2022",
+          "presentation_signature": "февраль2022"
+        },
+        {
+          "coordinate": "AN2",
+          "row": 2,
+          "column": 40,
+          "value": "Март 2022",
+          "normalized": "март 2022",
+          "presentation_signature": "март2022"
+        },
+        {
+          "coordinate": "AO2",
+          "row": 2,
+          "column": 41,
+          "value": "Апрель 2022",
+          "normalized": "апрель 2022",
+          "presentation_signature": "апрель2022"
+        },
+        {
+          "coordinate": "AP2",
+          "row": 2,
+          "column": 42,
+          "value": "Май 2022",
+          "normalized": "май 2022",
+          "presentation_signature": "май2022"
+        },
+        {
+          "coordinate": "AQ2",
+          "row": 2,
+          "column": 43,
+          "value": "Июнь 2022",
+          "normalized": "июнь 2022",
+          "presentation_signature": "июнь2022"
+        },
+        {
+          "coordinate": "AR2",
+          "row": 2,
+          "column": 44,
+          "value": "Июль 2022",
+          "normalized": "июль 2022",
+          "presentation_signature": "июль2022"
+        },
+        {
+          "coordinate": "AS2",
+          "row": 2,
+          "column": 45,
+          "value": "Август 2022",
+          "normalized": "август 2022",
+          "presentation_signature": "август2022"
+        },
+        {
+          "coordinate": "AT2",
+          "row": 2,
+          "column": 46,
+          "value": "Сентябрь 2022",
+          "normalized": "сентябрь 2022",
+          "presentation_signature": "сентябрь2022"
+        },
+        {
+          "coordinate": "AU2",
+          "row": 2,
+          "column": 47,
+          "value": "Октябрь 2022",
+          "normalized": "октябрь 2022",
+          "presentation_signature": "октябрь2022"
+        },
+        {
+          "coordinate": "AV2",
+          "row": 2,
+          "column": 48,
+          "value": "Ноябрь 2022",
+          "normalized": "ноябрь 2022",
+          "presentation_signature": "ноябрь2022"
+        },
+        {
+          "coordinate": "AW2",
+          "row": 2,
+          "column": 49,
+          "value": "Декабрь 2022",
+          "normalized": "декабрь 2022",
+          "presentation_signature": "декабрь2022"
+        },
+        {
+          "coordinate": "AX2",
+          "row": 2,
+          "column": 50,
+          "value": "Январь 2023",
+          "normalized": "январь 2023",
+          "presentation_signature": "январь2023"
+        },
+        {
+          "coordinate": "AY2",
+          "row": 2,
+          "column": 51,
+          "value": "Февраль 2023",
+          "normalized": "февраль 2023",
+          "presentation_signature": "февраль2023"
+        },
+        {
+          "coordinate": "AZ2",
+          "row": 2,
+          "column": 52,
+          "value": "Март 2023",
+          "normalized": "март 2023",
+          "presentation_signature": "март2023"
+        },
+        {
+          "coordinate": "BA2",
+          "row": 2,
+          "column": 53,
+          "value": "Апрель 2023",
+          "normalized": "апрель 2023",
+          "presentation_signature": "апрель2023"
+        },
+        {
+          "coordinate": "BB2",
+          "row": 2,
+          "column": 54,
+          "value": "Май 2023",
+          "normalized": "май 2023",
+          "presentation_signature": "май2023"
+        },
+        {
+          "coordinate": "BC2",
+          "row": 2,
+          "column": 55,
+          "value": "Июнь 2023",
+          "normalized": "июнь 2023",
+          "presentation_signature": "июнь2023"
+        },
+        {
+          "coordinate": "BD2",
+          "row": 2,
+          "column": 56,
+          "value": "Июль 2023",
+          "normalized": "июль 2023",
+          "presentation_signature": "июль2023"
+        },
+        {
+          "coordinate": "BE2",
+          "row": 2,
+          "column": 57,
+          "value": "Август 2023",
+          "normalized": "август 2023",
+          "presentation_signature": "август2023"
+        },
+        {
+          "coordinate": "BF2",
+          "row": 2,
+          "column": 58,
+          "value": "Сентябрь 2023",
+          "normalized": "сентябрь 2023",
+          "presentation_signature": "сентябрь2023"
+        },
+        {
+          "coordinate": "BG2",
+          "row": 2,
+          "column": 59,
+          "value": "Октябрь 2023",
+          "normalized": "октябрь 2023",
+          "presentation_signature": "октябрь2023"
+        },
+        {
+          "coordinate": "BH2",
+          "row": 2,
+          "column": 60,
+          "value": "Ноябрь 2023",
+          "normalized": "ноябрь 2023",
+          "presentation_signature": "ноябрь2023"
+        },
+        {
+          "coordinate": "BI2",
+          "row": 2,
+          "column": 61,
+          "value": "Декабрь 2023",
+          "normalized": "декабрь 2023",
+          "presentation_signature": "декабрь2023"
+        },
+        {
+          "coordinate": "BJ2",
+          "row": 2,
+          "column": 62,
+          "value": "Январь 2024",
+          "normalized": "январь 2024",
+          "presentation_signature": "январь2024"
+        },
+        {
+          "coordinate": "BK2",
+          "row": 2,
+          "column": 63,
+          "value": "Февраль 2024",
+          "normalized": "февраль 2024",
+          "presentation_signature": "февраль2024"
+        },
+        {
+          "coordinate": "BL2",
+          "row": 2,
+          "column": 64,
+          "value": "Март 2024",
+          "normalized": "март 2024",
+          "presentation_signature": "март2024"
+        },
+        {
+          "coordinate": "BM2",
+          "row": 2,
+          "column": 65,
+          "value": "Апрель 2024",
+          "normalized": "апрель 2024",
+          "presentation_signature": "апрель2024"
+        },
+        {
+          "coordinate": "BN2",
+          "row": 2,
+          "column": 66,
+          "value": "Май 2024",
+          "normalized": "май 2024",
+          "presentation_signature": "май2024"
+        },
+        {
+          "coordinate": "BO2",
+          "row": 2,
+          "column": 67,
+          "value": "Июнь 2024",
+          "normalized": "июнь 2024",
+          "presentation_signature": "июнь2024"
+        },
+        {
+          "coordinate": "BP2",
+          "row": 2,
+          "column": 68,
+          "value": "Июль 2024",
+          "normalized": "июль 2024",
+          "presentation_signature": "июль2024"
+        },
+        {
+          "coordinate": "BQ2",
+          "row": 2,
+          "column": 69,
+          "value": "Август 2024",
+          "normalized": "август 2024",
+          "presentation_signature": "август2024"
+        },
+        {
+          "coordinate": "BR2",
+          "row": 2,
+          "column": 70,
+          "value": "Сентябрь 2024",
+          "normalized": "сентябрь 2024",
+          "presentation_signature": "сентябрь2024"
+        },
+        {
+          "coordinate": "BS2",
+          "row": 2,
+          "column": 71,
+          "value": "Октябрь 2024",
+          "normalized": "октябрь 2024",
+          "presentation_signature": "октябрь2024"
+        },
+        {
+          "coordinate": "BT2",
+          "row": 2,
+          "column": 72,
+          "value": "Ноябрь 2024",
+          "normalized": "ноябрь 2024",
+          "presentation_signature": "ноябрь2024"
+        },
+        {
+          "coordinate": "BU2",
+          "row": 2,
+          "column": 73,
+          "value": "Декабрь 2024",
+          "normalized": "декабрь 2024",
+          "presentation_signature": "декабрь2024"
+        },
+        {
+          "coordinate": "BV2",
+          "row": 2,
+          "column": 74,
+          "value": "Январь 2025",
+          "normalized": "январь 2025",
+          "presentation_signature": "январь2025"
+        },
+        {
+          "coordinate": "BW2",
+          "row": 2,
+          "column": 75,
+          "value": "Февраль 2025",
+          "normalized": "февраль 2025",
+          "presentation_signature": "февраль2025"
+        },
+        {
+          "coordinate": "BX2",
+          "row": 2,
+          "column": 76,
+          "value": "Март 2025",
+          "normalized": "март 2025",
+          "presentation_signature": "март2025"
+        },
+        {
+          "coordinate": "BY2",
+          "row": 2,
+          "column": 77,
+          "value": "Апрель 2025",
+          "normalized": "апрель 2025",
+          "presentation_signature": "апрель2025"
+        },
+        {
+          "coordinate": "BZ2",
+          "row": 2,
+          "column": 78,
+          "value": "Май 2025",
+          "normalized": "май 2025",
+          "presentation_signature": "май2025"
+        },
+        {
+          "coordinate": "CA2",
+          "row": 2,
+          "column": 79,
+          "value": "Июнь 2025",
+          "normalized": "июнь 2025",
+          "presentation_signature": "июнь2025"
+        },
+        {
+          "coordinate": "CB2",
+          "row": 2,
+          "column": 80,
+          "value": "Июль 2025",
+          "normalized": "июль 2025",
+          "presentation_signature": "июль2025"
+        },
+        {
+          "coordinate": "CC2",
+          "row": 2,
+          "column": 81,
+          "value": "Август 2025",
+          "normalized": "август 2025",
+          "presentation_signature": "август2025"
+        },
+        {
+          "coordinate": "CD2",
+          "row": 2,
+          "column": 82,
+          "value": "Сентябрь 2025",
+          "normalized": "сентябрь 2025",
+          "presentation_signature": "сентябрь2025"
+        },
+        {
+          "coordinate": "CE2",
+          "row": 2,
+          "column": 83,
+          "value": "Октябрь 2025",
+          "normalized": "октябрь 2025",
+          "presentation_signature": "октябрь2025"
+        },
+        {
+          "coordinate": "CF2",
+          "row": 2,
+          "column": 84,
+          "value": "Ноябрь 2025",
+          "normalized": "ноябрь 2025",
+          "presentation_signature": "ноябрь2025"
+        },
+        {
+          "coordinate": "CG2",
+          "row": 2,
+          "column": 85,
+          "value": "Декабрь 2025",
+          "normalized": "декабрь 2025",
+          "presentation_signature": "декабрь2025"
+        },
+        {
+          "coordinate": "CH2",
+          "row": 2,
+          "column": 86,
+          "value": "Январь 2026",
+          "normalized": "январь 2026",
+          "presentation_signature": "январь2026"
+        },
+        {
+          "coordinate": "CI2",
+          "row": 2,
+          "column": 87,
+          "value": "Февраль 2026",
+          "normalized": "февраль 2026",
+          "presentation_signature": "февраль2026"
+        },
+        {
+          "coordinate": "CJ2",
+          "row": 2,
+          "column": 88,
+          "value": "Март 2026",
+          "normalized": "март 2026",
+          "presentation_signature": "март2026"
+        },
+        {
+          "coordinate": "CK2",
+          "row": 2,
+          "column": 89,
+          "value": "Апрель 2026",
+          "normalized": "апрель 2026",
+          "presentation_signature": "апрель2026"
+        },
+        {
+          "coordinate": "CL2",
+          "row": 2,
+          "column": 90,
+          "value": "Май 2026",
+          "normalized": "май 2026",
+          "presentation_signature": "май2026"
+        },
+        {
+          "coordinate": "CM2",
+          "row": 2,
+          "column": 91,
+          "value": "Июнь 2026",
+          "normalized": "июнь 2026",
+          "presentation_signature": "июнь2026"
+        },
+        {
+          "coordinate": "CN2",
+          "row": 2,
+          "column": 92,
+          "value": "Июль 2026",
+          "normalized": "июль 2026",
+          "presentation_signature": "июль2026"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "ВСЕГО",
+          "normalized": "всего",
+          "presentation_signature": "всего"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "добыча полезных ископаемых, из них:",
+          "normalized": "добыча полезных ископаемых, из них:",
+          "presentation_signature": "добычаполезныхископаемыхизних"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "        добыча топливно-энергетических полезных ископаемых",
+          "normalized": "добыча топливно-энергетических полезных ископаемых",
+          "presentation_signature": "добычатопливноэнергетическихполезныхископаемых"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "обрабатывающие производства, из них:",
+          "normalized": "обрабатывающие производства, из них:",
+          "presentation_signature": "обрабатывающиепроизводстваизних"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "        производство пищевых продуктов, включая напитки, и табака",
+          "normalized": "производство пищевых продуктов, включая напитки, и табака",
+          "presentation_signature": "производствопищевыхпродуктоввключаянапиткиитабака"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "        обработка древесины и производство изделий из дерева",
+          "normalized": "обработка древесины и производство изделий из дерева",
+          "presentation_signature": "обработкадревесиныипроизводствоизделийиздерева"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "        целлюлозно-бумажное производство, издательская и полиграфическая деятельность",
+          "normalized": "целлюлозно-бумажное производство, издательская и полиграфическая деятельность",
+          "presentation_signature": "целлюлознобумажноепроизводствоиздательскаяиполиграфическаядеятельность"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "        производство кокса, нефтепродуктов и ядерных материалов",
+          "normalized": "производство кокса, нефтепродуктов и ядерных материалов",
+          "presentation_signature": "производствококсанефтепродуктовиядерныхматериалов"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "        химическое производство",
+          "normalized": "химическое производство",
+          "presentation_signature": "химическоепроизводство"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "        производство прочих неметаллических минеральных продуктов",
+          "normalized": "производство прочих неметаллических минеральных продуктов",
+          "presentation_signature": "производствопрочихнеметаллическихминеральныхпродуктов"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "        металлургическое производство и производство готовых металлических изделий",
+          "normalized": "металлургическое производство и производство готовых металлических изделий",
+          "presentation_signature": "металлургическоепроизводствоипроизводствоготовыхметаллическихизделий"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "        производство машин и оборудования, из них:",
+          "normalized": "производство машин и оборудования, из них:",
+          "presentation_signature": "производствомашиниоборудованияизних"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "                производство машин и оборудования для сельского и лесного хозяйства",
+          "normalized": "производство машин и оборудования для сельского и лесного хозяйства",
+          "presentation_signature": "производствомашиниоборудованиядлясельскогоилесногохозяйства"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "        производство транспортных средств и оборудования, из них:",
+          "normalized": "производство транспортных средств и оборудования, из них:",
+          "presentation_signature": "производствотранспортныхсредствиоборудованияизних"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "                производство автомобилей",
+          "normalized": "производство автомобилей",
+          "presentation_signature": "производствоавтомобилей"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "производство и распределение электроэнергии, газа и воды",
+          "normalized": "производство и распределение электроэнергии, газа и воды",
+          "presentation_signature": "производствоираспределениеэлектроэнергиигазаиводы"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "сельское хозяйство, охота и лесное хозяйство, из них:",
+          "normalized": "сельское хозяйство, охота и лесное хозяйство, из них:",
+          "presentation_signature": "сельскоехозяйствоохотаилесноехозяйствоизних"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "        сельское хозяйство, охота и предоставление услуг в этих областях",
+          "normalized": "сельское хозяйство, охота и предоставление услуг в этих областях",
+          "presentation_signature": "сельскоехозяйствоохотаипредоставлениеуслугвэтихобластях"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "строительство, из них:",
+          "normalized": "строительство, из них:",
+          "presentation_signature": "строительствоизних"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "        строительство зданий и сооружений",
+          "normalized": "строительство зданий и сооружений",
+          "presentation_signature": "строительствозданийисооружений"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "транспорт и связь, из них:",
+          "normalized": "транспорт и связь, из них:",
+          "presentation_signature": "транспортисвязьизних"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "        деятельность воздушного транспорта, подчиняющегося и не подчиняющегося расписанию",
+          "normalized": "деятельность воздушного транспорта, подчиняющегося и не подчиняющегося расписанию",
+          "presentation_signature": "деятельностьвоздушноготранспортаподчиняющегосяинеподчиняющегосярасписанию"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "оптовая и розничная торговля, ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования",
+          "normalized": "оптовая и розничная торговля, ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования",
+          "presentation_signature": "оптоваяирозничнаяторговляремонтавтотранспортныхсредствмотоцикловбытовыхизделийипредметовличногопользования"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "операции с недвижимым имуществом, аренда и предоставление услуг",
+          "normalized": "операции с недвижимым имуществом, аренда и предоставление услуг",
+          "presentation_signature": "операцииснедвижимымимуществомарендаипредоставлениеуслуг"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "прочие виды деятельности",
+          "normalized": "прочие виды деятельности",
+          "presentation_signature": "прочиевидыдеятельности"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "на завершение расчетов",
+          "normalized": "на завершение расчетов",
+          "presentation_signature": "назавершениерасчетов"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B3",
+          "value": {
+            "kind": "int",
+            "value": "3018158"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "C3",
+          "value": {
+            "kind": "int",
+            "value": "3327407"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "D3",
+          "value": {
+            "kind": "int",
+            "value": "3976884"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "E3",
+          "value": {
+            "kind": "int",
+            "value": "4417634"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "F3",
+          "value": {
+            "kind": "int",
+            "value": "3187636"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "G3",
+          "value": {
+            "kind": "int",
+            "value": "3737454"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "H3",
+          "value": {
+            "kind": "int",
+            "value": "4440385"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "I3",
+          "value": {
+            "kind": "int",
+            "value": "4258281"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "J3",
+          "value": {
+            "kind": "int",
+            "value": "4480304"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "K3",
+          "value": {
+            "kind": "int",
+            "value": "4877866"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "L3",
+          "value": {
+            "kind": "int",
+            "value": "4982302"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "M3",
+          "value": {
+            "kind": "int",
+            "value": "6708990"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "N3",
+          "value": {
+            "kind": "int",
+            "value": "4040312"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "O3",
+          "value": {
+            "kind": "int",
+            "value": "4390093"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "P3",
+          "value": {
+            "kind": "int",
+            "value": "5485236"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Q3",
+          "value": {
+            "kind": "int",
+            "value": "4037216"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "R3",
+          "value": {
+            "kind": "int",
+            "value": "3481412"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "S3",
+          "value": {
+            "kind": "int",
+            "value": "4910614"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "T3",
+          "value": {
+            "kind": "int",
+            "value": "5822441"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "U3",
+          "value": {
+            "kind": "int",
+            "value": "5013372"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "V3",
+          "value": {
+            "kind": "int",
+            "value": "5734639"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "W3",
+          "value": {
+            "kind": "int",
+            "value": "5857887"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "X3",
+          "value": {
+            "kind": "int",
+            "value": "5438399"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Y3",
+          "value": {
+            "kind": "int",
+            "value": "7250583"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Z3",
+          "value": {
+            "kind": "int",
+            "value": "3953431"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AA3",
+          "value": {
+            "kind": "int",
+            "value": "5046731"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AB3",
+          "value": {
+            "kind": "int",
+            "value": "6440122"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AC3",
+          "value": {
+            "kind": "int",
+            "value": "7161612"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AD3",
+          "value": {
+            "kind": "int",
+            "value": "5849675"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AE3",
+          "value": {
+            "kind": "int",
+            "value": "6844591"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AF3",
+          "value": {
+            "kind": "int",
+            "value": "7712644"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AG3",
+          "value": {
+            "kind": "int",
+            "value": "7105933"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AH3",
+          "value": {
+            "kind": "int",
+            "value": "6792790"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AI3",
+          "value": {
+            "kind": "int",
+            "value": "6820666"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AJ3",
+          "value": {
+            "kind": "int",
+            "value": "6001619"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AK3",
+          "value": {
+            "kind": "int",
+            "value": "7348340"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AL3",
+          "value": {
+            "kind": "int",
+            "value": "4188455"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AM3",
+          "value": {
+            "kind": "int",
+            "value": "5292700"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AN3",
+          "value": {
+            "kind": "int",
+            "value": "3822230"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AO3",
+          "value": {
+            "kind": "int",
+            "value": "4223781"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AP3",
+          "value": {
+            "kind": "int",
+            "value": "3794060"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AQ3",
+          "value": {
+            "kind": "int",
+            "value": "5058279"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AR3",
+          "value": {
+            "kind": "int",
+            "value": "4657423"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AS3",
+          "value": {
+            "kind": "int",
+            "value": "5377296"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AT3",
+          "value": {
+            "kind": "int",
+            "value": "5055029"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AU3",
+          "value": {
+            "kind": "int",
+            "value": "5022626"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AV3",
+          "value": {
+            "kind": "int",
+            "value": "4485865"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AW3",
+          "value": {
+            "kind": "int",
+            "value": "7260308"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AX3",
+          "value": {
+            "kind": "int",
+            "value": "3866568"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AY3",
+          "value": {
+            "kind": "int",
+            "value": "5087947"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AZ3",
+          "value": {
+            "kind": "int",
+            "value": "5319429"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BA3",
+          "value": {
+            "kind": "int",
+            "value": "4990482"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BB3",
+          "value": {
+            "kind": "int",
+            "value": "4952347"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BC3",
+          "value": {
+            "kind": "int",
+            "value": "5705901"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BD3",
+          "value": {
+            "kind": "int",
+            "value": "6244022"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BE3",
+          "value": {
+            "kind": "int",
+            "value": "6668543"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BF3",
+          "value": {
+            "kind": "int",
+            "value": "6377635"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BG3",
+          "value": {
+            "kind": "int",
+            "value": "7009036"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BH3",
+          "value": {
+            "kind": "int",
+            "value": "5967160"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BI3",
+          "value": {
+            "kind": "int",
+            "value": "8015727"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BJ3",
+          "value": {
+            "kind": "int",
+            "value": "4364669"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BK3",
+          "value": {
+            "kind": "int",
+            "value": "5508044"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BL3",
+          "value": {
+            "kind": "int",
+            "value": "7582469"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BM3",
+          "value": {
+            "kind": "int",
+            "value": "6826962"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BN3",
+          "value": {
+            "kind": "int",
+            "value": "6851741"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BO3",
+          "value": {
+            "kind": "int",
+            "value": "6607691"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BP3",
+          "value": {
+            "kind": "int",
+            "value": "7410097"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BQ3",
+          "value": {
+            "kind": "int",
+            "value": "7246262"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BR3",
+          "value": {
+            "kind": "int",
+            "value": "7777204"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BS3",
+          "value": {
+            "kind": "int",
+            "value": "8503423"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BT3",
+          "value": {
+            "kind": "int",
+            "value": "5770350"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BU3",
+          "value": {
+            "kind": "int",
+            "value": "8632210"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BV3",
+          "value": {
+            "kind": "int",
+            "value": "4071336"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BW3",
+          "value": {
+            "kind": "int",
+            "value": "4958150"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BX3",
+          "value": {
+            "kind": "int",
+            "value": "6746360"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BY3",
+          "value": {
+            "kind": "int",
+            "value": "6466426"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BZ3",
+          "value": {
+            "kind": "int",
+            "value": "5225593"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CA3",
+          "value": {
+            "kind": "int",
+            "value": "6667746"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CB3",
+          "value": {
+            "kind": "int",
+            "value": "7024931"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CC3",
+          "value": {
+            "kind": "int",
+            "value": "7350308"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        }
+      ],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 92,
+          "text": 92
+        },
+        {
+          "row": 3,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 4,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 5,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 6,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 7,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 8,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 9,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 10,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 11,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 12,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 13,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 14,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 15,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 16,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 17,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 18,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 19,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 20,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 21,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 22,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 23,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 24,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 25,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 26,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 27,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 28,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 28,
+          "text": 28
+        },
+        {
+          "column": 2,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 3,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 4,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 5,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 6,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 7,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 8,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 9,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 10,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 11,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 12,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 13,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 14,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 15,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 16,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 17,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 18,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 19,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 20,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 21,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 22,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 23,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 24,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 25,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 26,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 27,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 28,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 29,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 30,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 31,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 32,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 33,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 34,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 35,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 36,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 37,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 38,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 39,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 40,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 41,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 42,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 43,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 44,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 45,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 46,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 47,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 48,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 49,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 50,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 51,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 52,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 53,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 54,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 55,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 56,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 57,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 58,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 59,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 60,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 61,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 62,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 63,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 64,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 65,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 66,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 67,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 68,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 69,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 70,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 71,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 72,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 73,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 74,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 75,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 76,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 77,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 78,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 79,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 80,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 81,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 82,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 83,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 84,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 85,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 86,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 87,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 88,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 89,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 90,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 91,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 92,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        }
+      ],
+      "freeze_panes": "CL1",
+      "auto_filter_ref": null
+    },
+    {
+      "title": "в инвалюте",
+      "title_normalized": "в инвалюте",
+      "title_presentation_signature": "винвалюте",
+      "state": "visible",
+      "declared_max_row": 28,
+      "declared_max_column": 92,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 28,
+        "min_column": 1,
+        "max_column": 92
+      },
+      "nonempty_cells": 2485,
+      "cell_type_counts": {
+        "text": 119,
+        "numeric": 2366
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0;\\-#,##0;0",
+          2366
+        ],
+        [
+          "@",
+          119
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Объем кредитов, предоставленных юридическим лицам - резидентам и индивидуальным предпринимателям в иностранной валюте и драгоценных металлах, по видам экономической деятельности и отдельным направлениям использования средств, млн руб.",
+          "normalized": "объем кредитов, предоставленных юридическим лицам - резидентам и индивидуальным предпринимателям в иностранной валюте и драгоценных металлах, по видам экономической деятельности и отдельным направлениям использования средств, млн руб.",
+          "presentation_signature": "объемкредитовпредоставленныхюридическимлицамрезидентамииндивидуальнымпредпринимателямвиностраннойвалютеидрагоценныхметаллахповидамэкономическойдеятельностииотдельнымнаправлениямиспользованиясредствмлнруб"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Виды экономической деятельности и отдельные направления использования средств ",
+          "normalized": "виды экономической деятельности и отдельные направления использования средств",
+          "presentation_signature": "видыэкономическойдеятельностииотдельныенаправленияиспользованиясредств"
+        },
+        {
+          "coordinate": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "Январь 2019",
+          "normalized": "январь 2019",
+          "presentation_signature": "январь2019"
+        },
+        {
+          "coordinate": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "Февраль 2019",
+          "normalized": "февраль 2019",
+          "presentation_signature": "февраль2019"
+        },
+        {
+          "coordinate": "D2",
+          "row": 2,
+          "column": 4,
+          "value": "Март 2019",
+          "normalized": "март 2019",
+          "presentation_signature": "март2019"
+        },
+        {
+          "coordinate": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "Апрель 2019",
+          "normalized": "апрель 2019",
+          "presentation_signature": "апрель2019"
+        },
+        {
+          "coordinate": "F2",
+          "row": 2,
+          "column": 6,
+          "value": "Май 2019",
+          "normalized": "май 2019",
+          "presentation_signature": "май2019"
+        },
+        {
+          "coordinate": "G2",
+          "row": 2,
+          "column": 7,
+          "value": "Июнь 2019",
+          "normalized": "июнь 2019",
+          "presentation_signature": "июнь2019"
+        },
+        {
+          "coordinate": "H2",
+          "row": 2,
+          "column": 8,
+          "value": "Июль 2019",
+          "normalized": "июль 2019",
+          "presentation_signature": "июль2019"
+        },
+        {
+          "coordinate": "I2",
+          "row": 2,
+          "column": 9,
+          "value": "Август 2019",
+          "normalized": "август 2019",
+          "presentation_signature": "август2019"
+        },
+        {
+          "coordinate": "J2",
+          "row": 2,
+          "column": 10,
+          "value": "Сентябрь 2019",
+          "normalized": "сентябрь 2019",
+          "presentation_signature": "сентябрь2019"
+        },
+        {
+          "coordinate": "K2",
+          "row": 2,
+          "column": 11,
+          "value": "Октябрь 2019",
+          "normalized": "октябрь 2019",
+          "presentation_signature": "октябрь2019"
+        },
+        {
+          "coordinate": "L2",
+          "row": 2,
+          "column": 12,
+          "value": "Ноябрь 2019",
+          "normalized": "ноябрь 2019",
+          "presentation_signature": "ноябрь2019"
+        },
+        {
+          "coordinate": "M2",
+          "row": 2,
+          "column": 13,
+          "value": "Декабрь 2019",
+          "normalized": "декабрь 2019",
+          "presentation_signature": "декабрь2019"
+        },
+        {
+          "coordinate": "N2",
+          "row": 2,
+          "column": 14,
+          "value": "Январь 2020",
+          "normalized": "январь 2020",
+          "presentation_signature": "январь2020"
+        },
+        {
+          "coordinate": "O2",
+          "row": 2,
+          "column": 15,
+          "value": "Февраль 2020",
+          "normalized": "февраль 2020",
+          "presentation_signature": "февраль2020"
+        },
+        {
+          "coordinate": "P2",
+          "row": 2,
+          "column": 16,
+          "value": "Март 2020",
+          "normalized": "март 2020",
+          "presentation_signature": "март2020"
+        },
+        {
+          "coordinate": "Q2",
+          "row": 2,
+          "column": 17,
+          "value": "Апрель 2020",
+          "normalized": "апрель 2020",
+          "presentation_signature": "апрель2020"
+        },
+        {
+          "coordinate": "R2",
+          "row": 2,
+          "column": 18,
+          "value": "Май 2020",
+          "normalized": "май 2020",
+          "presentation_signature": "май2020"
+        },
+        {
+          "coordinate": "S2",
+          "row": 2,
+          "column": 19,
+          "value": "Июнь 2020",
+          "normalized": "июнь 2020",
+          "presentation_signature": "июнь2020"
+        },
+        {
+          "coordinate": "T2",
+          "row": 2,
+          "column": 20,
+          "value": "Июль 2020",
+          "normalized": "июль 2020",
+          "presentation_signature": "июль2020"
+        },
+        {
+          "coordinate": "U2",
+          "row": 2,
+          "column": 21,
+          "value": "Август 2020",
+          "normalized": "август 2020",
+          "presentation_signature": "август2020"
+        },
+        {
+          "coordinate": "V2",
+          "row": 2,
+          "column": 22,
+          "value": "Сентябрь 2020",
+          "normalized": "сентябрь 2020",
+          "presentation_signature": "сентябрь2020"
+        },
+        {
+          "coordinate": "W2",
+          "row": 2,
+          "column": 23,
+          "value": "Октябрь 2020",
+          "normalized": "октябрь 2020",
+          "presentation_signature": "октябрь2020"
+        },
+        {
+          "coordinate": "X2",
+          "row": 2,
+          "column": 24,
+          "value": "Ноябрь 2020",
+          "normalized": "ноябрь 2020",
+          "presentation_signature": "ноябрь2020"
+        },
+        {
+          "coordinate": "Y2",
+          "row": 2,
+          "column": 25,
+          "value": "Декабрь 2020",
+          "normalized": "декабрь 2020",
+          "presentation_signature": "декабрь2020"
+        },
+        {
+          "coordinate": "Z2",
+          "row": 2,
+          "column": 26,
+          "value": "Январь 2021",
+          "normalized": "январь 2021",
+          "presentation_signature": "январь2021"
+        },
+        {
+          "coordinate": "AA2",
+          "row": 2,
+          "column": 27,
+          "value": "Февраль 2021",
+          "normalized": "февраль 2021",
+          "presentation_signature": "февраль2021"
+        },
+        {
+          "coordinate": "AB2",
+          "row": 2,
+          "column": 28,
+          "value": "Март 2021",
+          "normalized": "март 2021",
+          "presentation_signature": "март2021"
+        },
+        {
+          "coordinate": "AC2",
+          "row": 2,
+          "column": 29,
+          "value": "Апрель 2021",
+          "normalized": "апрель 2021",
+          "presentation_signature": "апрель2021"
+        },
+        {
+          "coordinate": "AD2",
+          "row": 2,
+          "column": 30,
+          "value": "Май 2021",
+          "normalized": "май 2021",
+          "presentation_signature": "май2021"
+        },
+        {
+          "coordinate": "AE2",
+          "row": 2,
+          "column": 31,
+          "value": "Июнь 2021",
+          "normalized": "июнь 2021",
+          "presentation_signature": "июнь2021"
+        },
+        {
+          "coordinate": "AF2",
+          "row": 2,
+          "column": 32,
+          "value": "Июль 2021",
+          "normalized": "июль 2021",
+          "presentation_signature": "июль2021"
+        },
+        {
+          "coordinate": "AG2",
+          "row": 2,
+          "column": 33,
+          "value": "Август 2021",
+          "normalized": "август 2021",
+          "presentation_signature": "август2021"
+        },
+        {
+          "coordinate": "AH2",
+          "row": 2,
+          "column": 34,
+          "value": "Сентябрь 2021",
+          "normalized": "сентябрь 2021",
+          "presentation_signature": "сентябрь2021"
+        },
+        {
+          "coordinate": "AI2",
+          "row": 2,
+          "column": 35,
+          "value": "Октябрь 2021",
+          "normalized": "октябрь 2021",
+          "presentation_signature": "октябрь2021"
+        },
+        {
+          "coordinate": "AJ2",
+          "row": 2,
+          "column": 36,
+          "value": "Ноябрь 2021",
+          "normalized": "ноябрь 2021",
+          "presentation_signature": "ноябрь2021"
+        },
+        {
+          "coordinate": "AK2",
+          "row": 2,
+          "column": 37,
+          "value": "Декабрь 2021",
+          "normalized": "декабрь 2021",
+          "presentation_signature": "декабрь2021"
+        },
+        {
+          "coordinate": "AL2",
+          "row": 2,
+          "column": 38,
+          "value": "Январь 2022",
+          "normalized": "январь 2022",
+          "presentation_signature": "январь2022"
+        },
+        {
+          "coordinate": "AM2",
+          "row": 2,
+          "column": 39,
+          "value": "Февраль 2022",
+          "normalized": "февраль 2022",
+          "presentation_signature": "февраль2022"
+        },
+        {
+          "coordinate": "AN2",
+          "row": 2,
+          "column": 40,
+          "value": "Март 2022",
+          "normalized": "март 2022",
+          "presentation_signature": "март2022"
+        },
+        {
+          "coordinate": "AO2",
+          "row": 2,
+          "column": 41,
+          "value": "Апрель 2022",
+          "normalized": "апрель 2022",
+          "presentation_signature": "апрель2022"
+        },
+        {
+          "coordinate": "AP2",
+          "row": 2,
+          "column": 42,
+          "value": "Май 2022",
+          "normalized": "май 2022",
+          "presentation_signature": "май2022"
+        },
+        {
+          "coordinate": "AQ2",
+          "row": 2,
+          "column": 43,
+          "value": "Июнь 2022",
+          "normalized": "июнь 2022",
+          "presentation_signature": "июнь2022"
+        },
+        {
+          "coordinate": "AR2",
+          "row": 2,
+          "column": 44,
+          "value": "Июль 2022",
+          "normalized": "июль 2022",
+          "presentation_signature": "июль2022"
+        },
+        {
+          "coordinate": "AS2",
+          "row": 2,
+          "column": 45,
+          "value": "Август 2022",
+          "normalized": "август 2022",
+          "presentation_signature": "август2022"
+        },
+        {
+          "coordinate": "AT2",
+          "row": 2,
+          "column": 46,
+          "value": "Сентябрь 2022",
+          "normalized": "сентябрь 2022",
+          "presentation_signature": "сентябрь2022"
+        },
+        {
+          "coordinate": "AU2",
+          "row": 2,
+          "column": 47,
+          "value": "Октябрь 2022",
+          "normalized": "октябрь 2022",
+          "presentation_signature": "октябрь2022"
+        },
+        {
+          "coordinate": "AV2",
+          "row": 2,
+          "column": 48,
+          "value": "Ноябрь 2022",
+          "normalized": "ноябрь 2022",
+          "presentation_signature": "ноябрь2022"
+        },
+        {
+          "coordinate": "AW2",
+          "row": 2,
+          "column": 49,
+          "value": "Декабрь 2022",
+          "normalized": "декабрь 2022",
+          "presentation_signature": "декабрь2022"
+        },
+        {
+          "coordinate": "AX2",
+          "row": 2,
+          "column": 50,
+          "value": "Январь 2023",
+          "normalized": "январь 2023",
+          "presentation_signature": "январь2023"
+        },
+        {
+          "coordinate": "AY2",
+          "row": 2,
+          "column": 51,
+          "value": "Февраль 2023",
+          "normalized": "февраль 2023",
+          "presentation_signature": "февраль2023"
+        },
+        {
+          "coordinate": "AZ2",
+          "row": 2,
+          "column": 52,
+          "value": "Март 2023",
+          "normalized": "март 2023",
+          "presentation_signature": "март2023"
+        },
+        {
+          "coordinate": "BA2",
+          "row": 2,
+          "column": 53,
+          "value": "Апрель 2023",
+          "normalized": "апрель 2023",
+          "presentation_signature": "апрель2023"
+        },
+        {
+          "coordinate": "BB2",
+          "row": 2,
+          "column": 54,
+          "value": "Май 2023",
+          "normalized": "май 2023",
+          "presentation_signature": "май2023"
+        },
+        {
+          "coordinate": "BC2",
+          "row": 2,
+          "column": 55,
+          "value": "Июнь 2023",
+          "normalized": "июнь 2023",
+          "presentation_signature": "июнь2023"
+        },
+        {
+          "coordinate": "BD2",
+          "row": 2,
+          "column": 56,
+          "value": "Июль 2023",
+          "normalized": "июль 2023",
+          "presentation_signature": "июль2023"
+        },
+        {
+          "coordinate": "BE2",
+          "row": 2,
+          "column": 57,
+          "value": "Август 2023",
+          "normalized": "август 2023",
+          "presentation_signature": "август2023"
+        },
+        {
+          "coordinate": "BF2",
+          "row": 2,
+          "column": 58,
+          "value": "Сентябрь 2023",
+          "normalized": "сентябрь 2023",
+          "presentation_signature": "сентябрь2023"
+        },
+        {
+          "coordinate": "BG2",
+          "row": 2,
+          "column": 59,
+          "value": "Октябрь 2023",
+          "normalized": "октябрь 2023",
+          "presentation_signature": "октябрь2023"
+        },
+        {
+          "coordinate": "BH2",
+          "row": 2,
+          "column": 60,
+          "value": "Ноябрь 2023",
+          "normalized": "ноябрь 2023",
+          "presentation_signature": "ноябрь2023"
+        },
+        {
+          "coordinate": "BI2",
+          "row": 2,
+          "column": 61,
+          "value": "Декабрь 2023",
+          "normalized": "декабрь 2023",
+          "presentation_signature": "декабрь2023"
+        },
+        {
+          "coordinate": "BJ2",
+          "row": 2,
+          "column": 62,
+          "value": "Январь 2024",
+          "normalized": "январь 2024",
+          "presentation_signature": "январь2024"
+        },
+        {
+          "coordinate": "BK2",
+          "row": 2,
+          "column": 63,
+          "value": "Февраль 2024",
+          "normalized": "февраль 2024",
+          "presentation_signature": "февраль2024"
+        },
+        {
+          "coordinate": "BL2",
+          "row": 2,
+          "column": 64,
+          "value": "Март 2024",
+          "normalized": "март 2024",
+          "presentation_signature": "март2024"
+        },
+        {
+          "coordinate": "BM2",
+          "row": 2,
+          "column": 65,
+          "value": "Апрель 2024",
+          "normalized": "апрель 2024",
+          "presentation_signature": "апрель2024"
+        },
+        {
+          "coordinate": "BN2",
+          "row": 2,
+          "column": 66,
+          "value": "Май 2024",
+          "normalized": "май 2024",
+          "presentation_signature": "май2024"
+        },
+        {
+          "coordinate": "BO2",
+          "row": 2,
+          "column": 67,
+          "value": "Июнь 2024",
+          "normalized": "июнь 2024",
+          "presentation_signature": "июнь2024"
+        },
+        {
+          "coordinate": "BP2",
+          "row": 2,
+          "column": 68,
+          "value": "Июль 2024",
+          "normalized": "июль 2024",
+          "presentation_signature": "июль2024"
+        },
+        {
+          "coordinate": "BQ2",
+          "row": 2,
+          "column": 69,
+          "value": "Август 2024",
+          "normalized": "август 2024",
+          "presentation_signature": "август2024"
+        },
+        {
+          "coordinate": "BR2",
+          "row": 2,
+          "column": 70,
+          "value": "Сентябрь 2024",
+          "normalized": "сентябрь 2024",
+          "presentation_signature": "сентябрь2024"
+        },
+        {
+          "coordinate": "BS2",
+          "row": 2,
+          "column": 71,
+          "value": "Октябрь 2024",
+          "normalized": "октябрь 2024",
+          "presentation_signature": "октябрь2024"
+        },
+        {
+          "coordinate": "BT2",
+          "row": 2,
+          "column": 72,
+          "value": "Ноябрь 2024",
+          "normalized": "ноябрь 2024",
+          "presentation_signature": "ноябрь2024"
+        },
+        {
+          "coordinate": "BU2",
+          "row": 2,
+          "column": 73,
+          "value": "Декабрь 2024",
+          "normalized": "декабрь 2024",
+          "presentation_signature": "декабрь2024"
+        },
+        {
+          "coordinate": "BV2",
+          "row": 2,
+          "column": 74,
+          "value": "Январь 2025",
+          "normalized": "январь 2025",
+          "presentation_signature": "январь2025"
+        },
+        {
+          "coordinate": "BW2",
+          "row": 2,
+          "column": 75,
+          "value": "Февраль 2025",
+          "normalized": "февраль 2025",
+          "presentation_signature": "февраль2025"
+        },
+        {
+          "coordinate": "BX2",
+          "row": 2,
+          "column": 76,
+          "value": "Март 2025",
+          "normalized": "март 2025",
+          "presentation_signature": "март2025"
+        },
+        {
+          "coordinate": "BY2",
+          "row": 2,
+          "column": 77,
+          "value": "Апрель 2025",
+          "normalized": "апрель 2025",
+          "presentation_signature": "апрель2025"
+        },
+        {
+          "coordinate": "BZ2",
+          "row": 2,
+          "column": 78,
+          "value": "Май 2025",
+          "normalized": "май 2025",
+          "presentation_signature": "май2025"
+        },
+        {
+          "coordinate": "CA2",
+          "row": 2,
+          "column": 79,
+          "value": "Июнь 2025",
+          "normalized": "июнь 2025",
+          "presentation_signature": "июнь2025"
+        },
+        {
+          "coordinate": "CB2",
+          "row": 2,
+          "column": 80,
+          "value": "Июль 2025",
+          "normalized": "июль 2025",
+          "presentation_signature": "июль2025"
+        },
+        {
+          "coordinate": "CC2",
+          "row": 2,
+          "column": 81,
+          "value": "Август 2025",
+          "normalized": "август 2025",
+          "presentation_signature": "август2025"
+        },
+        {
+          "coordinate": "CD2",
+          "row": 2,
+          "column": 82,
+          "value": "Сентябрь 2025",
+          "normalized": "сентябрь 2025",
+          "presentation_signature": "сентябрь2025"
+        },
+        {
+          "coordinate": "CE2",
+          "row": 2,
+          "column": 83,
+          "value": "Октябрь 2025",
+          "normalized": "октябрь 2025",
+          "presentation_signature": "октябрь2025"
+        },
+        {
+          "coordinate": "CF2",
+          "row": 2,
+          "column": 84,
+          "value": "Ноябрь 2025",
+          "normalized": "ноябрь 2025",
+          "presentation_signature": "ноябрь2025"
+        },
+        {
+          "coordinate": "CG2",
+          "row": 2,
+          "column": 85,
+          "value": "Декабрь 2025",
+          "normalized": "декабрь 2025",
+          "presentation_signature": "декабрь2025"
+        },
+        {
+          "coordinate": "CH2",
+          "row": 2,
+          "column": 86,
+          "value": "Январь 2026",
+          "normalized": "январь 2026",
+          "presentation_signature": "январь2026"
+        },
+        {
+          "coordinate": "CI2",
+          "row": 2,
+          "column": 87,
+          "value": "Февраль 2026",
+          "normalized": "февраль 2026",
+          "presentation_signature": "февраль2026"
+        },
+        {
+          "coordinate": "CJ2",
+          "row": 2,
+          "column": 88,
+          "value": "Март 2026",
+          "normalized": "март 2026",
+          "presentation_signature": "март2026"
+        },
+        {
+          "coordinate": "CK2",
+          "row": 2,
+          "column": 89,
+          "value": "Апрель 2026",
+          "normalized": "апрель 2026",
+          "presentation_signature": "апрель2026"
+        },
+        {
+          "coordinate": "CL2",
+          "row": 2,
+          "column": 90,
+          "value": "Май 2026",
+          "normalized": "май 2026",
+          "presentation_signature": "май2026"
+        },
+        {
+          "coordinate": "CM2",
+          "row": 2,
+          "column": 91,
+          "value": "Июнь 2026",
+          "normalized": "июнь 2026",
+          "presentation_signature": "июнь2026"
+        },
+        {
+          "coordinate": "CN2",
+          "row": 2,
+          "column": 92,
+          "value": "Июль 2026",
+          "normalized": "июль 2026",
+          "presentation_signature": "июль2026"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "ВСЕГО",
+          "normalized": "всего",
+          "presentation_signature": "всего"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "добыча полезных ископаемых, из них:",
+          "normalized": "добыча полезных ископаемых, из них:",
+          "presentation_signature": "добычаполезныхископаемыхизних"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "        добыча топливно-энергетических полезных ископаемых",
+          "normalized": "добыча топливно-энергетических полезных ископаемых",
+          "presentation_signature": "добычатопливноэнергетическихполезныхископаемых"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "обрабатывающие производства, из них:",
+          "normalized": "обрабатывающие производства, из них:",
+          "presentation_signature": "обрабатывающиепроизводстваизних"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "        производство пищевых продуктов, включая напитки, и табака",
+          "normalized": "производство пищевых продуктов, включая напитки, и табака",
+          "presentation_signature": "производствопищевыхпродуктоввключаянапиткиитабака"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "        обработка древесины и производство изделий из дерева",
+          "normalized": "обработка древесины и производство изделий из дерева",
+          "presentation_signature": "обработкадревесиныипроизводствоизделийиздерева"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "        целлюлозно-бумажное производство, издательская и полиграфическая деятельность",
+          "normalized": "целлюлозно-бумажное производство, издательская и полиграфическая деятельность",
+          "presentation_signature": "целлюлознобумажноепроизводствоиздательскаяиполиграфическаядеятельность"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "        производство кокса, нефтепродуктов и ядерных материалов",
+          "normalized": "производство кокса, нефтепродуктов и ядерных материалов",
+          "presentation_signature": "производствококсанефтепродуктовиядерныхматериалов"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "        химическое производство",
+          "normalized": "химическое производство",
+          "presentation_signature": "химическоепроизводство"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "        производство прочих неметаллических минеральных продуктов",
+          "normalized": "производство прочих неметаллических минеральных продуктов",
+          "presentation_signature": "производствопрочихнеметаллическихминеральныхпродуктов"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "        металлургическое производство и производство готовых металлических изделий",
+          "normalized": "металлургическое производство и производство готовых металлических изделий",
+          "presentation_signature": "металлургическоепроизводствоипроизводствоготовыхметаллическихизделий"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "        производство машин и оборудования, из них:",
+          "normalized": "производство машин и оборудования, из них:",
+          "presentation_signature": "производствомашиниоборудованияизних"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "                производство машин и оборудования для сельского и лесного хозяйства",
+          "normalized": "производство машин и оборудования для сельского и лесного хозяйства",
+          "presentation_signature": "производствомашиниоборудованиядлясельскогоилесногохозяйства"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "        производство транспортных средств и оборудования, из них:",
+          "normalized": "производство транспортных средств и оборудования, из них:",
+          "presentation_signature": "производствотранспортныхсредствиоборудованияизних"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "                производство автомобилей",
+          "normalized": "производство автомобилей",
+          "presentation_signature": "производствоавтомобилей"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "производство и распределение электроэнергии, газа и воды",
+          "normalized": "производство и распределение электроэнергии, газа и воды",
+          "presentation_signature": "производствоираспределениеэлектроэнергиигазаиводы"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "сельское хозяйство, охота и лесное хозяйство, из них:",
+          "normalized": "сельское хозяйство, охота и лесное хозяйство, из них:",
+          "presentation_signature": "сельскоехозяйствоохотаилесноехозяйствоизних"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "        сельское хозяйство, охота и предоставление услуг в этих областях",
+          "normalized": "сельское хозяйство, охота и предоставление услуг в этих областях",
+          "presentation_signature": "сельскоехозяйствоохотаипредоставлениеуслугвэтихобластях"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "строительство, из них:",
+          "normalized": "строительство, из них:",
+          "presentation_signature": "строительствоизних"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "        строительство зданий и сооружений",
+          "normalized": "строительство зданий и сооружений",
+          "presentation_signature": "строительствозданийисооружений"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "транспорт и связь, из них:",
+          "normalized": "транспорт и связь, из них:",
+          "presentation_signature": "транспортисвязьизних"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "        деятельность воздушного транспорта, подчиняющегося и не подчиняющегося расписанию",
+          "normalized": "деятельность воздушного транспорта, подчиняющегося и не подчиняющегося расписанию",
+          "presentation_signature": "деятельностьвоздушноготранспортаподчиняющегосяинеподчиняющегосярасписанию"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "оптовая и розничная торговля, ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования",
+          "normalized": "оптовая и розничная торговля, ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования",
+          "presentation_signature": "оптоваяирозничнаяторговляремонтавтотранспортныхсредствмотоцикловбытовыхизделийипредметовличногопользования"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "операции с недвижимым имуществом, аренда и предоставление услуг",
+          "normalized": "операции с недвижимым имуществом, аренда и предоставление услуг",
+          "presentation_signature": "операцииснедвижимымимуществомарендаипредоставлениеуслуг"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "прочие виды деятельности",
+          "normalized": "прочие виды деятельности",
+          "presentation_signature": "прочиевидыдеятельности"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "на завершение расчетов",
+          "normalized": "на завершение расчетов",
+          "presentation_signature": "назавершениерасчетов"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B3",
+          "value": {
+            "kind": "int",
+            "value": "184375"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "C3",
+          "value": {
+            "kind": "int",
+            "value": "176638"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "D3",
+          "value": {
+            "kind": "int",
+            "value": "197412"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "E3",
+          "value": {
+            "kind": "int",
+            "value": "219646"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "F3",
+          "value": {
+            "kind": "int",
+            "value": "157565"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "G3",
+          "value": {
+            "kind": "int",
+            "value": "386632"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "H3",
+          "value": {
+            "kind": "int",
+            "value": "702699"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "I3",
+          "value": {
+            "kind": "int",
+            "value": "803964"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "J3",
+          "value": {
+            "kind": "int",
+            "value": "784017"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "K3",
+          "value": {
+            "kind": "int",
+            "value": "815742"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "L3",
+          "value": {
+            "kind": "int",
+            "value": "593562"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "M3",
+          "value": {
+            "kind": "int",
+            "value": "873902"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "N3",
+          "value": {
+            "kind": "int",
+            "value": "577538"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "O3",
+          "value": {
+            "kind": "int",
+            "value": "1154781"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "P3",
+          "value": {
+            "kind": "int",
+            "value": "1286250"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Q3",
+          "value": {
+            "kind": "int",
+            "value": "813204"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "R3",
+          "value": {
+            "kind": "int",
+            "value": "810356"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "S3",
+          "value": {
+            "kind": "int",
+            "value": "1245855"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "T3",
+          "value": {
+            "kind": "int",
+            "value": "1686926"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "U3",
+          "value": {
+            "kind": "int",
+            "value": "1353684"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "V3",
+          "value": {
+            "kind": "int",
+            "value": "1168587"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "W3",
+          "value": {
+            "kind": "int",
+            "value": "990962"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "X3",
+          "value": {
+            "kind": "int",
+            "value": "1083390"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Y3",
+          "value": {
+            "kind": "int",
+            "value": "1178605"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Z3",
+          "value": {
+            "kind": "int",
+            "value": "561736"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AA3",
+          "value": {
+            "kind": "int",
+            "value": "403141"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AB3",
+          "value": {
+            "kind": "int",
+            "value": "533935"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AC3",
+          "value": {
+            "kind": "int",
+            "value": "523181"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AD3",
+          "value": {
+            "kind": "int",
+            "value": "269750"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AE3",
+          "value": {
+            "kind": "int",
+            "value": "513768"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AF3",
+          "value": {
+            "kind": "int",
+            "value": "556957"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AG3",
+          "value": {
+            "kind": "int",
+            "value": "1046557"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AH3",
+          "value": {
+            "kind": "int",
+            "value": "772447"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AI3",
+          "value": {
+            "kind": "int",
+            "value": "593906"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AJ3",
+          "value": {
+            "kind": "int",
+            "value": "981379"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AK3",
+          "value": {
+            "kind": "int",
+            "value": "1812599"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AL3",
+          "value": {
+            "kind": "int",
+            "value": "1211217"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AM3",
+          "value": {
+            "kind": "int",
+            "value": "1078146"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AN3",
+          "value": {
+            "kind": "int",
+            "value": "1496468"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AO3",
+          "value": {
+            "kind": "int",
+            "value": "544508"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AP3",
+          "value": {
+            "kind": "int",
+            "value": "138243"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AQ3",
+          "value": {
+            "kind": "int",
+            "value": "151130"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AR3",
+          "value": {
+            "kind": "int",
+            "value": "217051"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AS3",
+          "value": {
+            "kind": "int",
+            "value": "466207"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AT3",
+          "value": {
+            "kind": "int",
+            "value": "747960"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AU3",
+          "value": {
+            "kind": "int",
+            "value": "594902"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AV3",
+          "value": {
+            "kind": "int",
+            "value": "308489"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AW3",
+          "value": {
+            "kind": "int",
+            "value": "694535"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AX3",
+          "value": {
+            "kind": "int",
+            "value": "191577"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AY3",
+          "value": {
+            "kind": "int",
+            "value": "341358"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AZ3",
+          "value": {
+            "kind": "int",
+            "value": "299202"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BA3",
+          "value": {
+            "kind": "int",
+            "value": "159906"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BB3",
+          "value": {
+            "kind": "int",
+            "value": "468343"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BC3",
+          "value": {
+            "kind": "int",
+            "value": "257729"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BD3",
+          "value": {
+            "kind": "int",
+            "value": "779123"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BE3",
+          "value": {
+            "kind": "int",
+            "value": "398843"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BF3",
+          "value": {
+            "kind": "int",
+            "value": "178932"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BG3",
+          "value": {
+            "kind": "int",
+            "value": "293946"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BH3",
+          "value": {
+            "kind": "int",
+            "value": "257829"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BI3",
+          "value": {
+            "kind": "int",
+            "value": "561594"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BJ3",
+          "value": {
+            "kind": "int",
+            "value": "232259"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BK3",
+          "value": {
+            "kind": "int",
+            "value": "519675"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BL3",
+          "value": {
+            "kind": "int",
+            "value": "469207"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BM3",
+          "value": {
+            "kind": "int",
+            "value": "634409"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BN3",
+          "value": {
+            "kind": "int",
+            "value": "605123"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BO3",
+          "value": {
+            "kind": "int",
+            "value": "420910"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BP3",
+          "value": {
+            "kind": "int",
+            "value": "393244"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BQ3",
+          "value": {
+            "kind": "int",
+            "value": "335389"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BR3",
+          "value": {
+            "kind": "int",
+            "value": "165463"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BS3",
+          "value": {
+            "kind": "int",
+            "value": "302206"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BT3",
+          "value": {
+            "kind": "int",
+            "value": "332759"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BU3",
+          "value": {
+            "kind": "int",
+            "value": "229425"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BV3",
+          "value": {
+            "kind": "int",
+            "value": "134724"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BW3",
+          "value": {
+            "kind": "int",
+            "value": "456145"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BX3",
+          "value": {
+            "kind": "int",
+            "value": "275456"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BY3",
+          "value": {
+            "kind": "int",
+            "value": "304497"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BZ3",
+          "value": {
+            "kind": "int",
+            "value": "225455"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CA3",
+          "value": {
+            "kind": "int",
+            "value": "266226"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CB3",
+          "value": {
+            "kind": "int",
+            "value": "548057"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CC3",
+          "value": {
+            "kind": "int",
+            "value": "597643"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        }
+      ],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 92,
+          "text": 92
+        },
+        {
+          "row": 3,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 4,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 5,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 6,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 7,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 8,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 9,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 10,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 11,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 12,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 13,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 14,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 15,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 16,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 17,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 18,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 19,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 20,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 21,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 22,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 23,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 24,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 25,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 26,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 27,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 28,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 28,
+          "text": 28
+        },
+        {
+          "column": 2,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 3,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 4,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 5,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 6,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 7,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 8,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 9,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 10,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 11,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 12,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 13,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 14,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 15,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 16,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 17,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 18,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 19,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 20,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 21,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 22,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 23,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 24,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 25,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 26,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 27,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 28,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 29,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 30,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 31,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 32,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 33,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 34,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 35,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 36,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 37,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 38,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 39,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 40,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 41,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 42,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 43,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 44,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 45,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 46,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 47,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 48,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 49,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 50,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 51,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 52,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 53,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 54,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 55,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 56,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 57,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 58,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 59,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 60,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 61,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 62,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 63,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 64,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 65,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 66,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 67,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 68,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 69,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 70,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 71,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 72,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 73,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 74,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 75,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 76,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 77,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 78,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 79,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 80,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 81,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 82,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 83,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 84,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 85,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 86,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 87,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 88,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 89,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 90,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 91,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        },
+        {
+          "column": 92,
+          "nonempty": 27,
+          "text": 1,
+          "numeric": 26
+        }
+      ],
+      "freeze_panes": "CL1",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_01_A_New_loans_corp_by_activity.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/01_01_A_New_loans_corp_by_activity.xlsx",
+    "http_status": 200,
+    "bytes": 61559,
+    "sha256": "a769a335c320d619f8b13277a45ea48781a061fb58004ff8bf39902470ac28c8",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:34 GMT"
+  }
+}

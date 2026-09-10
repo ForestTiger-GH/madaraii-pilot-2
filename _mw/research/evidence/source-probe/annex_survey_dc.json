@@ -1,0 +1,6569 @@
+{
+  "source": {
+    "source_id": "annex_survey_dc",
+    "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/annex_survey_dc.xlsx",
+    "registry_label": "Приложение к Обзору банковской системы",
+    "family_hint": "monetary_financial_statistics"
+  },
+  "sheet_names": [
+    "Приложение к обзору",
+    "Приложение к обзору (с.к)",
+    "Метаданные"
+  ],
+  "defined_names": [],
+  "sheets": [
+    {
+      "title": "Приложение к обзору",
+      "title_normalized": "приложение к обзору",
+      "title_presentation_signature": "приложениекобзору",
+      "state": "visible",
+      "declared_max_row": 14,
+      "declared_max_column": 141,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 14,
+        "min_column": 1,
+        "max_column": 141
+      },
+      "nonempty_cells": 1693,
+      "cell_type_counts": {
+        "text": 13,
+        "date": 140,
+        "numeric": 1540
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-",
+          1540
+        ],
+        [
+          "mm-dd-yy",
+          140
+        ],
+        [
+          "General",
+          13
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Приложение к Обзору банковской системы, млн рублей*",
+          "normalized": "приложение к обзору банковской системы, млн рублей*",
+          "presentation_signature": "приложениекобзорубанковскойсистемымлнрублей*"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Кредиты и займы домашних хозяйств",
+          "normalized": "кредиты и займы домашних хозяйств",
+          "presentation_signature": "кредитыизаймыдомашниххозяйств"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "ипотечное жилищное кредитование",
+          "normalized": "ипотечное жилищное кредитование",
+          "presentation_signature": "ипотечноежилищноекредитование"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "автокредиты",
+          "normalized": "автокредиты",
+          "presentation_signature": "автокредиты"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "потребительские ссуды",
+          "normalized": "потребительские ссуды",
+          "presentation_signature": "потребительскиессуды"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "прочие кредиты ",
+          "normalized": "прочие кредиты",
+          "presentation_signature": "прочиекредиты"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "требования по начисленным процентам",
+          "normalized": "требования по начисленным процентам",
+          "presentation_signature": "требованияпоначисленнымпроцентам"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "ипотечное жилищное кредитование",
+          "normalized": "ипотечное жилищное кредитование",
+          "presentation_signature": "ипотечноежилищноекредитование"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "прочие кредиты ",
+          "normalized": "прочие кредиты",
+          "presentation_signature": "прочиекредиты"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "требования по начисленным процентам",
+          "normalized": "требования по начисленным процентам",
+          "presentation_signature": "требованияпоначисленнымпроцентам"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "*Данные могут  уточняться в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "normalized": "*данные могут уточняться в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "presentation_signature": "*данныемогутуточнятьсявсвязисизменениемотчетныхданныхпоявлениемновыхисточниковинформацииметодологическимиизменениями"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B2",
+          "value": {
+            "kind": "int",
+            "value": "12346021"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "C2",
+          "value": {
+            "kind": "int",
+            "value": "12263246"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "D2",
+          "value": {
+            "kind": "int",
+            "value": "12071988"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "E2",
+          "value": {
+            "kind": "int",
+            "value": "11912644"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "F2",
+          "value": {
+            "kind": "int",
+            "value": "11783356"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "G2",
+          "value": {
+            "kind": "int",
+            "value": "11717220"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "H2",
+          "value": {
+            "kind": "int",
+            "value": "11660932"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "I2",
+          "value": {
+            "kind": "int",
+            "value": "11664170"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "J2",
+          "value": {
+            "kind": "int",
+            "value": "11682459"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "K2",
+          "value": {
+            "kind": "int",
+            "value": "11710223"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "L2",
+          "value": {
+            "kind": "int",
+            "value": "11665476"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "M2",
+          "value": {
+            "kind": "int",
+            "value": "11630839"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "N2",
+          "value": {
+            "kind": "int",
+            "value": "11647101"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "O2",
+          "value": {
+            "kind": "int",
+            "value": "11590907"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "P2",
+          "value": {
+            "kind": "int",
+            "value": "11570003"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Q2",
+          "value": {
+            "kind": "int",
+            "value": "11517781"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "R2",
+          "value": {
+            "kind": "int",
+            "value": "11500386"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "S2",
+          "value": {
+            "kind": "int",
+            "value": "11524406"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "T2",
+          "value": {
+            "kind": "int",
+            "value": "11519169"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "U2",
+          "value": {
+            "kind": "int",
+            "value": "11589587"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "V2",
+          "value": {
+            "kind": "int",
+            "value": "11600286"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "W2",
+          "value": {
+            "kind": "int",
+            "value": "11670434"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "X2",
+          "value": {
+            "kind": "int",
+            "value": "11690076"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Y2",
+          "value": {
+            "kind": "int",
+            "value": "11738015"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Z2",
+          "value": {
+            "kind": "int",
+            "value": "11755135"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AA2",
+          "value": {
+            "kind": "int",
+            "value": "11716161"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AB2",
+          "value": {
+            "kind": "int",
+            "value": "11726484"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AC2",
+          "value": {
+            "kind": "int",
+            "value": "11836171"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AD2",
+          "value": {
+            "kind": "int",
+            "value": "11960898"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AE2",
+          "value": {
+            "kind": "int",
+            "value": "12036591"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AF2",
+          "value": {
+            "kind": "int",
+            "value": "12177323"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AG2",
+          "value": {
+            "kind": "int",
+            "value": "12311827"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AH2",
+          "value": {
+            "kind": "int",
+            "value": "12515543"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AI2",
+          "value": {
+            "kind": "int",
+            "value": "12662384"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AJ2",
+          "value": {
+            "kind": "int",
+            "value": "12804252"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AK2",
+          "value": {
+            "kind": "int",
+            "value": "13013607"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AL2",
+          "value": {
+            "kind": "int",
+            "value": "13171437"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AM2",
+          "value": {
+            "kind": "int",
+            "value": "13329735"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AN2",
+          "value": {
+            "kind": "int",
+            "value": "13442118"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AO2",
+          "value": {
+            "kind": "int",
+            "value": "13708868"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AP2",
+          "value": {
+            "kind": "int",
+            "value": "13923565"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AQ2",
+          "value": {
+            "kind": "int",
+            "value": "14181568"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AR2",
+          "value": {
+            "kind": "int",
+            "value": "14434874"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AS2",
+          "value": {
+            "kind": "int",
+            "value": "14695933"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AT2",
+          "value": {
+            "kind": "int",
+            "value": "15035171"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AU2",
+          "value": {
+            "kind": "int",
+            "value": "15318834"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AV2",
+          "value": {
+            "kind": "int",
+            "value": "15562507"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AW2",
+          "value": {
+            "kind": "int",
+            "value": "15906465"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AX2",
+          "value": {
+            "kind": "int",
+            "value": "16069357"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AY2",
+          "value": {
+            "kind": "int",
+            "value": "16543366"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AZ2",
+          "value": {
+            "kind": "int",
+            "value": "16700069"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BA2",
+          "value": {
+            "kind": "int",
+            "value": "16949559"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BB2",
+          "value": {
+            "kind": "int",
+            "value": "17258979"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BC2",
+          "value": {
+            "kind": "int",
+            "value": "17523362"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BD2",
+          "value": {
+            "kind": "int",
+            "value": "17769158"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BE2",
+          "value": {
+            "kind": "int",
+            "value": "17962985"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BF2",
+          "value": {
+            "kind": "int",
+            "value": "18284648"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BG2",
+          "value": {
+            "kind": "int",
+            "value": "18537781"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BH2",
+          "value": {
+            "kind": "int",
+            "value": "18689092"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BI2",
+          "value": {
+            "kind": "int",
+            "value": "18923250"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BJ2",
+          "value": {
+            "kind": "int",
+            "value": "19100407"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BK2",
+          "value": {
+            "kind": "int",
+            "value": "19246575"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BL2",
+          "value": {
+            "kind": "int",
+            "value": "19470790"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BM2",
+          "value": {
+            "kind": "int",
+            "value": "19810115"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BN2",
+          "value": {
+            "kind": "int",
+            "value": "19691000"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BO2",
+          "value": {
+            "kind": "int",
+            "value": "19739546"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BP2",
+          "value": {
+            "kind": "int",
+            "value": "19909839"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BQ2",
+          "value": {
+            "kind": "int",
+            "value": "20216659"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BR2",
+          "value": {
+            "kind": "int",
+            "value": "20602844"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BS2",
+          "value": {
+            "kind": "int",
+            "value": "20956501"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BT2",
+          "value": {
+            "kind": "int",
+            "value": "21343797"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BU2",
+          "value": {
+            "kind": "int",
+            "value": "21464763"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BV2",
+          "value": {
+            "kind": "int",
+            "value": "21588518"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BW2",
+          "value": {
+            "kind": "int",
+            "value": "21774914"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BX2",
+          "value": {
+            "kind": "int",
+            "value": "22052680"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BY2",
+          "value": {
+            "kind": "int",
+            "value": "22488111"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BZ2",
+          "value": {
+            "kind": "int",
+            "value": "22929234"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CA2",
+          "value": {
+            "kind": "int",
+            "value": "23413243"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CB2",
+          "value": {
+            "kind": "int",
+            "value": "23969486"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CC2",
+          "value": {
+            "kind": "int",
+            "value": "24398777"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B1",
+          "value": {
+            "kind": "date",
+            "value": "2015-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "C1",
+          "value": {
+            "kind": "date",
+            "value": "2015-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "D1",
+          "value": {
+            "kind": "date",
+            "value": "2015-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "E1",
+          "value": {
+            "kind": "date",
+            "value": "2015-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "F1",
+          "value": {
+            "kind": "date",
+            "value": "2015-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "G1",
+          "value": {
+            "kind": "date",
+            "value": "2015-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "H1",
+          "value": {
+            "kind": "date",
+            "value": "2015-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "I1",
+          "value": {
+            "kind": "date",
+            "value": "2015-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "J1",
+          "value": {
+            "kind": "date",
+            "value": "2015-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "K1",
+          "value": {
+            "kind": "date",
+            "value": "2015-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "L1",
+          "value": {
+            "kind": "date",
+            "value": "2015-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "M1",
+          "value": {
+            "kind": "date",
+            "value": "2015-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "N1",
+          "value": {
+            "kind": "date",
+            "value": "2016-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "O1",
+          "value": {
+            "kind": "date",
+            "value": "2016-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "P1",
+          "value": {
+            "kind": "date",
+            "value": "2016-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Q1",
+          "value": {
+            "kind": "date",
+            "value": "2016-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "R1",
+          "value": {
+            "kind": "date",
+            "value": "2016-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "S1",
+          "value": {
+            "kind": "date",
+            "value": "2016-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "T1",
+          "value": {
+            "kind": "date",
+            "value": "2016-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "U1",
+          "value": {
+            "kind": "date",
+            "value": "2016-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "V1",
+          "value": {
+            "kind": "date",
+            "value": "2016-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "W1",
+          "value": {
+            "kind": "date",
+            "value": "2016-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "X1",
+          "value": {
+            "kind": "date",
+            "value": "2016-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Y1",
+          "value": {
+            "kind": "date",
+            "value": "2016-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Z1",
+          "value": {
+            "kind": "date",
+            "value": "2017-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AA1",
+          "value": {
+            "kind": "date",
+            "value": "2017-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AB1",
+          "value": {
+            "kind": "date",
+            "value": "2017-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AC1",
+          "value": {
+            "kind": "date",
+            "value": "2017-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AD1",
+          "value": {
+            "kind": "date",
+            "value": "2017-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AE1",
+          "value": {
+            "kind": "date",
+            "value": "2017-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AF1",
+          "value": {
+            "kind": "date",
+            "value": "2017-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AG1",
+          "value": {
+            "kind": "date",
+            "value": "2017-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AH1",
+          "value": {
+            "kind": "date",
+            "value": "2017-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AI1",
+          "value": {
+            "kind": "date",
+            "value": "2017-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AJ1",
+          "value": {
+            "kind": "date",
+            "value": "2017-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AK1",
+          "value": {
+            "kind": "date",
+            "value": "2017-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AL1",
+          "value": {
+            "kind": "date",
+            "value": "2018-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AM1",
+          "value": {
+            "kind": "date",
+            "value": "2018-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AN1",
+          "value": {
+            "kind": "date",
+            "value": "2018-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AO1",
+          "value": {
+            "kind": "date",
+            "value": "2018-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AP1",
+          "value": {
+            "kind": "date",
+            "value": "2018-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AQ1",
+          "value": {
+            "kind": "date",
+            "value": "2018-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AR1",
+          "value": {
+            "kind": "date",
+            "value": "2018-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AS1",
+          "value": {
+            "kind": "date",
+            "value": "2018-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AT1",
+          "value": {
+            "kind": "date",
+            "value": "2018-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AU1",
+          "value": {
+            "kind": "date",
+            "value": "2018-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AV1",
+          "value": {
+            "kind": "date",
+            "value": "2018-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AW1",
+          "value": {
+            "kind": "date",
+            "value": "2018-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AX1",
+          "value": {
+            "kind": "date",
+            "value": "2019-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AY1",
+          "value": {
+            "kind": "date",
+            "value": "2019-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AZ1",
+          "value": {
+            "kind": "date",
+            "value": "2019-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BA1",
+          "value": {
+            "kind": "date",
+            "value": "2019-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BB1",
+          "value": {
+            "kind": "date",
+            "value": "2019-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BC1",
+          "value": {
+            "kind": "date",
+            "value": "2019-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BD1",
+          "value": {
+            "kind": "date",
+            "value": "2019-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BE1",
+          "value": {
+            "kind": "date",
+            "value": "2019-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BF1",
+          "value": {
+            "kind": "date",
+            "value": "2019-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BG1",
+          "value": {
+            "kind": "date",
+            "value": "2019-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BH1",
+          "value": {
+            "kind": "date",
+            "value": "2019-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BI1",
+          "value": {
+            "kind": "date",
+            "value": "2019-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BJ1",
+          "value": {
+            "kind": "date",
+            "value": "2020-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BK1",
+          "value": {
+            "kind": "date",
+            "value": "2020-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BL1",
+          "value": {
+            "kind": "date",
+            "value": "2020-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BM1",
+          "value": {
+            "kind": "date",
+            "value": "2020-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BN1",
+          "value": {
+            "kind": "date",
+            "value": "2020-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BO1",
+          "value": {
+            "kind": "date",
+            "value": "2020-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BP1",
+          "value": {
+            "kind": "date",
+            "value": "2020-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BQ1",
+          "value": {
+            "kind": "date",
+            "value": "2020-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BR1",
+          "value": {
+            "kind": "date",
+            "value": "2020-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BS1",
+          "value": {
+            "kind": "date",
+            "value": "2020-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BT1",
+          "value": {
+            "kind": "date",
+            "value": "2020-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BU1",
+          "value": {
+            "kind": "date",
+            "value": "2020-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BV1",
+          "value": {
+            "kind": "date",
+            "value": "2021-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BW1",
+          "value": {
+            "kind": "date",
+            "value": "2021-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BX1",
+          "value": {
+            "kind": "date",
+            "value": "2021-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BY1",
+          "value": {
+            "kind": "date",
+            "value": "2021-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BZ1",
+          "value": {
+            "kind": "date",
+            "value": "2021-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CA1",
+          "value": {
+            "kind": "date",
+            "value": "2021-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CB1",
+          "value": {
+            "kind": "date",
+            "value": "2021-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CC1",
+          "value": {
+            "kind": "date",
+            "value": "2021-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 141,
+          "text": 1,
+          "date": 140
+        },
+        {
+          "row": 2,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 3,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 4,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 5,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 6,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 7,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 8,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 9,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 10,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 11,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 12,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 14,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 13,
+          "text": 13
+        },
+        {
+          "column": 2,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 3,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 4,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 5,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 6,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 7,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 8,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 9,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 10,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 11,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 12,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 13,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 14,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 15,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 16,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 17,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 18,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 19,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 20,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 21,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 22,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 23,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 24,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 25,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 26,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 27,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 28,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 29,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 30,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 31,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 32,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 33,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 34,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 35,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 36,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 37,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 38,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 39,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 40,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 41,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 42,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 43,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 44,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 45,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 46,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 47,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 48,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 49,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 50,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 51,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 52,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 53,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 54,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 55,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 56,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 57,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 58,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 59,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 60,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 61,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 62,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 63,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 64,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 65,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 66,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 67,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 68,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 69,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 70,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 71,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 72,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 73,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 74,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 75,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 76,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 77,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 78,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 79,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 80,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 81,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 82,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 83,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 84,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 85,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 86,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 87,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 88,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 89,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 90,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 91,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 92,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 93,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 94,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 95,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 96,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 97,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 98,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 99,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 100,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 101,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 102,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 103,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 104,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 105,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 106,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 107,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 108,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 109,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 110,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 111,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 112,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 113,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 114,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 115,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 116,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 117,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 118,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 119,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 120,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 121,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 122,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 123,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 124,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 125,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 126,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 127,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 128,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 129,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 130,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 131,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 132,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 133,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 134,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 135,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 136,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 137,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 138,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 139,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 140,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        },
+        {
+          "column": 141,
+          "nonempty": 12,
+          "date": 1,
+          "numeric": 11
+        }
+      ],
+      "freeze_panes": "EB1",
+      "auto_filter_ref": null
+    },
+    {
+      "title": "Приложение к обзору (с.к)",
+      "title_normalized": "приложение к обзору (с.к)",
+      "title_presentation_signature": "приложениекобзоруск",
+      "state": "visible",
+      "declared_max_row": 14,
+      "declared_max_column": 141,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 14,
+        "min_column": 1,
+        "max_column": 141
+      },
+      "nonempty_cells": 1693,
+      "cell_type_counts": {
+        "text": 13,
+        "date": 140,
+        "formula": 280,
+        "numeric": 1260
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-",
+          1540
+        ],
+        [
+          "mm-dd-yy",
+          140
+        ],
+        [
+          "General",
+          13
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Приложение к Обзору банковской системы, млн рублей*",
+          "normalized": "приложение к обзору банковской системы, млн рублей*",
+          "presentation_signature": "приложениекобзорубанковскойсистемымлнрублей*"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Кредиты и займы домашних хозяйств",
+          "normalized": "кредиты и займы домашних хозяйств",
+          "presentation_signature": "кредитыизаймыдомашниххозяйств"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "ипотечное жилищное кредитование",
+          "normalized": "ипотечное жилищное кредитование",
+          "presentation_signature": "ипотечноежилищноекредитование"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "автокредиты ",
+          "normalized": "автокредиты",
+          "presentation_signature": "автокредиты"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "потребительские ссуды",
+          "normalized": "потребительские ссуды",
+          "presentation_signature": "потребительскиессуды"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "прочие кредиты ",
+          "normalized": "прочие кредиты",
+          "presentation_signature": "прочиекредиты"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "требования по начисленным процентам",
+          "normalized": "требования по начисленным процентам",
+          "presentation_signature": "требованияпоначисленнымпроцентам"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "ипотечное жилищное кредитование",
+          "normalized": "ипотечное жилищное кредитование",
+          "presentation_signature": "ипотечноежилищноекредитование"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "прочие кредиты ",
+          "normalized": "прочие кредиты",
+          "presentation_signature": "прочиекредиты"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "требования по начисленным процентам",
+          "normalized": "требования по начисленным процентам",
+          "presentation_signature": "требованияпоначисленнымпроцентам"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "*Данные могут  уточняться в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "normalized": "*данные могут уточняться в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "presentation_signature": "*данныемогутуточнятьсявсвязисизменениемотчетныхданныхпоявлениемновыхисточниковинформацииметодологическимиизменениями"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [
+        {
+          "coordinate": "B2",
+          "formula": "=B3+B9"
+        },
+        {
+          "coordinate": "C2",
+          "formula": "=C3+C9"
+        },
+        {
+          "coordinate": "D2",
+          "formula": "=D3+D9"
+        },
+        {
+          "coordinate": "E2",
+          "formula": "=E3+E9"
+        },
+        {
+          "coordinate": "F2",
+          "formula": "=F3+F9"
+        },
+        {
+          "coordinate": "G2",
+          "formula": "=G3+G9"
+        },
+        {
+          "coordinate": "H2",
+          "formula": "=H3+H9"
+        },
+        {
+          "coordinate": "I2",
+          "formula": "=I3+I9"
+        },
+        {
+          "coordinate": "J2",
+          "formula": "=J3+J9"
+        },
+        {
+          "coordinate": "K2",
+          "formula": "=K3+K9"
+        },
+        {
+          "coordinate": "L2",
+          "formula": "=L3+L9"
+        },
+        {
+          "coordinate": "M2",
+          "formula": "=M3+M9"
+        },
+        {
+          "coordinate": "N2",
+          "formula": "=N3+N9"
+        },
+        {
+          "coordinate": "O2",
+          "formula": "=O3+O9"
+        },
+        {
+          "coordinate": "P2",
+          "formula": "=P3+P9"
+        },
+        {
+          "coordinate": "Q2",
+          "formula": "=Q3+Q9"
+        },
+        {
+          "coordinate": "R2",
+          "formula": "=R3+R9"
+        },
+        {
+          "coordinate": "S2",
+          "formula": "=S3+S9"
+        },
+        {
+          "coordinate": "T2",
+          "formula": "=T3+T9"
+        },
+        {
+          "coordinate": "U2",
+          "formula": "=U3+U9"
+        },
+        {
+          "coordinate": "V2",
+          "formula": "=V3+V9"
+        },
+        {
+          "coordinate": "W2",
+          "formula": "=W3+W9"
+        },
+        {
+          "coordinate": "X2",
+          "formula": "=X3+X9"
+        },
+        {
+          "coordinate": "Y2",
+          "formula": "=Y3+Y9"
+        },
+        {
+          "coordinate": "Z2",
+          "formula": "=Z3+Z9"
+        },
+        {
+          "coordinate": "AA2",
+          "formula": "=AA3+AA9"
+        },
+        {
+          "coordinate": "AB2",
+          "formula": "=AB3+AB9"
+        },
+        {
+          "coordinate": "AC2",
+          "formula": "=AC3+AC9"
+        },
+        {
+          "coordinate": "AD2",
+          "formula": "=AD3+AD9"
+        },
+        {
+          "coordinate": "AE2",
+          "formula": "=AE3+AE9"
+        },
+        {
+          "coordinate": "AF2",
+          "formula": "=AF3+AF9"
+        },
+        {
+          "coordinate": "AG2",
+          "formula": "=AG3+AG9"
+        },
+        {
+          "coordinate": "AH2",
+          "formula": "=AH3+AH9"
+        },
+        {
+          "coordinate": "AI2",
+          "formula": "=AI3+AI9"
+        },
+        {
+          "coordinate": "AJ2",
+          "formula": "=AJ3+AJ9"
+        },
+        {
+          "coordinate": "AK2",
+          "formula": "=AK3+AK9"
+        },
+        {
+          "coordinate": "AL2",
+          "formula": "=AL3+AL9"
+        },
+        {
+          "coordinate": "AM2",
+          "formula": "=AM3+AM9"
+        },
+        {
+          "coordinate": "AN2",
+          "formula": "=AN3+AN9"
+        },
+        {
+          "coordinate": "AO2",
+          "formula": "=AO3+AO9"
+        },
+        {
+          "coordinate": "AP2",
+          "formula": "=AP3+AP9"
+        },
+        {
+          "coordinate": "AQ2",
+          "formula": "=AQ3+AQ9"
+        },
+        {
+          "coordinate": "AR2",
+          "formula": "=AR3+AR9"
+        },
+        {
+          "coordinate": "AS2",
+          "formula": "=AS3+AS9"
+        },
+        {
+          "coordinate": "AT2",
+          "formula": "=AT3+AT9"
+        },
+        {
+          "coordinate": "AU2",
+          "formula": "=AU3+AU9"
+        },
+        {
+          "coordinate": "AV2",
+          "formula": "=AV3+AV9"
+        },
+        {
+          "coordinate": "AW2",
+          "formula": "=AW3+AW9"
+        },
+        {
+          "coordinate": "AX2",
+          "formula": "=AX3+AX9"
+        },
+        {
+          "coordinate": "AY2",
+          "formula": "=AY3+AY9"
+        },
+        {
+          "coordinate": "AZ2",
+          "formula": "=AZ3+AZ9"
+        },
+        {
+          "coordinate": "BA2",
+          "formula": "=BA3+BA9"
+        },
+        {
+          "coordinate": "BB2",
+          "formula": "=BB3+BB9"
+        },
+        {
+          "coordinate": "BC2",
+          "formula": "=BC3+BC9"
+        },
+        {
+          "coordinate": "BD2",
+          "formula": "=BD3+BD9"
+        },
+        {
+          "coordinate": "BE2",
+          "formula": "=BE3+BE9"
+        },
+        {
+          "coordinate": "BF2",
+          "formula": "=BF3+BF9"
+        },
+        {
+          "coordinate": "BG2",
+          "formula": "=BG3+BG9"
+        },
+        {
+          "coordinate": "BH2",
+          "formula": "=BH3+BH9"
+        },
+        {
+          "coordinate": "BI2",
+          "formula": "=BI3+BI9"
+        },
+        {
+          "coordinate": "BJ2",
+          "formula": "=BJ3+BJ9"
+        },
+        {
+          "coordinate": "BK2",
+          "formula": "=BK3+BK9"
+        },
+        {
+          "coordinate": "BL2",
+          "formula": "=BL3+BL9"
+        },
+        {
+          "coordinate": "BM2",
+          "formula": "=BM3+BM9"
+        },
+        {
+          "coordinate": "BN2",
+          "formula": "=BN3+BN9"
+        },
+        {
+          "coordinate": "BO2",
+          "formula": "=BO3+BO9"
+        },
+        {
+          "coordinate": "BP2",
+          "formula": "=BP3+BP9"
+        },
+        {
+          "coordinate": "BQ2",
+          "formula": "=BQ3+BQ9"
+        },
+        {
+          "coordinate": "BR2",
+          "formula": "=BR3+BR9"
+        },
+        {
+          "coordinate": "BS2",
+          "formula": "=BS3+BS9"
+        },
+        {
+          "coordinate": "BT2",
+          "formula": "=BT3+BT9"
+        },
+        {
+          "coordinate": "BU2",
+          "formula": "=BU3+BU9"
+        },
+        {
+          "coordinate": "BV2",
+          "formula": "=BV3+BV9"
+        },
+        {
+          "coordinate": "BW2",
+          "formula": "=BW3+BW9"
+        },
+        {
+          "coordinate": "BX2",
+          "formula": "=BX3+BX9"
+        },
+        {
+          "coordinate": "BY2",
+          "formula": "=BY3+BY9"
+        },
+        {
+          "coordinate": "BZ2",
+          "formula": "=BZ3+BZ9"
+        },
+        {
+          "coordinate": "CA2",
+          "formula": "=CA3+CA9"
+        },
+        {
+          "coordinate": "CB2",
+          "formula": "=CB3+CB9"
+        },
+        {
+          "coordinate": "CC2",
+          "formula": "=CC3+CC9"
+        },
+        {
+          "coordinate": "CD2",
+          "formula": "=CD3+CD9"
+        },
+        {
+          "coordinate": "CE2",
+          "formula": "=CE3+CE9"
+        },
+        {
+          "coordinate": "CF2",
+          "formula": "=CF3+CF9"
+        },
+        {
+          "coordinate": "CG2",
+          "formula": "=CG3+CG9"
+        },
+        {
+          "coordinate": "CH2",
+          "formula": "=CH3+CH9"
+        },
+        {
+          "coordinate": "CI2",
+          "formula": "=CI3+CI9"
+        },
+        {
+          "coordinate": "CJ2",
+          "formula": "=CJ3+CJ9"
+        },
+        {
+          "coordinate": "CK2",
+          "formula": "=CK3+CK9"
+        },
+        {
+          "coordinate": "CL2",
+          "formula": "=CL3+CL9"
+        },
+        {
+          "coordinate": "CM2",
+          "formula": "=CM3+CM9"
+        },
+        {
+          "coordinate": "CN2",
+          "formula": "=CN3+CN9"
+        },
+        {
+          "coordinate": "CO2",
+          "formula": "=CO3+CO9"
+        },
+        {
+          "coordinate": "CP2",
+          "formula": "=CP3+CP9"
+        },
+        {
+          "coordinate": "CQ2",
+          "formula": "=CQ3+CQ9"
+        },
+        {
+          "coordinate": "CR2",
+          "formula": "=CR3+CR9"
+        },
+        {
+          "coordinate": "CS2",
+          "formula": "=CS3+CS9"
+        },
+        {
+          "coordinate": "CT2",
+          "formula": "=CT3+CT9"
+        },
+        {
+          "coordinate": "CU2",
+          "formula": "=CU3+CU9"
+        },
+        {
+          "coordinate": "CV2",
+          "formula": "=CV3+CV9"
+        },
+        {
+          "coordinate": "CW2",
+          "formula": "=CW3+CW9"
+        },
+        {
+          "coordinate": "CX2",
+          "formula": "=CX3+CX9"
+        },
+        {
+          "coordinate": "CY2",
+          "formula": "=CY3+CY9"
+        },
+        {
+          "coordinate": "CZ2",
+          "formula": "=CZ3+CZ9"
+        },
+        {
+          "coordinate": "DA2",
+          "formula": "=DA3+DA9"
+        },
+        {
+          "coordinate": "DB2",
+          "formula": "=DB3+DB9"
+        },
+        {
+          "coordinate": "DC2",
+          "formula": "=DC3+DC9"
+        },
+        {
+          "coordinate": "DD2",
+          "formula": "=DD3+DD9"
+        },
+        {
+          "coordinate": "DE2",
+          "formula": "=DE3+DE9"
+        },
+        {
+          "coordinate": "DF2",
+          "formula": "=DF3+DF9"
+        },
+        {
+          "coordinate": "DG2",
+          "formula": "=DG3+DG9"
+        },
+        {
+          "coordinate": "DH2",
+          "formula": "=DH3+DH9"
+        },
+        {
+          "coordinate": "DI2",
+          "formula": "=DI3+DI9"
+        },
+        {
+          "coordinate": "DJ2",
+          "formula": "=DJ3+DJ9"
+        },
+        {
+          "coordinate": "DK2",
+          "formula": "=DK3+DK9"
+        },
+        {
+          "coordinate": "DL2",
+          "formula": "=DL3+DL9"
+        },
+        {
+          "coordinate": "DM2",
+          "formula": "=DM3+DM9"
+        },
+        {
+          "coordinate": "DN2",
+          "formula": "=DN3+DN9"
+        },
+        {
+          "coordinate": "DO2",
+          "formula": "=DO3+DO9"
+        },
+        {
+          "coordinate": "DP2",
+          "formula": "=DP3+DP9"
+        },
+        {
+          "coordinate": "DQ2",
+          "formula": "=DQ3+DQ9"
+        },
+        {
+          "coordinate": "DR2",
+          "formula": "=DR3+DR9"
+        },
+        {
+          "coordinate": "DS2",
+          "formula": "=DS3+DS9"
+        },
+        {
+          "coordinate": "DT2",
+          "formula": "=DT3+DT9"
+        },
+        {
+          "coordinate": "DU2",
+          "formula": "=DU3+DU9"
+        },
+        {
+          "coordinate": "DV2",
+          "formula": "=DV3+DV9"
+        },
+        {
+          "coordinate": "DW2",
+          "formula": "=DW3+DW9"
+        },
+        {
+          "coordinate": "DX2",
+          "formula": "=DX3+DX9"
+        },
+        {
+          "coordinate": "DY2",
+          "formula": "=DY3+DY9"
+        },
+        {
+          "coordinate": "DZ2",
+          "formula": "=DZ3+DZ9"
+        },
+        {
+          "coordinate": "EA2",
+          "formula": "=EA3+EA9"
+        },
+        {
+          "coordinate": "EB2",
+          "formula": "=EB3+EB9"
+        },
+        {
+          "coordinate": "EC2",
+          "formula": "=EC3+EC9"
+        },
+        {
+          "coordinate": "ED2",
+          "formula": "=ED3+ED9"
+        },
+        {
+          "coordinate": "EE2",
+          "formula": "=EE3+EE9"
+        },
+        {
+          "coordinate": "EF2",
+          "formula": "=EF3+EF9"
+        },
+        {
+          "coordinate": "EG2",
+          "formula": "=EG3+EG9"
+        },
+        {
+          "coordinate": "EH2",
+          "formula": "=EH3+EH9"
+        },
+        {
+          "coordinate": "EI2",
+          "formula": "=EI3+EI9"
+        },
+        {
+          "coordinate": "EJ2",
+          "formula": "=EJ3+EJ9"
+        },
+        {
+          "coordinate": "EK2",
+          "formula": "=EK3+EK9"
+        },
+        {
+          "coordinate": "B3",
+          "formula": "=B4+B5+B6+B7+B8"
+        },
+        {
+          "coordinate": "C3",
+          "formula": "=C4+C5+C6+C7+C8"
+        },
+        {
+          "coordinate": "D3",
+          "formula": "=D4+D5+D6+D7+D8"
+        },
+        {
+          "coordinate": "E3",
+          "formula": "=E4+E5+E6+E7+E8"
+        },
+        {
+          "coordinate": "F3",
+          "formula": "=F4+F5+F6+F7+F8"
+        },
+        {
+          "coordinate": "G3",
+          "formula": "=G4+G5+G6+G7+G8"
+        },
+        {
+          "coordinate": "H3",
+          "formula": "=H4+H5+H6+H7+H8"
+        },
+        {
+          "coordinate": "I3",
+          "formula": "=I4+I5+I6+I7+I8"
+        },
+        {
+          "coordinate": "J3",
+          "formula": "=J4+J5+J6+J7+J8"
+        },
+        {
+          "coordinate": "K3",
+          "formula": "=K4+K5+K6+K7+K8"
+        },
+        {
+          "coordinate": "L3",
+          "formula": "=L4+L5+L6+L7+L8"
+        },
+        {
+          "coordinate": "M3",
+          "formula": "=M4+M5+M6+M7+M8"
+        },
+        {
+          "coordinate": "N3",
+          "formula": "=N4+N5+N6+N7+N8"
+        },
+        {
+          "coordinate": "O3",
+          "formula": "=O4+O5+O6+O7+O8"
+        },
+        {
+          "coordinate": "P3",
+          "formula": "=P4+P5+P6+P7+P8"
+        },
+        {
+          "coordinate": "Q3",
+          "formula": "=Q4+Q5+Q6+Q7+Q8"
+        },
+        {
+          "coordinate": "R3",
+          "formula": "=R4+R5+R6+R7+R8"
+        },
+        {
+          "coordinate": "S3",
+          "formula": "=S4+S5+S6+S7+S8"
+        },
+        {
+          "coordinate": "T3",
+          "formula": "=T4+T5+T6+T7+T8"
+        },
+        {
+          "coordinate": "U3",
+          "formula": "=U4+U5+U6+U7+U8"
+        },
+        {
+          "coordinate": "V3",
+          "formula": "=V4+V5+V6+V7+V8"
+        },
+        {
+          "coordinate": "W3",
+          "formula": "=W4+W5+W6+W7+W8"
+        },
+        {
+          "coordinate": "X3",
+          "formula": "=X4+X5+X6+X7+X8"
+        },
+        {
+          "coordinate": "Y3",
+          "formula": "=Y4+Y5+Y6+Y7+Y8"
+        },
+        {
+          "coordinate": "Z3",
+          "formula": "=Z4+Z5+Z6+Z7+Z8"
+        },
+        {
+          "coordinate": "AA3",
+          "formula": "=AA4+AA5+AA6+AA7+AA8"
+        },
+        {
+          "coordinate": "AB3",
+          "formula": "=AB4+AB5+AB6+AB7+AB8"
+        },
+        {
+          "coordinate": "AC3",
+          "formula": "=AC4+AC5+AC6+AC7+AC8"
+        },
+        {
+          "coordinate": "AD3",
+          "formula": "=AD4+AD5+AD6+AD7+AD8"
+        },
+        {
+          "coordinate": "AE3",
+          "formula": "=AE4+AE5+AE6+AE7+AE8"
+        },
+        {
+          "coordinate": "AF3",
+          "formula": "=AF4+AF5+AF6+AF7+AF8"
+        },
+        {
+          "coordinate": "AG3",
+          "formula": "=AG4+AG5+AG6+AG7+AG8"
+        },
+        {
+          "coordinate": "AH3",
+          "formula": "=AH4+AH5+AH6+AH7+AH8"
+        },
+        {
+          "coordinate": "AI3",
+          "formula": "=AI4+AI5+AI6+AI7+AI8"
+        },
+        {
+          "coordinate": "AJ3",
+          "formula": "=AJ4+AJ5+AJ6+AJ7+AJ8"
+        },
+        {
+          "coordinate": "AK3",
+          "formula": "=AK4+AK5+AK6+AK7+AK8"
+        },
+        {
+          "coordinate": "AL3",
+          "formula": "=AL4+AL5+AL6+AL7+AL8"
+        },
+        {
+          "coordinate": "AM3",
+          "formula": "=AM4+AM5+AM6+AM7+AM8"
+        },
+        {
+          "coordinate": "AN3",
+          "formula": "=AN4+AN5+AN6+AN7+AN8"
+        },
+        {
+          "coordinate": "AO3",
+          "formula": "=AO4+AO5+AO6+AO7+AO8"
+        },
+        {
+          "coordinate": "AP3",
+          "formula": "=AP4+AP5+AP6+AP7+AP8"
+        },
+        {
+          "coordinate": "AQ3",
+          "formula": "=AQ4+AQ5+AQ6+AQ7+AQ8"
+        },
+        {
+          "coordinate": "AR3",
+          "formula": "=AR4+AR5+AR6+AR7+AR8"
+        },
+        {
+          "coordinate": "AS3",
+          "formula": "=AS4+AS5+AS6+AS7+AS8"
+        },
+        {
+          "coordinate": "AT3",
+          "formula": "=AT4+AT5+AT6+AT7+AT8"
+        },
+        {
+          "coordinate": "AU3",
+          "formula": "=AU4+AU5+AU6+AU7+AU8"
+        },
+        {
+          "coordinate": "AV3",
+          "formula": "=AV4+AV5+AV6+AV7+AV8"
+        },
+        {
+          "coordinate": "AW3",
+          "formula": "=AW4+AW5+AW6+AW7+AW8"
+        },
+        {
+          "coordinate": "AX3",
+          "formula": "=AX4+AX5+AX6+AX7+AX8"
+        },
+        {
+          "coordinate": "AY3",
+          "formula": "=AY4+AY5+AY6+AY7+AY8"
+        },
+        {
+          "coordinate": "AZ3",
+          "formula": "=AZ4+AZ5+AZ6+AZ7+AZ8"
+        },
+        {
+          "coordinate": "BA3",
+          "formula": "=BA4+BA5+BA6+BA7+BA8"
+        },
+        {
+          "coordinate": "BB3",
+          "formula": "=BB4+BB5+BB6+BB7+BB8"
+        },
+        {
+          "coordinate": "BC3",
+          "formula": "=BC4+BC5+BC6+BC7+BC8"
+        },
+        {
+          "coordinate": "BD3",
+          "formula": "=BD4+BD5+BD6+BD7+BD8"
+        },
+        {
+          "coordinate": "BE3",
+          "formula": "=BE4+BE5+BE6+BE7+BE8"
+        },
+        {
+          "coordinate": "BF3",
+          "formula": "=BF4+BF5+BF6+BF7+BF8"
+        },
+        {
+          "coordinate": "BG3",
+          "formula": "=BG4+BG5+BG6+BG7+BG8"
+        },
+        {
+          "coordinate": "BH3",
+          "formula": "=BH4+BH5+BH6+BH7+BH8"
+        },
+        {
+          "coordinate": "BI3",
+          "formula": "=BI4+BI5+BI6+BI7+BI8"
+        },
+        {
+          "coordinate": "BJ3",
+          "formula": "=BJ4+BJ5+BJ6+BJ7+BJ8"
+        },
+        {
+          "coordinate": "BK3",
+          "formula": "=BK4+BK5+BK6+BK7+BK8"
+        },
+        {
+          "coordinate": "BL3",
+          "formula": "=BL4+BL5+BL6+BL7+BL8"
+        },
+        {
+          "coordinate": "BM3",
+          "formula": "=BM4+BM5+BM6+BM7+BM8"
+        },
+        {
+          "coordinate": "BN3",
+          "formula": "=BN4+BN5+BN6+BN7+BN8"
+        },
+        {
+          "coordinate": "BO3",
+          "formula": "=BO4+BO5+BO6+BO7+BO8"
+        },
+        {
+          "coordinate": "BP3",
+          "formula": "=BP4+BP5+BP6+BP7+BP8"
+        },
+        {
+          "coordinate": "BQ3",
+          "formula": "=BQ4+BQ5+BQ6+BQ7+BQ8"
+        },
+        {
+          "coordinate": "BR3",
+          "formula": "=BR4+BR5+BR6+BR7+BR8"
+        },
+        {
+          "coordinate": "BS3",
+          "formula": "=BS4+BS5+BS6+BS7+BS8"
+        },
+        {
+          "coordinate": "BT3",
+          "formula": "=BT4+BT5+BT6+BT7+BT8"
+        },
+        {
+          "coordinate": "BU3",
+          "formula": "=BU4+BU5+BU6+BU7+BU8"
+        },
+        {
+          "coordinate": "BV3",
+          "formula": "=BV4+BV5+BV6+BV7+BV8"
+        },
+        {
+          "coordinate": "BW3",
+          "formula": "=BW4+BW5+BW6+BW7+BW8"
+        },
+        {
+          "coordinate": "BX3",
+          "formula": "=BX4+BX5+BX6+BX7+BX8"
+        },
+        {
+          "coordinate": "BY3",
+          "formula": "=BY4+BY5+BY6+BY7+BY8"
+        },
+        {
+          "coordinate": "BZ3",
+          "formula": "=BZ4+BZ5+BZ6+BZ7+BZ8"
+        },
+        {
+          "coordinate": "CA3",
+          "formula": "=CA4+CA5+CA6+CA7+CA8"
+        },
+        {
+          "coordinate": "CB3",
+          "formula": "=CB4+CB5+CB6+CB7+CB8"
+        },
+        {
+          "coordinate": "CC3",
+          "formula": "=CC4+CC5+CC6+CC7+CC8"
+        },
+        {
+          "coordinate": "CD3",
+          "formula": "=CD4+CD5+CD6+CD7+CD8"
+        },
+        {
+          "coordinate": "CE3",
+          "formula": "=CE4+CE5+CE6+CE7+CE8"
+        },
+        {
+          "coordinate": "CF3",
+          "formula": "=CF4+CF5+CF6+CF7+CF8"
+        },
+        {
+          "coordinate": "CG3",
+          "formula": "=CG4+CG5+CG6+CG7+CG8"
+        },
+        {
+          "coordinate": "CH3",
+          "formula": "=CH4+CH5+CH6+CH7+CH8"
+        },
+        {
+          "coordinate": "CI3",
+          "formula": "=CI4+CI5+CI6+CI7+CI8"
+        },
+        {
+          "coordinate": "CJ3",
+          "formula": "=CJ4+CJ5+CJ6+CJ7+CJ8"
+        },
+        {
+          "coordinate": "CK3",
+          "formula": "=CK4+CK5+CK6+CK7+CK8"
+        },
+        {
+          "coordinate": "CL3",
+          "formula": "=CL4+CL5+CL6+CL7+CL8"
+        },
+        {
+          "coordinate": "CM3",
+          "formula": "=CM4+CM5+CM6+CM7+CM8"
+        },
+        {
+          "coordinate": "CN3",
+          "formula": "=CN4+CN5+CN6+CN7+CN8"
+        },
+        {
+          "coordinate": "CO3",
+          "formula": "=CO4+CO5+CO6+CO7+CO8"
+        },
+        {
+          "coordinate": "CP3",
+          "formula": "=CP4+CP5+CP6+CP7+CP8"
+        },
+        {
+          "coordinate": "CQ3",
+          "formula": "=CQ4+CQ5+CQ6+CQ7+CQ8"
+        },
+        {
+          "coordinate": "CR3",
+          "formula": "=CR4+CR5+CR6+CR7+CR8"
+        },
+        {
+          "coordinate": "CS3",
+          "formula": "=CS4+CS5+CS6+CS7+CS8"
+        },
+        {
+          "coordinate": "CT3",
+          "formula": "=CT4+CT5+CT6+CT7+CT8"
+        },
+        {
+          "coordinate": "CU3",
+          "formula": "=CU4+CU5+CU6+CU7+CU8"
+        },
+        {
+          "coordinate": "CV3",
+          "formula": "=CV4+CV5+CV6+CV7+CV8"
+        },
+        {
+          "coordinate": "CW3",
+          "formula": "=CW4+CW5+CW6+CW7+CW8"
+        },
+        {
+          "coordinate": "CX3",
+          "formula": "=CX4+CX5+CX6+CX7+CX8"
+        },
+        {
+          "coordinate": "CY3",
+          "formula": "=CY4+CY5+CY6+CY7+CY8"
+        },
+        {
+          "coordinate": "CZ3",
+          "formula": "=CZ4+CZ5+CZ6+CZ7+CZ8"
+        },
+        {
+          "coordinate": "DA3",
+          "formula": "=DA4+DA5+DA6+DA7+DA8"
+        },
+        {
+          "coordinate": "DB3",
+          "formula": "=DB4+DB5+DB6+DB7+DB8"
+        },
+        {
+          "coordinate": "DC3",
+          "formula": "=DC4+DC5+DC6+DC7+DC8"
+        },
+        {
+          "coordinate": "DD3",
+          "formula": "=DD4+DD5+DD6+DD7+DD8"
+        },
+        {
+          "coordinate": "DE3",
+          "formula": "=DE4+DE5+DE6+DE7+DE8"
+        },
+        {
+          "coordinate": "DF3",
+          "formula": "=DF4+DF5+DF6+DF7+DF8"
+        },
+        {
+          "coordinate": "DG3",
+          "formula": "=DG4+DG5+DG6+DG7+DG8"
+        },
+        {
+          "coordinate": "DH3",
+          "formula": "=DH4+DH5+DH6+DH7+DH8"
+        },
+        {
+          "coordinate": "DI3",
+          "formula": "=DI4+DI5+DI6+DI7+DI8"
+        },
+        {
+          "coordinate": "DJ3",
+          "formula": "=DJ4+DJ5+DJ6+DJ7+DJ8"
+        },
+        {
+          "coordinate": "DK3",
+          "formula": "=DK4+DK5+DK6+DK7+DK8"
+        },
+        {
+          "coordinate": "DL3",
+          "formula": "=DL4+DL5+DL6+DL7+DL8"
+        },
+        {
+          "coordinate": "DM3",
+          "formula": "=DM4+DM5+DM6+DM7+DM8"
+        },
+        {
+          "coordinate": "DN3",
+          "formula": "=DN4+DN5+DN6+DN7+DN8"
+        },
+        {
+          "coordinate": "DO3",
+          "formula": "=DO4+DO5+DO6+DO7+DO8"
+        },
+        {
+          "coordinate": "DP3",
+          "formula": "=DP4+DP5+DP6+DP7+DP8"
+        },
+        {
+          "coordinate": "DQ3",
+          "formula": "=DQ4+DQ5+DQ6+DQ7+DQ8"
+        },
+        {
+          "coordinate": "DR3",
+          "formula": "=DR4+DR5+DR6+DR7+DR8"
+        },
+        {
+          "coordinate": "DS3",
+          "formula": "=DS4+DS5+DS6+DS7+DS8"
+        },
+        {
+          "coordinate": "DT3",
+          "formula": "=DT4+DT5+DT6+DT7+DT8"
+        },
+        {
+          "coordinate": "DU3",
+          "formula": "=DU4+DU5+DU6+DU7+DU8"
+        },
+        {
+          "coordinate": "DV3",
+          "formula": "=DV4+DV5+DV6+DV7+DV8"
+        },
+        {
+          "coordinate": "DW3",
+          "formula": "=DW4+DW5+DW6+DW7+DW8"
+        },
+        {
+          "coordinate": "DX3",
+          "formula": "=DX4+DX5+DX6+DX7+DX8"
+        },
+        {
+          "coordinate": "DY3",
+          "formula": "=DY4+DY5+DY6+DY7+DY8"
+        },
+        {
+          "coordinate": "DZ3",
+          "formula": "=DZ4+DZ5+DZ6+DZ7+DZ8"
+        },
+        {
+          "coordinate": "EA3",
+          "formula": "=EA4+EA5+EA6+EA7+EA8"
+        },
+        {
+          "coordinate": "EB3",
+          "formula": "=EB4+EB5+EB6+EB7+EB8"
+        },
+        {
+          "coordinate": "EC3",
+          "formula": "=EC4+EC5+EC6+EC7+EC8"
+        },
+        {
+          "coordinate": "ED3",
+          "formula": "=ED4+ED5+ED6+ED7+ED8"
+        },
+        {
+          "coordinate": "EE3",
+          "formula": "=EE4+EE5+EE6+EE7+EE8"
+        },
+        {
+          "coordinate": "EF3",
+          "formula": "=EF4+EF5+EF6+EF7+EF8"
+        },
+        {
+          "coordinate": "EG3",
+          "formula": "=EG4+EG5+EG6+EG7+EG8"
+        },
+        {
+          "coordinate": "EH3",
+          "formula": "=EH4+EH5+EH6+EH7+EH8"
+        },
+        {
+          "coordinate": "EI3",
+          "formula": "=EI4+EI5+EI6+EI7+EI8"
+        },
+        {
+          "coordinate": "EJ3",
+          "formula": "=EJ4+EJ5+EJ6+EJ7+EJ8"
+        },
+        {
+          "coordinate": "EK3",
+          "formula": "=EK4+EK5+EK6+EK7+EK8"
+        }
+      ],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B4",
+          "value": {
+            "kind": "float",
+            "value": "3424684.7842836"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "C4",
+          "value": {
+            "kind": "float",
+            "value": "3460454.85946193"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "D4",
+          "value": {
+            "kind": "float",
+            "value": "3492284.93852124"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "E4",
+          "value": {
+            "kind": "float",
+            "value": "3504695.31113555"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "F4",
+          "value": {
+            "kind": "float",
+            "value": "3523179.84526881"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "G4",
+          "value": {
+            "kind": "float",
+            "value": "3540984.35962234"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "H4",
+          "value": {
+            "kind": "float",
+            "value": "3561470.43429209"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "I4",
+          "value": {
+            "kind": "float",
+            "value": "3605725.78150526"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "J4",
+          "value": {
+            "kind": "float",
+            "value": "3647826.27785579"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "K4",
+          "value": {
+            "kind": "float",
+            "value": "3686077.11572787"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "L4",
+          "value": {
+            "kind": "float",
+            "value": "3732100.09389643"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "M4",
+          "value": {
+            "kind": "float",
+            "value": "3767995.96736873"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "N4",
+          "value": {
+            "kind": "float",
+            "value": "3888581.67835733"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "O4",
+          "value": {
+            "kind": "float",
+            "value": "3953196.44483202"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "P4",
+          "value": {
+            "kind": "float",
+            "value": "4026597.62225154"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Q4",
+          "value": {
+            "kind": "float",
+            "value": "4084931.13042194"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "R4",
+          "value": {
+            "kind": "float",
+            "value": "4121405.52234202"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "S4",
+          "value": {
+            "kind": "float",
+            "value": "4163506.4882503"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "T4",
+          "value": {
+            "kind": "float",
+            "value": "4201211.38647331"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "U4",
+          "value": {
+            "kind": "float",
+            "value": "4244014.52911643"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "V4",
+          "value": {
+            "kind": "float",
+            "value": "4282200.82680967"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "W4",
+          "value": {
+            "kind": "float",
+            "value": "4325970.31036607"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "X4",
+          "value": {
+            "kind": "float",
+            "value": "4373820.11126727"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Y4",
+          "value": {
+            "kind": "float",
+            "value": "4425008.73397231"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Z4",
+          "value": {
+            "kind": "float",
+            "value": "4476477.01269545"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AA4",
+          "value": {
+            "kind": "float",
+            "value": "4515220.80184922"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AB4",
+          "value": {
+            "kind": "float",
+            "value": "4543682.07208405"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AC4",
+          "value": {
+            "kind": "float",
+            "value": "4604926.51601121"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AD4",
+          "value": {
+            "kind": "float",
+            "value": "4672257.18449365"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AE4",
+          "value": {
+            "kind": "float",
+            "value": "4681990.84482357"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AF4",
+          "value": {
+            "kind": "float",
+            "value": "4762854.79924562"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AG4",
+          "value": {
+            "kind": "float",
+            "value": "4814575.18157377"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AH4",
+          "value": {
+            "kind": "float",
+            "value": "4903109.16215978"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AI4",
+          "value": {
+            "kind": "float",
+            "value": "4977127.23693833"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AJ4",
+          "value": {
+            "kind": "float",
+            "value": "5027176.45077419"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AK4",
+          "value": {
+            "kind": "float",
+            "value": "5135109.33801427"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AL4",
+          "value": {
+            "kind": "float",
+            "value": "5232387.0523633"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AM4",
+          "value": {
+            "kind": "float",
+            "value": "5312210.30552052"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AN4",
+          "value": {
+            "kind": "float",
+            "value": "5409449.88789005"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AO4",
+          "value": {
+            "kind": "float",
+            "value": "5525979.28772025"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AP4",
+          "value": {
+            "kind": "float",
+            "value": "5640412.57793537"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AQ4",
+          "value": {
+            "kind": "float",
+            "value": "5761124.70441909"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AR4",
+          "value": {
+            "kind": "float",
+            "value": "5878980.8296689"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AS4",
+          "value": {
+            "kind": "float",
+            "value": "5993176.3166068"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AT4",
+          "value": {
+            "kind": "float",
+            "value": "6106292.48077786"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AU4",
+          "value": {
+            "kind": "float",
+            "value": "6218679.38514465"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AV4",
+          "value": {
+            "kind": "float",
+            "value": "6301250.75772819"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AW4",
+          "value": {
+            "kind": "float",
+            "value": "6448912.58971927"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AX4",
+          "value": {
+            "kind": "float",
+            "value": "6473941.86614459"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AY4",
+          "value": {
+            "kind": "float",
+            "value": "6759095.82706639"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AZ4",
+          "value": {
+            "kind": "float",
+            "value": "6878103.05287744"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BA4",
+          "value": {
+            "kind": "float",
+            "value": "6991687.56391267"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BB4",
+          "value": {
+            "kind": "float",
+            "value": "7096579.64931051"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BC4",
+          "value": {
+            "kind": "float",
+            "value": "7209577.99138232"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BD4",
+          "value": {
+            "kind": "float",
+            "value": "7300775.11598074"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BE4",
+          "value": {
+            "kind": "float",
+            "value": "7324256.43662007"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BF4",
+          "value": {
+            "kind": "float",
+            "value": "7428330.63537306"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BG4",
+          "value": {
+            "kind": "float",
+            "value": "7512563.80607049"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BH4",
+          "value": {
+            "kind": "float",
+            "value": "7536927.6914442"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BI4",
+          "value": {
+            "kind": "float",
+            "value": "7663463.98318972"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BJ4",
+          "value": {
+            "kind": "float",
+            "value": "7760579.58744368"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BK4",
+          "value": {
+            "kind": "float",
+            "value": "7870797.18050361"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BL4",
+          "value": {
+            "kind": "float",
+            "value": "7998710.59399785"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BM4",
+          "value": {
+            "kind": "float",
+            "value": "8142462.04708218"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BN4",
+          "value": {
+            "kind": "float",
+            "value": "8199077.41347322"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BO4",
+          "value": {
+            "kind": "float",
+            "value": "8307287.99073765"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BP4",
+          "value": {
+            "kind": "float",
+            "value": "8405789.52885297"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BQ4",
+          "value": {
+            "kind": "float",
+            "value": "8605427.28236307"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BR4",
+          "value": {
+            "kind": "float",
+            "value": "8793234.47296172"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BS4",
+          "value": {
+            "kind": "float",
+            "value": "9009616.93222212"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BT4",
+          "value": {
+            "kind": "float",
+            "value": "9283370.5068736"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BU4",
+          "value": {
+            "kind": "float",
+            "value": "9295751.65740649"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BV4",
+          "value": {
+            "kind": "float",
+            "value": "9411094.59968004"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BW4",
+          "value": {
+            "kind": "float",
+            "value": "9579551.87091068"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BX4",
+          "value": {
+            "kind": "float",
+            "value": "9758431.2638087"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BY4",
+          "value": {
+            "kind": "float",
+            "value": "9997424.65665831"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BZ4",
+          "value": {
+            "kind": "float",
+            "value": "10277828.7735176"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CA4",
+          "value": {
+            "kind": "float",
+            "value": "10533789.5513904"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CB4",
+          "value": {
+            "kind": "float",
+            "value": "10838368.9097981"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CC4",
+          "value": {
+            "kind": "float",
+            "value": "11084670.7334169"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B1",
+          "value": {
+            "kind": "date",
+            "value": "2015-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "C1",
+          "value": {
+            "kind": "date",
+            "value": "2015-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "D1",
+          "value": {
+            "kind": "date",
+            "value": "2015-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "E1",
+          "value": {
+            "kind": "date",
+            "value": "2015-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "F1",
+          "value": {
+            "kind": "date",
+            "value": "2015-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "G1",
+          "value": {
+            "kind": "date",
+            "value": "2015-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "H1",
+          "value": {
+            "kind": "date",
+            "value": "2015-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "I1",
+          "value": {
+            "kind": "date",
+            "value": "2015-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "J1",
+          "value": {
+            "kind": "date",
+            "value": "2015-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "K1",
+          "value": {
+            "kind": "date",
+            "value": "2015-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "L1",
+          "value": {
+            "kind": "date",
+            "value": "2015-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "M1",
+          "value": {
+            "kind": "date",
+            "value": "2015-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "N1",
+          "value": {
+            "kind": "date",
+            "value": "2016-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "O1",
+          "value": {
+            "kind": "date",
+            "value": "2016-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "P1",
+          "value": {
+            "kind": "date",
+            "value": "2016-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Q1",
+          "value": {
+            "kind": "date",
+            "value": "2016-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "R1",
+          "value": {
+            "kind": "date",
+            "value": "2016-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "S1",
+          "value": {
+            "kind": "date",
+            "value": "2016-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "T1",
+          "value": {
+            "kind": "date",
+            "value": "2016-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "U1",
+          "value": {
+            "kind": "date",
+            "value": "2016-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "V1",
+          "value": {
+            "kind": "date",
+            "value": "2016-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "W1",
+          "value": {
+            "kind": "date",
+            "value": "2016-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "X1",
+          "value": {
+            "kind": "date",
+            "value": "2016-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Y1",
+          "value": {
+            "kind": "date",
+            "value": "2016-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Z1",
+          "value": {
+            "kind": "date",
+            "value": "2017-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AA1",
+          "value": {
+            "kind": "date",
+            "value": "2017-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AB1",
+          "value": {
+            "kind": "date",
+            "value": "2017-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AC1",
+          "value": {
+            "kind": "date",
+            "value": "2017-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AD1",
+          "value": {
+            "kind": "date",
+            "value": "2017-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AE1",
+          "value": {
+            "kind": "date",
+            "value": "2017-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AF1",
+          "value": {
+            "kind": "date",
+            "value": "2017-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AG1",
+          "value": {
+            "kind": "date",
+            "value": "2017-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AH1",
+          "value": {
+            "kind": "date",
+            "value": "2017-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AI1",
+          "value": {
+            "kind": "date",
+            "value": "2017-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AJ1",
+          "value": {
+            "kind": "date",
+            "value": "2017-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AK1",
+          "value": {
+            "kind": "date",
+            "value": "2017-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AL1",
+          "value": {
+            "kind": "date",
+            "value": "2018-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AM1",
+          "value": {
+            "kind": "date",
+            "value": "2018-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AN1",
+          "value": {
+            "kind": "date",
+            "value": "2018-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AO1",
+          "value": {
+            "kind": "date",
+            "value": "2018-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AP1",
+          "value": {
+            "kind": "date",
+            "value": "2018-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AQ1",
+          "value": {
+            "kind": "date",
+            "value": "2018-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AR1",
+          "value": {
+            "kind": "date",
+            "value": "2018-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AS1",
+          "value": {
+            "kind": "date",
+            "value": "2018-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AT1",
+          "value": {
+            "kind": "date",
+            "value": "2018-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AU1",
+          "value": {
+            "kind": "date",
+            "value": "2018-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AV1",
+          "value": {
+            "kind": "date",
+            "value": "2018-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AW1",
+          "value": {
+            "kind": "date",
+            "value": "2018-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AX1",
+          "value": {
+            "kind": "date",
+            "value": "2019-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AY1",
+          "value": {
+            "kind": "date",
+            "value": "2019-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AZ1",
+          "value": {
+            "kind": "date",
+            "value": "2019-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BA1",
+          "value": {
+            "kind": "date",
+            "value": "2019-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BB1",
+          "value": {
+            "kind": "date",
+            "value": "2019-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BC1",
+          "value": {
+            "kind": "date",
+            "value": "2019-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BD1",
+          "value": {
+            "kind": "date",
+            "value": "2019-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BE1",
+          "value": {
+            "kind": "date",
+            "value": "2019-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BF1",
+          "value": {
+            "kind": "date",
+            "value": "2019-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BG1",
+          "value": {
+            "kind": "date",
+            "value": "2019-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BH1",
+          "value": {
+            "kind": "date",
+            "value": "2019-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BI1",
+          "value": {
+            "kind": "date",
+            "value": "2019-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BJ1",
+          "value": {
+            "kind": "date",
+            "value": "2020-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BK1",
+          "value": {
+            "kind": "date",
+            "value": "2020-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BL1",
+          "value": {
+            "kind": "date",
+            "value": "2020-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BM1",
+          "value": {
+            "kind": "date",
+            "value": "2020-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BN1",
+          "value": {
+            "kind": "date",
+            "value": "2020-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BO1",
+          "value": {
+            "kind": "date",
+            "value": "2020-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BP1",
+          "value": {
+            "kind": "date",
+            "value": "2020-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BQ1",
+          "value": {
+            "kind": "date",
+            "value": "2020-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BR1",
+          "value": {
+            "kind": "date",
+            "value": "2020-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BS1",
+          "value": {
+            "kind": "date",
+            "value": "2020-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BT1",
+          "value": {
+            "kind": "date",
+            "value": "2020-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BU1",
+          "value": {
+            "kind": "date",
+            "value": "2020-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BV1",
+          "value": {
+            "kind": "date",
+            "value": "2021-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BW1",
+          "value": {
+            "kind": "date",
+            "value": "2021-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BX1",
+          "value": {
+            "kind": "date",
+            "value": "2021-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BY1",
+          "value": {
+            "kind": "date",
+            "value": "2021-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BZ1",
+          "value": {
+            "kind": "date",
+            "value": "2021-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CA1",
+          "value": {
+            "kind": "date",
+            "value": "2021-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CB1",
+          "value": {
+            "kind": "date",
+            "value": "2021-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CC1",
+          "value": {
+            "kind": "date",
+            "value": "2021-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 141,
+          "text": 1,
+          "date": 140
+        },
+        {
+          "row": 2,
+          "nonempty": 141,
+          "text": 1,
+          "formula": 140
+        },
+        {
+          "row": 3,
+          "nonempty": 141,
+          "text": 1,
+          "formula": 140
+        },
+        {
+          "row": 4,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 5,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 6,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 7,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 8,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 9,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 10,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 11,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 12,
+          "nonempty": 141,
+          "text": 1,
+          "numeric": 140
+        },
+        {
+          "row": 14,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 13,
+          "text": 13
+        },
+        {
+          "column": 2,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 3,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 4,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 5,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 6,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 7,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 8,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 9,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 10,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 11,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 12,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 13,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 14,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 15,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 16,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 17,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 18,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 19,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 20,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 21,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 22,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 23,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 24,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 25,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 26,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 27,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 28,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 29,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 30,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 31,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 32,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 33,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 34,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 35,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 36,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 37,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 38,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 39,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 40,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 41,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 42,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 43,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 44,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 45,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 46,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 47,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 48,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 49,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 50,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 51,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 52,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 53,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 54,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 55,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 56,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 57,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 58,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 59,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 60,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 61,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 62,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 63,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 64,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 65,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 66,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 67,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 68,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 69,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 70,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 71,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 72,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 73,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 74,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 75,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 76,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 77,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 78,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 79,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 80,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 81,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 82,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 83,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 84,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 85,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 86,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 87,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 88,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 89,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 90,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 91,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 92,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 93,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 94,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 95,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 96,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 97,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 98,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 99,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 100,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 101,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 102,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 103,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 104,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 105,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 106,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 107,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 108,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 109,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 110,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 111,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 112,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 113,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 114,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 115,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 116,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 117,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 118,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 119,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 120,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 121,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 122,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 123,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 124,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 125,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 126,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 127,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 128,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 129,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 130,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 131,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 132,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 133,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 134,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 135,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 136,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 137,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 138,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 139,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 140,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        },
+        {
+          "column": 141,
+          "nonempty": 12,
+          "date": 1,
+          "formula": 2,
+          "numeric": 9
+        }
+      ],
+      "freeze_panes": "EB1",
+      "auto_filter_ref": null
+    },
+    {
+      "title": "Метаданные",
+      "title_normalized": "метаданные",
+      "title_presentation_signature": "метаданные",
+      "state": "visible",
+      "declared_max_row": 28,
+      "declared_max_column": 8,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 28,
+        "min_column": 1,
+        "max_column": 4
+      },
+      "nonempty_cells": 49,
+      "cell_type_counts": {
+        "text": 49
+      },
+      "merged_ranges": [
+        "A21:H21",
+        "A8:A15",
+        "A25:H25",
+        "A20:H20",
+        "A28:H28",
+        "A19:H19",
+        "A23:H23",
+        "A27:H27"
+      ],
+      "number_formats_top": [
+        [
+          "General",
+          49
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Спецификации сезонной корректировки",
+          "normalized": "спецификации сезонной корректировки",
+          "presentation_signature": "спецификациисезоннойкорректировки"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Приложение к Обзору банковской системы",
+          "normalized": "приложение к обзору банковской системы",
+          "presentation_signature": "приложениекобзорубанковскойсистемы"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "Наименование ряда",
+          "normalized": "наименование ряда",
+          "presentation_signature": "наименованиеряда"
+        },
+        {
+          "coordinate": "B4",
+          "row": 4,
+          "column": 2,
+          "value": "Ипотечные жилищные кредиты в рублях",
+          "normalized": "ипотечные жилищные кредиты в рублях",
+          "presentation_signature": "ипотечныежилищныекредитыврублях"
+        },
+        {
+          "coordinate": "C4",
+          "row": 4,
+          "column": 3,
+          "value": "Автокредиты",
+          "normalized": "автокредиты",
+          "presentation_signature": "автокредиты"
+        },
+        {
+          "coordinate": "D4",
+          "row": 4,
+          "column": 4,
+          "value": "Потребительские ссуды",
+          "normalized": "потребительские ссуды",
+          "presentation_signature": "потребительскиессуды"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "Выборка",
+          "normalized": "выборка",
+          "presentation_signature": "выборка"
+        },
+        {
+          "coordinate": "B5",
+          "row": 5,
+          "column": 2,
+          "value": "01.03.2009 - 01.08.2026",
+          "normalized": "01.03.2009 - 01.08.2026",
+          "presentation_signature": "0103200901082026"
+        },
+        {
+          "coordinate": "C5",
+          "row": 5,
+          "column": 3,
+          "value": "01.01.2015-01.08.2026",
+          "normalized": "01.01.2015-01.08.2026",
+          "presentation_signature": "0101201501082026"
+        },
+        {
+          "coordinate": "D5",
+          "row": 5,
+          "column": 4,
+          "value": "01.01.2015-01.08.2026",
+          "normalized": "01.01.2015-01.08.2026",
+          "presentation_signature": "0101201501082026"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Трансформация",
+          "normalized": "трансформация",
+          "presentation_signature": "трансформация"
+        },
+        {
+          "coordinate": "B6",
+          "row": 6,
+          "column": 2,
+          "value": "log",
+          "normalized": "log",
+          "presentation_signature": "log"
+        },
+        {
+          "coordinate": "C6",
+          "row": 6,
+          "column": 3,
+          "value": "log",
+          "normalized": "log",
+          "presentation_signature": "log"
+        },
+        {
+          "coordinate": "D6",
+          "row": 6,
+          "column": 4,
+          "value": "log",
+          "normalized": "log",
+          "presentation_signature": "log"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "Национальный календарь",
+          "normalized": "национальный календарь",
+          "presentation_signature": "национальныйкалендарь"
+        },
+        {
+          "coordinate": "B7",
+          "row": 7,
+          "column": 2,
+          "value": "РФ",
+          "normalized": "рф",
+          "presentation_signature": "рф"
+        },
+        {
+          "coordinate": "C7",
+          "row": 7,
+          "column": 3,
+          "value": "РФ",
+          "normalized": "рф",
+          "presentation_signature": "рф"
+        },
+        {
+          "coordinate": "D7",
+          "row": 7,
+          "column": 4,
+          "value": "-",
+          "normalized": "-",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Выбросы",
+          "normalized": "выбросы",
+          "presentation_signature": "выбросы"
+        },
+        {
+          "coordinate": "B8",
+          "row": 8,
+          "column": 2,
+          "value": "AO (01-01-2019)",
+          "normalized": "ao (01-01-2019)",
+          "presentation_signature": "ao01012019"
+        },
+        {
+          "coordinate": "C8",
+          "row": 8,
+          "column": 3,
+          "value": "AO (01-02-2015)",
+          "normalized": "ao (01-02-2015)",
+          "presentation_signature": "ao01022015"
+        },
+        {
+          "coordinate": "D8",
+          "row": 8,
+          "column": 4,
+          "value": "AO (01-04-2020)",
+          "normalized": "ao (01-04-2020)",
+          "presentation_signature": "ao01042020"
+        },
+        {
+          "coordinate": "B9",
+          "row": 9,
+          "column": 2,
+          "value": "AO (01-11-2020)",
+          "normalized": "ao (01-11-2020)",
+          "presentation_signature": "ao01112020"
+        },
+        {
+          "coordinate": "C9",
+          "row": 9,
+          "column": 3,
+          "value": "AO (01-02-2016)",
+          "normalized": "ao (01-02-2016)",
+          "presentation_signature": "ao01022016"
+        },
+        {
+          "coordinate": "D9",
+          "row": 9,
+          "column": 4,
+          "value": "AO (01-03-2022)",
+          "normalized": "ao (01-03-2022)",
+          "presentation_signature": "ao01032022"
+        },
+        {
+          "coordinate": "B10",
+          "row": 10,
+          "column": 2,
+          "value": "TC (01-12-2021)",
+          "normalized": "tc (01-12-2021)",
+          "presentation_signature": "tc01122021"
+        },
+        {
+          "coordinate": "C10",
+          "row": 10,
+          "column": 3,
+          "value": "LS (01-05-2020)",
+          "normalized": "ls (01-05-2020)",
+          "presentation_signature": "ls01052020"
+        },
+        {
+          "coordinate": "D10",
+          "row": 10,
+          "column": 4,
+          "value": "LS (01-05-2022)",
+          "normalized": "ls (01-05-2022)",
+          "presentation_signature": "ls01052022"
+        },
+        {
+          "coordinate": "B11",
+          "row": 11,
+          "column": 2,
+          "value": "TC (01-10-2023)",
+          "normalized": "tc (01-10-2023)",
+          "presentation_signature": "tc01102023"
+        },
+        {
+          "coordinate": "C11",
+          "row": 11,
+          "column": 3,
+          "value": "LS (01-06-2020)",
+          "normalized": "ls (01-06-2020)",
+          "presentation_signature": "ls01062020"
+        },
+        {
+          "coordinate": "D11",
+          "row": 11,
+          "column": 4,
+          "value": "LS (01-01-2024)",
+          "normalized": "ls (01-01-2024)",
+          "presentation_signature": "ls01012024"
+        },
+        {
+          "coordinate": "B12",
+          "row": 12,
+          "column": 2,
+          "value": "TC (01-07-2024)",
+          "normalized": "tc (01-07-2024)",
+          "presentation_signature": "tc01072024"
+        },
+        {
+          "coordinate": "C12",
+          "row": 12,
+          "column": 3,
+          "value": "TC (01-12-2020)",
+          "normalized": "tc (01-12-2020)",
+          "presentation_signature": "tc01122020"
+        },
+        {
+          "coordinate": "D12",
+          "row": 12,
+          "column": 4,
+          "value": "LS (01-12-2024)",
+          "normalized": "ls (01-12-2024)",
+          "presentation_signature": "ls01122024"
+        },
+        {
+          "coordinate": "C13",
+          "row": 13,
+          "column": 3,
+          "value": "AO (01-03-2022)",
+          "normalized": "ao (01-03-2022)",
+          "presentation_signature": "ao01032022"
+        },
+        {
+          "coordinate": "D13",
+          "row": 13,
+          "column": 4,
+          "value": "LS (01-01-2025)",
+          "normalized": "ls (01-01-2025)",
+          "presentation_signature": "ls01012025"
+        },
+        {
+          "coordinate": "C14",
+          "row": 14,
+          "column": 3,
+          "value": "TC (01-10-2024)",
+          "normalized": "tc (01-10-2024)",
+          "presentation_signature": "tc01102024"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "Модель ARIMA",
+          "normalized": "модель arima",
+          "presentation_signature": "модельarima"
+        },
+        {
+          "coordinate": "B17",
+          "row": 17,
+          "column": 2,
+          "value": "(0,2,1) (0,1,1)",
+          "normalized": "(0,2,1) (0,1,1)",
+          "presentation_signature": "021011"
+        },
+        {
+          "coordinate": "C17",
+          "row": 17,
+          "column": 3,
+          "value": "(0,2,1)(0,1,1)",
+          "normalized": "(0,2,1)(0,1,1)",
+          "presentation_signature": "021011"
+        },
+        {
+          "coordinate": "D17",
+          "row": 17,
+          "column": 4,
+          "value": "(0,2,0)(0,1,1)",
+          "normalized": "(0,2,0)(0,1,1)",
+          "presentation_signature": "020011"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "По результатам статистических тестов сезонность обнаружена в следующих рядах: \n- ипотечные жилищные кредиты в рублях;\n- автокредиты;\n- потребительские ссуды.",
+          "normalized": "по результатам статистических тестов сезонность обнаружена в следующих рядах: - ипотечные жилищные кредиты в рублях; - автокредиты; - потребительские ссуды.",
+          "presentation_signature": "порезультатамстатистическихтестовсезонностьобнаруженавследующихрядахипотечныежилищныекредитыврубляхавтокредитыпотребительскиессуды"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "В задолженности в иностранной валюте по результатам статистических тестов сезонность не обнаружена.",
+          "normalized": "в задолженности в иностранной валюте по результатам статистических тестов сезонность не обнаружена.",
+          "presentation_signature": "взадолженностивиностраннойвалютепорезультатамстатистическихтестовсезонностьнеобнаружена"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "Сезонная корректировка показателей произведена косвенным методом, путем суммирования сезонно-скорректированных рядов и оригинальных рядов, в случае отсутствия подтвержденной сезонности.",
+          "normalized": "сезонная корректировка показателей произведена косвенным методом, путем суммирования сезонно-скорректированных рядов и оригинальных рядов, в случае отсутствия подтвержденной сезонности.",
+          "presentation_signature": "сезоннаякорректировкапоказателейпроизведенакосвеннымметодомпутемсуммированиясезонноскорректированныхрядовиоригинальныхрядоввслучаеотсутствияподтвержденнойсезонности"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "Сезонная корректировка балансов финансовых активов и обязательств сектора \"Домашние хозяйства\" проведена в соответствии с Рекомендациями по проведению сезонной корректировки динамических рядов (Евростат, 2024, 2018)1 и Руководством по составлению денежно-кредитной и финансовой статистики (МВФ, 2016)2 с использованием X-13 ARIMA/SEATS (US Census Bureau). Использование указанного программного средства позволило нивелировать риски избыточного сглаживания временных рядов, а также учесть экономическую сущность показателей.",
+          "normalized": "сезонная корректировка балансов финансовых активов и обязательств сектора \"домашние хозяйства\" проведена в соответствии с рекомендациями по проведению сезонной корректировки динамических рядов (евростат, 2024, 2018)1 и руководством по составлению денежно-кредитной и финансовой статистики (мвф, 2016)2 с использованием x-13 arima/seats (us census bureau). использование указанного программного средства позволило нивелировать риски избыточного сглаживания временных рядов, а также учесть экономическую сущность показателей.",
+          "presentation_signature": "сезоннаякорректировкабалансовфинансовыхактивовиобязательствсекторадомашниехозяйствапроведенавсоответствиисрекомендациямипопроведениюсезоннойкорректировкидинамическихрядовевростат202420181ируководствомпосоставлениюденежнокредитнойифинансовойстатистикимвф20162сиспользованиемx13arimaseatsuscensusbureauиспользованиеуказанногопрограммногосредствапозволилонивелироватьрискиизбыточногосглаживаниявременныхрядоватакжеучестьэкономическуюсущностьпоказателей"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "Пересмотр спецификаций сезонной корректировки производится на ежегодной основе или при возникновении необходимости на более частой основе в соответствии с общепринятыми международными подходами.",
+          "normalized": "пересмотр спецификаций сезонной корректировки производится на ежегодной основе или при возникновении необходимости на более частой основе в соответствии с общепринятыми международными подходами.",
+          "presentation_signature": "пересмотрспецификацийсезоннойкорректировкипроизводитсянаежегоднойосновеилипривозникновениинеобходимостинаболеечастойосновевсоответствиисобщепринятымимеждународнымиподходами"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "При необходимости внесения изменений в модель сезонной корректировки соответствующие комментарии будут опубликованы дополнительно.",
+          "normalized": "при необходимости внесения изменений в модель сезонной корректировки соответствующие комментарии будут опубликованы дополнительно.",
+          "presentation_signature": "принеобходимостивнесенияизмененийвмодельсезоннойкорректировкисоответствующиекомментариибудутопубликованыдополнительно"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "1. European Statistical Sysytem (ESS) Guidelines on Seasonal Adjustment/ Eurostat, Manuals and guidelines/ Luxembourg: Publications Office of the European Union, 2024.  Handbook on Seasonal Adjustment/Eurostat, 2018.",
+          "normalized": "1. european statistical sysytem (ess) guidelines on seasonal adjustment/ eurostat, manuals and guidelines/ luxembourg: publications office of the european union, 2024. handbook on seasonal adjustment/eurostat, 2018.",
+          "presentation_signature": "1europeanstatisticalsysytemessguidelinesonseasonaladjustmenteurostatmanualsandguidelinesluxembourgpublicationsofficeoftheeuropeanunion2024handbookonseasonaladjustmenteurostat2018"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "2. Monetary and Financial Statistics Manual and Compilation Guide/Washington, D.C.: International Monetary Fund, 2016.",
+          "normalized": "2. monetary and financial statistics manual and compilation guide/washington, d.c.: international monetary fund, 2016.",
+          "presentation_signature": "2monetaryandfinancialstatisticsmanualandcompilationguidewashingtondcinternationalmonetaryfund2016"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 3,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 4,
+          "nonempty": 4,
+          "text": 4
+        },
+        {
+          "row": 5,
+          "nonempty": 4,
+          "text": 4
+        },
+        {
+          "row": 6,
+          "nonempty": 4,
+          "text": 4
+        },
+        {
+          "row": 7,
+          "nonempty": 4,
+          "text": 4
+        },
+        {
+          "row": 8,
+          "nonempty": 4,
+          "text": 4
+        },
+        {
+          "row": 9,
+          "nonempty": 3,
+          "text": 3
+        },
+        {
+          "row": 10,
+          "nonempty": 3,
+          "text": 3
+        },
+        {
+          "row": 11,
+          "nonempty": 3,
+          "text": 3
+        },
+        {
+          "row": 12,
+          "nonempty": 3,
+          "text": 3
+        },
+        {
+          "row": 13,
+          "nonempty": 2,
+          "text": 2
+        },
+        {
+          "row": 14,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 17,
+          "nonempty": 4,
+          "text": 4
+        },
+        {
+          "row": 19,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 20,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 21,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 23,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 24,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 25,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 27,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 28,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 16,
+          "text": 16
+        },
+        {
+          "column": 2,
+          "nonempty": 10,
+          "text": 10
+        },
+        {
+          "column": 3,
+          "nonempty": 12,
+          "text": 12
+        },
+        {
+          "column": 4,
+          "nonempty": 11,
+          "text": 11
+        }
+      ],
+      "freeze_panes": null,
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/annex_survey_dc.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/annex_survey_dc.xlsx",
+    "http_status": 200,
+    "bytes": 48442,
+    "sha256": "b405010b48ca7fc4d5e6984bf4545e7446ccac08375324ee02bb082a089c0a72",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:53:33 GMT"
+  }
+}

@@ -1,0 +1,4015 @@
+{
+  "source": {
+    "source_id": "survey_dc_new",
+    "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_dc_new.xlsx",
+    "registry_label": "Обзор банковской системы",
+    "family_hint": "monetary_financial_statistics"
+  },
+  "sheet_names": [
+    "Агрегированная форма обзора"
+  ],
+  "defined_names": [],
+  "sheets": [
+    {
+      "title": "Агрегированная форма обзора",
+      "title_normalized": "агрегированная форма обзора",
+      "title_presentation_signature": "агрегированнаяформаобзора",
+      "state": "visible",
+      "declared_max_row": 59,
+      "declared_max_column": 309,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 59,
+        "min_column": 1,
+        "max_column": 309
+      },
+      "nonempty_cells": 16690,
+      "cell_type_counts": {
+        "text": 58,
+        "date": 308,
+        "numeric": 16324
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-",
+          16324
+        ],
+        [
+          "mm-dd-yy",
+          308
+        ],
+        [
+          "General",
+          58
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Обзор банковской системы*, млн рублей",
+          "normalized": "обзор банковской системы*, млн рублей",
+          "presentation_signature": "обзорбанковскойсистемы*млнрублей"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Широкая денежная масса (М2Х)",
+          "normalized": "широкая денежная масса (м2х)",
+          "presentation_signature": "широкаяденежнаямассам2х"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Денежный агрегат М0 ",
+          "normalized": "денежный агрегат м0",
+          "presentation_signature": "денежныйагрегатм0"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "Переводные депозиты домашних хозяйств в рублях",
+          "normalized": "переводные депозиты домашних хозяйств в рублях",
+          "presentation_signature": "переводныедепозитыдомашниххозяйствврублях"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "Переводные депозиты нефинансовых организаций в рублях",
+          "normalized": "переводные депозиты нефинансовых организаций в рублях",
+          "presentation_signature": "переводныедепозитынефинансовыхорганизацийврублях"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Переводные депозиты других финансовых организаций в рублях",
+          "normalized": "переводные депозиты других финансовых организаций в рублях",
+          "presentation_signature": "переводныедепозитыдругихфинансовыхорганизацийврублях"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "Денежный агрегат М1",
+          "normalized": "денежный агрегат м1",
+          "presentation_signature": "денежныйагрегатм1"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Другие депозиты домашних хозяйств в рублях",
+          "normalized": "другие депозиты домашних хозяйств в рублях",
+          "presentation_signature": "другиедепозитыдомашниххозяйствврублях"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "Другие депозиты нефинансовых организаций в рублях",
+          "normalized": "другие депозиты нефинансовых организаций в рублях",
+          "presentation_signature": "другиедепозитынефинансовыхорганизацийврублях"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "Другие депозиты других финансовых организаций в рублях",
+          "normalized": "другие депозиты других финансовых организаций в рублях",
+          "presentation_signature": "другиедепозитыдругихфинансовыхорганизацийврублях"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "Денежный агрегат М2",
+          "normalized": "денежный агрегат м2",
+          "presentation_signature": "денежныйагрегатм2"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "Депозиты домашних хозяйств в иностранной валюте",
+          "normalized": "депозиты домашних хозяйств в иностранной валюте",
+          "presentation_signature": "депозитыдомашниххозяйстввиностраннойвалюте"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "Депозиты нефинансовых организаций в иностранной валюте",
+          "normalized": "депозиты нефинансовых организаций в иностранной валюте",
+          "presentation_signature": "депозитынефинансовыхорганизацийвиностраннойвалюте"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "Депозиты других финансовых организаций в иностранной валюте",
+          "normalized": "депозиты других финансовых организаций в иностранной валюте",
+          "presentation_signature": "депозитыдругихфинансовыхорганизацийвиностраннойвалюте"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "Депозитные и сберегательные сертификаты",
+          "normalized": "депозитные и сберегательные сертификаты",
+          "presentation_signature": "депозитныеисберегательныесертификаты"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "Источники формирования широкой денежной массы",
+          "normalized": "источники формирования широкой денежной массы",
+          "presentation_signature": "источникиформированияширокойденежноймассы"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "Чистые иностранные активы",
+          "normalized": "чистые иностранные активы",
+          "presentation_signature": "чистыеиностранныеактивы"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "Чистые требования к органам государственного управления",
+          "normalized": "чистые требования к органам государственного управления",
+          "presentation_signature": "чистыетребованиякорганамгосударственногоуправления"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "Кредит экономике",
+          "normalized": "кредит экономике",
+          "presentation_signature": "кредитэкономике"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "Требования к другим финансовым организациям",
+          "normalized": "требования к другим финансовым организациям",
+          "presentation_signature": "требованиякдругимфинансовыморганизациям"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "Кредиты и займы",
+          "normalized": "кредиты и займы",
+          "presentation_signature": "кредитыизаймы"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A29",
+          "row": 29,
+          "column": 1,
+          "value": "Прочие требования",
+          "normalized": "прочие требования",
+          "presentation_signature": "прочиетребования"
+        },
+        {
+          "coordinate": "A30",
+          "row": 30,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A31",
+          "row": 31,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A32",
+          "row": 32,
+          "column": 1,
+          "value": "Требования к нефинансовым организациям",
+          "normalized": "требования к нефинансовым организациям",
+          "presentation_signature": "требованиякнефинансовыморганизациям"
+        },
+        {
+          "coordinate": "A33",
+          "row": 33,
+          "column": 1,
+          "value": "Кредиты и займы",
+          "normalized": "кредиты и займы",
+          "presentation_signature": "кредитыизаймы"
+        },
+        {
+          "coordinate": "A34",
+          "row": 34,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A35",
+          "row": 35,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A36",
+          "row": 36,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A37",
+          "row": 37,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A38",
+          "row": 38,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A39",
+          "row": 39,
+          "column": 1,
+          "value": "Прочие требования",
+          "normalized": "прочие требования",
+          "presentation_signature": "прочиетребования"
+        },
+        {
+          "coordinate": "A40",
+          "row": 40,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A41",
+          "row": 41,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A42",
+          "row": 42,
+          "column": 1,
+          "value": "Требования к домашним хозяйствам",
+          "normalized": "требования к домашним хозяйствам",
+          "presentation_signature": "требованиякдомашнимхозяйствам"
+        },
+        {
+          "coordinate": "A43",
+          "row": 43,
+          "column": 1,
+          "value": "Кредиты и займы",
+          "normalized": "кредиты и займы",
+          "presentation_signature": "кредитыизаймы"
+        },
+        {
+          "coordinate": "A44",
+          "row": 44,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A45",
+          "row": 45,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A46",
+          "row": 46,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A47",
+          "row": 47,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A48",
+          "row": 48,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A49",
+          "row": 49,
+          "column": 1,
+          "value": "Прочие требования",
+          "normalized": "прочие требования",
+          "presentation_signature": "прочиетребования"
+        },
+        {
+          "coordinate": "A50",
+          "row": 50,
+          "column": 1,
+          "value": "в рублях",
+          "normalized": "в рублях",
+          "presentation_signature": "врублях"
+        },
+        {
+          "coordinate": "A51",
+          "row": 51,
+          "column": 1,
+          "value": "в иностранной валюте",
+          "normalized": "в иностранной валюте",
+          "presentation_signature": "виностраннойвалюте"
+        },
+        {
+          "coordinate": "A52",
+          "row": 52,
+          "column": 1,
+          "value": "Прочие статьи",
+          "normalized": "прочие статьи",
+          "presentation_signature": "прочиестатьи"
+        },
+        {
+          "coordinate": "A53",
+          "row": 53,
+          "column": 1,
+          "value": "Депозиты, не включаемые в широкую денежную массу",
+          "normalized": "депозиты, не включаемые в широкую денежную массу",
+          "presentation_signature": "депозитыневключаемыевширокуюденежнуюмассу"
+        },
+        {
+          "coordinate": "A54",
+          "row": 54,
+          "column": 1,
+          "value": "Долговые ценные бумаги, не включаемые в широкую денежную массу",
+          "normalized": "долговые ценные бумаги, не включаемые в широкую денежную массу",
+          "presentation_signature": "долговыеценныебумагиневключаемыевширокуюденежнуюмассу"
+        },
+        {
+          "coordinate": "A55",
+          "row": 55,
+          "column": 1,
+          "value": "Прочие статьи (Нетто)",
+          "normalized": "прочие статьи (нетто)",
+          "presentation_signature": "прочиестатьинетто"
+        },
+        {
+          "coordinate": "A56",
+          "row": 56,
+          "column": 1,
+          "value": "Средства на счетах эскроу физических лиц ",
+          "normalized": "средства на счетах эскроу физических лиц",
+          "presentation_signature": "средстванасчетахэскроуфизическихлиц"
+        },
+        {
+          "coordinate": "A58",
+          "row": 58,
+          "column": 1,
+          "value": "* В июле 2025 г. произведен пересчет данных с 01.01.2015 в связи с уточнением методологических принципов расчета портфеля ценных бумаг (в т.ч. уточнением секторальной принадлежности эмитентов, изменением приоритизации источников информации) и появлением новых источников информации. ",
+          "normalized": "* в июле 2025 г. произведен пересчет данных с 01.01.2015 в связи с уточнением методологических принципов расчета портфеля ценных бумаг (в т.ч. уточнением секторальной принадлежности эмитентов, изменением приоритизации источников информации) и появлением новых источников информации.",
+          "presentation_signature": "*виюле2025гпроизведенпересчетданныхс01012015всвязисуточнениемметодологическихпринциповрасчетапортфеляценныхбумагвтчуточнениемсекторальнойпринадлежностиэмитентовизменениемприоритизацииисточниковинформацииипоявлениемновыхисточниковинформации"
+        },
+        {
+          "coordinate": "A59",
+          "row": 59,
+          "column": 1,
+          "value": "Данные могут уточняться в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "normalized": "данные могут уточняться в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "presentation_signature": "данныемогутуточнятьсявсвязисизменениемотчетныхданныхпоявлениемновыхисточниковинформацииметодологическимиизменениями"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B2",
+          "value": {
+            "kind": "int",
+            "value": "1573823"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "C2",
+          "value": {
+            "kind": "int",
+            "value": "1548810"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "D2",
+          "value": {
+            "kind": "int",
+            "value": "1631002"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "E2",
+          "value": {
+            "kind": "int",
+            "value": "1650114"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "F2",
+          "value": {
+            "kind": "int",
+            "value": "1704653"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "G2",
+          "value": {
+            "kind": "int",
+            "value": "1747034"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "H2",
+          "value": {
+            "kind": "int",
+            "value": "1812941"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "I2",
+          "value": {
+            "kind": "int",
+            "value": "1859702"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "J2",
+          "value": {
+            "kind": "int",
+            "value": "1888942"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "K2",
+          "value": {
+            "kind": "int",
+            "value": "1941956"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "L2",
+          "value": {
+            "kind": "int",
+            "value": "1993073"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "M2",
+          "value": {
+            "kind": "int",
+            "value": "2005234"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "N2",
+          "value": {
+            "kind": "int",
+            "value": "2137779"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "O2",
+          "value": {
+            "kind": "int",
+            "value": "2076111"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "P2",
+          "value": {
+            "kind": "int",
+            "value": "2124290"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Q2",
+          "value": {
+            "kind": "int",
+            "value": "2160185"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "R2",
+          "value": {
+            "kind": "int",
+            "value": "2232616"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "S2",
+          "value": {
+            "kind": "int",
+            "value": "2307216"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "T2",
+          "value": {
+            "kind": "int",
+            "value": "2374754"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "U2",
+          "value": {
+            "kind": "int",
+            "value": "2422036"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "V2",
+          "value": {
+            "kind": "int",
+            "value": "2463508"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "W2",
+          "value": {
+            "kind": "int",
+            "value": "2510362"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "X2",
+          "value": {
+            "kind": "int",
+            "value": "2558888"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Y2",
+          "value": {
+            "kind": "int",
+            "value": "2622892"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "Z2",
+          "value": {
+            "kind": "int",
+            "value": "2858797"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AA2",
+          "value": {
+            "kind": "int",
+            "value": "2788019"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AB2",
+          "value": {
+            "kind": "int",
+            "value": "2925552"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AC2",
+          "value": {
+            "kind": "int",
+            "value": "3002436"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AD2",
+          "value": {
+            "kind": "int",
+            "value": "3069058"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AE2",
+          "value": {
+            "kind": "int",
+            "value": "3175864"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AF2",
+          "value": {
+            "kind": "int",
+            "value": "3348397"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AG2",
+          "value": {
+            "kind": "int",
+            "value": "3407995"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AH2",
+          "value": {
+            "kind": "int",
+            "value": "3460622"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AI2",
+          "value": {
+            "kind": "int",
+            "value": "3586124"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AJ2",
+          "value": {
+            "kind": "int",
+            "value": "3557423"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AK2",
+          "value": {
+            "kind": "int",
+            "value": "3632771"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AL2",
+          "value": {
+            "kind": "int",
+            "value": "3954262"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AM2",
+          "value": {
+            "kind": "int",
+            "value": "3933356"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AN2",
+          "value": {
+            "kind": "int",
+            "value": "4079417"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AO2",
+          "value": {
+            "kind": "int",
+            "value": "4178311"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AP2",
+          "value": {
+            "kind": "int",
+            "value": "4320693"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AQ2",
+          "value": {
+            "kind": "int",
+            "value": "4358365"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AR2",
+          "value": {
+            "kind": "int",
+            "value": "4533518"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AS2",
+          "value": {
+            "kind": "int",
+            "value": "4542123"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AT2",
+          "value": {
+            "kind": "int",
+            "value": "4562328"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AU2",
+          "value": {
+            "kind": "int",
+            "value": "4630042"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AV2",
+          "value": {
+            "kind": "int",
+            "value": "4720941"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AW2",
+          "value": {
+            "kind": "int",
+            "value": "4854816"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AX2",
+          "value": {
+            "kind": "int",
+            "value": "5288740"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AY2",
+          "value": {
+            "kind": "int",
+            "value": "5173697"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "AZ2",
+          "value": {
+            "kind": "int",
+            "value": "5333426"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BA2",
+          "value": {
+            "kind": "int",
+            "value": "5487113"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BB2",
+          "value": {
+            "kind": "int",
+            "value": "5584272"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BC2",
+          "value": {
+            "kind": "int",
+            "value": "5732323"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BD2",
+          "value": {
+            "kind": "int",
+            "value": "6006595"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BE2",
+          "value": {
+            "kind": "int",
+            "value": "6075131"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BF2",
+          "value": {
+            "kind": "int",
+            "value": "6274236"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BG2",
+          "value": {
+            "kind": "int",
+            "value": "6442792"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BH2",
+          "value": {
+            "kind": "int",
+            "value": "6465873"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BI2",
+          "value": {
+            "kind": "int",
+            "value": "6589101"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BJ2",
+          "value": {
+            "kind": "int",
+            "value": "7213379"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BK2",
+          "value": {
+            "kind": "int",
+            "value": "7018759"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BL2",
+          "value": {
+            "kind": "int",
+            "value": "7139320"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BM2",
+          "value": {
+            "kind": "int",
+            "value": "7374657"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BN2",
+          "value": {
+            "kind": "int",
+            "value": "7507925"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BO2",
+          "value": {
+            "kind": "int",
+            "value": "7855884"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BP2",
+          "value": {
+            "kind": "int",
+            "value": "8277181"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BQ2",
+          "value": {
+            "kind": "int",
+            "value": "8383048"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BR2",
+          "value": {
+            "kind": "int",
+            "value": "8545519"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BS2",
+          "value": {
+            "kind": "int",
+            "value": "8878399"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BT2",
+          "value": {
+            "kind": "int",
+            "value": "8952149"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BU2",
+          "value": {
+            "kind": "int",
+            "value": "9201936"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BV2",
+          "value": {
+            "kind": "int",
+            "value": "10126732"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BW2",
+          "value": {
+            "kind": "int",
+            "value": "9886764"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BX2",
+          "value": {
+            "kind": "int",
+            "value": "10155626"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BY2",
+          "value": {
+            "kind": "int",
+            "value": "10872844"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "BZ2",
+          "value": {
+            "kind": "int",
+            "value": "11161019"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CA2",
+          "value": {
+            "kind": "int",
+            "value": "11875247"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CB2",
+          "value": {
+            "kind": "int",
+            "value": "12011673"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        },
+        {
+          "coordinate": "CC2",
+          "value": {
+            "kind": "int",
+            "value": "12060351"
+          },
+          "number_format": "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B1",
+          "value": {
+            "kind": "date",
+            "value": "2001-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "C1",
+          "value": {
+            "kind": "date",
+            "value": "2001-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "D1",
+          "value": {
+            "kind": "date",
+            "value": "2001-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "E1",
+          "value": {
+            "kind": "date",
+            "value": "2001-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "F1",
+          "value": {
+            "kind": "date",
+            "value": "2001-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "G1",
+          "value": {
+            "kind": "date",
+            "value": "2001-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "H1",
+          "value": {
+            "kind": "date",
+            "value": "2001-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "I1",
+          "value": {
+            "kind": "date",
+            "value": "2001-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "J1",
+          "value": {
+            "kind": "date",
+            "value": "2001-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "K1",
+          "value": {
+            "kind": "date",
+            "value": "2001-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "L1",
+          "value": {
+            "kind": "date",
+            "value": "2001-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "M1",
+          "value": {
+            "kind": "date",
+            "value": "2001-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "N1",
+          "value": {
+            "kind": "date",
+            "value": "2002-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "O1",
+          "value": {
+            "kind": "date",
+            "value": "2002-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "P1",
+          "value": {
+            "kind": "date",
+            "value": "2002-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Q1",
+          "value": {
+            "kind": "date",
+            "value": "2002-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "R1",
+          "value": {
+            "kind": "date",
+            "value": "2002-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "S1",
+          "value": {
+            "kind": "date",
+            "value": "2002-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "T1",
+          "value": {
+            "kind": "date",
+            "value": "2002-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "U1",
+          "value": {
+            "kind": "date",
+            "value": "2002-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "V1",
+          "value": {
+            "kind": "date",
+            "value": "2002-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "W1",
+          "value": {
+            "kind": "date",
+            "value": "2002-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "X1",
+          "value": {
+            "kind": "date",
+            "value": "2002-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Y1",
+          "value": {
+            "kind": "date",
+            "value": "2002-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Z1",
+          "value": {
+            "kind": "date",
+            "value": "2003-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AA1",
+          "value": {
+            "kind": "date",
+            "value": "2003-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AB1",
+          "value": {
+            "kind": "date",
+            "value": "2003-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AC1",
+          "value": {
+            "kind": "date",
+            "value": "2003-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AD1",
+          "value": {
+            "kind": "date",
+            "value": "2003-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AE1",
+          "value": {
+            "kind": "date",
+            "value": "2003-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AF1",
+          "value": {
+            "kind": "date",
+            "value": "2003-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AG1",
+          "value": {
+            "kind": "date",
+            "value": "2003-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AH1",
+          "value": {
+            "kind": "date",
+            "value": "2003-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AI1",
+          "value": {
+            "kind": "date",
+            "value": "2003-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AJ1",
+          "value": {
+            "kind": "date",
+            "value": "2003-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AK1",
+          "value": {
+            "kind": "date",
+            "value": "2003-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AL1",
+          "value": {
+            "kind": "date",
+            "value": "2004-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AM1",
+          "value": {
+            "kind": "date",
+            "value": "2004-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AN1",
+          "value": {
+            "kind": "date",
+            "value": "2004-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AO1",
+          "value": {
+            "kind": "date",
+            "value": "2004-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AP1",
+          "value": {
+            "kind": "date",
+            "value": "2004-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AQ1",
+          "value": {
+            "kind": "date",
+            "value": "2004-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AR1",
+          "value": {
+            "kind": "date",
+            "value": "2004-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AS1",
+          "value": {
+            "kind": "date",
+            "value": "2004-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AT1",
+          "value": {
+            "kind": "date",
+            "value": "2004-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AU1",
+          "value": {
+            "kind": "date",
+            "value": "2004-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AV1",
+          "value": {
+            "kind": "date",
+            "value": "2004-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AW1",
+          "value": {
+            "kind": "date",
+            "value": "2004-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AX1",
+          "value": {
+            "kind": "date",
+            "value": "2005-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AY1",
+          "value": {
+            "kind": "date",
+            "value": "2005-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AZ1",
+          "value": {
+            "kind": "date",
+            "value": "2005-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BA1",
+          "value": {
+            "kind": "date",
+            "value": "2005-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BB1",
+          "value": {
+            "kind": "date",
+            "value": "2005-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BC1",
+          "value": {
+            "kind": "date",
+            "value": "2005-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BD1",
+          "value": {
+            "kind": "date",
+            "value": "2005-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BE1",
+          "value": {
+            "kind": "date",
+            "value": "2005-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BF1",
+          "value": {
+            "kind": "date",
+            "value": "2005-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BG1",
+          "value": {
+            "kind": "date",
+            "value": "2005-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BH1",
+          "value": {
+            "kind": "date",
+            "value": "2005-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BI1",
+          "value": {
+            "kind": "date",
+            "value": "2005-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BJ1",
+          "value": {
+            "kind": "date",
+            "value": "2006-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BK1",
+          "value": {
+            "kind": "date",
+            "value": "2006-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BL1",
+          "value": {
+            "kind": "date",
+            "value": "2006-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BM1",
+          "value": {
+            "kind": "date",
+            "value": "2006-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BN1",
+          "value": {
+            "kind": "date",
+            "value": "2006-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BO1",
+          "value": {
+            "kind": "date",
+            "value": "2006-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BP1",
+          "value": {
+            "kind": "date",
+            "value": "2006-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BQ1",
+          "value": {
+            "kind": "date",
+            "value": "2006-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BR1",
+          "value": {
+            "kind": "date",
+            "value": "2006-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BS1",
+          "value": {
+            "kind": "date",
+            "value": "2006-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BT1",
+          "value": {
+            "kind": "date",
+            "value": "2006-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BU1",
+          "value": {
+            "kind": "date",
+            "value": "2006-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BV1",
+          "value": {
+            "kind": "date",
+            "value": "2007-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BW1",
+          "value": {
+            "kind": "date",
+            "value": "2007-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BX1",
+          "value": {
+            "kind": "date",
+            "value": "2007-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BY1",
+          "value": {
+            "kind": "date",
+            "value": "2007-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BZ1",
+          "value": {
+            "kind": "date",
+            "value": "2007-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CA1",
+          "value": {
+            "kind": "date",
+            "value": "2007-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CB1",
+          "value": {
+            "kind": "date",
+            "value": "2007-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CC1",
+          "value": {
+            "kind": "date",
+            "value": "2007-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 309,
+          "text": 1,
+          "date": 308
+        },
+        {
+          "row": 2,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 3,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 4,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 5,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 6,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 7,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 8,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 9,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 10,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 11,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 12,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 13,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 14,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 15,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 16,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 17,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 18,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 19,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 20,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 21,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 22,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 23,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 24,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 25,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 26,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 27,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 28,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 29,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 30,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 31,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 32,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 33,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 34,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 35,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 36,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 37,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 38,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 39,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 40,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 41,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 42,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 43,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 44,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 45,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 46,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 47,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 48,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 49,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 50,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 51,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 52,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 53,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 54,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 55,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 56,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 58,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 59,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 58,
+          "text": 58
+        },
+        {
+          "column": 2,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 3,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 4,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 5,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 6,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 7,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 8,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 9,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 10,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 11,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 12,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 13,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 14,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 15,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 16,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 17,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 18,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 19,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 20,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 21,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 22,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 23,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 24,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 25,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 26,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 27,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 28,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 29,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 30,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 31,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 32,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 33,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 34,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 35,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 36,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 37,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 38,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 39,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 40,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 41,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 42,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 43,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 44,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 45,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 46,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 47,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 48,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 49,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 50,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 51,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 52,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 53,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 54,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 55,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 56,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 57,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 58,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 59,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 60,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 61,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 62,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 63,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 64,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 65,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 66,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 67,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 68,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 69,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 70,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 71,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 72,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 73,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 74,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 75,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 76,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 77,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 78,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 79,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 80,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 81,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 82,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 83,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 84,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 85,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 86,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 87,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 88,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 89,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 90,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 91,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 92,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 93,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 94,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 95,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 96,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 97,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 98,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 99,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 100,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 101,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 102,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 103,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 104,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 105,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 106,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 107,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 108,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 109,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 110,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 111,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 112,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 113,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 114,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 115,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 116,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 117,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 118,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 119,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 120,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 121,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 122,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 123,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 124,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 125,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 126,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 127,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 128,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 129,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 130,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 131,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 132,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 133,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 134,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 135,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 136,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 137,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 138,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 139,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 140,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 141,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 142,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 143,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 144,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 145,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 146,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 147,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 148,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 149,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 150,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 151,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 152,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 153,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 154,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 155,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 156,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 157,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 158,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 159,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 160,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 161,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 162,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 163,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 164,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 165,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 166,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 167,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 168,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 169,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 170,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 171,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 172,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 173,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 174,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 175,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 176,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 177,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 178,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 179,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 180,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 181,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 182,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 183,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 184,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 185,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 186,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 187,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 188,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 189,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 190,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 191,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 192,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 193,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 194,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 195,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 196,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 197,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 198,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 199,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 200,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 201,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 202,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 203,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 204,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 205,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 206,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 207,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 208,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 209,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 210,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 211,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 212,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 213,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 214,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 215,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 216,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 217,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 218,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 219,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 220,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 221,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 222,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 223,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 224,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 225,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 226,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 227,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 228,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 229,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 230,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 231,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 232,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 233,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 234,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 235,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 236,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 237,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 238,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 239,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 240,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 241,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 242,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 243,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 244,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 245,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 246,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 247,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 248,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 249,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 250,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 251,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 252,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 253,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 254,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 255,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 256,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 257,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 258,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 259,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 260,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 261,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 262,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 263,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 264,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 265,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 266,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 267,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 268,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 269,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 270,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 271,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 272,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 273,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 274,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 275,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 276,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 277,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 278,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 279,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 280,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 281,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 282,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 283,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 284,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 285,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 286,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 287,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 288,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 289,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 290,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 291,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 292,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 293,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 294,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 295,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 296,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 297,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 298,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 299,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 300,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 301,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 302,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 303,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 304,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 305,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 306,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 307,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 308,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        },
+        {
+          "column": 309,
+          "nonempty": 54,
+          "date": 1,
+          "numeric": 53
+        }
+      ],
+      "freeze_panes": "KR2",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_dc_new.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_dc_new.xlsx",
+    "http_status": 200,
+    "bytes": 133095,
+    "sha256": "51e68174706ca4687aaa10029cd6ef18422dbe95ea2b6a99d8a680120f77792a",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:52:49 GMT"
+  }
+}

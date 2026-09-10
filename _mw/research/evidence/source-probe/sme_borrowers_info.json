@@ -1,0 +1,6484 @@
+{
+  "source": {
+    "source_id": "sme_borrowers_info",
+    "url": "https://www.cbr.ru/vfs/statistics/banksector/loans_to_corporations/02_02_SME_Borrowers_info.xlsx",
+    "registry_label": "МСП: сведения о заёмщиках",
+    "family_hint": "corporate_and_sme_loans"
+  },
+  "sheet_names": [
+    "Данные"
+  ],
+  "defined_names": [],
+  "sheets": [
+    {
+      "title": "Данные",
+      "title_normalized": "данные",
+      "title_presentation_signature": "данные",
+      "state": "visible",
+      "declared_max_row": 73,
+      "declared_max_column": 93,
+      "actual_nonempty_bounds": {
+        "min_row": 2,
+        "max_row": 73,
+        "min_column": 1,
+        "max_column": 93
+      },
+      "nonempty_cells": 4430,
+      "cell_type_counts": {
+        "text": 608,
+        "numeric": 3822
+      },
+      "merged_ranges": [
+        "A30:B30",
+        "A51:B51",
+        "A47:A49",
+        "A22:A24",
+        "A6:B6",
+        "A68:A70",
+        "A44:A46",
+        "A59:A61",
+        "A54:B54",
+        "A16:B16",
+        "A65:B65",
+        "A34:A36",
+        "A41:B41",
+        "A10:A12",
+        "A56:A58",
+        "A19:A21",
+        "A66:B66",
+        "A18:B18",
+        "A31:A33",
+        "A55:B55",
+        "A5:B5",
+        "A42:B42",
+        "A17:B17",
+        "A53:B53",
+        "A4:B4",
+        "A7:A9",
+        "A29:B29",
+        "A43:B43",
+        "A63:B63",
+        "A28:B28",
+        "A71:A73",
+        "A67:B67",
+        "A39:B39"
+      ],
+      "number_formats_top": [
+        [
+          "#,###;\\-#,###;0",
+          3822
+        ],
+        [
+          "@",
+          608
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "1. Количество субъектов МСП, имеющих задолженность",
+          "normalized": "1. количество субъектов мсп, имеющих задолженность",
+          "presentation_signature": "1количествосубъектовмспимеющихзадолженность"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "Количество субъектов МСП, имеющих задолженность (включая просроченную), ед.",
+          "normalized": "количество субъектов мсп, имеющих задолженность (включая просроченную), ед.",
+          "presentation_signature": "количествосубъектовмспимеющихзадолженностьвключаяпросроченнуюед"
+        },
+        {
+          "coordinate": "C5",
+          "row": 5,
+          "column": 3,
+          "value": "01.02.2019",
+          "normalized": "01.02.2019",
+          "presentation_signature": "01022019"
+        },
+        {
+          "coordinate": "D5",
+          "row": 5,
+          "column": 4,
+          "value": "01.03.2019",
+          "normalized": "01.03.2019",
+          "presentation_signature": "01032019"
+        },
+        {
+          "coordinate": "E5",
+          "row": 5,
+          "column": 5,
+          "value": "01.04.2019",
+          "normalized": "01.04.2019",
+          "presentation_signature": "01042019"
+        },
+        {
+          "coordinate": "F5",
+          "row": 5,
+          "column": 6,
+          "value": "01.05.2019",
+          "normalized": "01.05.2019",
+          "presentation_signature": "01052019"
+        },
+        {
+          "coordinate": "G5",
+          "row": 5,
+          "column": 7,
+          "value": "01.06.2019",
+          "normalized": "01.06.2019",
+          "presentation_signature": "01062019"
+        },
+        {
+          "coordinate": "H5",
+          "row": 5,
+          "column": 8,
+          "value": "01.07.2019",
+          "normalized": "01.07.2019",
+          "presentation_signature": "01072019"
+        },
+        {
+          "coordinate": "I5",
+          "row": 5,
+          "column": 9,
+          "value": "01.08.2019",
+          "normalized": "01.08.2019",
+          "presentation_signature": "01082019"
+        },
+        {
+          "coordinate": "J5",
+          "row": 5,
+          "column": 10,
+          "value": "01.09.2019",
+          "normalized": "01.09.2019",
+          "presentation_signature": "01092019"
+        },
+        {
+          "coordinate": "K5",
+          "row": 5,
+          "column": 11,
+          "value": "01.10.2019",
+          "normalized": "01.10.2019",
+          "presentation_signature": "01102019"
+        },
+        {
+          "coordinate": "L5",
+          "row": 5,
+          "column": 12,
+          "value": "01.11.2019",
+          "normalized": "01.11.2019",
+          "presentation_signature": "01112019"
+        },
+        {
+          "coordinate": "M5",
+          "row": 5,
+          "column": 13,
+          "value": "01.12.2019",
+          "normalized": "01.12.2019",
+          "presentation_signature": "01122019"
+        },
+        {
+          "coordinate": "N5",
+          "row": 5,
+          "column": 14,
+          "value": "01.01.2020",
+          "normalized": "01.01.2020",
+          "presentation_signature": "01012020"
+        },
+        {
+          "coordinate": "O5",
+          "row": 5,
+          "column": 15,
+          "value": "01.02.2020",
+          "normalized": "01.02.2020",
+          "presentation_signature": "01022020"
+        },
+        {
+          "coordinate": "P5",
+          "row": 5,
+          "column": 16,
+          "value": "01.03.2020",
+          "normalized": "01.03.2020",
+          "presentation_signature": "01032020"
+        },
+        {
+          "coordinate": "Q5",
+          "row": 5,
+          "column": 17,
+          "value": "01.04.2020",
+          "normalized": "01.04.2020",
+          "presentation_signature": "01042020"
+        },
+        {
+          "coordinate": "R5",
+          "row": 5,
+          "column": 18,
+          "value": "01.05.2020",
+          "normalized": "01.05.2020",
+          "presentation_signature": "01052020"
+        },
+        {
+          "coordinate": "S5",
+          "row": 5,
+          "column": 19,
+          "value": "01.06.2020",
+          "normalized": "01.06.2020",
+          "presentation_signature": "01062020"
+        },
+        {
+          "coordinate": "T5",
+          "row": 5,
+          "column": 20,
+          "value": "01.07.2020",
+          "normalized": "01.07.2020",
+          "presentation_signature": "01072020"
+        },
+        {
+          "coordinate": "U5",
+          "row": 5,
+          "column": 21,
+          "value": "01.08.2020",
+          "normalized": "01.08.2020",
+          "presentation_signature": "01082020"
+        },
+        {
+          "coordinate": "V5",
+          "row": 5,
+          "column": 22,
+          "value": "01.09.2020",
+          "normalized": "01.09.2020",
+          "presentation_signature": "01092020"
+        },
+        {
+          "coordinate": "W5",
+          "row": 5,
+          "column": 23,
+          "value": "01.10.2020",
+          "normalized": "01.10.2020",
+          "presentation_signature": "01102020"
+        },
+        {
+          "coordinate": "X5",
+          "row": 5,
+          "column": 24,
+          "value": "01.11.2020",
+          "normalized": "01.11.2020",
+          "presentation_signature": "01112020"
+        },
+        {
+          "coordinate": "Y5",
+          "row": 5,
+          "column": 25,
+          "value": "01.12.2020",
+          "normalized": "01.12.2020",
+          "presentation_signature": "01122020"
+        },
+        {
+          "coordinate": "Z5",
+          "row": 5,
+          "column": 26,
+          "value": "01.01.2021",
+          "normalized": "01.01.2021",
+          "presentation_signature": "01012021"
+        },
+        {
+          "coordinate": "AA5",
+          "row": 5,
+          "column": 27,
+          "value": "01.02.2021",
+          "normalized": "01.02.2021",
+          "presentation_signature": "01022021"
+        },
+        {
+          "coordinate": "AB5",
+          "row": 5,
+          "column": 28,
+          "value": "01.03.2021",
+          "normalized": "01.03.2021",
+          "presentation_signature": "01032021"
+        },
+        {
+          "coordinate": "AC5",
+          "row": 5,
+          "column": 29,
+          "value": "01.04.2021",
+          "normalized": "01.04.2021",
+          "presentation_signature": "01042021"
+        },
+        {
+          "coordinate": "AD5",
+          "row": 5,
+          "column": 30,
+          "value": "01.05.2021",
+          "normalized": "01.05.2021",
+          "presentation_signature": "01052021"
+        },
+        {
+          "coordinate": "AE5",
+          "row": 5,
+          "column": 31,
+          "value": "01.06.2021",
+          "normalized": "01.06.2021",
+          "presentation_signature": "01062021"
+        },
+        {
+          "coordinate": "AF5",
+          "row": 5,
+          "column": 32,
+          "value": "01.07.2021",
+          "normalized": "01.07.2021",
+          "presentation_signature": "01072021"
+        },
+        {
+          "coordinate": "AG5",
+          "row": 5,
+          "column": 33,
+          "value": "01.08.2021",
+          "normalized": "01.08.2021",
+          "presentation_signature": "01082021"
+        },
+        {
+          "coordinate": "AH5",
+          "row": 5,
+          "column": 34,
+          "value": "01.09.2021",
+          "normalized": "01.09.2021",
+          "presentation_signature": "01092021"
+        },
+        {
+          "coordinate": "AI5",
+          "row": 5,
+          "column": 35,
+          "value": "01.10.2021",
+          "normalized": "01.10.2021",
+          "presentation_signature": "01102021"
+        },
+        {
+          "coordinate": "AJ5",
+          "row": 5,
+          "column": 36,
+          "value": "01.11.2021",
+          "normalized": "01.11.2021",
+          "presentation_signature": "01112021"
+        },
+        {
+          "coordinate": "AK5",
+          "row": 5,
+          "column": 37,
+          "value": "01.12.2021",
+          "normalized": "01.12.2021",
+          "presentation_signature": "01122021"
+        },
+        {
+          "coordinate": "AL5",
+          "row": 5,
+          "column": 38,
+          "value": "01.01.2022",
+          "normalized": "01.01.2022",
+          "presentation_signature": "01012022"
+        },
+        {
+          "coordinate": "AM5",
+          "row": 5,
+          "column": 39,
+          "value": "01.02.2022",
+          "normalized": "01.02.2022",
+          "presentation_signature": "01022022"
+        },
+        {
+          "coordinate": "AN5",
+          "row": 5,
+          "column": 40,
+          "value": "01.03.2022",
+          "normalized": "01.03.2022",
+          "presentation_signature": "01032022"
+        },
+        {
+          "coordinate": "AO5",
+          "row": 5,
+          "column": 41,
+          "value": "01.04.2022",
+          "normalized": "01.04.2022",
+          "presentation_signature": "01042022"
+        },
+        {
+          "coordinate": "AP5",
+          "row": 5,
+          "column": 42,
+          "value": "01.05.2022",
+          "normalized": "01.05.2022",
+          "presentation_signature": "01052022"
+        },
+        {
+          "coordinate": "AQ5",
+          "row": 5,
+          "column": 43,
+          "value": "01.06.2022",
+          "normalized": "01.06.2022",
+          "presentation_signature": "01062022"
+        },
+        {
+          "coordinate": "AR5",
+          "row": 5,
+          "column": 44,
+          "value": "01.07.2022",
+          "normalized": "01.07.2022",
+          "presentation_signature": "01072022"
+        },
+        {
+          "coordinate": "AS5",
+          "row": 5,
+          "column": 45,
+          "value": "01.08.2022",
+          "normalized": "01.08.2022",
+          "presentation_signature": "01082022"
+        },
+        {
+          "coordinate": "AT5",
+          "row": 5,
+          "column": 46,
+          "value": "01.09.2022",
+          "normalized": "01.09.2022",
+          "presentation_signature": "01092022"
+        },
+        {
+          "coordinate": "AU5",
+          "row": 5,
+          "column": 47,
+          "value": "01.10.2022",
+          "normalized": "01.10.2022",
+          "presentation_signature": "01102022"
+        },
+        {
+          "coordinate": "AV5",
+          "row": 5,
+          "column": 48,
+          "value": "01.11.2022",
+          "normalized": "01.11.2022",
+          "presentation_signature": "01112022"
+        },
+        {
+          "coordinate": "AW5",
+          "row": 5,
+          "column": 49,
+          "value": "01.12.2022",
+          "normalized": "01.12.2022",
+          "presentation_signature": "01122022"
+        },
+        {
+          "coordinate": "AX5",
+          "row": 5,
+          "column": 50,
+          "value": "01.01.2023",
+          "normalized": "01.01.2023",
+          "presentation_signature": "01012023"
+        },
+        {
+          "coordinate": "AY5",
+          "row": 5,
+          "column": 51,
+          "value": "01.02.2023",
+          "normalized": "01.02.2023",
+          "presentation_signature": "01022023"
+        },
+        {
+          "coordinate": "AZ5",
+          "row": 5,
+          "column": 52,
+          "value": "01.03.2023",
+          "normalized": "01.03.2023",
+          "presentation_signature": "01032023"
+        },
+        {
+          "coordinate": "BA5",
+          "row": 5,
+          "column": 53,
+          "value": "01.04.2023",
+          "normalized": "01.04.2023",
+          "presentation_signature": "01042023"
+        },
+        {
+          "coordinate": "BB5",
+          "row": 5,
+          "column": 54,
+          "value": "01.05.2023",
+          "normalized": "01.05.2023",
+          "presentation_signature": "01052023"
+        },
+        {
+          "coordinate": "BC5",
+          "row": 5,
+          "column": 55,
+          "value": "01.06.2023",
+          "normalized": "01.06.2023",
+          "presentation_signature": "01062023"
+        },
+        {
+          "coordinate": "BD5",
+          "row": 5,
+          "column": 56,
+          "value": "01.07.2023",
+          "normalized": "01.07.2023",
+          "presentation_signature": "01072023"
+        },
+        {
+          "coordinate": "BE5",
+          "row": 5,
+          "column": 57,
+          "value": "01.08.2023",
+          "normalized": "01.08.2023",
+          "presentation_signature": "01082023"
+        },
+        {
+          "coordinate": "BF5",
+          "row": 5,
+          "column": 58,
+          "value": "01.09.2023",
+          "normalized": "01.09.2023",
+          "presentation_signature": "01092023"
+        },
+        {
+          "coordinate": "BG5",
+          "row": 5,
+          "column": 59,
+          "value": "01.10.2023",
+          "normalized": "01.10.2023",
+          "presentation_signature": "01102023"
+        },
+        {
+          "coordinate": "BH5",
+          "row": 5,
+          "column": 60,
+          "value": "01.11.2023",
+          "normalized": "01.11.2023",
+          "presentation_signature": "01112023"
+        },
+        {
+          "coordinate": "BI5",
+          "row": 5,
+          "column": 61,
+          "value": "01.12.2023",
+          "normalized": "01.12.2023",
+          "presentation_signature": "01122023"
+        },
+        {
+          "coordinate": "BJ5",
+          "row": 5,
+          "column": 62,
+          "value": "01.01.2024",
+          "normalized": "01.01.2024",
+          "presentation_signature": "01012024"
+        },
+        {
+          "coordinate": "BK5",
+          "row": 5,
+          "column": 63,
+          "value": "01.02.2024",
+          "normalized": "01.02.2024",
+          "presentation_signature": "01022024"
+        },
+        {
+          "coordinate": "BL5",
+          "row": 5,
+          "column": 64,
+          "value": "01.03.2024",
+          "normalized": "01.03.2024",
+          "presentation_signature": "01032024"
+        },
+        {
+          "coordinate": "BM5",
+          "row": 5,
+          "column": 65,
+          "value": "01.04.2024",
+          "normalized": "01.04.2024",
+          "presentation_signature": "01042024"
+        },
+        {
+          "coordinate": "BN5",
+          "row": 5,
+          "column": 66,
+          "value": "01.05.2024",
+          "normalized": "01.05.2024",
+          "presentation_signature": "01052024"
+        },
+        {
+          "coordinate": "BO5",
+          "row": 5,
+          "column": 67,
+          "value": "01.06.2024",
+          "normalized": "01.06.2024",
+          "presentation_signature": "01062024"
+        },
+        {
+          "coordinate": "BP5",
+          "row": 5,
+          "column": 68,
+          "value": "01.07.2024",
+          "normalized": "01.07.2024",
+          "presentation_signature": "01072024"
+        },
+        {
+          "coordinate": "BQ5",
+          "row": 5,
+          "column": 69,
+          "value": "01.08.2024",
+          "normalized": "01.08.2024",
+          "presentation_signature": "01082024"
+        },
+        {
+          "coordinate": "BR5",
+          "row": 5,
+          "column": 70,
+          "value": "01.09.2024",
+          "normalized": "01.09.2024",
+          "presentation_signature": "01092024"
+        },
+        {
+          "coordinate": "BS5",
+          "row": 5,
+          "column": 71,
+          "value": "01.10.2024",
+          "normalized": "01.10.2024",
+          "presentation_signature": "01102024"
+        },
+        {
+          "coordinate": "BT5",
+          "row": 5,
+          "column": 72,
+          "value": "01.11.2024",
+          "normalized": "01.11.2024",
+          "presentation_signature": "01112024"
+        },
+        {
+          "coordinate": "BU5",
+          "row": 5,
+          "column": 73,
+          "value": "01.12.2024",
+          "normalized": "01.12.2024",
+          "presentation_signature": "01122024"
+        },
+        {
+          "coordinate": "BV5",
+          "row": 5,
+          "column": 74,
+          "value": "01.01.2025",
+          "normalized": "01.01.2025",
+          "presentation_signature": "01012025"
+        },
+        {
+          "coordinate": "BW5",
+          "row": 5,
+          "column": 75,
+          "value": "01.02.2025",
+          "normalized": "01.02.2025",
+          "presentation_signature": "01022025"
+        },
+        {
+          "coordinate": "BX5",
+          "row": 5,
+          "column": 76,
+          "value": "01.03.2025",
+          "normalized": "01.03.2025",
+          "presentation_signature": "01032025"
+        },
+        {
+          "coordinate": "BY5",
+          "row": 5,
+          "column": 77,
+          "value": "01.04.2025",
+          "normalized": "01.04.2025",
+          "presentation_signature": "01042025"
+        },
+        {
+          "coordinate": "BZ5",
+          "row": 5,
+          "column": 78,
+          "value": "01.05.2025",
+          "normalized": "01.05.2025",
+          "presentation_signature": "01052025"
+        },
+        {
+          "coordinate": "CA5",
+          "row": 5,
+          "column": 79,
+          "value": "01.06.2025",
+          "normalized": "01.06.2025",
+          "presentation_signature": "01062025"
+        },
+        {
+          "coordinate": "CB5",
+          "row": 5,
+          "column": 80,
+          "value": "01.07.2025",
+          "normalized": "01.07.2025",
+          "presentation_signature": "01072025"
+        },
+        {
+          "coordinate": "CC5",
+          "row": 5,
+          "column": 81,
+          "value": "01.08.2025",
+          "normalized": "01.08.2025",
+          "presentation_signature": "01082025"
+        },
+        {
+          "coordinate": "CD5",
+          "row": 5,
+          "column": 82,
+          "value": "01.09.2025",
+          "normalized": "01.09.2025",
+          "presentation_signature": "01092025"
+        },
+        {
+          "coordinate": "CE5",
+          "row": 5,
+          "column": 83,
+          "value": "01.10.2025",
+          "normalized": "01.10.2025",
+          "presentation_signature": "01102025"
+        },
+        {
+          "coordinate": "CF5",
+          "row": 5,
+          "column": 84,
+          "value": "01.11.2025",
+          "normalized": "01.11.2025",
+          "presentation_signature": "01112025"
+        },
+        {
+          "coordinate": "CG5",
+          "row": 5,
+          "column": 85,
+          "value": "01.12.2025",
+          "normalized": "01.12.2025",
+          "presentation_signature": "01122025"
+        },
+        {
+          "coordinate": "CH5",
+          "row": 5,
+          "column": 86,
+          "value": "01.01.2026",
+          "normalized": "01.01.2026",
+          "presentation_signature": "01012026"
+        },
+        {
+          "coordinate": "CI5",
+          "row": 5,
+          "column": 87,
+          "value": "01.02.2026",
+          "normalized": "01.02.2026",
+          "presentation_signature": "01022026"
+        },
+        {
+          "coordinate": "CJ5",
+          "row": 5,
+          "column": 88,
+          "value": "01.03.2026",
+          "normalized": "01.03.2026",
+          "presentation_signature": "01032026"
+        },
+        {
+          "coordinate": "CK5",
+          "row": 5,
+          "column": 89,
+          "value": "01.04.2026",
+          "normalized": "01.04.2026",
+          "presentation_signature": "01042026"
+        },
+        {
+          "coordinate": "CL5",
+          "row": 5,
+          "column": 90,
+          "value": "01.05.2026",
+          "normalized": "01.05.2026",
+          "presentation_signature": "01052026"
+        },
+        {
+          "coordinate": "CM5",
+          "row": 5,
+          "column": 91,
+          "value": "01.06.2026",
+          "normalized": "01.06.2026",
+          "presentation_signature": "01062026"
+        },
+        {
+          "coordinate": "CN5",
+          "row": 5,
+          "column": 92,
+          "value": "01.07.2026",
+          "normalized": "01.07.2026",
+          "presentation_signature": "01072026"
+        },
+        {
+          "coordinate": "CO5",
+          "row": 5,
+          "column": 93,
+          "value": "01.08.2026",
+          "normalized": "01.08.2026",
+          "presentation_signature": "01082026"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Все российские субъекты МСП, всего, в том числе:",
+          "normalized": "все российские субъекты мсп, всего, в том числе:",
+          "presentation_signature": "всероссийскиесубъектымспвсеговтомчисле"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "Субъекты МСП - юридические лица",
+          "normalized": "субъекты мсп - юридические лица",
+          "presentation_signature": "субъектымспюридическиелица"
+        },
+        {
+          "coordinate": "B7",
+          "row": 7,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B8",
+          "row": 8,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B9",
+          "row": 9,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "Субъекты МСП - индивидуальные предприниматели",
+          "normalized": "субъекты мсп - индивидуальные предприниматели",
+          "presentation_signature": "субъектымспиндивидуальныепредприниматели"
+        },
+        {
+          "coordinate": "B10",
+          "row": 10,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B11",
+          "row": 11,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B12",
+          "row": 12,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "в том числе количество субъектов МСП, имеющих просроченную задолженность, ед.",
+          "normalized": "в том числе количество субъектов мсп, имеющих просроченную задолженность, ед.",
+          "presentation_signature": "втомчислеколичествосубъектовмспимеющихпросроченнуюзадолженностьед"
+        },
+        {
+          "coordinate": "C17",
+          "row": 17,
+          "column": 3,
+          "value": "01.02.2019",
+          "normalized": "01.02.2019",
+          "presentation_signature": "01022019"
+        },
+        {
+          "coordinate": "D17",
+          "row": 17,
+          "column": 4,
+          "value": "01.03.2019",
+          "normalized": "01.03.2019",
+          "presentation_signature": "01032019"
+        },
+        {
+          "coordinate": "E17",
+          "row": 17,
+          "column": 5,
+          "value": "01.04.2019",
+          "normalized": "01.04.2019",
+          "presentation_signature": "01042019"
+        },
+        {
+          "coordinate": "F17",
+          "row": 17,
+          "column": 6,
+          "value": "01.05.2019",
+          "normalized": "01.05.2019",
+          "presentation_signature": "01052019"
+        },
+        {
+          "coordinate": "G17",
+          "row": 17,
+          "column": 7,
+          "value": "01.06.2019",
+          "normalized": "01.06.2019",
+          "presentation_signature": "01062019"
+        },
+        {
+          "coordinate": "H17",
+          "row": 17,
+          "column": 8,
+          "value": "01.07.2019",
+          "normalized": "01.07.2019",
+          "presentation_signature": "01072019"
+        },
+        {
+          "coordinate": "I17",
+          "row": 17,
+          "column": 9,
+          "value": "01.08.2019",
+          "normalized": "01.08.2019",
+          "presentation_signature": "01082019"
+        },
+        {
+          "coordinate": "J17",
+          "row": 17,
+          "column": 10,
+          "value": "01.09.2019",
+          "normalized": "01.09.2019",
+          "presentation_signature": "01092019"
+        },
+        {
+          "coordinate": "K17",
+          "row": 17,
+          "column": 11,
+          "value": "01.10.2019",
+          "normalized": "01.10.2019",
+          "presentation_signature": "01102019"
+        },
+        {
+          "coordinate": "L17",
+          "row": 17,
+          "column": 12,
+          "value": "01.11.2019",
+          "normalized": "01.11.2019",
+          "presentation_signature": "01112019"
+        },
+        {
+          "coordinate": "M17",
+          "row": 17,
+          "column": 13,
+          "value": "01.12.2019",
+          "normalized": "01.12.2019",
+          "presentation_signature": "01122019"
+        },
+        {
+          "coordinate": "N17",
+          "row": 17,
+          "column": 14,
+          "value": "01.01.2020",
+          "normalized": "01.01.2020",
+          "presentation_signature": "01012020"
+        },
+        {
+          "coordinate": "O17",
+          "row": 17,
+          "column": 15,
+          "value": "01.02.2020",
+          "normalized": "01.02.2020",
+          "presentation_signature": "01022020"
+        },
+        {
+          "coordinate": "P17",
+          "row": 17,
+          "column": 16,
+          "value": "01.03.2020",
+          "normalized": "01.03.2020",
+          "presentation_signature": "01032020"
+        },
+        {
+          "coordinate": "Q17",
+          "row": 17,
+          "column": 17,
+          "value": "01.04.2020",
+          "normalized": "01.04.2020",
+          "presentation_signature": "01042020"
+        },
+        {
+          "coordinate": "R17",
+          "row": 17,
+          "column": 18,
+          "value": "01.05.2020",
+          "normalized": "01.05.2020",
+          "presentation_signature": "01052020"
+        },
+        {
+          "coordinate": "S17",
+          "row": 17,
+          "column": 19,
+          "value": "01.06.2020",
+          "normalized": "01.06.2020",
+          "presentation_signature": "01062020"
+        },
+        {
+          "coordinate": "T17",
+          "row": 17,
+          "column": 20,
+          "value": "01.07.2020",
+          "normalized": "01.07.2020",
+          "presentation_signature": "01072020"
+        },
+        {
+          "coordinate": "U17",
+          "row": 17,
+          "column": 21,
+          "value": "01.08.2020",
+          "normalized": "01.08.2020",
+          "presentation_signature": "01082020"
+        },
+        {
+          "coordinate": "V17",
+          "row": 17,
+          "column": 22,
+          "value": "01.09.2020",
+          "normalized": "01.09.2020",
+          "presentation_signature": "01092020"
+        },
+        {
+          "coordinate": "W17",
+          "row": 17,
+          "column": 23,
+          "value": "01.10.2020",
+          "normalized": "01.10.2020",
+          "presentation_signature": "01102020"
+        },
+        {
+          "coordinate": "X17",
+          "row": 17,
+          "column": 24,
+          "value": "01.11.2020",
+          "normalized": "01.11.2020",
+          "presentation_signature": "01112020"
+        },
+        {
+          "coordinate": "Y17",
+          "row": 17,
+          "column": 25,
+          "value": "01.12.2020",
+          "normalized": "01.12.2020",
+          "presentation_signature": "01122020"
+        },
+        {
+          "coordinate": "Z17",
+          "row": 17,
+          "column": 26,
+          "value": "01.01.2021",
+          "normalized": "01.01.2021",
+          "presentation_signature": "01012021"
+        },
+        {
+          "coordinate": "AA17",
+          "row": 17,
+          "column": 27,
+          "value": "01.02.2021",
+          "normalized": "01.02.2021",
+          "presentation_signature": "01022021"
+        },
+        {
+          "coordinate": "AB17",
+          "row": 17,
+          "column": 28,
+          "value": "01.03.2021",
+          "normalized": "01.03.2021",
+          "presentation_signature": "01032021"
+        },
+        {
+          "coordinate": "AC17",
+          "row": 17,
+          "column": 29,
+          "value": "01.04.2021",
+          "normalized": "01.04.2021",
+          "presentation_signature": "01042021"
+        },
+        {
+          "coordinate": "AD17",
+          "row": 17,
+          "column": 30,
+          "value": "01.05.2021",
+          "normalized": "01.05.2021",
+          "presentation_signature": "01052021"
+        },
+        {
+          "coordinate": "AE17",
+          "row": 17,
+          "column": 31,
+          "value": "01.06.2021",
+          "normalized": "01.06.2021",
+          "presentation_signature": "01062021"
+        },
+        {
+          "coordinate": "AF17",
+          "row": 17,
+          "column": 32,
+          "value": "01.07.2021",
+          "normalized": "01.07.2021",
+          "presentation_signature": "01072021"
+        },
+        {
+          "coordinate": "AG17",
+          "row": 17,
+          "column": 33,
+          "value": "01.08.2021",
+          "normalized": "01.08.2021",
+          "presentation_signature": "01082021"
+        },
+        {
+          "coordinate": "AH17",
+          "row": 17,
+          "column": 34,
+          "value": "01.09.2021",
+          "normalized": "01.09.2021",
+          "presentation_signature": "01092021"
+        },
+        {
+          "coordinate": "AI17",
+          "row": 17,
+          "column": 35,
+          "value": "01.10.2021",
+          "normalized": "01.10.2021",
+          "presentation_signature": "01102021"
+        },
+        {
+          "coordinate": "AJ17",
+          "row": 17,
+          "column": 36,
+          "value": "01.11.2021",
+          "normalized": "01.11.2021",
+          "presentation_signature": "01112021"
+        },
+        {
+          "coordinate": "AK17",
+          "row": 17,
+          "column": 37,
+          "value": "01.12.2021",
+          "normalized": "01.12.2021",
+          "presentation_signature": "01122021"
+        },
+        {
+          "coordinate": "AL17",
+          "row": 17,
+          "column": 38,
+          "value": "01.01.2022",
+          "normalized": "01.01.2022",
+          "presentation_signature": "01012022"
+        },
+        {
+          "coordinate": "AM17",
+          "row": 17,
+          "column": 39,
+          "value": "01.02.2022",
+          "normalized": "01.02.2022",
+          "presentation_signature": "01022022"
+        },
+        {
+          "coordinate": "AN17",
+          "row": 17,
+          "column": 40,
+          "value": "01.03.2022",
+          "normalized": "01.03.2022",
+          "presentation_signature": "01032022"
+        },
+        {
+          "coordinate": "AO17",
+          "row": 17,
+          "column": 41,
+          "value": "01.04.2022",
+          "normalized": "01.04.2022",
+          "presentation_signature": "01042022"
+        },
+        {
+          "coordinate": "AP17",
+          "row": 17,
+          "column": 42,
+          "value": "01.05.2022",
+          "normalized": "01.05.2022",
+          "presentation_signature": "01052022"
+        },
+        {
+          "coordinate": "AQ17",
+          "row": 17,
+          "column": 43,
+          "value": "01.06.2022",
+          "normalized": "01.06.2022",
+          "presentation_signature": "01062022"
+        },
+        {
+          "coordinate": "AR17",
+          "row": 17,
+          "column": 44,
+          "value": "01.07.2022",
+          "normalized": "01.07.2022",
+          "presentation_signature": "01072022"
+        },
+        {
+          "coordinate": "AS17",
+          "row": 17,
+          "column": 45,
+          "value": "01.08.2022",
+          "normalized": "01.08.2022",
+          "presentation_signature": "01082022"
+        },
+        {
+          "coordinate": "AT17",
+          "row": 17,
+          "column": 46,
+          "value": "01.09.2022",
+          "normalized": "01.09.2022",
+          "presentation_signature": "01092022"
+        },
+        {
+          "coordinate": "AU17",
+          "row": 17,
+          "column": 47,
+          "value": "01.10.2022",
+          "normalized": "01.10.2022",
+          "presentation_signature": "01102022"
+        },
+        {
+          "coordinate": "AV17",
+          "row": 17,
+          "column": 48,
+          "value": "01.11.2022",
+          "normalized": "01.11.2022",
+          "presentation_signature": "01112022"
+        },
+        {
+          "coordinate": "AW17",
+          "row": 17,
+          "column": 49,
+          "value": "01.12.2022",
+          "normalized": "01.12.2022",
+          "presentation_signature": "01122022"
+        },
+        {
+          "coordinate": "AX17",
+          "row": 17,
+          "column": 50,
+          "value": "01.01.2023",
+          "normalized": "01.01.2023",
+          "presentation_signature": "01012023"
+        },
+        {
+          "coordinate": "AY17",
+          "row": 17,
+          "column": 51,
+          "value": "01.02.2023",
+          "normalized": "01.02.2023",
+          "presentation_signature": "01022023"
+        },
+        {
+          "coordinate": "AZ17",
+          "row": 17,
+          "column": 52,
+          "value": "01.03.2023",
+          "normalized": "01.03.2023",
+          "presentation_signature": "01032023"
+        },
+        {
+          "coordinate": "BA17",
+          "row": 17,
+          "column": 53,
+          "value": "01.04.2023",
+          "normalized": "01.04.2023",
+          "presentation_signature": "01042023"
+        },
+        {
+          "coordinate": "BB17",
+          "row": 17,
+          "column": 54,
+          "value": "01.05.2023",
+          "normalized": "01.05.2023",
+          "presentation_signature": "01052023"
+        },
+        {
+          "coordinate": "BC17",
+          "row": 17,
+          "column": 55,
+          "value": "01.06.2023",
+          "normalized": "01.06.2023",
+          "presentation_signature": "01062023"
+        },
+        {
+          "coordinate": "BD17",
+          "row": 17,
+          "column": 56,
+          "value": "01.07.2023",
+          "normalized": "01.07.2023",
+          "presentation_signature": "01072023"
+        },
+        {
+          "coordinate": "BE17",
+          "row": 17,
+          "column": 57,
+          "value": "01.08.2023",
+          "normalized": "01.08.2023",
+          "presentation_signature": "01082023"
+        },
+        {
+          "coordinate": "BF17",
+          "row": 17,
+          "column": 58,
+          "value": "01.09.2023",
+          "normalized": "01.09.2023",
+          "presentation_signature": "01092023"
+        },
+        {
+          "coordinate": "BG17",
+          "row": 17,
+          "column": 59,
+          "value": "01.10.2023",
+          "normalized": "01.10.2023",
+          "presentation_signature": "01102023"
+        },
+        {
+          "coordinate": "BH17",
+          "row": 17,
+          "column": 60,
+          "value": "01.11.2023",
+          "normalized": "01.11.2023",
+          "presentation_signature": "01112023"
+        },
+        {
+          "coordinate": "BI17",
+          "row": 17,
+          "column": 61,
+          "value": "01.12.2023",
+          "normalized": "01.12.2023",
+          "presentation_signature": "01122023"
+        },
+        {
+          "coordinate": "BJ17",
+          "row": 17,
+          "column": 62,
+          "value": "01.01.2024",
+          "normalized": "01.01.2024",
+          "presentation_signature": "01012024"
+        },
+        {
+          "coordinate": "BK17",
+          "row": 17,
+          "column": 63,
+          "value": "01.02.2024",
+          "normalized": "01.02.2024",
+          "presentation_signature": "01022024"
+        },
+        {
+          "coordinate": "BL17",
+          "row": 17,
+          "column": 64,
+          "value": "01.03.2024",
+          "normalized": "01.03.2024",
+          "presentation_signature": "01032024"
+        },
+        {
+          "coordinate": "BM17",
+          "row": 17,
+          "column": 65,
+          "value": "01.04.2024",
+          "normalized": "01.04.2024",
+          "presentation_signature": "01042024"
+        },
+        {
+          "coordinate": "BN17",
+          "row": 17,
+          "column": 66,
+          "value": "01.05.2024",
+          "normalized": "01.05.2024",
+          "presentation_signature": "01052024"
+        },
+        {
+          "coordinate": "BO17",
+          "row": 17,
+          "column": 67,
+          "value": "01.06.2024",
+          "normalized": "01.06.2024",
+          "presentation_signature": "01062024"
+        },
+        {
+          "coordinate": "BP17",
+          "row": 17,
+          "column": 68,
+          "value": "01.07.2024",
+          "normalized": "01.07.2024",
+          "presentation_signature": "01072024"
+        },
+        {
+          "coordinate": "BQ17",
+          "row": 17,
+          "column": 69,
+          "value": "01.08.2024",
+          "normalized": "01.08.2024",
+          "presentation_signature": "01082024"
+        },
+        {
+          "coordinate": "BR17",
+          "row": 17,
+          "column": 70,
+          "value": "01.09.2024",
+          "normalized": "01.09.2024",
+          "presentation_signature": "01092024"
+        },
+        {
+          "coordinate": "BS17",
+          "row": 17,
+          "column": 71,
+          "value": "01.10.2024",
+          "normalized": "01.10.2024",
+          "presentation_signature": "01102024"
+        },
+        {
+          "coordinate": "BT17",
+          "row": 17,
+          "column": 72,
+          "value": "01.11.2024",
+          "normalized": "01.11.2024",
+          "presentation_signature": "01112024"
+        },
+        {
+          "coordinate": "BU17",
+          "row": 17,
+          "column": 73,
+          "value": "01.12.2024",
+          "normalized": "01.12.2024",
+          "presentation_signature": "01122024"
+        },
+        {
+          "coordinate": "BV17",
+          "row": 17,
+          "column": 74,
+          "value": "01.01.2025",
+          "normalized": "01.01.2025",
+          "presentation_signature": "01012025"
+        },
+        {
+          "coordinate": "BW17",
+          "row": 17,
+          "column": 75,
+          "value": "01.02.2025",
+          "normalized": "01.02.2025",
+          "presentation_signature": "01022025"
+        },
+        {
+          "coordinate": "BX17",
+          "row": 17,
+          "column": 76,
+          "value": "01.03.2025",
+          "normalized": "01.03.2025",
+          "presentation_signature": "01032025"
+        },
+        {
+          "coordinate": "BY17",
+          "row": 17,
+          "column": 77,
+          "value": "01.04.2025",
+          "normalized": "01.04.2025",
+          "presentation_signature": "01042025"
+        },
+        {
+          "coordinate": "BZ17",
+          "row": 17,
+          "column": 78,
+          "value": "01.05.2025",
+          "normalized": "01.05.2025",
+          "presentation_signature": "01052025"
+        },
+        {
+          "coordinate": "CA17",
+          "row": 17,
+          "column": 79,
+          "value": "01.06.2025",
+          "normalized": "01.06.2025",
+          "presentation_signature": "01062025"
+        },
+        {
+          "coordinate": "CB17",
+          "row": 17,
+          "column": 80,
+          "value": "01.07.2025",
+          "normalized": "01.07.2025",
+          "presentation_signature": "01072025"
+        },
+        {
+          "coordinate": "CC17",
+          "row": 17,
+          "column": 81,
+          "value": "01.08.2025",
+          "normalized": "01.08.2025",
+          "presentation_signature": "01082025"
+        },
+        {
+          "coordinate": "CD17",
+          "row": 17,
+          "column": 82,
+          "value": "01.09.2025",
+          "normalized": "01.09.2025",
+          "presentation_signature": "01092025"
+        },
+        {
+          "coordinate": "CE17",
+          "row": 17,
+          "column": 83,
+          "value": "01.10.2025",
+          "normalized": "01.10.2025",
+          "presentation_signature": "01102025"
+        },
+        {
+          "coordinate": "CF17",
+          "row": 17,
+          "column": 84,
+          "value": "01.11.2025",
+          "normalized": "01.11.2025",
+          "presentation_signature": "01112025"
+        },
+        {
+          "coordinate": "CG17",
+          "row": 17,
+          "column": 85,
+          "value": "01.12.2025",
+          "normalized": "01.12.2025",
+          "presentation_signature": "01122025"
+        },
+        {
+          "coordinate": "CH17",
+          "row": 17,
+          "column": 86,
+          "value": "01.01.2026",
+          "normalized": "01.01.2026",
+          "presentation_signature": "01012026"
+        },
+        {
+          "coordinate": "CI17",
+          "row": 17,
+          "column": 87,
+          "value": "01.02.2026",
+          "normalized": "01.02.2026",
+          "presentation_signature": "01022026"
+        },
+        {
+          "coordinate": "CJ17",
+          "row": 17,
+          "column": 88,
+          "value": "01.03.2026",
+          "normalized": "01.03.2026",
+          "presentation_signature": "01032026"
+        },
+        {
+          "coordinate": "CK17",
+          "row": 17,
+          "column": 89,
+          "value": "01.04.2026",
+          "normalized": "01.04.2026",
+          "presentation_signature": "01042026"
+        },
+        {
+          "coordinate": "CL17",
+          "row": 17,
+          "column": 90,
+          "value": "01.05.2026",
+          "normalized": "01.05.2026",
+          "presentation_signature": "01052026"
+        },
+        {
+          "coordinate": "CM17",
+          "row": 17,
+          "column": 91,
+          "value": "01.06.2026",
+          "normalized": "01.06.2026",
+          "presentation_signature": "01062026"
+        },
+        {
+          "coordinate": "CN17",
+          "row": 17,
+          "column": 92,
+          "value": "01.07.2026",
+          "normalized": "01.07.2026",
+          "presentation_signature": "01072026"
+        },
+        {
+          "coordinate": "CO17",
+          "row": 17,
+          "column": 93,
+          "value": "01.08.2026",
+          "normalized": "01.08.2026",
+          "presentation_signature": "01082026"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "Все российские субъекты МСП, всего, в том числе:",
+          "normalized": "все российские субъекты мсп, всего, в том числе:",
+          "presentation_signature": "всероссийскиесубъектымспвсеговтомчисле"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "Субъекты МСП - юридические лица",
+          "normalized": "субъекты мсп - юридические лица",
+          "presentation_signature": "субъектымспюридическиелица"
+        },
+        {
+          "coordinate": "B19",
+          "row": 19,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B20",
+          "row": 20,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B21",
+          "row": 21,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "Субъекты МСП - индивидуальные предприниматели",
+          "normalized": "субъекты мсп - индивидуальные предприниматели",
+          "presentation_signature": "субъектымспиндивидуальныепредприниматели"
+        },
+        {
+          "coordinate": "B22",
+          "row": 22,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B23",
+          "row": 23,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B24",
+          "row": 24,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "2. Количество субъектов МСП, получивших кредит в отчетном месяце, ед.",
+          "normalized": "2. количество субъектов мсп, получивших кредит в отчетном месяце, ед.",
+          "presentation_signature": "2количествосубъектовмспполучившихкредитвотчетноммесяцеед"
+        },
+        {
+          "coordinate": "C29",
+          "row": 29,
+          "column": 3,
+          "value": "Январь 2019",
+          "normalized": "январь 2019",
+          "presentation_signature": "январь2019"
+        },
+        {
+          "coordinate": "D29",
+          "row": 29,
+          "column": 4,
+          "value": "Февраль 2019",
+          "normalized": "февраль 2019",
+          "presentation_signature": "февраль2019"
+        },
+        {
+          "coordinate": "E29",
+          "row": 29,
+          "column": 5,
+          "value": "Март 2019",
+          "normalized": "март 2019",
+          "presentation_signature": "март2019"
+        },
+        {
+          "coordinate": "F29",
+          "row": 29,
+          "column": 6,
+          "value": "Апрель 2019",
+          "normalized": "апрель 2019",
+          "presentation_signature": "апрель2019"
+        },
+        {
+          "coordinate": "G29",
+          "row": 29,
+          "column": 7,
+          "value": "Май 2019",
+          "normalized": "май 2019",
+          "presentation_signature": "май2019"
+        },
+        {
+          "coordinate": "H29",
+          "row": 29,
+          "column": 8,
+          "value": "Июнь 2019",
+          "normalized": "июнь 2019",
+          "presentation_signature": "июнь2019"
+        },
+        {
+          "coordinate": "I29",
+          "row": 29,
+          "column": 9,
+          "value": "Июль 2019",
+          "normalized": "июль 2019",
+          "presentation_signature": "июль2019"
+        },
+        {
+          "coordinate": "J29",
+          "row": 29,
+          "column": 10,
+          "value": "Август 2019",
+          "normalized": "август 2019",
+          "presentation_signature": "август2019"
+        },
+        {
+          "coordinate": "K29",
+          "row": 29,
+          "column": 11,
+          "value": "Сентябрь 2019",
+          "normalized": "сентябрь 2019",
+          "presentation_signature": "сентябрь2019"
+        },
+        {
+          "coordinate": "L29",
+          "row": 29,
+          "column": 12,
+          "value": "Октябрь 2019",
+          "normalized": "октябрь 2019",
+          "presentation_signature": "октябрь2019"
+        },
+        {
+          "coordinate": "M29",
+          "row": 29,
+          "column": 13,
+          "value": "Ноябрь 2019",
+          "normalized": "ноябрь 2019",
+          "presentation_signature": "ноябрь2019"
+        },
+        {
+          "coordinate": "N29",
+          "row": 29,
+          "column": 14,
+          "value": "Декабрь 2019",
+          "normalized": "декабрь 2019",
+          "presentation_signature": "декабрь2019"
+        },
+        {
+          "coordinate": "O29",
+          "row": 29,
+          "column": 15,
+          "value": "Январь 2020",
+          "normalized": "январь 2020",
+          "presentation_signature": "январь2020"
+        },
+        {
+          "coordinate": "P29",
+          "row": 29,
+          "column": 16,
+          "value": "Февраль 2020",
+          "normalized": "февраль 2020",
+          "presentation_signature": "февраль2020"
+        },
+        {
+          "coordinate": "Q29",
+          "row": 29,
+          "column": 17,
+          "value": "Март 2020",
+          "normalized": "март 2020",
+          "presentation_signature": "март2020"
+        },
+        {
+          "coordinate": "R29",
+          "row": 29,
+          "column": 18,
+          "value": "Апрель 2020",
+          "normalized": "апрель 2020",
+          "presentation_signature": "апрель2020"
+        },
+        {
+          "coordinate": "S29",
+          "row": 29,
+          "column": 19,
+          "value": "Май 2020",
+          "normalized": "май 2020",
+          "presentation_signature": "май2020"
+        },
+        {
+          "coordinate": "T29",
+          "row": 29,
+          "column": 20,
+          "value": "Июнь 2020",
+          "normalized": "июнь 2020",
+          "presentation_signature": "июнь2020"
+        },
+        {
+          "coordinate": "U29",
+          "row": 29,
+          "column": 21,
+          "value": "Июль 2020",
+          "normalized": "июль 2020",
+          "presentation_signature": "июль2020"
+        },
+        {
+          "coordinate": "V29",
+          "row": 29,
+          "column": 22,
+          "value": "Август 2020",
+          "normalized": "август 2020",
+          "presentation_signature": "август2020"
+        },
+        {
+          "coordinate": "W29",
+          "row": 29,
+          "column": 23,
+          "value": "Сентябрь 2020",
+          "normalized": "сентябрь 2020",
+          "presentation_signature": "сентябрь2020"
+        },
+        {
+          "coordinate": "X29",
+          "row": 29,
+          "column": 24,
+          "value": "Октябрь 2020",
+          "normalized": "октябрь 2020",
+          "presentation_signature": "октябрь2020"
+        },
+        {
+          "coordinate": "Y29",
+          "row": 29,
+          "column": 25,
+          "value": "Ноябрь 2020",
+          "normalized": "ноябрь 2020",
+          "presentation_signature": "ноябрь2020"
+        },
+        {
+          "coordinate": "Z29",
+          "row": 29,
+          "column": 26,
+          "value": "Декабрь 2020",
+          "normalized": "декабрь 2020",
+          "presentation_signature": "декабрь2020"
+        },
+        {
+          "coordinate": "AA29",
+          "row": 29,
+          "column": 27,
+          "value": "Январь 2021",
+          "normalized": "январь 2021",
+          "presentation_signature": "январь2021"
+        },
+        {
+          "coordinate": "AB29",
+          "row": 29,
+          "column": 28,
+          "value": "Февраль 2021",
+          "normalized": "февраль 2021",
+          "presentation_signature": "февраль2021"
+        },
+        {
+          "coordinate": "AC29",
+          "row": 29,
+          "column": 29,
+          "value": "Март 2021",
+          "normalized": "март 2021",
+          "presentation_signature": "март2021"
+        },
+        {
+          "coordinate": "AD29",
+          "row": 29,
+          "column": 30,
+          "value": "Апрель 2021",
+          "normalized": "апрель 2021",
+          "presentation_signature": "апрель2021"
+        },
+        {
+          "coordinate": "AE29",
+          "row": 29,
+          "column": 31,
+          "value": "Май 2021",
+          "normalized": "май 2021",
+          "presentation_signature": "май2021"
+        },
+        {
+          "coordinate": "AF29",
+          "row": 29,
+          "column": 32,
+          "value": "Июнь 2021",
+          "normalized": "июнь 2021",
+          "presentation_signature": "июнь2021"
+        },
+        {
+          "coordinate": "AG29",
+          "row": 29,
+          "column": 33,
+          "value": "Июль 2021",
+          "normalized": "июль 2021",
+          "presentation_signature": "июль2021"
+        },
+        {
+          "coordinate": "AH29",
+          "row": 29,
+          "column": 34,
+          "value": "Август 2021",
+          "normalized": "август 2021",
+          "presentation_signature": "август2021"
+        },
+        {
+          "coordinate": "AI29",
+          "row": 29,
+          "column": 35,
+          "value": "Сентябрь 2021",
+          "normalized": "сентябрь 2021",
+          "presentation_signature": "сентябрь2021"
+        },
+        {
+          "coordinate": "AJ29",
+          "row": 29,
+          "column": 36,
+          "value": "Октябрь 2021",
+          "normalized": "октябрь 2021",
+          "presentation_signature": "октябрь2021"
+        },
+        {
+          "coordinate": "AK29",
+          "row": 29,
+          "column": 37,
+          "value": "Ноябрь 2021",
+          "normalized": "ноябрь 2021",
+          "presentation_signature": "ноябрь2021"
+        },
+        {
+          "coordinate": "AL29",
+          "row": 29,
+          "column": 38,
+          "value": "Декабрь 2021",
+          "normalized": "декабрь 2021",
+          "presentation_signature": "декабрь2021"
+        },
+        {
+          "coordinate": "AM29",
+          "row": 29,
+          "column": 39,
+          "value": "Январь 2022",
+          "normalized": "январь 2022",
+          "presentation_signature": "январь2022"
+        },
+        {
+          "coordinate": "AN29",
+          "row": 29,
+          "column": 40,
+          "value": "Февраль 2022",
+          "normalized": "февраль 2022",
+          "presentation_signature": "февраль2022"
+        },
+        {
+          "coordinate": "AO29",
+          "row": 29,
+          "column": 41,
+          "value": "Март 2022",
+          "normalized": "март 2022",
+          "presentation_signature": "март2022"
+        },
+        {
+          "coordinate": "AP29",
+          "row": 29,
+          "column": 42,
+          "value": "Апрель 2022",
+          "normalized": "апрель 2022",
+          "presentation_signature": "апрель2022"
+        },
+        {
+          "coordinate": "AQ29",
+          "row": 29,
+          "column": 43,
+          "value": "Май 2022",
+          "normalized": "май 2022",
+          "presentation_signature": "май2022"
+        },
+        {
+          "coordinate": "AR29",
+          "row": 29,
+          "column": 44,
+          "value": "Июнь 2022",
+          "normalized": "июнь 2022",
+          "presentation_signature": "июнь2022"
+        },
+        {
+          "coordinate": "AS29",
+          "row": 29,
+          "column": 45,
+          "value": "Июль 2022",
+          "normalized": "июль 2022",
+          "presentation_signature": "июль2022"
+        },
+        {
+          "coordinate": "AT29",
+          "row": 29,
+          "column": 46,
+          "value": "Август 2022",
+          "normalized": "август 2022",
+          "presentation_signature": "август2022"
+        },
+        {
+          "coordinate": "AU29",
+          "row": 29,
+          "column": 47,
+          "value": "Сентябрь 2022",
+          "normalized": "сентябрь 2022",
+          "presentation_signature": "сентябрь2022"
+        },
+        {
+          "coordinate": "AV29",
+          "row": 29,
+          "column": 48,
+          "value": "Октябрь 2022",
+          "normalized": "октябрь 2022",
+          "presentation_signature": "октябрь2022"
+        },
+        {
+          "coordinate": "AW29",
+          "row": 29,
+          "column": 49,
+          "value": "Ноябрь 2022",
+          "normalized": "ноябрь 2022",
+          "presentation_signature": "ноябрь2022"
+        },
+        {
+          "coordinate": "AX29",
+          "row": 29,
+          "column": 50,
+          "value": "Декабрь 2022",
+          "normalized": "декабрь 2022",
+          "presentation_signature": "декабрь2022"
+        },
+        {
+          "coordinate": "AY29",
+          "row": 29,
+          "column": 51,
+          "value": "Январь 2023",
+          "normalized": "январь 2023",
+          "presentation_signature": "январь2023"
+        },
+        {
+          "coordinate": "AZ29",
+          "row": 29,
+          "column": 52,
+          "value": "Февраль 2023",
+          "normalized": "февраль 2023",
+          "presentation_signature": "февраль2023"
+        },
+        {
+          "coordinate": "BA29",
+          "row": 29,
+          "column": 53,
+          "value": "Март 2023",
+          "normalized": "март 2023",
+          "presentation_signature": "март2023"
+        },
+        {
+          "coordinate": "BB29",
+          "row": 29,
+          "column": 54,
+          "value": "Апрель 2023",
+          "normalized": "апрель 2023",
+          "presentation_signature": "апрель2023"
+        },
+        {
+          "coordinate": "BC29",
+          "row": 29,
+          "column": 55,
+          "value": "Май 2023",
+          "normalized": "май 2023",
+          "presentation_signature": "май2023"
+        },
+        {
+          "coordinate": "BD29",
+          "row": 29,
+          "column": 56,
+          "value": "Июнь 2023",
+          "normalized": "июнь 2023",
+          "presentation_signature": "июнь2023"
+        },
+        {
+          "coordinate": "BE29",
+          "row": 29,
+          "column": 57,
+          "value": "Июль 2023",
+          "normalized": "июль 2023",
+          "presentation_signature": "июль2023"
+        },
+        {
+          "coordinate": "BF29",
+          "row": 29,
+          "column": 58,
+          "value": "Август 2023",
+          "normalized": "август 2023",
+          "presentation_signature": "август2023"
+        },
+        {
+          "coordinate": "BG29",
+          "row": 29,
+          "column": 59,
+          "value": "Сентябрь 2023",
+          "normalized": "сентябрь 2023",
+          "presentation_signature": "сентябрь2023"
+        },
+        {
+          "coordinate": "BH29",
+          "row": 29,
+          "column": 60,
+          "value": "Октябрь 2023",
+          "normalized": "октябрь 2023",
+          "presentation_signature": "октябрь2023"
+        },
+        {
+          "coordinate": "BI29",
+          "row": 29,
+          "column": 61,
+          "value": "Ноябрь 2023",
+          "normalized": "ноябрь 2023",
+          "presentation_signature": "ноябрь2023"
+        },
+        {
+          "coordinate": "BJ29",
+          "row": 29,
+          "column": 62,
+          "value": "Декабрь 2023",
+          "normalized": "декабрь 2023",
+          "presentation_signature": "декабрь2023"
+        },
+        {
+          "coordinate": "BK29",
+          "row": 29,
+          "column": 63,
+          "value": "Январь 2024",
+          "normalized": "январь 2024",
+          "presentation_signature": "январь2024"
+        },
+        {
+          "coordinate": "BL29",
+          "row": 29,
+          "column": 64,
+          "value": "Февраль 2024",
+          "normalized": "февраль 2024",
+          "presentation_signature": "февраль2024"
+        },
+        {
+          "coordinate": "BM29",
+          "row": 29,
+          "column": 65,
+          "value": "Март 2024",
+          "normalized": "март 2024",
+          "presentation_signature": "март2024"
+        },
+        {
+          "coordinate": "BN29",
+          "row": 29,
+          "column": 66,
+          "value": "Апрель 2024",
+          "normalized": "апрель 2024",
+          "presentation_signature": "апрель2024"
+        },
+        {
+          "coordinate": "BO29",
+          "row": 29,
+          "column": 67,
+          "value": "Май 2024",
+          "normalized": "май 2024",
+          "presentation_signature": "май2024"
+        },
+        {
+          "coordinate": "BP29",
+          "row": 29,
+          "column": 68,
+          "value": "Июнь 2024",
+          "normalized": "июнь 2024",
+          "presentation_signature": "июнь2024"
+        },
+        {
+          "coordinate": "BQ29",
+          "row": 29,
+          "column": 69,
+          "value": "Июль 2024",
+          "normalized": "июль 2024",
+          "presentation_signature": "июль2024"
+        },
+        {
+          "coordinate": "BR29",
+          "row": 29,
+          "column": 70,
+          "value": "Август 2024",
+          "normalized": "август 2024",
+          "presentation_signature": "август2024"
+        },
+        {
+          "coordinate": "BS29",
+          "row": 29,
+          "column": 71,
+          "value": "Сентябрь 2024",
+          "normalized": "сентябрь 2024",
+          "presentation_signature": "сентябрь2024"
+        },
+        {
+          "coordinate": "BT29",
+          "row": 29,
+          "column": 72,
+          "value": "Октябрь 2024",
+          "normalized": "октябрь 2024",
+          "presentation_signature": "октябрь2024"
+        },
+        {
+          "coordinate": "BU29",
+          "row": 29,
+          "column": 73,
+          "value": "Ноябрь 2024",
+          "normalized": "ноябрь 2024",
+          "presentation_signature": "ноябрь2024"
+        },
+        {
+          "coordinate": "BV29",
+          "row": 29,
+          "column": 74,
+          "value": "Декабрь 2024",
+          "normalized": "декабрь 2024",
+          "presentation_signature": "декабрь2024"
+        },
+        {
+          "coordinate": "BW29",
+          "row": 29,
+          "column": 75,
+          "value": "Январь 2025",
+          "normalized": "январь 2025",
+          "presentation_signature": "январь2025"
+        },
+        {
+          "coordinate": "BX29",
+          "row": 29,
+          "column": 76,
+          "value": "Февраль 2025",
+          "normalized": "февраль 2025",
+          "presentation_signature": "февраль2025"
+        },
+        {
+          "coordinate": "BY29",
+          "row": 29,
+          "column": 77,
+          "value": "Март 2025",
+          "normalized": "март 2025",
+          "presentation_signature": "март2025"
+        },
+        {
+          "coordinate": "BZ29",
+          "row": 29,
+          "column": 78,
+          "value": "Апрель 2025",
+          "normalized": "апрель 2025",
+          "presentation_signature": "апрель2025"
+        },
+        {
+          "coordinate": "CA29",
+          "row": 29,
+          "column": 79,
+          "value": "Май 2025",
+          "normalized": "май 2025",
+          "presentation_signature": "май2025"
+        },
+        {
+          "coordinate": "CB29",
+          "row": 29,
+          "column": 80,
+          "value": "Июнь 2025",
+          "normalized": "июнь 2025",
+          "presentation_signature": "июнь2025"
+        },
+        {
+          "coordinate": "CC29",
+          "row": 29,
+          "column": 81,
+          "value": "Июль 2025",
+          "normalized": "июль 2025",
+          "presentation_signature": "июль2025"
+        },
+        {
+          "coordinate": "CD29",
+          "row": 29,
+          "column": 82,
+          "value": "Август 2025",
+          "normalized": "август 2025",
+          "presentation_signature": "август2025"
+        },
+        {
+          "coordinate": "CE29",
+          "row": 29,
+          "column": 83,
+          "value": "Сентябрь 2025",
+          "normalized": "сентябрь 2025",
+          "presentation_signature": "сентябрь2025"
+        },
+        {
+          "coordinate": "CF29",
+          "row": 29,
+          "column": 84,
+          "value": "Октябрь 2025",
+          "normalized": "октябрь 2025",
+          "presentation_signature": "октябрь2025"
+        },
+        {
+          "coordinate": "CG29",
+          "row": 29,
+          "column": 85,
+          "value": "Ноябрь 2025",
+          "normalized": "ноябрь 2025",
+          "presentation_signature": "ноябрь2025"
+        },
+        {
+          "coordinate": "CH29",
+          "row": 29,
+          "column": 86,
+          "value": "Декабрь 2025",
+          "normalized": "декабрь 2025",
+          "presentation_signature": "декабрь2025"
+        },
+        {
+          "coordinate": "CI29",
+          "row": 29,
+          "column": 87,
+          "value": "Январь 2026",
+          "normalized": "январь 2026",
+          "presentation_signature": "январь2026"
+        },
+        {
+          "coordinate": "CJ29",
+          "row": 29,
+          "column": 88,
+          "value": "Февраль 2026",
+          "normalized": "февраль 2026",
+          "presentation_signature": "февраль2026"
+        },
+        {
+          "coordinate": "CK29",
+          "row": 29,
+          "column": 89,
+          "value": "Март 2026",
+          "normalized": "март 2026",
+          "presentation_signature": "март2026"
+        },
+        {
+          "coordinate": "CL29",
+          "row": 29,
+          "column": 90,
+          "value": "Апрель 2026",
+          "normalized": "апрель 2026",
+          "presentation_signature": "апрель2026"
+        },
+        {
+          "coordinate": "CM29",
+          "row": 29,
+          "column": 91,
+          "value": "Май 2026",
+          "normalized": "май 2026",
+          "presentation_signature": "май2026"
+        },
+        {
+          "coordinate": "CN29",
+          "row": 29,
+          "column": 92,
+          "value": "Июнь 2026",
+          "normalized": "июнь 2026",
+          "presentation_signature": "июнь2026"
+        },
+        {
+          "coordinate": "CO29",
+          "row": 29,
+          "column": 93,
+          "value": "Июль 2026",
+          "normalized": "июль 2026",
+          "presentation_signature": "июль2026"
+        },
+        {
+          "coordinate": "A30",
+          "row": 30,
+          "column": 1,
+          "value": "Все российские субъекты МСП, всего, в том числе:",
+          "normalized": "все российские субъекты мсп, всего, в том числе:",
+          "presentation_signature": "всероссийскиесубъектымспвсеговтомчисле"
+        },
+        {
+          "coordinate": "A31",
+          "row": 31,
+          "column": 1,
+          "value": "Субъекты МСП - юридические лица",
+          "normalized": "субъекты мсп - юридические лица",
+          "presentation_signature": "субъектымспюридическиелица"
+        },
+        {
+          "coordinate": "B31",
+          "row": 31,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B32",
+          "row": 32,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B33",
+          "row": 33,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A34",
+          "row": 34,
+          "column": 1,
+          "value": "Субъекты МСП - индивидуальные предприниматели",
+          "normalized": "субъекты мсп - индивидуальные предприниматели",
+          "presentation_signature": "субъектымспиндивидуальныепредприниматели"
+        },
+        {
+          "coordinate": "B34",
+          "row": 34,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B35",
+          "row": 35,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B36",
+          "row": 36,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A39",
+          "row": 39,
+          "column": 1,
+          "value": "3. Количество кредитов субъектов МСП, по которым имеется задолженность по состоянию на отчетную дату, ед.",
+          "normalized": "3. количество кредитов субъектов мсп, по которым имеется задолженность по состоянию на отчетную дату, ед.",
+          "presentation_signature": "3количествокредитовсубъектовмсппокоторымимеетсязадолженностьпосостояниюнаотчетнуюдатуед"
+        },
+        {
+          "coordinate": "A41",
+          "row": 41,
+          "column": 1,
+          "value": "Количество кредитов субъектов МСП, по которым имеется задолженность (в том числе просроченная) по состоянию на отчетную дату, ед.",
+          "normalized": "количество кредитов субъектов мсп, по которым имеется задолженность (в том числе просроченная) по состоянию на отчетную дату, ед.",
+          "presentation_signature": "количествокредитовсубъектовмсппокоторымимеетсязадолженностьвтомчислепросроченнаяпосостояниюнаотчетнуюдатуед"
+        },
+        {
+          "coordinate": "C42",
+          "row": 42,
+          "column": 3,
+          "value": "01.02.2019",
+          "normalized": "01.02.2019",
+          "presentation_signature": "01022019"
+        },
+        {
+          "coordinate": "D42",
+          "row": 42,
+          "column": 4,
+          "value": "01.03.2019",
+          "normalized": "01.03.2019",
+          "presentation_signature": "01032019"
+        },
+        {
+          "coordinate": "E42",
+          "row": 42,
+          "column": 5,
+          "value": "01.04.2019",
+          "normalized": "01.04.2019",
+          "presentation_signature": "01042019"
+        },
+        {
+          "coordinate": "F42",
+          "row": 42,
+          "column": 6,
+          "value": "01.05.2019",
+          "normalized": "01.05.2019",
+          "presentation_signature": "01052019"
+        },
+        {
+          "coordinate": "G42",
+          "row": 42,
+          "column": 7,
+          "value": "01.06.2019",
+          "normalized": "01.06.2019",
+          "presentation_signature": "01062019"
+        },
+        {
+          "coordinate": "H42",
+          "row": 42,
+          "column": 8,
+          "value": "01.07.2019",
+          "normalized": "01.07.2019",
+          "presentation_signature": "01072019"
+        },
+        {
+          "coordinate": "I42",
+          "row": 42,
+          "column": 9,
+          "value": "01.08.2019",
+          "normalized": "01.08.2019",
+          "presentation_signature": "01082019"
+        },
+        {
+          "coordinate": "J42",
+          "row": 42,
+          "column": 10,
+          "value": "01.09.2019",
+          "normalized": "01.09.2019",
+          "presentation_signature": "01092019"
+        },
+        {
+          "coordinate": "K42",
+          "row": 42,
+          "column": 11,
+          "value": "01.10.2019",
+          "normalized": "01.10.2019",
+          "presentation_signature": "01102019"
+        },
+        {
+          "coordinate": "L42",
+          "row": 42,
+          "column": 12,
+          "value": "01.11.2019",
+          "normalized": "01.11.2019",
+          "presentation_signature": "01112019"
+        },
+        {
+          "coordinate": "M42",
+          "row": 42,
+          "column": 13,
+          "value": "01.12.2019",
+          "normalized": "01.12.2019",
+          "presentation_signature": "01122019"
+        },
+        {
+          "coordinate": "N42",
+          "row": 42,
+          "column": 14,
+          "value": "01.01.2020",
+          "normalized": "01.01.2020",
+          "presentation_signature": "01012020"
+        },
+        {
+          "coordinate": "O42",
+          "row": 42,
+          "column": 15,
+          "value": "01.02.2020",
+          "normalized": "01.02.2020",
+          "presentation_signature": "01022020"
+        },
+        {
+          "coordinate": "P42",
+          "row": 42,
+          "column": 16,
+          "value": "01.03.2020",
+          "normalized": "01.03.2020",
+          "presentation_signature": "01032020"
+        },
+        {
+          "coordinate": "Q42",
+          "row": 42,
+          "column": 17,
+          "value": "01.04.2020",
+          "normalized": "01.04.2020",
+          "presentation_signature": "01042020"
+        },
+        {
+          "coordinate": "R42",
+          "row": 42,
+          "column": 18,
+          "value": "01.05.2020",
+          "normalized": "01.05.2020",
+          "presentation_signature": "01052020"
+        },
+        {
+          "coordinate": "S42",
+          "row": 42,
+          "column": 19,
+          "value": "01.06.2020",
+          "normalized": "01.06.2020",
+          "presentation_signature": "01062020"
+        },
+        {
+          "coordinate": "T42",
+          "row": 42,
+          "column": 20,
+          "value": "01.07.2020",
+          "normalized": "01.07.2020",
+          "presentation_signature": "01072020"
+        },
+        {
+          "coordinate": "U42",
+          "row": 42,
+          "column": 21,
+          "value": "01.08.2020",
+          "normalized": "01.08.2020",
+          "presentation_signature": "01082020"
+        },
+        {
+          "coordinate": "V42",
+          "row": 42,
+          "column": 22,
+          "value": "01.09.2020",
+          "normalized": "01.09.2020",
+          "presentation_signature": "01092020"
+        },
+        {
+          "coordinate": "W42",
+          "row": 42,
+          "column": 23,
+          "value": "01.10.2020",
+          "normalized": "01.10.2020",
+          "presentation_signature": "01102020"
+        },
+        {
+          "coordinate": "X42",
+          "row": 42,
+          "column": 24,
+          "value": "01.11.2020",
+          "normalized": "01.11.2020",
+          "presentation_signature": "01112020"
+        },
+        {
+          "coordinate": "Y42",
+          "row": 42,
+          "column": 25,
+          "value": "01.12.2020",
+          "normalized": "01.12.2020",
+          "presentation_signature": "01122020"
+        },
+        {
+          "coordinate": "Z42",
+          "row": 42,
+          "column": 26,
+          "value": "01.01.2021",
+          "normalized": "01.01.2021",
+          "presentation_signature": "01012021"
+        },
+        {
+          "coordinate": "AA42",
+          "row": 42,
+          "column": 27,
+          "value": "01.02.2021",
+          "normalized": "01.02.2021",
+          "presentation_signature": "01022021"
+        },
+        {
+          "coordinate": "AB42",
+          "row": 42,
+          "column": 28,
+          "value": "01.03.2021",
+          "normalized": "01.03.2021",
+          "presentation_signature": "01032021"
+        },
+        {
+          "coordinate": "AC42",
+          "row": 42,
+          "column": 29,
+          "value": "01.04.2021",
+          "normalized": "01.04.2021",
+          "presentation_signature": "01042021"
+        },
+        {
+          "coordinate": "AD42",
+          "row": 42,
+          "column": 30,
+          "value": "01.05.2021",
+          "normalized": "01.05.2021",
+          "presentation_signature": "01052021"
+        },
+        {
+          "coordinate": "AE42",
+          "row": 42,
+          "column": 31,
+          "value": "01.06.2021",
+          "normalized": "01.06.2021",
+          "presentation_signature": "01062021"
+        },
+        {
+          "coordinate": "AF42",
+          "row": 42,
+          "column": 32,
+          "value": "01.07.2021",
+          "normalized": "01.07.2021",
+          "presentation_signature": "01072021"
+        },
+        {
+          "coordinate": "AG42",
+          "row": 42,
+          "column": 33,
+          "value": "01.08.2021",
+          "normalized": "01.08.2021",
+          "presentation_signature": "01082021"
+        },
+        {
+          "coordinate": "AH42",
+          "row": 42,
+          "column": 34,
+          "value": "01.09.2021",
+          "normalized": "01.09.2021",
+          "presentation_signature": "01092021"
+        },
+        {
+          "coordinate": "AI42",
+          "row": 42,
+          "column": 35,
+          "value": "01.10.2021",
+          "normalized": "01.10.2021",
+          "presentation_signature": "01102021"
+        },
+        {
+          "coordinate": "AJ42",
+          "row": 42,
+          "column": 36,
+          "value": "01.11.2021",
+          "normalized": "01.11.2021",
+          "presentation_signature": "01112021"
+        },
+        {
+          "coordinate": "AK42",
+          "row": 42,
+          "column": 37,
+          "value": "01.12.2021",
+          "normalized": "01.12.2021",
+          "presentation_signature": "01122021"
+        },
+        {
+          "coordinate": "AL42",
+          "row": 42,
+          "column": 38,
+          "value": "01.01.2022",
+          "normalized": "01.01.2022",
+          "presentation_signature": "01012022"
+        },
+        {
+          "coordinate": "AM42",
+          "row": 42,
+          "column": 39,
+          "value": "01.02.2022",
+          "normalized": "01.02.2022",
+          "presentation_signature": "01022022"
+        },
+        {
+          "coordinate": "AN42",
+          "row": 42,
+          "column": 40,
+          "value": "01.03.2022",
+          "normalized": "01.03.2022",
+          "presentation_signature": "01032022"
+        },
+        {
+          "coordinate": "AO42",
+          "row": 42,
+          "column": 41,
+          "value": "01.04.2022",
+          "normalized": "01.04.2022",
+          "presentation_signature": "01042022"
+        },
+        {
+          "coordinate": "AP42",
+          "row": 42,
+          "column": 42,
+          "value": "01.05.2022",
+          "normalized": "01.05.2022",
+          "presentation_signature": "01052022"
+        },
+        {
+          "coordinate": "AQ42",
+          "row": 42,
+          "column": 43,
+          "value": "01.06.2022",
+          "normalized": "01.06.2022",
+          "presentation_signature": "01062022"
+        },
+        {
+          "coordinate": "AR42",
+          "row": 42,
+          "column": 44,
+          "value": "01.07.2022",
+          "normalized": "01.07.2022",
+          "presentation_signature": "01072022"
+        },
+        {
+          "coordinate": "AS42",
+          "row": 42,
+          "column": 45,
+          "value": "01.08.2022",
+          "normalized": "01.08.2022",
+          "presentation_signature": "01082022"
+        },
+        {
+          "coordinate": "AT42",
+          "row": 42,
+          "column": 46,
+          "value": "01.09.2022",
+          "normalized": "01.09.2022",
+          "presentation_signature": "01092022"
+        },
+        {
+          "coordinate": "AU42",
+          "row": 42,
+          "column": 47,
+          "value": "01.10.2022",
+          "normalized": "01.10.2022",
+          "presentation_signature": "01102022"
+        },
+        {
+          "coordinate": "AV42",
+          "row": 42,
+          "column": 48,
+          "value": "01.11.2022",
+          "normalized": "01.11.2022",
+          "presentation_signature": "01112022"
+        },
+        {
+          "coordinate": "AW42",
+          "row": 42,
+          "column": 49,
+          "value": "01.12.2022",
+          "normalized": "01.12.2022",
+          "presentation_signature": "01122022"
+        },
+        {
+          "coordinate": "AX42",
+          "row": 42,
+          "column": 50,
+          "value": "01.01.2023",
+          "normalized": "01.01.2023",
+          "presentation_signature": "01012023"
+        },
+        {
+          "coordinate": "AY42",
+          "row": 42,
+          "column": 51,
+          "value": "01.02.2023",
+          "normalized": "01.02.2023",
+          "presentation_signature": "01022023"
+        },
+        {
+          "coordinate": "AZ42",
+          "row": 42,
+          "column": 52,
+          "value": "01.03.2023",
+          "normalized": "01.03.2023",
+          "presentation_signature": "01032023"
+        },
+        {
+          "coordinate": "BA42",
+          "row": 42,
+          "column": 53,
+          "value": "01.04.2023",
+          "normalized": "01.04.2023",
+          "presentation_signature": "01042023"
+        },
+        {
+          "coordinate": "BB42",
+          "row": 42,
+          "column": 54,
+          "value": "01.05.2023",
+          "normalized": "01.05.2023",
+          "presentation_signature": "01052023"
+        },
+        {
+          "coordinate": "BC42",
+          "row": 42,
+          "column": 55,
+          "value": "01.06.2023",
+          "normalized": "01.06.2023",
+          "presentation_signature": "01062023"
+        },
+        {
+          "coordinate": "BD42",
+          "row": 42,
+          "column": 56,
+          "value": "01.07.2023",
+          "normalized": "01.07.2023",
+          "presentation_signature": "01072023"
+        },
+        {
+          "coordinate": "BE42",
+          "row": 42,
+          "column": 57,
+          "value": "01.08.2023",
+          "normalized": "01.08.2023",
+          "presentation_signature": "01082023"
+        },
+        {
+          "coordinate": "BF42",
+          "row": 42,
+          "column": 58,
+          "value": "01.09.2023",
+          "normalized": "01.09.2023",
+          "presentation_signature": "01092023"
+        },
+        {
+          "coordinate": "BG42",
+          "row": 42,
+          "column": 59,
+          "value": "01.10.2023",
+          "normalized": "01.10.2023",
+          "presentation_signature": "01102023"
+        },
+        {
+          "coordinate": "BH42",
+          "row": 42,
+          "column": 60,
+          "value": "01.11.2023",
+          "normalized": "01.11.2023",
+          "presentation_signature": "01112023"
+        },
+        {
+          "coordinate": "BI42",
+          "row": 42,
+          "column": 61,
+          "value": "01.12.2023",
+          "normalized": "01.12.2023",
+          "presentation_signature": "01122023"
+        },
+        {
+          "coordinate": "BJ42",
+          "row": 42,
+          "column": 62,
+          "value": "01.01.2024",
+          "normalized": "01.01.2024",
+          "presentation_signature": "01012024"
+        },
+        {
+          "coordinate": "BK42",
+          "row": 42,
+          "column": 63,
+          "value": "01.02.2024",
+          "normalized": "01.02.2024",
+          "presentation_signature": "01022024"
+        },
+        {
+          "coordinate": "BL42",
+          "row": 42,
+          "column": 64,
+          "value": "01.03.2024",
+          "normalized": "01.03.2024",
+          "presentation_signature": "01032024"
+        },
+        {
+          "coordinate": "BM42",
+          "row": 42,
+          "column": 65,
+          "value": "01.04.2024",
+          "normalized": "01.04.2024",
+          "presentation_signature": "01042024"
+        },
+        {
+          "coordinate": "BN42",
+          "row": 42,
+          "column": 66,
+          "value": "01.05.2024",
+          "normalized": "01.05.2024",
+          "presentation_signature": "01052024"
+        },
+        {
+          "coordinate": "BO42",
+          "row": 42,
+          "column": 67,
+          "value": "01.06.2024",
+          "normalized": "01.06.2024",
+          "presentation_signature": "01062024"
+        },
+        {
+          "coordinate": "BP42",
+          "row": 42,
+          "column": 68,
+          "value": "01.07.2024",
+          "normalized": "01.07.2024",
+          "presentation_signature": "01072024"
+        },
+        {
+          "coordinate": "BQ42",
+          "row": 42,
+          "column": 69,
+          "value": "01.08.2024",
+          "normalized": "01.08.2024",
+          "presentation_signature": "01082024"
+        },
+        {
+          "coordinate": "BR42",
+          "row": 42,
+          "column": 70,
+          "value": "01.09.2024",
+          "normalized": "01.09.2024",
+          "presentation_signature": "01092024"
+        },
+        {
+          "coordinate": "BS42",
+          "row": 42,
+          "column": 71,
+          "value": "01.10.2024",
+          "normalized": "01.10.2024",
+          "presentation_signature": "01102024"
+        },
+        {
+          "coordinate": "BT42",
+          "row": 42,
+          "column": 72,
+          "value": "01.11.2024",
+          "normalized": "01.11.2024",
+          "presentation_signature": "01112024"
+        },
+        {
+          "coordinate": "BU42",
+          "row": 42,
+          "column": 73,
+          "value": "01.12.2024",
+          "normalized": "01.12.2024",
+          "presentation_signature": "01122024"
+        },
+        {
+          "coordinate": "BV42",
+          "row": 42,
+          "column": 74,
+          "value": "01.01.2025",
+          "normalized": "01.01.2025",
+          "presentation_signature": "01012025"
+        },
+        {
+          "coordinate": "BW42",
+          "row": 42,
+          "column": 75,
+          "value": "01.02.2025",
+          "normalized": "01.02.2025",
+          "presentation_signature": "01022025"
+        },
+        {
+          "coordinate": "BX42",
+          "row": 42,
+          "column": 76,
+          "value": "01.03.2025",
+          "normalized": "01.03.2025",
+          "presentation_signature": "01032025"
+        },
+        {
+          "coordinate": "BY42",
+          "row": 42,
+          "column": 77,
+          "value": "01.04.2025",
+          "normalized": "01.04.2025",
+          "presentation_signature": "01042025"
+        },
+        {
+          "coordinate": "BZ42",
+          "row": 42,
+          "column": 78,
+          "value": "01.05.2025",
+          "normalized": "01.05.2025",
+          "presentation_signature": "01052025"
+        },
+        {
+          "coordinate": "CA42",
+          "row": 42,
+          "column": 79,
+          "value": "01.06.2025",
+          "normalized": "01.06.2025",
+          "presentation_signature": "01062025"
+        },
+        {
+          "coordinate": "CB42",
+          "row": 42,
+          "column": 80,
+          "value": "01.07.2025",
+          "normalized": "01.07.2025",
+          "presentation_signature": "01072025"
+        },
+        {
+          "coordinate": "CC42",
+          "row": 42,
+          "column": 81,
+          "value": "01.08.2025",
+          "normalized": "01.08.2025",
+          "presentation_signature": "01082025"
+        },
+        {
+          "coordinate": "CD42",
+          "row": 42,
+          "column": 82,
+          "value": "01.09.2025",
+          "normalized": "01.09.2025",
+          "presentation_signature": "01092025"
+        },
+        {
+          "coordinate": "CE42",
+          "row": 42,
+          "column": 83,
+          "value": "01.10.2025",
+          "normalized": "01.10.2025",
+          "presentation_signature": "01102025"
+        },
+        {
+          "coordinate": "CF42",
+          "row": 42,
+          "column": 84,
+          "value": "01.11.2025",
+          "normalized": "01.11.2025",
+          "presentation_signature": "01112025"
+        },
+        {
+          "coordinate": "CG42",
+          "row": 42,
+          "column": 85,
+          "value": "01.12.2025",
+          "normalized": "01.12.2025",
+          "presentation_signature": "01122025"
+        },
+        {
+          "coordinate": "CH42",
+          "row": 42,
+          "column": 86,
+          "value": "01.01.2026",
+          "normalized": "01.01.2026",
+          "presentation_signature": "01012026"
+        },
+        {
+          "coordinate": "CI42",
+          "row": 42,
+          "column": 87,
+          "value": "01.02.2026",
+          "normalized": "01.02.2026",
+          "presentation_signature": "01022026"
+        },
+        {
+          "coordinate": "CJ42",
+          "row": 42,
+          "column": 88,
+          "value": "01.03.2026",
+          "normalized": "01.03.2026",
+          "presentation_signature": "01032026"
+        },
+        {
+          "coordinate": "CK42",
+          "row": 42,
+          "column": 89,
+          "value": "01.04.2026",
+          "normalized": "01.04.2026",
+          "presentation_signature": "01042026"
+        },
+        {
+          "coordinate": "CL42",
+          "row": 42,
+          "column": 90,
+          "value": "01.05.2026",
+          "normalized": "01.05.2026",
+          "presentation_signature": "01052026"
+        },
+        {
+          "coordinate": "CM42",
+          "row": 42,
+          "column": 91,
+          "value": "01.06.2026",
+          "normalized": "01.06.2026",
+          "presentation_signature": "01062026"
+        },
+        {
+          "coordinate": "CN42",
+          "row": 42,
+          "column": 92,
+          "value": "01.07.2026",
+          "normalized": "01.07.2026",
+          "presentation_signature": "01072026"
+        },
+        {
+          "coordinate": "CO42",
+          "row": 42,
+          "column": 93,
+          "value": "01.08.2026",
+          "normalized": "01.08.2026",
+          "presentation_signature": "01082026"
+        },
+        {
+          "coordinate": "A43",
+          "row": 43,
+          "column": 1,
+          "value": "Все российские субъекты МСП, всего, в том числе:",
+          "normalized": "все российские субъекты мсп, всего, в том числе:",
+          "presentation_signature": "всероссийскиесубъектымспвсеговтомчисле"
+        },
+        {
+          "coordinate": "A44",
+          "row": 44,
+          "column": 1,
+          "value": "Субъекты МСП - юридические лица",
+          "normalized": "субъекты мсп - юридические лица",
+          "presentation_signature": "субъектымспюридическиелица"
+        },
+        {
+          "coordinate": "B44",
+          "row": 44,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B45",
+          "row": 45,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B46",
+          "row": 46,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A47",
+          "row": 47,
+          "column": 1,
+          "value": "Субъекты МСП - индивидуальные предприниматели",
+          "normalized": "субъекты мсп - индивидуальные предприниматели",
+          "presentation_signature": "субъектымспиндивидуальныепредприниматели"
+        },
+        {
+          "coordinate": "B47",
+          "row": 47,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B48",
+          "row": 48,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B49",
+          "row": 49,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A53",
+          "row": 53,
+          "column": 1,
+          "value": "в том числе - количество кредитов субъектов МСП, по которым имеется просроченная задолженность по состоянию на отчетную дату, ед.",
+          "normalized": "в том числе - количество кредитов субъектов мсп, по которым имеется просроченная задолженность по состоянию на отчетную дату, ед.",
+          "presentation_signature": "втомчислеколичествокредитовсубъектовмсппокоторымимеетсяпросроченнаязадолженностьпосостояниюнаотчетнуюдатуед"
+        },
+        {
+          "coordinate": "C54",
+          "row": 54,
+          "column": 3,
+          "value": "01.02.2019",
+          "normalized": "01.02.2019",
+          "presentation_signature": "01022019"
+        },
+        {
+          "coordinate": "D54",
+          "row": 54,
+          "column": 4,
+          "value": "01.03.2019",
+          "normalized": "01.03.2019",
+          "presentation_signature": "01032019"
+        },
+        {
+          "coordinate": "E54",
+          "row": 54,
+          "column": 5,
+          "value": "01.04.2019",
+          "normalized": "01.04.2019",
+          "presentation_signature": "01042019"
+        },
+        {
+          "coordinate": "F54",
+          "row": 54,
+          "column": 6,
+          "value": "01.05.2019",
+          "normalized": "01.05.2019",
+          "presentation_signature": "01052019"
+        },
+        {
+          "coordinate": "G54",
+          "row": 54,
+          "column": 7,
+          "value": "01.06.2019",
+          "normalized": "01.06.2019",
+          "presentation_signature": "01062019"
+        },
+        {
+          "coordinate": "H54",
+          "row": 54,
+          "column": 8,
+          "value": "01.07.2019",
+          "normalized": "01.07.2019",
+          "presentation_signature": "01072019"
+        },
+        {
+          "coordinate": "I54",
+          "row": 54,
+          "column": 9,
+          "value": "01.08.2019",
+          "normalized": "01.08.2019",
+          "presentation_signature": "01082019"
+        },
+        {
+          "coordinate": "J54",
+          "row": 54,
+          "column": 10,
+          "value": "01.09.2019",
+          "normalized": "01.09.2019",
+          "presentation_signature": "01092019"
+        },
+        {
+          "coordinate": "K54",
+          "row": 54,
+          "column": 11,
+          "value": "01.10.2019",
+          "normalized": "01.10.2019",
+          "presentation_signature": "01102019"
+        },
+        {
+          "coordinate": "L54",
+          "row": 54,
+          "column": 12,
+          "value": "01.11.2019",
+          "normalized": "01.11.2019",
+          "presentation_signature": "01112019"
+        },
+        {
+          "coordinate": "M54",
+          "row": 54,
+          "column": 13,
+          "value": "01.12.2019",
+          "normalized": "01.12.2019",
+          "presentation_signature": "01122019"
+        },
+        {
+          "coordinate": "N54",
+          "row": 54,
+          "column": 14,
+          "value": "01.01.2020",
+          "normalized": "01.01.2020",
+          "presentation_signature": "01012020"
+        },
+        {
+          "coordinate": "O54",
+          "row": 54,
+          "column": 15,
+          "value": "01.02.2020",
+          "normalized": "01.02.2020",
+          "presentation_signature": "01022020"
+        },
+        {
+          "coordinate": "P54",
+          "row": 54,
+          "column": 16,
+          "value": "01.03.2020",
+          "normalized": "01.03.2020",
+          "presentation_signature": "01032020"
+        },
+        {
+          "coordinate": "Q54",
+          "row": 54,
+          "column": 17,
+          "value": "01.04.2020",
+          "normalized": "01.04.2020",
+          "presentation_signature": "01042020"
+        },
+        {
+          "coordinate": "R54",
+          "row": 54,
+          "column": 18,
+          "value": "01.05.2020",
+          "normalized": "01.05.2020",
+          "presentation_signature": "01052020"
+        },
+        {
+          "coordinate": "S54",
+          "row": 54,
+          "column": 19,
+          "value": "01.06.2020",
+          "normalized": "01.06.2020",
+          "presentation_signature": "01062020"
+        },
+        {
+          "coordinate": "T54",
+          "row": 54,
+          "column": 20,
+          "value": "01.07.2020",
+          "normalized": "01.07.2020",
+          "presentation_signature": "01072020"
+        },
+        {
+          "coordinate": "U54",
+          "row": 54,
+          "column": 21,
+          "value": "01.08.2020",
+          "normalized": "01.08.2020",
+          "presentation_signature": "01082020"
+        },
+        {
+          "coordinate": "V54",
+          "row": 54,
+          "column": 22,
+          "value": "01.09.2020",
+          "normalized": "01.09.2020",
+          "presentation_signature": "01092020"
+        },
+        {
+          "coordinate": "W54",
+          "row": 54,
+          "column": 23,
+          "value": "01.10.2020",
+          "normalized": "01.10.2020",
+          "presentation_signature": "01102020"
+        },
+        {
+          "coordinate": "X54",
+          "row": 54,
+          "column": 24,
+          "value": "01.11.2020",
+          "normalized": "01.11.2020",
+          "presentation_signature": "01112020"
+        },
+        {
+          "coordinate": "Y54",
+          "row": 54,
+          "column": 25,
+          "value": "01.12.2020",
+          "normalized": "01.12.2020",
+          "presentation_signature": "01122020"
+        },
+        {
+          "coordinate": "Z54",
+          "row": 54,
+          "column": 26,
+          "value": "01.01.2021",
+          "normalized": "01.01.2021",
+          "presentation_signature": "01012021"
+        },
+        {
+          "coordinate": "AA54",
+          "row": 54,
+          "column": 27,
+          "value": "01.02.2021",
+          "normalized": "01.02.2021",
+          "presentation_signature": "01022021"
+        },
+        {
+          "coordinate": "AB54",
+          "row": 54,
+          "column": 28,
+          "value": "01.03.2021",
+          "normalized": "01.03.2021",
+          "presentation_signature": "01032021"
+        },
+        {
+          "coordinate": "AC54",
+          "row": 54,
+          "column": 29,
+          "value": "01.04.2021",
+          "normalized": "01.04.2021",
+          "presentation_signature": "01042021"
+        },
+        {
+          "coordinate": "AD54",
+          "row": 54,
+          "column": 30,
+          "value": "01.05.2021",
+          "normalized": "01.05.2021",
+          "presentation_signature": "01052021"
+        },
+        {
+          "coordinate": "AE54",
+          "row": 54,
+          "column": 31,
+          "value": "01.06.2021",
+          "normalized": "01.06.2021",
+          "presentation_signature": "01062021"
+        },
+        {
+          "coordinate": "AF54",
+          "row": 54,
+          "column": 32,
+          "value": "01.07.2021",
+          "normalized": "01.07.2021",
+          "presentation_signature": "01072021"
+        },
+        {
+          "coordinate": "AG54",
+          "row": 54,
+          "column": 33,
+          "value": "01.08.2021",
+          "normalized": "01.08.2021",
+          "presentation_signature": "01082021"
+        },
+        {
+          "coordinate": "AH54",
+          "row": 54,
+          "column": 34,
+          "value": "01.09.2021",
+          "normalized": "01.09.2021",
+          "presentation_signature": "01092021"
+        },
+        {
+          "coordinate": "AI54",
+          "row": 54,
+          "column": 35,
+          "value": "01.10.2021",
+          "normalized": "01.10.2021",
+          "presentation_signature": "01102021"
+        },
+        {
+          "coordinate": "AJ54",
+          "row": 54,
+          "column": 36,
+          "value": "01.11.2021",
+          "normalized": "01.11.2021",
+          "presentation_signature": "01112021"
+        },
+        {
+          "coordinate": "AK54",
+          "row": 54,
+          "column": 37,
+          "value": "01.12.2021",
+          "normalized": "01.12.2021",
+          "presentation_signature": "01122021"
+        },
+        {
+          "coordinate": "AL54",
+          "row": 54,
+          "column": 38,
+          "value": "01.01.2022",
+          "normalized": "01.01.2022",
+          "presentation_signature": "01012022"
+        },
+        {
+          "coordinate": "AM54",
+          "row": 54,
+          "column": 39,
+          "value": "01.02.2022",
+          "normalized": "01.02.2022",
+          "presentation_signature": "01022022"
+        },
+        {
+          "coordinate": "AN54",
+          "row": 54,
+          "column": 40,
+          "value": "01.03.2022",
+          "normalized": "01.03.2022",
+          "presentation_signature": "01032022"
+        },
+        {
+          "coordinate": "AO54",
+          "row": 54,
+          "column": 41,
+          "value": "01.04.2022",
+          "normalized": "01.04.2022",
+          "presentation_signature": "01042022"
+        },
+        {
+          "coordinate": "AP54",
+          "row": 54,
+          "column": 42,
+          "value": "01.05.2022",
+          "normalized": "01.05.2022",
+          "presentation_signature": "01052022"
+        },
+        {
+          "coordinate": "AQ54",
+          "row": 54,
+          "column": 43,
+          "value": "01.06.2022",
+          "normalized": "01.06.2022",
+          "presentation_signature": "01062022"
+        },
+        {
+          "coordinate": "AR54",
+          "row": 54,
+          "column": 44,
+          "value": "01.07.2022",
+          "normalized": "01.07.2022",
+          "presentation_signature": "01072022"
+        },
+        {
+          "coordinate": "AS54",
+          "row": 54,
+          "column": 45,
+          "value": "01.08.2022",
+          "normalized": "01.08.2022",
+          "presentation_signature": "01082022"
+        },
+        {
+          "coordinate": "AT54",
+          "row": 54,
+          "column": 46,
+          "value": "01.09.2022",
+          "normalized": "01.09.2022",
+          "presentation_signature": "01092022"
+        },
+        {
+          "coordinate": "AU54",
+          "row": 54,
+          "column": 47,
+          "value": "01.10.2022",
+          "normalized": "01.10.2022",
+          "presentation_signature": "01102022"
+        },
+        {
+          "coordinate": "AV54",
+          "row": 54,
+          "column": 48,
+          "value": "01.11.2022",
+          "normalized": "01.11.2022",
+          "presentation_signature": "01112022"
+        },
+        {
+          "coordinate": "AW54",
+          "row": 54,
+          "column": 49,
+          "value": "01.12.2022",
+          "normalized": "01.12.2022",
+          "presentation_signature": "01122022"
+        },
+        {
+          "coordinate": "AX54",
+          "row": 54,
+          "column": 50,
+          "value": "01.01.2023",
+          "normalized": "01.01.2023",
+          "presentation_signature": "01012023"
+        },
+        {
+          "coordinate": "AY54",
+          "row": 54,
+          "column": 51,
+          "value": "01.02.2023",
+          "normalized": "01.02.2023",
+          "presentation_signature": "01022023"
+        },
+        {
+          "coordinate": "AZ54",
+          "row": 54,
+          "column": 52,
+          "value": "01.03.2023",
+          "normalized": "01.03.2023",
+          "presentation_signature": "01032023"
+        },
+        {
+          "coordinate": "BA54",
+          "row": 54,
+          "column": 53,
+          "value": "01.04.2023",
+          "normalized": "01.04.2023",
+          "presentation_signature": "01042023"
+        },
+        {
+          "coordinate": "BB54",
+          "row": 54,
+          "column": 54,
+          "value": "01.05.2023",
+          "normalized": "01.05.2023",
+          "presentation_signature": "01052023"
+        },
+        {
+          "coordinate": "BC54",
+          "row": 54,
+          "column": 55,
+          "value": "01.06.2023",
+          "normalized": "01.06.2023",
+          "presentation_signature": "01062023"
+        },
+        {
+          "coordinate": "BD54",
+          "row": 54,
+          "column": 56,
+          "value": "01.07.2023",
+          "normalized": "01.07.2023",
+          "presentation_signature": "01072023"
+        },
+        {
+          "coordinate": "BE54",
+          "row": 54,
+          "column": 57,
+          "value": "01.08.2023",
+          "normalized": "01.08.2023",
+          "presentation_signature": "01082023"
+        },
+        {
+          "coordinate": "BF54",
+          "row": 54,
+          "column": 58,
+          "value": "01.09.2023",
+          "normalized": "01.09.2023",
+          "presentation_signature": "01092023"
+        },
+        {
+          "coordinate": "BG54",
+          "row": 54,
+          "column": 59,
+          "value": "01.10.2023",
+          "normalized": "01.10.2023",
+          "presentation_signature": "01102023"
+        },
+        {
+          "coordinate": "BH54",
+          "row": 54,
+          "column": 60,
+          "value": "01.11.2023",
+          "normalized": "01.11.2023",
+          "presentation_signature": "01112023"
+        },
+        {
+          "coordinate": "BI54",
+          "row": 54,
+          "column": 61,
+          "value": "01.12.2023",
+          "normalized": "01.12.2023",
+          "presentation_signature": "01122023"
+        },
+        {
+          "coordinate": "BJ54",
+          "row": 54,
+          "column": 62,
+          "value": "01.01.2024",
+          "normalized": "01.01.2024",
+          "presentation_signature": "01012024"
+        },
+        {
+          "coordinate": "BK54",
+          "row": 54,
+          "column": 63,
+          "value": "01.02.2024",
+          "normalized": "01.02.2024",
+          "presentation_signature": "01022024"
+        },
+        {
+          "coordinate": "BL54",
+          "row": 54,
+          "column": 64,
+          "value": "01.03.2024",
+          "normalized": "01.03.2024",
+          "presentation_signature": "01032024"
+        },
+        {
+          "coordinate": "BM54",
+          "row": 54,
+          "column": 65,
+          "value": "01.04.2024",
+          "normalized": "01.04.2024",
+          "presentation_signature": "01042024"
+        },
+        {
+          "coordinate": "BN54",
+          "row": 54,
+          "column": 66,
+          "value": "01.05.2024",
+          "normalized": "01.05.2024",
+          "presentation_signature": "01052024"
+        },
+        {
+          "coordinate": "BO54",
+          "row": 54,
+          "column": 67,
+          "value": "01.06.2024",
+          "normalized": "01.06.2024",
+          "presentation_signature": "01062024"
+        },
+        {
+          "coordinate": "BP54",
+          "row": 54,
+          "column": 68,
+          "value": "01.07.2024",
+          "normalized": "01.07.2024",
+          "presentation_signature": "01072024"
+        },
+        {
+          "coordinate": "BQ54",
+          "row": 54,
+          "column": 69,
+          "value": "01.08.2024",
+          "normalized": "01.08.2024",
+          "presentation_signature": "01082024"
+        },
+        {
+          "coordinate": "BR54",
+          "row": 54,
+          "column": 70,
+          "value": "01.09.2024",
+          "normalized": "01.09.2024",
+          "presentation_signature": "01092024"
+        },
+        {
+          "coordinate": "BS54",
+          "row": 54,
+          "column": 71,
+          "value": "01.10.2024",
+          "normalized": "01.10.2024",
+          "presentation_signature": "01102024"
+        },
+        {
+          "coordinate": "BT54",
+          "row": 54,
+          "column": 72,
+          "value": "01.11.2024",
+          "normalized": "01.11.2024",
+          "presentation_signature": "01112024"
+        },
+        {
+          "coordinate": "BU54",
+          "row": 54,
+          "column": 73,
+          "value": "01.12.2024",
+          "normalized": "01.12.2024",
+          "presentation_signature": "01122024"
+        },
+        {
+          "coordinate": "BV54",
+          "row": 54,
+          "column": 74,
+          "value": "01.01.2025",
+          "normalized": "01.01.2025",
+          "presentation_signature": "01012025"
+        },
+        {
+          "coordinate": "BW54",
+          "row": 54,
+          "column": 75,
+          "value": "01.02.2025",
+          "normalized": "01.02.2025",
+          "presentation_signature": "01022025"
+        },
+        {
+          "coordinate": "BX54",
+          "row": 54,
+          "column": 76,
+          "value": "01.03.2025",
+          "normalized": "01.03.2025",
+          "presentation_signature": "01032025"
+        },
+        {
+          "coordinate": "BY54",
+          "row": 54,
+          "column": 77,
+          "value": "01.04.2025",
+          "normalized": "01.04.2025",
+          "presentation_signature": "01042025"
+        },
+        {
+          "coordinate": "BZ54",
+          "row": 54,
+          "column": 78,
+          "value": "01.05.2025",
+          "normalized": "01.05.2025",
+          "presentation_signature": "01052025"
+        },
+        {
+          "coordinate": "CA54",
+          "row": 54,
+          "column": 79,
+          "value": "01.06.2025",
+          "normalized": "01.06.2025",
+          "presentation_signature": "01062025"
+        },
+        {
+          "coordinate": "CB54",
+          "row": 54,
+          "column": 80,
+          "value": "01.07.2025",
+          "normalized": "01.07.2025",
+          "presentation_signature": "01072025"
+        },
+        {
+          "coordinate": "CC54",
+          "row": 54,
+          "column": 81,
+          "value": "01.08.2025",
+          "normalized": "01.08.2025",
+          "presentation_signature": "01082025"
+        },
+        {
+          "coordinate": "CD54",
+          "row": 54,
+          "column": 82,
+          "value": "01.09.2025",
+          "normalized": "01.09.2025",
+          "presentation_signature": "01092025"
+        },
+        {
+          "coordinate": "CE54",
+          "row": 54,
+          "column": 83,
+          "value": "01.10.2025",
+          "normalized": "01.10.2025",
+          "presentation_signature": "01102025"
+        },
+        {
+          "coordinate": "CF54",
+          "row": 54,
+          "column": 84,
+          "value": "01.11.2025",
+          "normalized": "01.11.2025",
+          "presentation_signature": "01112025"
+        },
+        {
+          "coordinate": "CG54",
+          "row": 54,
+          "column": 85,
+          "value": "01.12.2025",
+          "normalized": "01.12.2025",
+          "presentation_signature": "01122025"
+        },
+        {
+          "coordinate": "CH54",
+          "row": 54,
+          "column": 86,
+          "value": "01.01.2026",
+          "normalized": "01.01.2026",
+          "presentation_signature": "01012026"
+        },
+        {
+          "coordinate": "CI54",
+          "row": 54,
+          "column": 87,
+          "value": "01.02.2026",
+          "normalized": "01.02.2026",
+          "presentation_signature": "01022026"
+        },
+        {
+          "coordinate": "CJ54",
+          "row": 54,
+          "column": 88,
+          "value": "01.03.2026",
+          "normalized": "01.03.2026",
+          "presentation_signature": "01032026"
+        },
+        {
+          "coordinate": "CK54",
+          "row": 54,
+          "column": 89,
+          "value": "01.04.2026",
+          "normalized": "01.04.2026",
+          "presentation_signature": "01042026"
+        },
+        {
+          "coordinate": "CL54",
+          "row": 54,
+          "column": 90,
+          "value": "01.05.2026",
+          "normalized": "01.05.2026",
+          "presentation_signature": "01052026"
+        },
+        {
+          "coordinate": "CM54",
+          "row": 54,
+          "column": 91,
+          "value": "01.06.2026",
+          "normalized": "01.06.2026",
+          "presentation_signature": "01062026"
+        },
+        {
+          "coordinate": "CN54",
+          "row": 54,
+          "column": 92,
+          "value": "01.07.2026",
+          "normalized": "01.07.2026",
+          "presentation_signature": "01072026"
+        },
+        {
+          "coordinate": "CO54",
+          "row": 54,
+          "column": 93,
+          "value": "01.08.2026",
+          "normalized": "01.08.2026",
+          "presentation_signature": "01082026"
+        },
+        {
+          "coordinate": "A55",
+          "row": 55,
+          "column": 1,
+          "value": "Все российские субъекты МСП, всего, в том числе:",
+          "normalized": "все российские субъекты мсп, всего, в том числе:",
+          "presentation_signature": "всероссийскиесубъектымспвсеговтомчисле"
+        },
+        {
+          "coordinate": "A56",
+          "row": 56,
+          "column": 1,
+          "value": "Субъекты МСП - юридические лица",
+          "normalized": "субъекты мсп - юридические лица",
+          "presentation_signature": "субъектымспюридическиелица"
+        },
+        {
+          "coordinate": "B56",
+          "row": 56,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B57",
+          "row": 57,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B58",
+          "row": 58,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A59",
+          "row": 59,
+          "column": 1,
+          "value": "Субъекты МСП - индивидуальные предприниматели",
+          "normalized": "субъекты мсп - индивидуальные предприниматели",
+          "presentation_signature": "субъектымспиндивидуальныепредприниматели"
+        },
+        {
+          "coordinate": "B59",
+          "row": 59,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B60",
+          "row": 60,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B61",
+          "row": 61,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A63",
+          "row": 63,
+          "column": 1,
+          "value": "4. Количество кредитов, предоставленных субъектам МСП, в отчетном месяце, ед.",
+          "normalized": "4. количество кредитов, предоставленных субъектам мсп, в отчетном месяце, ед.",
+          "presentation_signature": "4количествокредитовпредоставленныхсубъектаммспвотчетноммесяцеед"
+        },
+        {
+          "coordinate": "C66",
+          "row": 66,
+          "column": 3,
+          "value": "Январь 2019",
+          "normalized": "январь 2019",
+          "presentation_signature": "январь2019"
+        },
+        {
+          "coordinate": "D66",
+          "row": 66,
+          "column": 4,
+          "value": "Февраль 2019",
+          "normalized": "февраль 2019",
+          "presentation_signature": "февраль2019"
+        },
+        {
+          "coordinate": "E66",
+          "row": 66,
+          "column": 5,
+          "value": "Март 2019",
+          "normalized": "март 2019",
+          "presentation_signature": "март2019"
+        },
+        {
+          "coordinate": "F66",
+          "row": 66,
+          "column": 6,
+          "value": "Апрель 2019",
+          "normalized": "апрель 2019",
+          "presentation_signature": "апрель2019"
+        },
+        {
+          "coordinate": "G66",
+          "row": 66,
+          "column": 7,
+          "value": "Май 2019",
+          "normalized": "май 2019",
+          "presentation_signature": "май2019"
+        },
+        {
+          "coordinate": "H66",
+          "row": 66,
+          "column": 8,
+          "value": "Июнь 2019",
+          "normalized": "июнь 2019",
+          "presentation_signature": "июнь2019"
+        },
+        {
+          "coordinate": "I66",
+          "row": 66,
+          "column": 9,
+          "value": "Июль 2019",
+          "normalized": "июль 2019",
+          "presentation_signature": "июль2019"
+        },
+        {
+          "coordinate": "J66",
+          "row": 66,
+          "column": 10,
+          "value": "Август 2019",
+          "normalized": "август 2019",
+          "presentation_signature": "август2019"
+        },
+        {
+          "coordinate": "K66",
+          "row": 66,
+          "column": 11,
+          "value": "Сентябрь 2019",
+          "normalized": "сентябрь 2019",
+          "presentation_signature": "сентябрь2019"
+        },
+        {
+          "coordinate": "L66",
+          "row": 66,
+          "column": 12,
+          "value": "Октябрь 2019",
+          "normalized": "октябрь 2019",
+          "presentation_signature": "октябрь2019"
+        },
+        {
+          "coordinate": "M66",
+          "row": 66,
+          "column": 13,
+          "value": "Ноябрь 2019",
+          "normalized": "ноябрь 2019",
+          "presentation_signature": "ноябрь2019"
+        },
+        {
+          "coordinate": "N66",
+          "row": 66,
+          "column": 14,
+          "value": "Декабрь 2019",
+          "normalized": "декабрь 2019",
+          "presentation_signature": "декабрь2019"
+        },
+        {
+          "coordinate": "O66",
+          "row": 66,
+          "column": 15,
+          "value": "Январь 2020",
+          "normalized": "январь 2020",
+          "presentation_signature": "январь2020"
+        },
+        {
+          "coordinate": "P66",
+          "row": 66,
+          "column": 16,
+          "value": "Февраль 2020",
+          "normalized": "февраль 2020",
+          "presentation_signature": "февраль2020"
+        },
+        {
+          "coordinate": "Q66",
+          "row": 66,
+          "column": 17,
+          "value": "Март 2020",
+          "normalized": "март 2020",
+          "presentation_signature": "март2020"
+        },
+        {
+          "coordinate": "R66",
+          "row": 66,
+          "column": 18,
+          "value": "Апрель 2020",
+          "normalized": "апрель 2020",
+          "presentation_signature": "апрель2020"
+        },
+        {
+          "coordinate": "S66",
+          "row": 66,
+          "column": 19,
+          "value": "Май 2020",
+          "normalized": "май 2020",
+          "presentation_signature": "май2020"
+        },
+        {
+          "coordinate": "T66",
+          "row": 66,
+          "column": 20,
+          "value": "Июнь 2020",
+          "normalized": "июнь 2020",
+          "presentation_signature": "июнь2020"
+        },
+        {
+          "coordinate": "U66",
+          "row": 66,
+          "column": 21,
+          "value": "Июль 2020",
+          "normalized": "июль 2020",
+          "presentation_signature": "июль2020"
+        },
+        {
+          "coordinate": "V66",
+          "row": 66,
+          "column": 22,
+          "value": "Август 2020",
+          "normalized": "август 2020",
+          "presentation_signature": "август2020"
+        },
+        {
+          "coordinate": "W66",
+          "row": 66,
+          "column": 23,
+          "value": "Сентябрь 2020",
+          "normalized": "сентябрь 2020",
+          "presentation_signature": "сентябрь2020"
+        },
+        {
+          "coordinate": "X66",
+          "row": 66,
+          "column": 24,
+          "value": "Октябрь 2020",
+          "normalized": "октябрь 2020",
+          "presentation_signature": "октябрь2020"
+        },
+        {
+          "coordinate": "Y66",
+          "row": 66,
+          "column": 25,
+          "value": "Ноябрь 2020",
+          "normalized": "ноябрь 2020",
+          "presentation_signature": "ноябрь2020"
+        },
+        {
+          "coordinate": "Z66",
+          "row": 66,
+          "column": 26,
+          "value": "Декабрь 2020",
+          "normalized": "декабрь 2020",
+          "presentation_signature": "декабрь2020"
+        },
+        {
+          "coordinate": "AA66",
+          "row": 66,
+          "column": 27,
+          "value": "Январь 2021",
+          "normalized": "январь 2021",
+          "presentation_signature": "январь2021"
+        },
+        {
+          "coordinate": "AB66",
+          "row": 66,
+          "column": 28,
+          "value": "Февраль 2021",
+          "normalized": "февраль 2021",
+          "presentation_signature": "февраль2021"
+        },
+        {
+          "coordinate": "AC66",
+          "row": 66,
+          "column": 29,
+          "value": "Март 2021",
+          "normalized": "март 2021",
+          "presentation_signature": "март2021"
+        },
+        {
+          "coordinate": "AD66",
+          "row": 66,
+          "column": 30,
+          "value": "Апрель 2021",
+          "normalized": "апрель 2021",
+          "presentation_signature": "апрель2021"
+        },
+        {
+          "coordinate": "AE66",
+          "row": 66,
+          "column": 31,
+          "value": "Май 2021",
+          "normalized": "май 2021",
+          "presentation_signature": "май2021"
+        },
+        {
+          "coordinate": "AF66",
+          "row": 66,
+          "column": 32,
+          "value": "Июнь 2021",
+          "normalized": "июнь 2021",
+          "presentation_signature": "июнь2021"
+        },
+        {
+          "coordinate": "AG66",
+          "row": 66,
+          "column": 33,
+          "value": "Июль 2021",
+          "normalized": "июль 2021",
+          "presentation_signature": "июль2021"
+        },
+        {
+          "coordinate": "AH66",
+          "row": 66,
+          "column": 34,
+          "value": "Август 2021",
+          "normalized": "август 2021",
+          "presentation_signature": "август2021"
+        },
+        {
+          "coordinate": "AI66",
+          "row": 66,
+          "column": 35,
+          "value": "Сентябрь 2021",
+          "normalized": "сентябрь 2021",
+          "presentation_signature": "сентябрь2021"
+        },
+        {
+          "coordinate": "AJ66",
+          "row": 66,
+          "column": 36,
+          "value": "Октябрь 2021",
+          "normalized": "октябрь 2021",
+          "presentation_signature": "октябрь2021"
+        },
+        {
+          "coordinate": "AK66",
+          "row": 66,
+          "column": 37,
+          "value": "Ноябрь 2021",
+          "normalized": "ноябрь 2021",
+          "presentation_signature": "ноябрь2021"
+        },
+        {
+          "coordinate": "AL66",
+          "row": 66,
+          "column": 38,
+          "value": "Декабрь 2021",
+          "normalized": "декабрь 2021",
+          "presentation_signature": "декабрь2021"
+        },
+        {
+          "coordinate": "AM66",
+          "row": 66,
+          "column": 39,
+          "value": "Январь 2022",
+          "normalized": "январь 2022",
+          "presentation_signature": "январь2022"
+        },
+        {
+          "coordinate": "AN66",
+          "row": 66,
+          "column": 40,
+          "value": "Февраль 2022",
+          "normalized": "февраль 2022",
+          "presentation_signature": "февраль2022"
+        },
+        {
+          "coordinate": "AO66",
+          "row": 66,
+          "column": 41,
+          "value": "Март 2022",
+          "normalized": "март 2022",
+          "presentation_signature": "март2022"
+        },
+        {
+          "coordinate": "AP66",
+          "row": 66,
+          "column": 42,
+          "value": "Апрель 2022",
+          "normalized": "апрель 2022",
+          "presentation_signature": "апрель2022"
+        },
+        {
+          "coordinate": "AQ66",
+          "row": 66,
+          "column": 43,
+          "value": "Май 2022",
+          "normalized": "май 2022",
+          "presentation_signature": "май2022"
+        },
+        {
+          "coordinate": "AR66",
+          "row": 66,
+          "column": 44,
+          "value": "Июнь 2022",
+          "normalized": "июнь 2022",
+          "presentation_signature": "июнь2022"
+        },
+        {
+          "coordinate": "AS66",
+          "row": 66,
+          "column": 45,
+          "value": "Июль 2022",
+          "normalized": "июль 2022",
+          "presentation_signature": "июль2022"
+        },
+        {
+          "coordinate": "AT66",
+          "row": 66,
+          "column": 46,
+          "value": "Август 2022",
+          "normalized": "август 2022",
+          "presentation_signature": "август2022"
+        },
+        {
+          "coordinate": "AU66",
+          "row": 66,
+          "column": 47,
+          "value": "Сентябрь 2022",
+          "normalized": "сентябрь 2022",
+          "presentation_signature": "сентябрь2022"
+        },
+        {
+          "coordinate": "AV66",
+          "row": 66,
+          "column": 48,
+          "value": "Октябрь 2022",
+          "normalized": "октябрь 2022",
+          "presentation_signature": "октябрь2022"
+        },
+        {
+          "coordinate": "AW66",
+          "row": 66,
+          "column": 49,
+          "value": "Ноябрь 2022",
+          "normalized": "ноябрь 2022",
+          "presentation_signature": "ноябрь2022"
+        },
+        {
+          "coordinate": "AX66",
+          "row": 66,
+          "column": 50,
+          "value": "Декабрь 2022",
+          "normalized": "декабрь 2022",
+          "presentation_signature": "декабрь2022"
+        },
+        {
+          "coordinate": "AY66",
+          "row": 66,
+          "column": 51,
+          "value": "Январь 2023",
+          "normalized": "январь 2023",
+          "presentation_signature": "январь2023"
+        },
+        {
+          "coordinate": "AZ66",
+          "row": 66,
+          "column": 52,
+          "value": "Февраль 2023",
+          "normalized": "февраль 2023",
+          "presentation_signature": "февраль2023"
+        },
+        {
+          "coordinate": "BA66",
+          "row": 66,
+          "column": 53,
+          "value": "Март 2023",
+          "normalized": "март 2023",
+          "presentation_signature": "март2023"
+        },
+        {
+          "coordinate": "BB66",
+          "row": 66,
+          "column": 54,
+          "value": "Апрель 2023",
+          "normalized": "апрель 2023",
+          "presentation_signature": "апрель2023"
+        },
+        {
+          "coordinate": "BC66",
+          "row": 66,
+          "column": 55,
+          "value": "Май 2023",
+          "normalized": "май 2023",
+          "presentation_signature": "май2023"
+        },
+        {
+          "coordinate": "BD66",
+          "row": 66,
+          "column": 56,
+          "value": "Июнь 2023",
+          "normalized": "июнь 2023",
+          "presentation_signature": "июнь2023"
+        },
+        {
+          "coordinate": "BE66",
+          "row": 66,
+          "column": 57,
+          "value": "Июль 2023",
+          "normalized": "июль 2023",
+          "presentation_signature": "июль2023"
+        },
+        {
+          "coordinate": "BF66",
+          "row": 66,
+          "column": 58,
+          "value": "Август 2023",
+          "normalized": "август 2023",
+          "presentation_signature": "август2023"
+        },
+        {
+          "coordinate": "BG66",
+          "row": 66,
+          "column": 59,
+          "value": "Сентябрь 2023",
+          "normalized": "сентябрь 2023",
+          "presentation_signature": "сентябрь2023"
+        },
+        {
+          "coordinate": "BH66",
+          "row": 66,
+          "column": 60,
+          "value": "Октябрь 2023",
+          "normalized": "октябрь 2023",
+          "presentation_signature": "октябрь2023"
+        },
+        {
+          "coordinate": "BI66",
+          "row": 66,
+          "column": 61,
+          "value": "Ноябрь 2023",
+          "normalized": "ноябрь 2023",
+          "presentation_signature": "ноябрь2023"
+        },
+        {
+          "coordinate": "BJ66",
+          "row": 66,
+          "column": 62,
+          "value": "Декабрь 2023",
+          "normalized": "декабрь 2023",
+          "presentation_signature": "декабрь2023"
+        },
+        {
+          "coordinate": "BK66",
+          "row": 66,
+          "column": 63,
+          "value": "Январь 2024",
+          "normalized": "январь 2024",
+          "presentation_signature": "январь2024"
+        },
+        {
+          "coordinate": "BL66",
+          "row": 66,
+          "column": 64,
+          "value": "Февраль 2024",
+          "normalized": "февраль 2024",
+          "presentation_signature": "февраль2024"
+        },
+        {
+          "coordinate": "BM66",
+          "row": 66,
+          "column": 65,
+          "value": "Март 2024",
+          "normalized": "март 2024",
+          "presentation_signature": "март2024"
+        },
+        {
+          "coordinate": "BN66",
+          "row": 66,
+          "column": 66,
+          "value": "Апрель 2024",
+          "normalized": "апрель 2024",
+          "presentation_signature": "апрель2024"
+        },
+        {
+          "coordinate": "BO66",
+          "row": 66,
+          "column": 67,
+          "value": "Май 2024",
+          "normalized": "май 2024",
+          "presentation_signature": "май2024"
+        },
+        {
+          "coordinate": "BP66",
+          "row": 66,
+          "column": 68,
+          "value": "Июнь 2024",
+          "normalized": "июнь 2024",
+          "presentation_signature": "июнь2024"
+        },
+        {
+          "coordinate": "BQ66",
+          "row": 66,
+          "column": 69,
+          "value": "Июль 2024",
+          "normalized": "июль 2024",
+          "presentation_signature": "июль2024"
+        },
+        {
+          "coordinate": "BR66",
+          "row": 66,
+          "column": 70,
+          "value": "Август 2024",
+          "normalized": "август 2024",
+          "presentation_signature": "август2024"
+        },
+        {
+          "coordinate": "BS66",
+          "row": 66,
+          "column": 71,
+          "value": "Сентябрь 2024",
+          "normalized": "сентябрь 2024",
+          "presentation_signature": "сентябрь2024"
+        },
+        {
+          "coordinate": "BT66",
+          "row": 66,
+          "column": 72,
+          "value": "Октябрь 2024",
+          "normalized": "октябрь 2024",
+          "presentation_signature": "октябрь2024"
+        },
+        {
+          "coordinate": "BU66",
+          "row": 66,
+          "column": 73,
+          "value": "Ноябрь 2024",
+          "normalized": "ноябрь 2024",
+          "presentation_signature": "ноябрь2024"
+        },
+        {
+          "coordinate": "BV66",
+          "row": 66,
+          "column": 74,
+          "value": "Декабрь 2024",
+          "normalized": "декабрь 2024",
+          "presentation_signature": "декабрь2024"
+        },
+        {
+          "coordinate": "BW66",
+          "row": 66,
+          "column": 75,
+          "value": "Январь 2025",
+          "normalized": "январь 2025",
+          "presentation_signature": "январь2025"
+        },
+        {
+          "coordinate": "BX66",
+          "row": 66,
+          "column": 76,
+          "value": "Февраль 2025",
+          "normalized": "февраль 2025",
+          "presentation_signature": "февраль2025"
+        },
+        {
+          "coordinate": "BY66",
+          "row": 66,
+          "column": 77,
+          "value": "Март 2025",
+          "normalized": "март 2025",
+          "presentation_signature": "март2025"
+        },
+        {
+          "coordinate": "BZ66",
+          "row": 66,
+          "column": 78,
+          "value": "Апрель 2025",
+          "normalized": "апрель 2025",
+          "presentation_signature": "апрель2025"
+        },
+        {
+          "coordinate": "CA66",
+          "row": 66,
+          "column": 79,
+          "value": "Май 2025",
+          "normalized": "май 2025",
+          "presentation_signature": "май2025"
+        },
+        {
+          "coordinate": "CB66",
+          "row": 66,
+          "column": 80,
+          "value": "Июнь 2025",
+          "normalized": "июнь 2025",
+          "presentation_signature": "июнь2025"
+        },
+        {
+          "coordinate": "CC66",
+          "row": 66,
+          "column": 81,
+          "value": "Июль 2025",
+          "normalized": "июль 2025",
+          "presentation_signature": "июль2025"
+        },
+        {
+          "coordinate": "CD66",
+          "row": 66,
+          "column": 82,
+          "value": "Август 2025",
+          "normalized": "август 2025",
+          "presentation_signature": "август2025"
+        },
+        {
+          "coordinate": "CE66",
+          "row": 66,
+          "column": 83,
+          "value": "Сентябрь 2025",
+          "normalized": "сентябрь 2025",
+          "presentation_signature": "сентябрь2025"
+        },
+        {
+          "coordinate": "CF66",
+          "row": 66,
+          "column": 84,
+          "value": "Октябрь 2025",
+          "normalized": "октябрь 2025",
+          "presentation_signature": "октябрь2025"
+        },
+        {
+          "coordinate": "CG66",
+          "row": 66,
+          "column": 85,
+          "value": "Ноябрь 2025",
+          "normalized": "ноябрь 2025",
+          "presentation_signature": "ноябрь2025"
+        },
+        {
+          "coordinate": "CH66",
+          "row": 66,
+          "column": 86,
+          "value": "Декабрь 2025",
+          "normalized": "декабрь 2025",
+          "presentation_signature": "декабрь2025"
+        },
+        {
+          "coordinate": "CI66",
+          "row": 66,
+          "column": 87,
+          "value": "Январь 2026",
+          "normalized": "январь 2026",
+          "presentation_signature": "январь2026"
+        },
+        {
+          "coordinate": "CJ66",
+          "row": 66,
+          "column": 88,
+          "value": "Февраль 2026",
+          "normalized": "февраль 2026",
+          "presentation_signature": "февраль2026"
+        },
+        {
+          "coordinate": "CK66",
+          "row": 66,
+          "column": 89,
+          "value": "Март 2026",
+          "normalized": "март 2026",
+          "presentation_signature": "март2026"
+        },
+        {
+          "coordinate": "CL66",
+          "row": 66,
+          "column": 90,
+          "value": "Апрель 2026",
+          "normalized": "апрель 2026",
+          "presentation_signature": "апрель2026"
+        },
+        {
+          "coordinate": "CM66",
+          "row": 66,
+          "column": 91,
+          "value": "Май 2026",
+          "normalized": "май 2026",
+          "presentation_signature": "май2026"
+        },
+        {
+          "coordinate": "CN66",
+          "row": 66,
+          "column": 92,
+          "value": "Июнь 2026",
+          "normalized": "июнь 2026",
+          "presentation_signature": "июнь2026"
+        },
+        {
+          "coordinate": "CO66",
+          "row": 66,
+          "column": 93,
+          "value": "Июль 2026",
+          "normalized": "июль 2026",
+          "presentation_signature": "июль2026"
+        },
+        {
+          "coordinate": "A67",
+          "row": 67,
+          "column": 1,
+          "value": "Все российские субъекты МСП, всего, в том числе:",
+          "normalized": "все российские субъекты мсп, всего, в том числе:",
+          "presentation_signature": "всероссийскиесубъектымспвсеговтомчисле"
+        },
+        {
+          "coordinate": "A68",
+          "row": 68,
+          "column": 1,
+          "value": "Субъекты МСП - юридические лица",
+          "normalized": "субъекты мсп - юридические лица",
+          "presentation_signature": "субъектымспюридическиелица"
+        },
+        {
+          "coordinate": "B68",
+          "row": 68,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B69",
+          "row": 69,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B70",
+          "row": 70,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        },
+        {
+          "coordinate": "A71",
+          "row": 71,
+          "column": 1,
+          "value": "Субъекты МСП - индивидуальные предприниматели",
+          "normalized": "субъекты мсп - индивидуальные предприниматели",
+          "presentation_signature": "субъектымспиндивидуальныепредприниматели"
+        },
+        {
+          "coordinate": "B71",
+          "row": 71,
+          "column": 2,
+          "value": "Микропредприятие",
+          "normalized": "микропредприятие",
+          "presentation_signature": "микропредприятие"
+        },
+        {
+          "coordinate": "B72",
+          "row": 72,
+          "column": 2,
+          "value": "Малое предприятие",
+          "normalized": "малое предприятие",
+          "presentation_signature": "малоепредприятие"
+        },
+        {
+          "coordinate": "B73",
+          "row": 73,
+          "column": 2,
+          "value": "Среднее предприятие",
+          "normalized": "среднее предприятие",
+          "presentation_signature": "среднеепредприятие"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "C6",
+          "value": {
+            "kind": "int",
+            "value": "232975"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "D6",
+          "value": {
+            "kind": "int",
+            "value": "235260"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "E6",
+          "value": {
+            "kind": "int",
+            "value": "241044"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "F6",
+          "value": {
+            "kind": "int",
+            "value": "246427"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "G6",
+          "value": {
+            "kind": "int",
+            "value": "249124"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "H6",
+          "value": {
+            "kind": "int",
+            "value": "253327"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "I6",
+          "value": {
+            "kind": "int",
+            "value": "255723"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "J6",
+          "value": {
+            "kind": "int",
+            "value": "252976"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "K6",
+          "value": {
+            "kind": "int",
+            "value": "258469"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "L6",
+          "value": {
+            "kind": "int",
+            "value": "265511"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "M6",
+          "value": {
+            "kind": "int",
+            "value": "275254"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "N6",
+          "value": {
+            "kind": "int",
+            "value": "275238"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "O6",
+          "value": {
+            "kind": "int",
+            "value": "281965"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "P6",
+          "value": {
+            "kind": "int",
+            "value": "289610"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "Q6",
+          "value": {
+            "kind": "int",
+            "value": "296878"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "R6",
+          "value": {
+            "kind": "int",
+            "value": "300812"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "S6",
+          "value": {
+            "kind": "int",
+            "value": "308351"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "T6",
+          "value": {
+            "kind": "int",
+            "value": "358840"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "U6",
+          "value": {
+            "kind": "int",
+            "value": "405389"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "V6",
+          "value": {
+            "kind": "int",
+            "value": "427497"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "W6",
+          "value": {
+            "kind": "int",
+            "value": "450171"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "X6",
+          "value": {
+            "kind": "int",
+            "value": "460448"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "Y6",
+          "value": {
+            "kind": "int",
+            "value": "464934"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "Z6",
+          "value": {
+            "kind": "int",
+            "value": "464824"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AA6",
+          "value": {
+            "kind": "int",
+            "value": "470890"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AB6",
+          "value": {
+            "kind": "int",
+            "value": "477612"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AC6",
+          "value": {
+            "kind": "int",
+            "value": "442231"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AD6",
+          "value": {
+            "kind": "int",
+            "value": "349598"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AE6",
+          "value": {
+            "kind": "int",
+            "value": "353316"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AF6",
+          "value": {
+            "kind": "int",
+            "value": "362985"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AG6",
+          "value": {
+            "kind": "int",
+            "value": "363480"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AH6",
+          "value": {
+            "kind": "int",
+            "value": "371785"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AI6",
+          "value": {
+            "kind": "int",
+            "value": "383582"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AJ6",
+          "value": {
+            "kind": "int",
+            "value": "394201"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AK6",
+          "value": {
+            "kind": "int",
+            "value": "408744"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AL6",
+          "value": {
+            "kind": "int",
+            "value": "420508"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AM6",
+          "value": {
+            "kind": "int",
+            "value": "430949"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AN6",
+          "value": {
+            "kind": "int",
+            "value": "445415"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AO6",
+          "value": {
+            "kind": "int",
+            "value": "439795"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AP6",
+          "value": {
+            "kind": "int",
+            "value": "439517"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AQ6",
+          "value": {
+            "kind": "int",
+            "value": "440526"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AR6",
+          "value": {
+            "kind": "int",
+            "value": "447777"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AS6",
+          "value": {
+            "kind": "int",
+            "value": "441498"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AT6",
+          "value": {
+            "kind": "int",
+            "value": "450754"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AU6",
+          "value": {
+            "kind": "int",
+            "value": "462520"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AV6",
+          "value": {
+            "kind": "int",
+            "value": "467887"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AW6",
+          "value": {
+            "kind": "int",
+            "value": "480277"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AX6",
+          "value": {
+            "kind": "int",
+            "value": "482239"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AY6",
+          "value": {
+            "kind": "int",
+            "value": "488166"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "AZ6",
+          "value": {
+            "kind": "int",
+            "value": "499061"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BA6",
+          "value": {
+            "kind": "int",
+            "value": "515654"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BB6",
+          "value": {
+            "kind": "int",
+            "value": "531293"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BC6",
+          "value": {
+            "kind": "int",
+            "value": "535801"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BD6",
+          "value": {
+            "kind": "int",
+            "value": "545373"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BE6",
+          "value": {
+            "kind": "int",
+            "value": "540351"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BF6",
+          "value": {
+            "kind": "int",
+            "value": "554490"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BG6",
+          "value": {
+            "kind": "int",
+            "value": "568576"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BH6",
+          "value": {
+            "kind": "int",
+            "value": "581455"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BI6",
+          "value": {
+            "kind": "int",
+            "value": "589814"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BJ6",
+          "value": {
+            "kind": "int",
+            "value": "591251"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BK6",
+          "value": {
+            "kind": "int",
+            "value": "601231"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BL6",
+          "value": {
+            "kind": "int",
+            "value": "610373"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BM6",
+          "value": {
+            "kind": "int",
+            "value": "623575"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BN6",
+          "value": {
+            "kind": "int",
+            "value": "632536"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BO6",
+          "value": {
+            "kind": "int",
+            "value": "636522"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BP6",
+          "value": {
+            "kind": "int",
+            "value": "641105"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BQ6",
+          "value": {
+            "kind": "int",
+            "value": "619189"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BR6",
+          "value": {
+            "kind": "int",
+            "value": "629518"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BS6",
+          "value": {
+            "kind": "int",
+            "value": "643202"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BT6",
+          "value": {
+            "kind": "int",
+            "value": "649088"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BU6",
+          "value": {
+            "kind": "int",
+            "value": "652251"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BV6",
+          "value": {
+            "kind": "int",
+            "value": "645977"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BW6",
+          "value": {
+            "kind": "int",
+            "value": "654691"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BX6",
+          "value": {
+            "kind": "int",
+            "value": "657380"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BY6",
+          "value": {
+            "kind": "int",
+            "value": "665514"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "BZ6",
+          "value": {
+            "kind": "int",
+            "value": "671498"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "CA6",
+          "value": {
+            "kind": "int",
+            "value": "674785"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "CB6",
+          "value": {
+            "kind": "int",
+            "value": "676850"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "CC6",
+          "value": {
+            "kind": "int",
+            "value": "644202"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        },
+        {
+          "coordinate": "CD6",
+          "value": {
+            "kind": "int",
+            "value": "597260"
+          },
+          "number_format": "#,###;\\-#,###;0"
+        }
+      ],
+      "date_examples": [],
+      "row_profile": [
+        {
+          "row": 2,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 4,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 5,
+          "nonempty": 91,
+          "text": 91
+        },
+        {
+          "row": 6,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 7,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 8,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 9,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 10,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 11,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 12,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 16,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 17,
+          "nonempty": 91,
+          "text": 91
+        },
+        {
+          "row": 18,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 19,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 20,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 21,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 22,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 23,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 24,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 26,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 29,
+          "nonempty": 91,
+          "text": 91
+        },
+        {
+          "row": 30,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 31,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 32,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 33,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 34,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 35,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 36,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 39,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 41,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 42,
+          "nonempty": 91,
+          "text": 91
+        },
+        {
+          "row": 43,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 44,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 45,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 46,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 47,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 48,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 49,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 53,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 54,
+          "nonempty": 91,
+          "text": 91
+        },
+        {
+          "row": 55,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 56,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 57,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 58,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 59,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 60,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 61,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 63,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 66,
+          "nonempty": 91,
+          "text": 91
+        },
+        {
+          "row": 67,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 68,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 69,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 70,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 71,
+          "nonempty": 93,
+          "text": 2,
+          "numeric": 91
+        },
+        {
+          "row": 72,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 73,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 26,
+          "text": 26
+        },
+        {
+          "column": 2,
+          "nonempty": 36,
+          "text": 36
+        },
+        {
+          "column": 3,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 4,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 5,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 6,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 7,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 8,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 9,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 10,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 11,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 12,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 13,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 14,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 15,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 16,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 17,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 18,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 19,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 20,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 21,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 22,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 23,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 24,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 25,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 26,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 27,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 28,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 29,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 30,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 31,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 32,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 33,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 34,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 35,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 36,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 37,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 38,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 39,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 40,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 41,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 42,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 43,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 44,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 45,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 46,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 47,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 48,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 49,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 50,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 51,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 52,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 53,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 54,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 55,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 56,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 57,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 58,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 59,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 60,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 61,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 62,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 63,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 64,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 65,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 66,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 67,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 68,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 69,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 70,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 71,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 72,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 73,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 74,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 75,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 76,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 77,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 78,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 79,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 80,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 81,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 82,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 83,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 84,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 85,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 86,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 87,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 88,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 89,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 90,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 91,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 92,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        },
+        {
+          "column": 93,
+          "nonempty": 48,
+          "text": 6,
+          "numeric": 42
+        }
+      ],
+      "freeze_panes": "CJ1",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/banksector/loans_to_corporations/02_02_SME_Borrowers_info.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/banksector/loans_to_corporations/02_02_SME_Borrowers_info.xlsx",
+    "http_status": 200,
+    "bytes": 37783,
+    "sha256": "c6f4295fdf60846e7233584aa35435a7f5895bdf506668d60aa88a66c0129e5a",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:40 GMT"
+  }
+}

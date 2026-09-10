@@ -1,0 +1,3518 @@
+{
+  "source": {
+    "source_id": "survey_cb",
+    "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_cb.xlsx",
+    "registry_label": "Обзор центрального банка",
+    "family_hint": "monetary_financial_statistics"
+  },
+  "sheet_names": [
+    "Агрегированная форма обзора"
+  ],
+  "defined_names": [],
+  "sheets": [
+    {
+      "title": "Агрегированная форма обзора",
+      "title_normalized": "агрегированная форма обзора",
+      "title_presentation_signature": "агрегированнаяформаобзора",
+      "state": "visible",
+      "declared_max_row": 23,
+      "declared_max_column": 310,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 23,
+        "min_column": 1,
+        "max_column": 309
+      },
+      "nonempty_cells": 6490,
+      "cell_type_counts": {
+        "text": 22,
+        "date": 308,
+        "numeric": 6160
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0",
+          6104
+        ],
+        [
+          "mm-dd-yy",
+          308
+        ],
+        [
+          "_-* #,##0_р_._-;\\-* #,##0_р_._-;_-* \"-\"??_р_._-;_-@_-",
+          56
+        ],
+        [
+          "General",
+          22
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Обзор центрального банка*, млн рублей",
+          "normalized": "обзор центрального банка*, млн рублей",
+          "presentation_signature": "обзорцентральногобанка*млнрублей"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "Чистые иностранные активы",
+          "normalized": "чистые иностранные активы",
+          "presentation_signature": "чистыеиностранныеактивы"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Требования к кредитным организациям",
+          "normalized": "требования к кредитным организациям",
+          "presentation_signature": "требованияккредитныморганизациям"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "Чистые требования к органам государственного управления",
+          "normalized": "чистые требования к органам государственного управления",
+          "presentation_signature": "чистыетребованиякорганамгосударственногоуправления"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "Требования к другим секторам",
+          "normalized": "требования к другим секторам",
+          "presentation_signature": "требованиякдругимсекторам"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Денежная база",
+          "normalized": "денежная база",
+          "presentation_signature": "денежнаябаза"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "Наличные деньги в обращении",
+          "normalized": "наличные деньги в обращении",
+          "presentation_signature": "наличныеденьгивобращении"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Обязательства перед кредитными организациями",
+          "normalized": "обязательства перед кредитными организациями",
+          "presentation_signature": "обязательствапередкредитнымиорганизациями"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "       Депозиты, из них",
+          "normalized": "депозиты, из них",
+          "presentation_signature": "депозитыизних"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "            обязательные резервы",
+          "normalized": "обязательные резервы",
+          "presentation_signature": "обязательныерезервы"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "Депозиты, включаемые в широкую денежную массу",
+          "normalized": "депозиты, включаемые в широкую денежную массу",
+          "presentation_signature": "депозитывключаемыевширокуюденежнуюмассу"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "Переводные депозиты",
+          "normalized": "переводные депозиты",
+          "presentation_signature": "переводныедепозиты"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "Другие финансовые организации",
+          "normalized": "другие финансовые организации",
+          "presentation_signature": "другиефинансовыеорганизации"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "Нефинансовые организации",
+          "normalized": "нефинансовые организации",
+          "presentation_signature": "нефинансовыеорганизации"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "Домашние хозяйства",
+          "normalized": "домашние хозяйства",
+          "presentation_signature": "домашниехозяйства"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "Другие депозиты",
+          "normalized": "другие депозиты",
+          "presentation_signature": "другиедепозиты"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "Другие финансовые организации",
+          "normalized": "другие финансовые организации",
+          "presentation_signature": "другиефинансовыеорганизации"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "Нефинансовые организации",
+          "normalized": "нефинансовые организации",
+          "presentation_signature": "нефинансовыеорганизации"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "Домашние хозяйства",
+          "normalized": "домашние хозяйства",
+          "presentation_signature": "домашниехозяйства"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "Прочие статьи (нетто)",
+          "normalized": "прочие статьи (нетто)",
+          "presentation_signature": "прочиестатьинетто"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "*Данные могут уточняться  в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "normalized": "*данные могут уточняться в связи с изменением отчетных данных, появлением новых источников информации, методологическими изменениями.",
+          "presentation_signature": "*данныемогутуточнятьсявсвязисизменениемотчетныхданныхпоявлениемновыхисточниковинформацииметодологическимиизменениями"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B2",
+          "value": {
+            "kind": "int",
+            "value": "516366"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C2",
+          "value": {
+            "kind": "int",
+            "value": "509661"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D2",
+          "value": {
+            "kind": "int",
+            "value": "533904"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E2",
+          "value": {
+            "kind": "int",
+            "value": "587836"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F2",
+          "value": {
+            "kind": "int",
+            "value": "639817"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G2",
+          "value": {
+            "kind": "int",
+            "value": "703725"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H2",
+          "value": {
+            "kind": "int",
+            "value": "755501"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I2",
+          "value": {
+            "kind": "int",
+            "value": "796169"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J2",
+          "value": {
+            "kind": "int",
+            "value": "827627"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K2",
+          "value": {
+            "kind": "int",
+            "value": "851579"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L2",
+          "value": {
+            "kind": "int",
+            "value": "908928"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M2",
+          "value": {
+            "kind": "int",
+            "value": "908670"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N2",
+          "value": {
+            "kind": "int",
+            "value": "888087"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O2",
+          "value": {
+            "kind": "int",
+            "value": "899040"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P2",
+          "value": {
+            "kind": "int",
+            "value": "910393"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q2",
+          "value": {
+            "kind": "int",
+            "value": "934995"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R2",
+          "value": {
+            "kind": "int",
+            "value": "1022800"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S2",
+          "value": {
+            "kind": "int",
+            "value": "1125978"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T2",
+          "value": {
+            "kind": "int",
+            "value": "1170709"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U2",
+          "value": {
+            "kind": "int",
+            "value": "1206014"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V2",
+          "value": {
+            "kind": "int",
+            "value": "1249122"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W2",
+          "value": {
+            "kind": "int",
+            "value": "1295972"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X2",
+          "value": {
+            "kind": "int",
+            "value": "1345162"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y2",
+          "value": {
+            "kind": "int",
+            "value": "1394036"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z2",
+          "value": {
+            "kind": "int",
+            "value": "1382647"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA2",
+          "value": {
+            "kind": "int",
+            "value": "1436884"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB2",
+          "value": {
+            "kind": "int",
+            "value": "1547053"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC2",
+          "value": {
+            "kind": "int",
+            "value": "1608842"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD2",
+          "value": {
+            "kind": "int",
+            "value": "1738384"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE2",
+          "value": {
+            "kind": "int",
+            "value": "1869069"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF2",
+          "value": {
+            "kind": "int",
+            "value": "1839290"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AG2",
+          "value": {
+            "kind": "int",
+            "value": "1847104"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AH2",
+          "value": {
+            "kind": "int",
+            "value": "1812972"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AI2",
+          "value": {
+            "kind": "int",
+            "value": "1823115"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AJ2",
+          "value": {
+            "kind": "int",
+            "value": "1840379"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AK2",
+          "value": {
+            "kind": "int",
+            "value": "1931610"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AL2",
+          "value": {
+            "kind": "int",
+            "value": "2170459"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AM2",
+          "value": {
+            "kind": "int",
+            "value": "2308596"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AN2",
+          "value": {
+            "kind": "int",
+            "value": "2378257"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AO2",
+          "value": {
+            "kind": "int",
+            "value": "2295462"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AP2",
+          "value": {
+            "kind": "int",
+            "value": "2342067"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AQ2",
+          "value": {
+            "kind": "int",
+            "value": "2414854"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AR2",
+          "value": {
+            "kind": "int",
+            "value": "2503870"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AS2",
+          "value": {
+            "kind": "int",
+            "value": "2521594"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AT2",
+          "value": {
+            "kind": "int",
+            "value": "2537586"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AU2",
+          "value": {
+            "kind": "int",
+            "value": "2725496"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AV2",
+          "value": {
+            "kind": "int",
+            "value": "3035133"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AW2",
+          "value": {
+            "kind": "int",
+            "value": "3262280"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AX2",
+          "value": {
+            "kind": "int",
+            "value": "3395553"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AY2",
+          "value": {
+            "kind": "int",
+            "value": "3546839"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AZ2",
+          "value": {
+            "kind": "int",
+            "value": "3764333"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BA2",
+          "value": {
+            "kind": "int",
+            "value": "3862959"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BB2",
+          "value": {
+            "kind": "int",
+            "value": "4048080"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BC2",
+          "value": {
+            "kind": "int",
+            "value": "4177665"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BD2",
+          "value": {
+            "kind": "int",
+            "value": "4382702"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BE2",
+          "value": {
+            "kind": "int",
+            "value": "4185635"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BF2",
+          "value": {
+            "kind": "int",
+            "value": "4313844"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BG2",
+          "value": {
+            "kind": "int",
+            "value": "4584175"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BH2",
+          "value": {
+            "kind": "int",
+            "value": "4727660"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BI2",
+          "value": {
+            "kind": "int",
+            "value": "4879047"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BJ2",
+          "value": {
+            "kind": "int",
+            "value": "5256002"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BK2",
+          "value": {
+            "kind": "int",
+            "value": "5311029"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BL2",
+          "value": {
+            "kind": "int",
+            "value": "5523353"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BM2",
+          "value": {
+            "kind": "int",
+            "value": "5727798"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BN2",
+          "value": {
+            "kind": "int",
+            "value": "6207619"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BO2",
+          "value": {
+            "kind": "int",
+            "value": "6689428"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BP2",
+          "value": {
+            "kind": "int",
+            "value": "6800355"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BQ2",
+          "value": {
+            "kind": "int",
+            "value": "7152208"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BR2",
+          "value": {
+            "kind": "int",
+            "value": "6959577"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BS2",
+          "value": {
+            "kind": "int",
+            "value": "7128658"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BT2",
+          "value": {
+            "kind": "int",
+            "value": "7300052"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BU2",
+          "value": {
+            "kind": "int",
+            "value": "7617317"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BV2",
+          "value": {
+            "kind": "int",
+            "value": "8007661"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BW2",
+          "value": {
+            "kind": "int",
+            "value": "8069807"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BX2",
+          "value": {
+            "kind": "int",
+            "value": "8237931"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BY2",
+          "value": {
+            "kind": "int",
+            "value": "8828051"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BZ2",
+          "value": {
+            "kind": "int",
+            "value": "9514361"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "CA2",
+          "value": {
+            "kind": "int",
+            "value": "10456270"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "CB2",
+          "value": {
+            "kind": "int",
+            "value": "10480536"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "CC2",
+          "value": {
+            "kind": "int",
+            "value": "10664649"
+          },
+          "number_format": "#,##0"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B1",
+          "value": {
+            "kind": "date",
+            "value": "2001-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "C1",
+          "value": {
+            "kind": "date",
+            "value": "2001-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "D1",
+          "value": {
+            "kind": "date",
+            "value": "2001-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "E1",
+          "value": {
+            "kind": "date",
+            "value": "2001-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "F1",
+          "value": {
+            "kind": "date",
+            "value": "2001-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "G1",
+          "value": {
+            "kind": "date",
+            "value": "2001-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "H1",
+          "value": {
+            "kind": "date",
+            "value": "2001-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "I1",
+          "value": {
+            "kind": "date",
+            "value": "2001-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "J1",
+          "value": {
+            "kind": "date",
+            "value": "2001-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "K1",
+          "value": {
+            "kind": "date",
+            "value": "2001-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "L1",
+          "value": {
+            "kind": "date",
+            "value": "2001-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "M1",
+          "value": {
+            "kind": "date",
+            "value": "2001-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "N1",
+          "value": {
+            "kind": "date",
+            "value": "2002-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "O1",
+          "value": {
+            "kind": "date",
+            "value": "2002-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "P1",
+          "value": {
+            "kind": "date",
+            "value": "2002-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Q1",
+          "value": {
+            "kind": "date",
+            "value": "2002-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "R1",
+          "value": {
+            "kind": "date",
+            "value": "2002-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "S1",
+          "value": {
+            "kind": "date",
+            "value": "2002-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "T1",
+          "value": {
+            "kind": "date",
+            "value": "2002-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "U1",
+          "value": {
+            "kind": "date",
+            "value": "2002-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "V1",
+          "value": {
+            "kind": "date",
+            "value": "2002-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "W1",
+          "value": {
+            "kind": "date",
+            "value": "2002-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "X1",
+          "value": {
+            "kind": "date",
+            "value": "2002-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Y1",
+          "value": {
+            "kind": "date",
+            "value": "2002-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Z1",
+          "value": {
+            "kind": "date",
+            "value": "2003-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AA1",
+          "value": {
+            "kind": "date",
+            "value": "2003-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AB1",
+          "value": {
+            "kind": "date",
+            "value": "2003-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AC1",
+          "value": {
+            "kind": "date",
+            "value": "2003-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AD1",
+          "value": {
+            "kind": "date",
+            "value": "2003-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AE1",
+          "value": {
+            "kind": "date",
+            "value": "2003-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AF1",
+          "value": {
+            "kind": "date",
+            "value": "2003-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AG1",
+          "value": {
+            "kind": "date",
+            "value": "2003-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AH1",
+          "value": {
+            "kind": "date",
+            "value": "2003-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AI1",
+          "value": {
+            "kind": "date",
+            "value": "2003-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AJ1",
+          "value": {
+            "kind": "date",
+            "value": "2003-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AK1",
+          "value": {
+            "kind": "date",
+            "value": "2003-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AL1",
+          "value": {
+            "kind": "date",
+            "value": "2004-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AM1",
+          "value": {
+            "kind": "date",
+            "value": "2004-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AN1",
+          "value": {
+            "kind": "date",
+            "value": "2004-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AO1",
+          "value": {
+            "kind": "date",
+            "value": "2004-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AP1",
+          "value": {
+            "kind": "date",
+            "value": "2004-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AQ1",
+          "value": {
+            "kind": "date",
+            "value": "2004-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AR1",
+          "value": {
+            "kind": "date",
+            "value": "2004-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AS1",
+          "value": {
+            "kind": "date",
+            "value": "2004-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AT1",
+          "value": {
+            "kind": "date",
+            "value": "2004-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AU1",
+          "value": {
+            "kind": "date",
+            "value": "2004-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AV1",
+          "value": {
+            "kind": "date",
+            "value": "2004-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AW1",
+          "value": {
+            "kind": "date",
+            "value": "2004-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AX1",
+          "value": {
+            "kind": "date",
+            "value": "2005-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AY1",
+          "value": {
+            "kind": "date",
+            "value": "2005-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AZ1",
+          "value": {
+            "kind": "date",
+            "value": "2005-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BA1",
+          "value": {
+            "kind": "date",
+            "value": "2005-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BB1",
+          "value": {
+            "kind": "date",
+            "value": "2005-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BC1",
+          "value": {
+            "kind": "date",
+            "value": "2005-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BD1",
+          "value": {
+            "kind": "date",
+            "value": "2005-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BE1",
+          "value": {
+            "kind": "date",
+            "value": "2005-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BF1",
+          "value": {
+            "kind": "date",
+            "value": "2005-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BG1",
+          "value": {
+            "kind": "date",
+            "value": "2005-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BH1",
+          "value": {
+            "kind": "date",
+            "value": "2005-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BI1",
+          "value": {
+            "kind": "date",
+            "value": "2005-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BJ1",
+          "value": {
+            "kind": "date",
+            "value": "2006-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BK1",
+          "value": {
+            "kind": "date",
+            "value": "2006-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BL1",
+          "value": {
+            "kind": "date",
+            "value": "2006-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BM1",
+          "value": {
+            "kind": "date",
+            "value": "2006-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BN1",
+          "value": {
+            "kind": "date",
+            "value": "2006-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BO1",
+          "value": {
+            "kind": "date",
+            "value": "2006-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BP1",
+          "value": {
+            "kind": "date",
+            "value": "2006-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BQ1",
+          "value": {
+            "kind": "date",
+            "value": "2006-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BR1",
+          "value": {
+            "kind": "date",
+            "value": "2006-09-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BS1",
+          "value": {
+            "kind": "date",
+            "value": "2006-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BT1",
+          "value": {
+            "kind": "date",
+            "value": "2006-11-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BU1",
+          "value": {
+            "kind": "date",
+            "value": "2006-12-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BV1",
+          "value": {
+            "kind": "date",
+            "value": "2007-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BW1",
+          "value": {
+            "kind": "date",
+            "value": "2007-02-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BX1",
+          "value": {
+            "kind": "date",
+            "value": "2007-03-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BY1",
+          "value": {
+            "kind": "date",
+            "value": "2007-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BZ1",
+          "value": {
+            "kind": "date",
+            "value": "2007-05-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CA1",
+          "value": {
+            "kind": "date",
+            "value": "2007-06-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CB1",
+          "value": {
+            "kind": "date",
+            "value": "2007-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CC1",
+          "value": {
+            "kind": "date",
+            "value": "2007-08-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 309,
+          "text": 1,
+          "date": 308
+        },
+        {
+          "row": 2,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 3,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 4,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 5,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 6,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 7,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 8,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 9,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 10,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 11,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 12,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 13,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 14,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 15,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 16,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 17,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 18,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 19,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 20,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 21,
+          "nonempty": 309,
+          "text": 1,
+          "numeric": 308
+        },
+        {
+          "row": 23,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 22,
+          "text": 22
+        },
+        {
+          "column": 2,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 3,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 4,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 5,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 6,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 7,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 8,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 9,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 10,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 11,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 12,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 13,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 14,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 15,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 16,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 17,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 18,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 19,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 20,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 21,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 22,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 23,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 24,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 25,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 26,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 27,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 28,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 29,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 30,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 31,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 32,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 33,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 34,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 35,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 36,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 37,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 38,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 39,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 40,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 41,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 42,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 43,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 44,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 45,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 46,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 47,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 48,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 49,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 50,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 51,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 52,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 53,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 54,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 55,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 56,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 57,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 58,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 59,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 60,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 61,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 62,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 63,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 64,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 65,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 66,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 67,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 68,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 69,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 70,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 71,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 72,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 73,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 74,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 75,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 76,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 77,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 78,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 79,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 80,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 81,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 82,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 83,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 84,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 85,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 86,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 87,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 88,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 89,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 90,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 91,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 92,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 93,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 94,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 95,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 96,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 97,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 98,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 99,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 100,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 101,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 102,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 103,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 104,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 105,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 106,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 107,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 108,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 109,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 110,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 111,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 112,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 113,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 114,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 115,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 116,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 117,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 118,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 119,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 120,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 121,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 122,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 123,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 124,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 125,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 126,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 127,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 128,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 129,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 130,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 131,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 132,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 133,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 134,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 135,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 136,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 137,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 138,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 139,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 140,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 141,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 142,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 143,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 144,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 145,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 146,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 147,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 148,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 149,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 150,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 151,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 152,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 153,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 154,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 155,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 156,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 157,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 158,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 159,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 160,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 161,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 162,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 163,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 164,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 165,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 166,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 167,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 168,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 169,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 170,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 171,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 172,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 173,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 174,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 175,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 176,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 177,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 178,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 179,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 180,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 181,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 182,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 183,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 184,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 185,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 186,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 187,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 188,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 189,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 190,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 191,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 192,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 193,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 194,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 195,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 196,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 197,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 198,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 199,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 200,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 201,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 202,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 203,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 204,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 205,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 206,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 207,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 208,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 209,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 210,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 211,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 212,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 213,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 214,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 215,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 216,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 217,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 218,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 219,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 220,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 221,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 222,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 223,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 224,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 225,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 226,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 227,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 228,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 229,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 230,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 231,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 232,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 233,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 234,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 235,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 236,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 237,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 238,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 239,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 240,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 241,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 242,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 243,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 244,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 245,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 246,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 247,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 248,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 249,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 250,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 251,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 252,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 253,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 254,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 255,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 256,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 257,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 258,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 259,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 260,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 261,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 262,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 263,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 264,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 265,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 266,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 267,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 268,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 269,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 270,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 271,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 272,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 273,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 274,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 275,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 276,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 277,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 278,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 279,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 280,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 281,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 282,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 283,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 284,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 285,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 286,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 287,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 288,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 289,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 290,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 291,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 292,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 293,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 294,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 295,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 296,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 297,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 298,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 299,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 300,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 301,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 302,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 303,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 304,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 305,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 306,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 307,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 308,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        },
+        {
+          "column": 309,
+          "nonempty": 21,
+          "date": 1,
+          "numeric": 20
+        }
+      ],
+      "freeze_panes": "KG1",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_cb.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/survey/survey_cb.xlsx",
+    "http_status": 200,
+    "bytes": 55276,
+    "sha256": "75990980e06a4b811bc052cc3ef98b6e5d4eba4fdc02d2f50c2627aa49ca2ed7",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Thu, 20 Aug 2026 14:46:10 GMT"
+  }
+}

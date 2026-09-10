@@ -1,0 +1,2763 @@
+{
+  "source": {
+    "source_id": "debt_new",
+    "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_new.xlsx",
+    "registry_label": "Внешний долг Российской Федерации",
+    "family_hint": "external_debt"
+  },
+  "sheet_names": [
+    "2003-2026"
+  ],
+  "defined_names": [
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR001', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR002', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR003', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR004', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR011', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR012', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR013', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR014', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR021', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR022', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR023', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR024', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR031', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR032', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR033', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR034', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR041', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR042', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR043', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR044', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR971', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR972', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR981', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR982', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR983', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR984', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR991', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR992', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____QR993', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='____qr994', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR001', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR002', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR003', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR004', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR011', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR012', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR013', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR014', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR021', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR022', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR023', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR024', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR031', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR032', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR033', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR034', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR041', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR042', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR043', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR044', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR971', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR972', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR981', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR982', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR983', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR984', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR991', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR992', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___QR993', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='___qr994', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR001', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR002', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR003', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR004', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR011', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR012', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR013', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR014', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR021', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR022', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR023', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR024', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR031', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR032', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR033', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR034', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR041', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR042', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR043', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR044', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR971', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR972', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR981', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR982', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR983', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR984', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR991', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR992', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__QR993', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='__qr994', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_BQ4.1', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=True, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR001', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$H$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR002', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$H$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR003', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$H$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR004', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$H$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR011', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$I$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR012', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$I$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR013', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$I$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR014', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$I$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR021', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$J$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR022', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$J$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR023', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$J$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR024', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$J$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR031', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$K$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR032', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$K$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR033', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$K$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR034', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$K$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR041', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR042', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR043', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR044', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$L$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR1', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$C$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR2', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$C$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR3', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$C$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR4', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$C$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR971', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$E$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR972', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$E$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR981', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$F$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR982', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$F$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR983', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$F$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR984', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$F$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR991', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$G$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR992', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$G$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR993', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$G$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_qr994', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$G$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='a', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$H$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='b', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$H$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='d', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$I$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='e', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$I$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='f', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$J$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='g', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$J$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='h', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$J$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='j', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[4]Control!$J$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='Lang', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$B$8'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='PERIOD_NAME', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Лист1!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='QUARTAL_NAME_01', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[6]корпоратив.облигации!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='QUARTAL_NAME_02', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[6]корпоратив.облигации!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='QUARTAL_NAME_03', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[6]корпоратив.облигации!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='QUARTAL_NAME_04', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[6]корпоратив.облигации!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='QUARTAL_NAME_05', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[6]корпоратив.облигации!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='QUARTAL_NAME_06', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[6]корпоратив.облигации!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='QUARTAL_NAME_07', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[6]корпоратив.облигации!#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='RSQR1', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text=\"'[7]Reserve pres.'!$E$47\"",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='RSQR2', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text=\"'[7]Reserve pres.'!$E$48\"",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='а', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$E$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_xlnm.Database', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='в', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$E$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='д', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$F$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='и', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$G$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='л', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$F$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='м', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$G$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='о', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$F$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='с', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$G$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='ч', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$G$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='я', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[8]Control!$F$5'"
+  ],
+  "sheets": [
+    {
+      "title": "2003-2026",
+      "title_normalized": "2003-2026",
+      "title_presentation_signature": "20032026",
+      "state": "visible",
+      "declared_max_row": 46,
+      "declared_max_column": 95,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 46,
+        "min_column": 1,
+        "max_column": 95
+      },
+      "nonempty_cells": 2696,
+      "cell_type_counts": {
+        "text": 54,
+        "date": 94,
+        "numeric": 2548
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0",
+          2561
+        ],
+        [
+          "mm-dd-yy",
+          94
+        ],
+        [
+          "General",
+          41
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Внешний долг Российской Федерации",
+          "normalized": "внешний долг российской федерации",
+          "presentation_signature": "внешнийдолгроссийскойфедерации"
+        },
+        {
+          "coordinate": "CQ3",
+          "row": 3,
+          "column": 95,
+          "value": "млн долларов США",
+          "normalized": "млн долларов сша",
+          "presentation_signature": "млндолларовсша"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "Всего",
+          "normalized": "всего",
+          "presentation_signature": "всего"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Органы государственного управления",
+          "normalized": "органы государственного управления",
+          "presentation_signature": "органыгосударственногоуправления"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "Федеральные органы управления",
+          "normalized": "федеральные органы управления",
+          "presentation_signature": "федеральныеорганыуправления"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Новый российский долг",
+          "normalized": "новый российский долг",
+          "presentation_signature": "новыйроссийскийдолг"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "кредиты",
+          "normalized": "кредиты",
+          "presentation_signature": "кредиты"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "ценные бумаги в иностранной валюте ",
+          "normalized": "ценные бумаги в иностранной валюте",
+          "presentation_signature": "ценныебумагивиностраннойвалюте"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "еврооблигации, ОВГВЗ ",
+          "normalized": "еврооблигации, овгвз",
+          "presentation_signature": "еврооблигацииовгвз"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "еврооблигации (выпущенные при второй реструктуризации задолженности перед Лондонским клубом кредиторов)",
+          "normalized": "еврооблигации (выпущенные при второй реструктуризации задолженности перед лондонским клубом кредиторов)",
+          "presentation_signature": "еврооблигациивыпущенныепривторойреструктуризациизадолженностипередлондонскимклубомкредиторов"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "ОФЗ",
+          "normalized": "офз",
+          "presentation_signature": "офз"
+        },
+        {
+          "coordinate": "BU13",
+          "row": 13,
+          "column": 73,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "BV13",
+          "row": 13,
+          "column": 74,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "BW13",
+          "row": 13,
+          "column": 75,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "BX13",
+          "row": 13,
+          "column": 76,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "BY13",
+          "row": 13,
+          "column": 77,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "BZ13",
+          "row": 13,
+          "column": 78,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "CA13",
+          "row": 13,
+          "column": 79,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "CB13",
+          "row": 13,
+          "column": 80,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "CC13",
+          "row": 13,
+          "column": 81,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "CD13",
+          "row": 13,
+          "column": 82,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "CE13",
+          "row": 13,
+          "column": 83,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "CF13",
+          "row": 13,
+          "column": 84,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "CG13",
+          "row": 13,
+          "column": 85,
+          "value": "—",
+          "normalized": "—",
+          "presentation_signature": ""
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "ценные бумаги в российских рублях",
+          "normalized": "ценные бумаги в российских рублях",
+          "presentation_signature": "ценныебумагивроссийскихрублях"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "ОФЗ",
+          "normalized": "офз",
+          "presentation_signature": "офз"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "еврооблигации ",
+          "normalized": "еврооблигации",
+          "presentation_signature": "еврооблигации"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "прочая задолженность ",
+          "normalized": "прочая задолженность",
+          "presentation_signature": "прочаязадолженность"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "Долг бывшего СССР",
+          "normalized": "долг бывшего ссср",
+          "presentation_signature": "долгбывшегоссср"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "Субъекты Российской Федерации",
+          "normalized": "субъекты российской федерации",
+          "presentation_signature": "субъектыроссийскойфедерации"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "кредиты",
+          "normalized": "кредиты",
+          "presentation_signature": "кредиты"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "ценные бумаги в иностранной валюте ",
+          "normalized": "ценные бумаги в иностранной валюте",
+          "presentation_signature": "ценныебумагивиностраннойвалюте"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "ценные бумаги в российских рублях",
+          "normalized": "ценные бумаги в российских рублях",
+          "presentation_signature": "ценныебумагивроссийскихрублях"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "Центральный банк и банки",
+          "normalized": "центральный банк и банки",
+          "presentation_signature": "центральныйбанкибанки"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "normalized": "долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "presentation_signature": "долговыеобязательствапередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "прочая задолженность",
+          "normalized": "прочая задолженность",
+          "presentation_signature": "прочаязадолженность"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "Прочие секторы",
+          "normalized": "прочие секторы",
+          "presentation_signature": "прочиесекторы"
+        },
+        {
+          "coordinate": "A29",
+          "row": 29,
+          "column": 1,
+          "value": "долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "normalized": "долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "presentation_signature": "долговыеобязательствапередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A30",
+          "row": 30,
+          "column": 1,
+          "value": "долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A31",
+          "row": 31,
+          "column": 1,
+          "value": "ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A32",
+          "row": 32,
+          "column": 1,
+          "value": "прочая задолженность",
+          "normalized": "прочая задолженность",
+          "presentation_signature": "прочаязадолженность"
+        },
+        {
+          "coordinate": "A34",
+          "row": 34,
+          "column": 1,
+          "value": "Примечания.",
+          "normalized": "примечания.",
+          "presentation_signature": "примечания"
+        },
+        {
+          "coordinate": "A35",
+          "row": 35,
+          "column": 1,
+          "value": "Сведения о состоянии внешнего долга разработаны в соответствии с методологией, изложенной в шестом издании \"Руководства  по платежному балансу и международной инвестиционной позиции  (2009 г.)\", МВФ, и \"Руководстве для составителей и пользователей. Статистика внешнего долга\" (2013 г.).",
+          "normalized": "сведения о состоянии внешнего долга разработаны в соответствии с методологией, изложенной в шестом издании \"руководства по платежному балансу и международной инвестиционной позиции (2009 г.)\", мвф, и \"руководстве для составителей и пользователей. статистика внешнего долга\" (2013 г.).",
+          "presentation_signature": "сведенияосостояниивнешнегодолгаразработанывсоответствиисметодологиейизложеннойвшестомизданиируководствапоплатежномубалансуимеждународнойинвестиционнойпозиции2009гмвфируководстведлясоставителейипользователейстатистикавнешнегодолга2013г"
+        },
+        {
+          "coordinate": "A36",
+          "row": 36,
+          "column": 1,
+          "value": "Включается внешняя задолженность в национальной и иностранной валютах. ",
+          "normalized": "включается внешняя задолженность в национальной и иностранной валютах.",
+          "presentation_signature": "включаетсявнешняязадолженностьвнациональнойииностраннойвалютах"
+        },
+        {
+          "coordinate": "A37",
+          "row": 37,
+          "column": 1,
+          "value": "Государственные ценные бумаги отражаются в части задолженности перед нерезидентами и оцениваются по номинальной стоимости.",
+          "normalized": "государственные ценные бумаги отражаются в части задолженности перед нерезидентами и оцениваются по номинальной стоимости.",
+          "presentation_signature": "государственныеценныебумагиотражаютсявчастизадолженностипереднерезидентамииоцениваютсяпономинальнойстоимости"
+        },
+        {
+          "coordinate": "A38",
+          "row": 38,
+          "column": 1,
+          "value": "Долговые ценные бумаги прочих секторов отражаются, начиная с данных на 01.01.2018, по номинальной стоимости.",
+          "normalized": "долговые ценные бумаги прочих секторов отражаются, начиная с данных на 01.01.2018, по номинальной стоимости.",
+          "presentation_signature": "долговыеценныебумагипрочихсекторовотражаютсяначинаясданныхна01012018пономинальнойстоимости"
+        },
+        {
+          "coordinate": "A39",
+          "row": 39,
+          "column": 1,
+          "value": "Данные по центральному банку и банкам включают данные государственной корпорации развития \"ВЭБ.РФ\". ",
+          "normalized": "данные по центральному банку и банкам включают данные государственной корпорации развития \"вэб.рф\".",
+          "presentation_signature": "данныепоцентральномубанкуибанкамвключаютданныегосударственнойкорпорацииразвитиявэбрф"
+        },
+        {
+          "coordinate": "A40",
+          "row": 40,
+          "column": 1,
+          "value": "В данные по внешнему долгу могут вноситься изменения (преимущественно в течение года после первой публикации).",
+          "normalized": "в данные по внешнему долгу могут вноситься изменения (преимущественно в течение года после первой публикации).",
+          "presentation_signature": "вданныеповнешнемудолгумогутвноситьсяизмененияпреимущественновтечениегодапослепервойпубликации"
+        },
+        {
+          "coordinate": "A41",
+          "row": 41,
+          "column": 1,
+          "value": "В отдельных случаях возможны расхождения между итогом и суммой слагаемых, что связано с округлением данных.",
+          "normalized": "в отдельных случаях возможны расхождения между итогом и суммой слагаемых, что связано с округлением данных.",
+          "presentation_signature": "вотдельныхслучаяхвозможнырасхождениямеждуитогомисуммойслагаемыхчтосвязаносокруглениемданных"
+        },
+        {
+          "coordinate": "A43",
+          "row": 43,
+          "column": 1,
+          "value": "Условные обозначения:",
+          "normalized": "условные обозначения:",
+          "presentation_signature": "условныеобозначения"
+        },
+        {
+          "coordinate": "A44",
+          "row": 44,
+          "column": 1,
+          "value": "«—» явление отсутствует",
+          "normalized": "«—» явление отсутствует",
+          "presentation_signature": "«»явлениеотсутствует"
+        },
+        {
+          "coordinate": "A46",
+          "row": 46,
+          "column": 1,
+          "value": "Дата последнего обновления: 30 июня 2026 года.",
+          "normalized": "дата последнего обновления: 30 июня 2026 года.",
+          "presentation_signature": "датапоследнегообновления30июня2026года"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B5",
+          "value": {
+            "kind": "int",
+            "value": "151302"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C5",
+          "value": {
+            "kind": "int",
+            "value": "153215"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D5",
+          "value": {
+            "kind": "int",
+            "value": "158166"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E5",
+          "value": {
+            "kind": "int",
+            "value": "165834"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F5",
+          "value": {
+            "kind": "int",
+            "value": "184955"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G5",
+          "value": {
+            "kind": "int",
+            "value": "189539"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H5",
+          "value": {
+            "kind": "int",
+            "value": "192349"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I5",
+          "value": {
+            "kind": "int",
+            "value": "193199"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J5",
+          "value": {
+            "kind": "int",
+            "value": "213335"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K5",
+          "value": {
+            "kind": "int",
+            "value": "219353"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L5",
+          "value": {
+            "kind": "int",
+            "value": "227829"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M5",
+          "value": {
+            "kind": "int",
+            "value": "226708"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N5",
+          "value": {
+            "kind": "int",
+            "value": "257204"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O5",
+          "value": {
+            "kind": "int",
+            "value": "273280"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P5",
+          "value": {
+            "kind": "int",
+            "value": "289110"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q5",
+          "value": {
+            "kind": "int",
+            "value": "269512"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R5",
+          "value": {
+            "kind": "int",
+            "value": "313214"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S5",
+          "value": {
+            "kind": "int",
+            "value": "355587"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T5",
+          "value": {
+            "kind": "int",
+            "value": "399548"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U5",
+          "value": {
+            "kind": "int",
+            "value": "438836"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V5",
+          "value": {
+            "kind": "int",
+            "value": "464384"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W5",
+          "value": {
+            "kind": "int",
+            "value": "482501"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X5",
+          "value": {
+            "kind": "int",
+            "value": "533423"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y5",
+          "value": {
+            "kind": "int",
+            "value": "540232"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z5",
+          "value": {
+            "kind": "int",
+            "value": "479823"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA5",
+          "value": {
+            "kind": "int",
+            "value": "445526"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB5",
+          "value": {
+            "kind": "int",
+            "value": "465886"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC5",
+          "value": {
+            "kind": "int",
+            "value": "473398"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD5",
+          "value": {
+            "kind": "int",
+            "value": "466294"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE5",
+          "value": {
+            "kind": "int",
+            "value": "462840"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF5",
+          "value": {
+            "kind": "int",
+            "value": "456956"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AG5",
+          "value": {
+            "kind": "int",
+            "value": "476186"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AH5",
+          "value": {
+            "kind": "int",
+            "value": "488537"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AI5",
+          "value": {
+            "kind": "int",
+            "value": "508361"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AJ5",
+          "value": {
+            "kind": "int",
+            "value": "538120"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AK5",
+          "value": {
+            "kind": "int",
+            "value": "525578"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AL5",
+          "value": {
+            "kind": "int",
+            "value": "538884"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AM5",
+          "value": {
+            "kind": "int",
+            "value": "557521"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AN5",
+          "value": {
+            "kind": "int",
+            "value": "570652"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AO5",
+          "value": {
+            "kind": "int",
+            "value": "598927"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AP5",
+          "value": {
+            "kind": "int",
+            "value": "636421"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AQ5",
+          "value": {
+            "kind": "int",
+            "value": "691672"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AR5",
+          "value": {
+            "kind": "int",
+            "value": "707764"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AS5",
+          "value": {
+            "kind": "int",
+            "value": "716260"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AT5",
+          "value": {
+            "kind": "int",
+            "value": "728864"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AU5",
+          "value": {
+            "kind": "int",
+            "value": "715892"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AV5",
+          "value": {
+            "kind": "int",
+            "value": "732779"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AW5",
+          "value": {
+            "kind": "int",
+            "value": "680857"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AX5",
+          "value": {
+            "kind": "int",
+            "value": "599901"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AY5",
+          "value": {
+            "kind": "int",
+            "value": "557295"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AZ5",
+          "value": {
+            "kind": "int",
+            "value": "556340"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BA5",
+          "value": {
+            "kind": "int",
+            "value": "536890"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BB5",
+          "value": {
+            "kind": "int",
+            "value": "518489"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BC5",
+          "value": {
+            "kind": "int",
+            "value": "520121"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BD5",
+          "value": {
+            "kind": "int",
+            "value": "523015"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BE5",
+          "value": {
+            "kind": "int",
+            "value": "518330"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BF5",
+          "value": {
+            "kind": "int",
+            "value": "511752"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BG5",
+          "value": {
+            "kind": "int",
+            "value": "521595"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BH5",
+          "value": {
+            "kind": "int",
+            "value": "527027"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BI5",
+          "value": {
+            "kind": "int",
+            "value": "529585"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BJ5",
+          "value": {
+            "kind": "int",
+            "value": "518445"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BK5",
+          "value": {
+            "kind": "int",
+            "value": "520585"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BL5",
+          "value": {
+            "kind": "int",
+            "value": "491045"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BM5",
+          "value": {
+            "kind": "int",
+            "value": "470717"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BN5",
+          "value": {
+            "kind": "int",
+            "value": "455073"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BO5",
+          "value": {
+            "kind": "int",
+            "value": "469348"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BP5",
+          "value": {
+            "kind": "int",
+            "value": "483704"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BQ5",
+          "value": {
+            "kind": "int",
+            "value": "474930"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BR5",
+          "value": {
+            "kind": "int",
+            "value": "491452"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BS5",
+          "value": {
+            "kind": "int",
+            "value": "458745"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BT5",
+          "value": {
+            "kind": "int",
+            "value": "483430"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BU5",
+          "value": {
+            "kind": "int",
+            "value": "462760"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BV5",
+          "value": {
+            "kind": "float",
+            "value": "467604.61"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BW5",
+          "value": {
+            "kind": "float",
+            "value": "460603.75"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BX5",
+          "value": {
+            "kind": "float",
+            "value": "474129.11"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BY5",
+          "value": {
+            "kind": "float",
+            "value": "497049.01"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "BZ5",
+          "value": {
+            "kind": "float",
+            "value": "488414.78"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "CA5",
+          "value": {
+            "kind": "float",
+            "value": "462130.22"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "CB5",
+          "value": {
+            "kind": "float",
+            "value": "486717.12"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "CC5",
+          "value": {
+            "kind": "float",
+            "value": "441257.99"
+          },
+          "number_format": "#,##0"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B4",
+          "value": {
+            "kind": "date",
+            "value": "2003-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "C4",
+          "value": {
+            "kind": "date",
+            "value": "2003-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "D4",
+          "value": {
+            "kind": "date",
+            "value": "2003-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "E4",
+          "value": {
+            "kind": "date",
+            "value": "2003-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "F4",
+          "value": {
+            "kind": "date",
+            "value": "2004-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "G4",
+          "value": {
+            "kind": "date",
+            "value": "2004-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "H4",
+          "value": {
+            "kind": "date",
+            "value": "2004-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "I4",
+          "value": {
+            "kind": "date",
+            "value": "2004-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "J4",
+          "value": {
+            "kind": "date",
+            "value": "2005-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "K4",
+          "value": {
+            "kind": "date",
+            "value": "2005-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "L4",
+          "value": {
+            "kind": "date",
+            "value": "2005-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "M4",
+          "value": {
+            "kind": "date",
+            "value": "2005-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "N4",
+          "value": {
+            "kind": "date",
+            "value": "2006-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "O4",
+          "value": {
+            "kind": "date",
+            "value": "2006-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "P4",
+          "value": {
+            "kind": "date",
+            "value": "2006-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Q4",
+          "value": {
+            "kind": "date",
+            "value": "2006-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "R4",
+          "value": {
+            "kind": "date",
+            "value": "2007-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "S4",
+          "value": {
+            "kind": "date",
+            "value": "2007-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "T4",
+          "value": {
+            "kind": "date",
+            "value": "2007-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "U4",
+          "value": {
+            "kind": "date",
+            "value": "2007-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "V4",
+          "value": {
+            "kind": "date",
+            "value": "2008-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "W4",
+          "value": {
+            "kind": "date",
+            "value": "2008-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "X4",
+          "value": {
+            "kind": "date",
+            "value": "2008-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Y4",
+          "value": {
+            "kind": "date",
+            "value": "2008-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Z4",
+          "value": {
+            "kind": "date",
+            "value": "2009-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AA4",
+          "value": {
+            "kind": "date",
+            "value": "2009-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AB4",
+          "value": {
+            "kind": "date",
+            "value": "2009-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AC4",
+          "value": {
+            "kind": "date",
+            "value": "2009-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AD4",
+          "value": {
+            "kind": "date",
+            "value": "2010-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AE4",
+          "value": {
+            "kind": "date",
+            "value": "2010-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AF4",
+          "value": {
+            "kind": "date",
+            "value": "2010-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AG4",
+          "value": {
+            "kind": "date",
+            "value": "2010-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AH4",
+          "value": {
+            "kind": "date",
+            "value": "2011-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AI4",
+          "value": {
+            "kind": "date",
+            "value": "2011-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AJ4",
+          "value": {
+            "kind": "date",
+            "value": "2011-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AK4",
+          "value": {
+            "kind": "date",
+            "value": "2011-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AL4",
+          "value": {
+            "kind": "date",
+            "value": "2012-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AM4",
+          "value": {
+            "kind": "date",
+            "value": "2012-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AN4",
+          "value": {
+            "kind": "date",
+            "value": "2012-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AO4",
+          "value": {
+            "kind": "date",
+            "value": "2012-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AP4",
+          "value": {
+            "kind": "date",
+            "value": "2013-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AQ4",
+          "value": {
+            "kind": "date",
+            "value": "2013-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AR4",
+          "value": {
+            "kind": "date",
+            "value": "2013-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AS4",
+          "value": {
+            "kind": "date",
+            "value": "2013-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AT4",
+          "value": {
+            "kind": "date",
+            "value": "2014-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AU4",
+          "value": {
+            "kind": "date",
+            "value": "2014-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AV4",
+          "value": {
+            "kind": "date",
+            "value": "2014-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AW4",
+          "value": {
+            "kind": "date",
+            "value": "2014-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AX4",
+          "value": {
+            "kind": "date",
+            "value": "2015-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AY4",
+          "value": {
+            "kind": "date",
+            "value": "2015-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AZ4",
+          "value": {
+            "kind": "date",
+            "value": "2015-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BA4",
+          "value": {
+            "kind": "date",
+            "value": "2015-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BB4",
+          "value": {
+            "kind": "date",
+            "value": "2016-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BC4",
+          "value": {
+            "kind": "date",
+            "value": "2016-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BD4",
+          "value": {
+            "kind": "date",
+            "value": "2016-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BE4",
+          "value": {
+            "kind": "date",
+            "value": "2016-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BF4",
+          "value": {
+            "kind": "date",
+            "value": "2017-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BG4",
+          "value": {
+            "kind": "date",
+            "value": "2017-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BH4",
+          "value": {
+            "kind": "date",
+            "value": "2017-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BI4",
+          "value": {
+            "kind": "date",
+            "value": "2017-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BJ4",
+          "value": {
+            "kind": "date",
+            "value": "2018-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BK4",
+          "value": {
+            "kind": "date",
+            "value": "2018-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BL4",
+          "value": {
+            "kind": "date",
+            "value": "2018-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BM4",
+          "value": {
+            "kind": "date",
+            "value": "2018-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BN4",
+          "value": {
+            "kind": "date",
+            "value": "2019-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BO4",
+          "value": {
+            "kind": "date",
+            "value": "2019-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BP4",
+          "value": {
+            "kind": "date",
+            "value": "2019-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BQ4",
+          "value": {
+            "kind": "date",
+            "value": "2019-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BR4",
+          "value": {
+            "kind": "date",
+            "value": "2020-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BS4",
+          "value": {
+            "kind": "date",
+            "value": "2020-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BT4",
+          "value": {
+            "kind": "date",
+            "value": "2020-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BU4",
+          "value": {
+            "kind": "date",
+            "value": "2020-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BV4",
+          "value": {
+            "kind": "date",
+            "value": "2021-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BW4",
+          "value": {
+            "kind": "date",
+            "value": "2021-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BX4",
+          "value": {
+            "kind": "date",
+            "value": "2021-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BY4",
+          "value": {
+            "kind": "date",
+            "value": "2021-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "BZ4",
+          "value": {
+            "kind": "date",
+            "value": "2022-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CA4",
+          "value": {
+            "kind": "date",
+            "value": "2022-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CB4",
+          "value": {
+            "kind": "date",
+            "value": "2022-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "CC4",
+          "value": {
+            "kind": "date",
+            "value": "2022-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 3,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 4,
+          "nonempty": 94,
+          "date": 94
+        },
+        {
+          "row": 5,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 6,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 7,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 8,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 9,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 10,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 11,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 12,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 13,
+          "nonempty": 24,
+          "text": 14,
+          "numeric": 10
+        },
+        {
+          "row": 14,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 15,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 16,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 17,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 18,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 19,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 20,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 21,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 22,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 23,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 24,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 25,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 26,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 27,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 28,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 29,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 30,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 31,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 32,
+          "nonempty": 95,
+          "text": 1,
+          "numeric": 94
+        },
+        {
+          "row": 34,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 35,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 36,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 37,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 38,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 39,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 40,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 41,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 43,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 44,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 46,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 40,
+          "text": 40
+        },
+        {
+          "column": 2,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 3,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 4,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 5,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 6,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 7,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 8,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 9,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 10,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 11,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 12,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 13,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 14,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 15,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 16,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 17,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 18,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 19,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 20,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 21,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 22,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 23,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 24,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 25,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 26,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 27,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 28,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 29,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 30,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 31,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 32,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 33,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 34,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 35,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 36,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 37,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 38,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 39,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 40,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 41,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 42,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 43,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 44,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 45,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 46,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 47,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 48,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 49,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 50,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 51,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 52,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 53,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 54,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 55,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 56,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 57,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 58,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 59,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 60,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 61,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 62,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 63,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 64,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 65,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 66,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 67,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 68,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 69,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 70,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 71,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 72,
+          "nonempty": 28,
+          "date": 1,
+          "numeric": 27
+        },
+        {
+          "column": 73,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 74,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 75,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 76,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 77,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 78,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 79,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 80,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 81,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 82,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 83,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 84,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 85,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 27,
+          "text": 1
+        },
+        {
+          "column": 86,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 87,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 88,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 89,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 90,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 91,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 92,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 93,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 94,
+          "nonempty": 29,
+          "date": 1,
+          "numeric": 28
+        },
+        {
+          "column": 95,
+          "nonempty": 30,
+          "text": 1,
+          "date": 1,
+          "numeric": 28
+        }
+      ],
+      "freeze_panes": "CH5",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_new.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_new.xlsx",
+    "http_status": 200,
+    "bytes": 62711,
+    "sha256": "d011dd483e143a009bc7524004de0821f341de67e41c09f91e86dff148d80407",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 30 Jun 2026 12:03:44 GMT"
+  }
+}

@@ -1,0 +1,3878 @@
+{
+  "source": {
+    "source_id": "debt_maturity",
+    "url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_maturity.xlsx",
+    "registry_label": "Внешний долг Российской Федерации по срокам погашения и финансовым инструментам",
+    "family_hint": "external_debt"
+  },
+  "sheet_names": [
+    "2014-2022",
+    "2021-2026"
+  ],
+  "defined_names": [
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_BQ4.1', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=True, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR001', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR002', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR003', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR004', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$H$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR011', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR012', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR013', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR014', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$I$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR021', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR022', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR023', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR024', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$J$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR031', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR032', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR033', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR034', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$K$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR1', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$C$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR2', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$C$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR3', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$C$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR4', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[2]Control!$C$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR971', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR972', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$E$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR981', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR982', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR983', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR984', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$F$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR991', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR992', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_QR993', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_qr994', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$G$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='a', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$H$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='b', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$H$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='d', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$I$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='e', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$I$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='f', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$J$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='g', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$J$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='h', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$J$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='j', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[3]Control!$J$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='Lang', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[1]Control!$B$8'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='RSQR1', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text=\"'[4]Reserve pres.'!$E$47\"",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='RSQR2', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text=\"'[4]Reserve pres.'!$E$48\"",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='а', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$E$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_xlnm.Database', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='#REF!'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='в', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$E$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='д', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$F$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='и', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$G$5'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='л', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$F$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='м', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$G$4'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='о', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$F$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='с', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$G$3'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='ч', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$G$2'",
+    "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='я', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='[5]Control!$F$5'"
+  ],
+  "sheets": [
+    {
+      "title": "2014-2022",
+      "title_normalized": "2014-2022",
+      "title_presentation_signature": "20142022",
+      "state": "visible",
+      "declared_max_row": 72,
+      "declared_max_column": 34,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 72,
+        "min_column": 1,
+        "max_column": 34
+      },
+      "nonempty_cells": 1867,
+      "cell_type_counts": {
+        "text": 67,
+        "date": 33,
+        "numeric": 1767
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0",
+          1767
+        ],
+        [
+          "General",
+          67
+        ],
+        [
+          "mm-dd-yy",
+          33
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Внешний долг Российской Федерации ",
+          "normalized": "внешний долг российской федерации",
+          "presentation_signature": "внешнийдолгроссийскойфедерации"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "по финансовым инструментам и срокам погашения",
+          "normalized": "по финансовым инструментам и срокам погашения",
+          "presentation_signature": "пофинансовыминструментамисрокампогашения"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "(млн долларов США)",
+          "normalized": "(млн долларов сша)",
+          "presentation_signature": "млндолларовсша"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Всего:",
+          "normalized": "всего:",
+          "presentation_signature": "всего"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "Органы государственного управления",
+          "normalized": "органы государственного управления",
+          "presentation_signature": "органыгосударственногоуправления"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "Ссуды и займы",
+          "normalized": "ссуды и займы",
+          "presentation_signature": "ссудыизаймы"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "Центральный банк",
+          "normalized": "центральный банк",
+          "presentation_signature": "центральныйбанк"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "Ссуды и займы",
+          "normalized": "ссуды и займы",
+          "presentation_signature": "ссудыизаймы"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "Наличная национальная валюта и депозиты",
+          "normalized": "наличная национальная валюта и депозиты",
+          "presentation_signature": "наличнаянациональнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "Прочие долговые обязательства (распределение СДР)",
+          "normalized": "прочие долговые обязательства (распределение сдр)",
+          "presentation_signature": "прочиедолговыеобязательствараспределениесдр"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "Банки (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "normalized": "банки (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "presentation_signature": "банкибездолговыхобязательствпередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "Ссуды и займы",
+          "normalized": "ссуды и займы",
+          "presentation_signature": "ссудыизаймы"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "Текущие счета и депозиты",
+          "normalized": "текущие счета и депозиты",
+          "presentation_signature": "текущиесчетаидепозиты"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A29",
+          "row": 29,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A30",
+          "row": 30,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A31",
+          "row": 31,
+          "column": 1,
+          "value": "Депозиты",
+          "normalized": "депозиты",
+          "presentation_signature": "депозиты"
+        },
+        {
+          "coordinate": "A32",
+          "row": 32,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A33",
+          "row": 33,
+          "column": 1,
+          "value": "Прочие секторы (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "normalized": "прочие секторы (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "presentation_signature": "прочиесекторыбездолговыхобязательствпередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A34",
+          "row": 34,
+          "column": 1,
+          "value": "Другие финансовые организации",
+          "normalized": "другие финансовые организации",
+          "presentation_signature": "другиефинансовыеорганизации"
+        },
+        {
+          "coordinate": "A35",
+          "row": 35,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A36",
+          "row": 36,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A37",
+          "row": 37,
+          "column": 1,
+          "value": "Cсуды и займы, депозиты",
+          "normalized": "cсуды и займы, депозиты",
+          "presentation_signature": "cсудыизаймыдепозиты"
+        },
+        {
+          "coordinate": "A38",
+          "row": 38,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A39",
+          "row": 39,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A40",
+          "row": 40,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A41",
+          "row": 41,
+          "column": 1,
+          "value": "Cсуды и займы, депозиты",
+          "normalized": "cсуды и займы, депозиты",
+          "presentation_signature": "cсудыизаймыдепозиты"
+        },
+        {
+          "coordinate": "A42",
+          "row": 42,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A43",
+          "row": 43,
+          "column": 1,
+          "value": "Нефинансовые организации, домашние хозяйства и НКОДХ",
+          "normalized": "нефинансовые организации, домашние хозяйства и нкодх",
+          "presentation_signature": "нефинансовыеорганизациидомашниехозяйстваинкодх"
+        },
+        {
+          "coordinate": "A44",
+          "row": 44,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A45",
+          "row": 45,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A46",
+          "row": 46,
+          "column": 1,
+          "value": "Ссуды и займы",
+          "normalized": "ссуды и займы",
+          "presentation_signature": "ссудыизаймы"
+        },
+        {
+          "coordinate": "A47",
+          "row": 47,
+          "column": 1,
+          "value": "Торговые кредиты ",
+          "normalized": "торговые кредиты",
+          "presentation_signature": "торговыекредиты"
+        },
+        {
+          "coordinate": "A48",
+          "row": 48,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A49",
+          "row": 49,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A50",
+          "row": 50,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A51",
+          "row": 51,
+          "column": 1,
+          "value": "Ссуды и займы",
+          "normalized": "ссуды и займы",
+          "presentation_signature": "ссудыизаймы"
+        },
+        {
+          "coordinate": "A52",
+          "row": 52,
+          "column": 1,
+          "value": "Долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "normalized": "долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "presentation_signature": "долговыеобязательствапередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A53",
+          "row": 53,
+          "column": 1,
+          "value": "Банки",
+          "normalized": "банки",
+          "presentation_signature": "банки"
+        },
+        {
+          "coordinate": "A54",
+          "row": 54,
+          "column": 1,
+          "value": "Инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "normalized": "инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "presentation_signature": "инвестициипрямогоинвесторавдолговыеинструментыпредприятияпрямогоинвестирования"
+        },
+        {
+          "coordinate": "A55",
+          "row": 55,
+          "column": 1,
+          "value": "Инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "normalized": "инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "presentation_signature": "инвестициипредприятияпрямогоинвестированиявдолговыеинструментыпрямогоинвестораобратноеинвестирование"
+        },
+        {
+          "coordinate": "A56",
+          "row": 56,
+          "column": 1,
+          "value": "Дата последнего обновления: 29 марта 2024 года.",
+          "normalized": "дата последнего обновления: 29 марта 2024 года.",
+          "presentation_signature": "датапоследнегообновления29марта2024года"
+        },
+        {
+          "coordinate": "A57",
+          "row": 57,
+          "column": 1,
+          "value": "Прочие секторы",
+          "normalized": "прочие секторы",
+          "presentation_signature": "прочиесекторы"
+        },
+        {
+          "coordinate": "A58",
+          "row": 58,
+          "column": 1,
+          "value": "Инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "normalized": "инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "presentation_signature": "инвестициипрямогоинвесторавдолговыеинструментыпредприятияпрямогоинвестирования"
+        },
+        {
+          "coordinate": "A59",
+          "row": 59,
+          "column": 1,
+          "value": "Инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "normalized": "инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "presentation_signature": "инвестициипредприятияпрямогоинвестированиявдолговыеинструментыпрямогоинвестораобратноеинвестирование"
+        },
+        {
+          "coordinate": "A60",
+          "row": 60,
+          "column": 1,
+          "value": "Инвестиции между сестринскими предприятиями",
+          "normalized": "инвестиции между сестринскими предприятиями",
+          "presentation_signature": "инвестициимеждусестринскимипредприятиями"
+        },
+        {
+          "coordinate": "A62",
+          "row": 62,
+          "column": 1,
+          "value": "Примечания.",
+          "normalized": "примечания.",
+          "presentation_signature": "примечания"
+        },
+        {
+          "coordinate": "A64",
+          "row": 64,
+          "column": 1,
+          "value": "Сведения о состоянии внешнего долга разработаны в соответствии с методологией, изложенной в шестом издании \"Руководства  по платежному балансу и международной инвестиционной позиции  (2009 г.)\", МВФ, и \"Руководстве для составителей и пользователей. Статистика внешнего долга\" (2013 г.).",
+          "normalized": "сведения о состоянии внешнего долга разработаны в соответствии с методологией, изложенной в шестом издании \"руководства по платежному балансу и международной инвестиционной позиции (2009 г.)\", мвф, и \"руководстве для составителей и пользователей. статистика внешнего долга\" (2013 г.).",
+          "presentation_signature": "сведенияосостояниивнешнегодолгаразработанывсоответствиисметодологиейизложеннойвшестомизданиируководствапоплатежномубалансуимеждународнойинвестиционнойпозиции2009гмвфируководстведлясоставителейипользователейстатистикавнешнегодолга2013г"
+        },
+        {
+          "coordinate": "A65",
+          "row": 65,
+          "column": 1,
+          "value": "Включается внешняя задолженность в национальной и иностранной валютах. ",
+          "normalized": "включается внешняя задолженность в национальной и иностранной валютах.",
+          "presentation_signature": "включаетсявнешняязадолженностьвнациональнойииностраннойвалютах"
+        },
+        {
+          "coordinate": "A66",
+          "row": 66,
+          "column": 1,
+          "value": "Государственные ценные бумаги отражаются в части задолженности перед нерезидентами и оцениваются по номинальной стоимости.",
+          "normalized": "государственные ценные бумаги отражаются в части задолженности перед нерезидентами и оцениваются по номинальной стоимости.",
+          "presentation_signature": "государственныеценныебумагиотражаютсявчастизадолженностипереднерезидентамииоцениваютсяпономинальнойстоимости"
+        },
+        {
+          "coordinate": "A67",
+          "row": 67,
+          "column": 1,
+          "value": "Долговые ценные бумаги прочих секторов отражаются, начиная с данных на 01.01.2018, по номинальной стоимости.",
+          "normalized": "долговые ценные бумаги прочих секторов отражаются, начиная с данных на 01.01.2018, по номинальной стоимости.",
+          "presentation_signature": "долговыеценныебумагипрочихсекторовотражаютсяначинаясданныхна01012018пономинальнойстоимости"
+        },
+        {
+          "coordinate": "A68",
+          "row": 68,
+          "column": 1,
+          "value": "Данные по банкам включают данные государственной корпорации развития \"ВЭБ.РФ\". ",
+          "normalized": "данные по банкам включают данные государственной корпорации развития \"вэб.рф\".",
+          "presentation_signature": "данныепобанкамвключаютданныегосударственнойкорпорацииразвитиявэбрф"
+        },
+        {
+          "coordinate": "A69",
+          "row": 69,
+          "column": 1,
+          "value": "В данные по внешнему долгу могут вноситься изменения (преимущественно в течение года после первой публикации).",
+          "normalized": "в данные по внешнему долгу могут вноситься изменения (преимущественно в течение года после первой публикации).",
+          "presentation_signature": "вданныеповнешнемудолгумогутвноситьсяизмененияпреимущественновтечениегодапослепервойпубликации"
+        },
+        {
+          "coordinate": "A70",
+          "row": 70,
+          "column": 1,
+          "value": "В отдельных случаях возможны расхождения между итогом и суммой слагаемых, что связано с округлением данных.",
+          "normalized": "в отдельных случаях возможны расхождения между итогом и суммой слагаемых, что связано с округлением данных.",
+          "presentation_signature": "вотдельныхслучаяхвозможнырасхождениямеждуитогомисуммойслагаемыхчтосвязаносокруглениемданных"
+        },
+        {
+          "coordinate": "A72",
+          "row": 72,
+          "column": 1,
+          "value": "Дата последнего обновления: 29 марта 2024 года.",
+          "normalized": "дата последнего обновления: 29 марта 2024 года.",
+          "presentation_signature": "датапоследнегообновления29марта2024года"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B6",
+          "value": {
+            "kind": "float",
+            "value": "728863.92"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C6",
+          "value": {
+            "kind": "float",
+            "value": "715892.07"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D6",
+          "value": {
+            "kind": "float",
+            "value": "732778.52"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E6",
+          "value": {
+            "kind": "float",
+            "value": "680857.36"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F6",
+          "value": {
+            "kind": "float",
+            "value": "599901.07"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G6",
+          "value": {
+            "kind": "float",
+            "value": "557295.01"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H6",
+          "value": {
+            "kind": "float",
+            "value": "556339.66"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I6",
+          "value": {
+            "kind": "float",
+            "value": "536889.59"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J6",
+          "value": {
+            "kind": "float",
+            "value": "518488.61"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K6",
+          "value": {
+            "kind": "float",
+            "value": "520120.76"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L6",
+          "value": {
+            "kind": "float",
+            "value": "523014.54"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M6",
+          "value": {
+            "kind": "float",
+            "value": "518329.74"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N6",
+          "value": {
+            "kind": "float",
+            "value": "511752.15"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O6",
+          "value": {
+            "kind": "float",
+            "value": "521595.24"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P6",
+          "value": {
+            "kind": "float",
+            "value": "527027.14"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q6",
+          "value": {
+            "kind": "float",
+            "value": "529584.86"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R6",
+          "value": {
+            "kind": "float",
+            "value": "518445.2"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S6",
+          "value": {
+            "kind": "float",
+            "value": "520584.82"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T6",
+          "value": {
+            "kind": "float",
+            "value": "491044.54"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U6",
+          "value": {
+            "kind": "float",
+            "value": "470717.31"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V6",
+          "value": {
+            "kind": "float",
+            "value": "455072.85"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W6",
+          "value": {
+            "kind": "float",
+            "value": "469347.79"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X6",
+          "value": {
+            "kind": "float",
+            "value": "483704.43"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y6",
+          "value": {
+            "kind": "float",
+            "value": "474929.79"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z6",
+          "value": {
+            "kind": "float",
+            "value": "491452.48"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA6",
+          "value": {
+            "kind": "float",
+            "value": "458745.1"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB6",
+          "value": {
+            "kind": "float",
+            "value": "483429.66"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC6",
+          "value": {
+            "kind": "float",
+            "value": "462759.96"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD6",
+          "value": {
+            "kind": "float",
+            "value": "467604.61"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE6",
+          "value": {
+            "kind": "float",
+            "value": "460603.75"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF6",
+          "value": {
+            "kind": "float",
+            "value": "474129.11"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AG6",
+          "value": {
+            "kind": "float",
+            "value": "497049.01"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AH6",
+          "value": {
+            "kind": "float",
+            "value": "488414.78"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B7",
+          "value": {
+            "kind": "float",
+            "value": "90049.7"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C7",
+          "value": {
+            "kind": "float",
+            "value": "87220.81"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D7",
+          "value": {
+            "kind": "float",
+            "value": "94113.27"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E7",
+          "value": {
+            "kind": "float",
+            "value": "78152.85"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F7",
+          "value": {
+            "kind": "float",
+            "value": "63013.24"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G7",
+          "value": {
+            "kind": "float",
+            "value": "49678.73"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H7",
+          "value": {
+            "kind": "float",
+            "value": "52158.88"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I7",
+          "value": {
+            "kind": "float",
+            "value": "46207.94"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J7",
+          "value": {
+            "kind": "float",
+            "value": "48587.04"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K7",
+          "value": {
+            "kind": "float",
+            "value": "46225.9"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L7",
+          "value": {
+            "kind": "float",
+            "value": "52857.86"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M7",
+          "value": {
+            "kind": "float",
+            "value": "49151.78"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N7",
+          "value": {
+            "kind": "float",
+            "value": "51051.77"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O7",
+          "value": {
+            "kind": "float",
+            "value": "58365.54"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P7",
+          "value": {
+            "kind": "float",
+            "value": "65157.21"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q7",
+          "value": {
+            "kind": "float",
+            "value": "61423.93"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R7",
+          "value": {
+            "kind": "float",
+            "value": "55957.61"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S7",
+          "value": {
+            "kind": "float",
+            "value": "59626.35"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T7",
+          "value": {
+            "kind": "float",
+            "value": "64968.39"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U7",
+          "value": {
+            "kind": "float",
+            "value": "57969.94"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V7",
+          "value": {
+            "kind": "float",
+            "value": "54201.28"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W7",
+          "value": {
+            "kind": "float",
+            "value": "54120.89"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "X7",
+          "value": {
+            "kind": "float",
+            "value": "64360.59"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Y7",
+          "value": {
+            "kind": "float",
+            "value": "57946.5"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Z7",
+          "value": {
+            "kind": "float",
+            "value": "68305.97"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AA7",
+          "value": {
+            "kind": "float",
+            "value": "55916.22"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AB7",
+          "value": {
+            "kind": "float",
+            "value": "67708.42"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AC7",
+          "value": {
+            "kind": "float",
+            "value": "63510.8"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AD7",
+          "value": {
+            "kind": "float",
+            "value": "61853.75"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AE7",
+          "value": {
+            "kind": "float",
+            "value": "66255.52"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AF7",
+          "value": {
+            "kind": "float",
+            "value": "77627.95"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AG7",
+          "value": {
+            "kind": "float",
+            "value": "83220.26"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "AH7",
+          "value": {
+            "kind": "float",
+            "value": "92501.45"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B8",
+          "value": {
+            "kind": "float",
+            "value": "638814.21"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C8",
+          "value": {
+            "kind": "float",
+            "value": "628671.25"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D8",
+          "value": {
+            "kind": "float",
+            "value": "638665.25"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E8",
+          "value": {
+            "kind": "float",
+            "value": "602704.5"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F8",
+          "value": {
+            "kind": "float",
+            "value": "536887.83"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G8",
+          "value": {
+            "kind": "float",
+            "value": "507616.28"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H8",
+          "value": {
+            "kind": "float",
+            "value": "504180.78"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I8",
+          "value": {
+            "kind": "float",
+            "value": "490681.65"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J8",
+          "value": {
+            "kind": "float",
+            "value": "469901.57"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K8",
+          "value": {
+            "kind": "float",
+            "value": "473894.86"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L8",
+          "value": {
+            "kind": "float",
+            "value": "470156.68"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M8",
+          "value": {
+            "kind": "float",
+            "value": "469177.96"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N8",
+          "value": {
+            "kind": "float",
+            "value": "460700.38"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O8",
+          "value": {
+            "kind": "float",
+            "value": "463229.7"
+          },
+          "number_format": "#,##0"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B5",
+          "value": {
+            "kind": "date",
+            "value": "2014-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "C5",
+          "value": {
+            "kind": "date",
+            "value": "2014-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "D5",
+          "value": {
+            "kind": "date",
+            "value": "2014-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "E5",
+          "value": {
+            "kind": "date",
+            "value": "2014-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "F5",
+          "value": {
+            "kind": "date",
+            "value": "2015-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "G5",
+          "value": {
+            "kind": "date",
+            "value": "2015-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "H5",
+          "value": {
+            "kind": "date",
+            "value": "2015-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "I5",
+          "value": {
+            "kind": "date",
+            "value": "2015-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "J5",
+          "value": {
+            "kind": "date",
+            "value": "2016-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "K5",
+          "value": {
+            "kind": "date",
+            "value": "2016-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "L5",
+          "value": {
+            "kind": "date",
+            "value": "2016-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "M5",
+          "value": {
+            "kind": "date",
+            "value": "2016-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "N5",
+          "value": {
+            "kind": "date",
+            "value": "2017-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "O5",
+          "value": {
+            "kind": "date",
+            "value": "2017-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "P5",
+          "value": {
+            "kind": "date",
+            "value": "2017-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Q5",
+          "value": {
+            "kind": "date",
+            "value": "2017-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "R5",
+          "value": {
+            "kind": "date",
+            "value": "2018-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "S5",
+          "value": {
+            "kind": "date",
+            "value": "2018-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "T5",
+          "value": {
+            "kind": "date",
+            "value": "2018-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "U5",
+          "value": {
+            "kind": "date",
+            "value": "2018-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "V5",
+          "value": {
+            "kind": "date",
+            "value": "2019-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "W5",
+          "value": {
+            "kind": "date",
+            "value": "2019-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "X5",
+          "value": {
+            "kind": "date",
+            "value": "2019-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Y5",
+          "value": {
+            "kind": "date",
+            "value": "2019-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Z5",
+          "value": {
+            "kind": "date",
+            "value": "2020-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AA5",
+          "value": {
+            "kind": "date",
+            "value": "2020-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AB5",
+          "value": {
+            "kind": "date",
+            "value": "2020-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AC5",
+          "value": {
+            "kind": "date",
+            "value": "2020-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AD5",
+          "value": {
+            "kind": "date",
+            "value": "2021-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AE5",
+          "value": {
+            "kind": "date",
+            "value": "2021-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AF5",
+          "value": {
+            "kind": "date",
+            "value": "2021-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AG5",
+          "value": {
+            "kind": "date",
+            "value": "2021-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "AH5",
+          "value": {
+            "kind": "date",
+            "value": "2022-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 3,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 5,
+          "nonempty": 33,
+          "date": 33
+        },
+        {
+          "row": 6,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 7,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 8,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 9,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 10,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 11,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 12,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 13,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 14,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 15,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 16,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 17,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 18,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 19,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 20,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 21,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 22,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 23,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 24,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 25,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 26,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 27,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 28,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 29,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 30,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 31,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 32,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 33,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 34,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 35,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 36,
+          "nonempty": 22,
+          "text": 1,
+          "numeric": 21
+        },
+        {
+          "row": 37,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 38,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 39,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 40,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 41,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 42,
+          "nonempty": 10,
+          "text": 1,
+          "numeric": 9
+        },
+        {
+          "row": 43,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 44,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 45,
+          "nonempty": 22,
+          "text": 1,
+          "numeric": 21
+        },
+        {
+          "row": 46,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 47,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 48,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 49,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 50,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 51,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 52,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 53,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 54,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 55,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 56,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 57,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 58,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 59,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 60,
+          "nonempty": 34,
+          "text": 1,
+          "numeric": 33
+        },
+        {
+          "row": 62,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 64,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 65,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 66,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 67,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 68,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 69,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 70,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 72,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 67,
+          "text": 67
+        },
+        {
+          "column": 2,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 3,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 4,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 5,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 6,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 7,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 8,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 9,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 10,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 11,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 12,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 13,
+          "nonempty": 53,
+          "date": 1,
+          "numeric": 52
+        },
+        {
+          "column": 14,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 15,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 16,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 17,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 18,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 19,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 20,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 21,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 22,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 23,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 24,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 25,
+          "nonempty": 55,
+          "date": 1,
+          "numeric": 54
+        },
+        {
+          "column": 26,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 27,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 28,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 29,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 30,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 31,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 32,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 33,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        },
+        {
+          "column": 34,
+          "nonempty": 56,
+          "date": 1,
+          "numeric": 55
+        }
+      ],
+      "freeze_panes": "T6",
+      "auto_filter_ref": null
+    },
+    {
+      "title": "2021-2026",
+      "title_normalized": "2021-2026",
+      "title_presentation_signature": "20212026",
+      "state": "visible",
+      "declared_max_row": 56,
+      "declared_max_column": 23,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 56,
+        "min_column": 1,
+        "max_column": 23
+      },
+      "nonempty_cells": 931,
+      "cell_type_counts": {
+        "text": 51,
+        "date": 22,
+        "numeric": 858
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0",
+          858
+        ],
+        [
+          "General",
+          51
+        ],
+        [
+          "mm-dd-yy",
+          22
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Внешний долг Российской Федерации ",
+          "normalized": "внешний долг российской федерации",
+          "presentation_signature": "внешнийдолгроссийскойфедерации"
+        },
+        {
+          "coordinate": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "по финансовым инструментам и срокам погашения",
+          "normalized": "по финансовым инструментам и срокам погашения",
+          "presentation_signature": "пофинансовыминструментамисрокампогашения"
+        },
+        {
+          "coordinate": "W4",
+          "row": 4,
+          "column": 23,
+          "value": "млн долларов США",
+          "normalized": "млн долларов сша",
+          "presentation_signature": "млндолларовсша"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Всего:",
+          "normalized": "всего:",
+          "presentation_signature": "всего"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "Органы государственного управления",
+          "normalized": "органы государственного управления",
+          "presentation_signature": "органыгосударственногоуправления"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "Ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "Ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "Центральный банк и банки (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "normalized": "центральный банк и банки (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "presentation_signature": "центральныйбанкибанкибездолговыхобязательствпередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "Ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "Ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "Прочие секторы (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "normalized": "прочие секторы (без долговых обязательств перед прямыми инвесторами и предприятиями прямого инвестирования)",
+          "presentation_signature": "прочиесекторыбездолговыхобязательствпередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "Краткосрочные обязательства",
+          "normalized": "краткосрочные обязательства",
+          "presentation_signature": "краткосрочныеобязательства"
+        },
+        {
+          "coordinate": "A29",
+          "row": 29,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A30",
+          "row": 30,
+          "column": 1,
+          "value": "Ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A31",
+          "row": 31,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A32",
+          "row": 32,
+          "column": 1,
+          "value": "Долгосрочные обязательства",
+          "normalized": "долгосрочные обязательства",
+          "presentation_signature": "долгосрочныеобязательства"
+        },
+        {
+          "coordinate": "A33",
+          "row": 33,
+          "column": 1,
+          "value": "Долговые ценные бумаги",
+          "normalized": "долговые ценные бумаги",
+          "presentation_signature": "долговыеценныебумаги"
+        },
+        {
+          "coordinate": "A34",
+          "row": 34,
+          "column": 1,
+          "value": "Ссуды и займы, наличная валюта и депозиты",
+          "normalized": "ссуды и займы, наличная валюта и депозиты",
+          "presentation_signature": "ссудыизаймыналичнаявалютаидепозиты"
+        },
+        {
+          "coordinate": "A35",
+          "row": 35,
+          "column": 1,
+          "value": "Прочие долговые обязательства",
+          "normalized": "прочие долговые обязательства",
+          "presentation_signature": "прочиедолговыеобязательства"
+        },
+        {
+          "coordinate": "A36",
+          "row": 36,
+          "column": 1,
+          "value": "Долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "normalized": "долговые обязательства перед прямыми инвесторами и предприятиями прямого инвестирования",
+          "presentation_signature": "долговыеобязательствапередпрямымиинвесторамиипредприятиямипрямогоинвестирования"
+        },
+        {
+          "coordinate": "A37",
+          "row": 37,
+          "column": 1,
+          "value": "Банки",
+          "normalized": "банки",
+          "presentation_signature": "банки"
+        },
+        {
+          "coordinate": "A38",
+          "row": 38,
+          "column": 1,
+          "value": "Инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "normalized": "инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "presentation_signature": "инвестициипрямогоинвесторавдолговыеинструментыпредприятияпрямогоинвестирования"
+        },
+        {
+          "coordinate": "A39",
+          "row": 39,
+          "column": 1,
+          "value": "Инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "normalized": "инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "presentation_signature": "инвестициипредприятияпрямогоинвестированиявдолговыеинструментыпрямогоинвестораобратноеинвестирование"
+        },
+        {
+          "coordinate": "A40",
+          "row": 40,
+          "column": 1,
+          "value": "Инвестиции между сестринскими предприятиями",
+          "normalized": "инвестиции между сестринскими предприятиями",
+          "presentation_signature": "инвестициимеждусестринскимипредприятиями"
+        },
+        {
+          "coordinate": "A41",
+          "row": 41,
+          "column": 1,
+          "value": "Прочие секторы",
+          "normalized": "прочие секторы",
+          "presentation_signature": "прочиесекторы"
+        },
+        {
+          "coordinate": "A42",
+          "row": 42,
+          "column": 1,
+          "value": "Инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "normalized": "инвестиции прямого инвестора в долговые инструменты предприятия прямого инвестирования",
+          "presentation_signature": "инвестициипрямогоинвесторавдолговыеинструментыпредприятияпрямогоинвестирования"
+        },
+        {
+          "coordinate": "A43",
+          "row": 43,
+          "column": 1,
+          "value": "Инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "normalized": "инвестиции предприятия прямого инвестирования в долговые инструменты прямого инвестора (обратное инвестирование)",
+          "presentation_signature": "инвестициипредприятияпрямогоинвестированиявдолговыеинструментыпрямогоинвестораобратноеинвестирование"
+        },
+        {
+          "coordinate": "A44",
+          "row": 44,
+          "column": 1,
+          "value": "Инвестиции между сестринскими предприятиями",
+          "normalized": "инвестиции между сестринскими предприятиями",
+          "presentation_signature": "инвестициимеждусестринскимипредприятиями"
+        },
+        {
+          "coordinate": "A46",
+          "row": 46,
+          "column": 1,
+          "value": "Примечания.",
+          "normalized": "примечания.",
+          "presentation_signature": "примечания"
+        },
+        {
+          "coordinate": "A48",
+          "row": 48,
+          "column": 1,
+          "value": "Сведения о состоянии внешнего долга разработаны в соответствии с методологией, изложенной в шестом издании \"Руководства по платежному балансу и международной инвестиционной позиции (2009 г.)\", МВФ, и \"Руководстве для составителей и пользователей. Статистика внешнего долга\" (2013 г.).",
+          "normalized": "сведения о состоянии внешнего долга разработаны в соответствии с методологией, изложенной в шестом издании \"руководства по платежному балансу и международной инвестиционной позиции (2009 г.)\", мвф, и \"руководстве для составителей и пользователей. статистика внешнего долга\" (2013 г.).",
+          "presentation_signature": "сведенияосостояниивнешнегодолгаразработанывсоответствиисметодологиейизложеннойвшестомизданиируководствапоплатежномубалансуимеждународнойинвестиционнойпозиции2009гмвфируководстведлясоставителейипользователейстатистикавнешнегодолга2013г"
+        },
+        {
+          "coordinate": "A49",
+          "row": 49,
+          "column": 1,
+          "value": "Включается внешняя задолженность в национальной и иностранной валютах. ",
+          "normalized": "включается внешняя задолженность в национальной и иностранной валютах.",
+          "presentation_signature": "включаетсявнешняязадолженностьвнациональнойииностраннойвалютах"
+        },
+        {
+          "coordinate": "A50",
+          "row": 50,
+          "column": 1,
+          "value": "Государственные ценные бумаги отражаются в части задолженности перед нерезидентами и оцениваются по номинальной стоимости.",
+          "normalized": "государственные ценные бумаги отражаются в части задолженности перед нерезидентами и оцениваются по номинальной стоимости.",
+          "presentation_signature": "государственныеценныебумагиотражаютсявчастизадолженностипереднерезидентамииоцениваютсяпономинальнойстоимости"
+        },
+        {
+          "coordinate": "A51",
+          "row": 51,
+          "column": 1,
+          "value": "Долговые ценные бумаги прочих секторов отражаются, начиная с данных на 01.01.2018, по номинальной стоимости.",
+          "normalized": "долговые ценные бумаги прочих секторов отражаются, начиная с данных на 01.01.2018, по номинальной стоимости.",
+          "presentation_signature": "долговыеценныебумагипрочихсекторовотражаютсяначинаясданныхна01012018пономинальнойстоимости"
+        },
+        {
+          "coordinate": "A52",
+          "row": 52,
+          "column": 1,
+          "value": "Данные по банкам включают данные государственной корпорации развития \"ВЭБ.РФ\". ",
+          "normalized": "данные по банкам включают данные государственной корпорации развития \"вэб.рф\".",
+          "presentation_signature": "данныепобанкамвключаютданныегосударственнойкорпорацииразвитиявэбрф"
+        },
+        {
+          "coordinate": "A53",
+          "row": 53,
+          "column": 1,
+          "value": "В данные по внешнему долгу могут вноситься изменения (преимущественно в течение года после первой публикации).",
+          "normalized": "в данные по внешнему долгу могут вноситься изменения (преимущественно в течение года после первой публикации).",
+          "presentation_signature": "вданныеповнешнемудолгумогутвноситьсяизмененияпреимущественновтечениегодапослепервойпубликации"
+        },
+        {
+          "coordinate": "A54",
+          "row": 54,
+          "column": 1,
+          "value": "В отдельных случаях возможны расхождения между итогом и суммой слагаемых, что связано с округлением данных.",
+          "normalized": "в отдельных случаях возможны расхождения между итогом и суммой слагаемых, что связано с округлением данных.",
+          "presentation_signature": "вотдельныхслучаяхвозможнырасхождениямеждуитогомисуммойслагаемыхчтосвязаносокруглениемданных"
+        },
+        {
+          "coordinate": "A56",
+          "row": 56,
+          "column": 1,
+          "value": "Дата последнего обновления: 30 июня 2026 года.",
+          "normalized": "дата последнего обновления: 30 июня 2026 года.",
+          "presentation_signature": "датапоследнегообновления30июня2026года"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B6",
+          "value": {
+            "kind": "float",
+            "value": "467604.61"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C6",
+          "value": {
+            "kind": "float",
+            "value": "460603.75"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D6",
+          "value": {
+            "kind": "float",
+            "value": "474129.11"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E6",
+          "value": {
+            "kind": "float",
+            "value": "497049.01"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F6",
+          "value": {
+            "kind": "float",
+            "value": "488414.78"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G6",
+          "value": {
+            "kind": "float",
+            "value": "462130.22"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H6",
+          "value": {
+            "kind": "float",
+            "value": "486717.12"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I6",
+          "value": {
+            "kind": "float",
+            "value": "441257.99"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J6",
+          "value": {
+            "kind": "float",
+            "value": "385080.64"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K6",
+          "value": {
+            "kind": "float",
+            "value": "358360.94"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L6",
+          "value": {
+            "kind": "float",
+            "value": "340879.71"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M6",
+          "value": {
+            "kind": "float",
+            "value": "324045.62"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N6",
+          "value": {
+            "kind": "float",
+            "value": "318288.68"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O6",
+          "value": {
+            "kind": "float",
+            "value": "308744.9"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P6",
+          "value": {
+            "kind": "float",
+            "value": "317449.81"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q6",
+          "value": {
+            "kind": "float",
+            "value": "309319.98"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R6",
+          "value": {
+            "kind": "float",
+            "value": "289885.82"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S6",
+          "value": {
+            "kind": "float",
+            "value": "313045.26"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T6",
+          "value": {
+            "kind": "float",
+            "value": "324050.2"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U6",
+          "value": {
+            "kind": "float",
+            "value": "310182.19"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V6",
+          "value": {
+            "kind": "float",
+            "value": "306766.97"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W6",
+          "value": {
+            "kind": "float",
+            "value": "299063.74"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B7",
+          "value": {
+            "kind": "float",
+            "value": "61853.75"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C7",
+          "value": {
+            "kind": "float",
+            "value": "66255.52"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D7",
+          "value": {
+            "kind": "float",
+            "value": "77627.95"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E7",
+          "value": {
+            "kind": "float",
+            "value": "83220.26"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F7",
+          "value": {
+            "kind": "float",
+            "value": "92501.45"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G7",
+          "value": {
+            "kind": "float",
+            "value": "97650.19"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H7",
+          "value": {
+            "kind": "float",
+            "value": "90105.97"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I7",
+          "value": {
+            "kind": "float",
+            "value": "81770.6"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J7",
+          "value": {
+            "kind": "float",
+            "value": "73889.47"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K7",
+          "value": {
+            "kind": "float",
+            "value": "71608.2"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L7",
+          "value": {
+            "kind": "float",
+            "value": "78670.84"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M7",
+          "value": {
+            "kind": "float",
+            "value": "83172.26"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N7",
+          "value": {
+            "kind": "float",
+            "value": "90762.15"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O7",
+          "value": {
+            "kind": "float",
+            "value": "93884.91"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P7",
+          "value": {
+            "kind": "float",
+            "value": "106830.74"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q7",
+          "value": {
+            "kind": "float",
+            "value": "110543.84"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R7",
+          "value": {
+            "kind": "float",
+            "value": "117170.92"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S7",
+          "value": {
+            "kind": "float",
+            "value": "134463.9"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T7",
+          "value": {
+            "kind": "float",
+            "value": "142869.49"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U7",
+          "value": {
+            "kind": "float",
+            "value": "135186.78"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V7",
+          "value": {
+            "kind": "float",
+            "value": "138495.54"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W7",
+          "value": {
+            "kind": "float",
+            "value": "135766.36"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B8",
+          "value": {
+            "kind": "float",
+            "value": "405750.86"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C8",
+          "value": {
+            "kind": "float",
+            "value": "394348.22"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D8",
+          "value": {
+            "kind": "float",
+            "value": "396501.16"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E8",
+          "value": {
+            "kind": "float",
+            "value": "413828.74"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F8",
+          "value": {
+            "kind": "float",
+            "value": "395913.32"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G8",
+          "value": {
+            "kind": "float",
+            "value": "364480.03"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H8",
+          "value": {
+            "kind": "float",
+            "value": "396611.15"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I8",
+          "value": {
+            "kind": "float",
+            "value": "359487.39"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J8",
+          "value": {
+            "kind": "float",
+            "value": "311191.16"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K8",
+          "value": {
+            "kind": "float",
+            "value": "286752.75"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L8",
+          "value": {
+            "kind": "float",
+            "value": "262208.87"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M8",
+          "value": {
+            "kind": "float",
+            "value": "240873.37"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N8",
+          "value": {
+            "kind": "float",
+            "value": "227526.53"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O8",
+          "value": {
+            "kind": "float",
+            "value": "214859.99"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "P8",
+          "value": {
+            "kind": "float",
+            "value": "210619.07"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "Q8",
+          "value": {
+            "kind": "float",
+            "value": "198776.14"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "R8",
+          "value": {
+            "kind": "float",
+            "value": "172714.9"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "S8",
+          "value": {
+            "kind": "float",
+            "value": "178581.37"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "T8",
+          "value": {
+            "kind": "float",
+            "value": "181180.71"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "U8",
+          "value": {
+            "kind": "float",
+            "value": "174995.41"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "V8",
+          "value": {
+            "kind": "float",
+            "value": "168271.42"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "W8",
+          "value": {
+            "kind": "float",
+            "value": "163297.38"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "B9",
+          "value": {
+            "kind": "float",
+            "value": "65256.28"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "C9",
+          "value": {
+            "kind": "float",
+            "value": "61310.79"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "D9",
+          "value": {
+            "kind": "float",
+            "value": "62806.21"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "E9",
+          "value": {
+            "kind": "float",
+            "value": "68005.36"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "F9",
+          "value": {
+            "kind": "float",
+            "value": "63352.51"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "G9",
+          "value": {
+            "kind": "float",
+            "value": "53266.07"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "H9",
+          "value": {
+            "kind": "float",
+            "value": "74568.46"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "I9",
+          "value": {
+            "kind": "float",
+            "value": "66899.4"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "J9",
+          "value": {
+            "kind": "float",
+            "value": "46103.97"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "K9",
+          "value": {
+            "kind": "float",
+            "value": "40435.31"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "L9",
+          "value": {
+            "kind": "float",
+            "value": "36850.73"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "M9",
+          "value": {
+            "kind": "float",
+            "value": "31797.95"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "N9",
+          "value": {
+            "kind": "float",
+            "value": "32709.54"
+          },
+          "number_format": "#,##0"
+        },
+        {
+          "coordinate": "O9",
+          "value": {
+            "kind": "float",
+            "value": "31775.87"
+          },
+          "number_format": "#,##0"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B5",
+          "value": {
+            "kind": "date",
+            "value": "2021-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "C5",
+          "value": {
+            "kind": "date",
+            "value": "2021-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "D5",
+          "value": {
+            "kind": "date",
+            "value": "2021-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "E5",
+          "value": {
+            "kind": "date",
+            "value": "2021-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "F5",
+          "value": {
+            "kind": "date",
+            "value": "2022-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "G5",
+          "value": {
+            "kind": "date",
+            "value": "2022-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "H5",
+          "value": {
+            "kind": "date",
+            "value": "2022-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "I5",
+          "value": {
+            "kind": "date",
+            "value": "2022-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "J5",
+          "value": {
+            "kind": "date",
+            "value": "2023-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "K5",
+          "value": {
+            "kind": "date",
+            "value": "2023-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "L5",
+          "value": {
+            "kind": "date",
+            "value": "2023-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "M5",
+          "value": {
+            "kind": "date",
+            "value": "2023-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "N5",
+          "value": {
+            "kind": "date",
+            "value": "2024-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "O5",
+          "value": {
+            "kind": "date",
+            "value": "2024-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "P5",
+          "value": {
+            "kind": "date",
+            "value": "2024-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "Q5",
+          "value": {
+            "kind": "date",
+            "value": "2024-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "R5",
+          "value": {
+            "kind": "date",
+            "value": "2025-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "S5",
+          "value": {
+            "kind": "date",
+            "value": "2025-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "T5",
+          "value": {
+            "kind": "date",
+            "value": "2025-07-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "U5",
+          "value": {
+            "kind": "date",
+            "value": "2025-10-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "V5",
+          "value": {
+            "kind": "date",
+            "value": "2026-01-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        },
+        {
+          "coordinate": "W5",
+          "value": {
+            "kind": "date",
+            "value": "2026-04-01T00:00:00"
+          },
+          "number_format": "mm-dd-yy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 4,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 5,
+          "nonempty": 22,
+          "date": 22
+        },
+        {
+          "row": 6,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 7,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 8,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 9,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 10,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 11,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 12,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 13,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 14,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 15,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 16,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 17,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 18,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 19,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 20,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 21,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 22,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 23,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 24,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 25,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 26,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 27,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 28,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 29,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 30,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 31,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 32,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 33,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 34,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 35,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 36,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 37,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 38,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 39,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 40,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 41,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 42,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 43,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 44,
+          "nonempty": 23,
+          "text": 1,
+          "numeric": 22
+        },
+        {
+          "row": 46,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 48,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 49,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 50,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 51,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 52,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 53,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 54,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 56,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 50,
+          "text": 50
+        },
+        {
+          "column": 2,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 3,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 4,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 5,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 6,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 7,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 8,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 9,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 10,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 11,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 12,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 13,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 14,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 15,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 16,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 17,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 18,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 19,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 20,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 21,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 22,
+          "nonempty": 40,
+          "date": 1,
+          "numeric": 39
+        },
+        {
+          "column": 23,
+          "nonempty": 41,
+          "text": 1,
+          "date": 1,
+          "numeric": 39
+        }
+      ],
+      "freeze_panes": "B6",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_maturity.xlsx",
+    "final_url": "https://www.cbr.ru/vfs/statistics/credit_statistics/debt/debt_maturity.xlsx",
+    "http_status": 200,
+    "bytes": 63615,
+    "sha256": "4fbb5d5fe40ebd3d265b1a067100ad8014162a0688a2d3c11f8bff4cbb1d9e2b",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 30 Jun 2026 12:03:43 GMT"
+  }
+}

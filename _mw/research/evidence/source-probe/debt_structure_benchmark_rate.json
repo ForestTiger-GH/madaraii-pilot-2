@@ -1,0 +1,4027 @@
+{
+  "source": {
+    "source_id": "debt_structure_benchmark_rate",
+    "url": "https://cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/02_03_Debt_structure_by_benchmark_interest_rate_type.xlsx",
+    "registry_label": "Структура долга по типу бенчмарк-ставки",
+    "family_hint": "corporate_and_sme_loans"
+  },
+  "sheet_names": [
+    "Данные"
+  ],
+  "defined_names": [],
+  "sheets": [
+    {
+      "title": "Данные",
+      "title_normalized": "данные",
+      "title_presentation_signature": "данные",
+      "state": "visible",
+      "declared_max_row": 17,
+      "declared_max_column": 92,
+      "actual_nonempty_bounds": {
+        "min_row": 1,
+        "max_row": 17,
+        "min_column": 1,
+        "max_column": 92
+      },
+      "nonempty_cells": 1381,
+      "cell_type_counts": {
+        "text": 241,
+        "date": 91,
+        "numeric": 1049
+      },
+      "merged_ranges": [],
+      "number_formats_top": [
+        [
+          "#,##0;\\-#,##0;0",
+          1274
+        ],
+        [
+          "dd\\.mm\\.yyyy",
+          91
+        ],
+        [
+          "@",
+          15
+        ],
+        [
+          "General",
+          1
+        ]
+      ],
+      "text_cells": [
+        {
+          "coordinate": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Информация о структуре задолженности по кредитам и приобретенным правам требования по кредитам, предоставленным юридическим лицам-резидентам и индивидуальным предпринимателям, в разрезе вида процентной ставки и базового компонента, млн руб.",
+          "normalized": "информация о структуре задолженности по кредитам и приобретенным правам требования по кредитам, предоставленным юридическим лицам-резидентам и индивидуальным предпринимателям, в разрезе вида процентной ставки и базового компонента, млн руб.",
+          "presentation_signature": "информацияоструктурезадолженностипокредитамиприобретеннымправамтребованияпокредитампредоставленнымюридическимлицамрезидентамииндивидуальнымпредпринимателямвразрезевидапроцентнойставкиибазовогокомпонентамлнруб"
+        },
+        {
+          "coordinate": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Итого задолженность по кредитам и приобретенным правам требования по кредитам",
+          "normalized": "итого задолженность по кредитам и приобретенным правам требования по кредитам",
+          "presentation_signature": "итогозадолженностьпокредитамиприобретеннымправамтребованияпокредитам"
+        },
+        {
+          "coordinate": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "Задолженность по кредитам и приобретенным правам требования по кредитам с фиксированной процентной ставкой",
+          "normalized": "задолженность по кредитам и приобретенным правам требования по кредитам с фиксированной процентной ставкой",
+          "presentation_signature": "задолженностьпокредитамиприобретеннымправамтребованияпокредитамсфиксированнойпроцентнойставкой"
+        },
+        {
+          "coordinate": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "Задолженность по кредитам и приобретенным правам требования по кредитам с плавающей или переменной процентной ставкой, в том числе в разрезе вида базового компонента:",
+          "normalized": "задолженность по кредитам и приобретенным правам требования по кредитам с плавающей или переменной процентной ставкой, в том числе в разрезе вида базового компонента:",
+          "presentation_signature": "задолженностьпокредитамиприобретеннымправамтребованияпокредитамсплавающейилипеременнойпроцентнойставкойвтомчислевразрезевидабазовогокомпонента"
+        },
+        {
+          "coordinate": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "    Ключевая ставка Банка России",
+          "normalized": "ключевая ставка банка россии",
+          "presentation_signature": "ключеваяставкабанкароссии"
+        },
+        {
+          "coordinate": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "    Комбинация: Ключевая ставка Банка России и MosPrime",
+          "normalized": "комбинация: ключевая ставка банка россии и mosprime",
+          "presentation_signature": "комбинацияключеваяставкабанкароссиииmosprime"
+        },
+        {
+          "coordinate": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "    Комбинация: Ключевая ставка Банка России и прочие компоненты*",
+          "normalized": "комбинация: ключевая ставка банка россии и прочие компоненты*",
+          "presentation_signature": "комбинацияключеваяставкабанкароссииипрочиекомпоненты*"
+        },
+        {
+          "coordinate": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "    MosPrime",
+          "normalized": "mosprime",
+          "presentation_signature": "mosprime"
+        },
+        {
+          "coordinate": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "    Комбинация: MosPrime и прочие компоненты*",
+          "normalized": "комбинация: mosprime и прочие компоненты*",
+          "presentation_signature": "комбинацияmosprimeипрочиекомпоненты*"
+        },
+        {
+          "coordinate": "AX10",
+          "row": 10,
+          "column": 50,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BG10",
+          "row": 10,
+          "column": 59,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BH10",
+          "row": 10,
+          "column": 60,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BI10",
+          "row": 10,
+          "column": 61,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BJ10",
+          "row": 10,
+          "column": 62,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BK10",
+          "row": 10,
+          "column": 63,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BL10",
+          "row": 10,
+          "column": 64,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BM10",
+          "row": 10,
+          "column": 65,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BR10",
+          "row": 10,
+          "column": 70,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BS10",
+          "row": 10,
+          "column": 71,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BT10",
+          "row": 10,
+          "column": 72,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BU10",
+          "row": 10,
+          "column": 73,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BV10",
+          "row": 10,
+          "column": 74,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BW10",
+          "row": 10,
+          "column": 75,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BX10",
+          "row": 10,
+          "column": 76,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BY10",
+          "row": 10,
+          "column": 77,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BZ10",
+          "row": 10,
+          "column": 78,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CA10",
+          "row": 10,
+          "column": 79,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CB10",
+          "row": 10,
+          "column": 80,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CC10",
+          "row": 10,
+          "column": 81,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CD10",
+          "row": 10,
+          "column": 82,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CE10",
+          "row": 10,
+          "column": 83,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CF10",
+          "row": 10,
+          "column": 84,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CG10",
+          "row": 10,
+          "column": 85,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CH10",
+          "row": 10,
+          "column": 86,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CI10",
+          "row": 10,
+          "column": 87,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CJ10",
+          "row": 10,
+          "column": 88,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CK10",
+          "row": 10,
+          "column": 89,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CL10",
+          "row": 10,
+          "column": 90,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CM10",
+          "row": 10,
+          "column": 91,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CN10",
+          "row": 10,
+          "column": 92,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "    RUONIA",
+          "normalized": "ruonia",
+          "presentation_signature": "ruonia"
+        },
+        {
+          "coordinate": "B11",
+          "row": 11,
+          "column": 2,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "C11",
+          "row": 11,
+          "column": 3,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "D11",
+          "row": 11,
+          "column": 4,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "E11",
+          "row": 11,
+          "column": 5,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "F11",
+          "row": 11,
+          "column": 6,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "G11",
+          "row": 11,
+          "column": 7,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "H11",
+          "row": 11,
+          "column": 8,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "I11",
+          "row": 11,
+          "column": 9,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "J11",
+          "row": 11,
+          "column": 10,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "K11",
+          "row": 11,
+          "column": 11,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "L11",
+          "row": 11,
+          "column": 12,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "M11",
+          "row": 11,
+          "column": 13,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "N11",
+          "row": 11,
+          "column": 14,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "O11",
+          "row": 11,
+          "column": 15,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "P11",
+          "row": 11,
+          "column": 16,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Q11",
+          "row": 11,
+          "column": 17,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "R11",
+          "row": 11,
+          "column": 18,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "S11",
+          "row": 11,
+          "column": 19,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "T11",
+          "row": 11,
+          "column": 20,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "U11",
+          "row": 11,
+          "column": 21,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "V11",
+          "row": 11,
+          "column": 22,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "W11",
+          "row": 11,
+          "column": 23,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "X11",
+          "row": 11,
+          "column": 24,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Y11",
+          "row": 11,
+          "column": 25,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Z11",
+          "row": 11,
+          "column": 26,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AA11",
+          "row": 11,
+          "column": 27,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AB11",
+          "row": 11,
+          "column": 28,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AC11",
+          "row": 11,
+          "column": 29,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AD11",
+          "row": 11,
+          "column": 30,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AE11",
+          "row": 11,
+          "column": 31,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AF11",
+          "row": 11,
+          "column": 32,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AG11",
+          "row": 11,
+          "column": 33,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AH11",
+          "row": 11,
+          "column": 34,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AI11",
+          "row": 11,
+          "column": 35,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AJ11",
+          "row": 11,
+          "column": 36,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AK11",
+          "row": 11,
+          "column": 37,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AL11",
+          "row": 11,
+          "column": 38,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AM11",
+          "row": 11,
+          "column": 39,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AN11",
+          "row": 11,
+          "column": 40,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "    LIBOR",
+          "normalized": "libor",
+          "presentation_signature": "libor"
+        },
+        {
+          "coordinate": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "    Комбинация: LIBOR и прочие компоненты*",
+          "normalized": "комбинация: libor и прочие компоненты*",
+          "presentation_signature": "комбинацияliborипрочиекомпоненты*"
+        },
+        {
+          "coordinate": "Q13",
+          "row": 13,
+          "column": 17,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "R13",
+          "row": 13,
+          "column": 18,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "S13",
+          "row": 13,
+          "column": 19,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "T13",
+          "row": 13,
+          "column": 20,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "U13",
+          "row": 13,
+          "column": 21,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "V13",
+          "row": 13,
+          "column": 22,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "W13",
+          "row": 13,
+          "column": 23,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "X13",
+          "row": 13,
+          "column": 24,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Y13",
+          "row": 13,
+          "column": 25,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Z13",
+          "row": 13,
+          "column": 26,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AA13",
+          "row": 13,
+          "column": 27,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AB13",
+          "row": 13,
+          "column": 28,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AC13",
+          "row": 13,
+          "column": 29,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AD13",
+          "row": 13,
+          "column": 30,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AE13",
+          "row": 13,
+          "column": 31,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AF13",
+          "row": 13,
+          "column": 32,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AG13",
+          "row": 13,
+          "column": 33,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AH13",
+          "row": 13,
+          "column": 34,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AI13",
+          "row": 13,
+          "column": 35,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AJ13",
+          "row": 13,
+          "column": 36,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AK13",
+          "row": 13,
+          "column": 37,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AL13",
+          "row": 13,
+          "column": 38,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AM13",
+          "row": 13,
+          "column": 39,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AN13",
+          "row": 13,
+          "column": 40,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AO13",
+          "row": 13,
+          "column": 41,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AP13",
+          "row": 13,
+          "column": 42,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AQ13",
+          "row": 13,
+          "column": 43,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AR13",
+          "row": 13,
+          "column": 44,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AS13",
+          "row": 13,
+          "column": 45,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AT13",
+          "row": 13,
+          "column": 46,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AU13",
+          "row": 13,
+          "column": 47,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AV13",
+          "row": 13,
+          "column": 48,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AW13",
+          "row": 13,
+          "column": 49,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AX13",
+          "row": 13,
+          "column": 50,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AY13",
+          "row": 13,
+          "column": 51,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AZ13",
+          "row": 13,
+          "column": 52,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BB13",
+          "row": 13,
+          "column": 54,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BC13",
+          "row": 13,
+          "column": 55,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BD13",
+          "row": 13,
+          "column": 56,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BE13",
+          "row": 13,
+          "column": 57,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BG13",
+          "row": 13,
+          "column": 59,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BH13",
+          "row": 13,
+          "column": 60,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BI13",
+          "row": 13,
+          "column": 61,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BJ13",
+          "row": 13,
+          "column": 62,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BK13",
+          "row": 13,
+          "column": 63,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BL13",
+          "row": 13,
+          "column": 64,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BM13",
+          "row": 13,
+          "column": 65,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BN13",
+          "row": 13,
+          "column": 66,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BO13",
+          "row": 13,
+          "column": 67,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BP13",
+          "row": 13,
+          "column": 68,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BQ13",
+          "row": 13,
+          "column": 69,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BR13",
+          "row": 13,
+          "column": 70,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BS13",
+          "row": 13,
+          "column": 71,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BT13",
+          "row": 13,
+          "column": 72,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BU13",
+          "row": 13,
+          "column": 73,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BV13",
+          "row": 13,
+          "column": 74,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BW13",
+          "row": 13,
+          "column": 75,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BX13",
+          "row": 13,
+          "column": 76,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BY13",
+          "row": 13,
+          "column": 77,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BZ13",
+          "row": 13,
+          "column": 78,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CA13",
+          "row": 13,
+          "column": 79,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CB13",
+          "row": 13,
+          "column": 80,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CC13",
+          "row": 13,
+          "column": 81,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CD13",
+          "row": 13,
+          "column": 82,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CE13",
+          "row": 13,
+          "column": 83,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CF13",
+          "row": 13,
+          "column": 84,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CG13",
+          "row": 13,
+          "column": 85,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CH13",
+          "row": 13,
+          "column": 86,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CI13",
+          "row": 13,
+          "column": 87,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CJ13",
+          "row": 13,
+          "column": 88,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CK13",
+          "row": 13,
+          "column": 89,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CL13",
+          "row": 13,
+          "column": 90,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CM13",
+          "row": 13,
+          "column": 91,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CN13",
+          "row": 13,
+          "column": 92,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "    EURIBOR",
+          "normalized": "euribor",
+          "presentation_signature": "euribor"
+        },
+        {
+          "coordinate": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "    Комбинация: EURIBOR и прочие компоненты*",
+          "normalized": "комбинация: euribor и прочие компоненты*",
+          "presentation_signature": "комбинацияeuriborипрочиекомпоненты*"
+        },
+        {
+          "coordinate": "K15",
+          "row": 15,
+          "column": 11,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "L15",
+          "row": 15,
+          "column": 12,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "M15",
+          "row": 15,
+          "column": 13,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "N15",
+          "row": 15,
+          "column": 14,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "P15",
+          "row": 15,
+          "column": 16,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Q15",
+          "row": 15,
+          "column": 17,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "R15",
+          "row": 15,
+          "column": 18,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "S15",
+          "row": 15,
+          "column": 19,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "T15",
+          "row": 15,
+          "column": 20,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "U15",
+          "row": 15,
+          "column": 21,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "V15",
+          "row": 15,
+          "column": 22,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "W15",
+          "row": 15,
+          "column": 23,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "X15",
+          "row": 15,
+          "column": 24,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Y15",
+          "row": 15,
+          "column": 25,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "Z15",
+          "row": 15,
+          "column": 26,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AA15",
+          "row": 15,
+          "column": 27,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AB15",
+          "row": 15,
+          "column": 28,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AC15",
+          "row": 15,
+          "column": 29,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AD15",
+          "row": 15,
+          "column": 30,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AE15",
+          "row": 15,
+          "column": 31,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AF15",
+          "row": 15,
+          "column": 32,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AG15",
+          "row": 15,
+          "column": 33,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AH15",
+          "row": 15,
+          "column": 34,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AI15",
+          "row": 15,
+          "column": 35,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AJ15",
+          "row": 15,
+          "column": 36,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AK15",
+          "row": 15,
+          "column": 37,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AL15",
+          "row": 15,
+          "column": 38,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AM15",
+          "row": 15,
+          "column": 39,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AN15",
+          "row": 15,
+          "column": 40,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AO15",
+          "row": 15,
+          "column": 41,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AP15",
+          "row": 15,
+          "column": 42,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AQ15",
+          "row": 15,
+          "column": 43,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AR15",
+          "row": 15,
+          "column": 44,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AS15",
+          "row": 15,
+          "column": 45,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AT15",
+          "row": 15,
+          "column": 46,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AU15",
+          "row": 15,
+          "column": 47,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AV15",
+          "row": 15,
+          "column": 48,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AW15",
+          "row": 15,
+          "column": 49,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AX15",
+          "row": 15,
+          "column": 50,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AY15",
+          "row": 15,
+          "column": 51,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "AZ15",
+          "row": 15,
+          "column": 52,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BA15",
+          "row": 15,
+          "column": 53,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BB15",
+          "row": 15,
+          "column": 54,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BC15",
+          "row": 15,
+          "column": 55,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BD15",
+          "row": 15,
+          "column": 56,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BE15",
+          "row": 15,
+          "column": 57,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BF15",
+          "row": 15,
+          "column": 58,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BG15",
+          "row": 15,
+          "column": 59,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BH15",
+          "row": 15,
+          "column": 60,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BI15",
+          "row": 15,
+          "column": 61,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BJ15",
+          "row": 15,
+          "column": 62,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BK15",
+          "row": 15,
+          "column": 63,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BL15",
+          "row": 15,
+          "column": 64,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BM15",
+          "row": 15,
+          "column": 65,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BN15",
+          "row": 15,
+          "column": 66,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BO15",
+          "row": 15,
+          "column": 67,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BP15",
+          "row": 15,
+          "column": 68,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BQ15",
+          "row": 15,
+          "column": 69,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BR15",
+          "row": 15,
+          "column": 70,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BS15",
+          "row": 15,
+          "column": 71,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BT15",
+          "row": 15,
+          "column": 72,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BU15",
+          "row": 15,
+          "column": 73,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BV15",
+          "row": 15,
+          "column": 74,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BW15",
+          "row": 15,
+          "column": 75,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BX15",
+          "row": 15,
+          "column": 76,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BY15",
+          "row": 15,
+          "column": 77,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "BZ15",
+          "row": 15,
+          "column": 78,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CA15",
+          "row": 15,
+          "column": 79,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CB15",
+          "row": 15,
+          "column": 80,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CC15",
+          "row": 15,
+          "column": 81,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CD15",
+          "row": 15,
+          "column": 82,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CE15",
+          "row": 15,
+          "column": 83,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CF15",
+          "row": 15,
+          "column": 84,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CG15",
+          "row": 15,
+          "column": 85,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CH15",
+          "row": 15,
+          "column": 86,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CI15",
+          "row": 15,
+          "column": 87,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CJ15",
+          "row": 15,
+          "column": 88,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CK15",
+          "row": 15,
+          "column": 89,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CL15",
+          "row": 15,
+          "column": 90,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CM15",
+          "row": 15,
+          "column": 91,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "CN15",
+          "row": 15,
+          "column": 92,
+          "value": "0",
+          "normalized": "0",
+          "presentation_signature": "0"
+        },
+        {
+          "coordinate": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "    Прочие комбинации и компоненты (инфляция, финансовое положение заемщика, иное)*",
+          "normalized": "прочие комбинации и компоненты (инфляция, финансовое положение заемщика, иное)*",
+          "presentation_signature": "прочиекомбинацииикомпонентыинфляцияфинансовоеположениезаемщикаиное*"
+        },
+        {
+          "coordinate": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "* Прочие компоненты за исключением вышеперечисленных",
+          "normalized": "* прочие компоненты за исключением вышеперечисленных",
+          "presentation_signature": "*прочиекомпонентызаисключениемвышеперечисленных"
+        }
+      ],
+      "text_cells_truncated": false,
+      "formula_cells": [],
+      "formula_cells_truncated": false,
+      "numeric_examples": [
+        {
+          "coordinate": "B3",
+          "value": {
+            "kind": "float",
+            "value": "32458250.1871635"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "C3",
+          "value": {
+            "kind": "float",
+            "value": "32495691.4378135"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "D3",
+          "value": {
+            "kind": "float",
+            "value": "32575223.5217895"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "E3",
+          "value": {
+            "kind": "float",
+            "value": "32735913.9200914"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "F3",
+          "value": {
+            "kind": "float",
+            "value": "32803378.3847809"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "G3",
+          "value": {
+            "kind": "float",
+            "value": "32782331.7918669"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "H3",
+          "value": {
+            "kind": "float",
+            "value": "33037147.444762"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "I3",
+          "value": {
+            "kind": "float",
+            "value": "33677380.032678"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "J3",
+          "value": {
+            "kind": "float",
+            "value": "33672448.6387513"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "K3",
+          "value": {
+            "kind": "float",
+            "value": "33984351.558618"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "L3",
+          "value": {
+            "kind": "float",
+            "value": "34121179.1286307"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "M3",
+          "value": {
+            "kind": "float",
+            "value": "34036897.6850381"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "N3",
+          "value": {
+            "kind": "float",
+            "value": "34134299.1391161"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "O3",
+          "value": {
+            "kind": "float",
+            "value": "34511692.4393406"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "P3",
+          "value": {
+            "kind": "float",
+            "value": "36521173.394344"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Q3",
+          "value": {
+            "kind": "float",
+            "value": "36579900.7876275"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "R3",
+          "value": {
+            "kind": "float",
+            "value": "36201398.5845136"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "S3",
+          "value": {
+            "kind": "float",
+            "value": "36363235.7895022"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "T3",
+          "value": {
+            "kind": "float",
+            "value": "37051238.348021"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "U3",
+          "value": {
+            "kind": "float",
+            "value": "37618359.7062975"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "V3",
+          "value": {
+            "kind": "float",
+            "value": "38447596.3513311"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "W3",
+          "value": {
+            "kind": "float",
+            "value": "38897033.6968684"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "X3",
+          "value": {
+            "kind": "float",
+            "value": "38790498.6300143"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Y3",
+          "value": {
+            "kind": "float",
+            "value": "38502415.9541628"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "Z3",
+          "value": {
+            "kind": "float",
+            "value": "38745513.549353"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AA3",
+          "value": {
+            "kind": "float",
+            "value": "38666096.9506264"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AB3",
+          "value": {
+            "kind": "float",
+            "value": "39005772.882627"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AC3",
+          "value": {
+            "kind": "float",
+            "value": "39663834.3009131"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AD3",
+          "value": {
+            "kind": "float",
+            "value": "39999733.5365071"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AE3",
+          "value": {
+            "kind": "float",
+            "value": "40310667.9532592"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AF3",
+          "value": {
+            "kind": "float",
+            "value": "41128318.4862058"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AG3",
+          "value": {
+            "kind": "float",
+            "value": "41762598.6245105"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AH3",
+          "value": {
+            "kind": "float",
+            "value": "42252087.2288532"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AI3",
+          "value": {
+            "kind": "float",
+            "value": "42879482.5817376"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AJ3",
+          "value": {
+            "kind": "float",
+            "value": "43712112.4418451"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AK3",
+          "value": {
+            "kind": "float",
+            "value": "43928628.4408286"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AL3",
+          "value": {
+            "kind": "float",
+            "value": "44357432.5945394"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AM3",
+          "value": {
+            "kind": "float",
+            "value": "46223411.1156067"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AN3",
+          "value": {
+            "kind": "float",
+            "value": "46661720.8471906"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AO3",
+          "value": {
+            "kind": "float",
+            "value": "46260923.1935289"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AP3",
+          "value": {
+            "kind": "float",
+            "value": "45558928.3217339"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AQ3",
+          "value": {
+            "kind": "float",
+            "value": "44861919.3791312"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AR3",
+          "value": {
+            "kind": "float",
+            "value": "46180776.0465363"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AS3",
+          "value": {
+            "kind": "float",
+            "value": "47336096.9778704"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AT3",
+          "value": {
+            "kind": "float",
+            "value": "48140319.1389326"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AU3",
+          "value": {
+            "kind": "float",
+            "value": "49813763.9845724"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AV3",
+          "value": {
+            "kind": "float",
+            "value": "50588095.7067578"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AW3",
+          "value": {
+            "kind": "float",
+            "value": "52463401.7557703"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AX3",
+          "value": {
+            "kind": "float",
+            "value": "52310148.4805083"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AY3",
+          "value": {
+            "kind": "float",
+            "value": "53863523.168801"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "AZ3",
+          "value": {
+            "kind": "float",
+            "value": "55036506.0657621"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BA3",
+          "value": {
+            "kind": "float",
+            "value": "56301141.1205596"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BB3",
+          "value": {
+            "kind": "float",
+            "value": "57063294.6623639"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BC3",
+          "value": {
+            "kind": "float",
+            "value": "58306971.6014103"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BD3",
+          "value": {
+            "kind": "float",
+            "value": "60470936.3340972"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BE3",
+          "value": {
+            "kind": "float",
+            "value": "61979189.3568055"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BF3",
+          "value": {
+            "kind": "float",
+            "value": "63466692.8179079"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BG3",
+          "value": {
+            "kind": "float",
+            "value": "64687918.7322685"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BH3",
+          "value": {
+            "kind": "float",
+            "value": "65642203.1824205"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BI3",
+          "value": {
+            "kind": "float",
+            "value": "66696071.6008477"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BJ3",
+          "value": {
+            "kind": "float",
+            "value": "66857243.5443358"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BK3",
+          "value": {
+            "kind": "float",
+            "value": "67618112.7621774"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BL3",
+          "value": {
+            "kind": "float",
+            "value": "68804596.2529538"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BM3",
+          "value": {
+            "kind": "float",
+            "value": "70057763.5650395"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BN3",
+          "value": {
+            "kind": "float",
+            "value": "71353865.8395235"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BO3",
+          "value": {
+            "kind": "float",
+            "value": "71900739.1695547"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BP3",
+          "value": {
+            "kind": "float",
+            "value": "73382784.4764381"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BQ3",
+          "value": {
+            "kind": "float",
+            "value": "74945225.0795027"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BR3",
+          "value": {
+            "kind": "float",
+            "value": "76777468.443948"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BS3",
+          "value": {
+            "kind": "float",
+            "value": "78950789.359965"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BT3",
+          "value": {
+            "kind": "float",
+            "value": "80427752.6435906"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BU3",
+          "value": {
+            "kind": "float",
+            "value": "79857060.743804"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BV3",
+          "value": {
+            "kind": "float",
+            "value": "78549861.7469497"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BW3",
+          "value": {
+            "kind": "float",
+            "value": "77751843.8361442"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BX3",
+          "value": {
+            "kind": "float",
+            "value": "78060931.1138426"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BY3",
+          "value": {
+            "kind": "float",
+            "value": "78863907.0996027"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "BZ3",
+          "value": {
+            "kind": "float",
+            "value": "78959640.7460804"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CA3",
+          "value": {
+            "kind": "float",
+            "value": "79455448.4860568"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CB3",
+          "value": {
+            "kind": "float",
+            "value": "80284714.918763"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        },
+        {
+          "coordinate": "CC3",
+          "value": {
+            "kind": "float",
+            "value": "81259502.8836147"
+          },
+          "number_format": "#,##0;\\-#,##0;0"
+        }
+      ],
+      "date_examples": [
+        {
+          "coordinate": "B2",
+          "value": {
+            "kind": "date",
+            "value": "2019-02-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "C2",
+          "value": {
+            "kind": "date",
+            "value": "2019-03-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "D2",
+          "value": {
+            "kind": "date",
+            "value": "2019-04-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "E2",
+          "value": {
+            "kind": "date",
+            "value": "2019-05-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "F2",
+          "value": {
+            "kind": "date",
+            "value": "2019-06-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "G2",
+          "value": {
+            "kind": "date",
+            "value": "2019-07-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "H2",
+          "value": {
+            "kind": "date",
+            "value": "2019-08-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "I2",
+          "value": {
+            "kind": "date",
+            "value": "2019-09-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "J2",
+          "value": {
+            "kind": "date",
+            "value": "2019-10-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "K2",
+          "value": {
+            "kind": "date",
+            "value": "2019-11-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "L2",
+          "value": {
+            "kind": "date",
+            "value": "2019-12-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "M2",
+          "value": {
+            "kind": "date",
+            "value": "2020-01-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "N2",
+          "value": {
+            "kind": "date",
+            "value": "2020-02-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "O2",
+          "value": {
+            "kind": "date",
+            "value": "2020-03-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "P2",
+          "value": {
+            "kind": "date",
+            "value": "2020-04-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "Q2",
+          "value": {
+            "kind": "date",
+            "value": "2020-05-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "R2",
+          "value": {
+            "kind": "date",
+            "value": "2020-06-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "S2",
+          "value": {
+            "kind": "date",
+            "value": "2020-07-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "T2",
+          "value": {
+            "kind": "date",
+            "value": "2020-08-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "U2",
+          "value": {
+            "kind": "date",
+            "value": "2020-09-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "V2",
+          "value": {
+            "kind": "date",
+            "value": "2020-10-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "W2",
+          "value": {
+            "kind": "date",
+            "value": "2020-11-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "X2",
+          "value": {
+            "kind": "date",
+            "value": "2020-12-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "Y2",
+          "value": {
+            "kind": "date",
+            "value": "2021-01-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "Z2",
+          "value": {
+            "kind": "date",
+            "value": "2021-02-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AA2",
+          "value": {
+            "kind": "date",
+            "value": "2021-03-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AB2",
+          "value": {
+            "kind": "date",
+            "value": "2021-04-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AC2",
+          "value": {
+            "kind": "date",
+            "value": "2021-05-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AD2",
+          "value": {
+            "kind": "date",
+            "value": "2021-06-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AE2",
+          "value": {
+            "kind": "date",
+            "value": "2021-07-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AF2",
+          "value": {
+            "kind": "date",
+            "value": "2021-08-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AG2",
+          "value": {
+            "kind": "date",
+            "value": "2021-09-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AH2",
+          "value": {
+            "kind": "date",
+            "value": "2021-10-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AI2",
+          "value": {
+            "kind": "date",
+            "value": "2021-11-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AJ2",
+          "value": {
+            "kind": "date",
+            "value": "2021-12-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AK2",
+          "value": {
+            "kind": "date",
+            "value": "2022-01-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AL2",
+          "value": {
+            "kind": "date",
+            "value": "2022-02-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AM2",
+          "value": {
+            "kind": "date",
+            "value": "2022-03-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AN2",
+          "value": {
+            "kind": "date",
+            "value": "2022-04-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AO2",
+          "value": {
+            "kind": "date",
+            "value": "2022-05-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AP2",
+          "value": {
+            "kind": "date",
+            "value": "2022-06-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AQ2",
+          "value": {
+            "kind": "date",
+            "value": "2022-07-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AR2",
+          "value": {
+            "kind": "date",
+            "value": "2022-08-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AS2",
+          "value": {
+            "kind": "date",
+            "value": "2022-09-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AT2",
+          "value": {
+            "kind": "date",
+            "value": "2022-10-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AU2",
+          "value": {
+            "kind": "date",
+            "value": "2022-11-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AV2",
+          "value": {
+            "kind": "date",
+            "value": "2022-12-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AW2",
+          "value": {
+            "kind": "date",
+            "value": "2023-01-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AX2",
+          "value": {
+            "kind": "date",
+            "value": "2023-02-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AY2",
+          "value": {
+            "kind": "date",
+            "value": "2023-03-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "AZ2",
+          "value": {
+            "kind": "date",
+            "value": "2023-04-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BA2",
+          "value": {
+            "kind": "date",
+            "value": "2023-05-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BB2",
+          "value": {
+            "kind": "date",
+            "value": "2023-06-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BC2",
+          "value": {
+            "kind": "date",
+            "value": "2023-07-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BD2",
+          "value": {
+            "kind": "date",
+            "value": "2023-08-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BE2",
+          "value": {
+            "kind": "date",
+            "value": "2023-09-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BF2",
+          "value": {
+            "kind": "date",
+            "value": "2023-10-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BG2",
+          "value": {
+            "kind": "date",
+            "value": "2023-11-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BH2",
+          "value": {
+            "kind": "date",
+            "value": "2023-12-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BI2",
+          "value": {
+            "kind": "date",
+            "value": "2024-01-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BJ2",
+          "value": {
+            "kind": "date",
+            "value": "2024-02-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BK2",
+          "value": {
+            "kind": "date",
+            "value": "2024-03-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BL2",
+          "value": {
+            "kind": "date",
+            "value": "2024-04-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BM2",
+          "value": {
+            "kind": "date",
+            "value": "2024-05-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BN2",
+          "value": {
+            "kind": "date",
+            "value": "2024-06-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BO2",
+          "value": {
+            "kind": "date",
+            "value": "2024-07-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BP2",
+          "value": {
+            "kind": "date",
+            "value": "2024-08-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BQ2",
+          "value": {
+            "kind": "date",
+            "value": "2024-09-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BR2",
+          "value": {
+            "kind": "date",
+            "value": "2024-10-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BS2",
+          "value": {
+            "kind": "date",
+            "value": "2024-11-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BT2",
+          "value": {
+            "kind": "date",
+            "value": "2024-12-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BU2",
+          "value": {
+            "kind": "date",
+            "value": "2025-01-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BV2",
+          "value": {
+            "kind": "date",
+            "value": "2025-02-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BW2",
+          "value": {
+            "kind": "date",
+            "value": "2025-03-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BX2",
+          "value": {
+            "kind": "date",
+            "value": "2025-04-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BY2",
+          "value": {
+            "kind": "date",
+            "value": "2025-05-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "BZ2",
+          "value": {
+            "kind": "date",
+            "value": "2025-06-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "CA2",
+          "value": {
+            "kind": "date",
+            "value": "2025-07-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "CB2",
+          "value": {
+            "kind": "date",
+            "value": "2025-08-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        },
+        {
+          "coordinate": "CC2",
+          "value": {
+            "kind": "date",
+            "value": "2025-09-01T00:00:00"
+          },
+          "number_format": "dd\\.mm\\.yyyy"
+        }
+      ],
+      "row_profile": [
+        {
+          "row": 1,
+          "nonempty": 1,
+          "text": 1
+        },
+        {
+          "row": 2,
+          "nonempty": 91,
+          "date": 91
+        },
+        {
+          "row": 3,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 4,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 5,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 6,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 7,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 8,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 9,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 10,
+          "nonempty": 92,
+          "text": 32,
+          "numeric": 60
+        },
+        {
+          "row": 11,
+          "nonempty": 92,
+          "text": 40,
+          "numeric": 52
+        },
+        {
+          "row": 12,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 13,
+          "nonempty": 92,
+          "text": 75,
+          "numeric": 17
+        },
+        {
+          "row": 14,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 15,
+          "nonempty": 92,
+          "text": 82,
+          "numeric": 10
+        },
+        {
+          "row": 16,
+          "nonempty": 92,
+          "text": 1,
+          "numeric": 91
+        },
+        {
+          "row": 17,
+          "nonempty": 1,
+          "text": 1
+        }
+      ],
+      "column_profile": [
+        {
+          "column": 1,
+          "nonempty": 16,
+          "text": 16
+        },
+        {
+          "column": 2,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 3,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 4,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 5,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 6,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 7,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 8,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 9,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 10,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 11,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 12,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 13,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 14,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 15,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 16,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 17,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 18,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 19,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 20,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 21,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 22,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 23,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 24,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 25,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 26,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 27,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 28,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 29,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 30,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 31,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 32,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 33,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 34,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 35,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 36,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 37,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 38,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 39,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 40,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 41,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 42,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 43,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 44,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 45,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 46,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 47,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 48,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 49,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 50,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 51,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 52,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 53,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 54,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 55,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 56,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 57,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 58,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 13,
+          "text": 1
+        },
+        {
+          "column": 59,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 60,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 61,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 62,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 63,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 64,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 65,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 66,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 67,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 68,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 69,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 12,
+          "text": 2
+        },
+        {
+          "column": 70,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 71,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 72,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 73,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 74,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 75,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 76,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 77,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 78,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 79,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 80,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 81,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 82,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 83,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 84,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 85,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 86,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 87,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 88,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 89,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 90,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 91,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        },
+        {
+          "column": 92,
+          "nonempty": 15,
+          "date": 1,
+          "numeric": 11,
+          "text": 3
+        }
+      ],
+      "freeze_panes": "CI2",
+      "auto_filter_ref": null
+    }
+  ],
+  "acquisition": {
+    "requested_url": "https://cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/02_03_Debt_structure_by_benchmark_interest_rate_type.xlsx",
+    "final_url": "https://cbr.ru/vfs/statistics/BankSector/Loans_to_corporations/02_03_Debt_structure_by_benchmark_interest_rate_type.xlsx",
+    "http_status": 200,
+    "bytes": 26188,
+    "sha256": "8eb860fd3bb806b06fc4e4f0ce0c126d2748708777234e33738c2f677e658f85",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": null,
+    "last_modified": "Tue, 08 Sep 2026 06:05:40 GMT"
+  }
+}

@@ -5,6 +5,7 @@ from collections import Counter, defaultdict
 from decimal import Decimal, InvalidOperation
 from typing import Mapping, Sequence
 
+from .normalization import parse_decimal_text
 from .registry import SOURCES
 
 
@@ -160,21 +161,33 @@ def validate_bundle(
     roles: Counter[str] = Counter()
     source_raw_counts: Counter[str] = Counter()
     source_observed_raw_counts: Counter[str] = Counter()
+    unresolved_numeric: list[dict[str, str]] = []
     for raw in raw_cells:
         sid = str(raw.get("source_id", ""))
         source_raw_counts[sid] += 1
-        if str(raw.get("ooxml_type", "")) == "n" and str(raw.get("value_lexical", "")) != "":
-            try:
-                Decimal(str(raw.get("value_lexical")))
-                numeric_raw += 1
-            except InvalidOperation:
-                pass
+        lexical = str(raw.get("value_lexical", ""))
+        resolved = str(raw.get("text_resolved", ""))
+        if parse_decimal_text(lexical) is not None or parse_decimal_text(resolved) is not None:
+            numeric_raw += 1
         if str(raw.get("formula", "")):
             formula_raw += 1
         role = str(disp_by_id[str(raw["raw_cell_id"])].get("role", ""))
         roles[role] += 1
+        if role == "unmapped_numeric":
+            unresolved_numeric.append({
+                "source_id": sid,
+                "sheet": str(raw.get("sheet_exact", "")),
+                "cell": str(raw.get("cell_coordinate", "")),
+                "value": lexical or resolved,
+            })
         if str(raw["raw_cell_id"]) in observation_raw_ids:
             source_observed_raw_counts[sid] += 1
+
+    if require_complete and unresolved_numeric:
+        raise ValidationError(
+            f"Unmapped numeric source cells block semantic completeness: count={len(unresolved_numeric)} "
+            f"sample={unresolved_numeric[:12]}"
+        )
 
     diag_by_source = {str(d.get("source_id")): d for d in diagnostics}
     missing_diag = sorted(manifest_set - set(diag_by_source))
@@ -191,6 +204,8 @@ def validate_bundle(
         "source_concept_count": len(concepts),
         "dimension_member_count": len(dimension_members),
         "disposition_count": len(dispositions),
+        "unmapped_numeric_count": len(unresolved_numeric),
+        "unmapped_numeric_sample": unresolved_numeric[:50],
         "raw_disposition_coverage": 1.0 if raw_cells else 1.0,
         "observation_raw_lineage_coverage": 1.0 if observations else 1.0,
         "observation_sources": dict(sorted(obs_source_counts.items())),
@@ -206,6 +221,7 @@ def validate_bundle(
             "every_raw_cell_dispositioned": raw_ids == disposition_ids,
             "every_observation_has_raw_lineage": len(observation_raw_ids) == len(obs_ids),
             "every_source_has_observations": all(obs_source_counts[s] > 0 for s in manifest_set),
+            "zero_unmapped_numeric": len(unresolved_numeric) == 0,
             "no_conflicting_semantic_duplicates": True,
         },
     }

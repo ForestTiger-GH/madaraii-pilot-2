@@ -73,7 +73,6 @@ def parse_decimal_text(value: Any) -> Decimal | None:
     s = unicodedata.normalize("NFKC", value).strip().replace("\u00a0", " ")
     if not s or s in {"-", "—", "–", "…", "..", "."}:
         return None
-    # Thousands spaces and decimal comma are common in spreadsheet text values.
     s = re.sub(r"(?<=\d)[ \u202f](?=\d{3}(?:\D|$))", "", s)
     if re.fullmatch(r"[+-]?(?:\d+(?:[.,]\d+)?|[.,]\d+)", s):
         try:
@@ -153,6 +152,10 @@ def infer_unit(*texts: str) -> tuple[str | None, int | None]:
     return None, None
 
 
+def _is_overdue_label(text: str) -> bool:
+    return bool(re.search(r"\bпроср(?:оч(?:енн(?:ая|ой|ые|ых|ую)?)?)?\.?\b", text))
+
+
 def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
     s = normalize_sheet_dispatch(sheet)
     dims: dict[str, str] = {}
@@ -164,12 +167,9 @@ def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
     elif s in {"итого", "всего"} or " итого" in s:
         dims["currency_category"] = "total"
 
-    if "просроч" in s:
+    if _is_overdue_label(s):
         dims["overdue"] = "true"
 
-    # CBR mortgage sheets use abbreviated wording: "по приобр. правам" means
-    # acquired claims only, while "с учетом приобр. прав" means the measure
-    # including acquired claims. These are distinct statistical populations.
     if "с учетом приобр" in s and "прав" in s:
         dims["acquired_claims"] = "included"
     elif "по приобр" in s and "прав" in s:
@@ -198,11 +198,6 @@ def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
             dims["statement_side"] = "assets"
         elif "пассив" in s:
             dims["statement_side"] = "liabilities"
-
-        # This workbook publishes the same statement geometry in four explicit
-        # currency presentations. "валюта" and "в ин. валюте $" are both foreign-
-        # currency denomination; the latter additionally changes the measurement
-        # currency to USD. Denomination and measurement currency remain separate.
         if s.endswith("- всего"):
             dims["currency_category"] = "total"
         elif s.endswith("- рубли"):

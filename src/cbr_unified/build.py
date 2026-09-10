@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import shutil
 import uuid
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Mapping, Sequence
@@ -17,8 +18,12 @@ from .registry import SOURCES, SourceSpec, get_source
 from .validation import validate_bundle
 
 
+BUILD_CONTRACT_VERSION = "TH-CBR-1/implementation-1"
+
+
 @dataclass(frozen=True)
 class BuildResult:
+    build_id: str
     output_dir: Path
     sqlite_path: Path
     validation_path: Path
@@ -42,6 +47,36 @@ def _merge_unique(
         if existing is not None and existing != materialized:
             raise RuntimeError(f"Conflicting {label} identity {identity}")
         target[identity] = materialized
+
+
+def _fingerprints(
+    manifest: Sequence[Mapping[str, object]],
+    sources: Sequence[SourceSpec],
+) -> tuple[str, str]:
+    spec_payload = json.dumps(
+        [asdict(s) for s in sorted(sources, key=lambda s: s.source_id)],
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    spec_sha = hashlib.sha256(spec_payload.encode("utf-8")).hexdigest()
+    revisions = [
+        (str(r.get("source_id", "")), str(r.get("source_revision_id", "")))
+        for r in sorted(manifest, key=lambda r: str(r.get("source_id", "")))
+        if r.get("status") == "ok"
+    ]
+    identity_payload = json.dumps(
+        {
+            "contract": BUILD_CONTRACT_VERSION,
+            "source_spec_sha256": spec_sha,
+            "source_revisions": revisions,
+        },
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    build_id = "bld_" + hashlib.sha256(identity_payload.encode("utf-8")).hexdigest()[:24]
+    return build_id, spec_sha
 
 
 def _write_failure_raw(path: Path, rows: Sequence[Mapping[str, object]]) -> None:
@@ -124,6 +159,8 @@ def _build_into_staging(
         )
         acquisition_mode = "local_binding"
     validate_manifest(manifest, require_complete=require_complete and len(sources) == len(SOURCES))
+    build_id, source_spec_sha256 = _fingerprints(manifest, sources)
+
     # Save the acquisition-state manifest early. If semantic work fails, the
     # retained staging directory still contains exact acquired files and lineage.
     save_manifest(manifest, staging / "source_manifest.acquisition.json")
@@ -164,6 +201,7 @@ def _build_into_staging(
             _write_failure_raw(staging / "failure-evidence" / f"{sid}-raw.csv", raw_cells)
             failure = {
                 "status": "failed",
+                "build_id": build_id,
                 "source_id": sid,
                 "source_revision_id": revision,
                 "error_type": type(exc).__name__,
@@ -173,7 +211,7 @@ def _build_into_staging(
             }
             (staging / "failure.json").write_text(json.dumps(failure, ensure_ascii=False, indent=2), encoding="utf-8")
             raise
-        all_observations.extend(observations)
+        all_observations.extend({"build_id": build_id, **row} for row in observations)
         all_dispositions.extend(dispositions)
         _merge_unique(concepts, source_concepts, key="source_concept_id", label="source concept")
         _merge_unique(members, source_members, key="dimension_member_id", label="dimension member")
@@ -191,6 +229,9 @@ def _build_into_staging(
         diagnostics=diagnostics,
         require_complete=require_complete and len(sources) == len(SOURCES),
     )
+    validation["build_id"] = build_id
+    validation["build_contract_version"] = BUILD_CONTRACT_VERSION
+    validation["source_spec_sha256"] = source_spec_sha256
 
     # Persist final-path locators only after all source processing and validation
     # have passed. Promotion makes those paths true atomically with the product.
@@ -200,6 +241,9 @@ def _build_into_staging(
     finished = datetime.now(timezone.utc).isoformat()
     build_meta = {
         "status": "passed",
+        "build_id": build_id,
+        "build_contract_version": BUILD_CONTRACT_VERSION,
+        "source_spec_sha256": source_spec_sha256,
         "started_at_utc": started,
         "finished_at_utc": finished,
         "acquisition_mode": acquisition_mode,
@@ -209,7 +253,10 @@ def _build_into_staging(
         "validation": validation,
         "source_diagnostics": diagnostics,
     }
-    (staging / "build.json").write_text(json.dumps(build_meta, ensure_ascii=False, indent=2), encoding="utf-8")
+    build_json = json.dumps(build_meta, ensure_ascii=False, indent=2)
+    (staging / "build_manifest.json").write_text(build_json, encoding="utf-8")
+    # Compatibility alias for pilot callers; it is generated from the same owner.
+    (staging / "build.json").write_text(build_json, encoding="utf-8")
 
     paths = persist_bundle(
         data_dir,
@@ -222,7 +269,11 @@ def _build_into_staging(
         diagnostics=diagnostics,
         validation=validation,
     )
+    # The early acquisition manifest exists only to preserve failed-attempt evidence.
+    # A successful promoted product has one current source manifest.
+    (staging / "source_manifest.acquisition.json").unlink(missing_ok=True)
     return BuildResult(
+        build_id=build_id,
         output_dir=final_root,
         sqlite_path=final_root / "data" / Path(paths["sqlite"]).name,
         validation_path=final_root / "data" / Path(paths["validation"]).name,

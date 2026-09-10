@@ -60,6 +60,18 @@ def sqlite_counts(path: Path) -> dict[str, int]:
         con.close()
 
 
+def _assert_bilingual(validation: dict[str, object], label: str) -> None:
+    invariants = validation.get("invariants", {})
+    if not isinstance(invariants, dict) or not invariants.get("bilingual_user_surface_complete"):
+        raise AssertionError(f"{label} build lacks complete bilingual user surface")
+    if int(validation.get("dataset_bilingual_count", -1)) != len(SOURCES):
+        raise AssertionError(f"{label} build has incomplete bilingual dataset catalog")
+    if int(validation.get("concept_bilingual_count", -1)) != int(validation.get("source_concept_count", -2)):
+        raise AssertionError(f"{label} build has incomplete bilingual concept catalog")
+    if int(validation.get("dimension_member_bilingual_count", -1)) != int(validation.get("dimension_member_count", -2)):
+        raise AssertionError(f"{label} build has incomplete bilingual dimension-member catalog")
+
+
 def main(argv: list[str] | None = None) -> int:
     argv = argv or sys.argv[1:]
     root = Path(argv[0]) if argv else Path("_verification")
@@ -89,6 +101,8 @@ def main(argv: list[str] | None = None) -> int:
         raise AssertionError("Validation build identities differ")
     if live_validation.get("unmapped_numeric_count") != 0 or replay_validation.get("unmapped_numeric_count") != 0:
         raise AssertionError("Complete build contains unmapped numeric source cells")
+    _assert_bilingual(live_validation, "Live")
+    _assert_bilingual(replay_validation, "Replay")
     if live_result.source_count != len(SOURCES) or replay_result.source_count != len(SOURCES):
         raise AssertionError(f"Expected {len(SOURCES)} sources in both builds")
     if live_result.raw_cell_count != replay_result.raw_cell_count:
@@ -138,6 +152,8 @@ def main(argv: list[str] | None = None) -> int:
     embedded_validation = db.validation()
     if embedded_validation.get("status") != "passed":
         raise AssertionError("SQLite embedded validation is not passed")
+    if not embedded_validation.get("invariants", {}).get("bilingual_user_surface_complete"):
+        raise AssertionError("SQLite embedded validation lacks bilingual completeness")
     sources_df = db.sources()
     if len(sources_df) != len(SOURCES):
         raise AssertionError("SQLite source count mismatch")
@@ -198,11 +214,18 @@ def main(argv: list[str] | None = None) -> int:
             "formula_raw_cell_count": live_validation.get("formula_raw_cell_count"),
             "unmapped_numeric_count": live_validation.get("unmapped_numeric_count"),
             "identical_semantic_duplicate_groups": len(live_validation.get("identical_semantic_duplicate_groups", [])),
+            "dataset_bilingual_count": live_validation.get("dataset_bilingual_count"),
+            "concept_bilingual_count": live_validation.get("concept_bilingual_count"),
+            "dimension_member_bilingual_count": live_validation.get("dimension_member_bilingual_count"),
+            "concept_translation_statuses": live_validation.get("concept_translation_statuses"),
+            "dimension_member_translation_statuses": live_validation.get("dimension_member_translation_statuses"),
+            "bilingual_user_surface_complete": live_validation.get("invariants", {}).get("bilingual_user_surface_complete"),
         },
         "replay": {
             "build_id": replay_result.build_id,
             "raw_cell_count": replay_result.raw_cell_count,
             "observation_count": replay_result.observation_count,
+            "bilingual_user_surface_complete": replay_validation.get("invariants", {}).get("bilingual_user_surface_complete"),
         },
         "source_revisions_identical": True,
         "deterministic_table_hashes": table_hashes,

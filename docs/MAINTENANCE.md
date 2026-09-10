@@ -2,111 +2,98 @@
 
 ## Principle
 
-A Bank of Russia workbook is an external statistical contract expressed through an Excel presentation. The product may tolerate presentation drift only when the existing source-aware parser still proves the same statistical interpretation.
-
-Unknown structural or semantic variants fail closed.
+A Bank of Russia workbook is an external statistical contract expressed through an Excel presentation. Presentation drift is accepted only when the source-aware parser still proves the same statistical interpretation. Unknown structural or semantic variants fail closed.
 
 ## Routine rebuild
 
-1. Run a fresh online build.
+1. Run a fresh online build into the normal output path. The implementation creates a sibling staging candidate automatically.
 2. Confirm all reviewed registry sources were acquired.
-3. Review `validation.json` and `diagnostics.json`.
+3. Review `build_manifest.json`, `validation.json` and `diagnostics.json`.
 4. Compare source SHA-256 values with the prior accepted build.
 5. For changed revisions, inspect sheet structure, period bindings, concept/dimension changes and raw-cell dispositions.
 6. Run the offline replay from the newly bound `sources/` directory.
-7. Compare deterministic CSV tables between online build and replay.
+7. Confirm the same `build_id` and byte-identical deterministic CSV tables.
+8. Run independent OOXML preservation verification.
 
-A changed hash alone is not an error. It means the source revision changed and requires the normal validation path.
+A changed hash means a new source revision and enters the normal validation path.
+
+## Staging and promotion
+
+Every build attempt is materialized under a sibling `.<output>.staging-*` directory. The requested output path changes only after acquisition, parsing, validation and persistence complete successfully.
+
+If a prior successful output exists, it remains untouched throughout candidate construction. Promotion temporarily moves the prior output to a sibling backup, moves the validated staging candidate into the requested path, then removes the backup. If promotion itself fails, the implementation restores the previous output where the filesystem operation permits it.
+
+A failed build retains its staging directory for diagnosis. When failure occurs during source semantic processing, the retained evidence includes:
+
+- `source_manifest.acquisition.json`;
+- acquired source workbooks;
+- `failure.json` with source revision and failure type;
+- `failure-evidence/<source_id>-raw.csv` for the failing source.
+
+A successful promoted build removes the failure-only acquisition manifest and exposes one canonical `source_manifest.json`.
 
 ## Hard stop conditions
 
-Treat the build as invalid when any of the following occurs:
+Treat a complete build as invalid when any of the following occurs:
 
 - a required registry source cannot be acquired or bound;
 - more than one local file resolves for a source;
 - workbook bytes do not match the recorded hash;
-- a material sheet with numeric data has no recognized period/observation contract;
-- an observation loses its exact raw-cell lineage;
+- a material numeric sheet has no recognized period/observation contract;
+- an observation loses exact raw-cell lineage;
 - a raw source cell lacks a disposition;
+- a numeric source cell remains `unmapped_numeric`;
 - a concept identity collides with different content;
-- a semantic key contains conflicting values;
-- an unknown source layout is accepted only because labels look similar.
+- one complete semantic key contains conflicting values;
+- an unknown source layout would require guessing from label similarity;
+- observations in one complete build do not share one `build_id`.
 
 ## Reviewing a changed source
 
-For each changed workbook:
-
 ### 1. Determine whether change is presentation-only
 
-Examples:
-
-- whitespace or typographic dash change;
-- column width/style change;
-- harmless source comment addition;
-- period extension following the same geometry.
-
-The parser may continue to work unchanged when the resulting observations, dimensions and lineage remain valid.
+Examples include whitespace or typographic-dash changes, cell styling, harmless comments and a period extension following the same proven geometry. The parser may continue unchanged when observations, dimensions and lineage remain valid.
 
 ### 2. Determine whether statistical semantics changed
 
-Review changes to:
+Review changes to population or institutional sector, row/column classification, unit/scale, stock/flow interpretation, period/frequency, currency denomination versus measurement currency, overdue status, maturity, valuation, seasonal adjustment, acquired-rights treatment, territorial aggregation and methodology notes affecting comparability.
 
-- population or institutional sector;
-- row/column classification;
-- unit or scale;
-- stock/flow interpretation;
-- period meaning or frequency;
-- currency denomination versus measurement currency;
-- overdue status;
-- maturity basis/bucket;
-- valuation basis;
-- seasonal adjustment;
-- acquired-rights treatment;
-- territorial aggregation;
-- source methodology notes that alter comparability.
+A semantic change requires a reviewed adapter/source-contract change. It is never resolved by weakening conflict checks or adding aggressive generic text normalization.
 
-A semantic change requires a reviewed adapter/source-contract change. Do not solve it through a more aggressive generic text normalizer.
+### 3. Preserve source identity boundaries
 
-### 3. Preserve prior source identity boundaries
+A continuing registry publication keeps its `source_id`; different workbook bytes create a new SHA-based `source_revision_id`. If a registry entry becomes a materially different statistical product, review whether it requires a new product source identity rather than reusing the old concept space.
 
-A new workbook revision keeps its `source_id` when it is the continuing publication represented by the registry entry. Its `source_revision_id` changes with SHA-256.
+## Adding a registry source
 
-If the Bank of Russia replaces one publication with a materially different statistical product, review whether a new product `source_id` is required rather than silently reusing the old concept space.
-
-## Adding a new registry source
-
-The product registry is intentionally reviewed and static at runtime.
-
-To add a source:
+The runtime registry is reviewed and static. To add a source:
 
 1. establish the authorized registry input;
-2. add one `SourceSpec` with stable `source_id`, names, family, row axis/parser and known classification/period role;
+2. add one `SourceSpec` with stable identity, RU/EN names, family, row axis/parser and known classification/period role;
 3. inspect the workbook exhaustively;
 4. add or refine source-aware parsing semantics;
-5. add fixtures/contracts for distinctive geometry;
+5. add focused fixtures for distinctive geometry and statistical dimensions;
 6. execute full live build and offline replay;
-7. review duplicate/conflict report and raw-cell dispositions;
-8. update schema/documentation only for newly material semantic dimensions.
+7. review duplicate/conflict results and raw-cell dispositions;
+8. run independent preservation verification;
+9. update schema/documentation for newly material semantics.
 
 ## Translation maintenance
 
-Russian source labels remain the identity-bearing evidence. English display names are project translations/transliterations unless an official English source establishes otherwise.
+Russian source labels remain the evidence-bearing source text. English display names are project translations or transparent transliteration fallbacks unless an official English source establishes otherwise. Preserve `translation_status` and the exact Russian label; presentation changes never redefine semantic identity.
 
-Do not replace source Russian text to improve English usability. Add or refine the English projection while retaining `translation_status` and the original source label.
+## Stable consumer identities
 
-## Backward compatibility
+Consumers should prefer:
 
-Stable analytical consumers should prefer:
-
+- `build_id` for an exact complete build;
 - `source_id` for publication identity;
+- `source_revision_id` for exact workbook revision;
 - `source_concept_id` for source-local concept identity;
-- explicit dimensions for statistical slices;
-- `source_revision_id` when exact historical reproducibility is required.
+- explicit dimensions for statistical slices.
 
-Consumers should not use row numbers, worksheet coordinates or display strings as long-lived semantic IDs. Coordinates remain provenance locators, not business identities.
+Worksheet coordinates remain provenance locators. Row numbers, display names and normalized text are not durable business identities.
 
-## Recovery
+## Recovery and acceptance
 
-A failed build writes only into its selected output directory. The accepted prior build remains untouched when builds use a new output directory.
-
-For production use, build into a candidate directory, verify it, then switch the consumer-facing pointer/path atomically. Keep the prior accepted directory until the new build is accepted.
+Build success, independent verification, integration, release and deployment are separate states. A green build candidate should be verified against its exact commit/configuration before it is treated as the accepted Product state. Keep the prior accepted output until the new candidate has passed the required acceptance path.

@@ -158,7 +158,6 @@ def validate_bundle(
     concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
     disp_by_id = {str(row["raw_cell_id"]): row for row in dispositions}
 
-    # Every owner carrying source identity must agree before observation-level checks.
     for raw_id, raw in raw_by_id.items():
         sid = str(raw.get("source_id", ""))
         rev = str(raw.get("source_revision_id", ""))
@@ -318,8 +317,8 @@ def validate_bundle(
         raise ValidationError(f"Missing source diagnostics: {missing_diag}")
 
     invariants = {
-        "single_build_identity": len(build_ids) == 1 if observations else not require_complete,
-        "complete_registry_universe": manifest_set == expected,
+        "single_build_identity": (len(build_ids) == 1) if require_complete and observations else len(build_ids) <= 1,
+        "complete_registry_universe": (manifest_set == expected) if require_complete else True,
         "every_raw_cell_dispositioned": raw_ids == disposition_ids,
         "every_observation_has_raw_lineage": len(observation_raw_ids) == len(obs_ids),
         "every_source_has_observations": all(obs_source_counts[source_id] > 0 for source_id in manifest_set),
@@ -332,7 +331,23 @@ def validate_bundle(
             and len(dimension_members) == sum(member_translation_statuses.values())
         ),
     }
-    failed_invariants = [name for name, value in invariants.items() if not value]
+    blocking_invariants = {
+        "every_raw_cell_dispositioned",
+        "every_observation_has_raw_lineage",
+        "no_conflicting_semantic_duplicates",
+        "cross_owner_source_coherence",
+        "bilingual_user_surface_complete",
+    }
+    if require_complete:
+        blocking_invariants.update({
+            "single_build_identity",
+            "complete_registry_universe",
+            "every_source_has_observations",
+            "zero_unmapped_numeric",
+        })
+    failed_invariants = [
+        name for name in sorted(blocking_invariants) if not invariants[name]
+    ]
     if failed_invariants:
         raise ValidationError(f"Blocking invariants are false: {failed_invariants}")
 

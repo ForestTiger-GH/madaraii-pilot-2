@@ -22,7 +22,7 @@ One row per bound workbook revision.
 
 Primary key: `source_revision_id = <source_id>@sha256:<sha256>`.
 
-Material fields include stable source ID, requested/resolved URL, registry filename, final local source path, SHA-256, size, HTTP metadata, acquisition timestamp and source trust status. Live revisions require `cbr_domain_ooxml_validated`; local replay uses `local_ooxml_validated` before Product validation.
+Persisted material fields include stable source ID, requested/resolved URL, registry filename, final local source path, SHA-256, size, selected HTTP metadata and acquisition timestamp. The root `source_manifest.json` additionally owns acquisition trust evidence, including `trust_status`. Live manifest revisions require `cbr_domain_ooxml_validated`; local replay uses `local_ooxml_validated` before Product validation.
 
 ## `raw_cells`
 
@@ -133,7 +133,9 @@ The query lineage projection exposes observation, concept, raw and disposition s
 
 ## Consumer reliance
 
-`UnifiedDatabase` opens validated databases by default. Diagnostic access to a failed/unvalidated database requires explicit `allow_unvalidated=True`.
+`UnifiedDatabase` opens validated databases by default. Diagnostic access to a failed/unvalidated database requires explicit `allow_unvalidated=True`. The CLI `validate` command is the explicit diagnostic surface and can display embedded failed validation; other consumer commands retain the fail-closed boundary.
+
+Indicator discovery searches concept labels and the bilingual dataset/source context. Dataset context improves discoverability without becoming concept identity.
 
 Pivoting is non-aggregating and also rejects a displayed series that mixes hidden unit/scale/frequency/period-role signatures.
 

@@ -96,8 +96,25 @@ class UnifiedDatabase:
                 if language == "ru"
                 else ("name_en", "name_ru", "label_ru_source")
             )
-            where.append("(" + " OR ".join(f"LOWER({c}) LIKE LOWER(?)" for c in cols) + ")")
+            search_parts = [f"LOWER({c}) LIKE LOWER(?)" for c in cols]
             args.extend([f"%{text}%"] * len(cols))
+
+            # Concept display names may intentionally be generic (for example
+            # ``Debt``) while the dataset supplies the material domain context
+            # (for example ``Housing mortgage loan debt``). Dataset/source names
+            # are therefore part of discovery, not concept identity.
+            needle = text.casefold()
+            matching_source_ids = [
+                source_id
+                for source_id, spec in SOURCE_BY_ID.items()
+                if needle in source_id.casefold()
+                or needle in spec.name_ru.casefold()
+                or needle in spec.name_en.casefold()
+            ]
+            if matching_source_ids:
+                search_parts.append("source_id IN (%s)" % ",".join("?" for _ in matching_source_ids))
+                args.extend(matching_source_ids)
+            where.append("(" + " OR ".join(search_parts) + ")")
         sql = "SELECT * FROM source_concepts"
         if where:
             sql += " WHERE " + " AND ".join(where)

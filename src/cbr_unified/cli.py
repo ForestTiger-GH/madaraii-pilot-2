@@ -113,7 +113,10 @@ def main(argv: list[str] | None = None) -> int:
         }, ensure_ascii=False, indent=2))
         return 0
 
-    db = UnifiedDatabase(args.db)
+    # `validate` is the explicit diagnostic surface and must be able to inspect a
+    # database whose embedded validation is failed. All other commands retain the
+    # ordinary fail-closed consumer boundary.
+    db = UnifiedDatabase(args.db, allow_unvalidated=args.command == "validate")
     if args.command == "validate":
         print(json.dumps(db.validation(), ensure_ascii=False, indent=2))
     elif args.command == "sources":

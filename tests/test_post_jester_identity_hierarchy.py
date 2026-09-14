@@ -286,3 +286,37 @@ def test_explicit_currency_scope_is_inherited_into_child_dimensions(tmp_path):
     assert ruble_dims == {"rubles"}
     assert foreign_dims == {"foreign_currency"}
     assert diagnostics["structural_scope_dimension_updates"] == 12
+
+
+def test_russian_ruble_scope_separates_repeated_ofz_children(tmp_path):
+    path = tmp_path / "debt-like-currency-scope.xlsx"
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "2003-2026"
+    ws["A1"] = "Внешний долг Российской Федерации"
+    ws["B4"], ws["C4"], ws["D4"] = "01.01.2024", "01.04.2024", "01.07.2024"
+
+    ws["A10"] = "ценные бумаги в иностранной валюте"
+    ws["A11"] = "еврооблигации"
+    ws["A12"] = "другие еврооблигации"
+    ws["A13"] = "ОФЗ"
+    ws["B13"], ws["C13"], ws["D13"] = 0, 1, 2
+
+    ws["A14"] = "ценные бумаги в российских рублях"
+    ws["A15"] = "ОФЗ"
+    ws["B15"], ws["C15"], ws["D15"] = 100, 101, 102
+
+    wb.save(path)
+    wb.close()
+
+    observations, _, _, _, _ = _parse(path, _spec("hierarchy", "hierarchy"))
+    foreign = {
+        json.loads(row["dimensions_json"])["currency_category"]
+        for row in observations if row["source_row"] == 13
+    }
+    rubles = {
+        json.loads(row["dimensions_json"])["currency_category"]
+        for row in observations if row["source_row"] == 15
+    }
+    assert foreign == {"foreign_currency"}
+    assert rubles == {"rubles"}

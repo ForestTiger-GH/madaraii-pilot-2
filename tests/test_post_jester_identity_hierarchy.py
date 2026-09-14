@@ -136,10 +136,31 @@ def test_vertical_merged_parent_is_part_of_semantic_stub_identity(tmp_path):
     assert len(legal_small) == 1
     assert len(entrepreneur_small) == 1
     assert legal_small != entrepreneur_small
-    # Top rows already carry the merged parent in their direct row label; only the
-    # two inherited child-label pairs need post-parse rewriting (4 rows × 3 periods).
     assert diagnostics["period_block_concept_rewrites"] == 12
     assert len(concepts) == 6
     contexts = "\n".join(row["source_context"] for row in concepts)
     assert "юридические лица" in contexts
     assert "индивидуальные предприниматели" in contexts
+
+
+def test_region_rows_remain_dimension_members_of_one_measure_concept(tmp_path):
+    path = tmp_path / "regions.xlsx"
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Данные"
+    ws["A1"] = "Задолженность по кредитам, млн руб."
+    ws["B3"], ws["C3"], ws["D3"] = "01.01.2024", "01.02.2024", "01.03.2024"
+    for row_no, (region, base) in enumerate((("Москва", 10), ("Татарстан", 20)), start=4):
+        ws.cell(row_no, 1).value = region
+        ws.cell(row_no, 2).value = base
+        ws.cell(row_no, 3).value = base + 1
+        ws.cell(row_no, 4).value = base + 2
+    wb.save(path)
+    wb.close()
+
+    observations, concepts, members, _, diagnostics = _parse(path, _spec("region"))
+    assert len(observations) == 6
+    assert len(concepts) == 1
+    assert len(members) == 2
+    assert diagnostics["period_block_concept_rewrites"] == 0
+    assert {row["source_concept_id"] for row in observations} == {concepts[0]["source_concept_id"]}

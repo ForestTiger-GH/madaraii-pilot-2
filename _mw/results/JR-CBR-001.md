@@ -8,7 +8,8 @@
 **Prior closure:** `CLOSURE-CBR-001: PASS` remains untouched  
 **Experiment surface:** `jester/jst-0001`  
 **Detailed evidence:** `_mw/evidence/JST-CBR-001.md`  
-**Report state at initial write:** EXPERIMENT COMPLETE / RESTORATION PENDING
+**Restoration evidence:** `_mw/evidence/JST-CBR-001-RESTORATION.md`  
+**Report state:** COMPLETE / RESTORED / HANDED OFF
 
 ## 1. What the Jester tried to do
 
@@ -76,19 +77,25 @@ The exercise also confirmed useful strength in the Product:
 - the existing documentation explicitly separates build success from admitted Product reliance on an exact commit/configuration;
 - unknown/unexplained numeric material is handled conservatively by the disposition gate.
 
-The Jester therefore did not establish that the original closure was unsound. It established a set of new inputs that deserve ordinary engineering interpretation after restoration.
+The Jester therefore did not establish that the original closure was unsound. It established a set of new inputs for ordinary engineering interpretation after restoration.
 
 ## 5. Stop condition
 
-The pre-bound budget of 12 materially different provocations is exhausted. Further candidate ideas either duplicated an existing class or were materially more peripheral. Extending the Jester run would require widening its control shell rather than continuing the authorized trajectory.
+The pre-bound budget of 12 materially different provocations was exhausted. Further candidate ideas either duplicated an existing class or were materially more peripheral. Extending the Jester run would have required widening its control shell rather than continuing the authorized trajectory.
 
 ## 6. Restoration and handoff
 
-Before non-Jester interpretation, the experimental branch is to be restored to the exact admitted Product baseline `4ee8583b3feff7775a956c51812232fa0d0516d2`. Restoration verification will be appended after the ref has been reset and independently read back.
+The experimental branch was force-restored after evidence capture. An independent branch read verified:
 
-The report then routes, under the already bound Commission, to:
+`jester/jst-0001 == 4ee8583b3feff7775a956c51812232fa0d0516d2`.
 
-- `ADI-JR-CBR-001` — `MADARAII-03 ACTOR_INPUT_DEVELOPMENT`;
-- `WSR-JR-CBR-001` — `MADARAII-04 WORK_STATE_RECONCILIATION_AND_ROUTING`.
+The branch-only workflow, disposable reproducers and Product mutations are therefore absent from the current experiment branch state. Canonical `main` Product code was never mutated by the intervention.
 
-Those owners may interpret, consolidate, reject, defer or route the observations. This Jester Report does not make those decisions.
+The mandatory non-Jester continuation completed under the already bound Commission:
+
+- `ADI-JR-CBR-001` — `_mw/results/ADI-JR-CBR-001.md` — `MADARAII-03` — complete;
+- `WSR-JR-CBR-001` — `_mw/results/WSR-JR-CBR-001.md` — `MADARAII-04` — complete.
+
+The reconciliation preserved the original Product admission and closure while creating bounded post-closure Work **candidates**, not commissioned repairs. The highest-materiality candidates concern parser robustness under plausible source drift and source-concept identity durability.
+
+`WORK-JESTER-0001` is closed. This Report remains the standalone session owner; downstream engineering meaning is owned by the developed-input and reconciliation Results above.

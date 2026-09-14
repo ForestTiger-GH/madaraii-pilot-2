@@ -166,15 +166,13 @@ def _period_block_context(
     return ""
 
 
-def _merged_stub_context(ws, *, row_no: int, first_period_col: int) -> str:
-    """Resolve the source-visible left-stub path, including inherited merged parents."""
+def _stub_values(ws, *, row_no: int, first_period_col: int, inherit_merged: bool) -> list[str]:
     values: list[str] = []
     seen: set[str] = set()
-    merged_ranges = tuple(ws.merged_cells.ranges)
-
+    merged_ranges = tuple(ws.merged_cells.ranges) if inherit_merged else ()
     for col_no in range(1, first_period_col):
         value = ws.cell(row_no, col_no).value
-        if value is None:
+        if value is None and inherit_merged:
             for merged in merged_ranges:
                 if (
                     merged.min_row <= row_no <= merged.max_row
@@ -189,7 +187,75 @@ def _merged_stub_context(ws, *, row_no: int, first_period_col: int) -> str:
         if normalized and normalized not in seen:
             values.append(text)
             seen.add(normalized)
-    return " > ".join(values)
+    return values
+
+
+def _section_anchor_context(
+    ws,
+    *,
+    row_no: int,
+    first_period_col: int,
+    header_row: int,
+) -> str:
+    """Find the nearest visible section heading introduced after a blank stub boundary.
+
+    Some CBR hierarchy sheets repeat an identical row tree under sections such as
+    total / rubles / foreign currency while sharing one period header. The section
+    heading is source-visible semantic context. A blank left-stub row (or the period
+    header boundary) starts the section; row numbers never enter the identity.
+    """
+    for candidate in range(row_no - 1, header_row, -1):
+        values = _stub_values(
+            ws,
+            row_no=candidate,
+            first_period_col=first_period_col,
+            inherit_merged=False,
+        )
+        if not values:
+            continue
+        previous_values = (
+            _stub_values(
+                ws,
+                row_no=candidate - 1,
+                first_period_col=first_period_col,
+                inherit_merged=False,
+            )
+            if candidate - 1 > header_row
+            else []
+        )
+        if not previous_values:
+            return " > ".join(values)
+    return ""
+
+
+def _merged_stub_context(
+    ws,
+    *,
+    row_no: int,
+    first_period_col: int,
+    header_row: int,
+) -> str:
+    """Resolve section + visible left-stub path, including inherited merged parents."""
+    parts: list[str] = []
+    section = _section_anchor_context(
+        ws,
+        row_no=row_no,
+        first_period_col=first_period_col,
+        header_row=header_row,
+    )
+    if section:
+        parts.append(f"section={section}")
+    stub = " > ".join(
+        _stub_values(
+            ws,
+            row_no=row_no,
+            first_period_col=first_period_col,
+            inherit_merged=True,
+        )
+    )
+    if stub:
+        parts.append(f"row={stub}")
+    return " | ".join(parts)
 
 
 def _concept_id(source_id: str, local_key: str) -> str:
@@ -368,6 +434,7 @@ def parse_source_checked(
                                 ws,
                                 row_no=source_row,
                                 first_period_col=first_period_col,
+                                header_row=header_row,
                             )
 
                 metadata_sheet = any(

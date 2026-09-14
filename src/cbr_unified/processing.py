@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import re
 import tempfile
 from collections import defaultdict
@@ -132,6 +133,140 @@ def _semantic_view(xlsx_path: str | Path, spec: SourceSpec) -> Iterator[Path]:
         temp_path.unlink(missing_ok=True)
 
 
+def _period_block_context(
+    ws,
+    *,
+    header_row: int,
+    first_period_col: int,
+    previous_header_row: int | None,
+) -> str:
+    """Return the nearest source-visible semantic heading for one period block.
+
+    Repeated CBR matrices often use ``measure heading -> date row -> values``.
+    The heading is a durable source semantic cue; the physical row number is not.
+    Search is bounded by the prior period header so an earlier block cannot leak
+    into a later block when the later block has no explicit heading.
+    """
+    lower_bound = (previous_header_row + 1) if previous_header_row is not None else 1
+    generic = {
+        "дата",
+        "отчетная дата",
+        "отчётная дата",
+        "период",
+        "на дату",
+        "date",
+        "reporting date",
+    }
+    for row_no in range(header_row - 1, lower_bound - 1, -1):
+        values: list[str] = []
+        for col_no in range(1, first_period_col):
+            value = ws.cell(row_no, col_no).value
+            if not isinstance(value, str) or not value.strip():
+                continue
+            text = " ".join(value.split())
+            normalized = normalize_text(text)
+            if normalized in generic:
+                continue
+            values.append(text)
+        if values:
+            return " | ".join(values)
+    return ""
+
+
+def _concept_id(source_id: str, local_key: str) -> str:
+    payload = f"{source_id}\x1f{local_key}".encode("utf-8")
+    return "sc_" + hashlib.sha256(payload).hexdigest()[:24]
+
+
+def _split_repeated_block_concepts(
+    observations: list[dict[str, object]],
+    concepts: list[dict[str, str]],
+    *,
+    period_rows_by_sheet: Mapping[str, list[int]],
+    block_context_by_sheet_header: Mapping[tuple[str, int], str],
+) -> tuple[list[dict[str, str]], int]:
+    """Split only concepts proven to span distinct semantic period-block headings.
+
+    This is intentionally conservative. A concept is rewritten only when the same
+    preliminary source-local concept appears under two or more distinct non-empty
+    block headings. Repeated blocks carrying the same heading remain one concept;
+    any conflicting overlap is then left for normal semantic duplicate validation.
+    """
+    concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
+    obs_context: dict[str, str] = {}
+    contexts_by_concept: dict[str, set[str]] = defaultdict(set)
+
+    for obs in observations:
+        sheet = str(obs.get("sheet_exact", ""))
+        try:
+            source_row = int(obs.get("source_row", 0))
+        except (TypeError, ValueError):
+            continue
+        headers = [row for row in period_rows_by_sheet.get(sheet, []) if row < source_row]
+        if not headers:
+            continue
+        header_row = headers[-1]
+        context = block_context_by_sheet_header.get((sheet, header_row), "")
+        normalized = normalize_text(context)
+        if not normalized:
+            continue
+        observation_id = str(obs.get("observation_id", ""))
+        concept_id = str(obs.get("source_concept_id", ""))
+        obs_context[observation_id] = context
+        contexts_by_concept[concept_id].add(normalized)
+
+    affected = {
+        concept_id
+        for concept_id, contexts in contexts_by_concept.items()
+        if len(contexts) > 1
+    }
+    if not affected:
+        return concepts, 0
+
+    rewritten: dict[str, dict[str, str]] = {
+        concept_id: dict(row)
+        for concept_id, row in concept_by_id.items()
+        if concept_id not in affected
+    }
+    split_count = 0
+
+    for obs in observations:
+        old_id = str(obs.get("source_concept_id", ""))
+        if old_id not in affected:
+            continue
+        observation_id = str(obs.get("observation_id", ""))
+        context = obs_context.get(observation_id, "")
+        if not context:
+            raise SourceVariantError(
+                f"{obs.get('source_id')}/{obs.get('sheet_exact')}: repeated concept {old_id} lacks semantic period-block context"
+            )
+        original = concept_by_id[old_id]
+        local_key = (
+            str(original.get("source_local_key", ""))
+            + "|period_block|"
+            + normalize_text(context)
+        )
+        source_id = str(original.get("source_id", obs.get("source_id", "")))
+        new_id = _concept_id(source_id, local_key)
+        candidate = dict(original)
+        candidate["source_concept_id"] = new_id
+        candidate["source_local_key"] = local_key
+        prior_context = str(candidate.get("source_context", "")).strip()
+        candidate["source_context"] = (
+            f"{prior_context} | period block: {context}" if prior_context else f"period block: {context}"
+        )
+        existing = rewritten.get(new_id)
+        if existing is not None and existing != candidate:
+            raise SourceVariantError(
+                f"{source_id}: conflicting concept materialization for period block {context!r}"
+            )
+        rewritten[new_id] = candidate
+        obs["source_concept_id"] = new_id
+        split_count += 1
+
+    return list(rewritten.values()), split_count
+
+
 def parse_source_checked(
     xlsx_path: str | Path,
     *,
@@ -162,17 +297,30 @@ def parse_source_checked(
             raw_by_sheet[str(row["sheet_exact"])].append(row)
 
         wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
+        period_rows_by_sheet: dict[str, list[int]] = {}
+        block_context_by_sheet_header: dict[tuple[str, int], str] = {}
         try:
             for ws in wb.worksheets:
                 bindings = discover_period_bindings(ws, spec.source_id)
                 period_coords = {b.coordinate: b for b in bindings}
                 period_rows = sorted({b.header_row for b in bindings})
+                period_rows_by_sheet[ws.title] = period_rows
                 first_period_col_by_row: dict[int, int] = {}
                 for b in bindings:
                     first_period_col_by_row[b.header_row] = min(
                         b.column,
                         first_period_col_by_row.get(b.header_row, b.column),
                     )
+                for index, header_row in enumerate(period_rows):
+                    first_period_col = first_period_col_by_row[header_row]
+                    previous_header = period_rows[index - 1] if index > 0 else None
+                    block_context_by_sheet_header[(ws.title, header_row)] = _period_block_context(
+                        ws,
+                        header_row=header_row,
+                        first_period_col=first_period_col,
+                        previous_header_row=previous_header,
+                    )
+
                 metadata_sheet = any(
                     token in normalize_text(ws.title)
                     for token in ("методолог", "metadata", "метадан")
@@ -218,10 +366,17 @@ def parse_source_checked(
                     if current.get("role") == "non_observation_numeric":
                         current.update({"role": "unmapped_numeric", "reason": "numeric_value_without_admitted_semantic_role"})
 
+            concepts, split_count = _split_repeated_block_concepts(
+                observations,
+                concepts,
+                period_rows_by_sheet=period_rows_by_sheet,
+                block_context_by_sheet_header=block_context_by_sheet_header,
+            )
             unresolved = sum(1 for row in dispositions if row.get("role") == "unmapped_numeric")
             diagnostics["unmapped_numeric_count"] = unresolved
             diagnostics["numeric_disposition_gate"] = "passed" if unresolved == 0 else "failed"
             diagnostics["semantic_view"] = "exchange_calendar_compatibility" if spec.source_id == "exchange_rate" else "source"
+            diagnostics["period_block_concept_rewrites"] = split_count
         finally:
             wb.close()
     return observations, concepts, members, dispositions, diagnostics

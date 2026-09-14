@@ -320,3 +320,76 @@ def test_russian_ruble_scope_separates_repeated_ofz_children(tmp_path):
     }
     assert foreign == {"foreign_currency"}
     assert rubles == {"rubles"}
+
+
+def test_exact_national_currency_heading_is_ruble_scope(tmp_path):
+    path = tmp_path / "national-currency-scope.xlsx"
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "2012-2026"
+    ws["A1"] = "Внешний долг Российской Федерации"
+    ws["B3"], ws["C3"], ws["D3"] = "01.01.2024", "01.04.2024", "01.07.2024"
+
+    ws["A4"] = "Иностранная валюта"
+    ws["A5"] = "Долговые ценные бумаги"
+    ws["B5"], ws["C5"], ws["D5"] = 10, 11, 12
+    ws["A7"] = "Национальная валюта"
+    ws["A8"] = "Долговые ценные бумаги"
+    ws["B8"], ws["C8"], ws["D8"] = 20, 21, 22
+
+    wb.save(path)
+    wb.close()
+
+    observations, _, _, _, _ = _parse(path, _spec("hierarchy", "hierarchy"))
+    foreign = {
+        json.loads(row["dimensions_json"])["currency_category"]
+        for row in observations if row["source_row"] == 5
+    }
+    rubles = {
+        json.loads(row["dimensions_json"])["currency_category"]
+        for row in observations if row["source_row"] == 8
+    }
+    assert foreign == {"foreign_currency"}
+    assert rubles == {"rubles"}
+
+
+def test_short_long_obligation_parent_disambiguates_repeated_instruments(tmp_path):
+    path = tmp_path / "debt-maturity-like.xlsx"
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "2014-2022"
+    ws["A1"] = "Внешний долг Российской Федерации по срокам погашения"
+    ws["B3"], ws["C3"], ws["D3"] = "01.01.2024", "01.04.2024", "01.07.2024"
+
+    ws["A4"] = "Другие финансовые организации"
+    ws["A5"] = "Краткосрочные обязательства"
+    ws["A6"] = "Долговые ценные бумаги"
+    ws["A7"] = "Cсуды и займы, депозиты"
+    ws["A8"] = "Прочие долговые обязательства"
+    for row_no, base in ((6, 10), (7, 20), (8, 30)):
+        ws.cell(row_no, 2).value = base
+        ws.cell(row_no, 3).value = base + 1
+        ws.cell(row_no, 4).value = base + 2
+
+    ws["A9"] = "Долгосрочные обязательства"
+    ws["A10"] = "Долговые ценные бумаги"
+    ws["A11"] = "Cсуды и займы, депозиты"
+    ws["A12"] = "Прочие долговые обязательства"
+    for row_no, base in ((10, 40), (11, 50), (12, 60)):
+        ws.cell(row_no, 2).value = base
+        ws.cell(row_no, 3).value = base + 1
+        ws.cell(row_no, 4).value = base + 2
+
+    wb.save(path)
+    wb.close()
+
+    observations, concepts, _, _, diagnostics = _parse(path, _spec("hierarchy", "hierarchy"))
+    short_ids = {row["source_concept_id"] for row in observations if row["source_row"] == 7}
+    long_ids = {row["source_concept_id"] for row in observations if row["source_row"] == 11}
+    assert len(short_ids) == 1
+    assert len(long_ids) == 1
+    assert short_ids != long_ids
+    assert diagnostics["period_block_concept_rewrites"] > 0
+    contexts = "\n".join(row["source_context"] for row in concepts)
+    assert "maturity_parent=Краткосрочные обязательства" in contexts
+    assert "maturity_parent=Долгосрочные обязательства" in contexts

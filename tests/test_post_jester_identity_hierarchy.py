@@ -136,7 +136,9 @@ def test_vertical_merged_parent_is_part_of_semantic_stub_identity(tmp_path):
     assert len(legal_small) == 1
     assert len(entrepreneur_small) == 1
     assert legal_small != entrepreneur_small
-    assert diagnostics["period_block_concept_rewrites"] == 18
+    # Top rows already carry the merged parent in their direct row label; only the
+    # two inherited child-label pairs need post-parse rewriting (4 rows × 3 periods).
+    assert diagnostics["period_block_concept_rewrites"] == 12
     assert len(concepts) == 6
     contexts = "\n".join(row["source_context"] for row in concepts)
     assert "юридические лица" in contexts

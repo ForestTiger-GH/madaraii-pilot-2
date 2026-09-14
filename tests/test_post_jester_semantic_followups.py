@@ -67,15 +67,23 @@ def test_exchange_axis_measure_headings_split_identical_indicator_labels(tmp_pat
         path,
         _spec("exchange_rate", "indicator", "exchange"),
     )
-    concept_ids = {
+    concept_by_id = {row["source_concept_id"]: row for row in concepts}
+    observed_contexts = {}
+    for source_row in (5, 7, 9):
+        concept_id = next(
+            row["source_concept_id"]
+            for row in observations
+            if row["source_row"] == source_row
+        )
+        observed_contexts[source_row] = concept_by_id[concept_id]["source_context"].lower()
+
+    assert len(set(
         next(row["source_concept_id"] for row in observations if row["source_row"] == source_row)
         for source_row in (5, 7, 9)
-    }
-    assert len(concept_ids) == 3
-    contexts = "\n".join(row["source_context"] for row in concepts).lower()
-    assert "к декабрю предыдущего года" in contexts
-    assert "к предыдущему периоду" in contexts
-    assert "к соответствующему периоду предыдущего года" in contexts
+    )) == 3
+    assert "к декабрю предыдущего года" in observed_contexts[5], observed_contexts
+    assert "к предыдущему периоду" in observed_contexts[7], observed_contexts
+    assert "к соответствующему периоду предыдущего года" in observed_contexts[9], observed_contexts
     assert diagnostics["exchange_measure_context_rewrites"] == 9
 
 

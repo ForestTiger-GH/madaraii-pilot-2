@@ -3,10 +3,12 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import platform
 import shutil
 import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
+from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from typing import Mapping, Sequence
 
@@ -14,11 +16,12 @@ from .acquisition import bind_local_sources, download_sources, save_manifest, va
 from .persistence import persist_bundle
 from .processing import parse_source_checked
 from .raw import extract_raw_cells
-from .registry import SOURCES, SourceSpec, get_source
+from .registry import SOURCES, SourceSpec
 from .validation import validate_bundle
 
 
-BUILD_CONTRACT_VERSION = "TH-CBR-1/implementation-1"
+BUILD_CONTRACT_VERSION = "TH-CBR-1.2/implementation-2"
+_RUNTIME_PACKAGES = ("requests", "openpyxl", "pandas")
 
 
 @dataclass(frozen=True)
@@ -49,27 +52,47 @@ def _merge_unique(
         target[identity] = materialized
 
 
+def _implementation_fingerprint() -> tuple[str, dict[str, str]]:
+    package_dir = Path(__file__).resolve().parent
+    hasher = hashlib.sha256()
+    for path in sorted(package_dir.glob("*.py"), key=lambda item: item.name):
+        hasher.update(path.name.encode("utf-8"))
+        hasher.update(b"\x00")
+        hasher.update(path.read_bytes())
+        hasher.update(b"\x00")
+    runtime: dict[str, str] = {"python": platform.python_version()}
+    for package in _RUNTIME_PACKAGES:
+        try:
+            runtime[package] = version(package)
+        except PackageNotFoundError:
+            runtime[package] = "missing"
+    return hasher.hexdigest(), runtime
+
+
 def _fingerprints(
     manifest: Sequence[Mapping[str, object]],
     sources: Sequence[SourceSpec],
 ) -> tuple[str, str]:
     spec_payload = json.dumps(
-        [asdict(s) for s in sorted(sources, key=lambda s: s.source_id)],
+        [asdict(source) for source in sorted(sources, key=lambda item: item.source_id)],
         ensure_ascii=False,
         sort_keys=True,
         separators=(",", ":"),
     )
     spec_sha = hashlib.sha256(spec_payload.encode("utf-8")).hexdigest()
     revisions = [
-        (str(r.get("source_id", "")), str(r.get("source_revision_id", "")))
-        for r in sorted(manifest, key=lambda r: str(r.get("source_id", "")))
-        if r.get("status") == "ok"
+        (str(row.get("source_id", "")), str(row.get("source_revision_id", "")))
+        for row in sorted(manifest, key=lambda item: str(item.get("source_id", "")))
+        if row.get("status") == "ok"
     ]
+    implementation_sha, runtime = _implementation_fingerprint()
     identity_payload = json.dumps(
         {
             "contract": BUILD_CONTRACT_VERSION,
             "source_spec_sha256": spec_sha,
             "source_revisions": revisions,
+            "implementation_sha256": implementation_sha,
+            "runtime": runtime,
         },
         ensure_ascii=False,
         sort_keys=True,
@@ -94,8 +117,8 @@ def _write_failure_raw(path: Path, rows: Sequence[Mapping[str, object]]) -> None
         "text_resolved",
         "formula",
     )
-    with path.open("w", encoding="utf-8-sig", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fields)
+    with path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
         for row in rows:
             writer.writerow({key: row.get(key, "") for key in fields})
@@ -122,7 +145,8 @@ def _promote(staging: Path, final_root: Path) -> None:
         final_root.rename(backup)
     try:
         staging.rename(final_root)
-    except Exception:
+    except BaseException:
+        # Restoration must also run for operator interruption between the two renames.
         if had_previous and backup.exists() and not final_root.exists():
             backup.rename(final_root)
         raise
@@ -145,6 +169,10 @@ def _build_into_staging(
     source_dir.mkdir(parents=True, exist_ok=True)
     data_dir.mkdir(parents=True, exist_ok=True)
 
+    source_by_id = {source.source_id: source for source in sources}
+    if len(source_by_id) != len(sources):
+        raise ValueError("Build sources contain duplicate source_id")
+
     started = datetime.now(timezone.utc).isoformat()
     if input_dir is None:
         manifest = download_sources(source_dir, sources=sources, require_complete=require_complete)
@@ -160,9 +188,8 @@ def _build_into_staging(
         acquisition_mode = "local_binding"
     validate_manifest(manifest, require_complete=require_complete and len(sources) == len(SOURCES))
     build_id, source_spec_sha256 = _fingerprints(manifest, sources)
+    implementation_sha256, runtime_versions = _implementation_fingerprint()
 
-    # Save the acquisition-state manifest early. If semantic work fails, the
-    # retained staging directory still contains exact acquired files and lineage.
     save_manifest(manifest, staging / "source_manifest.acquisition.json")
 
     all_raw: list[dict[str, object]] = []
@@ -177,14 +204,17 @@ def _build_into_staging(
             if require_complete:
                 raise RuntimeError(f"Source {record.get('source_id')} was not bound")
             continue
-        sid = str(record["source_id"])
-        spec = get_source(sid)
+        source_id = str(record["source_id"])
+        try:
+            spec = source_by_id[source_id]
+        except KeyError as exc:
+            raise RuntimeError(f"Manifest source {source_id} is absent from the exact build SourceSpec set") from exc
         path = Path(str(record["local_path"]))
         revision = str(record["source_revision_id"])
         sha = str(record["sha256"])
         raw_cells = extract_raw_cells(
             path,
-            source_id=sid,
+            source_id=source_id,
             source_revision_id=revision,
             file_sha256=sha,
         )
@@ -198,15 +228,15 @@ def _build_into_staging(
                 raw_cells=raw_cells,
             )
         except Exception as exc:
-            _write_failure_raw(staging / "failure-evidence" / f"{sid}-raw.csv", raw_cells)
+            _write_failure_raw(staging / "failure-evidence" / f"{source_id}-raw.csv", raw_cells)
             failure = {
                 "status": "failed",
                 "build_id": build_id,
-                "source_id": sid,
+                "source_id": source_id,
                 "source_revision_id": revision,
                 "error_type": type(exc).__name__,
                 "error": str(exc),
-                "raw_evidence": str(staging / "failure-evidence" / f"{sid}-raw.csv"),
+                "raw_evidence": str(staging / "failure-evidence" / f"{source_id}-raw.csv"),
                 "failed_at_utc": datetime.now(timezone.utc).isoformat(),
             }
             (staging / "failure.json").write_text(json.dumps(failure, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -229,12 +259,14 @@ def _build_into_staging(
         diagnostics=diagnostics,
         require_complete=require_complete and len(sources) == len(SOURCES),
     )
-    validation["build_id"] = build_id
-    validation["build_contract_version"] = BUILD_CONTRACT_VERSION
-    validation["source_spec_sha256"] = source_spec_sha256
+    validation.update({
+        "build_id": build_id,
+        "build_contract_version": BUILD_CONTRACT_VERSION,
+        "source_spec_sha256": source_spec_sha256,
+        "implementation_sha256": implementation_sha256,
+        "runtime_versions": runtime_versions,
+    })
 
-    # Persist final-path locators only after all source processing and validation
-    # have passed. Promotion makes those paths true atomically with the product.
     final_manifest = _rebase_manifest_paths(manifest, final_root=final_root)
     manifest_path = staging / "source_manifest.json"
     save_manifest(final_manifest, manifest_path)
@@ -244,6 +276,8 @@ def _build_into_staging(
         "build_id": build_id,
         "build_contract_version": BUILD_CONTRACT_VERSION,
         "source_spec_sha256": source_spec_sha256,
+        "implementation_sha256": implementation_sha256,
+        "runtime_versions": runtime_versions,
         "started_at_utc": started,
         "finished_at_utc": finished,
         "acquisition_mode": acquisition_mode,
@@ -255,7 +289,6 @@ def _build_into_staging(
     }
     build_json = json.dumps(build_meta, ensure_ascii=False, indent=2)
     (staging / "build_manifest.json").write_text(build_json, encoding="utf-8")
-    # Compatibility alias for pilot callers; it is generated from the same owner.
     (staging / "build.json").write_text(build_json, encoding="utf-8")
 
     paths = persist_bundle(
@@ -269,8 +302,6 @@ def _build_into_staging(
         diagnostics=diagnostics,
         validation=validation,
     )
-    # The early acquisition manifest exists only to preserve failed-attempt evidence.
-    # A successful promoted product has one current source manifest.
     (staging / "source_manifest.acquisition.json").unlink(missing_ok=True)
     return BuildResult(
         build_id=build_id,
@@ -292,13 +323,7 @@ def build_database(
     sources: Sequence[SourceSpec] = SOURCES,
     require_complete: bool = True,
 ) -> BuildResult:
-    """Build, validate and atomically promote one unified database candidate.
-
-    A sibling staging directory is used for every attempt. Existing successful
-    output is replaced only after full validation and persistence succeed. On a
-    failed attempt the staging directory is retained with acquired source files,
-    the acquisition manifest and source-local raw failure evidence where available.
-    """
+    """Build, validate and atomically promote one unified database candidate."""
     final_root = Path(output_dir)
     final_root.parent.mkdir(parents=True, exist_ok=True)
     staging = final_root.with_name(f".{final_root.name}.staging-{uuid.uuid4().hex[:10]}")

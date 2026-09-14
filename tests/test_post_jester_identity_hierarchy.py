@@ -183,7 +183,6 @@ def test_hierarchy_repeated_tree_is_disambiguated_by_section_anchor(tmp_path):
         ws.cell(start + 1, 1).value = "  Итого"
         for offset, value in enumerate((base, base + 1, base + 2), start=2):
             ws.cell(start + 1, offset).value = value
-        # Leave a blank source-stub row before the next section.
 
     wb.save(path)
     wb.close()
@@ -199,3 +198,52 @@ def test_hierarchy_repeated_tree_is_disambiguated_by_section_anchor(tmp_path):
     contexts = "\n".join(row["source_context"] for row in concepts)
     assert "в рублях" in contexts
     assert "в иностранной валюте" in contexts
+
+
+def test_nested_hierarchy_uses_rarity_ancestry_for_repeated_children(tmp_path):
+    path = tmp_path / "nested-hierarchy.xlsx"
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Квартал (номинальная стоимость)"
+    ws["A1"] = "Выпущенные долговые ценные бумаги по номинальной стоимости"
+    ws["B3"], ws["C3"], ws["D3"] = "01.01.2024", "01.04.2024", "01.07.2024"
+
+    rows = [
+        (4, "Выпущенные долговые ценные бумаги - Итого", None),
+        (5, "Итого", None),
+        (6, "краткосрочные", 10),
+        (7, "Центральный банк", None),
+        (8, "краткосрочные", 20),
+        (9, "Кредитные организации", None),
+        (10, "краткосрочные", 30),
+        (12, "Выпущенные долговые ценные бумаги в рублях", None),
+        (13, "Итого", None),
+        (14, "краткосрочные", 40),
+        (15, "Центральный банк", None),
+        (16, "краткосрочные", 50),
+        (17, "Кредитные организации", None),
+        (18, "краткосрочные", 60),
+    ]
+    for row_no, label, base in rows:
+        ws.cell(row_no, 1).value = label
+        if base is not None:
+            ws.cell(row_no, 2).value = base
+            ws.cell(row_no, 3).value = base + 1
+            ws.cell(row_no, 4).value = base + 2
+
+    wb.save(path)
+    wb.close()
+
+    observations, concepts, _, _, diagnostics = _parse(path, _spec("hierarchy", "hierarchy"))
+    child_rows = (6, 8, 10, 14, 16, 18)
+    child_ids = {
+        next(row["source_concept_id"] for row in observations if row["source_row"] == source_row)
+        for source_row in child_rows
+    }
+    assert len(child_ids) == len(child_rows)
+    assert diagnostics["period_block_concept_rewrites"] == 18
+    assert len(concepts) == len(child_rows)
+    contexts = "\n".join(row["source_context"] for row in concepts)
+    assert "Центральный банк" in contexts
+    assert "Кредитные организации" in contexts
+    assert "в рублях" in contexts

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 import tempfile
 from collections import Counter, defaultdict
@@ -11,7 +12,7 @@ from typing import Iterator, Mapping
 from openpyxl import load_workbook
 from openpyxl.utils.cell import coordinate_to_tuple
 
-from .normalization import normalize_text, parse_decimal_text
+from .normalization import normalize_text, parse_decimal_text, stable_dimensions_json
 from .registry import SourceSpec
 from .semantic import SourceVariantError, discover_period_bindings, parse_source
 
@@ -316,6 +317,41 @@ def _section_anchor_context(
     )
 
 
+def _structural_currency_scope(
+    ws,
+    *,
+    row_no: int,
+    first_period_col: int,
+    header_row: int,
+) -> dict[str, str]:
+    """Inherit only explicit currency scope headings from the source stub.
+
+    The nearest explicit ``в рублях`` / foreign-currency heading governs following
+    child rows until another currency heading appears. Generic totals and unrelated
+    headings never create a currency value. Existing row/sheet dimensions retain
+    precedence when this inherited scope is applied.
+    """
+    for candidate in range(row_no, header_row, -1):
+        values = _stub_values(
+            ws,
+            row_no=candidate,
+            first_period_col=first_period_col,
+            inherit_merged=True,
+        )
+        if not values:
+            continue
+        raw_text = " > ".join(values)
+        text = normalize_text(raw_text)
+        if "инвалют" in text or ("иностран" in text and "валют" in text) or "в валюте" in text:
+            dims = {"currency_category": "foreign_currency"}
+            if "$" in raw_text or "доллар" in text:
+                dims["measurement_currency"] = "USD"
+            return dims
+        if "в руб" in text or text.startswith("руб"):
+            return {"currency_category": "rubles"}
+    return {}
+
+
 def _merged_stub_context(
     ws,
     *,
@@ -475,6 +511,7 @@ def parse_source_checked(
         first_period_col_by_sheet_header: dict[tuple[str, int], int] = {}
         block_context_by_sheet_header: dict[tuple[str, int], str] = {}
         stub_context_by_sheet_row: dict[tuple[str, int], str] = {}
+        scope_dimensions_by_sheet_row: dict[tuple[str, int], dict[str, str]] = {}
         concept_row_axis = spec.row_axis not in {"region", "activity"}
         try:
             observations_by_sheet: dict[str, list[dict[str, object]]] = defaultdict(list)
@@ -524,6 +561,12 @@ def parse_source_checked(
                                 first_period_col=first_period_col,
                                 header_row=header_row,
                             )
+                            scope_dimensions_by_sheet_row[key] = _structural_currency_scope(
+                                ws,
+                                row_no=source_row,
+                                first_period_col=first_period_col,
+                                header_row=header_row,
+                            )
 
                 metadata_sheet = any(
                     token in normalize_text(ws.title)
@@ -564,7 +607,36 @@ def parse_source_checked(
                     if current.get("role") == "non_observation_numeric":
                         current.update({"role": "unmapped_numeric", "reason": "numeric_value_without_admitted_semantic_role"})
 
+            structural_scope_updates = 0
             if concept_row_axis:
+                for obs in observations:
+                    try:
+                        source_row = int(obs.get("source_row", 0))
+                    except (TypeError, ValueError):
+                        continue
+                    key = (str(obs.get("sheet_exact", "")), source_row)
+                    inherited = scope_dimensions_by_sheet_row.get(key, {})
+                    if not inherited:
+                        continue
+                    try:
+                        dims = json.loads(str(obs.get("dimensions_json", "{}")))
+                    except json.JSONDecodeError as exc:
+                        raise SourceVariantError(
+                            f"{spec.source_id}: parser emitted invalid dimensions_json before structural scope"
+                        ) from exc
+                    if not isinstance(dims, dict):
+                        raise SourceVariantError(
+                            f"{spec.source_id}: parser emitted non-object dimensions_json before structural scope"
+                        )
+                    changed = False
+                    for dimension, value in inherited.items():
+                        if dimension not in dims:
+                            dims[dimension] = value
+                            changed = True
+                    if changed:
+                        obs["dimensions_json"] = stable_dimensions_json(dims)
+                        structural_scope_updates += 1
+
                 concepts, split_count = _split_repeated_block_concepts(
                     observations,
                     concepts,
@@ -575,12 +647,14 @@ def parse_source_checked(
                 )
             else:
                 split_count = 0
+                structural_scope_updates = 0
 
             unresolved = sum(1 for row in dispositions if row.get("role") == "unmapped_numeric")
             diagnostics["unmapped_numeric_count"] = unresolved
             diagnostics["numeric_disposition_gate"] = "passed" if unresolved == 0 else "failed"
             diagnostics["semantic_view"] = "exchange_calendar_compatibility" if spec.source_id == "exchange_rate" else "source"
             diagnostics["period_block_concept_rewrites"] = split_count
+            diagnostics["structural_scope_dimension_updates"] = structural_scope_updates
         finally:
             wb.close()
     return observations, concepts, members, dispositions, diagnostics

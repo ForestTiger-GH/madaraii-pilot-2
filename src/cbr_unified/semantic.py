@@ -227,6 +227,52 @@ def _row_label(ws, row: int, first_period_col: int) -> str:
     return " | ".join(values)
 
 
+def _row_indent_level(ws, row: int, first_period_col: int) -> int | None:
+    """Return a conservative presentation hierarchy level for the first textual label cell."""
+    for c in range(1, first_period_col):
+        cell = ws.cell(row, c)
+        value = cell.value
+        if not isinstance(value, str) or not value.strip():
+            continue
+        raw = value.replace("\r", "").replace("\n", " ")
+        leading = len(raw) - len(raw.lstrip(" \t"))
+        tabs = len(raw[:leading]) - len(raw[:leading].replace("\t", ""))
+        spaces = leading - tabs
+        alignment_indent = int(cell.alignment.indent or 0)
+        return alignment_indent * 4 + tabs * 4 + spaces
+    return None
+
+
+def _row_hierarchy_context(
+    ws,
+    row: int,
+    first_period_col: int,
+    header_row: int,
+) -> str:
+    """Build a stable semantic ancestry from source indentation, never from row number.
+
+    Many CBR sheets repeat identical child labels under different measure sections.
+    Physical row position is presentation geometry; the nearest lower-indentation
+    ancestors are source-visible semantic context and survive ordinary row shifts.
+    """
+    level = _row_indent_level(ws, row, first_period_col)
+    if level is None or level <= 0:
+        return ""
+    ancestors: list[str] = []
+    threshold = level
+    for previous in range(row - 1, header_row, -1):
+        previous_level = _row_indent_level(ws, previous, first_period_col)
+        if previous_level is None or previous_level >= threshold:
+            continue
+        label = _row_label(ws, previous, first_period_col)
+        if label and not label.startswith("Строка "):
+            ancestors.append(label)
+            threshold = previous_level
+            if threshold <= 0:
+                break
+    return " > ".join(reversed(ancestors))
+
+
 def _metadata_row_label(label: str) -> bool:
     text = normalize_text(label)
     return bool(
@@ -341,6 +387,7 @@ def _concept(
     row_axis: str,
     unit: str | None = None,
     scale: int | None = None,
+    identity_context: str = "",
 ) -> dict[str, str]:
     if row_axis in {"region", "activity"}:
         measure_label = _readable_ru(title)
@@ -360,12 +407,21 @@ def _concept(
             name_en, _ = _project_english(measure_label, spec.name_en)
         translation_status = "project_translation"
     else:
-        # Row position is presentation geometry, not durable source-local identity.
-        local_key = "|".join((normalize_text(sheet), normalize_text(title), normalize_text(label)))
+        # Row position is presentation geometry. Source-visible semantic ancestry
+        # disambiguates repeated child labels without binding identity to row number.
+        local_key = "|".join(
+            (
+                normalize_text(sheet),
+                normalize_text(title),
+                normalize_text(identity_context),
+                normalize_text(label),
+            )
+        )
         label_source = label
         name_ru = _readable_ru(label)
         name_en, translation_status = _project_english(label, spec.name_en)
     concept_id = _stable_id("sc_", spec.source_id, local_key)
+    source_context = title if not identity_context else f"{title} | {identity_context}"
     return {
         "source_concept_id": concept_id,
         "source_id": spec.source_id,
@@ -376,7 +432,7 @@ def _concept(
         "name_en": name_en,
         "translation_status": translation_status,
         "row_axis": row_axis,
-        "source_context": title,
+        "source_context": source_context,
     }
 
 
@@ -505,6 +561,11 @@ def parse_source(
                 members[member["dimension_member_id"]] = member
 
             unit, scale = infer_unit(row_label, title)
+            identity_context = (
+                _row_hierarchy_context(ws, row_no, first_period_col, header_row)
+                if spec.row_axis == "indicator"
+                else ""
+            )
             concept = _concept(
                 spec,
                 sheet=ws.title,
@@ -514,6 +575,7 @@ def parse_source(
                 row_axis=spec.row_axis,
                 unit=unit,
                 scale=scale,
+                identity_context=identity_context,
             )
             concepts[concept["source_concept_id"]] = concept
             obs_id = _stable_id("ob_", source_revision_id, ws.title, coord)

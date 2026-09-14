@@ -156,15 +156,18 @@ def _exchange_measure_heading_context(
     first_period_col: int,
     header_row: int,
 ) -> str:
-    """Return the exact exchange-index measure heading carried on the time axis.
+    """Return the nearest explicit exchange-index measure definition.
 
-    The CBR exchange workbook repeats identical indicator labels under three
-    source-visible definitions: growth versus previous December, previous period,
-    and the corresponding period of the previous year. Those headings are anchored
-    in the first period column rather than the left stub, so they require an
-    explicit source adapter.
+    The source repeats identical indicator labels under measure headings such as
+    growth versus previous December, previous period and the corresponding period
+    of the previous year. Those headings live in the first time-axis column and a
+    later calendar row may sit between the heading and the data. Search is therefore
+    bounded by source block geometry rather than by the nearest period-header row.
+    ``header_row`` remains an input for call-site symmetry and future diagnostics.
     """
-    for candidate in range(row_no - 1, header_row, -1):
+    del header_row
+    lower_bound = max(1, row_no - 12)
+    for candidate in range(row_no - 1, lower_bound - 1, -1):
         value = ws.cell(candidate, first_period_col).value
         if not isinstance(value, str) or not value.strip():
             continue
@@ -181,18 +184,28 @@ def _split_exchange_measure_contexts(
     observations: list[dict[str, object]],
     concepts: list[dict[str, str]],
 ) -> tuple[list[dict[str, str]], int]:
+    """Bind explicit exchange-index measure headings into source-local identity.
+
+    Every observation found under an evidenced measure heading receives that heading
+    in its concept identity. This is deliberate even when a preliminary concept has
+    only one heading: the source definition is semantic, and preserving it prevents
+    identity from depending on incidental parser context. Observations of the same
+    preliminary concept outside an evidenced heading retain the original concept.
+    """
     if spec.source_id != "exchange_rate":
         return concepts, 0
 
     concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
     context_by_observation: dict[str, str] = {}
-    contexts_by_concept: dict[str, set[str]] = defaultdict(set)
+    contextualized_by_concept: dict[str, int] = defaultdict(int)
+    total_by_concept: dict[str, int] = defaultdict(int)
 
     wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
     try:
         observations_by_sheet: dict[str, list[dict[str, object]]] = defaultdict(list)
         for obs in observations:
             observations_by_sheet[str(obs.get("sheet_exact", ""))].append(obs)
+            total_by_concept[str(obs.get("source_concept_id", ""))] += 1
 
         for ws in wb.worksheets:
             period_rows, first_period_col_by_row = _header_layout(ws, spec.source_id)
@@ -216,35 +229,33 @@ def _split_exchange_measure_contexts(
                 observation_id = str(obs.get("observation_id", ""))
                 concept_id = str(obs.get("source_concept_id", ""))
                 context_by_observation[observation_id] = context
-                contexts_by_concept[concept_id].add(normalize_text(context))
+                contextualized_by_concept[concept_id] += 1
     finally:
         wb.close()
 
-    affected = {
-        concept_id
-        for concept_id, contexts in contexts_by_concept.items()
-        if len(contexts) > 1
-    }
-    if not affected:
+    if not context_by_observation:
         return concepts, 0
 
     rewritten: dict[str, dict[str, str]] = {
         concept_id: dict(concept)
         for concept_id, concept in concept_by_id.items()
-        if concept_id not in affected
     }
+    for concept_id, contextualized_count in contextualized_by_concept.items():
+        if contextualized_count == total_by_concept.get(concept_id, 0):
+            rewritten.pop(concept_id, None)
+
     rewrite_count = 0
     for obs in observations:
-        old_id = str(obs.get("source_concept_id", ""))
-        if old_id not in affected:
-            continue
         observation_id = str(obs.get("observation_id", ""))
         context = context_by_observation.get(observation_id, "")
         if not context:
+            continue
+        old_id = str(obs.get("source_concept_id", ""))
+        original = concept_by_id.get(old_id)
+        if original is None:
             raise SourceVariantError(
-                f"exchange_rate/{obs.get('sheet_exact')}: repeated exchange concept {old_id} lacks measure heading"
+                f"exchange_rate: observation {observation_id} references unknown concept {old_id}"
             )
-        original = concept_by_id[old_id]
         local_key = (
             str(original.get("source_local_key", ""))
             + "|exchange_measure_context|"

@@ -47,18 +47,18 @@ def test_exchange_axis_measure_headings_split_identical_indicator_labels(tmp_pat
     ws["B2"], ws["C2"], ws["D2"] = 2024, 2024, 2024
     ws["B3"], ws["C3"], ws["D3"] = "Янв", "Фев", "Мар"
 
-    sections = (
-        (4, "Индексы обменного курса рубля (в % прироста к декабрю предыдущего года) *", 0.2),
-        (6, "Индексы обменного курса рубля (в % прироста к предыдущему периоду) *", -1.2),
-        (8, "Индексы обменного курса рубля (в % прироста к соответствующему периоду предыдущего года) *", 4.5),
-    )
-    for heading_row, heading, base in sections:
-        ws.cell(heading_row, 2).value = heading
-        data_row = heading_row + 1
-        ws.cell(data_row, 1).value = "Индекс номинального эффективного курса рубля к иностранным валютам"
-        ws.cell(data_row, 2).value = base
-        ws.cell(data_row, 3).value = base + 0.1
-        ws.cell(data_row, 4).value = base + 0.2
+    ws["B4"] = "Индексы обменного курса рубля (в % прироста к декабрю предыдущего года) *"
+    ws["A5"] = "Индекс номинального эффективного курса рубля к иностранным валютам"
+    ws["B5"], ws["C5"], ws["D5"] = 0.2, 0.3, 0.4
+
+    ws["B6"] = "Индексы обменного курса рубля (в % прироста к предыдущему периоду) *"
+    ws["A7"] = "Индекс номинального эффективного курса рубля к иностранным валютам"
+    ws["B7"], ws["C7"], ws["D7"] = -1.2, -1.1, -1.0
+
+    ws["B8"] = "Индексы обменного курса рубля (в % прироста к соответствующему периоду предыдущего года) *"
+    ws["B9"], ws["C9"], ws["D9"] = "1 кв", "2 кв", "3 кв"
+    ws["A10"] = "Индекс номинального эффективного курса рубля к иностранным валютам"
+    ws["B10"], ws["C10"], ws["D10"] = 4.5, 4.6, 4.7
 
     wb.save(path)
     wb.close()
@@ -69,21 +69,20 @@ def test_exchange_axis_measure_headings_split_identical_indicator_labels(tmp_pat
     )
     concept_by_id = {row["source_concept_id"]: row for row in concepts}
     observed_contexts = {}
-    for source_row in (5, 7, 9):
+    observed_ids = {}
+    for source_row in (5, 7, 10):
         concept_id = next(
             row["source_concept_id"]
             for row in observations
             if row["source_row"] == source_row
         )
+        observed_ids[source_row] = concept_id
         observed_contexts[source_row] = concept_by_id[concept_id]["source_context"].lower()
 
-    assert len(set(
-        next(row["source_concept_id"] for row in observations if row["source_row"] == source_row)
-        for source_row in (5, 7, 9)
-    )) == 3
+    assert len(set(observed_ids.values())) == 3
     assert "к декабрю предыдущего года" in observed_contexts[5], observed_contexts
     assert "к предыдущему периоду" in observed_contexts[7], observed_contexts
-    assert "к соответствующему периоду предыдущего года" in observed_contexts[9], observed_contexts
+    assert "к соответствующему периоду предыдущего года" in observed_contexts[10], observed_contexts
     assert diagnostics["exchange_measure_context_rewrites"] == 9
 
 

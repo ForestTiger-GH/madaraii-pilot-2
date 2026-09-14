@@ -6,7 +6,7 @@ import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Mapping, Sequence
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlsplit, urlunsplit
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -47,6 +47,23 @@ def _revision_id(source_id: str, sha256: str) -> str:
 def _trusted_cbr_url(url: str) -> bool:
     host = (urlparse(url).hostname or "").lower().rstrip(".")
     return host == "cbr.ru" or host.endswith(".cbr.ru")
+
+
+def _alternate_cbr_alias(url: str) -> str | None:
+    """Return the trusted apex-host equivalent for a ``www.cbr.ru`` URL.
+
+    Bank of Russia currently serves the same public VFS paths through both host
+    aliases, while some hosted-runner/WAF combinations return 403 for ``www`` and
+    200 for the apex host. The fallback never leaves the CBR trust boundary and
+    preserves path/query exactly. Other hosts receive no alias substitution.
+    """
+    parsed = urlsplit(url)
+    host = (parsed.hostname or "").lower().rstrip(".")
+    if host != "www.cbr.ru":
+        return None
+    if parsed.scheme.lower() not in {"http", "https"}:
+        return None
+    return urlunsplit((parsed.scheme, "cbr.ru", parsed.path, parsed.query, parsed.fragment))
 
 
 def _validate_ooxml_workbook(path: str | Path) -> None:
@@ -114,6 +131,15 @@ def download_sources(
             if not _trusted_cbr_url(spec.url):
                 raise AcquisitionError(f"{spec.source_id}: registry URL is outside the CBR domain")
             response = session.get(spec.url, timeout=timeout, allow_redirects=True)
+            fallback_url = _alternate_cbr_alias(spec.url)
+            if response.status_code == 403 and fallback_url is not None:
+                record.update({
+                    "initial_http_status": response.status_code,
+                    "initial_resolved_url": response.url,
+                    "retrieval_fallback_url": fallback_url,
+                    "retrieval_fallback_reason": "www_cbr_403_to_trusted_apex_alias",
+                })
+                response = session.get(fallback_url, timeout=timeout, allow_redirects=True)
             record.update({
                 "http_status": response.status_code,
                 "resolved_url": response.url,

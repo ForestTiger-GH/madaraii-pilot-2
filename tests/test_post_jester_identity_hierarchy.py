@@ -1,3 +1,5 @@
+import json
+
 from openpyxl import Workbook
 
 from cbr_unified.processing import parse_source_checked
@@ -247,3 +249,40 @@ def test_nested_hierarchy_uses_rarity_ancestry_for_repeated_children(tmp_path):
     assert "Центральный банк" in contexts
     assert "Кредитные организации" in contexts
     assert "в рублях" in contexts
+
+
+def test_explicit_currency_scope_is_inherited_into_child_dimensions(tmp_path):
+    path = tmp_path / "currency-scope.xlsx"
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Агрегированная форма обзора"
+    ws["A1"] = "Обзор кредитных организаций, млн руб."
+    ws["B3"], ws["C3"], ws["D3"] = "01.01.2024", "01.02.2024", "01.03.2024"
+
+    ws["A4"] = "в рублях"
+    ws["A5"] = "долговые ценные бумаги"
+    ws["B5"], ws["C5"], ws["D5"] = 100, 101, 102
+    ws["A6"] = "кредиты и займы"
+    ws["B6"], ws["C6"], ws["D6"] = 200, 201, 202
+
+    ws["A8"] = "в иностранной валюте"
+    ws["A9"] = "долговые ценные бумаги"
+    ws["B9"], ws["C9"], ws["D9"] = 10, 11, 12
+    ws["A10"] = "кредиты и займы"
+    ws["B10"], ws["C10"], ws["D10"] = 20, 21, 22
+
+    wb.save(path)
+    wb.close()
+
+    observations, _, _, _, diagnostics = _parse(path, _spec("hierarchy", "hierarchy"))
+    ruble_dims = {
+        json.loads(row["dimensions_json"])["currency_category"]
+        for row in observations if row["source_row"] in {5, 6}
+    }
+    foreign_dims = {
+        json.loads(row["dimensions_json"])["currency_category"]
+        for row in observations if row["source_row"] in {9, 10}
+    }
+    assert ruble_dims == {"rubles"}
+    assert foreign_dims == {"foreign_currency"}
+    assert diagnostics["structural_scope_dimension_updates"] == 12

@@ -3,14 +3,14 @@
 **Work kind:** `JESTER_PROVOCATIVE_EXPLORATION` (`MADARAII-40`)  
 **Commission:** user instruction of 2026-09-14 to continue MADARAII work in `madaraii-pilot-2`, enter as Jester, and continue while material significance remains.  
 **Governing instruction baseline:** `ForestTiger-GH/MADARAII@721a199352b5c5282b1478cd6a5eb36a9872fb34` (`dev` at Commission binding).  
-**Status:** ACTIVE  
+**Status:** CLOSED — experiment complete, restoration verified, mandatory `03 → 04` continuation complete  
 **Sole executing actor:** `JESTER-ACTOR-JST-0001`
 
 ## Subject and baseline
 
 - **Engineering Object:** `PRODUCT-CBR-001`, CBR Unified Statistics.
 - **Exact Product baseline:** admitted product-code/configuration revision `4ee8583b3feff7775a956c51812232fa0d0516d2`.
-- **Prior contour:** `WORK-CBR-001` remains closed under `CLOSURE-CBR-001: PASS`; this Jester Work is a new post-closure bounded contour and does not rewrite that closure.
+- **Prior contour:** `WORK-CBR-001` remains closed under `CLOSURE-CBR-001: PASS`; this Jester Work is a separate post-closure bounded contour and does not rewrite that closure.
 - **Primary attack sector:** Product semantics and executable behavior in `src/cbr_unified/`, with tests and package surface used only as experiment instruments.
 
 ## Purpose and materiality
@@ -24,31 +24,46 @@ Stop after three consecutive materially different provocations add no new engine
 **Mode:** `INTERVENTION` on a derived Git branch only.
 
 - **Derived surface:** `refs/heads/jester/jst-0001`, created from exact Product baseline `4ee8583b...`.
-- The branch is explicitly experimental, non-current-for-reliance and outside Product admission.
-- Authoritative `main`, Product owner state, Knowledge owners and prior closure artifacts are outside the mutation surface.
-- Allowed mutation: source code, tests and experiment-only CI configuration on the derived branch.
-- Allowed external effect: bounded GitHub-hosted CI for package installation and `pytest` only; no release, deployment, publication workflow, Bank of Russia live acquisition, credentials, secrets, customer data or other external system mutation.
-- Prohibited: changes to `main` Product code, releases/tags, deployment, source-system writes, destructive Git history on admitted owners, or any effect that cannot be reconciled by discarding/restoring the derived branch.
+- The branch was explicitly experimental, non-current-for-reliance and outside Product admission.
+- Authoritative `main`, Product owner state, Knowledge owners and prior closure artifacts were outside the mutation surface.
+- Allowed mutation was source code, tests and experiment-only CI configuration on the derived branch.
+- Allowed external effect was bounded GitHub-hosted CI for package installation and `pytest` only; no release, deployment, publication workflow, Bank of Russia live acquisition, credentials, secrets, customer data or other external system mutation occurred.
+- Product code on `main` was never mutated by the Jester intervention.
 
-## Recovery and evidence
+## Executed trajectory
 
-- **Recovery target:** force-reset `refs/heads/jester/jst-0001` to `4ee8583b...` after evidence capture.
-- Baseline recoverability is inherent in the separately admitted immutable commit and will be verified by branch SHA equality after reset.
-- Material diffs, CI outcomes and reproducers must be copied into the standalone Jester Report before reset; the branch is disposable evidence, not a retained Product path.
-- Abort on any write outside the branch, unexpected workflow scope, secret access, deployment/release path, inability to identify exact branch head, or uncertainty about restoration.
+- **Material provocations:** 12 / 12 authorized maximum.
+- **Final experimental commit before restoration:** `40fd3479ad0619587da881d29a8e6723d2ee34e7`.
+- **Final CI:** run `34893811182`, **35/35 tests passed**.
+- **Jester Report:** `_mw/results/JR-CBR-001.md`.
+- **Evidence:** `_mw/evidence/JST-CBR-001.md`.
+- **Restoration evidence:** `_mw/evidence/JST-CBR-001-RESTORATION.md`.
 
-## Crazy-Idea Generator contract
+The last material attack still produced new engineering signal—ordinary indicator concept identity changes under harmless row movement—so the run stopped on the pre-bound 12-provocation budget rather than artificial exhaustion. Additional candidate ideas were screened and rejected as weaker or redundant instead of widening the control shell.
 
-Every selection must collide at least three of: ridiculous analyst role, sacred Product premise, operation from the wrong layer, grotesque simplification, pathological dataset/ordering/scale/timing, or humiliating metaphor. Ordinary regression tests are rejected unless deformed into a materially different attack frame.
+## Recovery
 
-## Budget
+The experiment branch was force-reset after evidence capture. A separate branch read verified:
 
-Initial budget: up to 12 materially different provocations in one adaptive trajectory, with early stop under the diminishing-significance rule above.
+`refs/heads/jester/jst-0001 == 4ee8583b3feff7775a956c51812232fa0d0516d2`.
 
-## Report and continuation
+Therefore the branch-only workflow, disposable tests and mutations are absent from the current experimental branch state. Recovery obligation is complete.
 
-- **Jester Report owner:** `JR-CBR-001`, route `_mw/results/JR-CBR-001.md`.
-- **Retained evidence owner:** `_mw/evidence/JST-CBR-001.md` plus exact CI/commit references captured in the Report.
-- **Mandatory continuation owner:** `ADI-JR-CBR-001`, separately authorized by the same user Commission to perform `ACTOR_INPUT_DEVELOPMENT` (`MADARAII-03`) after restoration.
-- **Subsequent reconciliation owner:** `WSR-JR-CBR-001`, separately authorized by the same Commission to perform `WORK_STATE_RECONCILIATION_AND_ROUTING` (`MADARAII-04`) on the developed acts.
-- Jester creates no defect, Task, Topic, repair, Product change or priority. `ADI-JR-CBR-001` and `WSR-JR-CBR-001` own downstream semantic interpretation and routing.
+## Mandatory non-Jester continuation
+
+The Commission pre-bound the required continuation and it has completed:
+
+1. `ADI-JR-CBR-001` — `_mw/results/ADI-JR-CBR-001.md` — `MADARAII-03 ACTOR_INPUT_DEVELOPMENT` — **COMPLETE**.
+2. `WSR-JR-CBR-001` — `_mw/results/WSR-JR-CBR-001.md` — `MADARAII-04 WORK_STATE_RECONCILIATION_AND_ROUTING` — **COMPLETE**.
+
+No Jester observation was automatically promoted into a defect, Task, Topic, repair, Product change or priority.
+
+## Reconciled residue
+
+`WSR-JR-CBR-001` established two high-materiality post-closure Work candidates—parser robustness under plausible source drift and source-concept identity durability—plus bounded qualification candidates for semantic gates, build identity and SourceSpec binding, and a deferred promotion-resilience candidate.
+
+These are **candidates only**. None is ACTIVE, ASSIGNED or Product-changing under this Jester Commission. The admitted Product remains current at `4ee8583b...` under the existing exact verification evidence until a proper Authority commissions and accepts a successor transition.
+
+## Closure
+
+The Jester session owner, evidence, restoration fact, developed acts and reconciled Work State are all durable and cold-recoverable. The mandatory continuation contract is satisfied. `WORK-JESTER-0001` is CLOSED.

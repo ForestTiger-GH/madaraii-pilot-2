@@ -7,7 +7,8 @@
 **Exact Product baseline:** `4ee8583b3feff7775a956c51812232fa0d0516d2`  
 **Experiment surface:** `jester/jst-0004`  
 **Evidence:** `_mw/evidence/JST-CBR-004.md`  
-**Report state:** COMPLETE / RESTORATION PENDING / HANDOFF PENDING
+**Restoration evidence:** `_mw/evidence/JST-CBR-004-RESTORATION.md`  
+**Report state:** COMPLETE / RESTORED / HANDED OFF
 
 ## Attack frame
 
@@ -32,6 +33,17 @@ The accepted Product was already verified against the full bound 41-source corpu
 
 After four Jester sessions, remaining safe candidate attacks are largely variants of classes already exposed: more Excel presentation metadata, more source-package edge cases, or more consumer projections. They can still produce examples, but expected engineering novelty has fallen materially. The overall Jester campaign therefore stops after this session rather than manufacturing volume from increasingly speculative variants.
 
-## Continuation
+## Restoration and continuation
 
-The experiment branch must be restored to exact Product baseline. After restoration, `ADI-JR-CBR-004` under MADARAII-03 must separate the observations into bounded acts, then `WSR-JR-CBR-004` under MADARAII-04 must determine applicability and routes. This Report creates no defect, Task, priority, Product change or successor Authority.
+The experiment branch was force-restored after evidence capture and independently resolved to exact Product baseline:
+
+`jester/jst-0004 → 4ee8583b3feff7775a956c51812232fa0d0516d2`.
+
+Canonical Product code on `main` was never part of the experiment mutation surface. `PRODUCT-CBR-001` and `CLOSURE-CBR-001: PASS` remain unchanged.
+
+Mandatory continuation completed:
+
+- `ADI-JR-CBR-004` — `_mw/results/ADI-JR-CBR-004.md` — MADARAII-03 — COMPLETE;
+- `WSR-JR-CBR-004` — `_mw/results/WSR-JR-CBR-004.md` — MADARAII-04 — COMPLETE.
+
+The reconciliation established two bounded Work-candidate families: `WC-JR4-PUBLICATION-METADATA` and `WC-JR4-SOURCE-TRUST`. Both require separate Authority before substantive execution. This Report creates no defect, Task, priority, Product change or repair.

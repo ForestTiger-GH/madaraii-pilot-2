@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import sqlite3
+import uuid
 from pathlib import Path
 from typing import Mapping, Sequence
 
@@ -74,8 +76,6 @@ def export_csv_bundle(
         "dimension_members": dimension_members,
         "observations": observations,
         "cell_dispositions": dispositions,
-        # Generated compatibility alias used by early pilot tooling. It contains
-        # exactly the same rows as the canonical Target-HOW name above.
         "raw_cell_dispositions": dispositions,
     }
     paths: dict[str, str] = {}
@@ -90,8 +90,8 @@ def _json_text(value: object) -> str:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
-def write_sqlite(
-    path: str | Path,
+def _populate_sqlite(
+    db: Path,
     *,
     manifest: Sequence[Mapping[str, object]],
     raw_cells: Sequence[Mapping[str, object]],
@@ -101,14 +101,12 @@ def write_sqlite(
     dispositions: Sequence[Mapping[str, object]],
     diagnostics: Mapping[str, object] | Sequence[Mapping[str, object]],
     validation: Mapping[str, object],
-) -> Path:
-    db = Path(path)
-    db.parent.mkdir(parents=True, exist_ok=True)
-    if db.exists():
-        db.unlink()
+) -> None:
     con = sqlite3.connect(db)
     try:
-        con.execute("PRAGMA journal_mode=WAL")
+        # Direct persistence is itself a transactional candidate operation. DELETE
+        # journal keeps the completed candidate self-contained before os.replace().
+        con.execute("PRAGMA journal_mode=DELETE")
         con.execute("PRAGMA synchronous=FULL")
         con.execute("PRAGMA foreign_keys=ON")
         con.executescript(
@@ -259,8 +257,45 @@ def write_sqlite(
             (("diagnostics", _json_text(diagnostics)), ("validation", _json_text(validation))),
         )
         con.commit()
+        if not con.execute("PRAGMA integrity_check").fetchone()[0] == "ok":
+            raise sqlite3.DatabaseError("SQLite integrity_check failed")
     finally:
         con.close()
+
+
+def write_sqlite(
+    path: str | Path,
+    *,
+    manifest: Sequence[Mapping[str, object]],
+    raw_cells: Sequence[Mapping[str, object]],
+    concepts: Sequence[Mapping[str, object]],
+    dimension_members: Sequence[Mapping[str, object]],
+    observations: Sequence[Mapping[str, object]],
+    dispositions: Sequence[Mapping[str, object]],
+    diagnostics: Mapping[str, object] | Sequence[Mapping[str, object]],
+    validation: Mapping[str, object],
+) -> Path:
+    """Build a complete SQLite candidate, then atomically replace the requested path."""
+    db = Path(path)
+    db.parent.mkdir(parents=True, exist_ok=True)
+    candidate = db.with_name(f".{db.name}.staging-{uuid.uuid4().hex[:10]}")
+    try:
+        _populate_sqlite(
+            candidate,
+            manifest=manifest,
+            raw_cells=raw_cells,
+            concepts=concepts,
+            dimension_members=dimension_members,
+            observations=observations,
+            dispositions=dispositions,
+            diagnostics=diagnostics,
+            validation=validation,
+        )
+        os.replace(candidate, db)
+    except BaseException:
+        candidate.unlink(missing_ok=True)
+        candidate.with_name(candidate.name + "-journal").unlink(missing_ok=True)
+        raise
     return db
 
 

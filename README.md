@@ -22,13 +22,15 @@ The product combines two obligations:
     ├── source_concepts.csv
     ├── dimension_members.csv
     ├── observations.csv
-    ├── cell_dispositions.csv   # canonical raw-cell disposition export
+    ├── cell_dispositions.csv
     ├── raw_cell_dispositions.csv  # generated compatibility alias
     ├── diagnostics.json
     └── validation.json
 ```
 
-`raw_cells` is the preservation layer. `observations` is the analytical layer. They are linked by `raw_cell_id` and `source_revision_id`. Every observation also carries the deterministic `build_id` of the complete source-revision/specification set that produced it.
+`raw_cells` is the preservation layer. `observations` is the analytical layer. They are linked by `raw_cell_id` and `source_revision_id`.
+
+Every observation carries one deterministic `build_id`. The identity binds the processing contract, exact source-specification fingerprint, exact source revisions, implementation SHA-256 and resolved Python/requests/openpyxl/pandas versions. A code or bound-runtime change therefore creates a distinct build identity even when source bytes remain the same.
 
 ## Installation
 
@@ -50,13 +52,13 @@ Python 3.10+ is supported.
 cbr-unified build --output ./build/cbr
 ```
 
-The command downloads the complete reviewed source universe, records redirects and HTTP metadata where available, hashes every workbook, extracts raw OOXML cells, constructs semantic observations, validates the candidate and writes CSV + SQLite outputs.
+The command downloads the complete reviewed source universe, records HTTP/source metadata, verifies that the requested and final resolved hosts stay within `cbr.ru`, validates each workbook as an OOXML package, hashes the exact bytes, extracts raw cells, constructs semantic observations, validates the candidate and writes CSV + SQLite outputs.
 
-Every attempt is built in a sibling staging directory. The requested output path changes only after the candidate passes processing, validation and persistence. If an attempt fails, an existing successful output remains intact and the failed staging directory keeps acquisition/failure evidence for diagnosis.
+A bounded `www.cbr.ru → cbr.ru` fallback may be used when the same path/query returns HTTP 403 on the `www` alias. The fallback stays inside the Bank of Russia trust boundary.
 
-A complete build fails closed when a required source is missing, a workbook has an unrecognized material structure, an observation loses source lineage, a raw cell loses disposition, an unexplained numeric source cell remains, or conflicting semantic duplicates appear.
+Every attempt is built in a sibling staging directory. The requested output path changes only after the candidate passes processing, validation and persistence. A failed attempt preserves an existing successful output and retains acquisition/failure evidence.
 
-`build_manifest.json` records the build contract version, source-specification fingerprint, source revisions, validation result and diagnostics. `build_id` is deterministic for the same processing contract, source specifications and source revisions; acquisition timestamps do not change it.
+A complete build fails closed when a required source is missing, an OOXML package is malformed, a workbook has an unrecognized material structure, ownership/lineage disagree, a raw cell loses disposition, an unexplained numeric source cell remains, or conflicting semantic duplicates appear.
 
 ## Offline and reproducible replay
 
@@ -66,26 +68,17 @@ After one successful online build:
 cbr-unified build --input-dir ./build/cbr/sources --output ./build/cbr-replay
 ```
 
-Local binding accepts either `<source_id>.xlsx` or the original registry filename. Exactly one binding must resolve for each source. For identical source revisions and product specification, online and offline builds must produce the same `build_id` and deterministic analytical/preservation tables.
+Local binding accepts `<source_id>.xlsx`, the original registry filename or an explicit mapping. Exactly one binding must resolve for each source and the local workbook must pass the same OOXML structural gate. For identical source revisions, specification, implementation and runtime, online and offline builds must produce the same `build_id` and deterministic Product tables.
 
 ## Query from CLI
 
-List source revisions:
+List source revisions with Russian or English dataset names:
 
 ```bash
-cbr-unified sources --db ./build/cbr/data/cbr_unified.sqlite
+cbr-unified sources --db ./build/cbr/data/cbr_unified.sqlite --language en
 ```
 
-Search indicators in Russian:
-
-```bash
-cbr-unified indicators \
-  --db ./build/cbr/data/cbr_unified.sqlite \
-  --text "ипотеч" \
-  --language ru
-```
-
-Search the English project surface:
+Search indicators:
 
 ```bash
 cbr-unified indicators \
@@ -107,7 +100,17 @@ cbr-unified query \
   --csv ./mortgage.csv
 ```
 
-Dimensions are passed as `--dim key=value`. Common dimensions include `currency_category`, `region`, `region_type`, `activity`, `classification`, `overdue`, `maturity_bucket`, `maturity_basis`, `adjustment`, `valuation`, `statement_side`, `measurement_currency`, `acquired_claims` and source-specific qualifiers.
+Repeated values for the same dimension form an OR-list:
+
+```bash
+cbr-unified query \
+  --db ./build/cbr/data/cbr_unified.sqlite \
+  --source mortgage_debt \
+  --dim region=Москва \
+  --dim region=Санкт-Петербург
+```
+
+Dimension-member filters accept the source/Russian value and the exposed Russian or English display value where a catalog member exists.
 
 Trace one observation back to the exact workbook cell:
 
@@ -115,7 +118,7 @@ Trace one observation back to the exact workbook cell:
 cbr-unified lineage --db ./build/cbr/data/cbr_unified.sqlite <observation_id>
 ```
 
-The lineage result includes `build_id`, source revision, workbook SHA-256, sheet, cell coordinate, raw OOXML lexical value, formula where present and the raw-cell disposition.
+The lineage result exposes observation, concept, raw-cell and disposition source owners separately, together with source revision, workbook SHA-256, sheet/cell locator, raw lexical value, formula and disposition.
 
 ## Python / pandas
 
@@ -141,119 +144,107 @@ wide = db.pivot(
 )
 ```
 
-`value_exact` retains the source numeric lexical representation. The convenience `value` column is numeric for pandas work. Use `decimal_values=True` when exact `Decimal` values are required in Python.
+`UnifiedDatabase(...)` requires embedded validation status `passed` by default. `allow_unvalidated=True` exists for explicit diagnostic work only.
 
-`pivot()` performs no implicit aggregation. If several observations would occupy one requested pivot cell, it raises `QueryError` and requires additional filters or dimensions.
+`value_exact` preserves the source numeric lexical representation. The convenience `value` column is numeric for pandas work. Use `decimal_values=True` for exact `Decimal` values.
+
+`pivot()` performs no implicit aggregation. It also rejects a displayed series that would silently mix hidden semantic signatures such as unit, scale, frequency or period role. Narrow filters or expose the differing axes instead.
 
 ## Statistical identity
 
-The database does not treat a visually similar row name as a universal indicator identity.
+The database does not treat a visually similar row label or physical row position as a universal indicator identity.
 
-A semantic observation is bound to:
+A semantic observation is bound to source revision, source-local concept, period/frequency, stock/flow/change role, unit/scale, explicit dimensions, exact source locator, raw-cell lineage and complete build identity.
 
-- source revision;
-- source-local concept;
-- period and frequency;
-- stock/flow/change role where known;
-- unit and scale;
-- explicit dimensions;
-- exact source sheet and cell;
-- exact raw-cell lineage;
-- complete build identity.
+Source-local concept identity uses source-visible semantics. Depending on source geometry this may include measure title, unit/scale signature, period-block heading, merged parent, hierarchy/section ancestry or explicit source parent. Physical row number remains provenance geometry rather than an ordinary business identity component.
 
-This prevents collisions such as:
+The parser uses conservative context rules:
 
-- `1.1` versus `11` after punctuation stripping;
-- ruble denomination versus a USD measurement unit;
-- original versus remaining maturity;
-- nominal versus market valuation;
-- original versus seasonally adjusted series;
-- historical activity classification versus OKVED2;
-- ordinary regions versus inclusive/exclusive territorial aggregates;
-- ordinary mortgage debt versus acquired claims only versus debt including acquired claims;
-- structurally identical workbooks describing different statistical populations.
+- negated cues take precedence over positive substring matches;
+- ambiguous combined maturity buckets are left unclassified;
+- explicit currency headings may scope repeated branch children;
+- inherited currency scope is removed from later unique aggregates when the source does not establish that scope;
+- exact short-/long-term parent labels may separate repeated instruments without inventing a normalized maturity bucket;
+- exchange-rate indicators retain explicit source measure definitions such as change versus previous December, previous period or corresponding prior-year period.
 
-For `obs_table_20s`, currency denomination and measurement currency are separate dimensions. `Активы/Пассивы - валюта` denotes foreign-currency denomination, while `Активы/Пассивы - в ин. валюте $` additionally sets `measurement_currency=USD`.
+For `obs_table_20s`, denomination and measurement currency remain separate dimensions. Foreign-currency denomination can coexist with `measurement_currency=USD`.
 
 ## Russian and English names
 
-Russian source text is preserved separately from normalized search text and display labels.
+Russian source text remains the evidence-bearing identity surface. English names are project-facing translations or transparent transliteration unless the source establishes official English terminology.
 
-English names are a project-facing semantic surface. `translation_status` distinguishes project translation and transparent transliteration fallback. English text never replaces the Russian source identity and is not represented as an official Bank of Russia translation unless the source itself establishes that status.
+Source catalog, concept names and reusable dimension members expose RU/EN surfaces. English display/filter behavior is symmetric for cataloged dimension members.
 
 ## Preservation model
 
-The raw layer reads XLSX as OOXML rather than relying only on pandas/openpyxl interpretation. For every non-empty stored cell it keeps:
+The raw layer reads XLSX as OOXML rather than relying only on pandas/openpyxl interpretation. For every non-empty stored cell it preserves source/revision, workbook hash, exact sheet/coordinate, OOXML type/style, lexical `<v>`, resolved string text and formulas where present.
 
-- source and source revision;
-- workbook SHA-256;
-- exact sheet title and coordinate;
-- OOXML type and style index;
-- raw `<v>` lexical value;
-- resolved shared/inline text;
-- formula text when present.
+Semantic parsing prefers the preserved lexical numeric value and uses openpyxl for workbook structure/date interpretation. Source-specific semantic compatibility views may normalize proven presentation variants only for interpretation; raw evidence remains tied to untouched source bytes.
 
-Semantic parsing uses the raw lexical numeric value as the preferred analytical value and openpyxl for workbook structure/date interpretation. Source-specific semantic compatibility views may normalize proven presentation variants only for interpretation; raw evidence always remains tied to the untouched workbook.
-
-Every raw cell receives a disposition. Typical roles are `observation_value`, `period_key`, `source_cell`, `hierarchy_or_header_code`, `source_metadata_numeric` and other explicit non-observation roles. `unmapped_numeric` is a blocking residue in a complete build.
+Every raw cell receives a disposition. `unmapped_numeric` is a blocking residue in a complete build. One raw cell cannot back multiple observations.
 
 ## Validation and verification
 
-`validation.json` records build-level invariants and coverage, including:
+`validation.json` records blocking invariants and coverage, including:
 
-- one complete build identity;
-- complete registry source universe;
-- unique source revisions and raw-cell identities;
-- complete raw-cell disposition coverage;
-- zero unresolved numeric source cells;
-- observation-to-raw lineage coverage;
-- concept references;
-- source observation coverage;
-- ISO period anchors;
-- valid decimal observation values;
-- semantic duplicate/conflict detection;
-- counts by source, period, frequency and disposition role.
+- one build identity and complete source universe;
+- manifest/raw/disposition/concept/observation owner coherence;
+- source revision and file-hash coherence;
+- complete raw-cell dispositions and one-to-one observation lineage;
+- zero unresolved numeric cells;
+- canonical dimension JSON;
+- real ISO calendar dates;
+- allowed frequency/period-role domains;
+- non-empty units and valid positive integer scales;
+- bilingual user-surface completeness;
+- strict semantic duplicate/conflict detection.
 
-Inspect it through:
+The semantic conflict key is:
+
+`source_id + source_concept_id + period + frequency + period_role + unit + scale + canonical dimensions`.
+
+Conflicting values under this key block the build. Validation is repaired through source semantics rather than weakened.
+
+Inspect embedded validation through:
 
 ```bash
 cbr-unified validate --db ./build/cbr/data/cbr_unified.sqlite
 ```
 
-Repository verification additionally performs a live 41-source build, offline replay, byte comparison of deterministic CSV outputs, CSV↔SQLite count reconciliation, CLI/query smoke checks and an independent stdlib OOXML re-extraction that compares every preserved raw-cell locator/type/style/value/formula and every observation value against the source workbook.
+Repository verification additionally performs a live 41-source build, offline deterministic replay, independent OOXML preservation comparison, CSV↔SQLite reconciliation, post-Jester contract checks, bilingual/query/lineage checks and publication-metadata applicability audit.
 
-## Failure evidence
+## Persistence and failure evidence
 
-If semantic processing fails after a source has been acquired, the retained staging directory contains:
+Direct SQLite materialization builds a sibling temporary database, runs `PRAGMA integrity_check` and atomically replaces the requested path. A failed direct replacement keeps the previous database.
 
-- `source_manifest.acquisition.json`;
-- `failure.json`;
-- `failure-evidence/<source_id>-raw.csv` for the failing source where available;
-- the already acquired source workbooks.
+Full Product builds use a separate staging/promotion transaction. Failed source acquisition or binding retains `source_manifest.acquisition.json` with detailed per-source status. Semantic failures additionally retain `failure.json` and source-local raw evidence where available.
 
-A successful promoted output removes the failure-only acquisition manifest and exposes one canonical `source_manifest.json`.
+A successful promoted output removes failure-only acquisition state and exposes one canonical `source_manifest.json`.
 
 ## Source changes
 
-The registry is a reviewed product input, not a dynamic dependency on the original repository. A changed workbook receives a new SHA-based `source_revision_id`.
+The registry is a reviewed Product input. Changed workbook bytes create a new SHA-based `source_revision_id`.
 
-Presentation changes that remain compatible with an explicit parser contract can build normally. Material unrecognized variants fail closed through `SourceVariantError` or validation. The required response is to review the changed source contract and update the adapter; the product does not guess through an unknown layout.
+Presentation changes compatible with an explicit parser contract may build normally. Material unknown variants fail closed. The response is to inspect the source contract and update the adapter with evidence and regression coverage.
+
+Publication metadata such as hidden sheets/rows/columns, comments and number formats is audited for applicability. Presence by itself does not define statistical semantics.
 
 ## Repository structure
 
 ```text
 src/cbr_unified/
-├── registry.py       # reviewed source universe and source contracts
-├── acquisition.py    # online acquisition and exact local binding
-├── raw.py            # lossless OOXML-cell extraction
-├── normalization.py  # conservative text/period/unit/dimension helpers
-├── semantic.py       # source-aware semantic observation extraction
-├── processing.py     # checked semantic gate and explicit presentation adapters
-├── validation.py     # integrity and statistical-conflict checks
-├── persistence.py    # CSV and SQLite materialization
-├── query.py          # pandas/query/pivot/lineage facade
-├── build.py          # staging, build identity, validation and promotion
-└── cli.py            # command-line surface
+├── registry.py
+├── acquisition.py
+├── raw.py
+├── normalization.py
+├── semantic.py
+├── processing_core.py  # established checked semantic mechanics
+├── processing.py       # post-Jester semantic/context reconciliation
+├── validation.py
+├── persistence.py
+├── query.py
+├── build.py
+└── cli.py
 ```
 
-See `docs/SCHEMA.md` for table semantics, `docs/MAINTENANCE.md` for source-change handling and `examples/quickstart.py` for notebook-oriented use.
+See `docs/SCHEMA.md` for data semantics, `docs/MAINTENANCE.md` for source-change handling and `examples/quickstart.py` for notebook-oriented use.

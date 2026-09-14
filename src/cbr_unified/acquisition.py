@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import json
 import shutil
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Mapping, Sequence
+from urllib.parse import urlparse, urlsplit, urlunsplit
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -33,13 +35,77 @@ def _session() -> requests.Session:
     session.mount("https://", HTTPAdapter(max_retries=retry))
     session.mount("http://", HTTPAdapter(max_retries=retry))
     session.headers.update({
-        "User-Agent": "CBR-Unified-Statistics/0.1 (+https://github.com/ForestTiger-GH/madaraii-pilot-2)"
+        "User-Agent": "CBR-Unified-Statistics/0.2 (+https://github.com/ForestTiger-GH/madaraii-pilot-2)"
     })
     return session
 
 
 def _revision_id(source_id: str, sha256: str) -> str:
     return f"{source_id}@sha256:{sha256}"
+
+
+def _trusted_cbr_url(url: str) -> bool:
+    host = (urlparse(url).hostname or "").lower().rstrip(".")
+    return host == "cbr.ru" or host.endswith(".cbr.ru")
+
+
+def _alternate_cbr_alias(url: str) -> str | None:
+    """Return the trusted apex-host equivalent for a ``www.cbr.ru`` URL.
+
+    Bank of Russia currently serves the same public VFS paths through both host
+    aliases, while some hosted-runner/WAF combinations return 403 for ``www`` and
+    200 for the apex host. The fallback never leaves the CBR trust boundary and
+    preserves path/query exactly. Other hosts receive no alias substitution.
+    """
+    parsed = urlsplit(url)
+    host = (parsed.hostname or "").lower().rstrip(".")
+    if host != "www.cbr.ru":
+        return None
+    if parsed.scheme.lower() not in {"http", "https"}:
+        return None
+    return urlunsplit((parsed.scheme, "cbr.ru", parsed.path, parsed.query, parsed.fragment))
+
+
+def _validate_ooxml_workbook(path: str | Path) -> None:
+    workbook = Path(path)
+    if not zipfile.is_zipfile(workbook):
+        raise AcquisitionError(f"{workbook}: file is not a ZIP/OOXML package")
+    try:
+        with zipfile.ZipFile(workbook) as archive:
+            names = set(archive.namelist())
+            required = {
+                "[Content_Types].xml",
+                "xl/workbook.xml",
+                "xl/_rels/workbook.xml.rels",
+            }
+            missing = sorted(required - names)
+            worksheets = [name for name in names if name.startswith("xl/worksheets/") and name.endswith(".xml")]
+            if missing or not worksheets:
+                raise AcquisitionError(
+                    f"{workbook}: incomplete OOXML workbook; missing={missing} worksheets={len(worksheets)}"
+                )
+            bad_member = archive.testzip()
+            if bad_member:
+                raise AcquisitionError(f"{workbook}: corrupt OOXML member {bad_member}")
+    except zipfile.BadZipFile as exc:
+        raise AcquisitionError(f"{workbook}: invalid OOXML ZIP package") from exc
+
+
+def _failure_summary(failures: Sequence[Mapping[str, object]]) -> str:
+    parts: list[str] = []
+    for record in failures:
+        source_id = str(record.get("source_id", "?"))
+        error_type = str(record.get("error_type", "Error"))
+        error = str(record.get("error", "unknown failure"))
+        http_status = record.get("http_status")
+        resolved_url = str(record.get("resolved_url", ""))
+        suffix = ""
+        if http_status not in (None, ""):
+            suffix += f"; http={http_status}"
+        if resolved_url:
+            suffix += f"; resolved={resolved_url}"
+        parts.append(f"{source_id}[{error_type}]: {error}{suffix}")
+    return " | ".join(parts)
 
 
 def download_sources(
@@ -62,7 +128,18 @@ def download_sources(
             "status": "pending",
         }
         try:
+            if not _trusted_cbr_url(spec.url):
+                raise AcquisitionError(f"{spec.source_id}: registry URL is outside the CBR domain")
             response = session.get(spec.url, timeout=timeout, allow_redirects=True)
+            fallback_url = _alternate_cbr_alias(spec.url)
+            if response.status_code == 403 and fallback_url is not None:
+                record.update({
+                    "initial_http_status": response.status_code,
+                    "initial_resolved_url": response.url,
+                    "retrieval_fallback_url": fallback_url,
+                    "retrieval_fallback_reason": "www_cbr_403_to_trusted_apex_alias",
+                })
+                response = session.get(fallback_url, timeout=timeout, allow_redirects=True)
             record.update({
                 "http_status": response.status_code,
                 "resolved_url": response.url,
@@ -71,11 +148,14 @@ def download_sources(
                 "content_type": response.headers.get("Content-Type", ""),
             })
             response.raise_for_status()
+            if not _trusted_cbr_url(response.url):
+                raise AcquisitionError(
+                    f"{spec.source_id}: resolved URL left the CBR trust domain: {response.url}"
+                )
             content = response.content
-            if content[:2] != b"PK":
-                raise AcquisitionError(f"{spec.source_id}: downloaded content is not XLSX/OOXML")
             target = dest / f"{spec.source_id}.xlsx"
             target.write_bytes(content)
+            _validate_ooxml_workbook(target)
             sha = workbook_sha256(target)
             record.update({
                 "status": "ok",
@@ -84,15 +164,17 @@ def download_sources(
                 "sha256": sha,
                 "source_revision_id": _revision_id(spec.source_id, sha),
                 "acquired_at_utc": datetime.now(timezone.utc).isoformat(),
+                "trust_status": "cbr_domain_ooxml_validated",
             })
         except Exception as exc:
             record.update({"status": "failed", "error_type": type(exc).__name__, "error": str(exc)})
         manifest.append(record)
 
-    failures = [r for r in manifest if r["status"] != "ok"]
+    failures = [record for record in manifest if record["status"] != "ok"]
     if failures and require_complete:
-        ids = ", ".join(str(r["source_id"]) for r in failures)
-        raise AcquisitionError(f"Failed to acquire {len(failures)}/{len(manifest)} sources: {ids}")
+        raise AcquisitionError(
+            f"Failed to acquire {len(failures)}/{len(manifest)} sources: {_failure_summary(failures)}"
+        )
     return manifest
 
 
@@ -116,12 +198,12 @@ def bind_local_sources(
         if spec.source_id in explicit_paths:
             candidates.append(Path(explicit_paths[spec.source_id]))
         candidates.extend([root / f"{spec.source_id}.xlsx", root / spec.filename])
-        existing = []
-        seen = set()
-        for p in candidates:
-            key = str(p.resolve()) if p.exists() else str(p)
-            if key not in seen and p.exists() and p.is_file():
-                existing.append(p)
+        existing: list[Path] = []
+        seen: set[str] = set()
+        for path in candidates:
+            key = str(path.resolve()) if path.exists() else str(path)
+            if key not in seen and path.exists() and path.is_file():
+                existing.append(path)
                 seen.add(key)
         if len(existing) != 1:
             manifest.append({
@@ -130,33 +212,47 @@ def bind_local_sources(
                 "registry_filename": spec.filename,
                 "status": "failed",
                 "error_type": "LocalBindingError",
-                "error": f"Expected exactly one local binding; found {len(existing)}: {[str(x) for x in existing]}",
+                "error": f"Expected exactly one local binding; found {len(existing)}: {[str(path) for path in existing]}",
             })
             continue
-        source_path = existing[0]
-        target = source_path
-        if copy_root is not None:
-            target = copy_root / f"{spec.source_id}.xlsx"
-            if source_path.resolve() != target.resolve():
-                shutil.copy2(source_path, target)
-        sha = workbook_sha256(target)
-        manifest.append({
-            "source_id": spec.source_id,
-            "requested_url": spec.url,
-            "resolved_url": "local",
-            "registry_filename": spec.filename,
-            "status": "ok",
-            "local_path": str(target),
-            "bytes": target.stat().st_size,
-            "sha256": sha,
-            "source_revision_id": _revision_id(spec.source_id, sha),
-            "acquired_at_utc": datetime.now(timezone.utc).isoformat(),
-        })
 
-    failures = [r for r in manifest if r["status"] != "ok"]
+        try:
+            source_path = existing[0]
+            target = source_path
+            if copy_root is not None:
+                target = copy_root / f"{spec.source_id}.xlsx"
+                if source_path.resolve() != target.resolve():
+                    shutil.copy2(source_path, target)
+            _validate_ooxml_workbook(target)
+            sha = workbook_sha256(target)
+            manifest.append({
+                "source_id": spec.source_id,
+                "requested_url": spec.url,
+                "resolved_url": "local",
+                "registry_filename": spec.filename,
+                "status": "ok",
+                "local_path": str(target),
+                "bytes": target.stat().st_size,
+                "sha256": sha,
+                "source_revision_id": _revision_id(spec.source_id, sha),
+                "acquired_at_utc": datetime.now(timezone.utc).isoformat(),
+                "trust_status": "local_ooxml_validated",
+            })
+        except Exception as exc:
+            manifest.append({
+                "source_id": spec.source_id,
+                "requested_url": spec.url,
+                "registry_filename": spec.filename,
+                "status": "failed",
+                "error_type": type(exc).__name__,
+                "error": str(exc),
+            })
+
+    failures = [record for record in manifest if record["status"] != "ok"]
     if failures and require_complete:
-        ids = ", ".join(str(r["source_id"]) for r in failures)
-        raise AcquisitionError(f"Failed to bind {len(failures)}/{len(manifest)} local sources: {ids}")
+        raise AcquisitionError(
+            f"Failed to bind {len(failures)}/{len(manifest)} local sources: {_failure_summary(failures)}"
+        )
     return manifest
 
 
@@ -169,20 +265,21 @@ def load_manifest(path: str | Path) -> list[dict[str, object]]:
 
 
 def validate_manifest(records: list[dict[str, object]], *, require_complete: bool = True) -> None:
-    by_id = {str(r["source_id"]): r for r in records}
+    by_id = {str(record["source_id"]): record for record in records}
     if len(by_id) != len(records):
         raise AcquisitionError("Duplicate source_id in manifest")
-    expected = {s.source_id for s in SOURCES}
+    expected = {source.source_id for source in SOURCES}
     present = set(by_id)
     if require_complete and present != expected:
         raise AcquisitionError(f"Manifest source set mismatch; missing={sorted(expected-present)} extra={sorted(present-expected)}")
-    for sid, record in by_id.items():
-        get_source(sid)
+    for source_id, record in by_id.items():
+        get_source(source_id)
         if record.get("status") != "ok":
-            raise AcquisitionError(f"Source {sid} is not successfully bound")
+            raise AcquisitionError(f"Source {source_id} is not successfully bound")
         path = Path(str(record["local_path"]))
         if not path.exists():
-            raise AcquisitionError(f"Source file missing for {sid}: {path}")
+            raise AcquisitionError(f"Source file missing for {source_id}: {path}")
+        _validate_ooxml_workbook(path)
         actual = workbook_sha256(path)
         if actual != record.get("sha256"):
-            raise AcquisitionError(f"Hash mismatch for {sid}: manifest={record.get('sha256')} actual={actual}")
+            raise AcquisitionError(f"Hash mismatch for {source_id}: manifest={record.get('sha256')} actual={actual}")

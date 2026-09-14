@@ -8,8 +8,8 @@ from .build import build_database
 from .query import UnifiedDatabase
 
 
-def _dims(values: list[str] | None) -> dict[str, str]:
-    out: dict[str, str] = {}
+def _dims(values: list[str] | None) -> dict[str, list[str]]:
+    out: dict[str, list[str]] = {}
     for item in values or []:
         if "=" not in item:
             raise SystemExit(f"Invalid --dim {item!r}; expected key=value")
@@ -17,7 +17,7 @@ def _dims(values: list[str] | None) -> dict[str, str]:
         key = key.strip()
         if not key:
             raise SystemExit("Dimension key cannot be empty")
-        out[key] = value.strip()
+        out.setdefault(key, []).append(value.strip())
     return out
 
 
@@ -28,7 +28,7 @@ def _add_observation_filters(p: argparse.ArgumentParser) -> None:
     p.add_argument("--end", help="maximum ISO period anchor YYYY-MM-DD")
     p.add_argument("--frequency", action="append", help="frequency; repeatable")
     p.add_argument("--period-role", action="append", help="stock/flow/published_change/source_defined")
-    p.add_argument("--dim", action="append", help="dimension filter key=value; repeatable")
+    p.add_argument("--dim", action="append", help="dimension filter key=value; repeatable; repeated same key means OR")
     p.add_argument("--language", choices=("ru", "en"), default="ru")
 
 
@@ -56,8 +56,9 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("validate", help="show embedded validation result from a built database")
     p.add_argument("--db", required=True)
 
-    p = sub.add_parser("sources", help="list source revisions")
+    p = sub.add_parser("sources", help="list source revisions with bilingual dataset names")
     p.add_argument("--db", required=True)
+    p.add_argument("--language", choices=("ru", "en"), default="ru")
     p.add_argument("--csv", help="optional output CSV")
 
     p = sub.add_parser("indicators", help="list/search source concepts")
@@ -112,11 +113,14 @@ def main(argv: list[str] | None = None) -> int:
         }, ensure_ascii=False, indent=2))
         return 0
 
-    db = UnifiedDatabase(args.db)
+    # `validate` is the explicit diagnostic surface and must be able to inspect a
+    # database whose embedded validation is failed. All other commands retain the
+    # ordinary fail-closed consumer boundary.
+    db = UnifiedDatabase(args.db, allow_unvalidated=args.command == "validate")
     if args.command == "validate":
         print(json.dumps(db.validation(), ensure_ascii=False, indent=2))
     elif args.command == "sources":
-        _emit_frame(db.sources(), args.csv)
+        _emit_frame(db.sources(language=args.language), args.csv)
     elif args.command == "indicators":
         _emit_frame(db.indicators(args.text, language=args.language, source_ids=args.sources), args.csv)
     elif args.command == "query":

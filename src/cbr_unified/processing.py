@@ -1,135 +1,299 @@
 from __future__ import annotations
 
-import re
-import tempfile
+import hashlib
+import json
 from collections import defaultdict
-from contextlib import contextmanager
 from pathlib import Path
-from typing import Iterator, Mapping
 
 from openpyxl import load_workbook
-from openpyxl.utils.cell import coordinate_to_tuple
 
-from .normalization import normalize_text, parse_decimal_text
+from . import processing_core as _core
+from .normalization import normalize_text, sheet_dimensions, stable_dimensions_json
 from .registry import SourceSpec
-from .semantic import SourceVariantError, discover_period_bindings, parse_source
+from .semantic import SourceVariantError, discover_period_bindings
+from .processing_core import *  # noqa: F401,F403 - preserve the established lower-level module surface
 
 
-def _is_numeric_raw(row: Mapping[str, object]) -> bool:
-    lexical = str(row.get("value_lexical", ""))
-    resolved = str(row.get("text_resolved", ""))
-    if lexical and parse_decimal_text(lexical) is not None:
-        return True
-    if resolved and parse_decimal_text(resolved) is not None:
-        return True
-    return False
+def _stable_concept_id(source_id: str, local_key: str) -> str:
+    payload = f"{source_id}\x1f{local_key}".encode("utf-8")
+    return "sc_" + hashlib.sha256(payload).hexdigest()[:24]
 
 
-def _integer_year(value: object) -> int | None:
-    if isinstance(value, bool):
+def _pre_context_local_key(concept: dict[str, str]) -> str:
+    """Recover the preliminary semantic identity before source-context splitting."""
+    return str(concept.get("source_local_key", "")).split("|source_context|", 1)[0]
+
+
+def _header_layout(ws, source_id: str) -> tuple[list[int], dict[int, int]]:
+    bindings = discover_period_bindings(ws, source_id)
+    period_rows = sorted({binding.header_row for binding in bindings})
+    first_period_col_by_row: dict[int, int] = {}
+    for binding in bindings:
+        first_period_col_by_row[binding.header_row] = min(
+            binding.column,
+            first_period_col_by_row.get(binding.header_row, binding.column),
+        )
+    return period_rows, first_period_col_by_row
+
+
+def _nearest_header(
+    source_row: int,
+    period_rows: list[int],
+    first_period_col_by_row: dict[int, int],
+) -> tuple[int, int] | None:
+    headers = [header for header in period_rows if header < source_row]
+    if not headers:
         return None
-    if isinstance(value, int) and 1900 <= value <= 2200:
-        return value
-    if isinstance(value, float) and value.is_integer() and 1900 <= int(value) <= 2200:
-        return int(value)
-    if isinstance(value, str) and re.fullmatch(r"\s*(19|20|21)\d{2}\s*", value):
-        return int(value.strip())
-    return None
+    header_row = headers[-1]
+    first_period_col = first_period_col_by_row.get(header_row)
+    if first_period_col is None:
+        return None
+    return header_row, first_period_col
 
 
-def _prepare_exchange_semantic_view(wb) -> int:
-    """Normalize only proven exchange-rate calendar presentations for parsing.
+def _observations_by_sheet_row(
+    observations: list[dict[str, object]],
+) -> dict[str, dict[int, list[dict[str, object]]]]:
+    grouped: dict[str, dict[int, list[dict[str, object]]]] = defaultdict(lambda: defaultdict(list))
+    for obs in observations:
+        try:
+            source_row = int(obs.get("source_row", 0))
+        except (TypeError, ValueError):
+            continue
+        grouped[str(obs.get("sheet_exact", ""))][source_row].append(obs)
+    return grouped
 
-    The returned workbook is a semantic view only. Raw evidence always comes from
-    the untouched source XLSX. Two current source presentations need explicit
-    compatibility treatment:
 
-    * quarterly headers use ``1 кварт.`` ... ``4 кварт.`` while the established
-      exchange calendar parser expects the semantically equivalent ``1 кв`` form;
-    * the annual ``Доли`` sheet stores the first year as a value and later years as
-      formulas such as ``=B3+1``. For period binding only, this exact formula chain
-      is materialized to explicit year strings.
+def _correct_structural_currency_leakage(
+    parse_path: str | Path,
+    *,
+    spec: SourceSpec,
+    observations: list[dict[str, object]],
+    concepts: list[dict[str, str]],
+) -> int:
+    """Keep inherited currency scope on repeated branch children, not later unique totals.
+
+    Structural currency headings describe a subtree. A repeated preliminary concept
+    under multiple explicit currency branches is safely scoped by the inherited
+    heading. A unique row appearing after one such branch may instead be a broader
+    aggregate, so inherited scope is removed unless the current row itself is an
+    explicit currency heading. Sheet-level dimensions keep precedence.
+
+    Scope discovery is cached at source-row granularity because every observation
+    on one source row shares the same structural ancestry. This preserves semantics
+    while avoiding repeated workbook scans for every period cell.
     """
-    changed = 0
-    for ws in wb.worksheets:
-        title = normalize_text(ws.title)
-        if title == "ежеквартальные":
-            quarter_cells = 0
-            for cell in ws[3]:
-                if not isinstance(cell.value, str):
-                    continue
-                m = re.fullmatch(r"\s*([1-4])\s*кварт\.\s*", cell.value, flags=re.I)
-                if m:
-                    cell.value = f"{m.group(1)} кв"
-                    changed += 1
-                    quarter_cells += 1
-            if quarter_cells < 3:
-                raise SourceVariantError(
-                    "exchange_rate/Ежеквартальные: expected quarterly calendar labels 'N кварт.' were not found"
-                )
+    concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
+    base_key_by_concept = {
+        concept_id: _pre_context_local_key(concept)
+        for concept_id, concept in concept_by_id.items()
+    }
+    source_rows_by_base: dict[str, set[tuple[str, int]]] = defaultdict(set)
+    for obs in observations:
+        concept_id = str(obs.get("source_concept_id", ""))
+        base_key = base_key_by_concept.get(concept_id, "")
+        if not base_key:
+            continue
+        try:
+            source_row = int(obs.get("source_row", 0))
+        except (TypeError, ValueError):
+            continue
+        source_rows_by_base[base_key].add((str(obs.get("sheet_exact", "")), source_row))
 
-        elif title == "доли":
-            previous_year: int | None = None
-            previous_coord: str | None = None
-            annual_cells = 0
-            for col in range(2, ws.max_column + 1):
-                cell = ws.cell(3, col)
-                value = cell.value
-                if value is None:
-                    continue
-                year = _integer_year(value)
-                if year is None and isinstance(value, str) and value.startswith("="):
-                    if previous_year is None or previous_coord is None:
-                        raise SourceVariantError(
-                            f"exchange_rate/Доли: formula year {cell.coordinate} has no resolved predecessor"
-                        )
-                    formula = re.sub(r"\s+", "", value).upper()
-                    expected = f"={previous_coord.upper()}+1"
-                    if formula != expected:
-                        raise SourceVariantError(
-                            f"exchange_rate/Доли: unexpected year formula {cell.coordinate}={value!r}; expected {expected!r}"
-                        )
-                    year = previous_year + 1
-                if year is None:
-                    raise SourceVariantError(
-                        f"exchange_rate/Доли: unsupported annual header {cell.coordinate}={value!r}"
-                    )
-                cell.value = str(year)
-                previous_year = year
-                previous_coord = cell.coordinate
-                annual_cells += 1
-                changed += 1
-            if annual_cells < 3:
-                raise SourceVariantError("exchange_rate/Доли: annual calendar is incomplete")
-    return changed
-
-
-@contextmanager
-def _semantic_view(xlsx_path: str | Path, spec: SourceSpec) -> Iterator[Path]:
-    source = Path(xlsx_path)
-    if spec.source_id != "exchange_rate":
-        yield source
-        return
-
-    wb = load_workbook(source, read_only=False, data_only=False, keep_links=True)
-    temp_path: Path | None = None
+    observations_by_sheet_row = _observations_by_sheet_row(observations)
+    removals = 0
+    wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
     try:
-        changed = _prepare_exchange_semantic_view(wb)
-        if changed == 0:
-            yield source
-            return
-        with tempfile.NamedTemporaryFile(prefix="cbr_exchange_semantic_", suffix=".xlsx", delete=False) as fh:
-            temp_path = Path(fh.name)
-        wb.save(temp_path)
+        for ws in wb.worksheets:
+            rows = observations_by_sheet_row.get(ws.title, {})
+            if not rows:
+                continue
+            period_rows, first_period_col_by_row = _header_layout(ws, spec.source_id)
+            source_sheet_dims = sheet_dimensions(ws.title, spec.source_id)
+            for source_row, row_observations in rows.items():
+                layout = _nearest_header(source_row, period_rows, first_period_col_by_row)
+                if layout is None:
+                    continue
+                header_row, first_period_col = layout
+                inherited = _core._structural_currency_scope(
+                    ws,
+                    row_no=source_row,
+                    first_period_col=first_period_col,
+                    header_row=header_row,
+                )
+                if not inherited:
+                    continue
+                explicit_current_row = bool(_core._structural_currency_scope(
+                    ws,
+                    row_no=source_row,
+                    first_period_col=first_period_col,
+                    header_row=source_row - 1,
+                ))
+
+                for obs in row_observations:
+                    concept_id = str(obs.get("source_concept_id", ""))
+                    base_key = base_key_by_concept.get(concept_id, "")
+                    repeated_source_rows = len(source_rows_by_base.get(base_key, set())) > 1
+                    if repeated_source_rows or explicit_current_row:
+                        continue
+
+                    try:
+                        dims = json.loads(str(obs.get("dimensions_json", "{}")))
+                    except json.JSONDecodeError as exc:
+                        raise SourceVariantError(
+                            f"{spec.source_id}: invalid dimensions_json during currency-scope reconciliation"
+                        ) from exc
+                    if not isinstance(dims, dict):
+                        raise SourceVariantError(
+                            f"{spec.source_id}: non-object dimensions_json during currency-scope reconciliation"
+                        )
+
+                    changed = False
+                    for dimension, value in inherited.items():
+                        if dimension in source_sheet_dims:
+                            continue
+                        if dims.get(dimension) == value:
+                            dims.pop(dimension)
+                            changed = True
+                    if changed:
+                        obs["dimensions_json"] = stable_dimensions_json(dims)
+                        removals += 1
+    finally:
+        wb.close()
+    return removals
+
+
+def _exchange_measure_heading_context(
+    ws,
+    *,
+    row_no: int,
+    first_period_col: int,
+    header_row: int,
+) -> str:
+    """Return the nearest explicit exchange-index measure definition.
+
+    The source repeats identical indicator labels under measure headings such as
+    growth versus previous December, previous period and the corresponding period
+    of the previous year. Those headings live in the first time-axis column and a
+    later calendar row may sit between the heading and the data. Search is therefore
+    bounded by source block geometry rather than by the nearest period-header row.
+    ``header_row`` remains an input for call-site symmetry and future diagnostics.
+    """
+    del header_row
+    lower_bound = max(1, row_no - 12)
+    for candidate in range(row_no - 1, lower_bound - 1, -1):
+        value = ws.cell(candidate, first_period_col).value
+        if not isinstance(value, str) or not value.strip():
+            continue
+        text = " ".join(value.split())
+        if normalize_text(text).startswith("индексы обменного курса рубля"):
+            return text
+    return ""
+
+
+def _split_exchange_measure_contexts(
+    parse_path: str | Path,
+    *,
+    spec: SourceSpec,
+    observations: list[dict[str, object]],
+    concepts: list[dict[str, str]],
+) -> tuple[list[dict[str, str]], int]:
+    """Bind explicit exchange-index measure headings into source-local identity.
+
+    Every observation found under an evidenced measure heading receives that heading
+    in its concept identity. This is deliberate even when a preliminary concept has
+    only one heading: the source definition is semantic, and preserving it prevents
+    identity from depending on incidental parser context. Observations of the same
+    preliminary concept outside an evidenced heading retain the original concept.
+
+    Heading discovery is performed once per source row and reused for all period
+    observations on that row.
+    """
+    if spec.source_id != "exchange_rate":
+        return concepts, 0
+
+    concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
+    context_by_observation: dict[str, str] = {}
+    contextualized_by_concept: dict[str, int] = defaultdict(int)
+    total_by_concept: dict[str, int] = defaultdict(int)
+    for obs in observations:
+        total_by_concept[str(obs.get("source_concept_id", ""))] += 1
+
+    observations_by_sheet_row = _observations_by_sheet_row(observations)
+    wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
+    try:
+        for ws in wb.worksheets:
+            rows = observations_by_sheet_row.get(ws.title, {})
+            if not rows:
+                continue
+            period_rows, first_period_col_by_row = _header_layout(ws, spec.source_id)
+            for source_row, row_observations in rows.items():
+                layout = _nearest_header(source_row, period_rows, first_period_col_by_row)
+                if layout is None:
+                    continue
+                header_row, first_period_col = layout
+                context = _exchange_measure_heading_context(
+                    ws,
+                    row_no=source_row,
+                    first_period_col=first_period_col,
+                    header_row=header_row,
+                )
+                if not context:
+                    continue
+                for obs in row_observations:
+                    observation_id = str(obs.get("observation_id", ""))
+                    concept_id = str(obs.get("source_concept_id", ""))
+                    context_by_observation[observation_id] = context
+                    contextualized_by_concept[concept_id] += 1
     finally:
         wb.close()
 
-    try:
-        if temp_path is None:
-            raise RuntimeError("Exchange semantic view was not created")
-        yield temp_path
-    finally:
-        temp_path.unlink(missing_ok=True)
+    if not context_by_observation:
+        return concepts, 0
+
+    rewritten: dict[str, dict[str, str]] = {
+        concept_id: dict(concept)
+        for concept_id, concept in concept_by_id.items()
+    }
+    for concept_id, contextualized_count in contextualized_by_concept.items():
+        if contextualized_count == total_by_concept.get(concept_id, 0):
+            rewritten.pop(concept_id, None)
+
+    rewrite_count = 0
+    for obs in observations:
+        observation_id = str(obs.get("observation_id", ""))
+        context = context_by_observation.get(observation_id, "")
+        if not context:
+            continue
+        old_id = str(obs.get("source_concept_id", ""))
+        original = concept_by_id.get(old_id)
+        if original is None:
+            raise SourceVariantError(
+                f"exchange_rate: observation {observation_id} references unknown concept {old_id}"
+            )
+        local_key = (
+            str(original.get("source_local_key", ""))
+            + "|exchange_measure_context|"
+            + normalize_text(context)
+        )
+        source_id = str(original.get("source_id", spec.source_id))
+        new_id = _stable_concept_id(source_id, local_key)
+        candidate = dict(original)
+        candidate["source_concept_id"] = new_id
+        candidate["source_local_key"] = local_key
+        prior_context = str(candidate.get("source_context", "")).strip()
+        addition = f"exchange_measure={context}"
+        candidate["source_context"] = f"{prior_context} | {addition}" if prior_context else addition
+        existing = rewritten.get(new_id)
+        if existing is not None and existing != candidate:
+            raise SourceVariantError(
+                f"exchange_rate: conflicting concept materialization for {context!r}"
+            )
+        rewritten[new_id] = candidate
+        obs["source_concept_id"] = new_id
+        rewrite_count += 1
+
+    return list(rewritten.values()), rewrite_count
 
 
 def parse_source_checked(
@@ -140,88 +304,36 @@ def parse_source_checked(
     file_sha256: str,
     raw_cells: list[dict[str, object]],
 ):
-    """Parse one source and close numeric-disposition gaps before admission.
+    """Parse one source and apply post-Jester source-context reconciliation."""
+    observations, concepts, members, dispositions, diagnostics = _core.parse_source_checked(
+        xlsx_path,
+        spec=spec,
+        source_revision_id=source_revision_id,
+        file_sha256=file_sha256,
+        raw_cells=raw_cells,
+    )
 
-    ``semantic.parse_source`` owns observation extraction. This gate independently
-    rebinds period/header/metadata roles from workbook structure and converts any
-    remaining unexplained numeric candidate into ``unmapped_numeric``. Complete
-    validation can therefore fail closed instead of accepting a number merely
-    because no period binding happened to be found for it.
-    """
-    with _semantic_view(xlsx_path, spec) as parse_path:
-        observations, concepts, members, dispositions, diagnostics = parse_source(
-            parse_path,
-            spec=spec,
-            source_revision_id=source_revision_id,
-            file_sha256=file_sha256,
-            raw_cells=raw_cells,
-        )
-        disp = {str(row["raw_cell_id"]): row for row in dispositions}
-        raw_by_sheet: dict[str, list[dict[str, object]]] = defaultdict(list)
-        for row in raw_cells:
-            raw_by_sheet[str(row["sheet_exact"])].append(row)
+    if spec.row_axis not in {"region", "activity"}:
+        with _core._semantic_view(xlsx_path, spec) as parse_path:
+            removals = _correct_structural_currency_leakage(
+                parse_path,
+                spec=spec,
+                observations=observations,
+                concepts=concepts,
+            )
+            concepts, exchange_rewrites = _split_exchange_measure_contexts(
+                parse_path,
+                spec=spec,
+                observations=observations,
+                concepts=concepts,
+            )
+    else:
+        removals = 0
+        exchange_rewrites = 0
 
-        wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
-        try:
-            for ws in wb.worksheets:
-                bindings = discover_period_bindings(ws, spec.source_id)
-                period_coords = {b.coordinate: b for b in bindings}
-                period_rows = sorted({b.header_row for b in bindings})
-                first_period_col_by_row: dict[int, int] = {}
-                for b in bindings:
-                    first_period_col_by_row[b.header_row] = min(
-                        b.column,
-                        first_period_col_by_row.get(b.header_row, b.column),
-                    )
-                metadata_sheet = any(
-                    token in normalize_text(ws.title)
-                    for token in ("методолог", "metadata", "метадан")
-                )
-
-                for raw in raw_by_sheet.get(ws.title, []):
-                    raw_id = str(raw["raw_cell_id"])
-                    current = disp[raw_id]
-                    if current.get("role") == "observation_value":
-                        continue
-                    coord = str(raw["cell_coordinate"])
-                    if coord in period_coords:
-                        current.update({"role": "period_key", "reason": period_coords[coord].representation})
-                        continue
-                    if not _is_numeric_raw(raw):
-                        continue
-
-                    row_no, col_no = coordinate_to_tuple(coord)
-                    if metadata_sheet:
-                        current.update({"role": "source_metadata_numeric", "reason": "metadata_sheet"})
-                        continue
-
-                    # Numeric cells in the left semantic stub are hierarchy/classification
-                    # codes or source-side header material, not time-series observations.
-                    candidate_header_rows = [hr for hr in period_rows if hr < row_no]
-                    nearest_header = candidate_header_rows[-1] if candidate_header_rows else None
-                    first_period_col = first_period_col_by_row.get(nearest_header) if nearest_header is not None else None
-                    if first_period_col is not None and col_no < first_period_col:
-                        current.update({"role": "hierarchy_or_header_code", "reason": "numeric_before_period_axis"})
-                        continue
-
-                    # Calendar/header numerics above the first data block are explicit
-                    # source structure. Exchange-rate workbooks use numeric year bands.
-                    if period_rows and row_no <= max(period_rows):
-                        current.update({"role": "hierarchy_or_header_code", "reason": "numeric_period_header_structure"})
-                        continue
-                    if spec.parser == "exchange" and row_no <= 12:
-                        current.update({"role": "hierarchy_or_header_code", "reason": "exchange_calendar_header"})
-                        continue
-
-                    # Preserve existing specific classifications; generic
-                    # non_observation_numeric means the value is still unexplained.
-                    if current.get("role") == "non_observation_numeric":
-                        current.update({"role": "unmapped_numeric", "reason": "numeric_value_without_admitted_semantic_role"})
-
-            unresolved = sum(1 for row in dispositions if row.get("role") == "unmapped_numeric")
-            diagnostics["unmapped_numeric_count"] = unresolved
-            diagnostics["numeric_disposition_gate"] = "passed" if unresolved == 0 else "failed"
-            diagnostics["semantic_view"] = "exchange_calendar_compatibility" if spec.source_id == "exchange_rate" else "source"
-        finally:
-            wb.close()
+    diagnostics["structural_scope_dimension_removals"] = removals
+    diagnostics["exchange_measure_context_rewrites"] = exchange_rewrites
+    diagnostics["period_block_concept_rewrites"] = int(
+        diagnostics.get("period_block_concept_rewrites", 0)
+    ) + exchange_rewrites
     return observations, concepts, members, dispositions, diagnostics

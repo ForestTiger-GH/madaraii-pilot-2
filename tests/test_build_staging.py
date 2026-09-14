@@ -1,3 +1,4 @@
+import json
 from datetime import date
 
 import pytest
@@ -77,3 +78,32 @@ def test_failed_build_keeps_previous_output_and_failure_evidence(tmp_path):
     assert (staging[0] / "failure.json").exists()
     assert (staging[0] / "source_manifest.acquisition.json").exists()
     assert (staging[0] / "failure-evidence" / "mortgage_debt-raw.csv").exists()
+
+
+def test_binding_failure_retains_detailed_acquisition_manifest(tmp_path):
+    input_dir = tmp_path / "empty-input"
+    input_dir.mkdir()
+    output = tmp_path / "product"
+    output.mkdir()
+    sentinel = output / "old.txt"
+    sentinel.write_text("previous", encoding="utf-8")
+
+    with pytest.raises(RuntimeError, match="evidence retained"):
+        build_database(
+            output,
+            input_dir=input_dir,
+            sources=[get_source("mortgage_debt")],
+            require_complete=False,
+        )
+
+    assert sentinel.read_text(encoding="utf-8") == "previous"
+    staging = list(tmp_path.glob(".product.staging-*"))
+    assert len(staging) == 1
+    manifest_path = staging[0] / "source_manifest.acquisition.json"
+    assert manifest_path.exists()
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    assert len(manifest) == 1
+    assert manifest[0]["source_id"] == "mortgage_debt"
+    assert manifest[0]["status"] == "failed"
+    assert manifest[0]["error_type"] == "LocalBindingError"
+    assert (staging[0] / "failure.json").exists()

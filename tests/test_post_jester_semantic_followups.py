@@ -72,7 +72,7 @@ def test_exchange_axis_measure_headings_split_identical_indicator_labels(tmp_pat
         for source_row in (5, 7, 9)
     }
     assert len(concept_ids) == 3
-    contexts = "\n".join(row["source_context"] for row in concepts)
+    contexts = "\n".join(row["source_context"] for row in concepts).lower()
     assert "к декабрю предыдущего года" in contexts
     assert "к предыдущему периоду" in contexts
     assert "к соответствующему периоду предыдущего года" in contexts

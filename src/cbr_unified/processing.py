@@ -51,6 +51,19 @@ def _nearest_header(
     return header_row, first_period_col
 
 
+def _observations_by_sheet_row(
+    observations: list[dict[str, object]],
+) -> dict[str, dict[int, list[dict[str, object]]]]:
+    grouped: dict[str, dict[int, list[dict[str, object]]]] = defaultdict(lambda: defaultdict(list))
+    for obs in observations:
+        try:
+            source_row = int(obs.get("source_row", 0))
+        except (TypeError, ValueError):
+            continue
+        grouped[str(obs.get("sheet_exact", ""))][source_row].append(obs)
+    return grouped
+
+
 def _correct_structural_currency_leakage(
     parse_path: str | Path,
     *,
@@ -65,6 +78,10 @@ def _correct_structural_currency_leakage(
     heading. A unique row appearing after one such branch may instead be a broader
     aggregate, so inherited scope is removed unless the current row itself is an
     explicit currency heading. Sheet-level dimensions keep precedence.
+
+    Scope discovery is cached at source-row granularity because every observation
+    on one source row shares the same structural ancestry. This preserves semantics
+    while avoiding repeated workbook scans for every period cell.
     """
     concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
     base_key_by_concept = {
@@ -83,21 +100,17 @@ def _correct_structural_currency_leakage(
             continue
         source_rows_by_base[base_key].add((str(obs.get("sheet_exact", "")), source_row))
 
+    observations_by_sheet_row = _observations_by_sheet_row(observations)
     removals = 0
     wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
     try:
-        observations_by_sheet: dict[str, list[dict[str, object]]] = defaultdict(list)
-        for obs in observations:
-            observations_by_sheet[str(obs.get("sheet_exact", ""))].append(obs)
-
         for ws in wb.worksheets:
+            rows = observations_by_sheet_row.get(ws.title, {})
+            if not rows:
+                continue
             period_rows, first_period_col_by_row = _header_layout(ws, spec.source_id)
             source_sheet_dims = sheet_dimensions(ws.title, spec.source_id)
-            for obs in observations_by_sheet.get(ws.title, []):
-                try:
-                    source_row = int(obs.get("source_row", 0))
-                except (TypeError, ValueError):
-                    continue
+            for source_row, row_observations in rows.items():
                 layout = _nearest_header(source_row, period_rows, first_period_col_by_row)
                 if layout is None:
                     continue
@@ -110,40 +123,41 @@ def _correct_structural_currency_leakage(
                 )
                 if not inherited:
                     continue
-
-                concept_id = str(obs.get("source_concept_id", ""))
-                base_key = base_key_by_concept.get(concept_id, "")
-                repeated_source_rows = len(source_rows_by_base.get(base_key, set())) > 1
-                explicit_current_row = _core._structural_currency_scope(
+                explicit_current_row = bool(_core._structural_currency_scope(
                     ws,
                     row_no=source_row,
                     first_period_col=first_period_col,
                     header_row=source_row - 1,
-                )
-                if repeated_source_rows or explicit_current_row:
-                    continue
+                ))
 
-                try:
-                    dims = json.loads(str(obs.get("dimensions_json", "{}")))
-                except json.JSONDecodeError as exc:
-                    raise SourceVariantError(
-                        f"{spec.source_id}: invalid dimensions_json during currency-scope reconciliation"
-                    ) from exc
-                if not isinstance(dims, dict):
-                    raise SourceVariantError(
-                        f"{spec.source_id}: non-object dimensions_json during currency-scope reconciliation"
-                    )
-
-                changed = False
-                for dimension, value in inherited.items():
-                    if dimension in source_sheet_dims:
+                for obs in row_observations:
+                    concept_id = str(obs.get("source_concept_id", ""))
+                    base_key = base_key_by_concept.get(concept_id, "")
+                    repeated_source_rows = len(source_rows_by_base.get(base_key, set())) > 1
+                    if repeated_source_rows or explicit_current_row:
                         continue
-                    if dims.get(dimension) == value:
-                        dims.pop(dimension)
-                        changed = True
-                if changed:
-                    obs["dimensions_json"] = stable_dimensions_json(dims)
-                    removals += 1
+
+                    try:
+                        dims = json.loads(str(obs.get("dimensions_json", "{}")))
+                    except json.JSONDecodeError as exc:
+                        raise SourceVariantError(
+                            f"{spec.source_id}: invalid dimensions_json during currency-scope reconciliation"
+                        ) from exc
+                    if not isinstance(dims, dict):
+                        raise SourceVariantError(
+                            f"{spec.source_id}: non-object dimensions_json during currency-scope reconciliation"
+                        )
+
+                    changed = False
+                    for dimension, value in inherited.items():
+                        if dimension in source_sheet_dims:
+                            continue
+                        if dims.get(dimension) == value:
+                            dims.pop(dimension)
+                            changed = True
+                    if changed:
+                        obs["dimensions_json"] = stable_dimensions_json(dims)
+                        removals += 1
     finally:
         wb.close()
     return removals
@@ -191,6 +205,9 @@ def _split_exchange_measure_contexts(
     only one heading: the source definition is semantic, and preserving it prevents
     identity from depending on incidental parser context. Observations of the same
     preliminary concept outside an evidenced heading retain the original concept.
+
+    Heading discovery is performed once per source row and reused for all period
+    observations on that row.
     """
     if spec.source_id != "exchange_rate":
         return concepts, 0
@@ -199,21 +216,18 @@ def _split_exchange_measure_contexts(
     context_by_observation: dict[str, str] = {}
     contextualized_by_concept: dict[str, int] = defaultdict(int)
     total_by_concept: dict[str, int] = defaultdict(int)
+    for obs in observations:
+        total_by_concept[str(obs.get("source_concept_id", ""))] += 1
 
+    observations_by_sheet_row = _observations_by_sheet_row(observations)
     wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
     try:
-        observations_by_sheet: dict[str, list[dict[str, object]]] = defaultdict(list)
-        for obs in observations:
-            observations_by_sheet[str(obs.get("sheet_exact", ""))].append(obs)
-            total_by_concept[str(obs.get("source_concept_id", ""))] += 1
-
         for ws in wb.worksheets:
+            rows = observations_by_sheet_row.get(ws.title, {})
+            if not rows:
+                continue
             period_rows, first_period_col_by_row = _header_layout(ws, spec.source_id)
-            for obs in observations_by_sheet.get(ws.title, []):
-                try:
-                    source_row = int(obs.get("source_row", 0))
-                except (TypeError, ValueError):
-                    continue
+            for source_row, row_observations in rows.items():
                 layout = _nearest_header(source_row, period_rows, first_period_col_by_row)
                 if layout is None:
                     continue
@@ -226,10 +240,11 @@ def _split_exchange_measure_contexts(
                 )
                 if not context:
                     continue
-                observation_id = str(obs.get("observation_id", ""))
-                concept_id = str(obs.get("source_concept_id", ""))
-                context_by_observation[observation_id] = context
-                contextualized_by_concept[concept_id] += 1
+                for obs in row_observations:
+                    observation_id = str(obs.get("observation_id", ""))
+                    concept_id = str(obs.get("source_concept_id", ""))
+                    context_by_observation[observation_id] = context
+                    contextualized_by_concept[concept_id] += 1
     finally:
         wb.close()
 

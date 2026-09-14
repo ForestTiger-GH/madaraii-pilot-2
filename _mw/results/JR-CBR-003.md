@@ -7,7 +7,8 @@
 **Exact Product baseline:** `4ee8583b3feff7775a956c51812232fa0d0516d2`  
 **Experiment surface:** `jester/jst-0003`  
 **Evidence:** `_mw/evidence/JST-CBR-003.md`  
-**Report state:** COMPLETE / RESTORATION PENDING / HANDOFF PENDING
+**Restoration:** `_mw/evidence/JST-CBR-003-RESTORATION.md`  
+**Report state:** COMPLETE / RESTORED / HANDED OFF
 
 ## Attack frame
 
@@ -26,14 +27,21 @@ Eight provocations reached the fixed budget. All retained reproducers passed wit
 7. **Repeated same-key CLI dimension filters silently keep only the final value.** The CLI loses multi-value intent available in the underlying query API.
 8. **Embedded failed validation is informational rather than a query gate.** A database whose validation metadata says `failed` remains queryable and pivotable through `UnifiedDatabase`.
 
-The common pattern is now consumer-side: **a projection may be internally consistent as a DataFrame/CSV/SQLite view while dropping a distinction that matters to how the user is allowed to interpret or filter it**. The Product is much stronger at preserving source evidence than at guaranteeing every convenience surface carries every semantic guardrail forward.
+The common pattern is consumer-side: **a projection may be internally consistent as a DataFrame/CSV/SQLite view while dropping a distinction that matters to how the user is allowed to interpret or filter it**.
 
 ## Limits
 
-Several observations exercise lower-level reusable operations directly rather than the normal full-build path. In particular, normal build staging materially mitigates direct SQLite replacement loss, and the accepted full build is validated before its normal persisted/query use. These boundaries reduce claim scope but do not erase the observed interface contracts.
+Several observations exercise lower-level reusable operations directly rather than the normal full-build path. Normal build staging materially mitigates direct SQLite replacement loss, and the accepted full build is validated before its ordinary persisted/query use. These boundaries reduce claim scope but do not erase the observed interface contracts.
 
-No observation establishes a wrong result in the verified 41-source baseline, nor does the Report decide which low-level functions are public support commitments. Those are downstream owner questions.
+No observation establishes a wrong result in the verified 41-source baseline or decides which low-level functions are public support commitments.
 
-## Continuation
+## Restoration and handoff
 
-The experiment branch must be restored to exact Product baseline before interpretation. After restoration, `ADI-JR-CBR-003` under MADARAII-03 must separate the session into bounded semantic acts; `WSR-JR-CBR-003` under MADARAII-04 must determine justified terminal, deferred or Work-candidate postures. This Report creates no Product change or successor Authority.
+`jester/jst-0003` was force-restored and independently resolved to exact Product baseline `4ee8583b3feff7775a956c51812232fa0d0516d2`. Canonical Product code was never in the mutation surface.
+
+Mandatory continuation completed:
+
+- `ADI-JR-CBR-003` — `_mw/results/ADI-JR-CBR-003.md` — MADARAII-03;
+- `WSR-JR-CBR-003` — `_mw/results/WSR-JR-CBR-003.md` — MADARAII-04.
+
+The reconciliation preserves current Product admission and records bounded Work candidates. `WORK-JESTER-0003` is closed. This Report remains the standalone session record and creates no Product change or successor Authority.

@@ -140,13 +140,7 @@ def _period_block_context(
     first_period_col: int,
     previous_header_row: int | None,
 ) -> str:
-    """Return the nearest source-visible semantic heading for one period block.
-
-    Repeated CBR matrices often use ``measure heading -> date row -> values``.
-    The heading is a durable source semantic cue; the physical row number is not.
-    Search is bounded by the prior period header so an earlier block cannot leak
-    into a later block when the later block has no explicit heading.
-    """
+    """Return the nearest source-visible semantic heading for one period block."""
     lower_bound = (previous_header_row + 1) if previous_header_row is not None else 1
     generic = {
         "дата",
@@ -164,13 +158,45 @@ def _period_block_context(
             if not isinstance(value, str) or not value.strip():
                 continue
             text = " ".join(value.split())
-            normalized = normalize_text(text)
-            if normalized in generic:
+            if normalize_text(text) in generic:
                 continue
             values.append(text)
         if values:
             return " | ".join(values)
     return ""
+
+
+def _merged_stub_context(ws, *, row_no: int, first_period_col: int) -> str:
+    """Resolve the source-visible left-stub path, including inherited merged parents.
+
+    Excel stores a vertically merged hierarchy label only in the top-left cell.
+    Child rows inside the merged range therefore look blank through ordinary cell
+    access. For semantic identity the visible merged parent is material source
+    context and is inherited by those child rows. Physical row numbers never enter
+    the resulting key.
+    """
+    values: list[str] = []
+    seen: set[str] = set()
+    merged_ranges = tuple(ws.merged_cells.ranges)
+
+    for col_no in range(1, first_period_col):
+        value = ws.cell(row_no, col_no).value
+        if value is None:
+            for merged in merged_ranges:
+                if (
+                    merged.min_row <= row_no <= merged.max_row
+                    and merged.min_col <= col_no <= merged.max_col
+                ):
+                    value = ws.cell(merged.min_row, merged.min_col).value
+                    break
+        if not isinstance(value, str) or not value.strip():
+            continue
+        text = " ".join(value.split())
+        normalized = normalize_text(text)
+        if normalized and normalized not in seen:
+            values.append(text)
+            seen.add(normalized)
+    return " > ".join(values)
 
 
 def _concept_id(source_id: str, local_key: str) -> str:
@@ -183,14 +209,17 @@ def _split_repeated_block_concepts(
     concepts: list[dict[str, str]],
     *,
     period_rows_by_sheet: Mapping[str, list[int]],
+    first_period_col_by_sheet_header: Mapping[tuple[str, int], int],
     block_context_by_sheet_header: Mapping[tuple[str, int], str],
+    stub_context_by_sheet_row: Mapping[tuple[str, int], str],
 ) -> tuple[list[dict[str, str]], int]:
-    """Split only concepts proven to span distinct semantic period-block headings.
+    """Split repeated preliminary concepts only when source-visible context proves distinction.
 
-    This is intentionally conservative. A concept is rewritten only when the same
-    preliminary source-local concept appears under two or more distinct non-empty
-    block headings. Repeated blocks carrying the same heading remain one concept;
-    any conflicting overlap is then left for normal semantic duplicate validation.
+    The composite context combines the period-block heading with the row's visible
+    left-stub hierarchy, including vertically merged parent labels. Repeated blocks
+    and repeated child labels remain one concept when the same source-visible path
+    is present; contradictory overlaps then remain visible to normal duplicate
+    validation instead of being hidden by a positional identifier.
     """
     concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
     obs_context: dict[str, str] = {}
@@ -206,7 +235,17 @@ def _split_repeated_block_concepts(
         if not headers:
             continue
         header_row = headers[-1]
-        context = block_context_by_sheet_header.get((sheet, header_row), "")
+        # Presence in this map proves the selected header is a recognized period block.
+        if (sheet, header_row) not in first_period_col_by_sheet_header:
+            continue
+        block = block_context_by_sheet_header.get((sheet, header_row), "").strip()
+        stub = stub_context_by_sheet_row.get((sheet, source_row), "").strip()
+        parts = []
+        if block:
+            parts.append(f"block={block}")
+        if stub:
+            parts.append(f"stub={stub}")
+        context = " | ".join(parts)
         normalized = normalize_text(context)
         if not normalized:
             continue
@@ -238,12 +277,12 @@ def _split_repeated_block_concepts(
         context = obs_context.get(observation_id, "")
         if not context:
             raise SourceVariantError(
-                f"{obs.get('source_id')}/{obs.get('sheet_exact')}: repeated concept {old_id} lacks semantic period-block context"
+                f"{obs.get('source_id')}/{obs.get('sheet_exact')}: repeated concept {old_id} lacks semantic source context"
             )
         original = concept_by_id[old_id]
         local_key = (
             str(original.get("source_local_key", ""))
-            + "|period_block|"
+            + "|source_context|"
             + normalize_text(context)
         )
         source_id = str(original.get("source_id", obs.get("source_id", "")))
@@ -253,12 +292,12 @@ def _split_repeated_block_concepts(
         candidate["source_local_key"] = local_key
         prior_context = str(candidate.get("source_context", "")).strip()
         candidate["source_context"] = (
-            f"{prior_context} | period block: {context}" if prior_context else f"period block: {context}"
+            f"{prior_context} | {context}" if prior_context else context
         )
         existing = rewritten.get(new_id)
         if existing is not None and existing != candidate:
             raise SourceVariantError(
-                f"{source_id}: conflicting concept materialization for period block {context!r}"
+                f"{source_id}: conflicting concept materialization for source context {context!r}"
             )
         rewritten[new_id] = candidate
         obs["source_concept_id"] = new_id
@@ -275,14 +314,7 @@ def parse_source_checked(
     file_sha256: str,
     raw_cells: list[dict[str, object]],
 ):
-    """Parse one source and close numeric-disposition gaps before admission.
-
-    ``semantic.parse_source`` owns observation extraction. This gate independently
-    rebinds period/header/metadata roles from workbook structure and converts any
-    remaining unexplained numeric candidate into ``unmapped_numeric``. Complete
-    validation can therefore fail closed instead of accepting a number merely
-    because no period binding happened to be found for it.
-    """
+    """Parse one source and close numeric-disposition gaps before admission."""
     with _semantic_view(xlsx_path, spec) as parse_path:
         observations, concepts, members, dispositions, diagnostics = parse_source(
             parse_path,
@@ -298,8 +330,14 @@ def parse_source_checked(
 
         wb = load_workbook(parse_path, read_only=False, data_only=False, keep_links=True)
         period_rows_by_sheet: dict[str, list[int]] = {}
+        first_period_col_by_sheet_header: dict[tuple[str, int], int] = {}
         block_context_by_sheet_header: dict[tuple[str, int], str] = {}
+        stub_context_by_sheet_row: dict[tuple[str, int], str] = {}
         try:
+            observations_by_sheet: dict[str, list[dict[str, object]]] = defaultdict(list)
+            for obs in observations:
+                observations_by_sheet[str(obs.get("sheet_exact", ""))].append(obs)
+
             for ws in wb.worksheets:
                 bindings = discover_period_bindings(ws, spec.source_id)
                 period_coords = {b.coordinate: b for b in bindings}
@@ -313,6 +351,7 @@ def parse_source_checked(
                     )
                 for index, header_row in enumerate(period_rows):
                     first_period_col = first_period_col_by_row[header_row]
+                    first_period_col_by_sheet_header[(ws.title, header_row)] = first_period_col
                     previous_header = period_rows[index - 1] if index > 0 else None
                     block_context_by_sheet_header[(ws.title, header_row)] = _period_block_context(
                         ws,
@@ -320,6 +359,26 @@ def parse_source_checked(
                         first_period_col=first_period_col,
                         previous_header_row=previous_header,
                     )
+
+                for obs in observations_by_sheet.get(ws.title, []):
+                    try:
+                        source_row = int(obs.get("source_row", 0))
+                    except (TypeError, ValueError):
+                        continue
+                    headers = [header for header in period_rows if header < source_row]
+                    if not headers:
+                        continue
+                    header_row = headers[-1]
+                    first_period_col = first_period_col_by_row.get(header_row)
+                    if first_period_col is None:
+                        continue
+                    key = (ws.title, source_row)
+                    if key not in stub_context_by_sheet_row:
+                        stub_context_by_sheet_row[key] = _merged_stub_context(
+                            ws,
+                            row_no=source_row,
+                            first_period_col=first_period_col,
+                        )
 
                 metadata_sheet = any(
                     token in normalize_text(ws.title)
@@ -343,8 +402,6 @@ def parse_source_checked(
                         current.update({"role": "source_metadata_numeric", "reason": "metadata_sheet"})
                         continue
 
-                    # Numeric cells in the left semantic stub are hierarchy/classification
-                    # codes or source-side header material, not time-series observations.
                     candidate_header_rows = [hr for hr in period_rows if hr < row_no]
                     nearest_header = candidate_header_rows[-1] if candidate_header_rows else None
                     first_period_col = first_period_col_by_row.get(nearest_header) if nearest_header is not None else None
@@ -352,8 +409,6 @@ def parse_source_checked(
                         current.update({"role": "hierarchy_or_header_code", "reason": "numeric_before_period_axis"})
                         continue
 
-                    # Calendar/header numerics above the first data block are explicit
-                    # source structure. Exchange-rate workbooks use numeric year bands.
                     if period_rows and row_no <= max(period_rows):
                         current.update({"role": "hierarchy_or_header_code", "reason": "numeric_period_header_structure"})
                         continue
@@ -361,8 +416,6 @@ def parse_source_checked(
                         current.update({"role": "hierarchy_or_header_code", "reason": "exchange_calendar_header"})
                         continue
 
-                    # Preserve existing specific classifications; generic
-                    # non_observation_numeric means the value is still unexplained.
                     if current.get("role") == "non_observation_numeric":
                         current.update({"role": "unmapped_numeric", "reason": "numeric_value_without_admitted_semantic_role"})
 
@@ -370,7 +423,9 @@ def parse_source_checked(
                 observations,
                 concepts,
                 period_rows_by_sheet=period_rows_by_sheet,
+                first_period_col_by_sheet_header=first_period_col_by_sheet_header,
                 block_context_by_sheet_header=block_context_by_sheet_header,
+                stub_context_by_sheet_row=stub_context_by_sheet_row,
             )
             unresolved = sum(1 for row in dispositions if row.get("role") == "unmapped_numeric")
             diagnostics["unmapped_numeric_count"] = unresolved

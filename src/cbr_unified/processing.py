@@ -326,10 +326,10 @@ def _structural_currency_scope(
 ) -> dict[str, str]:
     """Inherit only explicit currency scope headings from the source stub.
 
-    The nearest explicit ``в рублях`` / foreign-currency heading governs following
-    child rows until another currency heading appears. Generic totals and unrelated
-    headings never create a currency value. Existing row/sheet dimensions retain
-    precedence when this inherited scope is applied.
+    The nearest explicit ruble / foreign-currency heading governs following child
+    rows until another currency heading appears. Generic unit labels such as
+    ``млн руб.`` never create a denomination dimension. Existing row/sheet
+    dimensions retain precedence when this inherited scope is applied.
     """
     for candidate in range(row_no, header_row, -1):
         values = _stub_values(
@@ -347,7 +347,7 @@ def _structural_currency_scope(
             if "$" in raw_text or "доллар" in text:
                 dims["measurement_currency"] = "USD"
             return dims
-        if "в руб" in text or text.startswith("руб"):
+        if "в российских руб" in text or "в руб" in text or text.startswith("руб"):
             return {"currency_category": "rubles"}
     return {}
 

@@ -4,7 +4,7 @@ from pathlib import Path
 from openpyxl import Workbook
 from openpyxl.comments import Comment
 
-from cbr_unified.acquisition import _trusted_cbr_url, bind_local_sources
+from cbr_unified.acquisition import _alternate_cbr_alias, _trusted_cbr_url, bind_local_sources
 from cbr_unified.build import build_database
 from cbr_unified.query import UnifiedDatabase
 from cbr_unified.registry import SourceSpec, get_source
@@ -35,6 +35,10 @@ def test_source_trust_rejects_non_cbr_hosts_and_malformed_local_xlsx(tmp_path):
     assert _trusted_cbr_url("https://www.cbr.ru/a.xlsx")
     assert not _trusted_cbr_url("https://cbr.ru.attacker.example/a.xlsx")
     assert not _trusted_cbr_url("https://example.com/a.xlsx")
+    assert _alternate_cbr_alias("https://www.cbr.ru/vfs/a.xlsx?x=1") == "https://cbr.ru/vfs/a.xlsx?x=1"
+    assert _alternate_cbr_alias("https://cbr.ru/vfs/a.xlsx") is None
+    assert _alternate_cbr_alias("https://sub.cbr.ru/vfs/a.xlsx") is None
+    assert _alternate_cbr_alias("https://example.com/vfs/a.xlsx") is None
 
     bad = tmp_path / "payload.xlsx"
     bad.write_bytes(b"PK but not actually an OOXML workbook")

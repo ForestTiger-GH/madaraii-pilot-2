@@ -25,7 +25,7 @@ RU_MONTHS = {
 EN_MONTHS = {
     "january": 1, "jan": 1, "february": 2, "feb": 2, "march": 3, "mar": 3,
     "april": 4, "apr": 4, "may": 5, "june": 6, "jun": 6, "july": 7, "jul": 7,
-    "august": 8, "aug": 8, "september": 9, "sep": 9, "october": 10, "oct": 10,
+    "august": 8, "september": 9, "sep": 9, "october": 10, "oct": 10,
     "november": 11, "nov": 11, "december": 12, "dec": 12,
 }
 
@@ -73,10 +73,14 @@ def parse_decimal_text(value: Any) -> Decimal | None:
     s = unicodedata.normalize("NFKC", value).strip().replace("\u00a0", " ")
     if not s or s in {"-", "—", "–", "…", "..", "."}:
         return None
+    accounting_negative = s.startswith("(") and s.endswith(")")
+    if accounting_negative:
+        s = s[1:-1].strip()
     s = re.sub(r"(?<=\d)[ \u202f](?=\d{3}(?:\D|$))", "", s)
     if re.fullmatch(r"[+-]?(?:\d+(?:[.,]\d+)?|[.,]\d+)", s):
         try:
-            return Decimal(s.replace(",", "."))
+            result = Decimal(s.replace(",", "."))
+            return -result if accounting_negative else result
         except InvalidOperation:
             return None
     return None
@@ -95,9 +99,6 @@ def parse_period(value: Any) -> tuple[str, str, str] | None:
         return None
     s = s0.casefold().replace("–", "-").replace("—", "-")
 
-    # Some official CBR date headers carry a trailing asterisk that points to a
-    # methodological footnote (for example 01.01.2019*). The marker is source
-    # presentation, not part of the period; raw OOXML retains it verbatim.
     m = re.fullmatch(r"(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{4})(\*+)?", s)
     if m:
         d, mo, y = map(int, m.groups()[:3])
@@ -135,8 +136,8 @@ def parse_period(value: Any) -> tuple[str, str, str] | None:
     return None
 
 
-def infer_unit(*texts: str) -> tuple[str | None, int | None]:
-    text = " ".join(normalize_text(t) for t in texts if t)
+def _infer_unit_one(text: str) -> tuple[str | None, int | None]:
+    text = normalize_text(text)
     if re.search(r"млрд\.?\s*руб", text):
         return "RUB", 1_000_000_000
     if re.search(r"млн\.?\s*руб", text):
@@ -156,8 +157,23 @@ def infer_unit(*texts: str) -> tuple[str | None, int | None]:
     return None, None
 
 
+def infer_unit(*texts: str) -> tuple[str | None, int | None]:
+    """Infer from most specific text first; broader title context is fallback only."""
+    for text in texts:
+        if not text:
+            continue
+        unit, scale = _infer_unit_one(text)
+        if unit is not None:
+            return unit, scale
+    return None, None
+
+
 def _is_overdue_label(text: str) -> bool:
     return bool(re.search(r"\bпроср(?:оч(?:енн(?:ая|ой|ые|ых|ую)?)?)?\.?\b", text))
+
+
+def _explicit_not_overdue(text: str) -> bool:
+    return bool(re.search(r"\bнепросроч", text) or re.search(r"\bбез\b[^\n]{0,40}\bпросроч", text))
 
 
 def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
@@ -171,19 +187,25 @@ def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
     elif s in {"итого", "всего"} or " итого" in s:
         dims["currency_category"] = "total"
 
-    if _is_overdue_label(s):
+    if _explicit_not_overdue(s):
+        dims["overdue"] = "false"
+    elif _is_overdue_label(s):
         dims["overdue"] = "true"
 
-    if "с учетом приобр" in s and "прав" in s:
+    if re.search(r"\bбез\b[^\n]{0,50}\bправ(?:а|ами)?\s+требован", s) or "не включая права требования" in s:
+        dims["acquired_claims"] = "excluded"
+    elif "с учетом приобр" in s and "прав" in s:
         dims["acquired_claims"] = "included"
     elif "по приобр" in s and "прав" in s:
         dims["acquired_claims"] = "acquired_only"
     elif "с правами требования" in s or "включая права требования" in s:
         dims["acquired_claims"] = "included"
-    elif "права требования" in s:
+    elif "права требования" in s or "право требования" in s:
         dims["acquired_claims"] = "acquired_only"
 
-    if "(с.к" in s or "с.к." in s or "сезон" in s:
+    if "несезон" in s or re.search(r"\bбез\b[^\n]{0,30}\bсезон", s):
+        dims["adjustment"] = "original"
+    elif "(с.к" in s or "с.к." in s or "сезон" in s:
         dims["adjustment"] = "seasonally_adjusted"
     else:
         dims["adjustment"] = "original"
@@ -216,14 +238,14 @@ def sheet_dimensions(sheet: str, source_id: str = "") -> dict[str, str]:
 
 def territory_type(label: str) -> str:
     s = normalize_text(label)
+    if " без " in f" {s} ":
+        return "excluding_subregion_aggregate"
     if s == "российская федерация" or s.startswith("российская федерация "):
         return "country_total"
     if "федеральный округ" in s:
         return "federal_district"
     if s.startswith("в том числе"):
         return "included_subregion"
-    if " без " in f" {s} ":
-        return "excluding_subregion_aggregate"
     return "region_or_subject"
 
 

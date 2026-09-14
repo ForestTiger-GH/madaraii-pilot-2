@@ -3,7 +3,7 @@ from __future__ import annotations
 import hashlib
 import re
 import tempfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Iterator, Mapping
@@ -190,20 +190,84 @@ def _stub_values(ws, *, row_no: int, first_period_col: int, inherit_merged: bool
     return values
 
 
-def _section_anchor_context(
+def _stub_signature(ws, *, row_no: int, first_period_col: int) -> str:
+    return normalize_text(
+        " > ".join(
+            _stub_values(
+                ws,
+                row_no=row_no,
+                first_period_col=first_period_col,
+                inherit_merged=False,
+            )
+        )
+    )
+
+
+def _frequency_ancestry_context(
     ws,
     *,
     row_no: int,
     first_period_col: int,
     header_row: int,
 ) -> str:
-    """Find the nearest visible section heading introduced after a blank stub boundary.
+    """Infer a source-visible parent chain from repeated hierarchy signatures.
 
-    Some CBR hierarchy sheets repeat an identical row tree under sections such as
-    total / rubles / foreign currency while sharing one period header. The section
-    heading is source-visible semantic context. A blank left-stub row (or the period
-    header boundary) starts the section; row numbers never enter the identity.
+    In several CBR hierarchy tables the same children are repeated under sector
+    parents, while the sectors themselves repeat under broader currency sections.
+    Indentation and blank rows are not guaranteed. A strictly decreasing repetition
+    count provides a conservative ancestry: frequent child -> rarer parent -> unique
+    outer section. Physical row numbers never enter the resulting identity.
     """
+    signatures: dict[int, str] = {}
+    counts: Counter[str] = Counter()
+    for candidate in range(header_row + 1, ws.max_row + 1):
+        signature = _stub_signature(
+            ws,
+            row_no=candidate,
+            first_period_col=first_period_col,
+        )
+        if not signature:
+            continue
+        signatures[candidate] = signature
+        counts[signature] += 1
+
+    current = signatures.get(row_no, "")
+    if not current or counts[current] <= 1:
+        return ""
+
+    threshold = counts[current]
+    ancestors: list[str] = []
+    seen: set[str] = set()
+    for candidate in range(row_no - 1, header_row, -1):
+        signature = signatures.get(candidate, "")
+        if not signature or signature in seen:
+            continue
+        count = counts[signature]
+        if count >= threshold:
+            continue
+        values = _stub_values(
+            ws,
+            row_no=candidate,
+            first_period_col=first_period_col,
+            inherit_merged=False,
+        )
+        if not values:
+            continue
+        ancestors.append(" > ".join(values))
+        seen.add(signature)
+        threshold = count
+        if threshold <= 1:
+            break
+    return " > ".join(reversed(ancestors))
+
+
+def _blank_boundary_anchor_context(
+    ws,
+    *,
+    row_no: int,
+    first_period_col: int,
+    header_row: int,
+) -> str:
     for candidate in range(row_no - 1, header_row, -1):
         values = _stub_values(
             ws,
@@ -226,6 +290,30 @@ def _section_anchor_context(
         if not previous_values:
             return " > ".join(values)
     return ""
+
+
+def _section_anchor_context(
+    ws,
+    *,
+    row_no: int,
+    first_period_col: int,
+    header_row: int,
+) -> str:
+    """Find stable source-visible hierarchy ancestry without coordinate identity."""
+    frequency_ancestry = _frequency_ancestry_context(
+        ws,
+        row_no=row_no,
+        first_period_col=first_period_col,
+        header_row=header_row,
+    )
+    if frequency_ancestry:
+        return frequency_ancestry
+    return _blank_boundary_anchor_context(
+        ws,
+        row_no=row_no,
+        first_period_col=first_period_col,
+        header_row=header_row,
+    )
 
 
 def _merged_stub_context(

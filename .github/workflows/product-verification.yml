@@ -53,7 +53,18 @@ jobs:
             _verification/independent-preservation-report.json
             _verification/post-jester-contract-report.json
             _verification/publication-metadata-report.json
+            _verification/live/build_manifest.json
+            _verification/live/source_manifest.json
+            _verification/live/data/validation.json
+            _verification/live/data/diagnostics.json
+            _verification/replay/build_manifest.json
+            _verification/replay/source_manifest.json
+            _verification/replay/data/validation.json
+            _verification/replay/data/diagnostics.json
             _verification/.live.staging-*/failure.json
             _verification/.live.staging-*/source_manifest.acquisition.json
             _verification/.live.staging-*/failure-evidence/*.csv
+            _verification/.replay.staging-*/failure.json
+            _verification/.replay.staging-*/source_manifest.acquisition.json
+            _verification/.replay.staging-*/failure-evidence/*.csv
           if-no-files-found: warn

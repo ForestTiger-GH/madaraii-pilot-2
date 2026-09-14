@@ -38,6 +38,8 @@ jobs:
         run: python tools/verify_full_build.py _verification
       - name: Independent OOXML preservation verification
         run: python tools/independent_verify_preservation.py _verification/live
+      - name: Verify post-Jester Product contract
+        run: python tools/verify_post_jester_contract.py _verification/live _verification/post-jester-contract-report.json
       - name: Publication metadata applicability audit
         run: python tools/audit_publication_metadata.py _verification/live/sources _verification/publication-metadata-report.json
       - name: Upload verification and failure evidence
@@ -49,6 +51,7 @@ jobs:
           path: |
             _verification/full-build-report.json
             _verification/independent-preservation-report.json
+            _verification/post-jester-contract-report.json
             _verification/publication-metadata-report.json
             _verification/.live.staging-*/failure.json
             _verification/.live.staging-*/source_manifest.acquisition.json

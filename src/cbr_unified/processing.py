@@ -167,14 +167,7 @@ def _period_block_context(
 
 
 def _merged_stub_context(ws, *, row_no: int, first_period_col: int) -> str:
-    """Resolve the source-visible left-stub path, including inherited merged parents.
-
-    Excel stores a vertically merged hierarchy label only in the top-left cell.
-    Child rows inside the merged range therefore look blank through ordinary cell
-    access. For semantic identity the visible merged parent is material source
-    context and is inherited by those child rows. Physical row numbers never enter
-    the resulting key.
-    """
+    """Resolve the source-visible left-stub path, including inherited merged parents."""
     values: list[str] = []
     seen: set[str] = set()
     merged_ranges = tuple(ws.merged_cells.ranges)
@@ -215,11 +208,9 @@ def _split_repeated_block_concepts(
 ) -> tuple[list[dict[str, str]], int]:
     """Split repeated preliminary concepts only when source-visible context proves distinction.
 
-    The composite context combines the period-block heading with the row's visible
-    left-stub hierarchy, including vertically merged parent labels. Repeated blocks
-    and repeated child labels remain one concept when the same source-visible path
-    is present; contradictory overlaps then remain visible to normal duplicate
-    validation instead of being hidden by a positional identifier.
+    This operation is for concept-bearing row axes (indicator/hierarchy/mixed). Row
+    dimensions such as region/activity are deliberately excluded by the caller:
+    their row labels are dimension members, while the concept remains the measure.
     """
     concept_by_id = {str(row["source_concept_id"]): row for row in concepts}
     obs_context: dict[str, str] = {}
@@ -235,12 +226,11 @@ def _split_repeated_block_concepts(
         if not headers:
             continue
         header_row = headers[-1]
-        # Presence in this map proves the selected header is a recognized period block.
         if (sheet, header_row) not in first_period_col_by_sheet_header:
             continue
         block = block_context_by_sheet_header.get((sheet, header_row), "").strip()
         stub = stub_context_by_sheet_row.get((sheet, source_row), "").strip()
-        parts = []
+        parts: list[str] = []
         if block:
             parts.append(f"block={block}")
         if stub:
@@ -291,9 +281,7 @@ def _split_repeated_block_concepts(
         candidate["source_concept_id"] = new_id
         candidate["source_local_key"] = local_key
         prior_context = str(candidate.get("source_context", "")).strip()
-        candidate["source_context"] = (
-            f"{prior_context} | {context}" if prior_context else context
-        )
+        candidate["source_context"] = f"{prior_context} | {context}" if prior_context else context
         existing = rewritten.get(new_id)
         if existing is not None and existing != candidate:
             raise SourceVariantError(
@@ -333,6 +321,7 @@ def parse_source_checked(
         first_period_col_by_sheet_header: dict[tuple[str, int], int] = {}
         block_context_by_sheet_header: dict[tuple[str, int], str] = {}
         stub_context_by_sheet_row: dict[tuple[str, int], str] = {}
+        concept_row_axis = spec.row_axis not in {"region", "activity"}
         try:
             observations_by_sheet: dict[str, list[dict[str, object]]] = defaultdict(list)
             for obs in observations:
@@ -360,25 +349,26 @@ def parse_source_checked(
                         previous_header_row=previous_header,
                     )
 
-                for obs in observations_by_sheet.get(ws.title, []):
-                    try:
-                        source_row = int(obs.get("source_row", 0))
-                    except (TypeError, ValueError):
-                        continue
-                    headers = [header for header in period_rows if header < source_row]
-                    if not headers:
-                        continue
-                    header_row = headers[-1]
-                    first_period_col = first_period_col_by_row.get(header_row)
-                    if first_period_col is None:
-                        continue
-                    key = (ws.title, source_row)
-                    if key not in stub_context_by_sheet_row:
-                        stub_context_by_sheet_row[key] = _merged_stub_context(
-                            ws,
-                            row_no=source_row,
-                            first_period_col=first_period_col,
-                        )
+                if concept_row_axis:
+                    for obs in observations_by_sheet.get(ws.title, []):
+                        try:
+                            source_row = int(obs.get("source_row", 0))
+                        except (TypeError, ValueError):
+                            continue
+                        headers = [header for header in period_rows if header < source_row]
+                        if not headers:
+                            continue
+                        header_row = headers[-1]
+                        first_period_col = first_period_col_by_row.get(header_row)
+                        if first_period_col is None:
+                            continue
+                        key = (ws.title, source_row)
+                        if key not in stub_context_by_sheet_row:
+                            stub_context_by_sheet_row[key] = _merged_stub_context(
+                                ws,
+                                row_no=source_row,
+                                first_period_col=first_period_col,
+                            )
 
                 metadata_sheet = any(
                     token in normalize_text(ws.title)
@@ -419,14 +409,18 @@ def parse_source_checked(
                     if current.get("role") == "non_observation_numeric":
                         current.update({"role": "unmapped_numeric", "reason": "numeric_value_without_admitted_semantic_role"})
 
-            concepts, split_count = _split_repeated_block_concepts(
-                observations,
-                concepts,
-                period_rows_by_sheet=period_rows_by_sheet,
-                first_period_col_by_sheet_header=first_period_col_by_sheet_header,
-                block_context_by_sheet_header=block_context_by_sheet_header,
-                stub_context_by_sheet_row=stub_context_by_sheet_row,
-            )
+            if concept_row_axis:
+                concepts, split_count = _split_repeated_block_concepts(
+                    observations,
+                    concepts,
+                    period_rows_by_sheet=period_rows_by_sheet,
+                    first_period_col_by_sheet_header=first_period_col_by_sheet_header,
+                    block_context_by_sheet_header=block_context_by_sheet_header,
+                    stub_context_by_sheet_row=stub_context_by_sheet_row,
+                )
+            else:
+                split_count = 0
+
             unresolved = sum(1 for row in dispositions if row.get("role") == "unmapped_numeric")
             diagnostics["unmapped_numeric_count"] = unresolved
             diagnostics["numeric_disposition_gate"] = "passed" if unresolved == 0 else "failed"

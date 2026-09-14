@@ -164,3 +164,38 @@ def test_region_rows_remain_dimension_members_of_one_measure_concept(tmp_path):
     assert len(members) == 2
     assert diagnostics["period_block_concept_rewrites"] == 0
     assert {row["source_concept_id"] for row in observations} == {concepts[0]["source_concept_id"]}
+
+
+def test_hierarchy_repeated_tree_is_disambiguated_by_section_anchor(tmp_path):
+    path = tmp_path / "hierarchy-sections.xlsx"
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Квартал"
+    ws["A1"] = "Долговые ценные бумаги, млн руб."
+    ws["B3"], ws["C3"], ws["D3"] = "01.01.2024", "01.04.2024", "01.07.2024"
+
+    for start, section, base in (
+        (4, "Выпущенные долговые ценные бумаги - Итого", 100),
+        (8, "Выпущенные долговые ценные бумаги в рублях", 200),
+        (12, "Выпущенные долговые ценные бумаги в иностранной валюте", 300),
+    ):
+        ws.cell(start, 1).value = section
+        ws.cell(start + 1, 1).value = "  Итого"
+        for offset, value in enumerate((base, base + 1, base + 2), start=2):
+            ws.cell(start + 1, offset).value = value
+        # Leave a blank source-stub row before the next section.
+
+    wb.save(path)
+    wb.close()
+
+    observations, concepts, _, _, diagnostics = _parse(path, _spec("hierarchy", "hierarchy"))
+    total_ids = {
+        next(row["source_concept_id"] for row in observations if row["source_row"] == source_row)
+        for source_row in (5, 9, 13)
+    }
+    assert len(total_ids) == 3
+    assert diagnostics["period_block_concept_rewrites"] == 9
+    assert len(concepts) == 3
+    contexts = "\n".join(row["source_context"] for row in concepts)
+    assert "в рублях" in contexts
+    assert "в иностранной валюте" in contexts

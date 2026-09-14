@@ -7,7 +7,8 @@
 **Exact Product baseline:** `4ee8583b3feff7775a956c51812232fa0d0516d2`  
 **Experiment surface:** `jester/jst-0002`  
 **Detailed evidence:** `_mw/evidence/JST-CBR-002.md`  
-**Report state:** COMPLETE / RESTORATION PENDING / HANDOFF PENDING
+**Restoration evidence:** `_mw/evidence/JST-CBR-002-RESTORATION.md`  
+**Report state:** COMPLETE / RESTORED / HANDED OFF
 
 ## What the Jester attacked
 
@@ -17,7 +18,7 @@ The Crazy-Idea Generator combined negation, misleading methodological context, t
 
 ## What was done
 
-A fresh disposable branch was created from the exact admitted Product revision. Four CI runs were generated. One intermediate run failed because the Jester's own phrase did not activate the intended parser rule; the trajectory preserved that evidence, sharpened the phrase, and continued. The last branch state at `ebcbd7767519321a7de6330c4ea1c5e34dd27dd9` passed the ordinary test suite plus all retained Jester-2 reproducers in run `34894854255`.
+A fresh disposable branch was created from the exact admitted Product revision. Four CI runs were generated. One intermediate run failed because the Jester's own phrase did not activate the intended parser rule; the trajectory preserved that evidence, sharpened the phrase, and continued. The last experimental state at `ebcbd7767519321a7de6330c4ea1c5e34dd27dd9` passed the ordinary test suite plus all retained Jester-2 reproducers in run `34894854255`.
 
 Ten materially different provocations exhausted the pre-bound session budget.
 
@@ -38,8 +39,21 @@ The strongest common pattern is different from the first session. `JR-CBR-001` s
 
 ## Resistant behavior and limits
 
-The run also showed several bounded strengths. Numeric year values are deliberately kept out of generic period discovery, reducing accidental header detection in ordinary data. The ten-number source-variant threshold does eventually fail closed. The final CI trajectory remained deterministic after the Jester corrected its own malformed probe. None of these observations establishes Product failure against the commissioned 41-source baseline; all were synthetic source-variant provocations unless otherwise stated.
+Numeric year values are deliberately kept out of generic period discovery, reducing accidental header detection in ordinary data. The ten-number source-variant threshold does eventually fail closed. The final CI trajectory remained deterministic after the Jester corrected its own malformed probe. None of these observations establishes Product failure against the commissioned 41-source baseline; all were synthetic source-variant provocations unless otherwise stated.
 
-## Stop and continuation
+## Restoration and handoff
 
-The ten-provocation budget was exhausted while the last wave still produced new signal. The branch must now be restored to the exact admitted Product baseline before any downstream interpretation. After restoration, `ADI-JR-CBR-002` under MADARAII-03 must develop the Report's semantic acts, followed by `WSR-JR-CBR-002` under MADARAII-04 for justified routing. This Jester Report creates no defect, Task, Topic, repair, priority or Product change.
+Before downstream interpretation, `jester/jst-0002` was force-restored and independently resolved to exact Product baseline:
+
+`4ee8583b3feff7775a956c51812232fa0d0516d2`.
+
+The branch-only workflow and disposable reproducers are absent from its current state. Canonical `main` Product code was never in the experiment mutation surface.
+
+Mandatory continuation completed:
+
+- `ADI-JR-CBR-002` — `_mw/results/ADI-JR-CBR-002.md` — MADARAII-03;
+- `WSR-JR-CBR-002` — `_mw/results/WSR-JR-CBR-002.md` — MADARAII-04.
+
+The reconciliation keeps the original Product admission and closure intact and records bounded post-closure Work candidates. The highest-materiality additions concern contextual semantic inference, false-header parser robustness, measure identity in region/activity sources, and the numeric-completeness boundary.
+
+`WORK-JESTER-0002` is closed. This Report remains the standalone owner of the session record; downstream engineering meaning belongs to the developed-input and reconciliation Results.

@@ -146,7 +146,6 @@ def _promote(staging: Path, final_root: Path) -> None:
     try:
         staging.rename(final_root)
     except BaseException:
-        # Restoration must also run for operator interruption between the two renames.
         if had_previous and backup.exists() and not final_root.exists():
             backup.rename(final_root)
         raise
@@ -174,8 +173,10 @@ def _build_into_staging(
         raise ValueError("Build sources contain duplicate source_id")
 
     started = datetime.now(timezone.utc).isoformat()
+    # Acquisition/binding always materializes its complete diagnostic result first.
+    # Admission is a separate gate below, so failed attempts retain per-source evidence.
     if input_dir is None:
-        manifest = download_sources(source_dir, sources=sources, require_complete=require_complete)
+        manifest = download_sources(source_dir, sources=sources, require_complete=False)
         acquisition_mode = "download"
     else:
         manifest = bind_local_sources(
@@ -183,14 +184,14 @@ def _build_into_staging(
             sources=sources,
             explicit_paths=explicit_paths,
             copy_to=source_dir,
-            require_complete=require_complete,
+            require_complete=False,
         )
         acquisition_mode = "local_binding"
+    save_manifest(manifest, staging / "source_manifest.acquisition.json")
     validate_manifest(manifest, require_complete=require_complete and len(sources) == len(SOURCES))
+
     build_id, source_spec_sha256 = _fingerprints(manifest, sources)
     implementation_sha256, runtime_versions = _implementation_fingerprint()
-
-    save_manifest(manifest, staging / "source_manifest.acquisition.json")
 
     all_raw: list[dict[str, object]] = []
     all_observations: list[dict[str, object]] = []

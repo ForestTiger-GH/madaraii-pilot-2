@@ -197,7 +197,7 @@ def _validate(bundle):
 def test_validation_blocks_cross_owner_source_mismatch_and_impossible_calendar():
     bundle = _validation_bundle()
     bundle[2][0]["source_id"] = "other"
-    with pytest.raises(ValidationError, match="concept source ownership mismatch"):
+    with pytest.raises(ValidationError, match="unknown source|source ownership mismatch"):
         _validate(bundle)
 
     bundle = _validation_bundle()

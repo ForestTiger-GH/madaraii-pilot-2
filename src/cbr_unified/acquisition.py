@@ -67,12 +67,28 @@ def _validate_ooxml_workbook(path: str | Path) -> None:
                 raise AcquisitionError(
                     f"{workbook}: incomplete OOXML workbook; missing={missing} worksheets={len(worksheets)}"
                 )
-            # CRC/decompression check catches malformed ZIP members before source admission.
             bad_member = archive.testzip()
             if bad_member:
                 raise AcquisitionError(f"{workbook}: corrupt OOXML member {bad_member}")
     except zipfile.BadZipFile as exc:
         raise AcquisitionError(f"{workbook}: invalid OOXML ZIP package") from exc
+
+
+def _failure_summary(failures: Sequence[Mapping[str, object]]) -> str:
+    parts: list[str] = []
+    for record in failures:
+        source_id = str(record.get("source_id", "?"))
+        error_type = str(record.get("error_type", "Error"))
+        error = str(record.get("error", "unknown failure"))
+        http_status = record.get("http_status")
+        resolved_url = str(record.get("resolved_url", ""))
+        suffix = ""
+        if http_status not in (None, ""):
+            suffix += f"; http={http_status}"
+        if resolved_url:
+            suffix += f"; resolved={resolved_url}"
+        parts.append(f"{source_id}[{error_type}]: {error}{suffix}")
+    return " | ".join(parts)
 
 
 def download_sources(
@@ -130,8 +146,9 @@ def download_sources(
 
     failures = [record for record in manifest if record["status"] != "ok"]
     if failures and require_complete:
-        ids = ", ".join(str(record["source_id"]) for record in failures)
-        raise AcquisitionError(f"Failed to acquire {len(failures)}/{len(manifest)} sources: {ids}")
+        raise AcquisitionError(
+            f"Failed to acquire {len(failures)}/{len(manifest)} sources: {_failure_summary(failures)}"
+        )
     return manifest
 
 
@@ -207,8 +224,9 @@ def bind_local_sources(
 
     failures = [record for record in manifest if record["status"] != "ok"]
     if failures and require_complete:
-        ids = ", ".join(str(record["source_id"]) for record in failures)
-        raise AcquisitionError(f"Failed to bind {len(failures)}/{len(manifest)} local sources: {ids}")
+        raise AcquisitionError(
+            f"Failed to bind {len(failures)}/{len(manifest)} local sources: {_failure_summary(failures)}"
+        )
     return manifest
 
 

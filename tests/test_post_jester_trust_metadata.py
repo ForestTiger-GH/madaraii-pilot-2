@@ -1,3 +1,6 @@
+import importlib.util
+from pathlib import Path
+
 from openpyxl import Workbook
 from openpyxl.comments import Comment
 
@@ -5,7 +8,14 @@ from cbr_unified.acquisition import _trusted_cbr_url, bind_local_sources
 from cbr_unified.build import build_database
 from cbr_unified.query import UnifiedDatabase
 from cbr_unified.registry import SourceSpec, get_source
-from tools.audit_publication_metadata import audit
+
+
+_AUDIT_TOOL = Path(__file__).resolve().parents[1] / "tools" / "audit_publication_metadata.py"
+_AUDIT_SPEC = importlib.util.spec_from_file_location("audit_publication_metadata", _AUDIT_TOOL)
+assert _AUDIT_SPEC is not None and _AUDIT_SPEC.loader is not None
+_AUDIT_MODULE = importlib.util.module_from_spec(_AUDIT_SPEC)
+_AUDIT_SPEC.loader.exec_module(_AUDIT_MODULE)
+audit = _AUDIT_MODULE.audit
 
 
 def _workbook(path):

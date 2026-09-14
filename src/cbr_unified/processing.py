@@ -347,9 +347,43 @@ def _structural_currency_scope(
             if "$" in raw_text or "доллар" in text:
                 dims["measurement_currency"] = "USD"
             return dims
-        if "в российских руб" in text or "в руб" in text or text.startswith("руб"):
+        if text == "национальная валюта" or "в российских руб" in text or "в руб" in text or text.startswith("руб"):
             return {"currency_category": "rubles"}
     return {}
+
+
+def _structural_maturity_parent_context(
+    ws,
+    *,
+    row_no: int,
+    first_period_col: int,
+    header_row: int,
+) -> str:
+    """Preserve exact short/long source parent labels without inventing a bucket mapping.
+
+    External-debt tables repeat the same instrument rows under source-visible
+    ``Краткосрочные обязательства`` and ``Долгосрочные обязательства`` headings.
+    Their statistical distinction is material, but mapping those labels to a
+    normalized year bucket is a separate methodology claim. The exact heading is
+    therefore used only as source-local semantic ancestry here.
+    """
+    maturity_labels = {
+        "краткосрочные обязательства": "Краткосрочные обязательства",
+        "долгосрочные обязательства": "Долгосрочные обязательства",
+    }
+    for candidate in range(row_no, header_row, -1):
+        values = _stub_values(
+            ws,
+            row_no=candidate,
+            first_period_col=first_period_col,
+            inherit_merged=True,
+        )
+        if not values:
+            continue
+        text = normalize_text(" > ".join(values))
+        if text in maturity_labels:
+            return maturity_labels[text]
+    return ""
 
 
 def _merged_stub_context(
@@ -359,7 +393,7 @@ def _merged_stub_context(
     first_period_col: int,
     header_row: int,
 ) -> str:
-    """Resolve section + visible left-stub path, including inherited merged parents."""
+    """Resolve section + source parent + visible stub path without row-number identity."""
     parts: list[str] = []
     section = _section_anchor_context(
         ws,
@@ -369,6 +403,14 @@ def _merged_stub_context(
     )
     if section:
         parts.append(f"section={section}")
+    maturity_parent = _structural_maturity_parent_context(
+        ws,
+        row_no=row_no,
+        first_period_col=first_period_col,
+        header_row=header_row,
+    )
+    if maturity_parent:
+        parts.append(f"maturity_parent={maturity_parent}")
     stub = " > ".join(
         _stub_values(
             ws,

@@ -1,6 +1,6 @@
 # WA-CBR-001 — Engineering Work Architecture
 
-**Status:** current; reconciled after `PRODUCT-CBR-002` admission  
+**Status:** current; reconciled after `CLOSURE-CBR-002: PASS`  
 **Original bootstrap Baseline:** explicit empty repository before commit `260ab2fe3fdcbe89adc5e1a114f67882aa6ac3ed`  
 **Original governing basis:** `ForestTiger-GH/MADARAII@7d5ef3d92c4e0982061d422208fdf913c55cc604`  
 **Post-Jester governing basis:** `ForestTiger-GH/MADARAII@721a199352b5c5282b1478cd6a5eb36a9872fb34`
@@ -14,7 +14,7 @@ The project boundary remains exactly the one declared in `WORKSPACE.md`. Other r
 ## Current semantic owners
 
 - **Original Work State:** `WORK-CBR-001` — closed historical contour.
-- **Post-Jester Work State:** `WORK-CBR-002` — integrated successor contour; closure audit pending.
+- **Post-Jester Work State:** `WORK-CBR-002` — **closed**, `CLOSURE-CBR-002: PASS`.
 - **Raw input:** `INBOX-CBR-001` — immutable provenance carrier.
 - **Developed input:** `RES-ACTOR-001` — normalized original semantic acts/routes.
 - **Jester challenge history:** `WORK/JR/JST/ADI/WSR-CBR-001..004` — closed challenge/continuation lineage, historical evidence rather than Product truth.
@@ -25,7 +25,8 @@ The project boundary remains exactly the one declared in `WORKSPACE.md`. Other r
 - **Current Product:** `PRODUCT-CBR-002@e6411bf3680b53e250d5499465d8e91feb10e1c5`.
 - **Current Verification:** `RES-VERIFICATION-CBR-002` / `VERIFY-CBR-002`.
 - **Current integration:** `RES-INTEGRATION-CBR-002`.
-- **Current closure:** `CLOSURE-CBR-002` pending audit; `CLOSURE-CBR-001` remains historical PASS for the prior contour.
+- **Current closure:** `CLOSURE-CBR-002` at `_mw/results/RES-0012-closure-audit-pass.md`; historical first audit `CLOSURE-AUDIT-CBR-002A: FAIL` is retained.
+- **Historical predecessor closure:** `CLOSURE-CBR-001: PASS`.
 
 ## Work geometry
 
@@ -35,7 +36,7 @@ The project boundary remains exactly the one declared in `WORKSPACE.md`. Other r
 4. **Realization.** Implement source acquisition, raw preservation, semantic interpretation, catalogs, validation, persistence and consumer surfaces only within accepted targets.
 5. **Assurance.** Verify exact candidates against exact targets and source/runtime Baselines. Jester results may supply challenge directions but never assurance by themselves.
 6. **Integration.** Admit only adequately verified Product configuration through explicit owner transition; preserve historical Products and candidate dispositions.
-7. **Closure.** Audit Product, Knowledge, Work State, evidence, effects, Jester continuation and residue from durable owners. Closure audit judges and routes; it does not repair.
+7. **Closure.** Audit Product, Knowledge, Work State, evidence, effects, Jester continuation and residue from durable owners. Closure audit judges and routes; it does not repair. A failed audit is preserved and followed by separate repair/re-audit.
 
 Dependencies follow semantic prerequisites. Independent source-family work may fan out; Product admission serializes at the Product owner.
 
@@ -58,18 +59,21 @@ Raw evidence and semantic interpretation remain separate owners. Query/display l
 
 ## Authority boundaries
 
-The user Commission authorizes repository mutation inside this project boundary. Research, Jester output and agent design remain candidates until the appropriate owner transition. Verification establishes reliance evidence and cannot admit a Product. Product admission occurs only through governed integration. Repository merge, release, deployment, operation and business validation are distinct effects.
+The user Commission authorizes repository mutation inside this project boundary. Research, Jester output and agent design remain candidates until the appropriate owner transition. Verification establishes reliance evidence and cannot admit a Product. Product admission occurs only through governed integration. Repository merge, closure, release, deployment, operation and business validation remain distinct effects/states.
 
 ## Continuity and recovery
 
-A cold actor starts from `WORKSPACE.md`, resolves the current Work/Product/Knowledge/verification owners, and rebinds exact revisions before consequential reliance. Chat/model memory is discovery-only.
+A cold actor starts from `WORKSPACE.md`, resolves the current Work/Product/Knowledge/verification/closure owners, and rebinds exact revisions before consequential reliance. Chat/model memory is discovery-only.
 
 Current Product recovery anchors:
 
 - prior: `PRODUCT-CBR-001@4ee8583b3feff7775a956c51812232fa0d0516d2`;
 - current: `PRODUCT-CBR-002@e6411bf3680b53e250d5499465d8e91feb10e1c5`;
+- authoritative integrated state: `main@24eabda17b14295ef062425593f68585c0b879c0`;
 - build: `bld_f07e63fc4029cdcb3dd0df38`;
-- evidence: `VERIFY-CBR-002`, run `34909613235`, artifact `10373729077`.
+- decisive Product evidence: `VERIFY-CBR-002`, run `34909613235`, artifact `10373729077`;
+- post-integration confirmation: run `34911192167`, artifact `10374981872`;
+- closure: `CLOSURE-CBR-002: PASS`.
 
 ## Physical realization contract
 
@@ -85,8 +89,10 @@ Current Product recovery anchors:
 
 Stable identities live in artifact payloads/front-door mappings rather than filenames. Large generated builds and CBR workbooks remain rebuildable external evidence unless specific retention is justified.
 
-## Current closure route and re-evaluation
+## Current terminal posture and re-evaluation
 
-`WORK-CBR-002` has completed implementation, verification and Product integration. Its next permitted act is `MADARAII-36` closure audit on the exact reconciled posture.
+`WORK-CBR-002` completed implementation, exact verification, Product integration, authoritative-main propagation, post-integration verification and closure. The first closure audit failed on state/currentness defects; those defects were repaired outside the audit and the new exact Baseline passed re-audit.
+
+There is no active successor Work under the current Commission.
 
 Reassess this architecture only after a material source-universe, repository-boundary, Authority, multi-actor geometry, retention or Product-lifecycle change. Ordinary source-profile evolution proceeds within the existing boundaries when Target WHAT remains unchanged.
